@@ -18,7 +18,7 @@ ms.locfileid: "72688464"
 ---
 # <a name="ltarraygt-operators"></a>&lt;array&gt; 연산자
 
-@No__t_0array > 헤더에는 이러한 **배열의** 비 멤버 비교 템플릿 함수가 포함 됩니다.
+\<array> 헤더에는 이러한 **배열**의 비 멤버 템플릿 비교 함수가 포함 됩니다.
 
 ||||
 |-|-|-|
@@ -44,10 +44,10 @@ bool operator!=(
 *N* \
 배열의 크기입니다.
 
-*왼쪽* \
+*left* \
 비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* \
+*right* \
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>주의
@@ -117,15 +117,15 @@ bool operator<(
 *N* \
 배열의 크기입니다.
 
-*왼쪽* \
+*left* \
 비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* \
+*right* \
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>주의
 
-템플릿 함수 오버 로드는 클래스 템플릿 [배열 클래스](../standard-library/array-class-stl.md)의 두 개체를 비교 하는 `operator<` 합니다. 함수에서 `lexicographical_compare(left.begin(), left.end(), right.begin())`을 반환합니다.
+템플릿 함수는 두 [array 클래스](../standard-library/array-class-stl.md) 개체를 비교하는 `< 연산자`를 오버로드 합니다.함수에서 `lexicographical_compare(left.begin(), left.end(), right.begin())`을 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -190,10 +190,10 @@ bool operator<=(
 *N* \
 배열의 크기입니다.
 
-*왼쪽* \
+*left* \
 비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* \
+*right* \
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>주의
@@ -263,15 +263,15 @@ bool operator==(
 *N* \
 배열의 크기입니다.
 
-*왼쪽* \
+*left* \
 비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* \
+*right* \
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>주의
 
-템플릿 함수 오버 로드는 클래스 템플릿 [배열 클래스](../standard-library/array-class-stl.md)의 두 개체를 비교 하는 `operator==` 합니다. 함수에서 `equal(left.begin(), left.end(), right.begin())`을 반환합니다.
+템플릿 함수는 두 [array 클래스](../standard-library/array-class-stl.md) 개체를 비교하는 `== 연산자`를 오버로드 합니다. 함수에서 `equal(left.begin(), left.end(), right.begin())`을 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -336,10 +336,10 @@ bool operator>(
 *N* \
 배열의 크기입니다.
 
-*왼쪽* \
+*left* \
 비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* \
+*right* \
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>주의
@@ -409,10 +409,10 @@ bool operator>=(
 *N* \
 배열의 크기입니다.
 
-*왼쪽* \
+*left* \
 비교할 왼쪽 컨테이너입니다.
 
-*오른쪽* \
+*right* \
 비교할 오른쪽 컨테이너입니다.
 
 ### <a name="remarks"></a>주의
