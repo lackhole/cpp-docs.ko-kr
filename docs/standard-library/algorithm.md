@@ -1,5 +1,5 @@
 ---
-title: '&lt;algorithm&gt;'
+title: '&lt;알고리즘&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <algorithm>
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-ms.openlocfilehash: 0b9b259d49808002442492ce2912b4f9aa96d2b8
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f72969052ae3ecc0d9fb88382e1560c846e2167c
+ms.sourcegitcommit: eb254b4462a58d219376ff501bf768bd1adc07ae
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456496"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912887"
 ---
-# <a name="ltalgorithmgt"></a>&lt;algorithm&gt;
+# <a name="ltalgorithmgt"></a>&lt;알고리즘&gt;
 
 알고리즘을 수행하는 C++ 표준 라이브러리 컨테이너 템플릿 함수를 정의합니다.
 
@@ -26,9 +26,9 @@ ms.locfileid: "68456496"
 ```
 
 > [!NOTE]
-> \<algorithm> 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
+> \<알고리즘 > 라이브러리는 `#include <initializer_list>` 문도 사용 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 C++ 표준 라이브러리 알고리즘은 다양한 데이터 구조에서 작동하므로 제네릭입니다. 작동할 수 있는 데이터 구조에는 `vector`, `list` 등의 C++ 표준 라이브러리 컨테이너 클래스뿐만 아니라, 특정 알고리즘의 요구 사항을 충족하는 요소 배열 및 프로그램 정의 데이터 구조도 포함됩니다. C++ 표준 라이브러리 알고리즘은 반복기를 통해 간접적으로 컨테이너 요소를 액세스 및 이동하여 이러한 수준의 일반성을 달성합니다.
 
@@ -36,7 +36,7 @@ C++ 표준 라이브러리 알고리즘은 일반적으로 시작 또는 끝 위
 
 C++ 표준 라이브러리 알고리즘은 각 C++ 표준 라이브러리 컨테이너의 작업 및 멤버 함수로 지원되는 작업을 확장하며, 예를 들어 다른 형식의 컨테이너 개체를 동시에 사용할 수 있습니다. 알고리즘 목적에 대한 정보를 전달하기 위해 두 개의 접미사가 사용되었습니다.
 
-- `_if` 접미사는 알고리즘이 요소 값 자체가 아닌 요소 값에서 작동하는 함수 개체에 사용됨을 나타냅니다. `find_if` 알고리즘은 요소 값이 함수 개체에서 지정한 기준을 충족하는 요소를 찾고, `find` 알고리즘은 특정 값을 찾습니다.
+- `_if` 접미사는 알고리즘이 요소 자체가 아닌 요소 값에서 작동 하는 함수 개체에 사용 됨을 나타냅니다. `find_if` 알고리즘은 요소 값이 함수 개체에서 지정한 기준을 충족하는 요소를 찾고, `find` 알고리즘은 특정 값을 찾습니다.
 
 - _copy 접미사는 알고리즘이 요소 값을 조작할 뿐만 아니라 수정된 값을 대상 범위로 복사함을 나타냅니다. `reverse` 알고리즘은 범위 내 요소의 순서를 반대로 바꾸며, `reverse_copy` 알고리즘은 또한 결과를 대상 범위로 복사합니다.
 
@@ -52,7 +52,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[all_of](../standard-library/algorithm-functions.md#all_of)|지정 된 범위의 각 요소에 조건이 있을 경우 **true** 를 반환 합니다.|
 |[any_of](../standard-library/algorithm-functions.md#any_of)|지정 된 요소 범위에서 조건이 한 번 이상 있는 경우 **true** 를 반환 합니다.|
 |[binary_search](../standard-library/algorithm-functions.md#binary_search)|정렬된 범위에 지정된 값과 같거나 이진 조건자가 지정한 의미에 따라 지정된 값과 같은 요소가 있는지 여부를 테스트합니다.|
-|[clamp](../standard-library/algorithm-functions.md#clamp)||
+|[클램프](../standard-library/algorithm-functions.md#clamp)||
 |[copy](../standard-library/algorithm-functions.md#copy)|소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 정방향으로 새 위치를 할당합니다.|
 |[copy_backward](../standard-library/algorithm-functions.md#copy_backward)|소스 범위의 요소를 대상 범위에 할당하여 요소의 소스 시퀀스 전체에서 반복하고 역방향으로 새 위치를 할당합니다.|
 |[copy_if](../standard-library/algorithm-functions.md#copy_if)|지정 된 조건에 대해 **true** 를 테스트 하는 지정 된 범위에 있는 모든 요소를 복사 합니다.|
@@ -87,7 +87,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[max](../standard-library/algorithm-functions.md#max)|두 개체를 비교하고 둘 중 큰 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[max_element](../standard-library/algorithm-functions.md#max_element)|지정된 범위에서 가장 큰 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[merge](../standard-library/algorithm-functions.md#merge)|정렬된 두 소스 범위의 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
-|[min](../standard-library/algorithm-functions.md#min)|두 개체를 비교하고 둘 중 작은 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
+|[분](../standard-library/algorithm-functions.md#min)|두 개체를 비교하고 둘 중 작은 개체를 반환합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[min_element](../standard-library/algorithm-functions.md#min_element)|지정된 범위에서 가장 작은 첫 번째 요소를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 |[minmax](../standard-library/algorithm-functions.md#minmax)|두 개의 입력된 매개 변수를 비교하여 작은 수와 큰 수의 순서로 구성된 한 쌍을 반환합니다.|
 |[minmax_element](../standard-library/algorithm-functions.md#minmax_element)|한 번의 호출로 [min_element](../standard-library/algorithm-functions.md#min_element) 및 [max_element](../standard-library/algorithm-functions.md#max_element)에서 수행하는 작업을 수행합니다.|
@@ -118,7 +118,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[reverse_copy](../standard-library/algorithm-functions.md#reverse_copy)|소스 범위 내의 요소의 순서를 바꾸는 동시에 요소를 대상 범위로 복사합니다.|
 |[rotate](../standard-library/algorithm-functions.md#rotate)|인접한 두 범위에 있는 요소를 교환합니다.|
 |[rotate_copy](../standard-library/algorithm-functions.md#rotate_copy)|소스 범위 내의 인접한 두 범위의 요소를 교환하고 결과를 대상 범위로 복사합니다.|
-|[sample](../standard-library/algorithm-functions.md#sample)||
+|[샘플이](../standard-library/algorithm-functions.md#sample)||
 |[search](../standard-library/algorithm-functions.md#search)|대상 범위 내에서 시퀀스의 요소가 지정된 요소 시퀀스와 동일하거나 이진 조건자가 지정한 의미에 따라 지정된 시퀀스의 요소와 동일한 첫 번째 시퀀스를 검색합니다.|
 |[search_n](../standard-library/algorithm-functions.md#search_n)|범위에서 특정 값의 요소가 지정된 수만큼 있거나 이진 조건자가 지정한 해당 값과 관련이 있는 첫 번째 하위 시퀀스를 검색합니다.|
 |[set_difference](../standard-library/algorithm-functions.md#set_difference)|한 정렬된 소스 범위에 속하지만 두 번째 정렬된 소스 범위에 속하지 않는 모든 요소를 정렬된 단일 대상 범위로 결합합니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
@@ -137,7 +137,7 @@ C++ 표준 라이브러리 알고리즘은 해당 목적 또는 요구 사항을
 |[unique_copy](../standard-library/algorithm-functions.md#unique_copy)|서로 인접한 중복 요소를 제외하고 소스 범위의 요소를 대상 범위로 복사합니다.|
 |[upper_bound](../standard-library/algorithm-functions.md#upper_bound)|지정된 값보다 큰 값을 갖는 정렬된 범위에 있는 첫 번째 요소의 위치를 찾습니다. 정렬 기준은 이진 조건자로 지정할 수 있습니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [C++ 표준 라이브러리의 스레드 보안](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
