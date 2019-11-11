@@ -4714,6 +4714,8 @@
               items:
                 - name: 전처리기
                   href: preprocessor/preprocessor.md
+                - name: 실험적 전처리기 개요
+                  href: preprocessor/preprocessor-experimental-overview.md
                 - name: 변환 단계
                   href: preprocessor/phases-of-translation.md
                 - name: 전처리기 지시문
