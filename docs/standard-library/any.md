@@ -36,8 +36,8 @@ any 클래스 및 여러 지원 함수와 클래스를 정의합니다.
 
 |||
 |-|-|
-|[any](../standard-library/any-class.md)|생성자 요구 사항을 충족 시키거나 값이없는 any 유형을 저장합니다.|
-|[bad_any_cast](../standard-library/bad-any-cast-class.md)|`any_cast`가 실패할 경우 throw되는 개체 입니다.|
+|[any](../standard-library/any-class.md)|생성자 요구 사항을 충족시키거나 값이 없는 any 유형을 저장합니다.|
+|[bad_any_cast](../standard-library/bad-any-cast-class.md)|`any_cast`가 실패할 경우 throw되는 개체입니다.|
 
 ## <a name="see-also"></a>참고자료
 
