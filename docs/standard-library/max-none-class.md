@@ -25,7 +25,7 @@ ms.locfileid: "73626820"
 ---
 # <a name="max_none-class"></a>max_none 클래스
 
-[freelist](../standard-library/freelist-class.md) 개체를 최대 길이 0으로 제한하는 [max 클래스](../standard-library/allocators-header.md) 개체를 설명합니다.
+[freelist](../standard-library/freelist-class.md) 개체를 최대 길이를 0으로 제한하는 [max 클래스](../standard-library/allocators-header.md) 개체를 설명합니다.
 
 ## <a name="syntax"></a>구문
 

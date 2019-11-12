@@ -2,12 +2,12 @@
 title: 일반 속성(Linux C++ 프로젝트)| Microsoft Docs
 ms.date: 06/07/2019
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
-ms.openlocfilehash: ce3683f11d80c253195b751b5eed364fbc04b68a
-ms.sourcegitcommit: 8adabe177d557c74566c13145196c11cef5d10d4
+ms.openlocfilehash: c17a5e0214e6365d604a80bd4b3891858f0f9186
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66821286"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626810"
 ---
 # <a name="general-properties-linux-c"></a>일반 속성(Linux C++)
 
@@ -35,4 +35,3 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
 STL 사용 | 이 구성에 대해 사용할 C++ 표준 라이브러리를 지정합니다. | **공유 GNU 표준 C++ 라이브러리**<br>**정적 GNU 표준 C++ 라이브러리(-static)**<br>
 
 ::: moniker-end
-
