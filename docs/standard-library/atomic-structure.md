@@ -13,7 +13,7 @@ ms.locfileid: "68456741"
 ---
 # <a name="atomic-structure"></a>atomic 구조체
 
-*Ty*형식의 저장 된 값에 대해 원자 연산을 수행 하는 개체에 대해 설명 합니다.
+*Ty* 형식으로 저장된 값에 대하여 원자 연산을 수행하는 개체에 대해 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,18 +35,18 @@ struct atomic;
 |[atomic::operator+=](#op_add_eq)|지정된 값을 저장된 값에 더합니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
 |[atomic::operator--](#op_dec)|저장된 값을 감소시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
 |[atomic::operator-=](#op_sub_eq)|지정된 값을 저장된 값에서 뺍니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
-|[atomic::operator&=](#op_and_eq)|지정 된 값과 저장 된 값에 대해 비트 and를 수행 합니다. 정수 계열 특수화에서만 사용됩니다.|
-|[atomic::operator&#124;=](#op_or_eq)|지정 된 값과 저장 된 값에 대해 비트 or을 수행 합니다. 정수 계열 특수화에서만 사용됩니다.|
-|[atomic::operator^=](#op_xor_eq)|지정 된 값과 저장 된 값에 배타적 비트 or 연산을 수행 합니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator&=](#op_and_eq)|지정된 값과 저장된 값에 대해 비트 and를 수행합니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator&#124;=](#op_or_eq)|지정된 값과 저장된 값에 대해 비트 or를 수행합니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator^=](#op_xor_eq)|지정된 값과 저장된 값에 배타적 비트 or 연산을 수행합니다. 정수 계열 특수화에서만 사용됩니다.|
 |**함수**||
-|[compare_exchange_strong](#compare_exchange_strong)|**이** 에 대해 *atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
-|[compare_exchange_weak](#compare_exchange_weak)|**이** 에 대해 *weak_atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
+|[compare_exchange_strong](#compare_exchange_strong)|**this** 에 대해 *atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
+|[compare_exchange_weak](#compare_exchange_weak)|**this** 에 대해 *weak_atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
 |[fetch_add](#fetch_add)|지정된 값을 저장된 값에 더합니다.|
-|[fetch_and](#fetch_and)|지정 된 값과 저장 된 값에 대해 비트 and를 수행 합니다.|
-|[fetch_or](#fetch_or)|지정 된 값과 저장 된 값에 대해 비트 or을 수행 합니다.|
+|[fetch_and](#fetch_and)|지정된 값과 저장된 값에 대해 비트 and를 수행합니다.|
+|[fetch_or](#fetch_or)|지정된 값과 저장된 값에 대해 비트 or를 수행합니다.|
 |[fetch_sub](#fetch_sub)|지정된 값을 저장된 값에서 뺍니다.|
-|[fetch_xor](#fetch_xor)|지정 된 값과 저장 된 값에 배타적 비트 or 연산을 수행 합니다.|
-|[is_lock_free](#is_lock_free)|**이** 에 대 한 원자성 작업이 *잠금 해제*인지 여부를 지정 합니다. 원자 형식의 어떤 원자 연산도 잠금을 사용하지 않는 경우 해당 원자 형식을 *잠금 해제*라고 합니다.|
+|[fetch_xor](#fetch_xor)|지정된 값과 저장된 값에 배타적 비트 or 연산을 수행합니다.|
+|[is_lock_free](#is_lock_free)|**this**에 대한 원자성 작업이 *잠금 해제*인지 여부를 지정합니다. 원자 형식의 어떤 원자 연산도 잠금을 사용하지 않는 경우 해당 원자 형식을 *잠금 해제*라고 합니다.|
 |[load](#load)|저장된 값을 읽고 반환합니다.|
 |[store](#store)|지정된 값을 사용하여 저장된 값을 바꿉니다.|
 
@@ -133,7 +133,7 @@ Ty operator=(
 
 ### <a name="return-value"></a>반환 값
 
-*값*을 반환 합니다.
+*Value*을 반환 합니다.
 
 ## <a name="op_inc"></a>atomic:: operator + +
 
@@ -340,7 +340,7 @@ bool compare_exchange_strong(
 
 ### <a name="return-value"></a>반환 값
 
-값 비교 결과를 나타내는 **부울** 입니다.
+값 비교 결과를 나타내는 **bool** 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -395,7 +395,7 @@ bool compare_exchange_weak(
 
 ### <a name="return-value"></a>반환 값
 
-값 비교 결과를 나타내는 **부울** 입니다.
+값 비교 결과를 나타내는 **bool** 입니다.
 
 ### <a name="remarks"></a>설명
 
