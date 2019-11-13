@@ -2,7 +2,7 @@
 title: 명령줄에서 Microsoft C++ 도구 집합 사용
 description: Visual Studio IDE 외부의 명령줄에서 Microsoft C++ 컴파일러 도구 체인(MSVC)을 사용합니다.
 ms.custom: conceptual
-ms.date: 10/22/2019
+ms.date: 11/12/2019
 helpviewer_keywords:
 - command-line builds [C++]
 - compiling source code [C++], command line
@@ -10,16 +10,20 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-ms.openlocfilehash: 7aa8673b7bb29591c7cf1c26b96b48261db9fee4
-ms.sourcegitcommit: 0a5518fdb9d87fcc326a8507ac755936285fcb94
+ms.openlocfilehash: ec30cba8e119f96efc5bca156fa565db77904520
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72811163"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051488"
 ---
 # <a name="use-the-microsoft-c-toolset-from-the-command-line"></a>명령줄에서 Microsoft C++ 도구 집합 사용
 
-Visual Studio에 포함된 도구를 사용하여 명령줄에서 C 및 C++ 애플리케이션을 빌드할 수 있습니다. Microsoft C++ (MSVC) 컴파일러 도구 집합은 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지에서 독립 실행형 패키지로 다운로드할 수도 있습니다. **Visual Studio 용 빌드 도구** 패키지의 일부입니다. 개발에 C++ 필요한 도구만 다운로드 하도록 선택할 수 있습니다.
+Visual Studio에 포함된 도구를 사용하여 명령줄에서 C 및 C++ 애플리케이션을 빌드할 수 있습니다. Microsoft C++ (MSVC) 컴파일러 도구 집합을 VISUAL Studio IDE가 포함 되지 않은 독립 실행형 패키지로 다운로드할 수도 있습니다.
+
+## <a name="download-and-install-the-tools"></a>도구 다운로드 및 설치
+
+Visual Studio 및 C++ 워크 로드를 설치한 경우 모든 명령줄 도구가 있습니다. Visual Studio를 설치 C++ 하는 방법에 대 한 자세한 내용은 [visual Studio에서 지원 설치 C++ ](vscpp-step-0-installation.md)를 참조 하세요. 명령줄 도구 집합만 필요한 경우 [Visual Studio 용 빌드 도구](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)를 다운로드 합니다. 다운로드 한 실행 파일을 실행 하면 Visual Studio 설치 관리자가 업데이트 되 고 실행 됩니다. 개발에 C++ 필요한 도구만 설치 하려면  **C++ 빌드 도구** 워크 로드를 선택 합니다. **설치 세부 정보**에 포함할 선택적 라이브러리 및 도구 집합을 선택할 수 있습니다. Visual Studio 2015 또는 2017 도구 집합을 사용 하 여 코드를 빌드하려면 선택적 MSVC v140 또는 MSVC v141 build tools를 선택 합니다. 선택이 완료 되 면 **설치**를 선택 합니다.
 
 ## <a name="how-to-use-the-command-line-tools"></a>명령줄 도구를 사용하는 방법
 
@@ -150,20 +154,20 @@ Visual Studio 설치 관리자에서 C++ 워크로드 중 하나를 선택하면
 
 ::: moniker range=">= vs-2019"
 
-**Vcvars_ver = 14.2 yyyyy** 를 사용 하 여 특정 버전의 Visual Studio 2019 컴파일러 도구 집합을 지정 합니다.
+**Vcvars_ver = 14.2 yyyyy** 을 사용 하 여 특정 버전의 Visual Studio 2019 컴파일러 도구 집합을 지정 합니다.
 
-**Vcvars_ver = 14.16** 를 사용 하 여 최신 버전의 Visual Studio 2017 컴파일러 도구 집합을 지정 합니다.
+**-Vcvars_ver = 14.16** 를 사용 하 여 최신 버전의 Visual Studio 2017 컴파일러 도구 집합을 지정 합니다.
 
 ::: moniker-end
 ::: moniker range="= vs-2017"
 
-**Vcvars_ver = 14.16** 를 사용 하 여 최신 버전의 Visual Studio 2017 컴파일러 도구 집합을 지정 합니다.
+**-Vcvars_ver = 14.16** 를 사용 하 여 최신 버전의 Visual Studio 2017 컴파일러 도구 집합을 지정 합니다.
 
-특정 버전의 Visual Studio 2017 컴파일러 도구 집합을 지정 하려면 **-vcvars_ver = 14.1 x. yyyyy** 를 사용 합니다.
+**-Vcvars_ver = 14.1 x. yyyyy** 을 사용 하 여 특정 버전의 Visual Studio 2017 컴파일러 도구 집합을 지정 합니다.
 
 ::: moniker-end
 
-**Vcvars_ver = 14.0** 를 사용 하 여 Visual Studio 2015 컴파일러 도구 집합을 지정 합니다.
+**-Vcvars_ver = 14.0** 를 사용 하 여 Visual Studio 2015 컴파일러 도구 집합을 지정 합니다.
 
 #### <a name="vcvarsall"></a>기존 명령 프롬프트 창에서 빌드 환경을 설정 하려면
 

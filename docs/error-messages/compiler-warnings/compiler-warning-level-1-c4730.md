@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4730
 ms.assetid: 11303e3f-162b-4b19-970a-479686123a68
-ms.openlocfilehash: 4da60194deaeac3c79f8c3e9be3bd87d91bc7ca2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cdd6018afd26b09f7a4555ff8d0431c3364f09e
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386358"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051333"
 ---
 # <a name="compiler-warning-level-1-c4730"></a>컴파일러 경고 (수준 1) C4730
 
-'main': _m64 혼합 및 부동 소수점 식이 잘못 된 코드에서 발생할 수 있습니다
+' main ': _m64와 부동 소수점 식을 함께 지정 하면 잘못 된 코드가 생성 될 수 있습니다.
 
-함수를 사용 하 여 [__m64](../../cpp/m64.md) 하 고 **float**/**double** 형식입니다. 동일한 물리적 MMX 및 부동 소수점 레지스터를 공유 하기 때문에 레지스터 공간 (사용할 수 없습니다 동시에)를 사용 하 여 `__m64` 하 고 **float**/**double** 동일한 형식 함수는 예외를 일으킬 수 있는 데이터가 손상에서 될 수 있습니다.
+함수는 [__m64](../../cpp/m64.md) 및 **float**/**double** 형식으로 사용 합니다. MMX 및 부동 소수점 레지스터는 동일한 실제 레지스터 공간을 공유 하므로 (동시에 사용할 수 없음) 동일한 함수에서 `__m64` 및 **float**/**double** 형식을 사용 하면 데이터가 손상 되어 예외가 발생할 수 있습니다.
 
-안전 하 게 사용 `__m64` 형식과 동일한 함수에 부동 소수점 형식에 형식 중 하나를 사용 하는 각 명령으로 구분 해야 합니다 **_m_empty** (MMX 용) 또는 **_m_femms** (3DNow! 용) 내장 함수입니다.
+동일한 함수에서 `__m64` 형식 및 부동 소수점 형식을 안전 하 게 사용 하려면 형식 중 하나를 사용 하는 각 명령을 **_m_empty ()** (MMX) 또는 **_m_femms ()** (현재 위치) 내장 함수를 사용 하 여 구분 해야 합니다.
 
-다음 샘플에서는 C4730 오류가 생성 됩니다.
+다음 샘플에서는 C4730를 생성 합니다.
 
-```
+```cpp
 // C4730.cpp
 // compile with: /W1
 // processor: x86

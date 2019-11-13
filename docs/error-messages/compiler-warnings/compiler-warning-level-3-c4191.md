@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4191
 ms.assetid: 576d3bc6-95b7-448a-af31-5d798452df09
-ms.openlocfilehash: 72a485811647911207b6d048c686acdadd142b65
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd0d7dc57c8d3c94a52f72b536657bb3ea1c6b3a
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402257"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051871"
 ---
 # <a name="compiler-warning-level-3-c4191"></a>컴파일러 경고(수준 3) C4191
 
@@ -27,7 +27,7 @@ ms.locfileid: "62402257"
 
 - 다양한 인수 목록 길이( `__cdecl`에서 짧은 목록이 varargs인 경우에도 긴 목록에서 짧은 목록으로 캐스트할 때만)
 
-- 데이터에 대 한 포인터 (이외의 **void**<strong>\*</strong>) 함수에 대 한 포인터에 대 한 별칭을 지정 합니다.
+- 함수의 포인터에 대해 별칭이 지정 된 데이터에 대 한 포인터입니다 ( **void** <strong>\*</strong>제외).
 
 - `reinterpret_cast`에 오류 또는 경고를 생성하는 다른 형식 차이
 
@@ -37,7 +37,7 @@ ms.locfileid: "62402257"
 
 다음 샘플에서는 C4191을 생성합니다.
 
-```
+```cpp
 // C4191.cpp
 // compile with: /W3 /clr
 #pragma warning(default: 4191)
