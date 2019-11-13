@@ -1,18 +1,18 @@
 ---
-title: '방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정'
+title: '방법: 대상 프레임워크 및 플랫폼 도구 집합 수정'
 ms.custom: conceptual
 ms.date: 07/24/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-ms.openlocfilehash: 6af7a4eb47c1d3f8b9c52eec39795c9307ca9d8e
-ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
+ms.openlocfilehash: c5e7172fea06f6b455422fb023a0b6462b5c4103
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68492228"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73964895"
 ---
-# <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정
+# <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임워크 및 플랫폼 도구 집합 수정
 
 Visual Studio C++ 프로젝트 파일을 편집 하 여 C++ 플랫폼 도구 집합의 다른 버전, Windows SDK 및 .NET Framework를 대상으로 지정할 수C++있습니다 (/cli 프로젝트에만 해당). 기본적으로 프로젝트 시스템에는 프로젝트를 만드는 데 사용하는 Visual Studio 버전에 해당하는 .NET Framework 버전 및 도구 집합 버전이 사용됩니다. 모든 컴파일 대상에 동일한 코드 베이스를 사용할 수 있도록 .vcxproj 파일에서 이러한 모든 값을 수정할 수 있습니다.
 
@@ -30,9 +30,9 @@ Visual Studio는 프로젝트에 대 C++ 한 다중 대상도 지원 합니다. 
 
 ## <a name="target-framework-ccli-project-only"></a>대상 프레임 워크C++(/cli 프로젝트에만 해당)
 
-대상 프레임워크를 변경하는 경우 플랫폼 도구 집합도 해당 프레임워크를 지원하는 버전으로 변경합니다. 예를 들어 .NET Framework 4.5를 대상으로 하려면 Visual Studio 2015(v140), Visual Studio 2013(v120) 또는 Visual Studio 2012(v110)와 같은 호환되는 플랫폼 도구 집합을 사용해야 합니다. [Windows 7.1 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=8279) 플랫폼 도구 집합을 사용 하 여 .NET Framework 2.0, 3.0, 3.5, 4 및 x86/x64 플랫폼을 대상으로 지정할 수 있습니다.
+대상 프레임워크를 변경하는 경우 플랫폼 도구 집합도 해당 프레임워크를 지원하는 버전으로 변경합니다. 예를 들어 .NET Framework 4.5를 대상으로 하려면 Visual Studio 2015(v140), Visual Studio 2013(v120) 또는 Visual Studio 2012(v110)와 같은 호환되는 플랫폼 도구 집합을 사용해야 합니다. [Windows 7.1 SDK](https://www.microsoft.com/download/details.aspx?id=8279) 플랫폼 도구 집합을 사용 하 여 .NET Framework 2.0, 3.0, 3.5, 4 및 x86/x64 플랫폼을 대상으로 지정할 수 있습니다.
 
-사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 Visual C++ 블로그의 [C++ Native Multi-Targeting](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) 을 참조하세요.
+사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 Visual C++ 블로그의 [C++ Native Multi-Targeting](https://devblogs.microsoft.com/cppblog/c-native-multi-targeting/) 을 참조하세요.
 
 ### <a name="to-change-the-target-framework"></a>대상 프레임워크를 변경하려면
 
@@ -65,6 +65,6 @@ Visual Studio는 프로젝트에 대 C++ 한 다중 대상도 지원 합니다. 
 
 1. **확인** 단추를 선택합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[명령줄의 MSBuild - C++](msbuild-visual-cpp.md)
+[명령줄에서 MSBuild 사용 - C++](msbuild-visual-cpp.md)

@@ -1,29 +1,29 @@
 ---
-title: 컴파일러 경고(수준 1) C4486
+title: 컴파일러 경고 (수준 1) C4486
 ms.date: 11/04/2016
 f1_keywords:
 - C4486
 helpviewer_keywords:
 - C4486
 ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
-ms.openlocfilehash: 402d5eefde6c2dfd5693e53c27edb00d1ac2e56c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4c92c23af4aeb6a18c812517cfef9fa00d15dfcb
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404067"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965401"
 ---
-# <a name="compiler-warning-level-1-c4486"></a>컴파일러 경고(수준 1) C4486
+# <a name="compiler-warning-level-1-c4486"></a>컴파일러 경고 (수준 1) C4486
 
-'function': ref 클래스 또는 값 클래스의 전용 가상 메서드를 'sealed'으로 표시 되어야 합니다
+' function ': ref 클래스 또는 값 클래스의 전용 가상 메서드는 ' sealed '로 표시 되어야 합니다.
 
-관리 되는 클래스 또는 구조체의 전용 가상 멤버 함수는 액세스 또는 재정의가 가능 없습니다, 하므로 표시 되어야 합니다 [봉인](../../extensions/sealed-cpp-component-extensions.md)합니다.
+관리 되는 클래스 또는 구조체의 전용 가상 멤버 함수는 액세스 하거나 재정의할 수 없으므로 [sealed](../../extensions/sealed-cpp-component-extensions.md)로 표시 되어야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C4486 오류가 발생 합니다.
+다음 샘플에서는 C4486를 생성 합니다.
 
-```
+```cpp
 // C4486.cpp
 // compile with: /clr /c /W1
 ref class B {
@@ -35,9 +35,9 @@ private:
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 개인 sealed로 표시 된 가상 함수는 한 가지 가능한 용도 보여 줍니다.
+다음 샘플에서는 전용 sealed 가상 함수를 사용 하는 한 가지 방법을 보여 줍니다.
 
-```
+```cpp
 // C4486_b.cpp
 // compile with: /clr /c
 ref class B {};

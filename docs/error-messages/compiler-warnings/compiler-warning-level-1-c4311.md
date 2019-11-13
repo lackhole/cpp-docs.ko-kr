@@ -1,19 +1,19 @@
 ---
-title: 컴파일러 경고(수준 1) C4311
+title: 컴파일러 경고 (수준 1) C4311
 ms.date: 11/04/2016
 f1_keywords:
 - C4311
 helpviewer_keywords:
 - C4311
 ms.assetid: ddc579d0-d051-47bc-915d-71ffb32323c9
-ms.openlocfilehash: 6e44dafb6675882a1a62fba5144f85120378421d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: adb5c4bf3103cf98fb557a5f54b6a64013356475
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510052"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966125"
 ---
-# <a name="compiler-warning-level-1-c4311"></a>컴파일러 경고(수준 1) C4311
+# <a name="compiler-warning-level-1-c4311"></a>컴파일러 경고 (수준 1) C4311
 
 'variable' : 'type'에서 'type'(으)로 포인터가 잘립니다.
 
@@ -23,7 +23,7 @@ ms.locfileid: "69510052"
 
 다음 코드 예제는 64비트 대상에 대해 컴파일할 경우 C4311 경고가 발생하며, 해결 방법을 보여 줍니다.
 
-```
+```cpp
 // C4311.cpp
 // compile by using: cl /W1 C4311.cpp
 int main() {
