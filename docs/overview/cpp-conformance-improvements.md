@@ -5,12 +5,12 @@ description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하�
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: d313a9a1f9f2bc1aa091935658ca1214f929c048
-ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
+ms.openlocfilehash: 0bbfc364da217525251df0c5f09544ed1ccfe5b6
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71998892"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627082"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -810,7 +810,7 @@ struct Comparer  {
 
 ## <a name="improvements_150"></a> Visual Studio 2017 RTW(버전 15.0)의 규칙 향상
 
-집계를 위한 일반화된 **constexpr** 및 NSDMI(비정적 데이터 멤버 초기화) 지원이 추가되면서, 이제 Visual Studio 2017의 Microsoft C++ 컴파일러는 C++14 표준에 추가된 기능을 완벽하게 갖췄습니다. 하지만 C++11 및 C++98 표준의 몇 가지 기능은 아직 컴파일러에 구현되지 않았습니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Visual C++ Language Conformance](../visual-cpp-language-conformance.md)(Visual C++ 언어 규칙)를 참조하세요.
+집계를 위한 일반화된 **constexpr** 및 NSDMI(비정적 데이터 멤버 초기화) 지원이 추가되면서, 이제 Visual Studio 2017의 Microsoft C++ 컴파일러는 C++14 표준에 추가된 기능을 완벽하게 갖췄습니다. 하지만 C++11 및 C++98 표준의 몇 가지 기능은 아직 컴파일러에 구현되지 않았습니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Microsoft C++ 언어 규칙 테이블](../visual-cpp-language-conformance.md)을 참조하세요.
 
 ### <a name="c11-expression-sfinae-support-in-more-libraries"></a>C++11: 더 많은 라이브러리의 SFINAE 식 지원
 
@@ -2850,4 +2850,4 @@ Visual Studio 2015, 업데이트 3까지 규칙 향상의 전체 목록은 [Visu
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual C++ 언어 규칙](../visual-cpp-language-conformance.md)
+[Microsoft C++ 언어 규칙 테이블](../visual-cpp-language-conformance.md)

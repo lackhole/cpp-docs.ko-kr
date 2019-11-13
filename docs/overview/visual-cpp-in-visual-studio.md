@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 67bed9a8ce9b5cfbe11a5383d2f67ea6c02d1106
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: ea047aca90b03179c0a39cb653e0b9bc08306c64
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552368"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626211"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio의 C++
 
@@ -36,7 +36,7 @@ Visual Studio의 새로운 기능을 알아봅니다.
 [Visual Studio의 C++ 규칙 향상](cpp-conformance-improvements.md)<br/>
 Visual Studio의 C++ 규칙 향상에 대해 알아봅니다.
 
-[Visual C++ 언어 규칙](visual-cpp-language-conformance.md)<br/>
+[Microsoft C++ 언어 규칙 테이블](visual-cpp-language-conformance.md)<br/>
 MSVC C++ 컴파일러의 기능별 규칙 상태 목록입니다.
 
 [Visual C++ 변경 기록 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
@@ -130,7 +130,7 @@ ODBC 및 OLE DB를 사용하여 데이터베이스에 연결합니다.
 
 [C 언어 참조](../c-language/c-language-reference.md)
 
-[컴파일러 내장 및 어셈블리 언어](../intrinsics/compiler-intrinsics-and-assembly-language.md)
+[컴파일러 내장 함수 및 어셈블리 언어](../intrinsics/compiler-intrinsics-and-assembly-language.md)
 
 ## <a name="c-libraries-in-visual-studio"></a>Visual Studio의 C++ 라이브러리
 
@@ -179,4 +179,4 @@ Visual Studio에 대한 도움말을 보고 버그를 제출하고 제안을 하
 
 - [C 언어 참조](../c-language/c-language-reference.md)
 - [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)
-- [컴파일러 내장 및 어셈블리 언어](../intrinsics/compiler-intrinsics-and-assembly-language.md)
+- [컴파일러 내장 함수 및 어셈블리 언어](../intrinsics/compiler-intrinsics-and-assembly-language.md)

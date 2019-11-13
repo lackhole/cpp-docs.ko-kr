@@ -5,12 +5,12 @@ ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: f02c5878f5f741c216499f619bfd1392483bfa86
-ms.sourcegitcommit: 9b904e490b1e262293a602bd1291a8f3045e755b
+ms.openlocfilehash: bde8b8e17c3186d22493f099a5f7d1b5a2646a67
+ms.sourcegitcommit: 2362d15b5eb18d27773c3f7522da3d0eed9e2571
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552353"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754140"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio의 새로운 C++ 기능
 
@@ -257,6 +257,10 @@ Visual Studio 2017에는 C++ 환경에 대한 많은 업데이트와 수정이 �
 
 Visual Studio 버전 15.7의 MSVC 컴파일러 도구 집합은 이제 C++ 표준을 준수합니다. 자세한 내용은 [알림: MSVC의 C++ 표준 준수](https://devblogs.microsoft.com/cppblog/announcing-msvc-conforms-to-the-c-standard/) 및 [Microsoft C++ 언어 규칙](../visual-cpp-language-conformance.md)을 참조하세요.
 
+##### <a name="visual-studio-2017-version-158"></a>Visual Studio 2017 버전 15.8
+
+[/experimental:preprocessor](../build/reference/experimental-preprocessor.md) 컴파일러 스위치를 사용하면 궁극적으로 적용 가능한 모든 C 및 C++ 표준을 준수하는 새로운 실험적 MSVC 전처리기를 사용할 수 있습니다. 자세한 내용은 [MSVC 실험적 전처리기 개요](../preprocessor/preprocessor-experimental-overview.md)를 참조하세요.
+
 ### <a name="new-compiler-options"></a>새로운 컴파일러 옵션
 
 - [/permissive-](../build/reference/permissive-standards-conformance.md): 모든 엄격한 표준 준수 컴파일러 옵션을 사용하고 대부분의 Microsoft 전용 컴파일러 확장(예: `__declspec(dllimport)` 제외)을 사용하지 않도록 설정합니다. 이 옵션은 Visual Studio 2017 버전 15.5에서 기본적으로 켜져 있습니다.  **/permissive-** conformance 모드에는 2단계 이름 조회에 대한 지원이 포함됩니다. 자세한 내용은 [Visual Studio의 C++ 규칙 향상](cpp-conformance-improvements.md)을 참조하세요.
@@ -360,11 +364,11 @@ Visual Studio 2017 RTM에서 향상된 표준 라이브러리 기능의 전체 �
 - \<optional\>, \<variant\>, `shared_ptr::weak_type` 및 \<cstdalign\>을 추가했습니다.
 - `min(initializer_list)`, `max(initializer_list)`, `minmax(initializer_list)`, `min_element()`, `max_element()`, `minmax_element()`에서 C++14 `constexpr`을 사용하도록 설정했습니다.
 
-자세한 내용은 [Visual C++ 언어 규칙](../visual-cpp-language-conformance.md)을 참조하세요.
+자세한 내용은 [Microsoft C++ 언어 규칙 테이블](../visual-cpp-language-conformance.md)을 참조하세요.
 
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 15.3 버전
 
-- 몇 가지 C++17 추가 기능이 구현되었습니다. 자세한 내용은 [Visual C++ 언어 규칙](cpp-conformance-improvements.md#improvements_153)을 참조하세요.
+- 몇 가지 C++17 추가 기능이 구현되었습니다. 자세한 내용은 [Microsoft C++ 언어 규칙 테이블](cpp-conformance-improvements.md#improvements_153)을 참조하세요.
 - 구현된 P0602R0 "variant 및 optional에서 복사/이동 사소성(triviality)을 전파해야 합니다".
 - 이제 표준 라이브러리에서 [/GR-](../build/reference/gr-enable-run-time-type-information.md) 옵션을 통해 동적 RTTI를 해제할 수 있도록 공식적으로 허용합니다. `dynamic_pointer_cast()` 및 `rethrow_if_nested()`는 둘 다 기본적으로 `dynamic_cast`가 필요하므로 표준 라이브러리에서 이제 **/GR-** 아래에 `=delete`로 표시됩니다.
 - 동적 RTTI가 **/GR-** 을 통해 해제된 경우에도 `typeid(SomeType)` 양식의 “정적 RTTI”는 계속 사용할 수 있으며, 몇 가지 표준 라이브러리 구성 요소를 지원합니다. 이제 표준 라이브러리에서 **/D\_HAS\_STATIC\_RTTI=0**을 통해 이 기능도 해제할 수 있도록 지원합니다. 이 플래그는 `std::function`의 `std::any`, `target()` 및 `target_type()` 멤버 함수와 `std::shared_ptr` 및 `std::weak_ptr`의 `get_deleter()` friend 멤버 함수도 사용하지 않도록 설정합니다.
@@ -422,7 +426,7 @@ Visual Studio 2017 RTM에서 향상된 표준 라이브러리 기능의 전체 �
 - `constexpr char_traits`
 - 표준 라이브러리에 대한 추론 가이드
 
-자세한 내용은 [Visual C++ 언어 규칙](../visual-cpp-language-conformance.md)을 참조하세요.
+자세한 내용은 [Microsoft C++ 언어 규칙 테이블](../visual-cpp-language-conformance.md)을 참조하세요.
 
 ### <a name="performance-and-throughput-fixes"></a>성능 및 처리량 수정
 
@@ -570,7 +574,7 @@ Visual Studio 2017에서는 MSBuild 프로젝트 파일(.vcxproj)로 변환하�
 
 - CMakeLists.txt 파일과 같은 폴더에 있는 CMakeSettings.json 파일을 통해 추가 구성이 지원됩니다.
 
-  ![Cmake 폴더 열기](media/cmake-cpp.png "Cmake 폴더 열기")
+  ![CMake 폴더 열기](media/cmake-cpp.png "CMake 폴더 열기")
 
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 15.3 버전
 
