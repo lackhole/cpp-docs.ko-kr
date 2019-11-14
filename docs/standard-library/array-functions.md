@@ -49,7 +49,7 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 요소의 형식입니다.
 
 *N*\
-배열의 요소수 입니다.
+배열의 요소 수입니다.
 
 *arr*\
 선택할 배열입니다.
