@@ -125,7 +125,7 @@ bool operator<(
 
 ### <a name="remarks"></a>주의
 
-템플릿 함수는 두 [array 클래스](../standard-library/array-class-stl.md) 개체를 비교하는 `< 연산자`를 오버로드 합니다.함수에서 `lexicographical_compare(left.begin(), left.end(), right.begin())`을 반환합니다.
+템플릿 함수는 두 [array 클래스](../standard-library/array-class-stl.md) 클래스 템플릿 개체를 비교하는 `< 연산자`를 오버로드합니다. 함수에서 `lexicographical_compare(left.begin(), left.end(), right.begin())`을 반환합니다.
 
 ### <a name="example"></a>예제
 
@@ -271,7 +271,7 @@ bool operator==(
 
 ### <a name="remarks"></a>주의
 
-템플릿 함수는 두 [array 클래스](../standard-library/array-class-stl.md) 개체를 비교하는 `== 연산자`를 오버로드 합니다. 함수에서 `equal(left.begin(), left.end(), right.begin())`을 반환합니다.
+템플릿 함수는 두 [array 클래스](../standard-library/array-class-stl.md) 클래스 템플릿 개체를 비교하는 `== 연산자`를 오버로드합니다. 함수에서 `equal(left.begin(), left.end(), right.begin())`을 반환합니다.
 
 ### <a name="example"></a>예제
 
