@@ -56,7 +56,7 @@ struct atomic;
 
 모든 포인터 형식에 대 한 부분 특수화 인 **원자성\<Ty \* >** 가 있습니다. 특수화를 사용하면 관리되는 포인터 값에 오프셋을 더하거나 값에서 오프셋을 뺄 수 있습니다. 산술 연산은 형식의 `ptrdiff_t` 인수를 사용 하 고, 일반 주소 산술과 일관 되도록 *Ty* 의 크기에 따라 해당 인수를 조정 합니다.
 
-**Bool**을 제외한 모든 정수 계열 형식에 대 한 특수화가 있습니다. 각 특수화에서는 원자 산술 및 논리 연산을 위한 다양한 방법을 제공합니다.
+**bool**을 제외한 모든 정수 계열 형식에 대한 특수화가 있습니다. 각 특수화에서는 원자 산술 및 논리 연산을 위한 다양한 방법을 제공합니다.
 
 ||||
 |-|-|-|
@@ -66,11 +66,11 @@ struct atomic;
 |**atomic\<unsigned int>**|**atomic\<long>**|**atomic\<unsigned long>**|
 |**원자\<long long >**|**원자성\<부호 없는 long long >**|
 
-정수 특수화는 해당 `atomic_integral` 형식에서 파생됩니다. 예를 들어 **,\<원자성 부호 없는 int >** 은 `atomic_uint`에서 파생 됩니다.
+정수 특수화는 해당 `atomic_integral` 형식에서 파생됩니다. 예를 들어 **atomic\<unsigned int >** 은 `atomic_uint`에서 파생 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<원자성 >
+**헤더:** \<atomic>
 
 **네임스페이스:** std
 
@@ -86,7 +86,7 @@ atomic( Ty Value ) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 초기화 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -128,7 +128,7 @@ Ty operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty* 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -165,7 +165,7 @@ Ty atomic<Ty>::operator+=(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 정수 계열 또는 포인터 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -206,7 +206,7 @@ Ty atomic<Ty>::operator-=(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 정수 계열 또는 포인터 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -232,7 +232,7 @@ atomic<Ty>::operator&= (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -258,7 +258,7 @@ atomic<Ty>::operator|= (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -284,7 +284,7 @@ atomic<Ty>::operator^= (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -297,7 +297,7 @@ atomic<Ty>::operator^= (
 
 ## <a name="compare_exchange_strong"></a> atomic::compare_exchange_strong
 
-**\*이**에 대해 원자성 비교 및 교환 작업을 수행 합니다.
+**\*this**에 대해 원자성 비교 및 교환 작업을 수행 합니다.
 
 ```cpp
 bool compare_exchange_strong(
@@ -329,7 +329,7 @@ bool compare_exchange_strong(
 *.Exp*\
 *Ty*형식의 값입니다.
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 *Order1*\
@@ -352,7 +352,7 @@ bool compare_exchange_strong(
 
 ## <a name="compare_exchange_weak"></a> atomic::compare_exchange_weak
 
-**\*이**에서 약한 원자 비교 및 교환 작업을 수행 합니다.
+**\*this**에서 약한 원자 비교 및 교환 작업을 수행 합니다.
 
 ```cpp
 bool compare_exchange_weak(
@@ -384,7 +384,7 @@ bool compare_exchange_weak(
 *.Exp*\
 *Ty*형식의 값입니다.
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 *Order1*\
@@ -424,10 +424,10 @@ Ty atomic<Ty>::exchange(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -455,10 +455,10 @@ Ty atomic<Ty>::fetch_add (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -486,10 +486,10 @@ Ty atomic<Ty>::fetch_and (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -517,10 +517,10 @@ Ty atomic<Ty>::fetch_or (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -548,10 +548,10 @@ Ty atomic<Ty>::fetch_sub (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -579,10 +579,10 @@ Ty atomic<Ty>::fetch_xor (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -624,7 +624,7 @@ Ty atomic::load(
 
 ### <a name="parameters"></a>매개 변수
 
-*주문을*\
+*Order*\
 `memory_order` *순서* 는 `memory_order_release` 또는 `memory_order_acq_rel`가 아니어야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -648,15 +648,15 @@ void atomic<Ty>::store(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty* 개체입니다.
 
-*주문을*\
+*Order*\
 `memory_order` 제약 조건입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 *Order*로 지정 `*this`된 메모리 제약 조건 내에서 *값* 을 원자 단위로 저장 합니다.
+이 멤버 함수는 *Order*로 지정 `*this`된 메모리 제약 조건 내에서 *Value* 을 원자 단위로 저장 합니다.
 
 ## <a name="see-also"></a>참고자료
 
