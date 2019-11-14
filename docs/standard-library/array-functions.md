@@ -19,7 +19,7 @@ ms.locfileid: "68456779"
 ---
 # <a name="ltarraygt-functions"></a>&lt;array&gt; 함수
 
-배열 > 헤더에는 **배열** 개체에 대해 작동 하 `get` 는 `swap`멤버 함수 두 개 (및)가 포함 되어 있습니다. \<
+\<array> 헤더에는 **배열** 개체에 대해 작동하는 두가지 비 맴버함수 `get`과 `swap`이 포함되어 있습니다.
 
 |||
 |-|-|
@@ -42,13 +42,13 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*인덱싱할*\
+*Index*\
 요소 오프셋입니다.
 
-*트*\
+*T*\
 요소의 형식입니다.
 
-*개의*\
+*N*\
 배열의 요소 수입니다.
 
 *arr*\
@@ -88,7 +88,7 @@ int main()
 
 ## <a name="swap"></a>  swap
 
-두 배열 개체를 교환 하는 `std::swap` 의 멤버가 아닌  템플릿 특수화입니다.
+두 배열 개체를 교환하는 `std::swap`의 멤버가 아닌 템플릿 특수화입니다.
 
 ```cpp
 template <class Ty, std::size_t N>
@@ -100,13 +100,13 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 *Ty*\
 요소의 형식입니다.
 
-*개의*\
+*N*\
 배열의 크기입니다.
 
-*비어*\
+*left*\
 교환할 첫 번째 배열입니다.
 
-*오른쪽*\
+*right*\
 교환할 두 번째 배열입니다.
 
 ### <a name="remarks"></a>설명
