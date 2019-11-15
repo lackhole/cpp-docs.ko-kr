@@ -348,7 +348,7 @@ bool compare_exchange_strong(
 
 두 번째 `memory_order` 를 포함 하지 않는 오버 로드는 *Order1*의 값을 기반으로 하는 암시적 *Order2* 를 사용 합니다. *Order1* `memory_order_acq_rel`가 이면 *Order2* 는 `memory_order_acquire`입니다. *Order1* `memory_order_release`가 이면 *Order2* 는 `memory_order_relaxed`입니다. 다른 모든 경우에는 *Order2* 가 *Order1*와 같습니다.
 
-`memory_order` 두 개의 매개 변수를 사용 하는 오버 로드의 경우 *Order2* `memory_order_release` 의 값은 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*값 보다 더 강력 하지 않아야 합니다.
+두 개의 매개 변수를 사용하는 `memory_order` 오버로드의 경우 *Order2*의 값은 `memory_order_release` 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*의 값보다 더 강력하지 않아야 합니다.
 
 ## <a name="compare_exchange_weak"></a> atomic::compare_exchange_weak
 
@@ -405,7 +405,7 @@ bool compare_exchange_weak(
 
 두 번째 `memory_order` 를 포함 하지 않는 오버 로드는 *Order1*의 값을 기반으로 하는 암시적 *Order2* 를 사용 합니다. *Order1* `memory_order_acq_rel`가 이면 *Order2* 는 `memory_order_acquire`입니다. *Order1* `memory_order_release`가 이면 *Order2* 는 `memory_order_relaxed`입니다. 다른 모든 경우에는 *Order2* 가 *Order1*와 같습니다.
 
-`memory_order` 두 개의 매개 변수를 사용 하는 오버 로드의 경우 *Order2* `memory_order_release` 의 값은 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*값 보다 더 강력 하지 않아야 합니다.
+두 개의 매개 변수를 사용하는 `memory_order` 오버로드의 경우 *Order2*의 값은 `memory_order_release` 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*의 값보다 더 강력하지 않아야 합니다.
 
 ## <a name="exchange"></a> atomic::exchange
 
@@ -607,7 +607,7 @@ bool is_lock_free() const volatile noexcept;
 
 ### <a name="remarks"></a>설명
 
-원자성 형식은 잠금을 사용 하는 원자성 연산이 없는 경우 잠금 해제 됩니다.
+원자성 형식은 잠금을 사용하는 원자성 연산이 없는 경우 잠금 해제됩니다.
 
 ## <a name="load"></a>atomic:: load
 
