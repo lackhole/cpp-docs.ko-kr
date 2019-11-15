@@ -57,7 +57,7 @@ ms.locfileid: "72688457"
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 
-원자 단위 연산을 지원하는 형식을 만드는데 사용할 클래스 및 클래스 템플릿을 정의 합니다.
+원자 단위 연산을 지원하는 형식을 만드는 데 사용할 클래스 및 클래스 템플릿을 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -68,9 +68,9 @@ ms.locfileid: "72688457"
 ## <a name="remarks"></a>주의
 
 > [!NOTE]
-> **/clr**을 사용하여 컴파일된 코드에서이 헤더는 차단 됩니다.
+> **/clr**을 사용하여 컴파일된 코드에서 이 헤더는 차단됩니다.
 
-원자 연산에는 뮤텍스 잠금을 사용하지 않은채 여러 스레드를 사용하여 개체를 올바르게 조작하는 데 도움이 되는 두 가지 주요 속성이 있습니다.
+원자 연산에는 뮤텍스 잠금을 사용하지 않은 채 여러 스레드를 사용하여 개체를 올바르게 조작하는 데 도움이 되는 두 가지 주요 속성이 있습니다.
 
 - 원자 연산은 나눌 수 없으므로, 다른 스레드의 동일한 개체에 대한 두 번째 원자 연산은 첫 번째 원자 연산 이전 또는 이후에만 개체의 상태를 가져올 수 있습니다.
 
@@ -82,7 +82,7 @@ ms.locfileid: "72688457"
 
 [Atomic_flag](../standard-library/atomic-flag-structure.md) 클래스는 **bool** 플래그를 포함 하는 최소 원자성 형식을 제공 합니다. 해당 연산은 항상 잠금 해제입니다.
 
-클래스 템플릿 `atomic<T>` 인수 형식 `T`의 개체를 저장 하 고 저장 된 값에 대한 원자성 액세스를 제공 합니다. [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)를 사용하여 복사할 수 있고 [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)를 사용하여 같음을 테스트할 수 있는 모든 형식을 사용하여 인스턴스화할 수 있습니다. 특히 이 클래스는 이러한 요구 사항을 충족하는 사용자 정의 형식과 함께, 그리고 많은 경우 부동 소수점 형식과 함께 사용할 수 있습니다.
+클래스 템플릿 `atomic<T>`는 인수 형식 `T`의 개체를 저장하고 저장된 값에 대한 원자성 액세스를 제공합니다. [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)를 사용하여 복사할 수 있고 [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)를 사용하여 같음을 테스트할 수 있는 모든 형식을 사용하여 인스턴스화할 수 있습니다. 특히 이 클래스는 이러한 요구 사항을 충족하는 사용자 정의 형식과 함께, 그리고 많은 경우 부동 소수점 형식과 함께 사용할 수 있습니다.
 
 템플릿에는 또한 정수 형식에 대한 특수화 집합 및 포인터에 대한 부분 특수화가 포함됩니다. 이러한 특수화는 기본 템플릿을 통해 사용할 수 없는 추가 작업을 제공합니다.
 
@@ -155,7 +155,7 @@ Typedef 이름은 \<inttypes.h> 헤더에 정의된 일부 형식에 대한 원�
 |name|설명|
 |----------|-----------------|
 |[atomic 구조체](../standard-library/atomic-structure.md)|저장된 값에 대해 원자 연산을 수행하는 개체를 설명합니다.|
-|[atomic_flag 구조체](../standard-library/atomic-flag-structure.md)|**Bool** 플래그를 원자 단위로 설정하고 지우는 개체를 설명 합니다.|
+|[atomic_flag 구조체](../standard-library/atomic-flag-structure.md)|**Bool** 플래그를 원자 단위로 설정하고 지우는 개체를 설명합니다.|
 
 ## <a name="enums"></a>열거형
 
