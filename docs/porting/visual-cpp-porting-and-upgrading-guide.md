@@ -1,15 +1,15 @@
 ---
 title: Microsoft C++ 포팅 및 업그레이드 가이드
 description: Microsoft C++ 코드를 최신 버전의 Visual Studio로 업그레이드 합니다.
-ms.date: 10/29/2019
+ms.date: 11/05/2019
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: overview
-ms.openlocfilehash: d67c2665574242a46d697f6e9f24321556146958
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 04c3950d637c01031e78d0d95e13232143ceb232
+ms.sourcegitcommit: 4dde7914608508e47c21cae03ac58fe953a0c29b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73625690"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74119495"
 ---
 # <a name="microsoft-c-porting-and-upgrading-guide"></a>Microsoft C++ 포팅 및 업그레이드 가이드
 
@@ -25,7 +25,7 @@ Visual Studio 2015, Visual Studio 2017 및 Visual Studio 2019의 도구 집합�
 
 - 향상 된 컴파일러 최적화로 인해 동일한 코드를 더 빠르게 실행할 수 있습니다.
 
-- 최신 C++ 기능 및 프로그래밍 사례는 버그의 일반적인 몇 가지 원인을 제거 하 고 이전 C 스타일 관용구를 유지 관리 하는 것이 훨씬 쉽습니다.
+- 최신 C++ 기능 및 프로그래밍 방법에서는 많은 일반적인 버그 원인을 제거 하 고 이전 C 스타일 관용구 보다 훨씬 더 쉽게 유지 관리할 수 있는 코드를 생성 합니다.
 
 - 컴파일러 및 링커의 성능 향상으로 인해 빌드 시간이 훨씬 더 빠릅니다.
 
@@ -48,6 +48,7 @@ Visual Studio 2015, Visual Studio 2017 및 Visual Studio 2019의 도구 집합�
 |제목|설명|
 |-----------|-----------------|
 |[이전 C++ 버전의 Visual Studio에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|코드 베이스를 Visual Studio 2019로 업그레이드 하 고 컴파일러를 v142 하는 방법입니다.|
+|[코드를 업그레이드 C++ 하기 위한 IDE 도구](ide-tools-for-upgrading-code.md)|업그레이드 프로세스에 도움이 되는 유용한 IDE 기능입니다.|
 |[C++2015과 2019 사이의 이진 호환성](binary-compat-2015-2017.md)|V142 프로젝트에서 v140 라이브러리를 그대로 사용 합니다.|
 |[Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](use-native-multi-targeting.md)|이전 컴파일러 및 라이브러리와 함께 Visual Studio 2019을 사용 합니다.|
 |[Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)|코드를 변경 해야 할 수 있는 Visual Studio C++ 2003 ~ 2015의 Microsoft 라이브러리 및 빌드 도구의 모든 변경 내용 목록입니다.|
