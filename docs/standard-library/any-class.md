@@ -108,7 +108,7 @@ template <class T>
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*right*\
 any로 복사되는 any입니다.
 
 ## <a name="reset"></a> 다시 설정

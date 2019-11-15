@@ -24,7 +24,7 @@ ms.locfileid: "72690047"
 **네임스페이스:** std
 
 > [!NOTE]
-> 또한 \<array > 라이브러리는 `#include <initializer_list>` 문을 사용 합니다.
+> \<array > 라이브러리는 또한 `#include <initializer_list>` 문을 사용합니다.
 
 ## <a name="members"></a>멤버
 

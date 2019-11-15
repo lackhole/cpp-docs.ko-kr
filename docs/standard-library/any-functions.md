@@ -52,8 +52,8 @@ void swap(any& left, any& right) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*left*\
 `any` 형식의 개체입니다.
 
-*오른쪽*\
+*right*\
 `any` 형식의 개체입니다.
