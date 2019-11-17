@@ -35,10 +35,10 @@ operator&(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* \
+*left* \
 각각의 요소를 비트 `AND`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* \
+*right* \
 각각의 요소를 비트 `AND`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -86,7 +86,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* \
+*right* \
 출력 스트림에 문자열로 삽입할 **bitset\<N>** 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -95,7 +95,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="remarks"></a>주의
 
-템플릿 함수 오버 `operator<<`로드를 사용 하 여 bitset을 먼저 문자열로 변환 하지 않고 쓸 수 있습니다. 템플릿 함수는 다음을 효과적으로 실행합니다.
+템플릿 함수 `<< 연산자` 오버로드를 사용하여 bitset을 먼저 문자열로 변환하지 않고 쓸 수 있습니다. 템플릿 함수는 다음을 효과적으로 실행합니다.
 
 `ostr << right.`[to_string](bitset-class.md)`<CharType, Traits, allocator<CharType>>()`
 
@@ -146,18 +146,18 @@ basic_istream<CharType, Traits>& operator>> (
 *i_str*\
 bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 
-*오른쪽* \
+*right* \
 입력 스트림에서 비트를 수신하는 bitset입니다.
 
 ### <a name="return-value"></a>반환 값
 
-템플릿 함수는 *i_str*문자열을 반환 합니다.
+템플릿 함수는 *i_str* 문자열을 반환 합니다.
 
 ### <a name="remarks"></a>주의
 
-`operator>>` 템플릿 함수 오버 로드는 bitset에 `bitset(str)`값 `str` *오른쪽* 에 저장 합니다. 여기서는 *i_str*에서 추출 된 [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` 형식의 개체입니다.
+템플릿 함수는 `>> 연산자`를 오버 로드하여 `bitset(str)`값을 bitset *right*에 저장 합니다. 여기서 `str`은 *i_str*에서 추출된 [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` 형식의 개체입니다.
 
-템플릿 함수는 *i_str* 에서 요소를 추출 하 여 다음이 될 때까지 bitset에 삽입 합니다.
+템플릿 함수는 *i_str* 에서 요소를 추출하여 다음이 될 때까지 bitset에 삽입 합니다.
 
 - 모든 비트 요소가 입력 스트림에서 추출되어 bitset에 저장될 때까지
 
@@ -228,10 +228,10 @@ operator^(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* \
+*left* \
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* \
+*right* \
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -280,10 +280,10 @@ operator|(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* \
+*left* \
 각각의 요소를 비트 `OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* \
+*right* \
 각각의 요소를 비트 `OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
