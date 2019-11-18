@@ -16,24 +16,24 @@ ms.locfileid: "68341133"
 ---
 # <a name="ltccomplexgt"></a>&lt;ccomplex&gt;
 
-표준 라이브러리 C++ 헤더 [ \<복합 >](complex.md)를 포함 합니다.
+표준 라이브러리 C++ 헤더 [\<complex>](complex.md)를 포함 합니다.
 
 > [!NOTE]
-> C 표준 라이브러리 \<복합. h > 헤더는 복합 > 및 \< \<ccomplex >의 C++ \<오버 로드로 인해 효과적으로 대체 되기 때문에 ccomplex >에 포함 되지 않습니다. 이렇게 하면 \<ccomplex > 헤더를 중복 하 게 됩니다. 에서 더 이상 사용 되지 않는 > 헤더는 C++에서 더 이상 사용 되지 않습니다. \< \<Ccomplex > 헤더는 c + + 17에서 더 이상 사용 되지 않으며 초안 c + + 20 표준에서 제거 되었습니다.
+> C 표준 라이브러리 \<complex.h> 헤더는 \<ccomplex>에 포함되지 않습니다. 그 이유는 \<complex>와 \<cmath>의 C++ 오버헤드가 효과적으로 대체되기 때문입니다. 하지만 이것은 \<ccomplex> 헤더를 중복하게 됩니다. \<complex.h> 헤더는 C++에서 더 이상 사용되지 않습니다. \<ccomplex> 헤더는 C++ 17 표준과 C++ 20 표준 초안에서 제거 되었습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<ccomplex >
+**헤더:** \<ccomplex>
 
 **네임스페이스:** std
 
 ## <a name="remarks"></a>설명
 
->에서 `clog` `std` `clog` [ \<](iostream.md)선언 되는 이름은 iostream >에 선언 된와 충돌 될 수 있으므로 네임 스페이스에 정의 되어 있지 않습니다. \<
+\<complex.h>에서 선언되어 있는 `clog`는 `std` 네임스페이스에 정의되어 있지 않습니다. [\<iostream>](iostream.md)에 선언되어 있는 `clog`와 충돌될 수 있기 때문입니다.
 
 ## <a name="see-also"></a>참고자료
 
-[\<복합 >](complex.md)\
+[\<complex>](complex.md)\
 [\<cmath>](cmath.md)\
 [헤더 파일 참조](cpp-standard-library-header-files.md)\
 [C++표준 라이브러리 개요](cpp-standard-library-overview.md)\
