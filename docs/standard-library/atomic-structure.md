@@ -611,7 +611,7 @@ bool is_lock_free() const volatile noexcept;
 
 ## <a name="load"></a>atomic:: load
 
-지정 된 메모리 제약 조건 내에서  **\*이**의 저장 된 값을 검색 합니다.
+지정 된 메모리 제약 조건 내에서 **\*this**의 저장 된 값을 검색 합니다.
 
 ```cpp
 Ty atomic::load(
@@ -629,7 +629,7 @@ Ty atomic::load(
 
 ### <a name="return-value"></a>반환 값
 
-**\*이**에 저장 된 검색 된 값입니다.
+**\*this**에 저장 된 검색 된 값입니다.
 
 ## <a name="store"></a> atomic::store
 

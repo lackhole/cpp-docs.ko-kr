@@ -38,7 +38,7 @@ struct atomic_flag;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<원자성 >
+**헤더:** \<atomic>
 
 **네임스페이스:** std
 
@@ -53,7 +53,7 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="test_and_set"></a>  atomic_flag::test_and_set
@@ -67,7 +67,7 @@ bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) noexce
 
 ### <a name="parameters"></a>매개 변수
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
