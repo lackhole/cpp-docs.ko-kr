@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4083
 ms.assetid: e7d3344e-5645-4d56-8460-d1acc9145ada
-ms.openlocfilehash: 854d4a9887b8a9ada12adc94509745458a1e9523
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c267d466b70242ebef837fbe01c91f2cf0f69c02
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300273"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626876"
 ---
 # <a name="compiler-warning-level-1-c4083"></a>컴파일러 경고 (수준 1) C4083
 
-예상 된 ' token'; 'identifier' 식별자가 발견
+' token '이 필요 합니다. ' identifier ' 식별자를 찾았습니다.
 
-식별자에 잘못 된 위치에서 발생 한 **#pragma** 문입니다.
+**#Pragma** 문에서 식별자가 잘못 된 경우
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // C4083.cpp
 // compile with: /W1 /LD
 #pragma warning disable:4083    // C4083
 #pragma warning(disable:4083)   //correct
 ```
 
-구문을 확인 합니다 [#pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) 지시문입니다.
+[#Pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) 지시문의 구문을 확인 합니다.

@@ -1,29 +1,29 @@
 ---
-title: 컴파일러 경고(수준 2) C4250
+title: 컴파일러 경고 (수준 2) C4250
 ms.date: 11/04/2016
 f1_keywords:
 - C4250
 helpviewer_keywords:
 - C4250
 ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
-ms.openlocfilehash: 8baf3c03c87dc70a80b785d7f81cbee4e1d828f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03826f10659cbdf6035cd4dedebecca3e3302e3a
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349713"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052109"
 ---
-# <a name="compiler-warning-level-2-c4250"></a>컴파일러 경고(수준 2) C4250
+# <a name="compiler-warning-level-2-c4250"></a>컴파일러 경고 (수준 2) C4250
 
-'class1': 'class2::member' 우위를 상속 합니다.
+' class1 ': 우위를 통해 ' class2:: member '를 상속 합니다.
 
-두 개 이상의 멤버 이름이 같습니다. 있는 `class2` 이 멤버를 포함 하는 다른 클래스에 대 한 기본 클래스 이므로 상속 됩니다.
+두 개 이상의 멤버가 동일한 이름을 갖습니다. `class2`의 하나는이 멤버를 포함 하는 다른 클래스의 기본 클래스 이므로 상속 됩니다.
 
-C4250를 표시 하지 않으려면 사용 합니다 [경고](../../preprocessor/warning.md) pragma입니다.
+C4250를 표시 하지 않으려면 [warning](../../preprocessor/warning.md) pragma를 사용 합니다.
 
-가상 기본 클래스에서 여러 파생된 클래스 간에 공유 되므로 이름이 파생된 클래스에서 기본 클래스의 이름의 지배 합니다. 예를 들어, 다이아몬드에서 상속 하는 func의 두 가지 정의 가지는 아래의 클래스 계층 구조를 지정 합니다: 약한 클래스와 기준 클래스를 통해 되 통해 vbc::func() 인스턴스. 다이아몬드 클래스 개체를 통해 되는 정규화 되지 않은 호출 dominate 되 인스턴스를 항상 호출 합니다.  -약한 클래스 되의 인스턴스를 모두 정의 우위를 차지 하는 경우 호출이 모호한 것으로 플래그가 지정 됩니다.
+가상 기본 클래스는 여러 파생 클래스 간에 공유 되므로 파생 클래스의 이름은 기본 클래스의 이름을 우위에 있습니다. 예를 들어, 다음과 같은 클래스 계층 구조에 있는 경우에는 다음 두 개의 func 정의가 해당 클래스를 통해 weak:: func () 인스턴스와 weak 클래스를 통한 기준:: func ()를 통해 다이아몬드 내에 상속 됩니다. 다이아몬드형 클래스 개체를 통해 func ()의 정규화 되지 않은 호출은 항상 우위:: func () 인스턴스를 호출 합니다.  Weak 클래스가 func ()의 인스턴스를 도입 하는 경우 두 정의 모두 우위를 가지 며 호출은 모호한 것으로 플래그가 지정 됩니다.
 
-```
+```cpp
 // C4250.cpp
 // compile with: /c /W2
 #include <stdio.h>
@@ -47,9 +47,9 @@ int main() {
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C4250 오류가 발생 합니다.
+다음 샘플에서는 C4250를 생성 합니다.
 
-```
+```cpp
 // C4250_b.cpp
 // compile with: /W2 /EHsc
 #include <iostream>
@@ -80,9 +80,9 @@ int main() {
 
 ## <a name="example"></a>예제
 
-이 샘플에는 더 복잡 한 상황을 보여 줍니다. 다음 샘플에서는 C4250 오류가 발생 합니다.
+이 샘플에서는 더 복잡 한 상황을 보여 줍니다. 다음 샘플에서는 C4250를 생성 합니다.
 
-```
+```cpp
 // C4250_c.cpp
 // compile with: /W2 /EHsc
 #include <iostream>

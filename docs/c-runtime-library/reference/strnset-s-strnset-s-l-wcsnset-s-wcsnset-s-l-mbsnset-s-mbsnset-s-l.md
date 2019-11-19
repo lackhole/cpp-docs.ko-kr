@@ -58,12 +58,12 @@ helpviewer_keywords:
 - strnset_s function
 - _wcsnset_s function
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
-ms.openlocfilehash: 3542d2272282a9c3f6b2aed8cc443bef85dfe883
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: acf84e6f09436f3bd97f9556ab8db9604243b8a8
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946984"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626143"
 ---
 # <a name="_strnset_s-_strnset_s_l-_wcsnset_s-_wcsnset_s_l-_mbsnset_s-_mbsnset_s_l"></a>_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 
@@ -139,7 +139,7 @@ errno_t _mbsnset_s_l(
 
 이러한 함수는 해당 인수의 유효성을 검사합니다. *Str* 이 올바른 null 종료 문자열이 아니거나 size 인수가 0 보다 작거나 같으면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다. 계속 해 서 실행 하도록 허용한 경우 이러한 함수는 오류 코드를 반환 하 고 **errno** 를 해당 오류 코드로 설정 합니다. 보다 구체적인 값이 적용 되지 않는 경우 기본 오류 코드는 **EINVAL** 입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 함수는 *str* 의 처음 *카운트* 문자를 *c*로 설정 합니다. *Count* 가 *str*의 크기 보다 크면 *count*대신 *str* 의 크기가 사용 됩니다. *Count* 가 *numberofelements* 보다 크고이 두 매개 변수가 *str*의 크기 보다 크면 오류가 발생 합니다.
 
@@ -147,7 +147,7 @@ errno_t _mbsnset_s_l(
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
+이러한 함수의 디버그 라이브러리 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -166,7 +166,7 @@ errno_t _mbsnset_s_l(
 |**_wcsnset_s_l**|\<tchar.h>|
 |**_mbsnset_s**, **_mbsnset_s_l**|\<mbstring.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -190,7 +190,7 @@ Before: This is a test
 After:  **** is a test
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - intrinsics, alphabetical list
 - intrinsics
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
-ms.openlocfilehash: ff6957436ecfb86ae44388e55488981f528f2c73
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 56aad4c0b39a7a4bd2d425907023cbc8c9b335c4
+ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220088"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163460"
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>내장 함수의 사전순 목록
 
-다음 섹션에서는 일부 또는 모든 아키텍처에서 사용할 수 있는 Microsoft 관련 내장 함수에 대해 설명합니다. 지원되는 기타 내장 함수에 대한 설명은 프로세서 제조업체에서 제공하는 헤더 파일이나 제조업체 웹 사이트에 나와 있습니다. 제조업체 설명서에 대 한 링크는 [ARM 내장 함수](../intrinsics/arm-intrinsics.md), [x86 내장 함수](../intrinsics/x86-intrinsics-list.md)및 [x64 내장 함수](../intrinsics/x64-amd64-intrinsics-list.md) 섹션을 참조 하세요. 내장 함수가 구현 된 CRT (C 런타임 라이브러리) 함수는 여기에 설명 되어 있지 않습니다. 이러한 함수는 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)에 설명 되어 있습니다.
+다음 섹션에서는 일부 또는 모든 아키텍처에서 사용할 수 있는 Microsoft 관련 내장 함수에 대해 설명합니다. 지원되는 기타 내장 함수에 대한 설명은 프로세서 제조업체에서 제공하는 헤더 파일이나 제조업체 웹 사이트에 나와 있습니다. 제조업체 설명서에 대 한 링크는 [ARM 내장 함수](../intrinsics/arm-intrinsics.md), [ARM64 내장 함수](../intrinsics/arm64-intrinsics.md), [x86 내장](../intrinsics/x86-intrinsics-list.md)함수 및 [x64 내장 함수](../intrinsics/x64-amd64-intrinsics-list.md) 섹션을 참조 하세요. 내장 함수가 구현 된 CRT (C 런타임 라이브러리) 함수는 여기에 설명 되어 있지 않습니다. 이러한 함수는 [C 런타임 라이브러리 참조](../c-runtime-library/c-run-time-library-reference.md)에 설명 되어 있습니다.
 
 [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)
 
-[__addgsbyte, \__addgsword, \__addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)
+[__addgsbyte, \__addgsword, \__addgsdword \_](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)
 
 [_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)
 
@@ -61,7 +61,7 @@ ms.locfileid: "70220088"
 
 [__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)
 
-[__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)
+[__incgsbyte, \__incgsword, \__incgsdword \_](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)
 
 [__indword](../intrinsics/indword.md)
 
@@ -89,7 +89,7 @@ ms.locfileid: "70220088"
 
 [_InterlockedExchange 내장 함수](../intrinsics/interlockedexchange-intrinsic-functions.md)
 
-[_InterlockedExchangeAdd 함수 추가](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
+[_InterlockedExchangeAdd 내장 함수](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
 
 [_InterlockedExchangePointer 내장 함수](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
 
@@ -179,9 +179,9 @@ ms.locfileid: "70220088"
 
 [__readeflags](../intrinsics/readeflags.md)
 
-[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)
+[__readfsbyte, \__readfsdword, \__readfsqword \_](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)
 
-[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)
+[__readgsbyte, \__readgsdword, \__readgsqword \_](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)
 
 [__readmsr](../intrinsics/readmsr.md)
 
@@ -267,12 +267,12 @@ ms.locfileid: "70220088"
 
 [__writeeflags](../intrinsics/writeeflags.md)
 
-[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)
+[__writefsbyte, \__writefsdword, \__writefsqword \_](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)
 
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)
+[__writegsbyte, \__writegsdword, \__writegsqword \_](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)
 
 [__writemsr](../intrinsics/writemsr.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)

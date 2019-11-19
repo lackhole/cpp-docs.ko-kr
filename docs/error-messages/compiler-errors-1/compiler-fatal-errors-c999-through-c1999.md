@@ -6,7 +6,6 @@ f1_keywords:
 - C1036
 - C1041
 - C1048
-- C1049
 - C1063
 - C1069
 - C1101
@@ -31,7 +30,6 @@ helpviewer_keywords:
 - C1036
 - C1041
 - C1048
-- C1049
 - C1063
 - C1069
 - C1101
@@ -52,16 +50,16 @@ helpviewer_keywords:
 - C1505
 - C1901
 ms.assetid: 6c8df109-7594-48ed-987a-97d9fe2b04af
-ms.openlocfilehash: 5ffa1a2633877c8a16eb424f1ddc100bfd6142b8
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 395d7403ef4fe04b671a84a61d320b27ad8ad1c7
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857386"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626561"
 ---
 # <a name="compiler-fatal-errors-c999-through-c1999"></a>심각한 컴파일러 오류 C999 ~ C1999
 
-Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설명서의이 섹션의 문서 /C++ 컴파일러.
+설명서의이 섹션에 있는 문서에서는 Microsoft C/C++ 컴파일러로 생성 되는 오류 메시지의 하위 집합을 설명 합니다.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -78,7 +76,7 @@ Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설�
 |[심각한 오류 C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|인식할 수 없는 플래그 '*string*'이 '*option*'에 있습니다.|
 |[심각한 오류 C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|입력 파일을 지정하지 않았습니다.|
 |[심각한 오류 C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|컴파일러 한계: 매크로가 너무 많이 중첩되었습니다.|
-|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. 추가 했는지 ' #include \< *파일*>' 소스에?|
+|[심각한 오류 C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. 원본에 ' #include \<*파일*> '을 (를) 추가 하는 것을 잊은 경우|
 |[심각한 오류 C1012](fatal-error-c1012.md)|괄호가 짝이 맞지 않습니다. '*character*"가 없습니다.|
 |[심각한 오류 C1013](fatal-error-c1013.md)|컴파일러 한계: 여는 괄호가 너무 많습니다.|
 |[심각한 오류 C1014](fatal-error-c1014.md)|포함 파일이 너무 많습니다. 수준 = *number*|
@@ -100,11 +98,11 @@ Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설�
 |심각한 오류 C1041|프로그램 데이터베이스 '*file*'을 열 수 없습니다. 여러 CL.EXE에서 동일한 .PDB 파일에 쓰는 경우 /FS를 사용하세요.|
 |[심각한 오류 C1045](fatal-error-c1045.md)|컴파일러 한계: 링크 사양이 너무 많이 중첩되었습니다.|
 |[심각한 오류 C1046](../../error-messages/compiler-errors-1/fatal-error-c1046.md)|컴파일러 한계: *structure* 가 너무 많이 중첩되었습니다.|
-|[심각한 오류 C1047](fatal-error-c1047.md)|개체 또는 라이브러리 파일 '*file*'은 다른 개체에 사용한 컴파일러보다 이전 컴파일러로 만들어졌습니다. 해당 개체 및 라이브러리를 다시 빌드하세요.|
+|[심각한 오류 C 1047](fatal-error-c1047.md)|개체 또는 라이브러리 파일 '*file*'은 다른 개체에 사용한 컴파일러보다 이전 컴파일러로 만들어졌습니다. 해당 개체 및 라이브러리를 다시 빌드하세요.|
 |심각한 오류 C1048|알 수 없는 옵션 '*string*'이 '*option*'에 있습니다.|
-|심각한 오류 C1049|'*value*' 숫자 인수가 잘못되었습니다.|
+|[심각한 오류 C1049](fatal-error-c1049.md)|'*value*' 숫자 인수가 잘못되었습니다.|
 |[심각한 오류 C1051](../../error-messages/compiler-errors-1/fatal-error-c1051.md)|'*file*' 프로그램 데이터베이스 파일에 사용되지 않는 형식이 있습니다. 삭제한 후 다시 컴파일하세요.|
-|[심각한 오류 C1052](fatal-error-c1052.md)|프로그램 데이터베이스 파일에 '*filename*', /debug: fastlink;를 사용 하 여 링커에 의해 생성 된 컴파일러 수 없습니다. 이러한 PDB 파일을 업데이트; 하세요 삭제 하거나 /Fd를 사용 하 여 다른 PDB 파일 이름을 지정 합니다.|
+|[심각한 오류 C1052](fatal-error-c1052.md)|프로그램 데이터베이스 파일 '*filename*'이 (가)/debug: fastlink;을 (를) 사용 하 여 링커에 의해 생성 되었습니다. 컴파일러가 이러한 PDB 파일을 업데이트할 수 없습니다. 다른 PDB 파일 이름을 지정 하려면 삭제 하거나/Fd를 사용 하십시오.|
 |[심각한 오류 C1053](fatal-error-c1053.md)|'*function*': 함수가 너무 큽니다.|
 |[심각한 오류 C1054](../../error-messages/compiler-errors-1/fatal-error-c1054.md)|컴파일러 한계: 이니셜라이저가 너무 많이 중첩되었습니다.|
 |[심각한 오류 C1055](../../error-messages/compiler-errors-1/fatal-error-c1055.md)|컴파일러 한계: 키가 부족합니다.|
@@ -114,7 +112,7 @@ Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설�
 |심각한 오류 C1063|컴파일러 한계: 컴파일러 스택 오버플로입니다.|
 |[심각한 오류 C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)|컴파일러 한계: 내부 버퍼에서 토큰 오버플로가 발생했습니다.|
 |[심각한 오류 C1065](../../error-messages/compiler-errors-1/fatal-error-c1065.md)|컴파일러 한계: 태그가 부족합니다.|
-|[심각한 오류 C1067](../../error-messages/compiler-errors-1/fatal-error-c1067.md)|컴파일러 한계: 형식 레코드 크기의 64k 제한이 초과 되었습니다.|
+|[심각한 오류 C1067](../../error-messages/compiler-errors-1/fatal-error-c1067.md)|컴파일러 한계: 형식 레코드 크기의 64K 한도를 초과했습니다.|
 |[심각한 오류 C1068](fatal-error-c1068.md)|'*file*' 파일을 열 수 없습니다.|
 |심각한 오류 C1069|컴파일러 명령줄을 읽을 수 없습니다.|
 |[심각한 오류 C1070](fatal-error-c1070.md)|'*file*' 파일에서 #if/#endif 쌍이 짝이 맞지 않습니다.|
@@ -124,7 +122,7 @@ Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설�
 |[심각한 오류 C1075](../../error-messages/compiler-errors-1/fatal-error-c1075.md)|파일 끝에 있는 왼쪽 *token* 의 짝이 맞지 않습니다.|
 |[심각한 오류 C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md)|컴파일러 한계: 내부 힙 한계에 도달했습니다. /Zm을 사용하여 한계를 더 높게 지정하세요.|
 |[심각한 오류 C1077](fatal-error-c1077.md)|컴파일러 한계: 명령줄 옵션을 *number* 개보다 많이 지정할 수 없습니다.|
-|[심각한 오류 C1079](../../error-messages/compiler-errors-1/fatal-error-c1079.md)|컴파일러 한계: PCH 파일 크기 제한 초과|
+|[심각한 오류 C1079](../../error-messages/compiler-errors-1/fatal-error-c1079.md)|컴파일러 한계: PCH 파일 크기 한계를 초과했습니다.|
 |[심각한 오류 C1080](../../error-messages/compiler-errors-1/fatal-error-c1080.md)|컴파일러 한계: 명령줄 옵션이 *number* 자 한계를 초과했습니다.|
 |[심각한 오류 C1081](../../error-messages/compiler-errors-1/fatal-error-c1081.md)|'*file*': 파일 이름이 너무 깁니다.|
 |[심각한 오류 C1082](fatal-error-c1082.md)|*type* 파일을 닫을 수 없습니다.'*file*': *message*|
@@ -155,7 +153,7 @@ Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설�
 |심각한 오류 C1111|템플릿/제네릭 매개 변수가 너무 많습니다.|
 |심각한 오류 C1112|컴파일러 한계: `'number`'개로 너무 많습니다. *number* 개만 사용할 수 있습니다.|
 |[심각한 오류 C1113](../../error-messages/compiler-errors-1/fatal-error-c1113.md)|#using이 '*file*'에서 실패했습니다.|
-|심각한 오류 C1114|'*file*': WinRT 지원 하지 않습니다 # 관리 되는 어셈블리의 using|
+|심각한 오류 C1114|'*file*': WinRT는 관리되는 어셈블리의 #using을 지원하지 않습니다.|
 |[심각한 오류 C1120](../../error-messages/compiler-errors-1/fatal-error-c1120.md)|'*function*'에 대한 GetProcAddress 호출이 실패했습니다.|
 |[심각한 오류 C1121](../../error-messages/compiler-errors-1/fatal-error-c1121.md)|CryptoAPI에 대한 호출이 실패했습니다.|
 |[심각한 오류 C1126](../../error-messages/compiler-errors-1/fatal-error-c1126.md)|자동 할당이 *size*를 초과합니다.|
@@ -215,6 +213,6 @@ Microsoft C에서 생성 되는 오류 메시지의 일부를 설명 하는 설�
 |[심각한 오류 C1904](fatal-error-c1904.md)|잘못된 공급자 상호 작용: '*file*'|
 |[심각한 오류 C1905](../../error-messages/compiler-errors-1/fatal-error-c1905.md)|프런트 엔드와 백 엔드가 호환되지 않습니다. 같은 프로세서를 대상으로 해야 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[C /C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ 컴파일러 및 빌드 도구 오류 및 경고](../compiler-errors-1/c-cpp-build-errors.md)

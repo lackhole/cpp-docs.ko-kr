@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4003
 ms.assetid: 0ed1c285-4428-4c90-8131-86897e31f115
-ms.openlocfilehash: 7b1b87c643111f2b12124e348be8fb823e113937
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4adbffe3220060ee9d43f01cf94628f85d3991cc
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187315"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627380"
 ---
 # <a name="compiler-warning-level-1-c4003"></a>컴파일러 경고 (수준 1) C4003
 
 'identifier' 매크로의 실제 매개 변수가 부족합니다.
 
-매크로 정의의 정식 매개 변수 수가 매크로의 실제 매개 변수 수를 초과합니다. 누락 된 매개 변수가 빈 텍스트로 대체 하는 매크로 확장 합니다.
+매크로 정의의 정식 매개 변수 수가 매크로의 실제 매개 변수 개수를 초과 합니다. 매크로 확장은 누락 된 매개 변수에 대해 빈 텍스트를 대체 합니다.
 
-다음 샘플에서는 C4003 오류가 생성 됩니다.
+다음 샘플에서는 C4003를 생성 합니다.
 
-```
+```cpp
 // C4003.cpp
 // compile with: /WX
 #define test(a,b) (a+b)

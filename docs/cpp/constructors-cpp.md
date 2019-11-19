@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 799be6cfd4b14061ba61586f361dd884ad59224c
-ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
+ms.openlocfilehash: 8fa7f02f8537f60b71ff21a476589cab9fcf595b
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587931"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625082"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -68,7 +68,7 @@ int main()
 
 ## <a name="member_init_list"></a>멤버 이니셜라이저 목록
 
-생성자는 필요에 따라 생성자 본문을 실행 하기 전에 클래스 멤버를 초기화 하는 멤버 이니셜라이저 목록을 포함할 수 있습니다. 멤버 이니셜라이저 목록은 [std:: initializer_list \<T >](../standard-library/initializer-list-class.md)형식의 *이니셜라이저 목록과* 동일 하지 않습니다.
+생성자는 필요에 따라 생성자 본문을 실행 하기 전에 클래스 멤버를 초기화 하는 멤버 이니셜라이저 목록을 포함할 수 있습니다. 멤버 이니셜라이저 목록은 [std:: initializer_list\<t >](../standard-library/initializer-list-class.md)형식의 *이니셜라이저 목록과* 동일 하지 않습니다.
 
 멤버 이니셜라이저 목록 사용은 멤버를 직접 초기화 하기 때문에 생성자의 본문에 값을 할당 하는 것 보다 좋습니다. 다음 예제에서는 멤버 이니셜라이저 목록이 콜론 뒤의 모든 **식별자 (인수)** 식으로 구성 된 것을 보여 줍니다.
 
@@ -78,7 +78,7 @@ int main()
     {}
 ```
 
-식별자는 클래스 멤버를 참조 해야 합니다. 인수의 값을 사용 하 여 초기화 됩니다. 인수는 생성자 매개 변수, 함수 호출 또는 [std:: initializer_list \<T >](../standard-library/initializer-list-class.md)중 하나일 수 있습니다.
+식별자는 클래스 멤버를 참조 해야 합니다. 인수의 값을 사용 하 여 초기화 됩니다. 인수는 생성자 매개 변수, 함수 호출 또는 [std:: initializer_list\<t >](../standard-library/initializer-list-class.md)중 하나일 수 있습니다.
 
 **상수** 멤버와 참조 형식의 멤버는 멤버 이니셜라이저 목록에서 초기화 해야 합니다.
 
@@ -212,7 +212,7 @@ Box boxes[3]{ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 Box(Box&& other);
 ```
 
-소멸 되려고 하는 동일한 형식의 다른 개체에서 개체를 초기화 하 고 더 이상 해당 리소스를 필요로 하지 않는 특정 상황에서 컴파일러는 이동 생성자를 선택 합니다. 다음 예제에서는 오버 로드 확인으로 이동 생성자를 선택 하는 경우 한 가지 사례를 보여 줍니다. @No__t_0를 호출 하는 생성자에서 반환 된 값은 *xvalue 값* (만료 값)입니다. 이는 변수에 할당 되지 않으므로 범위를 벗어나는 것입니다. 이 예제에 대 한 동기를 제공 하기 위해 콘텐츠를 나타내는 문자열의 많은 벡터를 제공 해 보겠습니다. 벡터와 해당 문자열을 복사 하는 대신 이동 생성자가 만료 값 "box"에서이를 "도용" 하 여 이제 벡터가 새 개체에 속하도록 합니다. @No__t_1 및 `string` 클래스가 자체 이동 생성자를 구현 하기 때문에 `std::move`에 대 한 호출이 모두 필요 합니다.
+소멸 되려고 하는 동일한 형식의 다른 개체에서 개체를 초기화 하 고 더 이상 해당 리소스를 필요로 하지 않는 특정 상황에서 컴파일러는 이동 생성자를 선택 합니다. 다음 예제에서는 오버 로드 확인으로 이동 생성자를 선택 하는 경우 한 가지 사례를 보여 줍니다. `get_Box()`를 호출 하는 생성자에서 반환 된 값은 *xvalue 값* (만료 값)입니다. 이는 변수에 할당 되지 않으므로 범위를 벗어나는 것입니다. 이 예제에 대 한 동기를 제공 하기 위해 콘텐츠를 나타내는 문자열의 많은 벡터를 제공 해 보겠습니다. 벡터와 해당 문자열을 복사 하는 대신 이동 생성자가 만료 값 "box"에서이를 "도용" 하 여 이제 벡터가 새 개체에 속하도록 합니다. `vector` 및 `string` 클래스가 자체 이동 생성자를 구현 하기 때문에 `std::move`에 대 한 호출이 모두 필요 합니다.
 
 ```cpp
 #include <iostream>
@@ -318,7 +318,7 @@ public:
 
 ## <a name="init_list_constructors"></a>이니셜라이저 목록 생성자
 
-생성자는 [std:: initializer_list \<T \>](../standard-library/initializer-list-class.md) 를 매개 변수로 사용 하 고 다른 모든 매개 변수에 기본 인수를 사용 하는 경우 클래스를 직접 인스턴스화할 때 오버 로드 확인에서 해당 생성자가 선택 됩니다. 초기. Initializer_list를 사용 하 여이를 수락할 수 있는 모든 멤버를 초기화할 수 있습니다. 예를 들어 Box 클래스 (이전에 표시 됨)에 `std::vector<string>` 멤버 `m_contents` 있다고 가정 합니다. 다음과 같이 생성자를 제공할 수 있습니다.
+생성자가 [std:: initializer_list\<t\>](../standard-library/initializer-list-class.md) 를 매개 변수로 사용 하 고 다른 모든 매개 변수에 기본 인수를 사용 하는 경우 클래스를 직접 인스턴스화할 때 오버 로드 확인에서 해당 생성자가 선택 됩니다. 초기. Initializer_list를 사용 하 여이를 수락할 수 있는 모든 멤버를 초기화할 수 있습니다. 예를 들어 Box 클래스 (이전에 표시 됨)에 `std::vector<string>` 멤버 `m_contents`있다고 가정 합니다. 다음과 같이 생성자를 제공할 수 있습니다.
 
 ```cpp
     Box(initializer_list<string> list, int w = 0, int h = 0, int l = 0)
@@ -597,7 +597,7 @@ Derived d4 calls: Base()*/
 
 ::: moniker range=">=vs-2017"
 
-**Visual Studio 2017 버전 15.7 이상**: **/Std: c + + 17** 모드의 **using** 문은 파생 클래스의 생성자와 동일한 시그니처가 있는 경우를 제외 하 고 기본 클래스의 모든 생성자 범위에 포함 됩니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. [Visual Studio 2017 버전 15.7의 향상 된 기능을](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157)참조 하세요.
+**Visual Studio 2017 버전 15.7 이상**: **/std: c + + 17** 모드의 **using** 문은 파생 클래스의 생성자와 동일한 시그니처가 있는 경우를 제외 하 고 기본 클래스의 모든 생성자 범위에 포함 됩니다. 일반적으로 파생 클래스에서 새 데이터 멤버나 생성자를 선언하지 않는 경우 상속 생성자를 사용하는 것이 가장 좋습니다. [Visual Studio 2017 버전 15.7의 향상 된 기능을](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157)참조 하세요.
 
 ::: moniker-end
 

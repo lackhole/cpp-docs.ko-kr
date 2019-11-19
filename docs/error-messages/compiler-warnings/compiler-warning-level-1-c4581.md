@@ -1,31 +1,31 @@
 ---
-title: 컴파일러 경고(수준 1) C4581
+title: 컴파일러 경고 (수준 1) C4581
 ms.date: 11/04/2016
 f1_keywords:
 - C4581
 helpviewer_keywords:
 - C4581
 ms.assetid: 598bcd87-257d-4eb3-94e4-15bb31aadc99
-ms.openlocfilehash: 9868d33538a1f56906455f2b1772b53eb3a7734d
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 5931516e3f4eba91c3b7a3ab4d0ca4979ce1ed84
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447092"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965917"
 ---
-# <a name="compiler-warning-level-1-c4581"></a>컴파일러 경고(수준 1) C4581
+# <a name="compiler-warning-level-1-c4581"></a>컴파일러 경고 (수준 1) C4581
 
-사용 되지 않는 동작: '"string1" ' 'string2' 프로세스 특성을 사용 하 여 대체
+사용 되지 않는 동작: ' "string1" '이 (가) ' n a l l '로 바뀌어 특성을 처리
 
-이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다: 시각적 개체에 대해 확인 하는 매개 변수 C++ 특성입니다.
+이 오류는 Visual Studio 2005에 대해 수행 된 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다. 시각적 C++ 특성에 대 한 매개 변수 검사입니다.
 
-이전 버전에서는 특성 값은 따옴표로 묶여 있는지 여부 또는 허용 되었습니다. 값이 열거형 인 경우 하지 인용 부호로 묶어야 합니다.
+이전 버전에서 특성 값은 따옴표로 묶여 있는지 여부에 관계 없이 수락 되었습니다. 값이 열거형 인 경우 따옴표로 묶지 않아야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4581를 생성합니다.
+다음 샘플에서는 C4581를 생성 합니다.
 
-```
+```cpp
 // C4581.cpp
 // compile with: /c /W1
 #include "unknwn.h"

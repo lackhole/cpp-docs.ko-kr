@@ -1,33 +1,33 @@
 ---
 title: ASSUME
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - ASSUME
 helpviewer_keywords:
 - ASSUME directive
 ms.assetid: cd162070-aee9-4c65-babc-005c6cc73d7c
-ms.openlocfilehash: 97a57cc8a1acccf70572ff963e496aa79fa3ab43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4bf8f0c41e9ce3e296cf201efd4fd9be2033cbdb
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166466"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73702474"
 ---
-# <a name="assume"></a>ASSUME
+# <a name="assume-32-bit-masm"></a>가정 (32 비트 MASM)
 
-오류 레지스터 값에 대 한 검사를 사용 합니다.
+레지스터 값에 대 한 오류 검사를 사용 하도록 설정 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> ASSUME *segregister*:*이름* [[를 *segregister*:*이름*]]...<br/>
-> ASSUME *dataregister*:*유형* [[를 *dataregister*:*형식*]]...<br/>
-> ASSUME *register*:ERROR [[, *register*:ERROR]]...<br/>
-> 가정 [[*등록할*:]] NOTHING [[, *등록*: NOTHING]]...
+> *Segregister*:*name* [[, *segregister*:*name*]] ...<br/>
+> *Dataregister*:*type* [[, *dataregister*:*type*]] ...<br/>
+> *등록*가정: 오류 [[, *등록*: 오류]] ...<br/>
+> [[*Register*:]] NOTHING [[, *register*: NOTHING]]을 가정 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이후에 `ASSUME` 어셈블러 감시는 지정 된 레지스터의 값이 변경 효과에 배치 됩니다. **오류** 등록을 사용 하는 경우 오류가 발생 합니다. **NOTHING** 제거 오류 검사를 등록 합니다. 여러 가지 가정 하나의 문으로 결합할 수 있습니다.
+`ASSUME` 적용 된 후 어셈블러는 지정 된 레지스터의 값에 대 한 변경 내용을 감시 합니다. 레지스터를 사용 하는 경우 **오류** 를 생성 합니다. 등록 오류 검사를 제거 하지 **않습니다** . 한 문에서 여러 종류의 가정을 조합할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)<br/>

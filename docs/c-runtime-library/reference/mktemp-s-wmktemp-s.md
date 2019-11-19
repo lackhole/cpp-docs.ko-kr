@@ -35,12 +35,12 @@ helpviewer_keywords:
 - wmktemp_s function
 - temporary files [C++]
 ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
-ms.openlocfilehash: b0db1a50f638c6130e4beb6798431179edec153b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 464f0dfbdb0b84e1fd29ec650e53f5c2543c4403
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951589"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624220"
 ---
 # <a name="_mktemp_s-_wmktemp_s"></a>_mktemp_s, _wmktemp_s
 
@@ -89,9 +89,11 @@ errno_t _wmktemp_s(
 
 위의 오류 조건 중 하나라도 발생하는 경우, [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 해 서 실행 하도록 허용한 경우 **errno** 는 **EINVAL** 로 설정 되 고 함수는 **EINVAL**를 반환 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **_Mktemp_s** 함수는 *nameTemplate* 인수를 수정 하 여 고유한 파일 이름을 만듭니다. 그러면 호출 후 *nameTemplate* 포인터가 새 파일 이름을 포함 하는 문자열을 가리킵니다. **_mktemp_s** 는 자동으로 멀티 바이트 문자열 인수를 적절 하 게 처리 하 여 런타임 시스템에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. **_wmktemp_s** 는 **_mktemp_s**의 와이드 문자 버전입니다. **_wmktemp_s** 의 인수는 와이드 문자 문자열입니다. **_wmktemp_s** 및 **_mktemp_s** 는 **_wmktemp_s** 가 멀티 바이트 문자열을 처리 하지 않는 경우를 제외 하 고 동일 하 게 동작 합니다.
+
+이러한 함수의 디버그 라이브러리 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -119,7 +121,7 @@ FNA12345가 존재하지 않는 경우 반환된 다음 이름은 다시 아래�
 
 **_mktemp_s** 는 *기본* 및 *nameTemplate* 값의 지정 된 조합에 대해 최대 26 개의 고유한 파일 이름을 만들 수 있습니다. 따라서 FNZ12345는이 예제에 사용 된 *base* 및 *nameTemplate* 값에 대해 **_mktemp_s** 수 있는 마지막 고유 파일 이름입니다.
 
-C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -128,7 +130,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**_mktemp_s**|\<io.h>|
 |**_wmktemp_s**|\<io.h> 또는 \<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -184,7 +186,7 @@ Unique filename is fnd03188
 Unique filename is fne03188
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [파일 처리](../../c-runtime-library/file-handling.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

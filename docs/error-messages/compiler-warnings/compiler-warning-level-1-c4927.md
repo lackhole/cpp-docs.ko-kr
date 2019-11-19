@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 1) C4927
+title: 컴파일러 경고 (수준 1) C4927
 ms.date: 11/04/2016
 f1_keywords:
 - C4927
 helpviewer_keywords:
 - C4927
 ms.assetid: 7009e740-a2ef-4130-96ba-482e092f717a
-ms.openlocfilehash: 59a39e4e695fdd161135cd70a74e1f3f6518e361
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e56d185f6f87bc6e381ccec9ed8bd50ba3e2245
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393456"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052278"
 ---
-# <a name="compiler-warning-level-1-c4927"></a>컴파일러 경고(수준 1) C4927
+# <a name="compiler-warning-level-1-c4927"></a>컴파일러 경고 (수준 1) C4927
 
-변환이 잘못 되었습니다. 둘 이상의 사용자 정의 변환이 암시적으로 적용 된
+변환이 잘못 되었습니다. 사용자 정의 변환이 암시적으로 두 번 이상 적용 되었습니다.
 
-둘 이상의 사용자 정의 변환이 암시적으로 단일 값-에 적용 되었습니다. 컴파일러 변환 하는 명시적 변환을 찾을 수 없습니다 하지만 해당 하는 변환의 찾을.
+두 개 이상의 사용자 정의 변환이 암시적으로 단일 값에 적용 됩니다. 컴파일러는 명시적 변환을 찾지 못했지만 사용 된 변환을 찾습니다.
 
-다음 샘플에서는 C4927 오류가 생성 됩니다.
+다음 샘플에서는 C4927를 생성 합니다.
 
-```
+```cpp
 // C4927.cpp
 // compile with: /W1
 struct B

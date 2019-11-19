@@ -13,7 +13,7 @@ ms.locfileid: "68456741"
 ---
 # <a name="atomic-structure"></a>atomic 구조체
 
-*Ty*형식의 저장 된 값에 대해 원자 연산을 수행 하는 개체에 대해 설명 합니다.
+*Ty* 형식으로 저장된 값에 대하여 원자 연산을 수행하는 개체에 대해 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,18 +35,18 @@ struct atomic;
 |[atomic::operator+=](#op_add_eq)|지정된 값을 저장된 값에 더합니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
 |[atomic::operator--](#op_dec)|저장된 값을 감소시킵니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
 |[atomic::operator-=](#op_sub_eq)|지정된 값을 저장된 값에서 뺍니다. 정수 계열 및 포인터 특수화에서만 사용됩니다.|
-|[atomic::operator&=](#op_and_eq)|지정 된 값과 저장 된 값에 대해 비트 and를 수행 합니다. 정수 계열 특수화에서만 사용됩니다.|
-|[atomic::operator&#124;=](#op_or_eq)|지정 된 값과 저장 된 값에 대해 비트 or을 수행 합니다. 정수 계열 특수화에서만 사용됩니다.|
-|[atomic::operator^=](#op_xor_eq)|지정 된 값과 저장 된 값에 배타적 비트 or 연산을 수행 합니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator&=](#op_and_eq)|지정된 값과 저장된 값에 대해 비트 and를 수행합니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator&#124;=](#op_or_eq)|지정된 값과 저장된 값에 대해 비트 or를 수행합니다. 정수 계열 특수화에서만 사용됩니다.|
+|[atomic::operator^=](#op_xor_eq)|지정된 값과 저장된 값에 배타적 비트 or 연산을 수행합니다. 정수 계열 특수화에서만 사용됩니다.|
 |**함수**||
-|[compare_exchange_strong](#compare_exchange_strong)|**이** 에 대해 *atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
-|[compare_exchange_weak](#compare_exchange_weak)|**이** 에 대해 *weak_atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
+|[compare_exchange_strong](#compare_exchange_strong)|**this** 에 대해 *atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
+|[compare_exchange_weak](#compare_exchange_weak)|**this** 에 대해 *weak_atomic_compare_and_exchange* 작업을 수행 하 고 결과를 반환 합니다.|
 |[fetch_add](#fetch_add)|지정된 값을 저장된 값에 더합니다.|
-|[fetch_and](#fetch_and)|지정 된 값과 저장 된 값에 대해 비트 and를 수행 합니다.|
-|[fetch_or](#fetch_or)|지정 된 값과 저장 된 값에 대해 비트 or을 수행 합니다.|
+|[fetch_and](#fetch_and)|지정된 값과 저장된 값에 대해 비트 and를 수행합니다.|
+|[fetch_or](#fetch_or)|지정된 값과 저장된 값에 대해 비트 or를 수행합니다.|
 |[fetch_sub](#fetch_sub)|지정된 값을 저장된 값에서 뺍니다.|
-|[fetch_xor](#fetch_xor)|지정 된 값과 저장 된 값에 배타적 비트 or 연산을 수행 합니다.|
-|[is_lock_free](#is_lock_free)|**이** 에 대 한 원자성 작업이 *잠금 해제*인지 여부를 지정 합니다. 원자 형식의 어떤 원자 연산도 잠금을 사용하지 않는 경우 해당 원자 형식을 *잠금 해제*라고 합니다.|
+|[fetch_xor](#fetch_xor)|지정된 값과 저장된 값에 배타적 비트 or 연산을 수행합니다.|
+|[is_lock_free](#is_lock_free)|**this**에 대한 원자성 작업이 *잠금 해제*인지 여부를 지정합니다. 원자 형식의 어떤 원자 연산도 잠금을 사용하지 않는 경우 해당 원자 형식을 *잠금 해제*라고 합니다.|
 |[load](#load)|저장된 값을 읽고 반환합니다.|
 |[store](#store)|지정된 값을 사용하여 저장된 값을 바꿉니다.|
 
@@ -54,9 +54,9 @@ struct atomic;
 
 *Ty* 형식은 *일반적으로 복사할 수*이어야 합니다. 즉, [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) 를 사용 하 여 바이트를 복사 하면 원래 개체와 동일한 지 비교 하는 유효한 *Ty* 개체가 생성 되어야 합니다. [Compare_exchange_weak](#compare_exchange_weak) 및 [compare_exchange_strong](#compare_exchange_strong) 멤버 함수는 [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) 를 사용 하 여 두 개의 *Ty* 값이 같은지 여부를 확인 합니다. 이러한 함수는 *Ty*정의 `operator==`를 사용 하지 않습니다. Ty 형식의 값을 `atomic` 복사 `memcpy` 하는 데 사용 하는 멤버 함수입니다.
 
-모든 포인터 형식에 대 한 부분 특수화 인 **원자성\<Ty \* >** 가 있습니다. 특수화를 사용하면 관리되는 포인터 값에 오프셋을 더하거나 값에서 오프셋을 뺄 수 있습니다. 산술 연산은 형식의 `ptrdiff_t` 인수를 사용 하 고, 일반 주소 산술과 일관 되도록 *Ty* 의 크기에 따라 해당 인수를 조정 합니다.
+모든 포인터 형식에 대한 부분 특수화인 **atomic\<Ty \* >** 가 있습니다. 특수화를 사용하면 관리되는 포인터 값에 오프셋을 더하거나 값에서 오프셋을 뺄 수 있습니다. 산술 연산은 `ptrdiff_t` 형식의 인수를 사용하고, 일반 주소 산술과 일관되도록 *Ty*의 크기에 따라 해당 인수를 조정합니다.
 
-**Bool**을 제외한 모든 정수 계열 형식에 대 한 특수화가 있습니다. 각 특수화에서는 원자 산술 및 논리 연산을 위한 다양한 방법을 제공합니다.
+**bool**을 제외한 모든 정수 계열 형식에 대한 특수화가 있습니다. 각 특수화에서는 원자 산술 및 논리 연산을 위한 다양한 방법을 제공합니다.
 
 ||||
 |-|-|-|
@@ -66,11 +66,11 @@ struct atomic;
 |**atomic\<unsigned int>**|**atomic\<long>**|**atomic\<unsigned long>**|
 |**원자\<long long >**|**원자성\<부호 없는 long long >**|
 
-정수 특수화는 해당 `atomic_integral` 형식에서 파생됩니다. 예를 들어 **,\<원자성 부호 없는 int >** 은 `atomic_uint`에서 파생 됩니다.
+정수 특수화는 해당 `atomic_integral` 형식에서 파생됩니다. 예를 들어 **atomic\<unsigned int >** 은 `atomic_uint`에서 파생 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<원자성 >
+**헤더:** \<atomic>
 
 **네임스페이스:** std
 
@@ -86,14 +86,14 @@ atomic( Ty Value ) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 초기화 값입니다.
 
 ### <a name="remarks"></a>설명
 
 원자성 개체를 복사 하거나 이동할 수 없습니다.
 
-\<*원자 단위*>의 인스턴스화 인 개체는 집합체 초기화를 사용 하는 것이 아니라 *Ty* 형식의 인수를 사용 하는 생성자에 의해서만 초기화 될 수 있습니다. 그러나 atomic_integral 개체는 집합체 초기화를 사용 해야만 초기화할 수 있습니다.
+atomic\<*Ty*>의 인스턴스화된 개체는 집합체 초기화를 사용하는 것이 아니라 *Ty* 형식의 인수를 사용하는 생성자에 의해서만 초기화될 수 있습니다. 그러나 atomic_integral 개체는 집합체 초기화를 사용해야만 초기화할 수 있습니다.
 
 ```cpp
 atomic<int> ai0 = ATOMIC_VAR_INIT(0);
@@ -102,7 +102,7 @@ atomic<int> ai1(0);
 
 ## <a name="op_ty"></a>atomic:: operator *Ty*
 
-템플릿에 지정 된 형식에 대 한 연산자입니다. 원자성\<*Ty*>입니다. **\*이**에 저장 된 값을 검색 합니다.
+템플릿에 지정된 형식에 대한 연산자 atomic\<*Ty*>입니다. **\*this**에 저장된 값을 검색합니다.
 
 ```cpp
 atomic<Ty>::operator Ty() const volatile noexcept;
@@ -128,12 +128,12 @@ Ty operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty* 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
-*값*을 반환 합니다.
+*Value*을 반환 합니다.
 
 ## <a name="op_inc"></a>atomic:: operator + +
 
@@ -165,7 +165,7 @@ Ty atomic<Ty>::operator+=(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 정수 계열 또는 포인터 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -206,7 +206,7 @@ Ty atomic<Ty>::operator-=(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 정수 계열 또는 포인터 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -219,7 +219,7 @@ Ty atomic<Ty>::operator-=(
 
 ## <a name="op_and_eq"></a>atomic:: operator & =
 
-지정 된 값과  **\*이**의 저장 된 값에 대해 비트 and를 수행 합니다. 정수 계열 특수화에서만 사용됩니다.
+지정된 값과 **\*this**에 저장된 값에 대하여 비트 and를 수행합니다. 정수 계열 특수화에서만 사용됩니다.
 
 ```cpp
 atomic<Ty>::operator&= (
@@ -232,7 +232,7 @@ atomic<Ty>::operator&= (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -241,11 +241,11 @@ atomic<Ty>::operator&= (
 
 ### <a name="remarks"></a>설명
 
-이 연산자는 읽기-수정-쓰기 작업을 수행 하 여  **\*이** 의 저장 된 값을의 비트 and *값* 과  **\*이** `memory_order_seq_cst`에저장된현재값으로바꿉니다. [memory_order](atomic-enums.md).
+이 연산자는 읽기-수정-쓰기 작업을 수행하여 **\*this**의 저장된 값을 *Value*와 **\*this**에 저장된 현재 값의 비트 and로, `memory_order_seq_cst` [memory_order](atomic-enums.md)의 제약 내에서 바꿉니다.
 
 ## <a name="op_or_eq"></a>atomic:: operator&#124;=
 
-지정 된 값과  **\*이**의 저장 된 값에 대해 비트 or을 수행 합니다. 정수 계열 특수화에서만 사용됩니다.
+지정된 값과 **\*this**의 저장된 값에 대해 비트 or를 수행합니다. 정수 계열 특수화에서만 사용됩니다.
 
 ```cpp
 atomic<Ty>::operator|= (
@@ -258,7 +258,7 @@ atomic<Ty>::operator|= (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -267,11 +267,11 @@ atomic<Ty>::operator|= (
 
 ### <a name="remarks"></a>설명
 
-이 연산자는 읽기-수정-쓰기 작업을 수행 하 여  **\*이** 의 저장 된 값을 비트 or *값* 및  **\*이** `memory_order_seq_cst`에저장된현재값으로바꿉니다. [memory_order](atomic-enums.md) 제약 조건입니다.
+이 연산자는 읽기-수정-쓰기 작업을 수행하여 **\*this**에 저장된 값을 *Value* 및 **\*this**에 저장된 현재 값의 비트 or로, `memory_order_seq_cst` [memory_order](atomic-enums.md) 제약 조건 내에서 바꿉니다.
 
 ## <a name="op_xor_eq"></a> atomic::operator^=
 
-지정 된 값과  **\*이**의 저장 된 값에 대해 비트 배타적 or를 수행 합니다. 정수 계열 특수화에서만 사용됩니다.
+지정된 값과 **\*this**의 저장된 값에 대해 비트 배타적 or를 수행합니다. 정수 계열 특수화에서만 사용됩니다.
 
 ```cpp
 atomic<Ty>::operator^= (
@@ -284,7 +284,7 @@ atomic<Ty>::operator^= (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -293,11 +293,11 @@ atomic<Ty>::operator^= (
 
 ### <a name="remarks"></a>설명
 
-이 연산자는 읽기-수정-쓰기 작업을 수행 하 여  **\*이** 의 저장 된 값을 비트 배타적 or *값* 또는  **\*이**에 저장 된 현재 값으로 바꿉니다. [memory_order](atomic-enums.md) 제약 조건입니다.`memory_order_seq_cst`
+이 연산자는 읽기-수정-쓰기 작업을 수행하여 **\*this**에 저장된 값을 *Value* 및 **\*this**에 저장된 현재 값의 비트 배타적 or로, `memory_order_seq_cst` [memory_order](atomic-enums.md) 제약 조건 내에서 바꿉니다.
 
 ## <a name="compare_exchange_strong"></a> atomic::compare_exchange_strong
 
-**\*이**에 대해 원자성 비교 및 교환 작업을 수행 합니다.
+**\*this**에 대해 원자성 비교 및 교환 작업을 수행 합니다.
 
 ```cpp
 bool compare_exchange_strong(
@@ -329,7 +329,7 @@ bool compare_exchange_strong(
 *.Exp*\
 *Ty*형식의 값입니다.
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 *Order1*\
@@ -340,19 +340,19 @@ bool compare_exchange_strong(
 
 ### <a name="return-value"></a>반환 값
 
-값 비교 결과를 나타내는 **부울** 입니다.
+값 비교 결과를 나타내는 **bool** 입니다.
 
 ### <a name="remarks"></a>설명
 
-원자 비교 및 교환 작업은  **\*이** 에 저장 된 값을 *Exp*와 비교 합니다. 값이 같으면 작업은 읽기-수정-쓰기 작업을 사용 하 고 *Order1*로 지정 된 메모리 순서 제약 조건을 적용 하 여  **\*이** 에 저장 된 값을 *값* 으로 바꿉니다. 값이 같지 않으면 작업에서  **\*이** 에 저장 된 값을 사용 하 여 *Exp* 를 대체 하 고 *Order2*로 지정 된 메모리 순서 제약 조건을 적용 합니다.
+원자 비교 및 교환 작업은 **\*this**에 저장된 값을 *Exp*와 비교합니다. 값이 같으면 작업은 읽기-수정-쓰기 작업을 사용하고 *Order1*로 지정된 메모리 순서 제약 조건을 적용하여 **\*this**에 저장된 값을 *Value*로 바꿉니다. 값이 같지 않으면 작업에서 **\*this**에 저장된 값을 사용하여 *Exp*를 대체하고 *Order2*로 지정된 메모리 순서 제약 조건을 적용합니다.
 
-두 번째 `memory_order` 를 포함 하지 않는 오버 로드는 *Order1*의 값을 기반으로 하는 암시적 *Order2* 를 사용 합니다. *Order1* `memory_order_acq_rel`가 이면 *Order2* 는 `memory_order_acquire`입니다. *Order1* `memory_order_release`가 이면 *Order2* 는 `memory_order_relaxed`입니다. 다른 모든 경우에는 *Order2* 가 *Order1*와 같습니다.
+두 번째 `memory_order`를 포함하지 않는 오버로드는 *Order1*의 값을 기반으로 하는 암시적 *Order2*를 사용합니다. *Order1*이 `memory_order_acq_rel`이면 *Order2*는 `memory_order_acquire`입니다. *Order1*이 `memory_order_release`이면 *Order2*는 `memory_order_relaxed`입니다. 다른 모든 경우에는 *Order2*가 *Order1*과 같습니다.
 
-`memory_order` 두 개의 매개 변수를 사용 하는 오버 로드의 경우 *Order2* `memory_order_release` 의 값은 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*값 보다 더 강력 하지 않아야 합니다.
+두 개의 매개 변수를 사용하는 `memory_order` 오버로드의 경우 *Order2*의 값은 `memory_order_release` 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*의 값보다 더 강력하지 않아야 합니다.
 
 ## <a name="compare_exchange_weak"></a> atomic::compare_exchange_weak
 
-**\*이**에서 약한 원자 비교 및 교환 작업을 수행 합니다.
+**\*this**에서 약한 원자 비교 및 교환 작업을 수행 합니다.
 
 ```cpp
 bool compare_exchange_weak(
@@ -384,7 +384,7 @@ bool compare_exchange_weak(
 *.Exp*\
 *Ty*형식의 값입니다.
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
 *Order1*\
@@ -395,21 +395,21 @@ bool compare_exchange_weak(
 
 ### <a name="return-value"></a>반환 값
 
-값 비교 결과를 나타내는 **부울** 입니다.
+값 비교 결과를 나타내는 **bool** 입니다.
 
 ### <a name="remarks"></a>설명
 
-원자 비교 및 교환 작업은  **\*이** 에 저장 된 값을 *Exp*와 비교 합니다. 값이 같으면 작업은 읽기-수정-쓰기 작업을 사용 하 고 *Order1*로 지정 된 메모리 순서 제약 조건을 적용 하 여  **\*이** 에 저장 된 값을*값* 으로 바꿉니다. 값이 같지 않으면 작업에서  **\*이** 에 저장 된 값을 사용 하 여 *Exp* 를 대체 하 고 *Order2*로 지정 된 메모리 순서 제약 조건을 적용 합니다.
+원자 비교 및 교환 작업은 **\*this**에 저장된 값을 *Exp*와 비교합니다. 값이 같으면 작업은 읽기-수정-쓰기 작업을 사용하고 *Order1*로 지정된 메모리 순서 제약 조건을 적용하여 **\*this**에 저장된 값을 *Value*로 바꿉니다. 값이 같지 않으면 작업에서 **\*this**에 저장된 값을 사용하여 *Exp*를 대체하고 *Order2*로 지정된 메모리 순서 제약 조건을 적용합니다.
 
 약한 원자 비교 및 교환 작업은 비교 된 값이 동일한 경우 교환을 수행 합니다. 값이 같지 않으면 작업에서 exchange를 수행 하는 것이 보장 되지 않습니다.
 
-두 번째 `memory_order` 를 포함 하지 않는 오버 로드는 *Order1*의 값을 기반으로 하는 암시적 *Order2* 를 사용 합니다. *Order1* `memory_order_acq_rel`가 이면 *Order2* 는 `memory_order_acquire`입니다. *Order1* `memory_order_release`가 이면 *Order2* 는 `memory_order_relaxed`입니다. 다른 모든 경우에는 *Order2* 가 *Order1*와 같습니다.
+두 번째 `memory_order`를 포함하지 않는 오버로드는 *Order1*의 값을 기반으로 하는 암시적 *Order2*를 사용합니다. *Order1*이 `memory_order_acq_rel`이면 *Order2*는 `memory_order_acquire`입니다. *Order1*이 `memory_order_release`이면 *Order2*는 `memory_order_relaxed`입니다. 다른 모든 경우에는 *Order2*가 *Order1*과 같습니다.
 
-`memory_order` 두 개의 매개 변수를 사용 하는 오버 로드의 경우 *Order2* `memory_order_release` 의 값은 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*값 보다 더 강력 하지 않아야 합니다.
+두 개의 매개 변수를 사용하는 `memory_order` 오버로드의 경우 *Order2*의 값은 `memory_order_release` 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*의 값보다 더 강력하지 않아야 합니다.
 
 ## <a name="exchange"></a> atomic::exchange
 
-지정 된 값을 사용 하 여  **\*이**의 저장 된 값을 바꿉니다.
+지정된 값을 사용하여 **\*this**의 저장된 값을 바꿉니다.
 
 ```cpp
 Ty atomic<Ty>::exchange(
@@ -424,23 +424,23 @@ Ty atomic<Ty>::exchange(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
 
-교환 전에  **\*이** 의 저장 된 값입니다.
+교환 전 **\*this**의 저장된 값입니다.
 
 ### <a name="remarks"></a>설명
 
-이 작업은 *값* 을 사용 하 여  **\*이**에 저장 된 값을 *Order*에 지정 된 메모리 제약 조건 내에서 대체 하는 읽기-수정-쓰기 작업을 수행 합니다.
+이 작업은 *Value*를 사용하여 **\*this**에 저장된 값을 *Order*에 지정된 메모리 제약 조건 내에서 대체하는 읽기-수정-쓰기 작업을 수행합니다.
 
 ## <a name="fetch_add"></a> atomic::fetch_add
 
-**\*이**에 저장 된 값을 페치 한 다음 지정 된 값을 저장 된 값에 추가 합니다.
+**\*this**에 저장된 값을 페치한 다음 지정된 값을 저장된 값에 추가합니다.
 
 ```cpp
 Ty atomic<Ty>::fetch_add (
@@ -455,23 +455,23 @@ Ty atomic<Ty>::fetch_add (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
 
-추가 하기 전에  **\*이** 에 저장 된 값을 포함 하는 *Ty* 개체입니다.
+추가하기 전에 **\*this**에 저장된 값을 포함하는 *Ty* 개체입니다.
 
 ### <a name="remarks"></a>설명
 
-메서드 `fetch_add` 는 읽기-수정-쓰기 작업을 수행 하 여  **\*이**의 저장 된 값에 *값* 을 원자 단위로 추가 하 고 *Order*에 지정 된 메모리 제약 조건을 적용 합니다.
+`fetch_add` 메서드는 읽기-수정-쓰기 작업을 수행하여 **\*this**에 저장된 값에 *Value*를 원자 단위로 추가하고 *Order*에 의해 지정된 메모리 제약 조건을 적용합니다.
 
 ## <a name="fetch_and"></a> atomic::fetch_and
 
-값과  **\*이**에 저장 된 기존 값에 대해 비트 and를 수행 합니다.
+값과 **\*this**에 저장된 기존 값에 대해 비트 and를 수행합니다.
 
 ```cpp
 Ty atomic<Ty>::fetch_and (
@@ -486,10 +486,10 @@ Ty atomic<Ty>::fetch_and (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -498,11 +498,11 @@ Ty atomic<Ty>::fetch_and (
 
 ### <a name="remarks"></a>설명
 
-메서드 `fetch_and` 는 읽기-수정-쓰기 작업을 수행 하 여  **\*이** 의 저장 된 값을 비트 and *값* 및  **\*이**에 저장 된 현재 값 (메모리 내)으로 바꿉니다. *Order*로 지정 된 제약 조건입니다.
+`fetch_and` 메서드는 읽기-수정-쓰기 작업을 수행하여 *Order*로 지정된 메모리 제약 조건 내에서 **\*this**의 저장된 값을 *Value* 및 **\*this**에 저장된 현재 값의 비트 and로 바꿉니다.
 
 ## <a name="fetch_or"></a> atomic::fetch_or
 
-**\*이**에 저장 된 기존 값 및 값에 대해 비트 or을 수행 합니다.
+값 및 **\*this**에 저장된 기존 값에 대해 비트 or를 수행합니다.
 
 ```cpp
 Ty atomic<Ty>::fetch_or (
@@ -517,10 +517,10 @@ Ty atomic<Ty>::fetch_or (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -529,7 +529,7 @@ Ty atomic<Ty>::fetch_or (
 
 ### <a name="remarks"></a>설명
 
-메서드 `fetch_or` 는 읽기-수정-쓰기 작업을 수행 하 여  **\*이** 의 저장 된 값을 비트 or *값* 및  **\*이**에 저장 된 현재 값 (메모리 내)으로 바꿉니다. *Order*로 지정 된 제약 조건입니다.
+`fetch_or` 메서드는 읽기-수정-쓰기 작업을 수행하여 *Order*로 지정된 제약 조건 내에서 **\*this**에 저장된 값을 *Value* 및 **\*this**에 저장된 현재 값의 비트 or로 바꿉니다.
 
 ## <a name="fetch_sub"></a> atomic::fetch_sub
 
@@ -548,10 +548,10 @@ Ty atomic<Ty>::fetch_sub (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -560,11 +560,11 @@ Ty atomic<Ty>::fetch_sub (
 
 ### <a name="remarks"></a>설명
 
-메서드 `fetch_sub` 는 읽기-수정-쓰기 작업을 수행 하 여  **\*이**의 저장 된 값에서 *Order*로 지정 된 메모리 제약 조건 내에서 *값* 을 원자 단위로 뺍니다.
+`fetch_sub` 메서드는 읽기-수정-쓰기 작업을 수행하여 *Order*로 지정된 메모리 제약 조건 내에서 **\*this**에 저장된 값에서 *Value*를 원자 단위로 뺍니다.
 
 ## <a name="fetch_xor"></a> atomic::fetch_xor
 
-**\*이**에 저장 된 값 및 기존 값에 대해 비트 배타적 or를 수행 합니다.
+값 및 **\*this**에 저장된 기존 값에 대해 비트 배타적 or를 수행합니다.
 
 ```cpp
 Ty atomic<Ty>::fetch_xor (
@@ -579,10 +579,10 @@ Ty atomic<Ty>::fetch_xor (
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty*형식의 값입니다.
 
-*주문을*\
+*Order*\
 `memory_order`
 
 ### <a name="return-value"></a>반환 값
@@ -591,11 +591,11 @@ Ty atomic<Ty>::fetch_xor (
 
 ### <a name="remarks"></a>설명
 
-메서드 `fetch_xor` 는 읽기-수정-쓰기 작업을 수행 하 여  **\*이** 의 저장 된 값을 비트 배타적 or *값* 및  **\*이**에 저장 된 현재 값으로 바꿉니다. *Order*로 지정 된 메모리 제약 조건입니다.
+`fetch_xor` 메서드는 읽기-수정-쓰기 작업을 수행하여 *Order*로 지정된 제약 조건 내에서 **\*this**에 저장된 값을 *Value* 및 **\*this**에 저장된 현재 값의 비트 배타적 or로 바꿉니다.
 
 ## <a name="is_lock_free"></a> atomic::is_lock_free
 
-**\*이** 에 대 한 원자성 작업이 잠금 해제 인지 여부를 지정 합니다.
+**\*this**에 대한 원자성 작업이 잠금 해제인지 여부를 지정합니다.
 
 ```cpp
 bool is_lock_free() const volatile noexcept;
@@ -603,15 +603,15 @@ bool is_lock_free() const volatile noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-**\*이** 에 대 한 원자성 작업이 잠금 해제 이면 true이 고, 그렇지 않으면 false입니다.
+**\*this**에 대한 원자성 작업이 잠금 해제이면 true이고, 그렇지 않으면 false입니다.
 
 ### <a name="remarks"></a>설명
 
-원자성 형식은 잠금을 사용 하는 원자성 연산이 없는 경우 잠금 해제 됩니다.
+원자성 형식은 잠금을 사용하는 원자성 연산이 없는 경우 잠금 해제됩니다.
 
 ## <a name="load"></a>atomic:: load
 
-지정 된 메모리 제약 조건 내에서  **\*이**의 저장 된 값을 검색 합니다.
+지정 된 메모리 제약 조건 내에서 **\*this**의 저장 된 값을 검색 합니다.
 
 ```cpp
 Ty atomic::load(
@@ -624,12 +624,12 @@ Ty atomic::load(
 
 ### <a name="parameters"></a>매개 변수
 
-*주문을*\
+*Order*\
 `memory_order` *순서* 는 `memory_order_release` 또는 `memory_order_acq_rel`가 아니어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-**\*이**에 저장 된 검색 된 값입니다.
+**\*this**에 저장 된 검색 된 값입니다.
 
 ## <a name="store"></a> atomic::store
 
@@ -648,15 +648,15 @@ void atomic<Ty>::store(
 
 ### <a name="parameters"></a>매개 변수
 
-*기본값*\
+*Value*\
 *Ty* 개체입니다.
 
-*주문을*\
+*Order*\
 `memory_order` 제약 조건입니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 *Order*로 지정 `*this`된 메모리 제약 조건 내에서 *값* 을 원자 단위로 저장 합니다.
+이 멤버 함수는 *Order*로 지정 `*this`된 메모리 제약 조건 내에서 *Value* 을 원자 단위로 저장 합니다.
 
 ## <a name="see-also"></a>참고자료
 

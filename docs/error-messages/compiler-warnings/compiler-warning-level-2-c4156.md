@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4156
 ms.assetid: 9adf3acb-c0fe-42a8-a4db-5822b1493f77
-ms.openlocfilehash: 7d9a4ed09f026267e2c0f37fbbe4550ecd668dfc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95605aa29e1faba449e19dcf20e6895d31cc5874
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350467"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052139"
 ---
 # <a name="compiler-warning-level-2-c4156"></a>컴파일러 경고 (수준 2) C4156
 
-'delete';' 배열 형식을 사용 하지 않고 배열 식 삭제 배열 형식이 대체 됩니다.
+' delete ' 배열 형식을 사용 하지 않고 배열 식을 삭제 합니다. 배열 형식이 대체 되었습니다.
 
-배열이 아닌 형태의 **삭제** 배열을 삭제할 수 없습니다. 컴파일러가 변환 **삭제** 배열 형식으로 합니다.
+배열 형식이 아닌 **경우에는 배열을 삭제할 수 없습니다** . 컴파일러가 **delete** 배열을 배열 형식으로 변환 했습니다.
 
-이 경고는 Microsoft 확장 (/Ze)에 발생합니다.
+이 경고는 Microsoft 확장 (/Ze)에서 발생 합니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // C4156.cpp
 // compile with: /W2
 int main()

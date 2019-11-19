@@ -3,12 +3,12 @@ title: Visual Studio에서 대상 Linux 시스템에 연결
 description: Visual Studio C++ 프로젝트 내에서 원격 Linux 머신 또는 WSL에 연결하는 방법입니다.
 ms.date: 09/04/2019
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
-ms.openlocfilehash: 2f4e6311493f2b29ba6911ec1b76225b6c7abe6d
-ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
+ms.openlocfilehash: 3d91faa7aa83c86e8c2f3544ee61c16f75f8c346
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71925565"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626760"
 ---
 # <a name="connect-to-your-target-linux-system-in-visual-studio"></a>Visual Studio에서 대상 Linux 시스템에 연결
 
@@ -79,6 +79,20 @@ Linux 지원은 Visual Studio 2017 이상에서 사용할 수 있습니다.
    로그에는 연결, 원격 머신으로 전송되는 모든 명령(해당 텍스트, 종료 코드, 실행 시간), Visual Studio에서 셸로 전송되는 모든 출력이 포함됩니다. 로깅은 Visual Studio의 모든 플랫폼 간 CMake 프로젝트 또는 MSBuild 기반 Linux 프로젝트에 대해 작동합니다.
 
    파일 또는 출력 창의 **플랫폼 간 로깅** 창에 출력되도록 구성할 수 있습니다. MSBuild 기반 Linux 프로젝트의 경우 MSBuild에서 원격 머신에 실행한 명령이 **출력 창**으로 라우팅되지 않습니다. Out Of Process로 명령을 내보내기 때문입니다. 대신, “msbuild_” 접두사를 사용하여 파일에 기록됩니다.
+   
+## <a name="tcp-port-forwarding"></a>TCP 포트 전달
+
+Visual Studio의 Linux 지원에는 TCP 포트 전달에 대한 종속성이 있습니다. 원격 시스템에 TCP 포트 전달이 사용하지 않도록 설정되어 있는 경우 **Rsync** 및 **gdbserver**가 영향을 받습니다. 
+
+Rsync는 MSBuild 기반 Linux 프로젝트 및 CMake 프로젝트 모두에서 [IntelliSense에 사용할 원격 시스템의 헤더를 Windows에 복사](configure-a-linux-project.md#remote_intellisense)하는 데 사용됩니다. TCP 포트 전달을 사용하도록 설정할 수 없는 경우 [도구] > [옵션] > [플랫폼 간] > [연결 관리자] > [원격 헤더 IntelliSense 관리자]를 통해 원격 헤더의 자동 다운로드를 사용하지 않도록 설정할 수 있습니다. 연결하려는 원격 시스템에 TCP 포트 전달이 사용하도록 설정되어 있지 않은 경우 IntelliSense의 원격 헤더 다운로드가 시작되면 다음과 같은 오류가 표시됩니다.
+
+![헤더 오류](media/port-forwarding-headers-error.png)
+
+Rsync는 원격 시스템에 소스 파일을 복사하기 위한 Visual Studio의 CMake 지원에도 사용됩니다. TCP 포트 전달을 사용하도록 설정할 수 없는 경우 sftp를 원격 소스 복사 방법으로 사용할 수 있습니다. sftp는 일반적으로 rsync보다 느리지만, TCP 포트 전달에 대한 종속성이 없습니다. [CMake 설정 편집기](../build/cmakesettings-reference.md#additional-settings-for-cmake-linux-projects)에서 remoteCopySourcesMethod 속성을 사용하여 원격 소스 복사 방법을 관리할 수 있습니다. 원격 시스템에 TCP 포트 전달이 사용하지 않도록 설정된 경우 처음 rsync를 호출하면 CMake 출력 창에 오류가 표시됩니다.
+
+![Rsync 오류](media/port-forwarding-copy-error.png)
+
+gdbserver는 임베디드 디바이스에서 디버그하는 데 사용할 수 있습니다. TCP 포트 전달을 사용하도록 설정할 수 없는 경우 모든 원격 디버깅 시나리오에 gdb를 사용해야 합니다. gdb는 원격 시스템에서 프로젝트를 디버그할 때 기본적으로 사용됩니다. 
 
    ::: moniker-end
 

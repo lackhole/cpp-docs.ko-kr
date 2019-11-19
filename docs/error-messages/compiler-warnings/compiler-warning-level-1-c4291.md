@@ -1,31 +1,31 @@
 ---
-title: 컴파일러 경고(수준 1) C4291
+title: 컴파일러 경고 (수준 1) C4291
 ms.date: 11/04/2016
 f1_keywords:
 - C4291
 helpviewer_keywords:
 - C4291
 ms.assetid: c2b95dea-38f2-4609-9104-707c30798da4
-ms.openlocfilehash: e1b787e7149afe93fb50cc1e6ceaecba2e787876
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c8dc35a58d40d2619f6e035e07b4ad0b3351c45d
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384256"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626649"
 ---
-# <a name="compiler-warning-level-1-c4291"></a>컴파일러 경고(수준 1) C4291
+# <a name="compiler-warning-level-1-c4291"></a>컴파일러 경고 (수준 1) C4291
 
-'declaration': 찾을 수 없는 일치 하는 연산자 delete 초기화 예외를 throw 하는 경우 메모리 해제 되지 않습니다.
+' 선언 ': 일치 하는 operator delete를 찾을 수 없습니다. 초기화에서 예외가 throw 되 면 메모리가 해제 되지 않습니다.
 
-Placement [새](../../cpp/new-operator-cpp.md) 되에 없는 배치 [삭제](../../cpp/delete-operator-cpp.md)합니다.
+Placement [delete](../../cpp/delete-operator-cpp.md)가 없는 경우 placement [new](../../cpp/new-operator-cpp.md) 가 사용 됩니다.
 
-연산자를 사용 하 여 개체에 대 한 메모리를 할당 하는 경우 **새**, 개체의 생성자가 호출 됩니다. 생성자는 예외를 throw 하는 경우 개체에 대해 할당 된 메모리를 할당 취소 합니다. 이렇게 하기 위해서는 운영자 **삭제할** 연산자와 일치 하는 함수가 존재 **새**합니다.
+**New**연산자를 사용 하 여 개체에 대해 메모리를 할당 하면 개체의 생성자가 호출 됩니다. 생성자가 예외를 throw 하는 경우 개체에 할당 된 모든 메모리를 할당 취소 해야 합니다. **New**연산자와 일치 하는 operator **delete** 함수가 존재 하지 않는 경우이를 수행할 수 없습니다.
 
-연산자를 사용 하는 경우 **새** 모든 추가 인수 및 사용 하 여 컴파일 없이 [/GX](../../build/reference/gx-enable-exception-handling.md)합니다 [/EHs](../../build/reference/eh-exception-handling-model.md), /EHa 컴파일러 예외 처리를 사용 하도록 설정 하는 옵션에 코드를 생성 합니다 또는 연산자를 호출 **삭제** 생성자에서 예외가 throw 됩니다.
+추가 인수 없이 **new** 연산자를 사용 하 고 [/gx](../../build/reference/gx-enable-exception-handling.md), [/EHs](../../build/reference/eh-exception-handling-model.md)또는/eha 옵션으로 컴파일하여 예외 처리를 사용 하는 경우 생성자가 예외를 throw 하면 컴파일러가 **delete** 연산자를 호출 하는 코드를 생성 합니다.
 
-배치 형식을 사용 하는 경우는 **새** 연산자 (폼 크기 인수를 사용 하 여 할당) 및 개체의 생성자가 예외를 throw 컴파일러 연산자를호출하는코드생성됩니다**삭제할**; 경우 연산자의 배치 형태만 실행 하면 있지만 **삭제할** 연산자의 배치 형태에 일치 하는 **새** 메모리를 할당 합니다. 예를 들어:
+**새** 연산자의 배치 형태 (할당 크기 외에 인수를 포함 하는 폼)를 사용 하 고 개체의 생성자가 예외를 throw 하는 경우 컴파일러는 operator **delete**를 호출 하는 코드를 계속 생성 합니다. 하지만 operator **delete** 의 배치 형식이 메모리를 할당 한 **new** 연산자의 배치 형식과 일치 하는 경우에만이 작업을 수행할 수 있습니다. 예를 들면,
 
-```
+```cpp
 // C4291.cpp
 // compile with: /EHsc /W1
 #include <malloc.h>
@@ -74,7 +74,7 @@ int main(void)
 }
 ```
 
-위의 예제 때문에 C4291 경고를 생성 연산자의 배치 형식이 없으므로 **삭제** 정의 된 연산자의 배치 형식을 일치 하는 **새**합니다. 문제를 해결 하기 위해 위에 다음 코드를 삽입할 **주**합니다. 모든 오버 로드 된 연산자 **삭제** 함수 매개 변수 오버 로드 된 연산자의 일치 **새**, 첫 번째 매개 변수를 제외 하 고 있습니다.
+위의 예에서는 operator **new**의 배치 형태와 일치 하는 operator **delete** 의 배치 형식이 정의 되어 있지 않기 때문에 경고 C4291을 생성 합니다. 문제를 해결 하려면 **main**위에 다음 코드를 삽입 합니다. 모든 오버 로드 된 operator **delete** 함수 매개 변수는 첫 번째 매개 변수를 제외 하 고 오버 로드 된 operator **new**의 함수와 일치 합니다.
 
 ```
 void operator delete(void* pMem, char* pszFilename, int nLine)

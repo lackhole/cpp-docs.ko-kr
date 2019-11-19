@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 3) C4281
+title: 컴파일러 경고 (수준 3) C4281
 ms.date: 11/04/2016
 f1_keywords:
 - C4281
 helpviewer_keywords:
 - C4281
 ms.assetid: a9771261-5725-4fc6-87b6-16cf92113a25
-ms.openlocfilehash: 69496438d8078ee0298bdb447fcf4f7df1b75464
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 454118aa9b9cb1fdea5fb10576ac8d26833cb08c
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402153"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051688"
 ---
-# <a name="compiler-warning-level-3-c4281"></a>컴파일러 경고(수준 3) C4281
+# <a name="compiler-warning-level-3-c4281"></a>컴파일러 경고 (수준 3) C4281
 
-'type' 형식이 'operator->' 재귀가 발생 했습니다.
+' type ' 형식을 통해 ' operator > ' 재귀가 발생 했습니다.
 
-코드 **operator->** 자신을 호출 합니다.
+코드에서 **>** 자신을 호출 하도록 허용 합니다.
 
-다음 샘플에서는 C4281 오류가 생성 됩니다.
+다음 샘플에서는 C4281를 생성 합니다.
 
-```
+```cpp
 // C4281.cpp
 // compile with: /W3 /WX
 struct A;

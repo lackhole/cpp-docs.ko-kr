@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 3) C4243
+title: 컴파일러 경고 (수준 3) C4243
 ms.date: 11/04/2016
 f1_keywords:
 - C4243
 helpviewer_keywords:
 - C4243
 ms.assetid: ca72f9ad-ce0b-43a9-a68c-106e1f8b90ef
-ms.openlocfilehash: e08a8538c93681c59779f681812a9ba8f7e316a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed5cc87f1bc376526f5129aa157c38a3f034b20b
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402205"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051738"
 ---
-# <a name="compiler-warning-level-3-c4243"></a>컴파일러 경고(수준 3) C4243
+# <a name="compiler-warning-level-3-c4243"></a>컴파일러 경고 (수준 3) C4243
 
-'conversion type' 변환이 'type1'에서 'type2'에 있지만 액세스할 수 없는
+' 변환 형식 ' 변환이 ' type1 '에서 ' type2 ' (으)로의 변환이 있지만 액세스할 수 없습니다.
 
-파생된 클래스에 대 한 포인터를 기본 클래스에 대 한 포인터로 변환 됩니다 있지만 파생된 클래스는 private 또는 protected 액세스를 사용 하 여 기본 클래스를 상속 합니다.
+파생 클래스에 대 한 포인터는 기본 클래스에 대 한 포인터로 변환 되지만 파생 클래스는 개인 또는 보호 된 액세스를 사용 하 여 기본 클래스를 상속 합니다.
 
-다음 샘플에서는 C4243 오류가 생성 됩니다.
+다음 샘플에서는 C4243를 생성 합니다.
 
-```
+```cpp
 // C4243.cpp
 // compile with: /W3
 // C4243 expected

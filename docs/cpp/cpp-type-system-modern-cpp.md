@@ -68,7 +68,7 @@ int maxValue;                // Not recommended! maxValue contains
 |Type|Size|설명|
 |----------|----------|-------------|
 |정수|4바이트|정수 값에 대한 기본 선택입니다.|
-|이중 실선|8바이트|부동 소수점 값에 대한 기본 선택입니다.|
+|double|8바이트|부동 소수점 값에 대한 기본 선택입니다.|
 |bool|1바이트|true 또는 false가 될 수 있는 값을 나타냅니다.|
 |char|1바이트|UNICODE로 변환되지 않는 이전 C 스타일 문자열 또는 std::string 개체의 ASCII 문자에 사용합니다.|
 |wchar_t|2바이트|UNICODE 형식(Windows의 경우 UTF-16, 운영 체제마다 다를 수 있음)으로 인코딩할 수 있는 "와이드" 문자 값을 나타냅니다. `std::wstring` 형식 문자열에 사용되는 문자 형식입니다.|

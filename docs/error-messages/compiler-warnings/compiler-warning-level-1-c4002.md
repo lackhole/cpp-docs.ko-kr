@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4002
 ms.assetid: 6bda1dfe-e2e4-4771-9794-5a404c466dd5
-ms.openlocfilehash: f2d2166a1370c02cfbc2346a63a424239ccb2b92
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6aac8285e3935bb0fb910b52a7dd813d0a708732
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187263"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627400"
 ---
 # <a name="compiler-warning-level-1-c4002"></a>컴파일러 경고(수준 1) C4002
 
@@ -23,7 +23,7 @@ C4002는 [Variadic Macros](../../preprocessor/variadic-macros.md)를 잘못 사�
 
 다음 샘플에서는 C4002를 생성합니다.
 
-```
+```cpp
 // C4002.cpp
 // compile with: /W1
 #define test(a) (a)
@@ -41,7 +41,7 @@ int main() {
 
 컴파일러는 매크로의 추가 쉼표를 더 이상 허용하지 않습니다. Visual Studio .NET 2003과 Visual C++의 Visual Studio .NET 버전 둘 다에서 코드가 유효하려면 추가 쉼표를 제거합니다.
 
-```
+```cpp
 // C4002b.cpp
 // compile with: /W1
 #define F(x,y)

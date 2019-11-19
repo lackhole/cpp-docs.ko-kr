@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4090
 ms.assetid: baad469d-23d4-45aa-ad9c-305b32d61e9a
-ms.openlocfilehash: b47d0bfbb6eab24fbe811d3e4f79b6bd86b3bb11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88ed48e9bf7057c55ee4004ca1bb1eb18cd4be51
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406485"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626160"
 ---
 # <a name="compiler-warning-level-1-c4090"></a>컴파일러 경고 (수준 1) C4090
 
-'operation': 다른 'modifier' 한정자
+' operation ': 다른 ' modifier ' 한정자입니다.
 
-작업에 사용 된 변수는 컴파일러에서 감지 하지 않고 수정 되지 않도록 방지 하는 지정 된 한정자를 사용 하 여 정의 됩니다. 식은 수정 없이 컴파일됩니다.
+작업에 사용 되는 변수는 컴파일러가 검색 하지 않고 수정 되지 않도록 지정 된 한정자로 정의 됩니다. 식은 수정 하지 않고 컴파일됩니다.
 
-이 경고에 대 한 포인터는 경우 발생할 수 있습니다는 **const** 또는 `volatile` 항목을 가리키도록 선언 되지 않은 포인터에 할당 됩니다 **const** 또는 `volatile`합니다.
+이 경고는 **const 또는 `volatile`** 항목에 대 한 포인터가 **const** 또는 `volatile`를 가리키는 것으로 선언 되지 않은 포인터에 할당 된 경우에 발생할 수 있습니다.
 
-C 프로그램에 대 한 경고가 발생 합니다. 에 C++ 프로그램 컴파일러에서 오류가 발생 합니다. [C2440](../../error-messages/compiler-errors-1/compiler-error-c2440.md).
+이 경고는 C 프로그램에 대해 실행 됩니다. C++ 프로그램에서 컴파일러는 오류를 발생 시킵니다. [C2440](../../error-messages/compiler-errors-1/compiler-error-c2440.md).
 
-다음 샘플에서는 C4090 오류가 생성 됩니다.
+다음 샘플에서는 C4090를 생성 합니다.
 
-```
+```c
 // C4090.c
 // compile with: /W1
 int *volatile *p;

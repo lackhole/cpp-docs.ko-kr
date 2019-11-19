@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 1) C4715
+title: 컴파일러 경고 (수준 1) C4715
 ms.date: 11/04/2016
 f1_keywords:
 - C4715
 helpviewer_keywords:
 - C4715
 ms.assetid: 1c819bf7-0d8b-4f5e-b338-9cc292870439
-ms.openlocfilehash: f165ea3b54b78e2f8fae995815e309d55101244e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 268a26f5de1bb7f757a8e7cba6d3f5e6ddff882e
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406329"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052472"
 ---
-# <a name="compiler-warning-level-1-c4715"></a>컴파일러 경고(수준 1) C4715
+# <a name="compiler-warning-level-1-c4715"></a>컴파일러 경고 (수준 1) C4715
 
-'function': 값을 반환 하는 모든 제어 경로
+' function ': 모든 제어 경로에서 값을 반환 하는 것은 아닙니다.
 
-지정된 된 함수 값을 반환 하지 않을 수 있는 수 있습니다.
+지정 된 함수는 잠재적으로 값을 반환할 수 없습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // C4715a.cpp
 // compile with: /W1 /LD
 int func1( int i )
@@ -31,9 +31,9 @@ int func1( int i )
 }
 ```
 
-이 경고를 방지 하려면 모든 경로 함수에 반환 값을 할당 되도록 코드를 수정 합니다.
+이 경고를 방지 하려면 모든 경로가 반환 값을 함수에 할당 하도록 코드를 수정 합니다.
 
-```
+```cpp
 // C4715b.cpp
 // compile with: /LD
 int func1( int i )
@@ -43,9 +43,9 @@ int func1( int i )
 }
 ```
 
-코드를 반환 하지 않습니다 다음 예제와 같이 하는 함수에 대 한 호출을 포함할 수 있음을 것 같습니다.
+다음 예제와 같이 코드가 반환 하지 않는 함수에 대 한 호출을 포함할 수 있습니다.
 
-```
+```cpp
 // C4715c.cpp
 // compile with: /W1 /LD
 void fatal()
@@ -62,4 +62,4 @@ int glue()
 }
 ```
 
-이 코드는 또한 경고를 생성 모르기 때문에 컴파일러는 `fatal` 반환 하지 않습니다. 이 코드는 오류 메시지 생성을 방지 하려면 선언 `fatal` 를 사용 하 여 [__declspec (noreturn)](../../cpp/noreturn.md)합니다.
+컴파일러는 `fatal` 반환 되지 않는다는 것을 인식 하지 못하기 때문에이 코드는 경고를 생성 합니다. 이 코드가 오류 메시지를 생성 하지 않도록 하려면 [__declspec (noreturn)](../../cpp/noreturn.md)를 사용 하 여 `fatal`를 선언 합니다.

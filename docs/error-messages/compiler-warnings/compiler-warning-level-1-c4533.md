@@ -1,25 +1,25 @@
 ---
-title: 컴파일러 경고(수준 1) C4533
+title: 컴파일러 경고 (수준 1) C4533
 ms.date: 11/04/2016
 f1_keywords:
 - C4533
 helpviewer_keywords:
 - C4533
 ms.assetid: 359fecda-d540-46e5-b214-dbabe9ef50d2
-ms.openlocfilehash: 8ac7f00ad3401e88224c0150324822ce71e95018
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6ee88af66238497216d7e5dab497394a58a55805
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160772"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965760"
 ---
-# <a name="compiler-warning-level-1-c4533"></a>컴파일러 경고(수준 1) C4533
+# <a name="compiler-warning-level-1-c4533"></a>컴파일러 경고 (수준 1) C4533
 
-'variable' 초기화 '명령을' 의해 생략 되었습니다.
+' variable ' 초기화는 ' 명령 '에 의해 생략 됩니다.
 
-명령 프로그램에서 변경, 제어 흐름, 변수를 초기화 하는 명령이 실행 되지 않았습니다. 다음 샘플에서는 C4533 오류가 생성 됩니다.
+프로그램의 명령이 제어 흐름을 변경 하 여 변수를 초기화 한 명령이 실행 되지 않았습니다. 다음 샘플에서는 C4533를 생성 합니다.
 
-```
+```cpp
 // C4533.cpp
 // compile with: /W1
 #include <stdio.h>

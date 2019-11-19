@@ -33,12 +33,12 @@ helpviewer_keywords:
 - time, copying
 - _strtime_s function
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
-ms.openlocfilehash: 855c88f22e00cad398f6357b8e35931598041aeb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c74e7359f68469fd8322ba1c9348acffd636282a
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946575"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625914"
 ---
 # <a name="_strtime_s-_wstrtime_s"></a>_strtime_s, _wstrtime_s
 
@@ -94,13 +94,15 @@ errno_t _wstrtime_s(
 
 버퍼의 실제 크기 보다 큰 *Numberofelements* 에 대 한 값을 전달 하면 버퍼 오버런이 발생 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 함수는 [_strtime](strtime-wstrtime.md) 및 [_wstrtime](strtime-wstrtime.md)의 더 안전한 버전을 제공 합니다. **_Strtime_s** 함수는 *timestr*가 가리키는 버퍼에 현재 현지 시간을 복사 합니다. 시간은 **hh: mm: ss** 형식으로 지정 됩니다. 여기서 **hh** 는 24 시간 표기법의 시간을 나타내는 두 자리 숫자, **mm** 은 분을 나타내는 두 자리 숫자, **ss** 는 초를 나타내는 두 자리 숫자입니다. 예를 들어, **18:23:44** 문자열은 23 분 및 44 초 (오후 6 시)를 나타냅니다. 버퍼는 9바이트 이상이어야 합니다. 실제 크기는 두 번째 매개 변수로 지정됩니다.
 
 **_wstrtime** 는 **_strtime**의 와이드 문자 버전입니다. **_wstrtime** 의 인수 및 반환 값은 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
-C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
+
+이러한 함수의 디버그 라이브러리 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ### <a name="generic-text-routine-mapping"></a>제네릭 텍스트 루틴 매핑:
 
@@ -115,7 +117,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**_strtime_s**|\<time.h>|
 |**_wstrtime_s**|\<time.h> 또는 \<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -160,7 +162,7 @@ OS time:            14:37:49
 OS date:            04/25/03
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [시간 관리](../../c-runtime-library/time-management.md)<br/>
 [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>

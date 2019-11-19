@@ -1,12 +1,21 @@
 ---
 title: '&lt;numeric&gt; 함수'
-ms.date: 11/04/2016
+description: C++ 표준 라이브러리의 &lt;numeric&gt;헤더에서 제공 하는 함수 템플릿에 대해 설명 합니다.
+ms.date: 10/30/2019
 f1_keywords:
 - numeric/std::accumulate
 - numeric/std::adjacent_difference
+- numeric/std::exclusive_scan
+- numeric/std::gcd
+- numeric/std::inclusive_scan
 - numeric/std::inner_product
 - numeric/std::iota
+- numeric/std::lcm
 - numeric/std::partial_sum
+- numeric/std::reduce
+- numeric/std::transform_exclusive_scan
+- numeric/std::transform_inclusive_scan
+- numeric/std::transform_reduce
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
 helpviewer_keywords:
 - std::accumulate [C++]
@@ -22,52 +31,55 @@ helpviewer_keywords:
 - std::transform_exclusive_scan [C++]
 - std::transform_inclusive_scan [C++]
 - std::transform_reduce [C++]
-ms.openlocfilehash: ab1e2942cbcfe568dd4c280c059fe0768493794c
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: 88a97a3d110c684090b78570077927e32541eed7
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889961"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627453"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;numeric&gt; 함수
 
 ## <a name="accumulate"></a>누적
 
-연속적 부분 합계를 계산하여 일부 초기값을 비롯한 지정된 범위 내 모든 요소의 합계를 계산하거나, 합계 대신 지정된 이진 연산을 사용하여 유사하게 구한 연속적 부분 결과의 결과를 계산합니다.
+연속 부분 합계를 계산 하 여 일부 초기 값을 포함 하 여 지정 된 범위에 있는 모든 요소의 합계를 계산 합니다. 또는는 지정 된 이항 연산의 연속 부분 결과를 계산 하 여 결과를 계산 합니다.
 
 ```cpp
 template <class InputIterator, class Type>
-Type accumulate(InputIterator first, InputIterator last, Type val);
+Type accumulate(
+    InputIterator first,
+    InputIterator last,
+    Type init);
 
 template <class InputIterator, class Type, class BinaryOperation>
 Type accumulate(
     InputIterator first,
     InputIterator last,
-    Type val,
+    Type init,
     BinaryOperation binary_op);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *첫 번째* \
-지정된 이진 연산에 따라 합을 계산하거나 결합할 범위의 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
+*Binary_op*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
 
 *마지막* \
-반복된 누적에 실제로 포함된 마지막 요소 하나 다음 위치의 지정된 이진 연산에 따라 합을 계산하거나 결합할 범위의 마지막 요소를 주소 지정하는 입력 반복기입니다.
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
 
-*val* \
-지정된 이진 연산에 따라 각 요소가 차례로 추가되거나 결합되는 초기값입니다.
+*init*\
+*Binary_op*를 사용 하 여 각 요소가 차례로 추가 되거나 결합 되는 초기 값입니다.
 
 *binary_op*\
-지정된 범위의 각 요소와 이전 적용의 결과에 적용할 이진 연산입니다.
+지정 된 범위의 각 요소와 이전 응용 프로그램의 결과에 적용할 이항 연산입니다.
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 템플릿 함수의 지정 된 범위에 있는 *val* 및 모든 요소의 합계 이거나, 두 번째 템플릿 함수의 경우 sum 연산 대신 지정 된 이진 연산을 적용 한 결과 (*partialresult, \*Iter)입니다.* ). 여기서 *partialresult* 는 이전 작업 응용 프로그램의 결과이 고 `Iter`는 범위의 요소를 가리키는 반복기입니다.
+첫 번째 템플릿 함수에 대해 지정 된 범위에 있는 *init* 의 합계 및 모든 요소 또는 두 번째 템플릿 함수의 경우 sum 연산 대신 이항 연산 *binary_op* 을 적용 한 결과 (* partialresult, *in_ iter*). 여기서 *partialresult* 는 이전 작업 응용 프로그램의 결과이 고 *in_iter* 는 범위의 다음 요소를 가리키는 반복기입니다.
 
 ### <a name="remarks"></a>주의
 
-초기 값은 범위가 비어 있을 때 잘 정의 된 결과가 있음을 보장 하며,이 경우 *val* 이 반환 됩니다. 이항 연산은 연관성이 나 비가 환 일 필요가 없습니다. 결과가 초기 값 *val* 로 초기화 *된 다음 결과* = `binary_op` (*결과*, <strong>\*</strong>`Iter`)는 범위를 통해 반복적으로 계산 됩니다. 여기서 `Iter`은 연속을 가리키는 반복기입니다. 범위에 있는 요소입니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
+초기 값은 범위가 비어 있을 때 잘 정의 된 결과가 있는지 확인 합니다 .이 경우 *init* 가 반환 됩니다. 이항 연산은 연관성이 나 비가 환 일 필요가 없습니다. 결과는 초기 값 *init* 로 초기화 된 다음 *결과* = *binary_op*(*result*, *in_iter*)는 범위를 통해 반복적으로 계산 됩니다. 여기서 *in_iter* 은 각각을 가리키는 반복기입니다. 범위의 연속 요소입니다. 범위는 유효 해야 하 고 복잡성은 범위의 크기와 선형입니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -170,7 +182,7 @@ The vector of partial products is:
 
 ## <a name="adjacent_difference"></a>adjacent_difference
 
-각 요소와 입력 범위의 해당 선행 작업간 연속 차이를 계산하고 결과를 대상 범위로 출력하거나 차이 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.
+입력 범위에서 각 요소와 선행 작업 간의 연속 차이를 계산 합니다. 결과를 대상 범위에 출력 합니다. 또는는 차이 연산을 지정 된 다른 이진 연산으로 대체 한 일반화 된 절차의 결과를 계산 합니다.
 
 ```cpp
 template <class InputIterator, class OutIterator>
@@ -205,6 +217,9 @@ ForwardIterator2 adjacent_difference(
 
 ### <a name="parameters"></a>매개 변수
 
+*exec*\
+실행 정책입니다.
+
 *첫 번째* \
 입력 범위에서 해당 선행 작업과 차별화해야 하거나 지정된 다른 이진 작업에서 값 쌍을 처리해야 하는 첫 번째 요소를 주소 지정하는 입력 반복기입니다.
 
@@ -215,7 +230,7 @@ ForwardIterator2 adjacent_difference(
 일련의 차이 또는 지정된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정하는 출력 반복기입니다.
 
 *binary_op*\
-차이 절차에서 차감 연산을 대체하는 일반화된 연산에 적용할 이항 연산입니다.
+일반적인 작업에서 적용할 이항 연산이 며, 차이점 보관용 프로시저에서 빼기 연산을 대체 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -225,11 +240,11 @@ ForwardIterator2 adjacent_difference(
 
 출력 반복기 *결과* 는 *입력 반복기와*동일한 반복기 일 수 있으므로 `adjacent_difference` 값이 현재 위치의 계산 될 수 있습니다.
 
-입력 범위에서 *1,* *a*2, 3의 값 시퀀스에 대해 첫 번째 템플릿 함수는 대상 범위에 연속 `partial_difference` *값 1,* 2- *a* *1,* a3- *a* *2를 저장*합니다.
+입력 범위에서 *1,* *a*2, 3의 값 시퀀스에 대해 첫 번째 템플릿 함수는 대상 범위에 연속 `adjacent_difference` *값 1,* 2- *a* *1,* a3- *a* *2를 저장*합니다.
 
-입력 범위에서 1, *a*2, 3의 값시퀀스에 대해 두 번째 템플릿 *함수는 연속*`partial_difference` *값 1,* *2 `binary_op` 1, 3* *`binary_op`* *2를 대상*에 저장 합니다. 벗어납니다.
+입력 범위에서 1, *a*2 *, 3*의 값 시퀀스에 대해 두 번째 템플릿 함수는 연속 `adjacent_difference` 값 *a* *1,* 2 *binary_op* *a* *1, 3* *binary_op* *a* *2를 저장*합니다. 대상 범위입니다.
 
-적용 되는 작업의 순서가 지정 되어 있으므로 이항 연산 `binary_op`는 결합형 또는 교환 일 필요가 없습니다.
+적용 되는 작업의 순서가 지정 되어 있으므로 이항 연산 *binary_op* 는 결합형 또는 교환 일 필요가 없습니다.
 
 ### <a name="example"></a>예제
 
@@ -294,66 +309,160 @@ int main( )
 
 ## <a name="exclusive_scan"></a>exclusive_scan
 
+초기 값이 지정 된 경우 범위에 대해 `std::plus<>()` 또는 지정 된 이항 연산자를 사용 하 여 배타적 접두사 합계 연산을 계산 합니다. 지정 된 대상에서 시작 하는 범위에 결과를 씁니다. *제외 접두사* 합계는 *n*번째 입력 요소가 *n*번째 합계에 포함 되지 않음을 의미 합니다. 실행 정책 인수를 포함 하는 오버 로드는 지정 된 정책에 따라 실행 됩니다.
+
 ```cpp
-template<class InputIterator, class OutputIterator, class T>
-OutputIterator exclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-T init);
-template<class InputIterator, class OutputIterator, class T, class BinaryOperation>
-OutputIterator exclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-T init, BinaryOperation binary_op);
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class T>
-ForwardIterator2 exclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-T init);
-template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class T,
-class BinaryOperation>
-ForwardIterator2 exclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-T init, BinaryOperation binary_op);
+template<class InputIterator, class OutputIterator, class Type>
+OutputIterator exclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    Type init);
+
+template<class InputIterator, class OutputIterator, class Type, class BinaryOperation>
+OutputIterator exclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    Type init,
+    BinaryOperation binary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type>
+ForwardIterator2 exclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type, class BinaryOperation>
+ForwardIterator2 exclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    Type init,
+    BinaryOperation binary_op);
 ```
 
+### <a name="parameters"></a>매개 변수
+
+*exec*\
+실행 정책입니다.
+
+*첫 번째* \
+*Binary_op*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
+
+*마지막* \
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
+
+*결과*\
+일련의 합계 또는 지정 된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정 하는 출력 반복기입니다.
+
+*init*\
+*Binary_op*를 사용 하 여 각 요소가 차례로 추가 되거나 결합 되는 초기 값입니다.
+
+*binary_op*\
+지정 된 범위의 각 요소와 이전 응용 프로그램의 결과에 적용할 이항 연산입니다.
+
+### <a name="return-value"></a>반환 값
+
+대상 범위 끝을 주소 지정 하는 출력 반복기: *result* + (*last* - *first*).
+
 ## <a name="gcd"></a>gcd
+
+M과 n 정수의 최대 공약수를 계산 합니다.
 
 ```cpp
 template <class M, class N>
 constexpr common_type_t<M,N> gcd(M m, N n);
 ```
 
+### <a name="parameters"></a>매개 변수
+
+*m*, *n*\
+정수 계열 형식의 값입니다.
+
+### <a name="return-value"></a>반환 값
+
+*M* 과 *n*의 절대값에 대 한 최대 공약수를 반환 하거나, *m* 과 *n* 이 모두 0 이면 0을 반환 합니다. *M* 또는 *n* 의 절대값을 `common_type_t<M,N>`형식의 값으로 표현할 수 없는 경우 결과가 정의 되지 않습니다.
+
 ## <a name="inclusive_scan"></a>inclusive_scan
+
+초기 값이 지정 된 경우 범위에 대해 `std::plus<>()` 또는 지정 된 이항 연산자를 사용 하 여 포괄 접두사 sum 연산을 계산 합니다. 지정 된 대상에서 시작 하는 범위에 결과를 씁니다. *포함 접두사* 합계는 *n*번째 입력 요소가 *n*번째 합계에 포함 됨을 의미 합니다. 실행 정책 인수를 포함 하는 오버 로드는 지정 된 정책에 따라 실행 됩니다.
 
 ```cpp
 template<class InputIterator, class OutputIterator>
-OutputIterator inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result);
+OutputIterator inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result);
+
 template<class InputIterator, class OutputIterator, class BinaryOperation>
-OutputIterator inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op);
-template<class InputIterator, class OutputIterator, class BinaryOperation, class T>
-OutputIterator inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op, T init);
+OutputIterator inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op);
+
+template<class InputIterator, class OutputIterator, class BinaryOperation, class Type>
+OutputIterator inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op,
+    Type init);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
-ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result);
+ForwardIterator2 inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
 class BinaryOperation>
-ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op);
+ForwardIterator2 inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op);
+
 template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
-class BinaryOperation, class T>
-ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op, T init);
+class BinaryOperation, class Type>
+ForwardIterator2 inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op,
+    Type init);
 ```
+
+### <a name="parameters"></a>매개 변수
+
+*exec*\
+실행 정책입니다.
+
+*첫 번째* \
+*Binary_op*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
+
+*마지막* \
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
+
+*결과*\
+일련의 합계 또는 지정 된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정 하는 출력 반복기입니다.
+
+*init*\
+*Binary_op*를 사용 하 여 각 요소가 차례로 추가 되거나 결합 되는 초기 값입니다.
+
+*binary_op*\
+지정 된 범위의 각 요소와 이전 응용 프로그램의 결과에 적용할 이항 연산입니다.
+
+### <a name="return-value"></a>반환 값
+
+대상 범위 끝을 주소 지정 하는 출력 반복기: *result* + (*last* - *first*).
 
 ## <a name="inner_product"></a>inner_product
 
@@ -365,16 +474,16 @@ Type inner_product(
     InputIterator1   first1,
     InputIterator1   last1,
     InputIterator2   first2,
-    Type             val);
+    Type             init);
 
 template <class InputIterator1, class InputIterator2, class Type, class BinaryOperation1, class BinaryOperation2>
 Type inner_product(
     InputIterator1   first1,
     InputIterator1   last1,
     InputIterator2   first2,
-    Type             val,
-    BinaryOperation1  binary_op1,
-    BinaryOperation2  binary_op2);
+    Type             init,
+    BinaryOperation1 binary_op1,
+    BinaryOperation2 binary_op2);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -388,7 +497,7 @@ Type inner_product(
 *first2* \
 첫 번째 범위와의 일반화된 내부 곱 또는 내부 곱을 계산할 두 번째 범위의 첫 번째 요소 주소를 지정하는 입력 반복기입니다.
 
-*val* \
+*init*\
 범위 간의 내부 곱 또는 일반화된 내부 곱을 더할 초기값입니다.
 
 *binary_op1*\
@@ -401,19 +510,19 @@ Type inner_product(
 
 첫 번째 구성원 함수는 요소별 곱의 합을 반환하고 해당 합을 지정된 초기값에 더합니다. 따라서 값 *a*i 및 *b*i의 범위에 대해 이 함수는 다음 결과를 반환합니다.
 
-`val` + (*a*1 \* *b*1) + (*a*2 \* *b*2) + ... + (*a*n \* *b*n)
+*init* + (*a*1 \* *b*1) + (*a*2 \* *b*2) + ... + (*a*n \* *b*n)
 
-*val* 을 `val` + (*a*i \* *b*i)로 반복적으로 바꿉니다.
+*init* 를 *init* + (*a*i \* *b*i)로 반복적으로 대체 합니다.
 
 두 번째 구성원 함수는 다음 결과를 반환합니다.
 
-`val` *binary_op1* (*a*1 *binary_op2* *b*1) *binary_op1* (*a*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* (*a*n *binary_op2* *b*n)
+*init* *binary_op1* (*1* *binary_op2* *b*1) *binary_op1* (*a*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* (*a*n *binary_op2* *b*n)
 
-*val* 을 `val` *binary_op1* (*a*i *binary_op2* *b*i)로 반복적으로 바꿉니다.
+*init* 를 *init* *binary_op1* (*a*i *binary_op2* *b*i)로 반복적으로 대체 합니다.
 
 ### <a name="remarks"></a>주의
 
-초기 값은 범위가 비어 있을 때 잘 정의 된 결과가 있는지 확인 합니다 .이 경우 *val* 이 반환 됩니다. 이항 연산은 연관성이 나 비가 환 필요가 없습니다. 범위는 유효해야 하며 복잡성은 범위의 크기에 비례해야 합니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
+초기 값은 범위가 비어 있을 때 잘 정의 된 결과가 있는지 확인 합니다. 이 경우 *init* 가 반환 됩니다. 이항 연산은 연관성이 나 비가 환 필요가 없습니다. 범위는 유효 해야 하 고 복잡성은 범위의 크기와 선형입니다. 반복 중에 닫기가 가능하도록 하려면 이진 연산자의 반환 형식을 **Type**으로 변환할 수 있어야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -507,7 +616,7 @@ int main()
 
 ## <a name="iota"></a>iota
 
-시작 값을 저장 하 고, 첫 번째 요소부터 시작 하 여 간격 `[first,  last)`간격의 각 요소에서 해당 값의 연속 증가값 (` value++`)을 채웁니다.
+시작 값을 저장 하 고, 첫 번째 요소부터 시작 하 여 간격 `[first,  last)`간격의 각 요소에서 해당 값의 연속 증가값 (`value++`)을 채웁니다.
 
 ```cpp
 template <class ForwardIterator, class Type>
@@ -576,7 +685,7 @@ constexpr common_type_t<M,N> lcm(M m, N n);
 
 ## <a name="partial_sum"></a>partial_sum
 
-첫 번째 요소부터 *i*번째 요소까지 입력 범위에서 일련의 합계를 계산하고 각 합계의 결과를 대상 범위의 *i*번째 요소에 저장하거나 합 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.
+N 번째 요소부터 *n*번째 요소까지 입력 범위에서 일련의 합계를 계산 하 고 각 합계의 결과를 대상 범위의 *n*번째 요소에 저장 합니다. 또는는 sum 연산을 지정 된 다른 이진 연산으로 대체 한 일반화 된 절차의 결과를 계산 합니다.
 
 ```cpp
 template <class InputIterator, class OutIt>
@@ -602,24 +711,24 @@ OutputIterator partial_sum(
 반복된 누적에 실제로 포함된 마지막 요소 하나 다음 위치의 지정된 이진 연산에 따라 부분적으로 합을 계산하거나 결합할 범위의 마지막 요소를 주소 지정하는 입력 반복기입니다.
 
 *결과*\
-일련의 부분적 합 또는 지정된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정하는 출력 반복기입니다.
+일련의 부분 합계를 저장할 대상 범위의 첫 번째 요소 또는 지정 된 이항 연산의 후속 결과를 주소 지정 하는 출력 반복기입니다.
 
 *binary_op*\
-부분적 합 절차에서 합 연산을 대체하는 일반화된 연산에 적용할 이항 연산입니다.
+부분 합계 프로시저에서 sum 연산을 대체 하 여 일반화 된 작업에 적용할 이항 연산입니다.
 
 ### <a name="return-value"></a>반환 값
 
-대상 범위 끝을 주소 지정 하는 출력 반복기: `result` + (`last` - `first`)
+대상 범위 끝을 주소 지정 하는 출력 반복기: *result* + (*last* - *first*).
 
 ### <a name="remarks"></a>주의
 
 출력 반복기 *결과* 는 입력 반복기와 동일한 반복기 일 수 있으므로 부분 *합계를 계산*하는 데 사용할 수 있습니다.
 
-입력 범위 *에서 1,* *a*2 *, 3의*값 시퀀스에 대해 첫 번째 템플릿 함수는 대상 범위에 연속 부분 합계를 저장 합니다. 여기서 *i*번째 요소는 *(((1 +* *a*2) + *a*3)로 지정 됩니다.i).
+*값 시퀀스의 경우 1*, *a*2, ... 입력 범위의 x 인 첫 번째 템플릿 함수는 연속 부분 합계를 대상 범위에 *저장 합니다.* *N*번째 요소*는 (1*+ *a*2 + *a*3 + ... + *a*n)로 지정 됩니다.
 
-입력 범위에서 *1,* *a*2, 3 *의 값 시퀀스*에 대해 두 번째 템플릿 함수는 대상 범위에 연속 부분 합계를 저장 합니다. 여기서 i 번째 요소는 *(((1 `binary_op`* *a*2 `binary_op`)에 의해 지정 됩니다.3) *a*).
+입력 범위에서 *1,* *a*2, 3의 값 시퀀스에 대해 두 번째 템플릿 *함수는 연속*된 부분 결과를 대상 범위에 저장 합니다. *N*번째 요소는 ((... ((*a*1 *binary_op* *a*2) *binary_op* *a*3) *binary_op* ...) *binary_op* *n)* .
 
-작업 순서가 지정 되어 있으므로 이항 연산 *binary_op* 는 결합형 또는 교환 일 필요가 없습니다.
+적용 되는 작업의 순서가 지정 되어 있으므로 이항 연산 *binary_op* 는 결합형 또는 교환 일 필요가 없습니다.
 
 ### <a name="example"></a>예제
 
@@ -683,123 +792,276 @@ int main( )
 
 ## <a name="reduce"></a>줄이십시오
 
+임의 및 가능한 요소가 순열의 합계를 계산 하 여 일부 초기 값을 포함 하 여 지정 된 범위의 모든 요소를 줄입니다. 또는 지정 된 이항 연산의 결과를 계산 하 여 감소 시킵니다. 실행 정책 인수를 포함 하는 오버 로드는 지정 된 정책에 따라 실행 됩니다.
+
 ```cpp
 template<class InputIterator>
-typename iterator_traits<InputIterator>::value_type
-reduce(InputIterator first, InputIterator last);
-template<class InputIterator, class T>
-T reduce(InputIterator first, InputIterator last, T init);
-template<class InputIterator, class T, class BinaryOperation>
-T reduce(InputIterator first, InputIterator last, T init,
-BinaryOperation binary_op);
+typename iterator_traits<InputIterator>::value_type reduce(
+    InputIterator first,
+    InputIterator last);
+
+template<class InputIterator, class Type>
+Type reduce(
+    InputIterator first,
+    InputIterator last,
+    Type init);
+
+template<class InputIterator, class Type, class BinaryOperation>
+Type reduce(
+    InputIterator first,
+    InputIterator last,
+    Type init,
+    BinaryOperation binary_op);
+
 template<class ExecutionPolicy, class ForwardIterator>
-typename iterator_traits<ForwardIterator>::value_type
-reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last);
-template<class ExecutionPolicy, class ForwardIterator, class T>
-T reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last, T init);
-template<class ExecutionPolicy, class ForwardIterator, class T, class BinaryOperation>
-T reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last, T init,
-BinaryOperation binary_op);
+typename iterator_traits<ForwardIterator>::value_type reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last);
+
+template<class ExecutionPolicy, class ForwardIterator, class Type>
+Type reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator, class Type, class BinaryOperation>
+Type reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last,
+    Type init,
+    BinaryOperation binary_op);
 ```
+
+### <a name="parameters"></a>매개 변수
+
+*exec*\
+실행 정책입니다.
+
+*첫 번째* \
+*Binary_op*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
+
+*마지막* \
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
+
+*결과*\
+일련의 합계 또는 지정 된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정 하는 출력 반복기입니다.
+
+*init*\
+*Binary_op*를 사용 하 여 각 요소가 차례로 추가 되거나 결합 되는 초기 값입니다.
+
+*binary_op*\
+지정 된 범위의 각 요소와 이전 응용 프로그램의 결과에 적용할 이항 연산입니다.
+
+### <a name="return-value"></a>반환 값
+
+*Init* 에 *binary_op* 또는 `std::plus<>()`를 적용 하 고 지정 된 범위의 모든 요소를 (* partialresult, *in_iter*)에 적용 한 결과입니다. 여기서 *partialresult* 는 이전 작업 응용 프로그램의 결과이 고 *in_iter* 는 범위의 일부 요소를 가리키는 반복기입니다. *Init*를 지정 하지 않는 오버 로드에서 사용 되는 *init* 값은 `typename iterator_traits<InputIterator>::value_type{}`와 동일 합니다.
+
+### <a name="remarks"></a>주의
+
+*binary_op* 가 결합형 및 교환 되지 않는 한 `reduce` 동작은 비결 정적입니다. *Binary_op* 가 모든 요소를 수정 하거나 interval \[*first*, *last*], 포함 된 모든 반복기를 무효화 하는 경우 동작이 정의 되지 않습니다.
 
 ## <a name="transform_exclusive_scan"></a>transform_exclusive_scan
 
+지정 된 단항 연산자를 사용 하 여 범위의 요소를 변환한 다음, 지정 된 초기 값을 사용 하 여 범위에 대해 `std::plus<>()` 또는 지정 된 이항 연산자를 사용 하 여 배타적 접두사 합계 연산을 계산 합니다. 지정 된 대상에서 시작 하는 범위에 결과를 씁니다. *제외 접두사* 합계는 *n*번째 입력 요소가 *n*번째 합계에 포함 되지 않음을 의미 합니다. 실행 정책 인수를 포함 하는 오버 로드는 지정 된 정책에 따라 실행 됩니다. 합계는 임의의 순서로 수행 될 수 있습니다.
+
 ```cpp
-template<class InputIterator, class OutputIterator, class T,
-class BinaryOperation, class UnaryOperation>
-OutputIterator transform_exclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-T init,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2, class T,
-class BinaryOperation, class UnaryOperation>
-ForwardIterator2 transform_exclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-T init,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
+template<class InputIterator, class OutputIterator, class Type, class BinaryOperation, class UnaryOperation>
+OutputIterator transform_exclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type, class BinaryOperation, class UnaryOperation>
+ForwardIterator2 transform_exclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
 ```
+
+### <a name="parameters"></a>매개 변수
+
+*exec*\
+실행 정책입니다.
+
+*첫 번째* \
+*Binary_op*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
+
+*마지막* \
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
+
+*결과*\
+일련의 합계 또는 지정 된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정 하는 출력 반복기입니다.
+
+*init*\
+*Binary_op*를 사용 하 여 각 요소가 차례로 추가 되거나 결합 되는 초기 값입니다.
+
+*binary_op*\
+지정 된 범위의 각 요소와 이전 응용 프로그램의 결과에 적용할 이항 연산입니다.
+
+*unary_op*\
+지정 된 범위에 있는 각 요소에 적용할 단항 연산입니다.
 
 ## <a name="transform_inclusive_scan"></a>transform_inclusive_scan
 
+지정 된 단항 연산자를 사용 하 여 범위의 요소를 변환한 다음, `std::plus<>()` 또는 범위에 대해 지정 된 이항 연산자를 사용 하 여 (초기 값이 지정 된 경우) 포괄 접두사 sum 연산을 계산 합니다. 지정 된 대상에서 시작 하는 범위에 결과를 씁니다. *포함 접두사* 합계는 *n*번째 입력 요소가 *n*번째 합계에 포함 됨을 의미 합니다. 실행 정책 인수를 포함 하는 오버 로드는 지정 된 정책에 따라 실행 됩니다. 합계는 임의의 순서로 수행 될 수 있습니다.
+
 ```cpp
-template<class InputIterator, class OutputIterator,
-class BinaryOperation, class UnaryOperation>
-OutputIterator transform_inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
-template<class InputIterator, class OutputIterator,
-class BinaryOperation, class UnaryOperation, class T>
-OutputIterator transform_inclusive_scan(InputIterator first, InputIterator last,
-OutputIterator result,
-BinaryOperation binary_op,
-UnaryOperation unary_op,
-T init);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2,
-class BinaryOperation, class UnaryOperation>
-ForwardIterator2 transform_inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op,
-UnaryOperation unary_op);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2,
-class BinaryOperation, class UnaryOperation, class T>
-ForwardIterator2 transform_inclusive_scan(ExecutionPolicy&& exec, 
-ForwardIterator1 first, ForwardIterator1 last,
-ForwardIterator2 result,
-BinaryOperation binary_op,
-UnaryOperation unary_op,
-T init);
+template<class InputIterator, class OutputIterator, class BinaryOperation, class UnaryOperation>
+OutputIterator transform_inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class InputIterator, class OutputIterator, class BinaryOperation, class UnaryOperation, class Type>
+OutputIterator transform_inclusive_scan(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryOperation, class UnaryOperation>
+ForwardIterator2 transform_inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class BinaryOperation, class UnaryOperation, class Type>
+ForwardIterator2 transform_inclusive_scan(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op,
+    Type init);
 ```
+
+### <a name="parameters"></a>매개 변수
+
+*exec*\
+실행 정책입니다.
+
+*첫 번째* \
+*Binary_op*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
+
+*마지막* \
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
+
+*결과*\
+일련의 합계 또는 지정 된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정 하는 출력 반복기입니다.
+
+*binary_op*\
+지정 된 범위의 각 요소와 이전 응용 프로그램의 결과에 적용할 이항 연산입니다.
+
+*unary_op*\
+지정 된 범위에 있는 각 요소에 적용할 단항 연산입니다.
+
+*init*\
+*Binary_op*를 사용 하 여 각 요소가 차례로 추가 되거나 결합 되는 초기 값입니다.
 
 ## <a name="transform_reduce"></a>transform_reduce
 
+요소 범위를 변환한 다음 임의의 순서로 변환 된 요소를 줄이는 함수를 적용 합니다. 효과적으로 `transform` 뒤에 `reduce`합니다.
+
 ```cpp
-template<class InputIterator1, class InputIterator2, class T>
-T transform_reduce(InputIterator1 first1, InputIterator1 last1,
-InputIterator2 first2,
-T init);
-template<class InputIterator1, class InputIterator2, class T,
-class BinaryOperation1, class BinaryOperation2>
-T transform_reduce(InputIterator1 first1, InputIterator1 last1,
-InputIterator2 first2,
-T init,
-BinaryOperation1 binary_op1,
-BinaryOperation2 binary_op2);
-template<class InputIterator, class T,
-class BinaryOperation, class UnaryOperation>
-T transform_reduce(InputIterator first, InputIterator last,
-T init,
-BinaryOperation binary_op, UnaryOperation unary_op);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2, class T>
-T transform_reduce(ExecutionPolicy&& exec, 
-ForwardIterator1 first1, ForwardIterator1 last1,
-ForwardIterator2 first2,
-T init);
-template<class ExecutionPolicy,
-class ForwardIterator1, class ForwardIterator2, class T,
-class BinaryOperation1, class BinaryOperation2>
-T transform_reduce(ExecutionPolicy&& exec, 
-ForwardIterator1 first1, ForwardIterator1 last1,
-ForwardIterator2 first2,
-T init,
-BinaryOperation1 binary_op1,
-BinaryOperation2 binary_op2);
-template<class ExecutionPolicy,
-class ForwardIterator, class T,
-class BinaryOperation, class UnaryOperation>
-T transform_reduce(ExecutionPolicy&& exec, 
-ForwardIterator first, ForwardIterator last,
-T init,
-BinaryOperation binary_op, UnaryOperation unary_op);
+template<class InputIterator1, class InputIterator2, class Type>
+Type transform_reduce(
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    Type init);
+
+template<class InputIterator1, class InputIterator2, class Type, class BinaryOperation1, class BinaryOperation2>
+Type transform_reduce(
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    Type init,
+    BinaryOperation1 binary_op1,
+    BinaryOperation2 binary_op2);
+
+template<class InputIterator, class Type, class BinaryOperation, class UnaryOperation>
+Type transform_reduce(
+    InputIterator first,
+    InputIterator last,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type>
+Type transform_reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    Type init);
+
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class Type, class BinaryOperation1, class BinaryOperation2>
+Type transform_reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    Type init,
+    BinaryOperation1 binary_op1,
+    BinaryOperation2 binary_op2);
+
+template<class ExecutionPolicy, class ForwardIterator, class Type, class BinaryOperation, class UnaryOperation>
+Type transform_reduce(
+    ExecutionPolicy&& exec,
+    ForwardIterator first,
+    ForwardIterator last,
+    Type init,
+    BinaryOperation binary_op,
+    UnaryOperation unary_op);
 ```
+
+### <a name="parameters"></a>매개 변수
+
+*exec*\
+실행 정책입니다.
+
+*첫 번째* \
+*Binary_op*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
+
+*first1* \
+*Binary_op1*를 사용 하 여 sum 또는 combine 범위의 첫 번째 요소를 주소 지정 하는 입력 반복기입니다.
+
+*마지막* \
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
+
+*last1* \
+반복 된 누적에 실제로 포함 된 마지막 요소 하나 다음의 한 위치인 *binary_op1*를 사용 하 여 합계 또는 결합 범위의 마지막 요소를 주소 지정 하는 입력 반복기입니다.
+
+*결과*\
+일련의 합계 또는 지정 된 작업의 결과를 저장할 대상 범위의 첫 번째 요소를 주소 지정 하는 출력 반복기입니다.
+
+*init*\
+*Binary_op*를 사용 하 여 각 요소가 차례로 추가 되거나 결합 되는 초기 값입니다.
+
+*binary_op*\
+지정 된 범위의 각 요소와 이전 응용 프로그램의 결과에 적용할 이항 연산입니다.
+
+*unary_op*\
+지정 된 범위에 있는 각 요소에 적용할 단항 연산입니다.
+
+### <a name="return-value"></a>반환 값
+
+변환 된 다음 결과가 줄어듭니다.

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4807
 ms.assetid: 089c9f87-fd81-402e-9826-66a8ef1ef1fe
-ms.openlocfilehash: a68596136e61aa33176365a4eff818124463b77e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c18dbac0681067d9bc52455dfdbe44a24c786ee7
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390466"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051537"
 ---
 # <a name="compiler-warning-level-1-c4807"></a>컴파일러 경고(수준 1) C4807
 
@@ -23,7 +23,7 @@ ms.locfileid: "62390466"
 
 다음 샘플에서는 C4807을 생성합니다.
 
-```
+```cpp
 // C4807.cpp
 // compile with: /W1
 typedef struct bitfield {

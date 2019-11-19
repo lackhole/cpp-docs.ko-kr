@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4096
 ms.assetid: abf3cca2-2f21-45d8-b025-6b513b00681e
-ms.openlocfilehash: 287465e9a3f5681f459f0823a4409b0906309a55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f526b26eda4c02825d225aa007c6029cc4b03dd
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280466"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627071"
 ---
 # <a name="compiler-warning-level-1-c4096"></a>컴파일러 경고 (수준 1) C4096
 
-'a': 인터페이스는 COM 인터페이스 아닙니다. IDL로 내보내지 않습니다.
+' a ': 인터페이스가 COM 인터페이스가 아닙니다. IDL로 내보내지 않습니다.
 
-COM 인터페이스로 계획 했던 인터페이스 정의 COM 인터페이스로 정의 되지 않은 및 따라서 내보내지 않습니다 IDL 파일에 있습니다.
+COM 인터페이스로 사용 했을 수 있는 인터페이스 정의가 COM 인터페이스로 정의 되지 않았으므로 IDL 파일로 내보내지 않습니다.
 
-참조 [인터페이스 특성](../../windows/attributes/interface-attributes.md) 인터페이스는 COM 인터페이스를 나타내는 목록 특성에 대 한 합니다.
+인터페이스를 COM 인터페이스로 지정 하는 목록 특성에 대 한 [인터페이스 특성](../../windows/attributes/interface-attributes.md) 을 참조 하세요.
 
-다음 샘플에서는 C4096 오류가 생성 됩니다.
+다음 샘플에서는 C4096를 생성 합니다.
 
-```
+```cpp
 // C4096.cpp
 // compile with: /W1 /LD
 #include "windows.h"

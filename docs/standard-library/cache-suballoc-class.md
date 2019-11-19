@@ -19,7 +19,7 @@ ms.locfileid: "72688353"
 ---
 # <a name="cache_suballoc-class"></a>cache_suballoc 클래스
 
-단일 크기의 메모리 블록을 할당하고 할당 취소하는 [블록 할당자](../standard-library/allocators-header.md)를 정의합니다.
+단일 크기의 메모리 블록을 할당하고 할당을 취소하는 [블록 할당자](../standard-library/allocators-header.md)를 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,9 +36,9 @@ class cache_suballoc
 
 ## <a name="remarks"></a>주의
 
-Cache_suballoc 클래스 템플릿은 사용 가능한 목록에 할당 취소 된 메모리 블록을 저장 하 고, `freelist<sizeof(Type), max_unbounded>`를 사용 하 고, 사용 가능한 목록이 비어 있을 때 **operator new** 로 할당 된 더 큰 청크의 메모리 블록을 할당 합니다.
+cache_suballoc 클래스 템플릿은 `freelist<sizeof(Type), max_unbounded>`를 사용하여, 사용 가능한 목록에 할당 취소된 메모리 블록을 무제한 길이로 저장하고, 사용 가능한 목록이 비어 있을 때 **new 연산자**로 할당된 더 큰 청크의 메모리 블록을 할당합니다.
 
-각 청크의 `Sz * Nelts` 바이트의 사용 가능한 메모리와 **operator new** 및 **operator delete** 가 필요한 데이터를 보유 합니다. 할당된 청크는 해제되지 않습니다.
+각 청크는 `Sz * Nelts` 바이트 크기의 사용 가능한 메모리와 **new 연산자** 및 **delete 연산자**가 필요로 하는 데이터를 보유합니다. 할당된 청크는 해제되지 않습니다.
 
 ### <a name="constructors"></a>생성자
 

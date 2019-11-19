@@ -4,22 +4,22 @@ ms.date: 09/02/2019
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-ms.openlocfilehash: 93f53bf90bd8defaa4559e52c00cfcd6269edee4
-ms.sourcegitcommit: 499dfcb5622c4cd1b6afaf23b9de5b09b7751579
+ms.openlocfilehash: 0293daacd717b3ae85b993729090fe363f7e0b9b
+ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012243"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163474"
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>모든 아키텍처에서 사용할 수 있는 내장 함수
 
-Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT) 일부 내장 함수에서 사용할 수 있도록 모든 아키텍처입니다.
+Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (c #)는 모든 아키텍처에서 일부 내장 함수를 사용할 수 있도록 합니다.
 
 ## <a name="compiler-intrinsics"></a>컴파일러 내장 함수
 
 다음 내장 함수는 x86, AMD64, ARM 및 ARM64 아키텍처에서 사용할 수 있습니다.
 
-|내장 함수|헤더|
+|내장 함수|Header|
 |---------------|------------|
 |[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)|intrin.h|
 |[_BitScanForward](../intrinsics/bitscanforward-bitscanforward64.md)|intrin.h|
@@ -73,7 +73,7 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT)
 
 다음의 모든 아키텍처에는 내장 형식이 포함 되어 있습니다.
 
-|내장 함수|헤더|
+|내장 함수|Header|
 |---------------|------------|
 |[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
 |[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|
@@ -104,7 +104,7 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT)
 |[cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|math.h|
 |[exp](../c-runtime-library/reference/exp-expf.md)|math.h|
 |[expf](../c-runtime-library/reference/exp-expf.md)|math.h|
-|[expl](../c-runtime-library/reference/exp-expf.md)|math.h|
+|[추가 l](../c-runtime-library/reference/exp-expf.md)|math.h|
 |[fabs](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|math.h|
 |[fabsf](../c-runtime-library/reference/fabs-fabsf-fabsl.md)|math.h|
 |[floor](../c-runtime-library/reference/floor-floorf-floorl.md)|math.h|
@@ -160,8 +160,9 @@ Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT)
 |[wcslen](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)|string.h|
 |[_wcsset](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)|string.h|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[ARM 내장 함수](../intrinsics/arm-intrinsics.md)<br/>
-[x86 내장 목록](../intrinsics/x86-intrinsics-list.md)<br/>
-[x64(amd64) 내장 목록](../intrinsics/x64-amd64-intrinsics-list.md)<br/>
+[ARM 내장 함수](../intrinsics/arm-intrinsics.md)\
+[ARM64 내장 함수](../intrinsics/arm64-intrinsics.md)\
+[x86 내장 목록](../intrinsics/x86-intrinsics-list.md)\
+[x64 (amd64) 내장 목록](../intrinsics/x64-amd64-intrinsics-list.md)

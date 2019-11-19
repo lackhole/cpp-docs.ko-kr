@@ -32,12 +32,12 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
-ms.openlocfilehash: 7ecb6fe105d8a976979f91d38c9e536b10989310
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: da36641f6a3ba8dc1da0894aedbfa390d2e796ae
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956115"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625042"
 ---
 # <a name="_gcvt_s"></a>_gcvt_s
 
@@ -76,7 +76,7 @@ errno_t _gcvt_s(
 
 ## <a name="return-value"></a>반환 값
 
-성공할 경우 0입니다. 잘못된 매개 변수로 인해 실패할 경우(잘못된 값은 다음 표 참조) [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 실행하도록 허용된 경우 오류 코드가 반환됩니다. 오류 코드는 Errno.h에서 정의됩니다. 이러한 오류 목록은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+정상적으로 실행되는 경우 0입니다. 잘못된 매개 변수로 인해 실패할 경우(잘못된 값은 다음 표 참조) [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 계속 실행하도록 허용된 경우 오류 코드가 반환됩니다. 오류 코드는 Errno.h에서 정의됩니다. 이러한 오류 목록은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ### <a name="error-conditions"></a>오류 조건
 
@@ -84,19 +84,19 @@ errno_t _gcvt_s(
 |--------------|-------------------|-------------|--------------|------------|-----------------------|
 |**NULL**|any|any|any|**EINVAL**|수정되지 않습니다.|
 |Not **NULL** (유효한 메모리를 가리킴)|0|any|any|**EINVAL**|수정되지 않습니다.|
-|Not **NULL** (유효한 메모리를 가리킴)|any|any|>= *sizeInBytes*|**EINVAL**|수정되지 않습니다.|
+|Not **NULL** (유효한 메모리를 가리킴)|any|any|>= *Sizeinbytes*|**EINVAL**|수정되지 않습니다.|
 
 **보안 문제**
 
 **_gcvt_s** 는 *버퍼가* 유효한 메모리를 가리키지 않고 **NULL**이 아닌 경우 액세스 위반을 생성할 수 있습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **_Gcvt_s** 함수는 부동 소수점 *값* 을 문자열 (소수점 및 가능한 부호 바이트 포함)로 변환 하 고 문자열을 *버퍼*에 저장 합니다. *버퍼* 는 변환 된 값과 종료 null 문자 (자동으로 추가 됨)를 수용할 수 있을 만큼 커야 합니다. 길이가 **_CVTBUFSIZE** 인 버퍼는 모든 부동 소수점 값에 대해 충분 합니다. 버퍼 *크기 + 1* 을 사용 하는 경우이 함수는 버퍼의 끝을 덮어쓰지 않으므로이 작업에 충분 한 버퍼를 제공 해야 합니다. **_gcvt_s** 는 10 진수 형식으로 *숫자* 자릿수를 생성 하려고 시도 합니다. 사용할 수 없는 경우에는 지 수 형식으로 *숫자* 를 생성 합니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
 
-C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
-이 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
+이 함수의 디버그 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -104,7 +104,7 @@ C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 
 |-------------|---------------------|---------------------|
 |**_gcvt_s**|\<stdlib.h>|\<error.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -137,7 +137,7 @@ int main()
 Converted value: 1.2
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>

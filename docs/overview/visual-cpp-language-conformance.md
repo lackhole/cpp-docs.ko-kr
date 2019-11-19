@@ -1,16 +1,16 @@
 ﻿---
 title: Microsoft C++ 언어 규칙 테이블
-ms.date: 08/12/2019
+ms.date: 10/31/2019
 ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 17ed76551102653e2f05e9731834f4787198db49
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: e3e86acb81120af1b663b56681ff0f8c41036b5a
+ms.sourcegitcommit: 2362d15b5eb18d27773c3f7522da3d0eed9e2571
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69631640"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754070"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ 언어 규칙 테이블
 
@@ -338,7 +338,7 @@ __VS 2017 15.7__ 는 Visual Studio 2017 버전 15.7에서 지원되는 기능을
 __VS 2019 16.0__은 Visual Studio 2019 버전 16.0(RTW)에서 지원되는 기능을 나타냅니다.<br/>
 __VS 2019 16.1__은 Visual Studio 2019 버전 16.1에서 지원되는 기능을 나타냅니다.
 
-### <a name="notes"></a>참고 사항
+### <a name="notes"></a>참고
 
 <a name="note_A"></a>__A__ [/std:c++14](../build/reference/std-specify-language-standard-version.md) 모드에서는 동적 예외 사양이 구현되지 않은 상태로 남아 있으며 `throw()`는 여전히 `__declspec(nothrow)`의 동의어로 처리됩니다. C++17에서 동적 예외 사양은 P0003R5에 의해 대부분 제거되었으므로 1개의 vestige: `throw()`가 더 이상 사용되지 않으며 `noexcept`의 동의어로 작동해야 합니다. [/std:c++17](../build/reference/std-specify-language-standard-version.md) 모드에서 MSVC는 이제 `noexcept`, 즉 종료를 통한 적용과 동일한 동작을 `throw()`에 제공하여 표준을 준수합니다.
 
@@ -346,7 +346,7 @@ __VS 2019 16.1__은 Visual Studio 2019 버전 16.1에서 지원되는 기능을 
 
 <a name="note_B"></a>__B__ Visual Studio 2017 버전 15.7의 [/permissive-](../build/reference/permissive-standards-conformance.md) 모드에서 지원됩니다. 자세한 내용은 [Two-phase name lookup support comes to MSVC](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/)(2단계 이름 조회 지원이 MSVC에 제공)를 참조하세요.
 
-<a name="note_C"></a>__C__ Visual Studio 2017에서 C99 전처리기 규칙에 대한 컴파일러의 지원이 완전하지 않습니다. Variadic 매크로는 지원되지만 전처리기의 동작에 많은 버그가 있습니다. 전처리기를 개편하고 곧 [/permissive-](../build/reference/permissive-standards-conformance.md) 모드에 해당 변경 사항을 실험적으로 제공할 것입니다.
+<a name="note_C"></a>__C__ Visual Studio 2017에서 C99 전처리기 규칙에 대한 컴파일러의 지원이 완전하지 않습니다. Microsoft에서는 전처리기를 점검하고 있으며 [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) 컴파일러 스위치를 포함하여 Visual Studio 2017 버전 15.8에 해당 변경 내용 제공을 시작했습니다.
 
 <a name="note_D"></a>__D__ [/std:c++14](../build/reference/std-specify-language-standard-version.md) 아래에서 억제 가능한 경고 [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md)로 표시됩니다.
 

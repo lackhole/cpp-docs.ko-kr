@@ -1,14 +1,14 @@
 ---
 title: Visual Studio에서 Linux CMake 프로젝트 만들기 및 구성
 description: Visual Studio에서 Linux CMake 프로젝트를 만들고, 구성, 편집 및 컴파일하는 방법
-ms.date: 06/12/2019
+ms.date: 10/04/2019
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 5c3a2b212240217fe6d6053188dd466376010391
-ms.sourcegitcommit: a42d3b0408f02138dcd6fabcb98d50b0cb159191
+ms.openlocfilehash: 128b8dac297398ffbfadfaade5b36c843d55e163
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383408"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625957"
 ---
 # <a name="create-and-configure-a-linux-cmake-project"></a>Linux CMake 프로젝트 만들기 및 구성
 
@@ -25,17 +25,17 @@ Visual Studio 2019에서 새 Linux CMake 프로젝트를 만들려면
 1. Visual Studio에서 **파일 > 새 프로젝트**를 선택하거나 **Ctrl + Shift + N**을 누릅니다.
 1. **언어**를 **C++** 로 설정하고 “CMake”를 검색합니다. **다음**을 선택합니다. **이름** 및 **위치**를 입력하고, **만들기**를 선택합니다.
 
-Visual Studio는 실행 파일 이름 및 필요한 최소 CMake 버전만 사용하여 최소한의 CMakeLists.txt 파일을 만듭니다. 하지만 이 파일을 원하는 대로 수동으로 편집할 수 있습니다. Visual Studio에서 변경 내용을 덮어쓰지 않습니다. **솔루션 탐색기**에서 CMakeLists.txt 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트에 대한 CMake 설정**을 선택하여 CMake 명령줄 인수와 환경 변수를 지정할 수 있습니다. 디버깅 옵션을 지정하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다.
+Visual Studio는 실행 파일 이름 및 필요한 최소 CMake 버전만 사용하여 최소한의 CMakeLists.txt 파일을 만듭니다. 하지만 이 파일을 원하는 대로 수동으로 편집할 수 있습니다. Visual Studio에서 변경 내용을 덮어쓰지 않습니다. **솔루션 탐색기**에서 루트 CMakeLists.txt 파일을 마우스 오른쪽 단추로 클릭하고 **프로젝트에 대한 CMake 설정**을 선택하여 CMake 명령줄 인수와 환경 변수를 지정할 수 있습니다. 디버깅 옵션을 지정하려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다.
 
 ::: moniker-end
 
-기존 CMake 프로젝트가 포함된 폴더를 열면, Visual Studio는 CMake가 생성하는 메타데이터를 사용하여 IntelliSense를 구성하고 자동으로 빌드합니다. 필요에 따라 Visual Studio를 사용하는 다른 사용자와 공유할 수 있는 JSON 파일에 로컬 구성 및 디버깅 설정이 저장됩니다. 
+기존 CMake 프로젝트가 포함된 폴더를 열면, Visual Studio는 CMake 캐시의 변수를 사용하여 IntelliSense를 구성하고 자동으로 빌드합니다. 필요에 따라 Visual Studio를 사용하는 다른 사용자와 공유할 수 있는 JSON 파일에 로컬 구성 및 디버깅 설정이 저장됩니다.
 
-Visual Studio는 동일한 프로젝트에서 작업하는 다른 사용자가 이미 사용 중인 도구를 계속 사용할 수 있도록 CMakeLists.txt 파일을 수정하지 않습니다. CMakeLists.txt 또는 경우에 따라 CMakeSettings.json을 편집하면, Visual Studio에서 캐시를 다시 생성합니다. 그러나 **기존 캐시** 구성을 사용하는 경우에는 Visual Studio에서 캐시를 수정하지 않습니다.
+Visual Studio는 동일한 프로젝트에서 작업하는 다른 사용자가 이미 사용 중인 도구를 계속 사용할 수 있도록 CMakeLists.txt 파일을 수정하지 않습니다. CMakeLists.txt 또는 경우에 따라 CMakeSettings.json에 대한 편집 내용을 저장하면, Visual Studio에서 캐시를 다시 생성합니다. 그러나 **기존 캐시** 구성을 사용하는 경우에는 Visual Studio에서 캐시를 수정하지 않습니다.
 
 Visual Studio의 CMake 지원에 관한 일반적인 내용은 [Visual Studio의 CMake 프로젝트](../build/cmake-projects-in-visual-studio.md)를 참조하세요. 여기서 계속하기 전에 먼저 읽어보세요.
 
-## <a name="before-you-begin"></a>시작하기 전에
+## <a name="before-you-begin"></a>시작하기 전 주의 사항
 
 먼저 CMake 구성 요소를 비롯한 **C++를 사용한 Linux 개발** 워크로드가 설치되었는지 확인합니다. [Visual Studio에서 C++ Linux 워크로드 설치](download-install-and-setup-the-linux-development-workload.md)를 참조하세요. 
 
