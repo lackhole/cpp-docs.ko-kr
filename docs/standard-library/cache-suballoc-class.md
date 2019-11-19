@@ -73,7 +73,7 @@ void *allocate(std::size_t count);
 |---------------|-----------------|
 |*count*|할당할 배열의 요소 수입니다.|
 
-### <a name="return-value"></a>반환 값
+### <a name="return-value"></a>반환값
 
 할당된 개체에 대한 포인터입니다.
 
