@@ -153,12 +153,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: eb75273bc8cbe5ccbf62edc82a1e7deccc605757
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.openlocfilehash: 57982e32da75aa7f364c51146e50c3d75b4b7710
+ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816599"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163345"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -188,7 +188,7 @@ MSVC는 ANSI/ISO C99 표준 및 ISO c + + 14 및 c + + 17 표준에 필요한 �
 
 - **&#95; 파일 &#95; &#95;** 현재 소스 파일의 이름입니다. 파일은 문자열 리터럴로 확장 됩니다. **&#95; &#95;&#95;** 파일의 전체 경로가 표시 되도록 하려면 [/fc (진단 소스 코드 파일의 전체 경로)](../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md)를 사용 합니다. 이 매크로는 항상 정의 됩니다.
 
-- **&#95; 줄 &#95; &#95;** 현재 소스 파일의 정수 줄 번호로 정의 됩니다. 지시문 을`#line` 사용 하 여 **&#95; &#95;LINE&#95;** 매크로의 값을 변경할 수 있습니다. 이 매크로는 항상 정의 됩니다.
+- **&#95; 줄 &#95; &#95;** 현재 소스 파일의 정수 줄 번호로 정의 됩니다. `#line` 지시어를 사용 하 여 **&#95; &#95;LINE&#95;** 매크로의 값을 변경할 수 있습니다. 이 매크로는 항상 정의 됩니다.
 
 - **&#95; STDC &#95; &#95;** C로 컴파일된 경우에만 1로 정의 되 고 [/za](../build/reference/za-ze-disable-language-extensions.md) 컴파일러 옵션이 지정 된 경우에만 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
@@ -220,7 +220,7 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95;기본&#95;** **문자** 형식이 UNSIGNED 인 경우 1로 정의 된 부호 없는 문자입니다. 이 값은 [/j (기본 문자 형식이 Unsigned 인 경우)](../build/reference/j-default-char-type-is-unsigned.md) 컴파일러 옵션이 설정 된 경우에 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
-- **&#95;CLR 버전 &#95;&#95;** 앱을 컴파일하는 데 사용 되는 CLR (공용 언어 런타임) 버전을 나타내는 정수 리터럴로 정의 됩니다. 값은 형식 `Mmmbbbbb`으로 인코딩됩니다. 여기서 `M` 는 런타임의 `mm` 주 버전이 고는 런타임의 `bbbbb` 부 버전 이며는 빌드 번호입니다. **&#95;&#95;CLR&#95;VER** 는 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정 된 경우에 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
+- **&#95;CLR 버전 &#95;&#95;** 앱을 컴파일하는 데 사용 되는 CLR (공용 언어 런타임) 버전을 나타내는 정수 리터럴로 정의 됩니다. 값은 `Mmmbbbbb`형식으로 인코딩됩니다. 여기서 `M`는 런타임의 주 버전이 고, `mm`는 런타임의 부 버전 이며 `bbbbb`는 빌드 번호입니다. **&#95;&#95;CLR&#95;VER** 는 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션이 설정 된 경우에 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
     ```cpp
     // clr_ver.cpp
@@ -235,7 +235,7 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95; 카운터 &#95; &#95;** 0에서 시작 하는 정수 리터럴로 확장 됩니다. 원본 파일 또는 소스 파일의 포함 된 헤더에서 사용 될 때마다 값이 1 씩 증가 합니다. 카운터는 미리 컴파일된 헤더를 사용할 때 해당 상태를 기억 합니다. **&#95; &#95;&#95;** 이 매크로는 항상 정의 됩니다.
 
-  이 예에서는 `__COUNTER__` 를 사용 하 여 형식이 같은 세 개의 서로 다른 개체에 고유 식별자를 할당 합니다. 생성자 `exampleClass` 는 매개 변수로 정수를 사용 합니다. 에서 `main`응용 프로그램은를 고유 식별자 매개 변수로 `exampleClass`사용 하 `__COUNTER__` 여 형식의 세 개체를 선언 합니다.
+  이 예제에서는 `__COUNTER__`를 사용 하 여 고유 식별자를 동일한 형식의 세 가지 다른 개체에 할당 합니다. `exampleClass` 생성자는 정수를 매개 변수로 사용 합니다. `main`에서 응용 프로그램은 `__COUNTER__`을 고유 식별자 매개 변수로 사용 하 여 `exampleClass`형식의 세 개체를 선언 합니다.
 
     ```cpp
     // macro__COUNTER__.cpp
@@ -304,11 +304,11 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95; FUNCDNAME &#95; &#95;** 바깥쪽 함수의 [데코레이팅된 이름을](../build/reference/decorated-names.md) 포함 하는 문자열 리터럴로 정의 됩니다. 매크로는 함수 내 에서만 정의 됩니다. [/Ep](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 또는 [/p](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용 하는 경우 **&#95; &#95;FUNCDNAME&#95;** 매크로는 확장 되지 않습니다.
 
-   이 예제에서는 `__FUNCDNAME__`, `__FUNCSIG__`및 `__FUNCTION__` 매크로를 사용 하 여 함수 정보를 표시 합니다.
+   이 예에서는 `__FUNCDNAME__`, `__FUNCSIG__`및 `__FUNCTION__` 매크로를 사용 하 여 함수 정보를 표시 합니다.
 
    [!code-cpp[NVC_Predefined_Macros_Examples#1](../preprocessor/codesnippet/CPP/predefined-macros_1.cpp)]
 
-- **&#95; FUNCSIG &#95; &#95;** 바깥쪽 함수의 시그니처를 포함 하는 문자열 리터럴로 정의 됩니다. 매크로는 함수 내 에서만 정의 됩니다. [/Ep](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 또는 [/p](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용 하는 경우 **&#95; &#95;FUNCSIG&#95;** 매크로는 확장 되지 않습니다. 64 비트 대상에 대해 컴파일될 때 호출 규칙 `__cdecl` 은 기본적으로입니다. 사용법에 대 한 예제는 `__FUNCDNAME__` 매크로를 참조 하세요.
+- **&#95; FUNCSIG &#95; &#95;** 바깥쪽 함수의 시그니처를 포함 하는 문자열 리터럴로 정의 됩니다. 매크로는 함수 내 에서만 정의 됩니다. [/Ep](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 또는 [/p](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용 하는 경우 **&#95; &#95;FUNCSIG&#95;** 매크로는 확장 되지 않습니다. 64 비트 대상에 대해 컴파일될 때 호출 규칙은 기본적으로 `__cdecl` 됩니다. 사용법에 대 한 예제는 `__FUNCDNAME__` 매크로를 참조 하세요.
 
 - **&#95; 함수 &#95; &#95;** 바깥쪽 함수의 데코레이팅되지 않은 이름을 포함 하는 문자열 리터럴로 정의 됩니다. 매크로는 함수 내 에서만 정의 됩니다. [/Ep](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) 또는 [/p](../build/reference/p-preprocess-to-a-file.md) 컴파일러 옵션을 사용하는 경우 **&#95;&#95;FUNCTION&#95;&#95;** 매크로가 확장되지 않습니다. 사용법에 대 한 예제는 `__FUNCDNAME__` 매크로를 참조 하세요.
 
@@ -336,9 +336,9 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95;M&#95;arm&#95;FP** 는 ARM 프로세서 대상에 대해 설정 된 [/arch](../build/reference/arch-arm.md) 컴파일러 옵션을 나타내는 정수 리터럴 값으로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
-  - Arm 옵션이 지정 되지 `/arch` 않은 경우 30-39 범위의 값 이며 arm의 기본 아키텍처가 설정 됨을 나타냅니다 (`VFPv3`).
+  - ARM의 기본 아키텍처가 설정 (`VFPv3`) 되었음을 나타내는 `/arch` ARM 옵션이 지정 되지 않은 경우 30-39 범위의 값입니다.
 
-  - 가 설정 된 경우 `/arch:VFPv4` 40-49 범위의 값입니다.
+  - `/arch:VFPv4` 설정 된 경우 40-49 범위의 값입니다.
 
   - 자세한 내용은 [/arch (ARM)](../build/reference/arch-arm.md)를 참조 하세요.
 
@@ -366,7 +366,7 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
   - `/arch:SSE` 컴파일러 옵션이 설정 된 경우 1입니다.
 
-  - `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2` 또는 `/arch:AVX512` 컴파일러 옵션이 설정 된 경우 2입니다. 컴파일러 옵션이 지정 되지 않은 `/arch` 경우이 값은 기본값입니다. 을 `/arch:AVX` 지정 하면 **&#95; &#95;AVX&#95;** 매크로도 정의 됩니다. 을 `/arch:AVX2` 지정 하면 **&#95; &#95;AVX&#95;** **및 &#95;AVX2&#95; 모두 정의 &#95;** 됩니다. @No__t-0이 지정  **&#95; &#95;된 경우 AVX&#95;** ,  **&#95; &#95;AVX2&#95;** ,  **&#95; &#95;AVX512BW&#95;** ,  **&#95; &#95;AVX512CD&#95;** **, &#95;AVX512DQ&#95;, &#95;** **AVX512F&#95; AVX512VL도 정의 됩니다. &#95; &#95;** **&#95; &#95;&#95;**
+  - `/arch:SSE2`, `/arch:AVX`, `/arch:AVX2`또는 `/arch:AVX512` 컴파일러 옵션이 설정 된 경우 2입니다. `/arch` 컴파일러 옵션이 지정 되지 않은 경우이 값은 기본값입니다. `/arch:AVX` 지정 된 경우에도 매크로 **&#95; &#95;AVX&#95;** 이 정의 됩니다. `/arch:AVX2` 지정 된 경우 **&#95; &#95;AVX&#95;** 및 **&#95; &#95;AVX2&#95;** 도 모두 정의 됩니다. `/arch:AVX512` 지정  **&#95; &#95;&#95;** 된 경우 AVX,  **&#95; &#95;AVX2&#95;** , **&#95;AVX512BW, &#95; &#95;** **AVX512CD,&#95;AVX512DQ &#95;AVX512F 및 AVX512VL도 정의 됩니다. &#95;**  **&#95; &#95;&#95;** **&#95; &#95;&#95;** **&#95; &#95;&#95;**
 
   - 자세한 내용은 [/arch(x86)](../build/reference/arch-x86.md)를 참조하세요.
 
@@ -378,9 +378,9 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95;기본&#95;** [/Ze (언어 확장 사용)](../build/reference/za-ze-disable-language-extensions.md) 컴파일러 옵션이 설정 된 경우 MSC 확장은 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
-- **MSC&#95;전체&#95;버전 &#95;** 컴파일러 버전 번호의 주, 부 및 빌드 번호 요소를 인코딩하는 정수 리터럴로 정의 됩니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소 이며, 부 번호는 두 번째 요소이 고, 빌드 번호는 세 번째 요소입니다. 예를 들어 MicrosoftC++ C/컴파일러의 버전 번호가 번호가 15.00.20706.01 인 경우에는  **&#95;MSC&#95;FULL&#95;VER** 매크로가 150020706로 평가 됩니다. 컴파일러 `cl /?` 의 버전 번호를 확인 하려면 명령줄에를 입력 합니다. 이 매크로는 항상 정의 됩니다.
+- **MSC&#95;전체&#95;버전 &#95;** 컴파일러 버전 번호의 주, 부 및 빌드 번호 요소를 인코딩하는 정수 리터럴로 정의 됩니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소 이며, 부 번호는 두 번째 요소이 고, 빌드 번호는 세 번째 요소입니다. 예를 들어 MicrosoftC++ C/컴파일러의 버전 번호가 번호가 15.00.20706.01 인 경우에는  **&#95;MSC&#95;FULL&#95;VER** 매크로가 150020706로 평가 됩니다. 명령줄에 `cl /?`를 입력 하 여 컴파일러의 버전 번호를 확인 합니다. 이 매크로는 항상 정의 됩니다.
 
-- **&#95;MSC&#95;VER** 컴파일러 버전 번호의 주 및 부 번호 요소를 인코딩하는 정수 리터럴로 정의 됩니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소 이며, 부 번호는 두 번째 요소입니다. 예를 들어 Microsoft C/C++ 컴파일러의 버전 번호가 번호가 17.00.51106.1 인 경우에는  **&#95;MSC&#95;VER** 매크로가 1700로 평가 됩니다. 컴파일러 `cl /?` 의 버전 번호를 확인 하려면 명령줄에를 입력 합니다. 이 매크로는 항상 정의 됩니다.
+- **&#95;MSC&#95;VER** 컴파일러 버전 번호의 주 및 부 번호 요소를 인코딩하는 정수 리터럴로 정의 됩니다. 주 번호는 마침표로 구분 된 버전 번호의 첫 번째 요소 이며, 부 번호는 두 번째 요소입니다. 예를 들어 Microsoft C/C++ 컴파일러의 버전 번호가 번호가 17.00.51106.1 인 경우에는  **&#95;MSC&#95;VER** 매크로가 1700로 평가 됩니다. 명령줄에 `cl /?`를 입력 하 여 컴파일러의 버전 번호를 확인 합니다. 이 매크로는 항상 정의 됩니다.
 
    |Visual Studio 버전|**&#95;MSC&#95;VER**|
    |-|-|
@@ -423,7 +423,7 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95;&#95;&#95;&#95;** [/Rtc](../build/reference/rtc-run-time-error-checks.md) 컴파일러 옵션 중 하나가 설정 된 경우 MSVC 런타임 검사가 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
-- **&#95;전처리기&#95;** 규칙 모드 [/proers: 전처리기](../build/reference/rtc-run-time-error-checks.md) 컴파일러 옵션이 설정 된 경우 기존 MSVC는 0으로 정의 됩니다. 기본적으로 1로 정의 되거나 [/실험적: 전처리기-](../build/reference/rtc-run-time-error-checks.md) 컴파일러 옵션을 설정 하 여 기존의 전처리기가 사용 중임을 나타낼 수 있습니다. **&#95;MSVC&#95;전통적인** 매크로 및 [/s실험적: 전처리기 (전처리기 규칙 모드 사용)](../build/reference/experimental-preprocessor.md) 컴파일러 옵션은 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.
+- **&#95;전처리기&#95;** 규칙 모드 [/proers: 전처리기](../build/reference/experimental-preprocessor.md) 컴파일러 옵션이 설정 된 경우 기존 MSVC는 0으로 정의 됩니다. 기본적으로 1로 정의 되거나 [/실험적: 전처리기-](../build/reference/experimental-preprocessor.md) 컴파일러 옵션을 설정 하 여 기존의 전처리기가 사용 중임을 나타낼 수 있습니다. **&#95;MSVC&#95;전통적인** 매크로 및 [/s실험적: 전처리기 (전처리기 규칙 모드 사용)](../build/reference/experimental-preprocessor.md) 컴파일러 옵션은 Visual Studio 2017 버전 15.8부터 사용할 수 있습니다.
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -450,7 +450,7 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 - **&#95;PREFAST&#95;** [/Analyze](../build/reference/analyze-code-analysis.md) 컴파일러 옵션이 설정 된 경우 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
-- **&#95;&#95; 타임 &#95;스탬프** CRT [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수에서 반환 하는 약식의 상수 길이 형식 (예: `Fri 19 Aug 13:32:58 2016`)으로 현재 소스 파일을 마지막으로 수정한 날짜와 시간을 포함 하는 문자열 리터럴로 정의 됩니다. 이 매크로는 항상 정의 됩니다.
+- **&#95;&#95; 타임 &#95;스탬프** `Fri 19 Aug 13:32:58 2016`와 같이 CRT [asctime](../c-runtime-library/reference/asctime-wasctime.md) 함수에서 반환 하는 축약 된 상수 길이 형식으로 현재 소스 파일을 마지막으로 수정한 날짜와 시간을 포함 하는 문자열 리터럴로 정의 됩니다. 이 매크로는 항상 정의 됩니다.
 
 - **&#95;&#95;** [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 컴파일러 옵션이 설정 된 경우 VC NODEFAULTLIB가 1로 정의 됩니다. 그렇지 않으면 정의 되지 않습니다.
 
@@ -464,11 +464,11 @@ MSVC는 미리 정의 된 추가 매크로를 지원 합니다.
 
 ATL 또는 MFC 라이브러리 버전을 식별 하는 전처리기 매크로는 컴파일러에 의해 미리 정의 되어 있지 않습니다. ATL 및 MFC 라이브러리 헤더는 내부적으로 이러한 버전 매크로를 정의 합니다. 필수 헤더를 포함 하기 전에 만들어진 전처리기 지시문에서 정의 되지 않습니다.
 
-- **&#95;Atl&#95;** 버전 번호를 \<인코딩하는 정수 리터럴로 >에 정의 된 atl VER입니다.
+- **&#95;ATL&#95;VER** ATL 버전 번호를 인코딩하는 정수 리터럴로 > \<에 정의 됩니다.
 
-- **&#95;MFC&#95;VER** @No__t-3afxver_ >에 정의 되어 있으며, MFC 버전 번호를 인코딩하는 정수 리터럴로.
+- **&#95;MFC&#95;VER** \<afxver_. h >를 MFC 버전 번호를 인코딩하는 정수 리터럴로 지정 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [매크로(C/C++)](../preprocessor/macros-c-cpp.md)<br/>
 [전처리기 연산자](../preprocessor/preprocessor-operators.md)<br/>
