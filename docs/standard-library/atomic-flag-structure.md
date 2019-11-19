@@ -15,7 +15,7 @@ ms.locfileid: "68447399"
 ---
 # <a name="atomicflag-structure"></a>atomic_flag 구조체
 
-**bool** 플래그를 원자 단위로 설정하고 지우는 개체를 설명 합니다. 원자 플래그에 대한 작업은 항상 잠금 해제입니다.
+**bool** 플래그를 원자 단위로 설정하고 지우는 개체를 설명합니다. 원자 플래그에 대한 작업은 항상 잠금 해제입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,7 +30,7 @@ struct atomic_flag;
 |이름|설명|
 |----------|-----------------|
 |[clear](#clear)|저장 플래그를 **false**로 설정 합니다.|
-|[test_and_set](#test_and_set)|저장 플래그를 **true** 로 설정하고 초기 플래그 값을 반환 합니다.|
+|[test_and_set](#test_and_set)|저장 플래그를 **true**로 설정하고 초기 플래그 값을 반환합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -44,7 +44,7 @@ struct atomic_flag;
 
 ## <a name="clear"></a>  atomic_flag::clear
 
-Order [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서에 `*this` 저장된 **bool** 플래그를 **false**로 설정 합니다.
+지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 `*this`에 저장된 **bool** 플래그를 **false**로 설정합니다.
 
 ```cpp
 void atomic_flag::clear(memory_order Order = memory_order_seq_cst) volatile noexcept;
@@ -58,7 +58,7 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
 
 ## <a name="test_and_set"></a>  atomic_flag::test_and_set
 
-지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서에 `*this` 저장된 **bool** 플래그를 **true**로 설정 합니다.
+지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 `*this`에 저장된 **bool** 플래그를 **true**로 설정합니다.
 
 ```cpp
 bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) volatile noexcept;
