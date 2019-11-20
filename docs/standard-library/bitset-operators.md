@@ -35,10 +35,10 @@ operator&(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* \
+*left* \
 각각의 요소를 비트 `AND`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* \
+*right*\
 각각의 요소를 비트 `AND`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -86,7 +86,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* \
+*right*\
 출력 스트림에 문자열로 삽입할 **bitset\<N>** 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -146,7 +146,7 @@ basic_istream<CharType, Traits>& operator>> (
 *i_str*\
 bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 
-*오른쪽* \
+*right*\
 입력 스트림에서 비트를 수신하는 bitset입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -228,10 +228,10 @@ operator^(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* \
+*left* \
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* \
+*right*\
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -280,10 +280,10 @@ operator|(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* \
+*left* \
 각각의 요소를 비트 `OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*오른쪽* \
+*right*\
 각각의 요소를 비트 `OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값

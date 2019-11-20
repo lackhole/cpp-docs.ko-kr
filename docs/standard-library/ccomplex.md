@@ -16,14 +16,14 @@ ms.locfileid: "68341133"
 ---
 # <a name="ltccomplexgt"></a>&lt;ccomplex&gt;
 
-표준 라이브러리 C++ 헤더 [ \<복합 >](complex.md)를 포함 합니다.
+표준 라이브러리 C++ 헤더 [\<complex>](complex.md)를 포함 합니다.
 
 > [!NOTE]
 > C 표준 라이브러리 \<복합. h > 헤더는 복합 > 및 \< \<ccomplex >의 C++ \<오버 로드로 인해 효과적으로 대체 되기 때문에 ccomplex >에 포함 되지 않습니다. 이렇게 하면 \<ccomplex > 헤더를 중복 하 게 됩니다. 에서 더 이상 사용 되지 않는 > 헤더는 C++에서 더 이상 사용 되지 않습니다. \< \<Ccomplex > 헤더는 c + + 17에서 더 이상 사용 되지 않으며 초안 c + + 20 표준에서 제거 되었습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<ccomplex >
+**헤더:** \<ccomplex>
 
 **네임스페이스:** std
 
@@ -33,7 +33,7 @@ ms.locfileid: "68341133"
 
 ## <a name="see-also"></a>참고자료
 
-[\<복합 >](complex.md)\
+[\<complex>](complex.md)\
 [\<cmath>](cmath.md)\
 [헤더 파일 참조](cpp-standard-library-header-files.md)\
 [C++표준 라이브러리 개요](cpp-standard-library-overview.md)\
