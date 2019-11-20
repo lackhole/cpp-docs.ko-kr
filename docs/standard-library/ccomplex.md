@@ -19,7 +19,7 @@ ms.locfileid: "68341133"
 표준 라이브러리 C++ 헤더 [\<complex>](complex.md)를 포함 합니다.
 
 > [!NOTE]
-> C 표준 라이브러리 \<complex.h> 헤더는 \<ccomplex>에 포함되지 않습니다. 그 이유는 \<complex>와 \<cmath>의 C++ 오버헤드가 효과적으로 대체되기 때문입니다. 하지만 이것은 \<ccomplex> 헤더를 중복하게 됩니다. \<complex.h> 헤더는 C++에서 더 이상 사용되지 않습니다. \<ccomplex> 헤더는 C++ 17 표준과 C++ 20 표준 초안에서 제거 되었습니다.
+> C 표준 라이브러리 \<complex.h> 헤더는 \<ccomplex>에 포함되지 않습니다. 그 이유는 \<complex>와 \<cmath>의 C++ 오버헤드로 효과적으로 대체되기 때문입니다. 하지만 이로 인해 \<ccomplex> 헤더가 중복되게 됩니다. \<complex.h> 헤더는 C++에서 더 이상 사용되지 않습니다. \<ccomplex> 헤더는 C++ 17 표준과 C++ 20 표준 초안에서 제거되었습니다.
 
 ## <a name="requirements"></a>요구 사항
 
