@@ -155,9 +155,9 @@ bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 
 ### <a name="remarks"></a>주의
 
-템플릿 함수는 `>> 연산자`를 오버 로드하여 `bitset(str)`값을 bitset *right*에 저장 합니다. 여기서 `str`은 *i_str*에서 추출된 [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` 형식의 개체입니다.
+템플릿 함수는 `>> 연산자`를 오버로드하여 `bitset(str)`값을 bitset *right*에 저장합니다. 여기서 `str`은 *i_str*에서 추출된 [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` 형식의 개체입니다.
 
-템플릿 함수는 *i_str* 에서 요소를 추출하여 다음이 될 때까지 bitset에 삽입 합니다.
+템플릿 함수는 *i_str*에서 요소를 추출하여 다음이 될 때까지 bitset에 삽입합니다.
 
 - 모든 비트 요소가 입력 스트림에서 추출되어 bitset에 저장될 때까지
 
