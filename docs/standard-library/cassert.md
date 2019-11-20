@@ -15,10 +15,10 @@ ms.locfileid: "68449917"
 ---
 # <a name="ltcassertgt"></a>&lt;cassert&gt;
 
-C 표준 라이브러리 헤더 \<assert. h >를 포함 하 고 `std` 네임 스페이스에 연결 된 이름을 추가 합니다. 이 헤더를 포함 하면 C 표준 라이브러리 헤더의 외부 링크를 사용 하 여 선언한 이름이 `std` 네임 스페이스에 선언 됩니다.
+C 표준 라이브러리 헤더 \<assert.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다. 이 헤더를 포함하면 C 표준 라이브러리 헤더에서 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에 선언됩니다.
 
 > [!NOTE]
-> \<assert. h >는 매크로를 `static_assert` 정의 하지 않습니다.
+> \<assert.h>는 `static_assert` 매크로를 정의하지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,7 +34,7 @@ C 표준 라이브러리 헤더 \<assert. h >를 포함 하 고 `std` 네임 스
 
 ### <a name="remarks"></a>설명
 
-`assert(E)`는 상수입니다. ndebug가 마지막으로 정의 `assert` 되거나 재정의 된 위치에 정의 되어 있거나, 부울로 변환 된 *E* 가 **true**로 평가 되는 경우입니다.
+`assert(E)`는 마지막으로 `assert`가 정의되거나 재정의된 NDEBUG가 정의되어 있거나, 부울로 변환된 *E*가 **true**로 평가되는 경우만 상수입니다.
 
 ## <a name="see-also"></a>참고자료
 
