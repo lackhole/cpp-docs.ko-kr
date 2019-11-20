@@ -105,7 +105,7 @@ inline bool atomic_compare_exchange_strong(
 ### <a name="parameters"></a>매개 변수
 
 *원소*\
-형식의`Ty`값을 저장 하는 *원자* 개체에 대 한 포인터입니다.
+형식의`Ty`값을 저장하는 *원자* 개체에 대한 포인터입니다.
 
 *.Exp*\
 `Ty` 형식의 값에 대한 포인터입니다.
@@ -115,7 +115,7 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -162,7 +162,7 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -199,7 +199,7 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -242,19 +242,19 @@ inline bool atomic_compare_exchange_weak_explicit(
 첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
 
 *Order2*\
-두 번째 `memory_order` 인수입니다. *Order2* 의 값은 또는 `memory_order_release` `memory_order_acq_rel`일 수 없으며 *Order1*값 보다 더 강력 하 게 지정할 수 없습니다.
+두 번째 `memory_order` 인수입니다. *Order2* 의 값은 `memory_order_release` 또는 `memory_order_acq_rel`일 수 없으며 *Order1*의 값보다 더 강력하게 지정할 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-*원자 비교 및 교환 작업* 의 강력 하 고 약한 특성은 모두 예상 값과 현재 값이 같지 않은 경우 새 값을 저장 하지 않도록 보장 합니다. 강력한 버전은 예상 값과 현재 값이 같으면 새 값을 저장 하도록 보장 합니다. 경우에 따라 weak 버전은 **false** 를 반환 하 고 현재 및 예상 값이 동일한 경우에도 새 값을 저장 하지 않을 수 있습니다. 즉, 함수는 **false**를 반환 하지만, 예상 값을 나중에 검사 하면 해당 값이 변경 되지 않았다는 것을 알 수 있으므로 동일 하 게 비교 해야 합니다.
+*원자 비교 및 교환 작업*의 강력하고 약한 특성은 모두 예상 값과 현재 값이 같지 않은 경우 새 값을 저장하지 않도록 보장합니다. 강력한 버전은 예상 값과 현재 값이 같으면 새 값을 저장하도록 보장합니다. 경우에 따라 약한 버전은 **false**를 반환하고 현재 및 예상 값이 동일한 경우에도 새 값을 저장하지 않을 수 있습니다. 즉, 함수는 **false**를 반환하지만, 예상 값을 나중에 검사하면 해당 값이 변경되지 않았다는 것을 알 수 있으므로 동일하게 비교해야 합니다.
 
 ## <a name="atomic_exchange"></a>  atomic_exchange
 
-*값* 을 사용 하 여 *Atom*의 저장 된 값을 바꿉니다.
+*값*을 사용하여 *Atom*의 저장된 값을 바꿉니다.
 
 ```cpp
 template <class T>
@@ -274,7 +274,7 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-교환 전에 *Atom* 의 저장 된 값입니다.
+교환 전 *Atom*의 저장된 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -311,7 +311,7 @@ inline Ty atomic_exchange_explicit(
 
 ### <a name="return-value"></a>반환 값
 
-교환 전에 *Atom* 의 저장 된 값입니다.
+교환 전 *Atom*의 저장된 값입니다.
 
 ### <a name="remarks"></a>설명
 
