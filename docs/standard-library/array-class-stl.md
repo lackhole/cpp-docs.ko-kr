@@ -1,6 +1,6 @@
 ---
 title: array 클래스(C++ 표준 라이브러리)| Microsoft 문서
-ms.date: 11/04/2016
+ms.date: 11/13/2019
 f1_keywords:
 - array/std::array
 - array/std::array::const_iterator
@@ -96,12 +96,12 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: aba7026fa60045720c893478c1ea637dbaa037c1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e93f5089e62956e7473c95eb6835046b5fe992bf
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456916"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189417"
 ---
 # <a name="array-class-c-standard-library"></a>array 클래스(C++ 표준 라이브러리)
 
@@ -116,14 +116,14 @@ class array;
 
 ### <a name="parameters"></a>매개 변수
 
-|매개 변수|Description|
+|매개 변수|설명|
 |-|-|
 |`Ty`|요소의 형식입니다.|
 |`N`|요소의 수입니다.|
 
 ## <a name="members"></a>멤버
 
-|형식 정의|Description|
+|형식 정의|설명|
 |-|-|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
 |[const_pointer](#const_pointer)|요소에 대한 상수 포인터의 형식입니다.|
@@ -140,7 +140,7 @@ class array;
 |멤버 함수|설명|
 |-|-|
 |[array](#array)|배열 개체를 생성합니다.|
-|[assign](#assign)|모든 요소를 바꿉니다.|
+|[assign](#assign)|(Obsolete. Use `fill`.) Replaces all elements.|
 |[at](#at)|지정된 위치에 있는 요소에 액세스합니다.|
 |[back](#back)|마지막 요소에 액세스합니다.|
 |[begin](#begin)|제어되는 시퀀스의 시작을 지정합니다.|
@@ -159,14 +159,14 @@ class array;
 |[size](#size)|요소 수를 계산합니다.|
 |[swap](#swap)|두 컨테이너의 내용을 바꿉니다.|
 
-|연산자|Description|
+|연산자|설명|
 |-|-|
 |[array::operator=](#op_eq)|제어되는 시퀀스를 바꿉니다.|
 |[array::operator\[\]](#op_at)|지정된 위치에 있는 요소에 액세스합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-형식에 기본 생성자 `array()`와 기본 대입 연산자 `operator=`가 있고 `aggregate`에 대한 요구 사항을 충족합니다. 따라서 집계 이니셜라이저를 사용하여 `array<Ty, N>` 형식의 개체를 초기화할 수 있습니다. 예를 들면 다음과 같습니다.
+형식에 기본 생성자 `array()`와 기본 대입 연산자 `operator=`가 있고 `aggregate`에 대한 요구 사항을 충족합니다. 따라서 집계 이니셜라이저를 사용하여 `array<Ty, N>` 형식의 개체를 초기화할 수 있습니다. 예를 들어 개체에 적용된
 
 ```cpp
 array<int, 4> ai = { 1, 2, 3 };
@@ -192,10 +192,10 @@ array(const array& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*right*\
 삽입할 개체 또는 범위입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 기본 생성자 `array()`는 제어되는 시퀀스를 초기화되지 않은 상태(또는 기본 시퀀스를 초기화된 상태)로 유지합니다. 초기화되지 않은 제어되는 시퀀스를 지정하려면 이 생성자를 사용합니다.
 
@@ -204,32 +204,34 @@ array(const array& right);
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_array.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    typedef std::array<int, 4> Myarray;
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    Myarray c0 = { 0, 1, 2, 3 };
+
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     Myarray c1(c0);
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c1.begin();
-        it != c1.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c1)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -240,56 +242,6 @@ int main()
 ## <a name="assign"></a>  array::assign
 
 C++11에서는 사용되지 않으며, [fill](#fill)로 대체되었습니다. 모든 요소를 바꿉니다.
-
-```cpp
-void assign(const Ty& val);
-```
-
-### <a name="parameters"></a>매개 변수
-
-*짧은*\
-할당할 값입니다.
-
-### <a name="remarks"></a>설명
-
-멤버 함수는로 제어 되 `*this` 는 시퀀스를 값 *val*의 `N` 요소 반복으로 바꿉니다.
-
-### <a name="example"></a>예제
-
-```cpp
-// std__array__array_assign.cpp
-// compile with: /EHsc
-#include <array>
-#include <iostream>
-
-typedef std::array<int, 4> Myarray;
-int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
-
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
-    std::cout << std::endl;
-
-    Myarray c1;
-    c1.assign(4);
-
-// display contents " 4 4 4 4"
-    for (Myarray::const_iterator it = c1.begin();
-        it != c1.end(); ++it)
-        std::cout << " " << *it;
-    std::cout << std::endl;
-
-    return (0);
-    }
-```
-
-```Output
-0 1 2 3
-4 4 4 4
-```
 
 ## <a name="at"></a>  array::at
 
@@ -303,39 +255,38 @@ constexpr const_reference at(size_type off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*\
+*off*\
 액세스할 요소의 위치입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수 *는 위치에서*제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 해당 위치가 잘못된 경우 함수는 `out_of_range` 클래스의 개체를 throw합니다.
+The member functions return a reference to the element of the controlled sequence at position *off*. 해당 위치가 잘못된 경우 함수는 `out_of_range` 클래스의 개체를 throw합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_at.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display odd elements " 1 3"
+    // display odd elements " 1 3"
     std::cout << " " << c0.at(1);
     std::cout << " " << c0.at(3);
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ## <a name="back"></a>  array::back
@@ -348,35 +299,34 @@ reference back();
 constexpr const_reference back() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 비어 있지 않아야 하는 제어된 시퀀스의 마지막 요소에 대한 참조를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_back.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     std::cout << " " << c0.back();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -393,36 +343,35 @@ iterator begin() noexcept;
 const_iterator begin() const noexcept;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 임의 액세스 반복기를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_begin.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::iterator it2 = c0.begin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -432,7 +381,7 @@ int main()
 
 ## <a name="cbegin"></a>  array::cbegin
 
-범위의 첫 번째 요소를 주소 처리 하는 **const** 반복기를 반환 합니다.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const noexcept;
@@ -440,13 +389,13 @@ const_iterator cbegin() const noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-범위의 첫 번째 요소 또는 빈 범위의 끝 바로 다음 위치를 가리키는 **상수** 임의 액세스 반복기입니다 (빈 범위의 `cbegin() == cend()`경우).
+A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `cbegin` 반환 값을 사용하여 범위의 요소를 수정할 수 없습니다.
 
-`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `begin()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cbegin()`
+`begin()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -458,7 +407,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  array::cend
 
-범위에서 마지막 요소 바로 다음 위치의 주소를 나타내는 **const** 반복기를 반환 합니다.
+Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const noexcept;
@@ -468,11 +417,11 @@ const_iterator cend() const noexcept;
 
 범위 끝의 바로 다음을 가리키는 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `cend`는 반복기가 범위 끝을 통과했는지 여부를 테스트하는 데 사용됩니다.
 
-`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. 이 예제에서는 및 `Container` `end()` 를 지 원하는 모든 종류의 수정 가능 (비 const) 컨테이너로 가정 합니다.  `cend()`
+`end()` 멤버 함수 대신 이 멤버 함수를 사용하여 반환 값이 `const_iterator`임을 보장할 수 있습니다. 일반적으로 다음 예제와 같이 [auto](../cpp/auto-cpp.md) 형식 추론 키워드와 함께 사용합니다. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -492,15 +441,13 @@ auto i2 = Container.cend();
 typedef implementation-defined const_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 형식은 제어되는 시퀀스의 상수 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_const_iterator.cpp
-// compile with: /EHsc /W4
 #include <array>
 #include <iostream>
 
@@ -508,14 +455,14 @@ typedef std::array<int, 4> MyArray;
 
 int main()
 {
-    MyArray c0 = {0, 1, 2, 3};
+    MyArray c0 = { 0, 1, 2, 3 };
 
     // display contents " 0 1 2 3"
     std::cout << "it1:";
-    for ( MyArray::const_iterator it1 = c0.begin();
-          it1 != c0.end();
-          ++it1 ) {
-       std::cout << " " << *it1;
+    for (MyArray::const_iterator it1 = c0.begin();
+        it1 != c0.end();
+        ++it1) {
+        std::cout << " " << *it1;
     }
     std::cout << std::endl;
 
@@ -542,36 +489,35 @@ it2: 0
 typedef const Ty *const_pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 시퀀스의 요소에 대한 상수 포인터로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_const_pointer.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::const_pointer ptr = &*c0.begin();
     std::cout << " " << *ptr;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -587,36 +533,35 @@ int main()
 typedef const Ty& const_reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 요소에 대한 상수 참조로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_const_reference.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::const_reference ref = *c0.begin();
     std::cout << " " << ref;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -632,36 +577,35 @@ int main()
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 상수 역방향 반복기로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_const_reverse_iterator.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::const_reverse_iterator it2 = c0.rbegin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -681,15 +625,13 @@ const_reverse_iterator crbegin() const;
 
 역방향 배열에서 첫 번째 요소의 주소를 지정하거나 정방향 배열에서 마지막 요소의 주소를 지정하는 const 역방향 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 반환 값이 `crbegin`인 배열 개체는 수정할 수 없습니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// array_crbegin.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
@@ -727,7 +669,7 @@ const_reverse_iterator crend() const noexcept;
 
 역방향 배열에서 마지막 요소 다음의 위치(역방향이 해제된 배열의 첫 번째 요소 앞의 위치) 주소를 지정하는 const 역방향 임의 액세스 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `crend`는 배열에서 [array::cend](#cend)가 사용되는 것처럼 역방향 배열에 사용됩니다.
 
@@ -740,8 +682,6 @@ const_reverse_iterator crend() const noexcept;
 ### <a name="example"></a>예제
 
 ```cpp
-// array_crend.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
@@ -771,36 +711,35 @@ Ty *data();
 const Ty *data() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 제어되는 시퀀스에서 첫 번째 요소의 주소를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_data.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::pointer ptr = c0.data();
     std::cout << " " << *ptr;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -816,36 +755,35 @@ int main()
 typedef std::ptrdiff_t difference_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 부호 있는 정수 형식은 제어되는 시퀀스에서 두 요소의 주소 간 차이점을 나타낼 수 있는 개체를 설명합니다. 이 형식은 `std::ptrdiff_t` 형식의 동의어입니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_difference_type.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display distance first-last " -4"
+    // display distance first-last " -4"
     Myarray::difference_type diff = c0.begin() - c0.end();
     std::cout << " " << diff;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -861,41 +799,40 @@ int main()
 constexpr bool empty() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `N == 0`인 경우에만 true를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_empty.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display whether c0 is empty " false"
+    // display whether c0 is empty " false"
     std::cout << std::boolalpha << " " << c0.empty();
     std::cout << std::endl;
 
     std::array<int, 0> c1;
 
-// display whether c1 is empty " true"
+    // display whether c1 is empty " true"
     std::cout << std::boolalpha << " " << c1.empty();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -914,36 +851,35 @@ reference end();
 const_reference end() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 시퀀스 끝의 바로 다음을 가리키는 임의 액세스 반복기를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_end.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::iterator it2 = c0.end();
     std::cout << " " << *--it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -965,34 +901,35 @@ void fill(const Type& val);
 |-|-|
 |*val*|배열에 삽입되는 요소의 값입니다.|
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `fill`은 배열의 각 요소를 지정된 값으로 바꿉니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// array_fill.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
-int main( )
+int main()
 {
-   using namespace std;
-   array<int, 2> v1 = {1, 2};
-   array<int, 2>::iterator iter;
+    using namespace std;
+    array<int, 2> v1 = { 1, 2 };
 
-   cout << "v1 = " ;
-   for (iter = v1.begin(); iter != v1.end(); iter++)
-      cout << *iter << " ";
-   cout << endl;
+    cout << "v1 = ";
+    for (const auto& it : v1)
+    {
+        std::cout << " " << it;
+    }
+    cout << endl;
 
-   v1.fill(3);
-   cout << "v1 = " ;
-   for (iter = v1.begin(); iter != v1.end(); iter++)
-      cout << *iter << " ";
-   cout << endl;
+    v1.fill(3);
+    cout << "v1 = ";
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
+    cout << endl;
 }
 ```
 
@@ -1006,35 +943,34 @@ reference front();
 constexpr const_reference front() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 비어 있지 않아야 하는 제어된 시퀀스의 첫 번째 요소에 대한 참조를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_front.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     std::cout << " " << c0.front();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1050,15 +986,13 @@ int main()
 typedef implementation-defined iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 임의 액세스 반복기로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_iterator.cpp
-// compile with: /EHsc /W4
 #include <array>
 #include <iostream>
 
@@ -1066,14 +1000,14 @@ typedef std::array<int, 4> MyArray;
 
 int main()
 {
-    MyArray c0 = {0, 1, 2, 3};
+    MyArray c0 = { 0, 1, 2, 3 };
 
     // display contents " 0 1 2 3"
     std::cout << "it1:";
-    for ( MyArray::iterator it1 = c0.begin();
-          it1 != c0.end();
-          ++it1 ) {
-       std::cout << " " << *it1;
+    for (MyArray::iterator it1 = c0.begin();
+        it1 != c0.end();
+        ++it1) {
+        std::cout << " " << *it1;
     }
     std::cout << std::endl;
 
@@ -1101,35 +1035,34 @@ it2: 0
 constexpr size_type max_size() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `N`를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_max_size.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display (maximum) size " 4"
+    // display (maximum) size " 4"
     std::cout << " " << c0.max_size();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1149,41 +1082,40 @@ constexpr const_reference operator[](size_type off) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*\
+*off*\
 액세스할 요소의 위치입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수 *는 위치에서*제어 되는 시퀀스의 요소에 대 한 참조를 반환 합니다. 해당 위치가 유효하지 않을 경우 동작이 정의되지 않습니다.
+The member functions return a reference to the element of the controlled sequence at position *off*. 해당 위치가 유효하지 않을 경우 동작이 정의되지 않습니다.
 
-또한 **배열의**요소에 대 한 참조를 가져오는 데 사용할 수 있는 비 멤버 [get](array-functions.md#get) 함수도 있습니다.
+There is also a non-member [get](array-functions.md#get) function available to get a reference to an element of an **array**.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_operator_sub.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display odd elements " 1 3"
+    // display odd elements " 1 3"
     std::cout << " " << c0[1];
     std::cout << " " << c0[3];
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1201,43 +1133,44 @@ array<Value> operator=(array<Value> right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*right*\
 복사할 컨테이너입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 연산자 *는의 각* 요소를 제어 되는 시퀀스의 해당 요소에 할당 하 고를 `*this`반환 합니다. 이를 사용 하 여 제어 되는 시퀀스를 *오른쪽*에 있는 제어 되는 시퀀스의 복사본으로 바꿉니다.
+The member operator assigns each element of *right* to the corresponding element of the controlled sequence, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_operator_as.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     Myarray c1;
     c1 = c0;
 
-// display copied contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c1.begin();
-        it != c1.end(); ++it)
-        std::cout << " " << *it;
+    // display copied contents " 0 1 2 3"
+        // display contents " 0 1 2 3"
+    for (auto it : c1)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1253,36 +1186,35 @@ int main()
 typedef Ty *pointer;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 시퀀스의 요소에 대한 포인터로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_pointer.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::pointer ptr = &*c0.begin();
     std::cout << " " << *ptr;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1299,36 +1231,35 @@ reverse_iterator rbegin()noexcept;
 const_reverse_iterator rbegin() const noexcept;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 제어되는 시퀀스 끝의 바로 다음을 가리키는 역방향 반복기를 반환합니다. 따라서 역방향 시퀀스의 시작을 지정합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_rbegin.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::const_reverse_iterator it2 = c0.rbegin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1344,36 +1275,35 @@ int main()
 typedef Ty& reference;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 요소에 대한 참조로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_reference.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::reference ref = *c0.begin();
     std::cout << " " << ref;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1390,36 +1320,35 @@ reverse_iterator rend()noexcept;
 const_reverse_iterator rend() const noexcept;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 시퀀스의 첫 번째 요소(또는 빈 시퀀스의 끝 바로 다음)를 가리키는 역방향 반복기를 반환합니다. 따라서 역방향 시퀀스의 끝을 지정합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_rend.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display first element " 0"
+    // display first element " 0"
     Myarray::const_reverse_iterator it2 = c0.rend();
     std::cout << " " << *--it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1435,36 +1364,35 @@ int main()
 typedef std::reverse_iterator<iterator> reverse_iterator;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 제어되는 시퀀스의 역방향 반복기로 사용될 수 있는 개체를 설명합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_reverse_iterator.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display last element " 3"
+    // display last element " 3"
     Myarray::reverse_iterator it2 = c0.rbegin();
     std::cout << " " << *it2;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1480,35 +1408,34 @@ int main()
 constexpr size_type size() const;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 멤버 함수는 `N`를 반환합니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_size.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display size " 4"
+    // display size " 4"
     std::cout << " " << c0.size();
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1524,36 +1451,35 @@ int main()
 typedef std::size_t size_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 부호 없는 정수 형식은 제어되는 시퀀스의 길이를 나타낼 수 있는 개체를 설명합니다. 이 형식은 `std::size_t` 형식의 동의어입니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_size_type.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display distance last-first " 4"
+    // display distance last-first " 4"
     Myarray::size_type diff = c0.end() - c0.begin();
     std::cout << " " << diff;
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1571,53 +1497,54 @@ void swap(array& right);
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽*\
+*right*\
 내용을 교환할 배열입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-멤버 함수는 제어 되는 시퀀스 `*this` 를과 *오른쪽*으로 바꿉니다. `N`에 비례하여 많은 요소 할당과 생성자 호출을 수행합니다.
+The member function swaps the controlled sequences between `*this` and *right*. `N`에 비례하여 많은 요소 할당과 생성자 호출을 수행합니다.
 
-두 **배열** 인스턴스를 교환 하는 데 사용할 수 있는 비 멤버 [swap](array-functions.md#swap) 함수도 있습니다.
+There is also a non-member [swap](array-functions.md#swap) function available to swap two **array** instances.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_swap.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-    Myarray c1 = {4, 5, 6, 7};
+    Myarray c1 = { 4, 5, 6, 7 };
     c0.swap(c1);
 
-// display swapped contents " 4 5 6 7"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display swapped contents " 4 5 6 7"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     swap(c0, c1);
 
-// display swapped contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display swapped contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1634,40 +1561,38 @@ int main()
 typedef Ty value_type;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 형식은 템플릿 매개 변수 `Ty`의 동의어입니다.
 
 ### <a name="example"></a>예제
 
 ```cpp
-// std__array__array_value_type.cpp
-// compile with: /EHsc
 #include <array>
 #include <iostream>
 
 typedef std::array<int, 4> Myarray;
 int main()
-    {
-    Myarray c0 = {0, 1, 2, 3};
+{
+    Myarray c0 = { 0, 1, 2, 3 };
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        std::cout << " " << *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        std::cout << " " << it;
+    }
     std::cout << std::endl;
 
-// display contents " 0 1 2 3"
-    for (Myarray::const_iterator it = c0.begin();
-        it != c0.end(); ++it)
-        {
-        Myarray::value_type val = *it;
+    // display contents " 0 1 2 3"
+    for (const auto& it : c0)
+    {
+        Myarray::value_type val = it;
         std::cout << " " << val;
-        }
+    }
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -1675,6 +1600,6 @@ int main()
 0 1 2 3
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [\<array>](../standard-library/array.md)

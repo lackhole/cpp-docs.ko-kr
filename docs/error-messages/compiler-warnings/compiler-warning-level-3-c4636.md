@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4636
 ms.assetid: 59112a0f-850f-41c6-bd84-8ae8dc84706a
-ms.openlocfilehash: 7327189a61e2545bb6003cd95e1ddb116f9f7c94
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1ee63b813c8ef468291eea4575286f40f96ff6a
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401711"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189129"
 ---
 # <a name="compiler-warning-level-3-c4636"></a>컴파일러 경고(수준 3) C4636
 
@@ -23,7 +23,7 @@ ms.locfileid: "62401711"
 
 다음 샘플에서는 C4636을 생성합니다.
 
-```
+```cpp
 // C4636.cpp
 // compile with: /clr /doc /W3 /c
 /// <see cref=''/>

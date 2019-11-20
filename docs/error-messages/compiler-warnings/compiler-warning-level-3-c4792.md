@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4792
 ms.assetid: c047ce69-a622-44e1-9425-d41aa9261c61
-ms.openlocfilehash: adf233673c4b654927aa9488565adf6ceef5d3e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84a8a8bbb08ac97fe87d63d1ea44587790f87d92
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401568"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189341"
 ---
 # <a name="compiler-warning-level-3-c4792"></a>컴파일러 경고(수준 3) C4792
 
@@ -23,7 +23,7 @@ DllImport를 사용하여 프로그램으로 가져온 네이티브 함수가 �
 
 다음 샘플에서는 C4792를 생성합니다.
 
-```
+```cpp
 // C4792.cpp
 // compile with: /clr /W3
 // C4792 expected
