@@ -278,11 +278,11 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_exchange` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum)를 `read-modify-write` 사용 하 `memory_order_seq_cst`여 *Atom* 에 저장 된 값을 *value*로 교환 하는 연산을 수행 합니다.
+함수 `atomic_exchange`는 `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum)를 사용하여 *Atom*에 저장된 값을 *Value*로 교환하는 `read-modify-write` 연산을 수행합니다.
 
 ## <a name="atomic_exchange_explicit"></a>  atomic_exchange_explicit
 
-*Atom* 의 저장 된 값을 *값*으로 바꿉니다.
+*Atom*의 저장된 값을 *Value*로 바꿉니다.
 
 ```cpp
 template <class Ty>
@@ -344,7 +344,7 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 함수 `atomic_fetch_add` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 `read-modify-write` 조건을 사용 하 여 `memory_order_seq_cst` *Atom*의 저장 된 값에 *값* 을 원자 단위로 추가 하는 연산을 수행 합니다.
 
-원자성 `atomic_address`형식이 이면 *값* 이 형식이 `ptrdiff_t` 고 `char *`작업에서 저장 된 포인터를로 처리 합니다.
+원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업은 저장된 포인터를`char *`로 처리합니다.
 
 이 연산은 또한 정수 형식에 대해 오버로드됩니다.
 
@@ -564,7 +564,7 @@ T* atomic_fetch_sub(
 
 함수 `atomic_fetch_sub` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 `read-modify-write` 조건을 사용 하 `memory_order_seq_cst`여 *Atom*의 저장 된 값에서 *값* 을 원자 단위로 빼서 연산을 수행 합니다.
 
-원자성 `atomic_address`형식이 이면 *값* 이 형식이 `ptrdiff_t` 고 `char *`작업에서 저장 된 포인터를로 처리 합니다.
+원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업은 저장된 포인터를`char *`로 처리합니다.
 
 이 연산은 또한 정수 형식에 대해 오버로드됩니다.
 
@@ -606,7 +606,7 @@ T* atomic_fetch_sub_explicit(
 
 함수 `atomic_fetch_sub_explicit` 는 `Order`로 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 *Atom*의 저장 된 *값*에서 값을 원자 단위로 빼서 `read-modify-write` 연산을 수행 합니다.
 
-원자성 `atomic_address`형식이 이면 *값* 이 형식이 `ptrdiff_t` 고 `char *`작업에서 저장 된 포인터를로 처리 합니다.
+원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업은 저장된 포인터를`char *`로 처리합니다.
 
 이 연산은 또한 정수 형식에 대해 오버로드됩니다.
 
@@ -822,7 +822,7 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-*Atom*에 저장 된 검색 된 값입니다.
+*Atom*에 저장된 값을 검색합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -849,7 +849,7 @@ inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexc
 
 ### <a name="return-value"></a>반환 값
 
-*Atom*에 저장 된 검색 된 값입니다.
+*Atom*에 저장된 값을 검색합니다.
 
 ## <a name="atomic_signal_fence"></a>  atomic_signal_fence
 
@@ -975,7 +975,7 @@ Ty kill_dependency(Ty Arg) noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-반환 값은 *Arg*입니다. *인수* 를 계산 해도 함수 호출에 대 한 종속성이 포함 되지 않습니다. 가능한 종속성 체인을 중단하면 함수는 컴파일러가 좀 더 효율적인 코드를 생성하도록 허용할 수 있습니다.
+반환 값은 *Arg*입니다. *Arg*를 계산해도 함수 호출에 대한 종속성이 포함되지 않습니다. 가능한 종속성 체인을 중단하면 함수는 컴파일러가 좀 더 효율적인 코드를 생성하도록 허용할 수 있습니다.
 
 ## <a name="see-also"></a>참고자료
 
