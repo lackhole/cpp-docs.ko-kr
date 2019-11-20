@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 3) C4633
+title: Compiler Warning (level 3) C4633
 ms.date: 11/04/2016
 f1_keywords:
 - C4633
 helpviewer_keywords:
 - C4633
 ms.assetid: 6d76f268-ba8c-448b-8e83-b903a18b583b
-ms.openlocfilehash: 039489a804bb5d2bd17186b22bcfb8bea644c377
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea0a26e34ac72be1e8a9fb4cc7dd913ba7d1a742
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401737"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189163"
 ---
-# <a name="compiler-warning-level-3-c4633"></a>컴파일러 경고(수준 3) C4633
+# <a name="compiler-warning-level-3-c4633"></a>Compiler Warning (level 3) C4633
 
-XML 문서 주석 대상: 오류: 이유
+XML document comment target: error:  reason
 
-이름을 전달 합니다 [ \<매개 변수 >](../../build/reference/param-visual-cpp.md) 컴파일러에서 태그를 찾을 수 없습니다.
+A name passed to the [\<param>](../../build/reference/param-visual-cpp.md) tag was not found by the compiler.
 
-다음 샘플에서는 C4633 오류가 생성 됩니다.
+The following sample generates C4633:
 
-```
+```cpp
 // C4633.cpp
 // compile with: /clr /doc /LD /W3
 

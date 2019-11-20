@@ -104,18 +104,18 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
-형식의`Ty`값을 저장 하는 *원자* 개체에 대 한 포인터입니다.
+*Atom*\
+형식의`Ty`값을 저장하는 *원자* 개체에 대한 포인터입니다.
 
-*.Exp*\
+*Exp*\
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -145,13 +145,13 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*.Exp*\
+*Exp*\
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
 *Order1*\
@@ -162,11 +162,11 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-*원자 비교 및 교환 작업* 은 *Atom* 에서 가리키는 개체에 저장 된 값을 *Exp*에서 가리키는 값과 비교 합니다. 값이 같으면 *atom* 이 가리키는 개체에 저장 된 값이 작업을 `read-modify-write` 사용 하 고 *Order1*로 지정 된 메모리 순서 제약 조건을 적용 하 여 *값* 으로 대체 됩니다. 값이 같지 않으면 연산은 *Atom* 이 가리키는 개체에 저장 된 값으로 *Exp* 가 가리키는 값을 바꾸고 *Order2*에 지정 된 메모리 순서 제약 조건을 적용 합니다.
+*원자 비교 및 교환 작업*은 *Atom*에서 가리키는 개체에 저장된 값을 *Exp*에서 가리키는 값과 비교합니다. 값이 같으면 *atom*이 가리키는 개체에 저장된 값이 `read-modify-write` 작업을 사용하고 *Order1*로 지정된 메모리 순서 제약 조건을 적용하여 *값*으로 대체됩니다. 값이 같지 않으면 연산은 *Atom*이 가리키는 개체에 저장된 값으로 *Exp*가 가리키는 값을 바꾸고 *Order2*에 지정된 메모리 순서 제약 조건을 적용합니다.
 
 ## <a name="atomic_compare_exchange_weak"></a>  atomic_compare_exchange_weak
 
@@ -188,18 +188,18 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*.Exp*\
+*Exp*\
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -229,32 +229,32 @@ inline bool atomic_compare_exchange_weak_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*.Exp*\
+*Exp*\
 `Ty` 형식의 값에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
 *Order1*\
 첫 번째 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 인수입니다.
 
 *Order2*\
-두 번째 `memory_order` 인수입니다. *Order2* 의 값은 또는 `memory_order_release` `memory_order_acq_rel`일 수 없으며 *Order1*값 보다 더 강력 하 게 지정할 수 없습니다.
+두 번째 `memory_order` 인수입니다. *Order2* 의 값은 `memory_order_release` 또는 `memory_order_acq_rel`일 수 없으며 *Order1*의 값보다 더 강력하게 지정할 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
-값이 같으면 **true** 이 고, 그렇지 않으면 **false**입니다.
+값이 같으면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
-*원자 비교 및 교환 작업* 의 강력 하 고 약한 특성은 모두 예상 값과 현재 값이 같지 않은 경우 새 값을 저장 하지 않도록 보장 합니다. 강력한 버전은 예상 값과 현재 값이 같으면 새 값을 저장 하도록 보장 합니다. 경우에 따라 weak 버전은 **false** 를 반환 하 고 현재 및 예상 값이 동일한 경우에도 새 값을 저장 하지 않을 수 있습니다. 즉, 함수는 **false**를 반환 하지만, 예상 값을 나중에 검사 하면 해당 값이 변경 되지 않았다는 것을 알 수 있으므로 동일 하 게 비교 해야 합니다.
+*원자 비교 및 교환 작업*의 강력하고 약한 특성은 모두 예상 값과 현재 값이 같지 않은 경우 새 값을 저장하지 않도록 보장합니다. 강력한 버전은 예상 값과 현재 값이 같으면 새 값을 저장하도록 보장합니다. 경우에 따라 약한 버전은 **false**를 반환하고 현재 및 예상 값이 동일한 경우에도 새 값을 저장하지 않을 수 있습니다. 즉, 함수는 **false**를 반환하지만, 예상 값을 나중에 검사하면 해당 값이 변경되지 않았다는 것을 알 수 있으므로 동일하게 비교해야 합니다.
 
 ## <a name="atomic_exchange"></a>  atomic_exchange
 
-*값* 을 사용 하 여 *Atom*의 저장 된 값을 바꿉니다.
+*값*을 사용하여 *Atom*의 저장된 값을 바꿉니다.
 
 ```cpp
 template <class T>
@@ -266,15 +266,15 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
 
-교환 전에 *Atom* 의 저장 된 값입니다.
+교환 전 *Atom*의 저장된 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -300,18 +300,18 @@ inline Ty atomic_exchange_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
 
-교환 전에 *Atom* 의 저장 된 값입니다.
+교환 전 *Atom*의 저장된 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -330,10 +330,10 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -374,10 +374,10 @@ T* atomic_fetch_add_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -417,10 +417,10 @@ inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -451,13 +451,13 @@ inline T atomic_fetch_and_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `T` 형식의 값입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
@@ -481,10 +481,10 @@ inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -515,13 +515,13 @@ inline T atomic_fetch_or_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `T` 형식의 값입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
@@ -550,10 +550,10 @@ T* atomic_fetch_sub(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -592,10 +592,10 @@ T* atomic_fetch_sub_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식에 대한 포인터를 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `ptrdiff_t` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -636,10 +636,10 @@ inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `T` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -670,13 +670,13 @@ inline T atomic_fetch_xor_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `T` 형식의 값입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
@@ -698,7 +698,7 @@ inline void atomic_flag_clear(atomic_flag* Flag) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그만*\
+*Flag*\
 `atomic_flag` 개체에 대한 포인터입니다.
 
 ## <a name="atomic_flag_clear_explicit"></a>  atomic_flag_clear_explicit
@@ -712,10 +712,10 @@ inline void atomic_flag_clear_explicit(atomic_flag* Flag, memory_order Order) no
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그만*\
+*Flag*\
 `atomic_flag` 개체에 대한 포인터입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flag_test_and_set"></a>  atomic_flag_test_and_set
@@ -729,7 +729,7 @@ inline bool atomic_flag_test_and_set(atomic_flag* Flag,) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그만*\
+*Flag*\
 `atomic_flag` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -747,10 +747,10 @@ inline bool atomic_flag_test_and_set_explicit(atomic_flag* Flag, memory_order Or
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그만*\
+*Flag*\
 `atomic_flag` 개체에 대한 포인터입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>반환 값
@@ -770,10 +770,10 @@ inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -793,7 +793,7 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `T` 형식의 값을 저장하는 `atomic` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -817,7 +817,7 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 포함하는 `atomic` 개체에 대한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -841,10 +841,10 @@ inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexc
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 포함하는 `atomic` 개체에 대한 포인터입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum). `memory_order_release` 또는 `memory_order_acq_rel`을 사용하지 마세요.
 
 ### <a name="return-value"></a>반환 값
@@ -861,7 +861,7 @@ inline void atomic_signal_fence(memory_order Order) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*주문을*\
+*Order*\
 fence 형식을 결정하는 메모리 순서 제약 조건입니다.
 
 ### <a name="remarks"></a>설명
@@ -890,10 +890,10 @@ inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 포함하는 원자 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -920,13 +920,13 @@ inline Ty atomic_store_explicit(
 
 ### <a name="parameters"></a>매개 변수
 
-*원소*\
+*Atom*\
 `Ty` 형식의 값을 포함하는 `atomic` 개체에 대한 포인터입니다.
 
-*기본값*\
+*Value*\
 `Ty` 형식의 값입니다.
 
-*주문을*\
+*Order*\
 [memory_order](../standard-library/atomic-enums.md#memory_order_enum). `memory_order_consume`, `memory_order_acquire` 또는 `memory_order_acq_rel`을 사용하지 마세요.
 
 ### <a name="remarks"></a>설명
@@ -943,7 +943,7 @@ inline void atomic_thread_fence(memory_order Order) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*주문을*\
+*Order*\
 fence 형식을 결정하는 메모리 순서 제약 조건입니다.
 
 ### <a name="remarks"></a>설명
@@ -970,7 +970,7 @@ Ty kill_dependency(Ty Arg) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*인수가*\
+*Arg*\
 `Ty` 형식의 값입니다.
 
 ### <a name="return-value"></a>반환 값

@@ -4931,6 +4931,8 @@
               href: intrinsics/compiler-intrinsics.md
             - name: ARM 내장 함수
               href: intrinsics/arm-intrinsics.md
+            - name: ARM64 내장 함수
+              href: intrinsics/arm64-intrinsics.md
             - name: x86 내장 목록
               href: intrinsics/x86-intrinsics-list.md
             - name: x64(amd64) 내장 목록

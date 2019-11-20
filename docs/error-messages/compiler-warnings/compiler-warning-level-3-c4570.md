@@ -1,29 +1,29 @@
 ---
-title: 컴파일러 경고(수준 3) C4570
+title: Compiler Warning (level 3) C4570
 ms.date: 11/04/2016
 f1_keywords:
 - C4570
 helpviewer_keywords:
 - C4570
 ms.assetid: feec1225-e6ad-4995-8d96-c22e864a77bd
-ms.openlocfilehash: 386d7c210c77469d67a75d66f7d8ae35c105b3b0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd144847ce6c4f8697cd866d304c23cb9b2be408
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401789"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188881"
 ---
-# <a name="compiler-warning-level-3-c4570"></a>컴파일러 경고(수준 3) C4570
+# <a name="compiler-warning-level-3-c4570"></a>Compiler Warning (level 3) C4570
 
-'type': 명시적으로 선언 되지 추상 않았지만 추상 함수를가지고
+'type' : is not explicitly declared as abstract but has abstract functions
 
-포함 하는 형식을 [추상](../../extensions/abstract-cpp-component-extensions.md) 함수 자체 될 추상으로 표시 되어야 합니다.
+A type that contains [abstract](../../extensions/abstract-cpp-component-extensions.md) functions should itself be marked as abstract.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C4570 오류가 발생 합니다.
+The following sample generates C4570.
 
-```
+```cpp
 // C4570.cpp
 // compile with: /clr /W3 /c
 ref struct X {   // C4570
