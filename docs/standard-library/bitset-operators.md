@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;bitset&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,7 +38,7 @@ operator&(
 *left* \
 각각의 요소를 비트 `AND`로 결합할 두 bitset 중 첫 번째입니다.
 
-*right*\
+*right* \
 각각의 요소를 비트 `AND`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -86,7 +86,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>매개 변수
 
-*right*\
+*right* \
 출력 스트림에 문자열로 삽입할 **bitset\<N>** 형식의 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -146,7 +146,7 @@ basic_istream<CharType, Traits>& operator>> (
 *i_str*\
 bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 
-*right*\
+*right* \
 입력 스트림에서 비트를 수신하는 bitset입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -155,7 +155,7 @@ bitset에 삽입할 입력 스트림에 입력되는 문자열입니다.
 
 ### <a name="remarks"></a>주의
 
-`operator>>` 템플릿 함수 오버 로드는 bitset에 `bitset(str)`값 `str` *오른쪽* 에 저장 합니다. 여기서는 *i_str*에서 추출 된 [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` 형식의 개체입니다.
+템플릿 함수는 `>> 연산자`를 오버로드하여 `bitset(str)`값을 bitset *right*에 저장합니다. 여기서 `str`은 *i_str*에서 추출된 [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` 형식의 개체입니다.
 
 템플릿 함수는 *i_str*에서 요소를 추출하여 다음이 될 때까지 bitset에 삽입합니다.
 
@@ -231,7 +231,7 @@ operator^(
 *left* \
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*right*\
+*right* \
 각각의 요소를 비트 `EXCLUSIVE-OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -283,7 +283,7 @@ operator|(
 *left* \
 각각의 요소를 비트 `OR`로 결합할 두 bitset 중 첫 번째입니다.
 
-*right*\
+*right* \
 각각의 요소를 비트 `OR`로 결합할 두 valarray 중 두 번째입니다.
 
 ### <a name="return-value"></a>반환 값

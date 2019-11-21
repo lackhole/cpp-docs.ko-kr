@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;atomic&gt; 함수'
 ms.date: 07/11/2018
 f1_keywords:
@@ -315,7 +315,7 @@ inline Ty atomic_exchange_explicit(
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_exchange_explicit` 는 *Order*로 `read-modify-write` 지정 된 메모리 제약 조건 내에서 *Atom* 에 저장 된 값을 *값*으로 교환 하는 연산을 수행 합니다.
+함수 `atomic_exchange_explicit`는 *Order*로 지정된 메모리 제약 조건 내에서 *Atom*에 저장된 값을 *Value*로 교환하는 `read-modify-write` 연산을 수행합니다.
 
 ## <a name="atomic_fetch_add"></a>  atomic_fetch_add
 
@@ -342,7 +342,7 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_fetch_add` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 `read-modify-write` 조건을 사용 하 여 `memory_order_seq_cst` *Atom*의 저장 된 값에 *값* 을 원자 단위로 추가 하는 연산을 수행 합니다.
+함수 `atomic_fetch_add`는 `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건을 사용하여 *Atom*의 저장된 값에 *Value*를 원자 단위로 추가하는 `read-modify-write` 연산을 수행합니다.
 
 원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업은 저장된 포인터를`char *`로 처리합니다.
 
@@ -386,7 +386,7 @@ T* atomic_fetch_add_explicit(
 
 ### <a name="remarks"></a>설명
 
-`atomic_fetch_add_explicit` 함수는 `read-modify-write` 작업을 수행하여 `Order`에 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 *Atom*의 저장 된 값에 *값*을 원자 단위로 추가합니다.
+`atomic_fetch_add_explicit` 함수는 `read-modify-write` 작업을 수행하여 `Order`에 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 *Atom*의 저장된 값에 *Value*를 원자 단위로 더합니다.
 
 원자성 형식이 `atomic_address`인 경우, `Value`의 형식은 `ptrdiff_t`이고 연산은 저장된 포인터를 `char *`로 취급합니다.
 
@@ -466,7 +466,7 @@ inline T atomic_fetch_and_explicit(
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_fetch_and_explicit` 는 지정 된 `read-modify-write` 메모리 제약 조건 내에서 atom의 저장 된 값을 `and` 비트 *값* 및 *atom*에 저장 된 현재 *값으로 바꾸는* 작업을 수행 합니다. *Order*by.
+함수 `atomic_fetch_and_explicit`는 *Order*에서 지정한 `read-modify-write` 메모리 제약 조건 내에서 *Atom*의 저장된 값을 *Value* 및 *Atom*에 저장된 현재 값의 비트 `and`로 바꾸는 작업을 수행합니다.
 
 ## <a name="atomic_fetch_or"></a>  atomic_fetch_or
 
@@ -530,7 +530,7 @@ inline T atomic_fetch_or_explicit(
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_fetch_or_explicit` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 `read-modify-write` 조건 내에서 atom의 저장 된 값 `or` 을 비트 *값* 및 *atom*에 저장 된 현재 *값으로 바꾸기* 위해 연산을 수행 합니다. *순서*에 따라 지정 됩니다.
+함수 `atomic_fetch_and_explicit`는 *Order*에 따라 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 *Atom*의 저장된 값을 *Value* 및 *Atom*에 저장된 현재 *값*의 비트 `or`로 바꾸는 작업을 수행합니다.
 
 ## <a name="atomic_fetch_sub"></a>  atomic_fetch_sub
 
@@ -562,9 +562,9 @@ T* atomic_fetch_sub(
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_fetch_sub` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 `read-modify-write` 조건을 사용 하 `memory_order_seq_cst`여 *Atom*의 저장 된 값에서 *값* 을 원자 단위로 빼서 연산을 수행 합니다.
+함수 `atomic_fetch_sub`는 `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건을 사용하여 *Atom*의 저장된 값에서 자동으로 *Value*를 빼는 `read-modify-write` 작업을 수행합니다.
 
-원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업은 저장된 포인터를`char *`로 처리합니다.
+원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업에서는 저장된 포인터를`char *`로 처리합니다.
 
 이 연산은 또한 정수 형식에 대해 오버로드됩니다.
 
@@ -604,9 +604,9 @@ T* atomic_fetch_sub_explicit(
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_fetch_sub_explicit` 는 `Order`로 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 *Atom*의 저장 된 *값*에서 값을 원자 단위로 빼서 `read-modify-write` 연산을 수행 합니다.
+함수 `atomic_fetch_sub_explicit`는 `Order`로 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 *Atom*의 저장된 값에서 *Value*를 원자 단위로 빼서 `read-modify-write` 연산을 수행합니다.
 
-원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업은 저장된 포인터를`char *`로 처리합니다.
+원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업에서는 저장된 포인터를 `char *`로 처리합니다.
 
 이 연산은 또한 정수 형식에 대해 오버로드됩니다.
 
@@ -685,7 +685,7 @@ inline T atomic_fetch_xor_explicit(
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_fetch_xor_explicit` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 `read-modify-write` 조건 내에서 atom의 저장 된 값 `exclusive or` 을 비트 *값* 및 *atom*에 저장 된 현재 *값으로 바꾸기* 위해 연산을 수행 합니다. *순서*에 따라 지정 됩니다.
+함수 `atomic_fetch_xor_explicit`는 *Order*로 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건을 사용하여 *Atom*의 저장된 값을 *Atom*에 저장된 현재 값과 *Value*의 비트 `exclusive or`로 바꾸는 `read-modify-write` 작업을 수행합니다.
 
 ## <a name="atomic_flag_clear"></a>  atomic_flag_clear
 
@@ -798,7 +798,7 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 
 ### <a name="return-value"></a>반환 값
 
-*Atom* 의 원자성 작업이 잠금 해제 이면 **true** 이 고, 그렇지 않으면입니다. 그렇지 않으면 **false**입니다.
+*Atom*의 원자성 작업이 잠금 해제이면 **true**이고, 그렇지 않으면 **false**입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -849,7 +849,7 @@ inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexc
 
 ### <a name="return-value"></a>반환 값
 
-*Atom*에 저장된 값을 검색합니다.
+*Atom*에 저장된 값을 검색합니다.	
 
 ## <a name="atomic_signal_fence"></a>  atomic_signal_fence
 
