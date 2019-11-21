@@ -1,22 +1,22 @@
 ---
-title: 리소스를 소유하는 오브젝트(RAII)
+title: 개체가 리소스 소유(RAII)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
-ms.openlocfilehash: 5705fc1996343141b13e37d1267b2e8c981c1eba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d100d4a9df5d829566e4856594c44dcf4057a329
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245091"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245592"
 ---
-# <a name="objects-own-resources-raii"></a>리소스를 소유하는 오브젝트(RAII)
+# <a name="objects-own-resources-raii"></a>개체가 리소스 소유(RAII)
 
-소유된 리소스 개체인 것을 확인합니다. 이 원칙은 "리소스 획득 초기화" 또는 "RAII" 라고 알려져 있습니다.
+Make sure that objects own resources. This principle is also known as “resource acquisition is initialization” or “RAII.”
 
 ## <a name="example"></a>예제
 
-이름 있는 개별 개체의 생성자 인수로 "new" 개체를 전달합니다(대부분 unique_ptr).
+Pass every “new” object as a constructor argument to another named object that owns it (almost always unique_ptr).
 
 ```cpp
 void f() {
@@ -27,7 +27,7 @@ void f() {
   // automatic exception safety, as if "finally { p->dispose(); x.w.dispose(); }"
 ```
 
-이를 소유하는 다른 개체에 항상 즉시 새로운 리소스를 전달합니다.
+Always immediately pass any new resource to another object that owns it.
 
 ```cpp
 void g() {
@@ -37,8 +37,8 @@ void g() {
   // automatic exception safety, as if "finally { y.file.dispose(); }"
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

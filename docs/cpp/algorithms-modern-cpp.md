@@ -1,26 +1,26 @@
 ---
-title: 알고리즘(모던 C++)
+title: 알고리즘(최신 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6f758d3c-a7c7-4a50-92bb-97b2f6d4ab27
-ms.openlocfilehash: b972e575c982ae2523ec560a6237eac76ceaf834
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 9ed3b364f3fab880273c19c99bbbc7425545aec2
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345171"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246650"
 ---
-# <a name="algorithms-modern-c"></a>알고리즘(모던 C++)
+# <a name="algorithms-modern-c"></a>알고리즘(최신 C++)
 
-모던 C++ 프로그래밍 적용을 위해 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)의 알고리즘을 사용하는 것을 권장합니다. 다음은 몇가지 주요 예를 보여줍니다.
+For modern C++ programming, we recommend that you use the algorithms in the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md). Here are some important examples:
 
-- 기본 탐색 알고리즘인 **for_each** (또한 **transform**도 고려할 수 있습니다.)
+- **for_each**, which is the default traversal algorithm. (Also **transform** for not-in-place semantics.)
 
-- 기본 검색 알고리즘인 **find_if**
+- **find_if**, which is the default search algorithm.
 
-- **sort**, **lower_bound**와 그 밖의 기본 정렬 및 검색 알고리즘
+- **sort**, **lower_bound**, and the other default sorting and searching algorithms.
 
-비교자를 만들기 위해 비교 연산자 **<** 를 사용하고 가능한 경우 *이름있는 람다(named lambdas)* 를 사용하세요.
+To write a comparator, use strict **<** and use *named lambdas* when you can.
 
 ```cpp
 auto comp = [](const widget& w1, const widget& w2)
@@ -31,11 +31,11 @@ sort( v.begin(), v.end(), comp );
 auto i = lower_bound( v.begin(), v.end(), comp );
 ```
 
-## <a name="loops"></a>루프
+## <a name="loops"></a>Loops
 
-가능한 경우 수작업으로 만든 루프를 사용하는 대신 범위 기반 **for**나 알고리즘을 호출하거나 혹은 두 가지를 모두 사용하세요. **copy**, **transform**, **count_if**, **remove_if** 등의 유형은 의도가 분명하고 보다 버그 없는 코드를 작성하기가 쉽기 때문에 수작업으로 작성한 루프보다 훨씬 좋습니다. 또한 많은 C++ 라이브러리 알고리즘에는 보다 효율적으로 구현된 최적화된 기능이 있습니다.
+When possible, use range-based **for** loops or algorithm calls, or both, instead of hand-written loops. **copy**, **transform**, **count_if**, **remove_if**, and others like them are much better than handwritten loops because their intent is obvious and they make it easier to write bug-free code. Also, many C++ Standard Library algorithms have implementation optimizations that make them more efficient.
 
-다음과 같은 이전 C++ 대신:
+Instead of old C++ like this:
 
 ```cpp
 for ( auto i = strings.begin(); i != strings.end(); ++i ) {
@@ -49,7 +49,7 @@ for ( ; i != v.end(); ++i ) {
 }
 ```
 
-최신 C++을 다음과 같이 사용합니다.
+Use modern C++ like this:
 
 ```cpp
 for_each( begin(strings), end(strings), [](string& s) {
@@ -59,22 +59,22 @@ for_each( begin(strings), end(strings), [](string& s) {
 auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );
 ```
 
-### <a name="range-based-for-loops"></a>범위 기반 for 루프
+### <a name="range-based-for-loops"></a>Range-based for loops
 
-범위 기반 **for** 루프는 C ++ 표준 라이브러리 알고리즘이 아닌 C ++ 11 언어 기능입니다. 최신 기능이긴 하지만 이 루프 방법은 고민해볼 필요가 있습니다. 범위 기반 **for** 루프는 **for** 루프에 대한 키워드 확장이며 다양한 범위의 값을 반복하는 루프를 작성할 때 편리하고 효율적인 방법을 제공합니다. C++ 표준 라이브러리 컨테이너, 문자열 및 배열은 범위 기반 **for** 루프와 잘 어울려 사용할 수 있습니다. 사용자 정의 형식이 이러한 새로운 반복 구문을 사용하려면 다음 지원을 추가합니다.
+The range-based **for** loop is a C++11 language feature, not a C++ Standard Library algorithm. But it deserves mention in this discussion about loops. Range-based **for** loops are an extension of the **for** keyword and provide a convenient and efficient way to write loops that iterate over a range of values. C++ Standard Library containers, strings, and arrays are ready-made for range-based **for** loops. To enable this new iteration syntax for your user-defined type, add the following support:
 
-- 구조체의 시작 부분에 반복자를 반환하는 `begin` 메서드와 반복자의 끝을 반환하는 `end` 메서드를 준비합니다.
+- A `begin` method that returns an iterator to the beginning of the structure and an `end` method that returns an iterator to the end of the structure.
 
-- **operator** <strong>\*</strong>, **operator !=** , **operator ++** (접두사 버전)과 같은 메서드를 반복기에서 지원합니다.
+- Support in the iterator for these methods: **operator**<strong>\*</strong>, **operator!=** , and **operator++** (prefix version).
 
-이러한 메서드는 멤버 또는 독립 실행형 함수일 수 있습니다.
+These methods can be either members or stand-alone functions.
 
-## <a name="random-numbers"></a>난수
+## <a name="random-numbers"></a>Random Numbers
 
-이전 CRT `rand()` 함수에 많은 결함이 있다고 C++ 커뮤니티에서 오랫동안 다루어지고 논의되어 왔습니다. 최신 C++에서는 이러한 단점을 다룰 필요가 없으며, 균일하게 분포된 난수생성기를 독창적으로 구현하지 않아도 됩니다. 난수를 빠르고 쉽게 생성할 수 있는 도구가 C++ 표준 라이브러리의 [\<random>](../standard-library/random.md)을 통해 제공됩니다.
+It's no secret that the old CRT `rand()` function has many flaws, which have been discussed at length in the C++ community. In modern C++, you don't have to deal with those shortcomings—nor do you have to invent your own uniformly distributed random number generator—because the tools for quickly and easily creating them are available in the C++ Standard Library, as shown in [\<random>](../standard-library/random.md).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>

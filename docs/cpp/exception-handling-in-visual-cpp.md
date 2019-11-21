@@ -1,42 +1,62 @@
 ---
-title: MSVC의 예외 처리
-ms.date: 05/07/2019
+title: Exception handling in MSVC
+ms.date: 11/19/2019
 helpviewer_keywords:
 - try-catch keyword [C++], exception handling
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-ms.openlocfilehash: 47443f1b7021aac7755d77f797a4f7b7410281f8
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 6cf71d6e6d0519951a084ebead65003bd363395f
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65222069"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246588"
 ---
-# <a name="exception-handling-in-msvc"></a>MSVC의 예외 처리
+# <a name="exception-handling-in-msvc"></a>Exception handling in MSVC
 
-예외는 프로그램이 일반적인 실행 경로를 따라 계속 진행하는 것을 방해하며 프로그램의 제어를 벗어날 수 있는 오류 상태입니다. 개체 생성, 파일 입/출력 및 다른 모듈에서 함수 호출 등 특정 작업은 프로그램이 제대로 실행되는 경우에도 모두 예외의 잠재적 원인입니다. 강력한 코드는 예외를 예상하고 처리합니다.
+예외는 프로그램이 일반적인 실행 경로를 따라 계속 진행하는 것을 방해하며 프로그램의 제어를 벗어날 수 있는 오류 상태입니다. 개체 생성, 파일 입/출력 및 다른 모듈에서 함수 호출 등 특정 작업은 프로그램이 제대로 실행되는 경우에도 모두 예외의 잠재적 원인입니다. 강력한 코드는 예외를 예상하고 처리합니다. To detect logic errors, use assertions rather than exceptions (see [Using Assertions](/visualstudio/debugger/c-cpp-assertions)).
 
-단일 프로그램 또는 모듈 내에서 논리 오류를 감지 하려면 예외 보다는 어설션을 사용 (참조 [어설션을 사용 하 여](/visualstudio/debugger/c-cpp-assertions)).
+## <a name="kinds-of-exceptions"></a>Kinds of exceptions
 
-Microsoft C++ 컴파일러 (MSVC)는 세 가지 종류의 예외 처리를 지원 합니다.
+The Microsoft C++ compiler (MSVC) supports three kinds of exception handling:
 
-- [C++예외 처리](../cpp/cpp-exception-handling.md)
+- [C++ exception handling](errors-and-exception-handling-modern-cpp.md)
 
    대부분의 C++ 프로그램의 경우 형식 안전이며 스택 해제 중 개체 소멸자의 호출을 확인하는 C++ 예외 처리를 사용해야 합니다.
 
-- [구조적된 예외 처리](../cpp/structured-exception-handling-c-cpp.md)
+- [Structured exception handling](structured-exception-handling-c-cpp.md)
 
-   Windows는 SEH라는 고유한 예외 메커니즘을 제공합니다. C++ 또는 MFC 프로그래밍에는 권장되지 않습니다. 비 MFC C 프로그램에만 SEH를 사용 합니다.
+   Windows는 SEH라는 고유한 예외 메커니즘을 제공합니다. C++ 또는 MFC 프로그래밍에는 권장되지 않습니다. Use SEH only in non-MFC C programs.
 
-- [MFC 예외](../mfc/exception-handling-in-mfc.md)
+- [MFC exceptions](../mfc/exception-handling-in-mfc.md)
 
-   버전 3.0 이상에서는 MFC가 C++ 예외를 사용했으나 형식에서 C++ 예외와 유사한 이전 예외 처리 매크로를 여전히 지원합니다. 이러한 매크로는 새 프로그래밍에는 권장되지 않지만 여전히 역 호환성에 대해 지원됩니다. 매크로를 이미 사용하는 프로그램에서 자유롭게 C++ 예외를 사용할 수 있습니다. 전처리 중 매크로의 MSVC 구현에서 정의 된 키워드를 처리 하는 예외에 평가 C++ 시각적 개체를 기준으로 언어 C++ 버전 2.0입니다. C++ 예외를 사용하는 동안 기존 예외 매크로를 남겨둘 수 있습니다.
+Use the [/EH](../build/reference/eh-exception-handling-model.md) compiler option to specify the type of exception handling to use in a project; C++ exception handling is the default. 오류 처리 메커니즘을 혼용하지 마십시오. 예를 들어 C++ 예외를 구조적 예외 처리와 함께 사용하지 마십시오. C++ 예외 처리를 사용하면 코드 이식 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다. For more information about the drawbacks of structured exception handling, see [Structured Exception Handling](structured-exception-handling-c-cpp.md). For advice about mixing MFC macros and C++ exceptions, see [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
 
-사용 된 [/EH](../build/reference/eh-exception-handling-model.md) ; 프로젝트에서 사용 하는 예외 처리의 유형을 지정 하는 컴파일러 옵션 C++ 예외 처리는 기본값입니다. 오류 처리 메커니즘을 혼용하지 마십시오. 예를 들어 C++ 예외를 구조적 예외 처리와 함께 사용하지 마십시오. C++ 예외 처리를 사용하면 코드 이식 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다. 구조적된 예외 처리의 단점에 대 한 자세한 내용은 참조 [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md)합니다. 에 대 한 MFC 매크로 혼합 하는 방법에 대 한 조언 하 고 C++ 예외를 참조 하세요 [예외: MFC 매크로 사용 하 고 C++ 예외](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)합니다.
+## <a name="in-this-section"></a>이 섹션의 내용
 
-CLR 응용 프로그램에서 예외 처리에 대 한 자세한 내용은 [예외 처리 (C++/CLI 및 C++/CX)](../extensions/exception-handling-cpp-component-extensions.md)합니다.
+- [Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)
 
-X64에서 예외 처리에 대 한 정보에 대 한 프로세서를 참조 하세요 [x64 예외 처리](../build/exception-handling-x64.md)합니다.
+- [How to design for exception safety](how-to-design-for-exception-safety.md)
 
-## <a name="see-also"></a>참고자료
+- [How to interface between exceptional and non-exceptional code](how-to-interface-between-exceptional-and-non-exceptional-code.md)
 
-[C++ 언어 참조](../cpp/cpp-language-reference.md)
+- [The try, catch, and throw Statements](try-throw-and-catch-statements-cpp.md)
+
+- [Catch 블록의 평가 방법](how-catch-blocks-are-evaluated-cpp.md)
+
+- [Exceptions and Stack Unwinding](exceptions-and-stack-unwinding-in-cpp.md)
+
+- [Exception Specifications](exception-specifications-throw-cpp.md)
+
+- [noexcept](noexcept-cpp.md)
+
+- [처리되지 않은 C++ 예외](unhandled-cpp-exceptions.md)
+
+- [C(구조적) 및 C++ 예외 혼합](mixing-c-structured-and-cpp-exceptions.md)
+
+- [Structured Exception Handling (SEH) (C/C++)](structured-exception-handling-c-cpp.md)
+
+## <a name="see-also"></a>참조
+
+[C++ 언어 참조](cpp-language-reference.md)</br>
+[x64 예외 처리](../build/exception-handling-x64.md)</br>
+[Exception Handling (C++/CLI and C++/CX)](../extensions/exception-handling-cpp-component-extensions.md)

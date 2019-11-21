@@ -1,5 +1,5 @@
 ---
-title: '예외 처리에서의 타이밍: 요약'
+title: 'Timing of exception handling: A summary'
 ms.date: 05/07/2019
 helpviewer_keywords:
 - sequence [C++]
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - handlers [C++], order of exception
 - structured exception handling [C++], timing
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
-ms.openlocfilehash: 7b52252454e27d622e412f490360a025dfc97838
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
-ms.translationtype: HT
+ms.openlocfilehash: 870606c3661df3654581760214e48ef2bdfb1987
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221899"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246338"
 ---
-# <a name="timing-of-exception-handling-a-summary"></a>예외 처리에서의 타이밍: 요약
+# <a name="timing-of-exception-handling-a-summary"></a>Timing of exception handling: A summary
 
-종료 처리기가 실행 하는 방법과 관계 없이 **__try** 문 블록 종료 됩니다. 원인의 점프,는 **__try** 블록을 `longjmp` 블록 및 예외 처리로 인 한 스택 해제 밖으로 제어를 전송 하는 문.
+A termination handler is executed no matter how the **__try** statement block is terminated. Causes include jumping out of the **__try** block, a `longjmp` statement that transfers control out of the block, and unwinding the stack due to exception handling.
 
 > [!NOTE]
->  Microsoft C++ 컴파일러는 두 가지 형태의 지원 합니다 `setjmp` 및 `longjmp` 문입니다. 빠른 버전은 종료 처리를 건너뛰지만 더 효율적입니다. 이 버전을 사용 하려면 파일을 포함 \<setjmp.h >. 다른 버전은 이전 단락에 설명된 대로 종료 처리를 지원합니다. 이 버전을 사용 하려면 파일을 포함 \<setjmpex.h >. 빠른 버전의 성능 향상 정도는 하드웨어 구성에 따라 달라집니다.
+>  The Microsoft C++ compiler supports two forms of the `setjmp` and `longjmp` statements. 빠른 버전은 종료 처리를 건너뛰지만 더 효율적입니다. To use this version, include the file \<setjmp.h>. 다른 버전은 이전 단락에 설명된 대로 종료 처리를 지원합니다. To use this version, include the file \<setjmpex.h>. 빠른 버전의 성능 향상 정도는 하드웨어 구성에 따라 달라집니다.
 
 운영 체제는 다른 코드를 실행하기 전에 예외 처리기의 본문을 포함한 모든 종료 처리기를 적절한 순서대로 실행합니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "65221899"
 
 1. 이 필터가 제어를 전달하는 경우(0을 반환함) 제어를 전달하지 않는 필터가 발견될 때까지 프로세스가 계속됩니다.
 
-1. 이 필터-1이 반환 하는 경우 예외가 발생 했습니다 종료가 발생 하지 않았고 계속 실행.
+1. If this filter returns -1, execution continues where the exception was raised, and no termination takes place.
 
 1. 필터가 1을 반환하는 경우 다음 이벤트가 발생합니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "65221899"
 
    - 코드 줄에서 이 예외 처리기 끝 다음으로 제어가 전달됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[종료 처리기 작성](../cpp/writing-a-termination-handler.md)<br/>
+[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)
