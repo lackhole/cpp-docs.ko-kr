@@ -2854,7 +2854,7 @@
       href: porting/visual-cpp-change-history-2003-2015.md
     - name: Visual C++ 2003~2015의 새로운 기능
       href: porting/visual-cpp-what-s-new-2003-through-2015.md
-    - name: 2015 및 2019 간의 C++ 이진 호환성
+    - name: C++ 이진 호환성 2015-2019
       href: porting/binary-compat-2015-2017.md
     - name: '포팅 및 업그레이드: 예제 및 사례 연구'
       items:
@@ -4215,22 +4215,7 @@
                 - name: constexpr 람다 식
                   href: cpp/lambda-expressions-constexpr.md
             - name: 배열
-              expanded: false
-              items:
-                - name: 배열
-                  href: cpp/arrays-cpp.md
-                - name: 배열 사용
-                  href: cpp/using-arrays-cpp.md
-                - name: 배열 초기화
-                  href: cpp/initializing-arrays.md
-                - name: 식의 배열
-                  href: cpp/arrays-in-expressions.md
-                - name: 첨자 연산자의 해석
-                  href: cpp/interpretation-of-subscript-operator.md
-                - name: 배열 형식에 대한 간접 참조
-                  href: cpp/indirection-on-array-types.md
-                - name: C++ 배열 순서 지정
-                  href: cpp/ordering-of-cpp-arrays.md
+              href: cpp/arrays-cpp.md
             - name: 참조
               expanded: false
               items:
