@@ -1,33 +1,33 @@
 ---
-title: 컴파일러 경고(수준 1) C4691
+title: 컴파일러 경고 (수준 1) C4691
 ms.date: 11/04/2016
 f1_keywords:
 - C4691
 helpviewer_keywords:
 - C4691
 ms.assetid: 722133d9-87f6-46c1-9e86-9825453d6999
-ms.openlocfilehash: c194e19c8766b67eb7deef32e7228564cda5f1e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6124171bb5f257dac1dd972f7943d001fb54c9ca
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406381"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051356"
 ---
-# <a name="compiler-warning-level-1-c4691"></a>컴파일러 경고(수준 1) C4691
+# <a name="compiler-warning-level-1-c4691"></a>컴파일러 경고 (수준 1) C4691
 
-'type': 참조 되지 않은 ' file' 어셈블리를 대신 사용 하는 현재 변환 단위에 정의 된 형식에서 참조 하는 형식이 필요
+' type ': 참조 된 형식이 참조 되지 않은 어셈블리 ' file '에 있어야 하는데 대신 사용 되는 현재 변환 단위에 정의 된 형식입니다.
 
-원래 형식 정의 포함 하는 메타 데이터 파일을 참조 하지 않는 하 고 컴파일러에서 지역 형식 정의 사용 하는 키를 누릅니다.
+원래 형식 정의를 포함 하는 메타 데이터 파일을 참조 하지 않고 컴파일러에서 로컬 형식 정의를 사용 하 고 있습니다.
 
-여기서 다시 작성 하는 경우에서 *파일*, C4691을 무시 하거나 pragma를 사용 하 여 해제할 수 있습니다 [경고](../../preprocessor/warning.md)합니다.  즉, 작성 하는 파일 컴파일러 형식 정의 찾으려고 시도 하는 여기서 파일과 동일한 경우 C4691을 무시할 수 있습니다.
+*파일*을 다시 작성 하는 경우 pragma [warning](../../preprocessor/warning.md)을 사용 하 여 C4691를 무시 하거나 해제할 수 있습니다.  즉, 빌드하는 파일이 컴파일러에서 형식 정의를 찾을 것으로 예상 하는 파일과 동일한 경우 C4691를 무시할 수 있습니다.
 
-그러나 컴파일러는 메타 데이터에서 참조 되는 동일한 어셈블리에서 포함 되지 않는 정의 사용 하는 경우 예기치 않은 동작이 발생할 수 있습니다. CLR 형식에는 형식의 이름 뿐만 아니라 어셈블리에 의해 형식화 됩니다.  즉, 어셈블리 z.dll에서 형식을 Z y.dll 어셈블리에서에서 형식 Z에서에서 다릅니다.
+그러나 컴파일러에서 메타 데이터에서 참조 되는 동일한 어셈블리의 정의를 사용 하는 경우 예기치 않은 동작이 발생할 수 있습니다. CLR 형식은 형식의 이름 뿐만 아니라 어셈블리 에서도 형식화 됩니다.  즉, 어셈블리 z .dll의 형식 Z는 어셈블리 y .dll의 형식 Z와 다릅니다.
 
 ## <a name="example"></a>예제
 
-이 샘플에는 원래 형식 정의 포함합니다.
+이 샘플에는 원래 유형 정의가 포함 되어 있습니다.
 
-```
+```cpp
 // C4691_a.cpp
 // compile with: /clr /LD /W1
 public ref class Original_Type {};
@@ -35,9 +35,9 @@ public ref class Original_Type {};
 
 ## <a name="example"></a>예제
 
-이 샘플 C4691_a.dll 참조 하 고 Original_Type 형식의 필드를 선언 합니다.
+이 샘플에서는 C4691_a을 참조 하 고 Original_Type 형식의 필드를 선언 합니다.
 
-```
+```cpp
 // C4691_b.cpp
 // compile with: /clr /LD
 #using "C4691_a.dll"
@@ -49,11 +49,11 @@ public:
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4691을 생성합니다.  이 샘플 Original_Type에 대 한 정의 포함 하며 C4691a.dll 참조 하지 않습니다 확인 합니다.
+다음 샘플에서는 C4691를 생성 합니다.  이 샘플에는 Original_Type에 대 한 정의가 포함 되어 있으며 C4691a을 참조 하지 않습니다.
 
-를 해결 하려면 원래 형식 정의 포함 하는 메타 데이터 파일을 참조 하 고 로컬 선언 및 정의 제거 합니다.
+해결 하려면 원래 형식 정의를 포함 하는 메타 데이터 파일을 참조 하 고 로컬 선언 및 정의를 제거 합니다.
 
-```
+```cpp
 // C4691_c.cpp
 // compile with: /clr /LD /W1
 // C4691 expected

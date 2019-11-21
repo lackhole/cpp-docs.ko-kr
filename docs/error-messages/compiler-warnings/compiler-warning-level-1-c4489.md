@@ -1,31 +1,31 @@
 ---
-title: 컴파일러 경고(수준 1) C4489
+title: 컴파일러 경고 (수준 1) C4489
 ms.date: 11/04/2016
 f1_keywords:
 - C4489
 helpviewer_keywords:
 - C4489
 ms.assetid: 43b51c8c-27b5-44c9-b974-fe4b48f4896f
-ms.openlocfilehash: dd150621ad3474444861982c095ae8a6addb52fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78ceecb5918ccb74bd61afe62bbf8b542d585f81
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404041"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966192"
 ---
-# <a name="compiler-warning-level-1-c4489"></a>컴파일러 경고(수준 1) C4489
+# <a name="compiler-warning-level-1-c4489"></a>컴파일러 경고 (수준 1) C4489
 
-'specifier': 인터페이스 메서드 'method';에서 허용 되지 않습니다 재정의 지정자는 ref 클래스와 값 클래스 메서드에만 사용할 수
+' 지정자 ': 인터페이스 메서드 ' method '에 사용할 수 없습니다. 재정의 지정자는 ref 클래스 및 값 클래스 메서드에만 사용할 수 있습니다.
 
-지정자 키워드는 인터페이스 메서드에 잘못 사용 되었습니다.
+인터페이스 메서드에서 지정자 키워드를 잘못 사용 했습니다.
 
-자세한 내용은 [재정의 지정자](../../extensions/override-specifiers-cpp-component-extensions.md)합니다.
+자세한 내용은 [Override 지정자](../../extensions/override-specifiers-cpp-component-extensions.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4489를 생성합니다.
+다음 샘플에서는 C4489를 생성 합니다.
 
-```
+```cpp
 // C4489.cpp
 // compile with: /clr /c /W1
 public interface class I {

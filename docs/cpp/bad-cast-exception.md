@@ -8,16 +8,16 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-ms.openlocfilehash: 7384394fb53c6aa4bc009a903ba0ed22bf0ed0d6
-ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
+ms.openlocfilehash: 11b42c9e6210c2432563bba43c55517abd4265fe
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71998779"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245953"
 ---
 # <a name="bad_cast-exception"></a>bad_cast 예외
 
-**bad_cast** 예외는 참조 형식에 대한 실패한 캐스팅 결과로 **dynamic_cast** 연산자가 throw합니다.
+The **bad_cast** exception is thrown by the **dynamic_cast** operator as the result of a failed cast to a reference type.
 
 ## <a name="syntax"></a>구문
 
@@ -26,15 +26,15 @@ catch (bad_cast)
    statement
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**bad_cast**의 인터페이스는 다음과 같습니다.
+The interface for **bad_cast** is:
 
 ```cpp
 class bad_cast : public exception
 ```
 
-다음 코드에는 **bad_cast** 예외를 throw하는 실패한 **dynamic_cast**의 예제가 포함되어 있습니다.
+The following code contains an example of a failed **dynamic_cast** that throws the **bad_cast** exception.
 
 ```cpp
 // expre_bad_cast_Exception.cpp
@@ -65,14 +65,14 @@ int main() {
 }
 ```
 
-캐스팅 되는 개체 (도형)가 지정 된 캐스트 형식 (원)에서 파생 되지 않기 때문에 예외가 throw 됩니다. 예외를 방지하려면 `main`에 다음과 같은 선언을 추가합니다.
+The exception is thrown because the object being cast (a Shape) isn't derived from the specified cast type (Circle). 예외를 방지하려면 `main`에 다음과 같은 선언을 추가합니다.
 
 ```cpp
 Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-그리고 나서 다음과 같이 **try** 블록의 캐스트 감각을 반전시킵니다.
+Then reverse the sense of the cast in the **try** block as follows:
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
@@ -96,9 +96,9 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 |연산자|설명|
 |-|-|
-|[operator=](#op_eq)|@No__t-0 개체를 다른 개체에 할당 하는 대입 연산자입니다.|
+|[operator=](#op_eq)|An assignment operator that assigns one `bad_cast` object to another.|
 
-## <a name="bad_cast"></a>bad_cast
+## <a name="bad_cast"></a> bad_cast
 
 `bad_cast` 형식의 개체에 대한 생성자입니다.
 
@@ -107,15 +107,15 @@ bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="op_eq"></a>연산자 =
+## <a name="op_eq"></a> operator=
 
-@No__t-0 개체를 다른 개체에 할당 하는 대입 연산자입니다.
+An assignment operator that assigns one `bad_cast` object to another.
 
 ```cpp
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a>이며
+## <a name="what"></a> what
 
 ```cpp
 const char* what() const noexcept override;
@@ -123,6 +123,6 @@ const char* what() const noexcept override;
 
 ## <a name="see-also"></a>참조
 
-[Dynamic_cast 연산자](../cpp/dynamic-cast-operator.md)\
+[dynamic_cast Operator](../cpp/dynamic-cast-operator.md)\
 [키워드](../cpp/keywords-cpp.md)\
-[C++ 예외 처리](../cpp/cpp-exception-handling.md)
+[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)

@@ -2,12 +2,12 @@
 title: 코드를 유니버설 CRT로 업그레이드
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: 68edcd57ee03ac861a6d2105456f4dbf699c1210
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 0554ff713b499f99e7e7508faf687c1635e6d912
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449001"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627182"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>코드를 유니버설 CRT로 업그레이드
 
@@ -35,7 +35,7 @@ Visual Studio C++ 프로젝트를 업데이트할 때 프로젝트의 **Linker**
 
 이제 UCRT는 Microsoft Windows 운영 체제 구성 요소이므로 Windows 10 운영 체제의 일부로 포함되고 Windows Vista부터 Windows 8.1까지 이전 운영 체제에서는 Windows 업데이트를 통해 사용할 수 있습니다. Windows XP의 경우 재배포 가능 버전을 사용할 수 있습니다. 운영 체제 구성 요소로서 UCRT의 업데이트 및 서비스는 Visual Studio 및 Microsoft C++ 컴파일러 버전과는 별개로 Windows 업데이트를 통해 관리됩니다. UCRT는 Windows 구성 요소이므로 안전하고 쉽게 업데이트하고 이미지 크기를 줄일 수 있도록 앱용 UCRT의 중앙 배포를 사용해야 합니다.
 
-Visual Studio 2015 또는 Visual Studio 2017에서 지원하는 Windows 버전에서 UCRT를 사용할 수 있습니다. Windows 10이 아닌 지원되는 다른 버전의 Windows에 대해 vcredist 패키지를 사용하여 재배포할 수 있습니다. vcredist 패키지는 UCRT 구성 요소를 포함하고 이들 구성 요소가 기본적으로 설치되지 않은 Windows 운영 체제에 자동으로 설치합니다. 자세한 내용은 [Visual C++ 파일 재배포](../windows/redistributing-visual-cpp-files.md)를 참조하세요.
+Visual Studio 2015 또는 Visual Studio 2017에서 지원하는 Windows 버전에서 UCRT를 사용할 수 있습니다. Windows 10이 아닌 지원되는 다른 버전의 Windows에 대해 vcredist 패키지를 사용하여 재배포할 수 있습니다. vcredist 패키지는 UCRT 구성 요소를 포함하고 이들 구성 요소가 기본적으로 설치되지 않은 Windows 운영 체제에 자동으로 설치합니다. 자세한 내용은 [Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md)을 참조하세요.
 
 UCRT의 app-local 배포가 지원되지만 성능 및 보안상의 이유로 권장되지 않습니다. app-local 배포용 DLL은 **redist** 하위 디렉터리 아래에 Windows SDK의 일부로 포함됩니다. 필요한 DLL에는 ucrtbase.dll 및 api-ms-win-_subset_.dll이라는 **APISet 전달자** DLL 집합이 포함됩니다. 각 운영 체제에서 필요한 DLL 집합은 다르므로 app-local 배포를 사용할 경우 모든 DLL을 포함하는 것이 좋습니다. app-local 배포에 대한 자세한 내용 및 주의할 점은 [Visual C++의 배포](../windows/deployment-in-visual-cpp.md)을 참조하세요.
 
@@ -43,10 +43,10 @@ UCRT의 app-local 배포가 지원되지만 성능 및 보안상의 이유로 �
 
 ISO C99 준수를 향상하고 코드 품질 및 보안 문제를 해결하기 위해 UCRT에서 많은 함수가 추가되거나 업데이트되었습니다. 경우에 따라 이를 위해 라이브러리에 대한 상당한 변경이 필요했습니다. 이전 버전의 CRT를 사용하면 코드가 깔끔하게 컴파일되지만 UCRT를 사용하여 컴파일하면 코드가 중단되는 경우 이러한 업데이트와 기능을 이용하려면 코드를 변경해야 합니다. 유니버설 CRT에 있는 CRT에 대한 주요 변경 내용 및 업데이트의 전체 목록은 Visual C++ 변경 기록의 [CRT(C 런타임 라이브러리)](visual-cpp-change-history-2003-2015.md#BK_CRT) 섹션을 참조하세요. 여기에는 코드에서 필요한 변경 내용을 식별하는 데 사용할 수 있는 영향 받는 헤더 및 함수 목록이 포함됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Visual C++ 포팅 및 업그레이드 가이드](visual-cpp-porting-and-upgrading-guide.md)<br/>
 [잠재적인 업그레이드 문제 개요(Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
-[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[이전 버전의 Visual에서 프로젝트 업그레이드C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual C++ 변경 기록 2003 - 2015](visual-cpp-change-history-2003-2015.md)<br/>
 [Visual Studio의 C++ 규칙 향상](../overview/cpp-conformance-improvements.md)

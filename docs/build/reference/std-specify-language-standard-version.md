@@ -6,12 +6,12 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 9bdeb92e03b3ae00258ac48a29cec42ef7e18e81
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 4583bef3ef3033b6ba493ccac1c4fc5360c70e35
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241221"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624887"
 ---
 # <a name="std-specify-language-standard-version"></a>/std(언어 표준 버전 지정)
 
@@ -21,9 +21,9 @@ ms.locfileid: "68241221"
 
 > /std:\[c++14\|c++17\|c++latest]
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**/std** 옵션은 Visual Studio 2017 이상에서 사용할 수 있습니다. 이 옵션은 코드 컴파일 중에 사용하도록 설정된 버전 특정 ISO C++ 프로그래밍 언어를 제어하는 데 사용합니다. 이 옵션을 통해 특정 언어 표준 버전을 준수하는 기존 코드를 손상시킬 수 있는 특정 새 언어 및 라이브러리에 대한 기능을 사용하지 않도록 설정할 수 있습니다. 기본적으로 이후의 C++ 언어 표준에서 제공하는 언어 및 표준 라이브러리 기능을 사용하지 않게 설정하는 **/std:c++14**를 지정합니다. C++17 표준 특정 기능 및 동작을 사용하려면 **/std:c++17**을 사용합니다. 다음 초안 표준에 대해 현재 구현된 컴파일러와 제안된 표준 라이브러리 기능을 명시적으로 사용하려면 **/std:c++latest**를 사용합니다. 모든 C + + 20 개의 기능이 필요 **/std: c + + 최신**구현을 완료 되 면, 새 **/std: c + + 20** 옵션을 사용 합니다.
+**/std** 옵션은 Visual Studio 2017 이상에서 사용할 수 있습니다. 이 옵션은 코드 컴파일 중에 사용하도록 설정된 버전 특정 ISO C++ 프로그래밍 언어를 제어하는 데 사용합니다. 이 옵션을 통해 특정 언어 표준 버전을 준수하는 기존 코드를 손상시킬 수 있는 특정 새 언어 및 라이브러리에 대한 기능을 사용하지 않도록 설정할 수 있습니다. 기본적으로 이후의 C++ 언어 표준에서 제공하는 언어 및 표준 라이브러리 기능을 사용하지 않게 설정하는 **/std:c++14**를 지정합니다. C++17 표준 특정 기능 및 동작을 사용하려면 **/std:c++17**을 사용합니다. 다음 초안 표준에 대해 현재 구현된 컴파일러와 제안된 표준 라이브러리 기능을 명시적으로 사용하려면 **/std:c++latest**를 사용합니다. 모든 c + + 20 기능에는 **/std: C + + 최신**이 필요 합니다. 구현이 완료 되 면 새 **/std: c + + 20** 옵션이 활성화 됩니다.
 
 기본 **/std:c++14** 옵션은 MSVC 컴파일러에서 구현된 전체 C++14 기능 집합을 사용하도록 설정합니다. 이 옵션은 이후의 언어 표준 버전에서 변경되었거나 새로 도입된 기능에 대한 컴파일러와 표준 라이브러리 지원을 사용하지 않게 설정합니다. 단 이전 MSVC 컴파일러 릴리스에서 이미 구현된 C++17 컴파일러 기능은 예외입니다. Visual Studio 2015 업데이트 2에서 제공되는 기능에 대해 이미 종속성이 있는 사용자에게 중대한 변화가 발생하지 않도록, **/std: c + + 14** 옵션을 지정하면 이 기능을 그대로 사용합니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "68241221"
 
 - [u8 문자 리터럴](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
-**/std:c++14**를 지정했을 때 사용하는 C++14 및 C++17 기능에 대한 추가 정보는 [Visual C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md)의 참고를 참조하세요.
+**/Std: c** + + 14가 지정 된 경우 사용할 수 있는 c + + 14 및 c + + 17 기능에 대 한 자세한 내용은 [Microsoft C++ 언어 규칙 표](../../overview/visual-cpp-language-conformance.md)를 참조 하세요.
 
 **/std:c++17** 옵션은 MSVC 컴파일러에서 구현된 전체 C++17 기능 집합을 사용하도록 설정합니다. 이 옵션에서는 C++17 이후의 C++표준 규격 초안(Working Draft) 및 결함 업데이트의 전에서 변경되거나 새로운 기능에 대한 컴파일러 및 표준 라이브러리 지원을 사용하지 않습니다.
 
@@ -51,17 +51,17 @@ C++ 컴파일 중에 적용되는 **/std** 옵션은 [ \_MSVC\_LANG](../../prepr
 **/std:c++14** 및 **/std:c++latest** 옵션은 Visual Studio 2015 업데이트 3부터 사용할 수 있습니다. **/std:c++17** 옵션은 Visual Studio 2017 버전 15.3부터 사용할 수 있습니다. 앞서 설명한 것처럼 일부 C++17 표준 동작은 **/std:c++14** 옵션으로 사용하나 그 밖의 모든 C++17 기능은 **/std:c++17**로 사용합니다. C++ 20 기능은 구현이 완료될 때까지 **/std:latest**로 사용합니다.
 
 > [!NOTE]
-> MSVC 컴파일러 버전이나 업데이트 수준에 따라, **/std:c++17** 옵션을 지정했을 때 C++17 기능이 일부 구현되지 않거나 호환되지 않을 수 있습니다. 릴리스 버전별 Visual C++의 C++ 언어 호환 개요는 [Visual C++ 언어 규칙](../../overview/visual-cpp-language-conformance.md)을 참조하세요.
+> MSVC 컴파일러 버전이나 업데이트 수준에 따라, **/std:c++17** 옵션을 지정했을 때 C++17 기능이 일부 구현되지 않거나 호환되지 않을 수 있습니다. 시각적 개체 C++ 릴리스 버전 C++ 의 언어 규칙 개요는 [Microsoft C++ 언어 규칙 표](../../overview/visual-cpp-language-conformance.md)를 참조 하세요.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
 
 1. **구성 속성**, **C/C++** , **언어**를 차례로 선택합니다.
 
 1. **C++ 언어 표준**의 드롭다운 컨트롤에서 지원할 언어 표준을 선택한 다음, **확인** 또는 **적용**을 선택하여 변경 내용을 저장합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

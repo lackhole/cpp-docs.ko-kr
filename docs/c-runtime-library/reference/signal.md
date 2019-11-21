@@ -23,12 +23,12 @@ f1_keywords:
 - signal
 helpviewer_keywords:
 - signal function
-ms.openlocfilehash: 04869412272725108911f13857585e650ad20ab9
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 232bf7bc518907db8744fbb85e0f3a33c9296006
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948097"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625848"
 ---
 # <a name="signal"></a>신호
 
@@ -57,7 +57,7 @@ void __cdecl *signal(int sig, int (*func)(int, int));
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **신호** 함수를 사용 하면 프로세스가 운영 체제에서 인터럽트 신호를 처리 하는 여러 방법 중 하나를 선택할 수 있습니다. *Sig* 인수는 **신호가** 응답 하는 인터럽트입니다. 신호에 정의 된 다음 매니페스트 상수 중 하나 여야 합니다. 넣기.
 
@@ -115,7 +115,7 @@ volatile double d = 0.0f;
 |-------------|---------------------|
 |**signal**|\<signal.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -127,7 +127,6 @@ volatile double d = 0.0f;
 // Use signal to attach a signal handler to the abort routine
 #include <stdlib.h>
 #include <signal.h>
-#include <tchar.h>
 
 void SignalHandler(int signal)
 {
@@ -149,12 +148,19 @@ int main()
 }
 ```
 
+출력은 사용 하는 런타임 버전, 앱이 콘솔 또는 Windows 앱 인지 여부, Windows 레지스트리 설정에 따라 달라 집니다. 콘솔 앱의 경우 다음 메시지와 같은 내용이 stderr로 전송 될 수 있습니다.
+
 ```Output
-This application has requested the Runtime to terminate it in an unusual way.
-Please contact the application's support team for more information.
+Debug Error!
+
+Program: c:\Projects\crt_signal\Debug\crt_signal.exe
+
+R6010
+
+- abort() has been called
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [프로세스 및 환경 제어](../../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](abort.md)<br/>

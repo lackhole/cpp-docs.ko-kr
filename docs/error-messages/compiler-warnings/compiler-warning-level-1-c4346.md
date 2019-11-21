@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 1) C4346
+title: 컴파일러 경고 (수준 1) C4346
 ms.date: 11/04/2016
 f1_keywords:
 - C4346
 helpviewer_keywords:
 - C4346
 ms.assetid: 68ee562d-cca9-4a2a-9a1b-14ad1a1e7396
-ms.openlocfilehash: 53381ca6e33321001299ce27bce550c5b2b8f59e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa71565824355ff4b3658fd9de22c09d6db6dc33
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187220"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966559"
 ---
-# <a name="compiler-warning-level-1-c4346"></a>컴파일러 경고(수준 1) C4346
+# <a name="compiler-warning-level-1-c4346"></a>컴파일러 경고 (수준 1) C4346
 
-'name': 종속 이름이 형식이 아닙니다.
+' name ': 종속 이름이 형식이 아닙니다.
 
-합니다 [typename](../../cpp/typename.md) 키워드는 종속 이름이 형식으로 취급 하는 경우에 필요 합니다. 동일한 시각적 개체의 모든 버전에서 작동 하는 코드에 대 한 C++를 추가 `typename` 를 선언 합니다.
+형식으로 처리 해야 하는 종속 이름이 있는 경우 [typename](../../cpp/typename.md) 키워드를 입력 해야 합니다. 모든 버전의 Visual C++에서 동일 하 게 작동 하는 코드의 경우 선언에 `typename`를 추가 합니다.
 
-다음 샘플에서는 C4346을 생성합니다.
+다음 샘플에서는 C4346를 생성 합니다.
 
-```
+```cpp
 // C4346.cpp
 // compile with: /WX /LD
 template<class T>
@@ -32,9 +32,9 @@ struct C {
 };
 ```
 
-다음 샘플에서는 다른 예를 보여 줍니다. 여기서는 **typename** 키워드를 사용 합니다.
+다음 샘플에서는 **typename** 키워드가 필요한 다른 예를 보여 줍니다.
 
-```
+```cpp
 // C4346b.cpp
 // compile with: /LD /W1
 template<class T>
@@ -53,9 +53,9 @@ struct M : public L<typename T::Type, T::Value>
 };
 ```
 
-이
+그리고
 
-```
+```cpp
 // C4346c.cpp
 // compile with: /LD /WX
 struct Y {

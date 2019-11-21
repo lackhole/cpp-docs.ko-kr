@@ -1,5 +1,5 @@
 ---
-title: '&lt;모든&gt; 함수'
+title: '&lt;any&gt; 함수'
 ms.date: 04/04/2019
 f1_keywords:
 - any/std::any_cast

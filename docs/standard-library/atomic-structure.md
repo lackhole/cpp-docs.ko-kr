@@ -1,4 +1,4 @@
----
+﻿---
 title: atomic 구조체
 ms.date: 04/20/2018
 f1_keywords:
@@ -54,7 +54,7 @@ struct atomic;
 
 *Ty* 형식은 *사소하게 복사할 수* 있어야 합니다. 즉, [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)를 사용하여 바이트를 복사하면 원래 개체와 비교하여 동일한 유효한 *Ty* 개체가 생성되어야 합니다. [compare_exchange_weak](#compare_exchange_weak) 및 [compare_exchange_strong](#compare_exchange_strong) 멤버 함수는 [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md)를 사용하여 두 개의 *Ty* 값이 같은지 여부를 확인합니다. 이러한 함수는 *Ty* 정의 `operator==`를 사용하지 않습니다. `atomic` 멤버 함수는 `memcpy`를 사용하여 *Ty* 형식의 값을 복사합니다.
 
-모든 포인터 형식에 대한 부분 특수화인 **atomic\<Ty \* >**가 있습니다. 특수화를 사용하면 관리되는 포인터 값에 오프셋을 더하거나 값에서 오프셋을 뺄 수 있습니다. 산술 연산은 `ptrdiff_t` 형식의 인수를 사용하고, 일반 주소 산술과 일관되도록 *Ty*의 크기에 따라 해당 인수를 조정합니다.
+모든 포인터 형식에 대한 부분 특수화인 **atomic\<Ty \* >** 가 있습니다. 특수화를 사용하면 관리되는 포인터 값에 오프셋을 더하거나 값에서 오프셋을 뺄 수 있습니다. 산술 연산은 `ptrdiff_t` 형식의 인수를 사용하고, 일반 주소 산술과 일관되도록 *Ty*의 크기에 따라 해당 인수를 조정합니다.
 
 **bool**을 제외한 모든 정수 계열 형식에 대한 특수화가 있습니다. 각 특수화에서는 원자 산술 및 논리 연산을 위한 다양한 방법을 제공합니다.
 
@@ -66,7 +66,7 @@ struct atomic;
 |**atomic\<unsigned int>**|**atomic\<long>**|**atomic\<unsigned long>**|
 |**원자\<long long >**|**원자성\<부호 없는 long long >**|
 
-정수 특수화는 해당 `atomic_integral` 형식에서 파생됩니다. 예를 들어 **atomic\<unsigned int >**은 `atomic_uint`에서 파생 됩니다.
+정수 특수화는 해당 `atomic_integral` 형식에서 파생됩니다. 예를 들어 **atomic\<unsigned int >** 은 `atomic_uint`에서 파생 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -340,7 +340,7 @@ bool compare_exchange_strong(
 
 ### <a name="return-value"></a>반환 값
 
-값 비교 결과를 나타내는 **부울** 입니다.
+값 비교 결과를 나타내는 **bool** 입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -405,7 +405,7 @@ bool compare_exchange_weak(
 
 두 번째 `memory_order`를 포함하지 않는 오버로드는 *Order1*의 값을 기반으로 하는 암시적 *Order2*를 사용합니다. *Order1*이 `memory_order_acq_rel`이면 *Order2*는 `memory_order_acquire`입니다. *Order1*이 `memory_order_release`이면 *Order2*는 `memory_order_relaxed`입니다. 다른 모든 경우에는 *Order2*가 *Order1*과 같습니다.
 
-두 개의 매개 변수를 사용하는 `memory_order` 오버로드의 경우 *Order2*의 값은 `memory_order_release` 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*의 값보다 더 강력하지 않아야 합니다.	
+두 개의 매개 변수를 사용하는 `memory_order` 오버로드의 경우 *Order2*의 값은 `memory_order_release` 또는 `memory_order_acq_rel`이 아니어야 하며 *Order1*의 값보다 더 강력하지 않아야 합니다.
 
 ## <a name="exchange"></a> atomic::exchange
 
@@ -611,7 +611,7 @@ bool is_lock_free() const volatile noexcept;
 
 ## <a name="load"></a>atomic:: load
 
-지정된 메모리 제약 조건 내에서 **\*this**의 저장된 값을 검색합니다.
+지정 된 메모리 제약 조건 내에서 **\*this**의 저장 된 값을 검색 합니다.
 
 ```cpp
 Ty atomic::load(

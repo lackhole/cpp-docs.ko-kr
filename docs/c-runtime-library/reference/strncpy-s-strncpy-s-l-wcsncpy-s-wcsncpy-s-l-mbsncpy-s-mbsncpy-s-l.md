@@ -49,12 +49,12 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 196a3aac09db790da6b8137029383cca77c3d2ad
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2ccfde34d12dadb76bc8b4058a3f9b52c3d1f4bc
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947273"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626146"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
@@ -172,17 +172,17 @@ errno_t _mbsncpy_s_l(
 |*strDest*|*numberOfElements*|*strSource*|반환 값|*Strdest* 의 내용|
 |---------------|------------------------|-----------------|------------------|---------------------------|
 |**NULL**|any|any|**EINVAL**|수정 안 됨|
-|any|any|**NULL**|**EINVAL**|*Strdest* [0]을 0으로 설정 합니다.|
+|any|any|**NULL**|**EINVAL**|*Strdest*[0]을 0으로 설정 합니다.|
 |any|0|any|**EINVAL**|수정 안 됨|
-|**NULL** 이 아님|너무 작음|any|**ERANGE**|*Strdest* [0]을 0으로 설정 합니다.|
+|**NULL** 이 아님|너무 작음|any|**ERANGE**|*Strdest*[0]을 0으로 설정 합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 함수는 *strsource* 의 첫 *D* 문자를 *strsource*로 복사 하려고 합니다. *여기서 D* 는 count와 *strsource*의 길이 중 더 작은 *수* 입니다. 이러한 *D* 문자를 *strdest* 에 맞추고 (크기가 *numberofelements*로 지정 된 경우) null 종결자를 위한 공간을 남겨 두려면 해당 문자가 복사 되 고 종료 null이 추가 됩니다. 그렇지 않으면 *Strdest*[0]이 null 문자로 설정 되 고 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다.
 
 위 단락의 설명에는 예외가 적용됩니다. *Count* 가 **_truncate**인 경우 *strsource* 에 맞는 만큼의 *strsource* 는 항상 추가 되는 종료 null에 대 한 공간을 유지 하면서 복사 됩니다.
 
-예를 들면 다음과 같습니다.
+예를 들어 개체에 적용된
 
 ```C
 char dst[5];
@@ -208,9 +208,9 @@ strncpy_s(dst, 5, "a long string", 4);
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
-이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
+이러한 함수의 디버그 라이브러리 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -230,7 +230,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**wcsncpy_s**, **_wcsncpy_s_l**|\<string.h> 또는 \<wchar.h>|
 |**_mbsncpy_s**, **_mbsncpy_s_l**|\<mbstring.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -403,7 +403,7 @@ After strncpy_s (with null-termination):
    'mice'
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [로캘](../../c-runtime-library/locale.md)<br/>

@@ -1,24 +1,24 @@
 ---
-title: 라이브러리 내부 요소에 대한 종속성 해결
+title: 라이브러리 내부 구조에 C++ 대 한 종속성 수정
 ms.date: 05/24/2017
 helpviewer_keywords:
 - library internals in an upgraded Visual Studio C++ project
 - _Hash_seq in an upgraded Visual Studio C++ project
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
-ms.openlocfilehash: af395ea6f8c8e6a88bd2b003f0eee948bde8b6a9
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: 5486cd65a34e3ef69f3b2e948ba0ad020e68b326
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65449087"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627007"
 ---
-# <a name="fix-your-dependencies-on-library-internals"></a>라이브러리 내부 요소에 대한 종속성 해결
+# <a name="fix-your-dependencies-on-c-library-internals"></a>라이브러리 내부 구조에 C++ 대 한 종속성 수정
 
 Microsoft는 표준 라이브러리, 대부분의 C 런타임 라이브러리, 기타 여러 Visual Studio 버전의 Microsoft 라이브러리에 대한 소스 코드를 게시했습니다. 소스 코드를 게시한 이유는 라이브러리 동작을 이해하고 코드를 디버그하는 데 도움을 주기 위해서입니다. 라이브러리 소스 코드 게시의 한 가지 부작용은 라이브러리 인터페이스의 일부가 아닌 내부 값, 데이터 구조 및 함수가 노출된다는 점입니다. 여기에는 일반적으로 두 개의 밑줄 또는 한 개의 밑줄 뒤에 한 개의 대문자로 시작되는 이름이 있습니다. 이것은 C++ 표준이 구현을 위해 예약하는 이름입니다. 이러한 값, 구조 및 함수는 시간이 지나면서 라이브러리가 진화함에 따라 달라질 수 있는 구현 세부 사항이므로 여기에 지나치게 의존하지 않는 것이 좋습니다. 여기에 의존하는 경우에는 새 라이브러리 버전으로 코드를 마이그레이션할 때 문제가 생기거나 코드를 이동하지 못하게 될 위험이 있습니다.
 
 대부분의 경우에는 Visual Studio의 각 릴리스에 대한 새로운 기능 또는 변경 내용 문서에서 라이브러리 내부 요소에 대한 변경 사항을 언급하지 않습니다. 따라서 이러한 구현 정보에 의해 영향을 받지 않아야 합니다. 그러나 때로는 라이브러리 내부에서 볼 수 있는 일부 코드를 사용하고 싶을 때가 있을 것입니다. 이 항목에서는 사용할 수 있는 CRT 또는 표준 라이브러리 내부 요소에 대한 종속성 및 코드를 업데이트하여 이러한 종속성을 제거함으로써 이동성을 높이거나 새 라이브러리 버전으로 마이그레이션하는 방법에 관해 설명합니다.
 
-## <a name="hashseq"></a>_Hash_seq
+## <a name="_hash_seq"></a>_Hash_seq
 
 표준 라이브러리의 최신 버전에서는 일부 문자열 형식에 대해 `std::hash`를 구현하는 데 사용되는 내부 해시 함수 `std::_Hash_seq(const unsigned char *, size_t)`가 표시되었습니다. 이 함수는 문자 시퀀스에 대해 [FNV-1a 해시]( https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function)를 구현했습니다.
 
@@ -74,8 +74,8 @@ inline size_t fnv1a_hash_bytes(const unsigned char * first, size_t count) {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[이전 버전의 Visual에서 프로젝트 업그레이드C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [잠재적인 업그레이드 문제 개요(Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [코드를 유니버설 CRT로 업그레이드](upgrade-your-code-to-the-universal-crt.md)

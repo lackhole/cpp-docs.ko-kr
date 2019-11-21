@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 1) C4374
+title: 컴파일러 경고 (수준 1) C4374
 ms.date: 11/04/2016
 f1_keywords:
 - C4374
 helpviewer_keywords:
 - C4374
 ms.assetid: 4ac9aaec-d815-4b6e-825f-fa872092dd3b
-ms.openlocfilehash: 5cf18a3dcd94f59ce1ae8feb675f251bea5715a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31a43467020e3d90a2f02c667f7cdb6177b4d833
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302243"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966446"
 ---
-# <a name="compiler-warning-level-1-c4374"></a>컴파일러 경고(수준 1) C4374
+# <a name="compiler-warning-level-1-c4374"></a>컴파일러 경고 (수준 1) C4374
 
-'function1': 인터페이스 메서드 'function2' 비가상 메서드로 구현 되지 것입니다
+' function1 ': 인터페이스 메서드는 비가상 메서드 ' function2 '에 의해 구현 되지 않습니다.
 
-컴파일러를 찾지 못했습니다 합니다 [가상](../../cpp/virtual-specifier.md) 메서드 정의에서 키워드입니다.
+컴파일러는 메서드 정의에서 [가상](../../cpp/virtual-specifier.md) 키워드를 찾아야 합니다.
 
-다음 샘플에서는 C4374 오류가 생성 됩니다.
+다음 샘플에서는 C4374를 생성 합니다.
 
-```
+```cpp
 // C4374.cpp
 // compile with: /clr /W1 /c /WX
 public interface class I {

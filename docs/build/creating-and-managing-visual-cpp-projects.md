@@ -1,6 +1,6 @@
 ﻿---
 title: Visual Studio 프로젝트 - C++
-ms.date: 12/12/2018
+ms.date: 10/25/2019
 helpviewer_keywords:
 - ATL projects, creating
 - Visual Studio C++ projects, creating
@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: 30d3b13ba4d392cdc5d1c7c611b61066503647a2
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: d6bfefdaa3dfc67f861cf116718f89c0e9766e47
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837059"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73624472"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio 프로젝트 - C++
 
-*Visual Studio 프로젝트* 프로젝트를 MSBuild 빌드 시스템에 기반합니다. MSBuild는 Visual C++의 네이티브 빌드 시스템으로, 일반적으로 UWP 앱과 MFC 또는 ATL 라이브러리, COM 구성 요소 및 기타 Windows 특정 프로그램을 사용하는 데스크톱 애플리케이션에 사용할 수 있는 최상의 빌드 시스템입니다. MSBuild는 Visual Studio와 긴밀하게 통합되어 있지만, 명령줄에서도 사용할 수도 있습니다. 
+*Visual Studio 프로젝트* 프로젝트를 MSBuild 빌드 시스템에 기반합니다. MSBuild는 Visual Studio에 대 한 기본 빌드 시스템 이며 일반적으로 Windows 관련 프로그램에 사용할 가장 좋은 빌드 시스템입니다. MSBuild는 Visual Studio와 긴밀하게 통합되어 있지만, 명령줄에서도 사용할 수도 있습니다. 플랫폼 간 프로젝트 또는 오픈 소스 라이브러리를 사용 하는 프로젝트의 경우 visual studio 2017 이상에서 [Visual studio의 cmake 프로젝트](cmake-projects-in-visual-studio.md) 를 사용 하는 것이 좋습니다. 이전 버전의 Visual Studio에서 MSBuild 프로젝트를 업그레이드 하는 방법에 대 한 자세한 내용은 [Microsoft C++ 포팅 및 업그레이드 가이드](../porting/visual-cpp-porting-and-upgrading-guide.md)를 참조 하세요.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "65837059"
 
 **파일** > **새로 만들기** > **프로젝트**를 선택한 다음, **언어**를 C++로 설정하여 C++ 프로젝트를 만들 수 있습니다. 결과 목록에는 **플랫폼** 또는 **프로젝트 형식**을 설정하고 검색 상자에 키워드를 입력하여 필터링할 수 있는 프로젝트 템플릿 목록이 표시됩니다. 
 
-   ![Visual Studio 2019 프로젝트 템플릿](../build/media/vs2019-choose-console-app.png " Visual Studio 2019 새 프로젝트 대화 상자")
+   ![Visual Studio 2019 프로젝트 템플릿](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 새 프로젝트 대화 상자")
 
 ::: moniker-end
 
@@ -33,11 +33,11 @@ ms.locfileid: "65837059"
 
 **파일** > **새로 만들기** > **프로젝트**를 선택한 다음, 왼쪽 창에서 Visual C++를 선택하여 C++ 프로젝트를 만들 수 있습니다. 가운데 창에 프로젝트 템플릿 목록이 표시됩니다.
 
-   ![프로젝트 템플릿](../overview/media/vs2017-new-project.png " Visual Studio 2017 새 프로젝트 대화 상자")
+   ![프로젝트 템플릿](../overview/media/vs2017-new-project.png "Visual Studio 2017 새 프로젝트 대화 상자")
 
 ::: moniker-end
 
-Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세한 정보는 [Visual Studio의 C++ 프로젝트 템플릿](reference/visual-cpp-project-types.md)을 참조하세요. 자체 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)를 참조하세요.
+Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세한 정보는 [Visual Studio의 C++ 프로젝트 템플릿](reference/visual-cpp-project-types.md)을 참조하세요. 자체 프로젝트 템플릿을 만들 수 있습니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)를 참조 하세요.
 
 프로젝트를 만든 후에는 [솔루션 탐색기](/visualstudio/ide/solutions-and-projects-in-visual-studio) 창에 표시됩니다.
 
@@ -55,7 +55,7 @@ Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>컴파일러 옵션 및 기타 빌드 속성 설정
 
-프로젝트에 대한 빌드 속성을 구성하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조하세요.
+프로젝트에 대한 빌드 속성을 구성하려면 **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)을 참조합니다.
 
 ## <a name="compile-and-run"></a>컴파일 및 실행
 
@@ -67,7 +67,7 @@ Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세
 
 오류 목록에 강조 표시된 오류에서 **F1**을 눌러 해당 설명서 항목으로 이동할 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](working-with-project-properties.md)<br/>
 속성 페이지 및 속성 시트를 사용하여 프로젝트 설정을 지정하는 방법
@@ -84,6 +84,7 @@ Visual Studio에 포함된 모든 기본 프로젝트 템플릿에 대한 자세
 [기존 코드로 프로젝트 만들기](how-to-create-a-cpp-project-from-existing-code.md)<br/>
 대강의 원본 파일 컬렉션에서 새 Visual Studio 프로젝트를 만드는 방법
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [프로젝트 및 빌드 시스템](projects-and-build-systems-cpp.md)<br>
+[Microsoft C++ 포팅 및 업그레이드 가이드](../porting/visual-cpp-porting-and-upgrading-guide.md)

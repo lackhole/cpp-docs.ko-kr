@@ -1,29 +1,29 @@
 ---
-title: 컴파일러 경고(수준 1) C4566
+title: 컴파일러 경고 (수준 1) C4566
 ms.date: 11/04/2016
 f1_keywords:
 - C4566
 helpviewer_keywords:
 - C4566
 ms.assetid: 65f40730-e86f-447c-b37b-16caadcfe311
-ms.openlocfilehash: c864feb2478e9f99ad6e4c0087dcef72b55de601
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6a62b399aa32ec6caf2e5a9ee6d4c5836601ba4
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397266"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73965965"
 ---
-# <a name="compiler-warning-level-1-c4566"></a>컴파일러 경고(수준 1) C4566
+# <a name="compiler-warning-level-1-c4566"></a>컴파일러 경고 (수준 1) C4566
 
-현재 코드 페이지 (페이지)에서 유니버설 문자 이름 'char' 문자를 나타낼 수 없습니다.
+유니버설 문자 이름 ' char '로 표시 되는 문자는 현재 코드 페이지 (페이지)에서 표현할 수 없습니다.
 
-현재 ANSI 코드 페이지에 있는 모든 유니코드 문자를 나타낼 수 있습니다.
+현재 ANSI 코드 페이지에 모든 유니코드 문자를 표시할 수 있는 것은 아닙니다.
 
-와이드 문자열 (2 바이트 문자)에 없는 반면 좁은 문자열 (1 바이트 문자) 멀티 바이트 문자로 변환 됩니다.
+좁은 문자열 (1 바이트 문자)은 멀티 바이트 문자로 변환 되지만 와이드 문자열 (2 바이트 문자)는 멀티 바이트 문자로 변환 됩니다.
 
-다음 샘플에서는 C4566 오류가 생성 됩니다.
+다음 샘플에서는 C4566를 생성 합니다.
 
-```
+```cpp
 // C4566.cpp
 // compile with: /W1
 int main() {

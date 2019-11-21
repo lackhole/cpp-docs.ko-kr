@@ -1,4 +1,4 @@
----
+﻿---
 title: any 클래스
 ms.date: 04/04/2019
 f1_keywords:
@@ -89,7 +89,7 @@ template <class T, class U, class... Args>
 
 ## <a name="has_value"></a> has_value
 
-any에 값이 있는 경우 **true**를 반환합니다.
+any가 값이 있는 경우 **true**를 반환합니다.
 
 ```cpp
 bool has_value() const noexcept;
@@ -97,7 +97,7 @@ bool has_value() const noexcept;
 
 ## <a name="op_eq"></a> 연산자 =
 
-다른 any 복사본을 사용하여 any를 바꿉니다.
+다른 any의 복사본을 사용하여 any를 바꿉니다.
 
 ```cpp
 any& operator=(const any& right);

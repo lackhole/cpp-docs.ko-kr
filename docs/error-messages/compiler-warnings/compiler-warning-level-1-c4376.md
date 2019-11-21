@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4376
 ms.assetid: 5f202c74-9489-48fe-b36f-19cd882b1589
-ms.openlocfilehash: b1f6e7b403931f7fe1a67974ae85001cf80eab66
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73143e38b66471a41cc61f818f7618b9ddafcaa1
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410436"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966463"
 ---
 # <a name="compiler-warning-level-1-c4376"></a>컴파일러 경고(수준 1) C4376
 
-액세스 지정자 ' old_specifier:'는 지원 되지 않습니다: 사용 하십시오 ' new_specifier:' 대신
+액세스 지정자 ' old_specifier: '은 (는) 더 이상 지원 되지 않습니다. 대신 ' new_specifier: '을 사용 하세요.
 
-메타 데이터의 형식 및 멤버 접근성을 지정 하는 방법은 참조 하세요. [표시 유형 입력](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) 하 고 [멤버 표시 유형](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Member_visibility) 에서 [방법: 클래스 및 구조체 정의 및 사용 (C++/CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md)합니다.
+메타 데이터에서 형식 및 멤버 액세스 가능성을 지정 하는 방법에 대 한 자세한 내용은 [방법: 클래스 및 구조체 정의 및 사용 (C++/Cli)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md)의 [형식 표시](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) 유형 및 [멤버 표시](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Member_visibility) 유형을 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4376를 생성합니다.
+다음 샘플에서는 C4376를 생성 합니다.
 
-```
+```cpp
 // C4376.cpp
 // compile with: /clr /W1 /c
 public ref class G {

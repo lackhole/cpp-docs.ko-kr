@@ -1,19 +1,19 @@
 ---
-title: 컴파일러 경고(수준 1) C4313
+title: 컴파일러 경고 (수준 1) C4313
 ms.date: 11/04/2016
 f1_keywords:
 - C4313
 helpviewer_keywords:
 - C4313
 ms.assetid: bcf64191-e2cf-452e-97b4-423fcec2d07c
-ms.openlocfilehash: 774af2d5d29112d56adf97e22d1bdd758a816ef1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4000ba2254c868bf9959a6f0fb6f8e76255f7590
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62352938"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966076"
 ---
-# <a name="compiler-warning-level-1-c4313"></a>컴파일러 경고(수준 1) C4313
+# <a name="compiler-warning-level-1-c4313"></a>컴파일러 경고 (수준 1) C4313
 
 'function': 서식 문자열의 'format specifier'가 형식 'type'의 인수 번호와 충돌합니다.
 
@@ -23,7 +23,7 @@ ms.locfileid: "62352938"
 
 다음 코드 샘플에서는 64비트 대상에 대해 컴파일할 경우 C4313 경고가 발생하는 경우를 보여 줍니다.
 
-```
+```cpp
 // C4313.cpp
 // Compile by using: cl /W1 C4313.cpp
 #include <stdio.h>

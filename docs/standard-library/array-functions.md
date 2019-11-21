@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;array&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
@@ -88,7 +88,7 @@ int main()
 
 ## <a name="swap"></a>  swap
 
-두 배열 개체를 교환하는 `std::swap`의 멤버가 아닌 템플릿 특수화입니다.
+두 배열 개체를 교환 하는 `std::swap` 의 멤버가 아닌 템플릿 특수화입니다.
 
 ```cpp
 template <class Ty, std::size_t N>

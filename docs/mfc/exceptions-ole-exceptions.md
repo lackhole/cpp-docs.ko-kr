@@ -8,39 +8,39 @@ helpviewer_keywords:
 - exception handling [MFC], OLE
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
-ms.openlocfilehash: e404005a88398ec909e3043cfa55c7e8fbe2f594
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1606a0f5a86996345e12024cf6416afdf6bdc82b
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405966"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246707"
 ---
 # <a name="exceptions-ole-exceptions"></a>예외: OLE 예외
 
-기술 및 OLE의 예외 처리 기능 다른 예외를 처리 하는 것에 대 한 것과 동일 합니다. 예외 처리에 대 한 추가 내용은 문서 참조 [ C++ 예외 처리](../cpp/cpp-exception-handling.md)합니다.
+The techniques and facilities for handling exceptions in OLE are the same as those for handling other exceptions. For further information on exception handling, see the article [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 
-모든 예외 개체의 추상 기본 클래스에서 파생 된 `CException`합니다. MFC는 OLE 예외를 처리 하기 위한 두 개의 클래스를 제공 합니다.
+All exception objects are derived from the abstract base class `CException`. MFC provides two classes for handling OLE exceptions:
 
-- [COleException](../mfc/reference/coleexception-class.md) 일반 OLE 예외를 처리 합니다.
+- [COleException](../mfc/reference/coleexception-class.md) For handling general OLE exceptions.
 
-- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) 생성 및 처리 OLE 디스패치 (자동화) 예외에 대 한 합니다.
+- [COleDispatchException](../mfc/reference/coledispatchexception-class.md) For generating and handling OLE dispatch (automation) exceptions.
 
-이 두 클래스 간의 차이점은 제공 및 사용 되는 정보량입니다. `COleException` 예외에 대 한 OLE 상태 코드를 포함 하는 공용 데이터 멤버가 있습니다. `COleDispatchException` 다음을 비롯 한 자세한 내용은 제공 합니다.
+The difference between these two classes is the amount of information they provide and where they are used. `COleException` has a public data member that contains the OLE status code for the exception. `COleDispatchException` supplies more information, including the following:
 
-- 응용 프로그램별 오류 코드
+- An application-specific error code
 
-- "디스크 꽉 참"와 같은 오류 설명,
+- An error description, such as "Disk full"
 
-- 응용 프로그램 사용자에 대 한 추가 정보를 제공 하는 데 사용할 수 있는 도움말 컨텍스트
+- A Help context that your application can use to provide additional information for the user
 
-- 응용 프로그램의 도움말 파일의 이름
+- The name of your application's Help file
 
-- 예외를 생성 하는 응용 프로그램의 이름
+- The name of the application that generated the exception
 
-`COleDispatchException` Microsoft Visual Basic과 같은 제품을 사용 하 여 사용할 수 있도록 자세한 정보를 제공 합니다. 메시지 상자 또는 기타 알림은;에서 사용할 수 구두 오류 설명 도움말 정보를 사용자 예외를 발생 시킨 조건에 응답 하는 데 사용할 수 있습니다.
+`COleDispatchException` provides more information so that it can be used with products like Microsoft Visual Basic. The verbal error description can be used in a message box or other notification; the Help information can be used to help the user respond to the conditions that caused the exception.
 
-두 가지 전역 함수는 두 OLE 예외 클래스에 해당 합니다. [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) 하 고 [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception)합니다. 각각 일반 OLE 예외와 OLE 디스패치 예외를 throw 하려면 사용 합니다.
+Two global functions correspond to the two OLE exception classes: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) and [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception). Use them to throw general OLE exceptions and OLE dispatch exceptions, respectively.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)

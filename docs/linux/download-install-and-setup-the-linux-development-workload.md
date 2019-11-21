@@ -3,12 +3,12 @@ title: Visual Studio에서 C++ Linux 워크로드 설치
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법을 설명합니다.
 ms.date: 06/11/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: ad0fd856fc15ce9f787ba620463480bfe3e59d47
-ms.sourcegitcommit: b85e1db6b7d4919852ac6843a086ba311ae97d40
+ms.openlocfilehash: 1dad17756cbc12fdf65250b7c54314ff2a645287
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71925414"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966206"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux 워크로드 다운로드, 설치 및 설정
 
@@ -48,29 +48,31 @@ CMake를 Visual Studio 프로젝트로 변환할 필요 없이 CMake를 사용�
 
 아직 Linux 머신이 없는 경우 Azure에서 Linux 가상 머신을 만들 수 있습니다. 자세한 내용은 [빠른 시작: Azure Portal에서 Linux 가상 머신 만들기](/azure/virtual-machines/linux/quick-create-portal)를 참조하세요.
 
-Windows 10에서 WSL(Linux용 Windows 하위 시스템)에 선호하는 Linux 배포판을 설치하고 대상으로 지정할 수 있습니다. 자세한 내용은 [Windows 10용 Linux용 Windows 하위 시스템 설치 가이드](/windows/wsl/install-win10)를 참조하세요. WSL은 편리한 콘솔 환경이지만 그래픽 애플리케이션에 권장되지 않습니다. 
+Windows 10에서 WSL(Linux용 Windows 하위 시스템)에 선호하는 Linux 배포판을 설치하고 대상으로 지정할 수 있습니다. 자세한 내용은 [Windows 10용 Linux용 Windows 하위 시스템 설치 가이드](/windows/wsl/install-win10)를 참조하세요. Windows 스토어에 액세스할 수 없는 경우 [WSL 배포판 패키지를 수동으로 다운로드](/windows/wsl/install-manual)할 수 있습니다. WSL은 편리한 콘솔 환경이지만 그래픽 애플리케이션에 권장되지 않습니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다음 종속성이 설치되어야 합니다. 
-- **컴파일러** - Visual Studio 2019는 GCC 및 [Clang](https://docs.microsoft.com/en-us/cpp/build/clang-support-cmake?view=vs-2019)을 기본적으로 지원합니다. 
-- **gdb** - Visual Studio는 Linux 시스템에서 gdb를 자동으로 시작하고, Visual Studio 디버거의 프런트 엔드를 사용하여 Linux에서 완전히 신뢰할 수 있는 디버깅 환경을 제공합니다. 
+Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다음 종속성이 설치되어야 합니다.
+
+- **컴파일러** - Visual Studio 2019는 GCC 및 [Clang](/cpp/build/clang-support-cmake?view=vs-2019)을 기본적으로 지원합니다.
+- **gdb** - Visual Studio는 Linux 시스템에서 gdb를 자동으로 시작하고, Visual Studio 디버거의 프런트 엔드를 사용하여 Linux에서 완전히 신뢰할 수 있는 디버깅 환경을 제공합니다.
 - **rsync** 및 **zip** - rsync 및 zip 포함으로 Visual Studio는 IntelliSense에서 사용하기 위해 Linux 시스템의 헤더 파일을 Windows 파일 시스템으로 추출할 수 있습니다.
 - **make**
 - **openssh-server**(원격 Linux 시스템 전용) - Visual Studio는 보안 SSH 연결을 통해 원격 Linux 시스템에 연결합니다.
 - **CMake**(CMake 프로젝트 전용) - Linux에 대해 Microsoft의 [정적으로 링크한 CMake 이진 파일을 설치할 수 있습니다](https://github.com/microsoft/CMake/releases).
 
-다음 명령은 clang 대신 g++를 사용한다고 가정합니다. 
+다음 명령은 clang 대신 g++를 사용한다고 가정합니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다음 종속성이 설치되어야 합니다. 
+Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다음 종속성이 설치되어야 합니다.
+
 - **gcc** - Visual Studio 2017은 GCC를 기본적으로 지원합니다.
-- **gdb** - Visual Studio는 Linux 시스템에서 gdb를 자동으로 시작하고, Visual Studio 디버거의 프런트 엔드를 사용하여 Linux에서 완전히 신뢰할 수 있는 디버깅 환경을 제공합니다. 
+- **gdb** - Visual Studio는 Linux 시스템에서 gdb를 자동으로 시작하고, Visual Studio 디버거의 프런트 엔드를 사용하여 Linux에서 완전히 신뢰할 수 있는 디버깅 환경을 제공합니다.
 - **rsync** 및 **zip** - rsync 및 zip 포함으로 Visual Studio는 IntelliSense에서 사용하기 위해 Linux 시스템의 헤더 파일을 Windows 파일 시스템으로 추출할 수 있습니다.
 - **make**
 - **openssh-server** - Visual Studio는 보안 SSH 연결을 통해 원격 Linux 시스템에 연결합니다.
@@ -78,7 +80,7 @@ Visual Studio의 Linux 프로젝트는 원격 Linux 시스템 또는 WSL에 다�
 
 ::: moniker-end
 
-::: moniker range="vs-2019" 
+::: moniker range="vs-2019"
 
 ## <a name="linux-setup-ubuntu-on-wsl"></a>Linux 설정: WSL에서 Ubuntu
 

@@ -1,13 +1,13 @@
 ---
 title: '포팅 가이드: Spy++'
-ms.date: 11/19/2018
+ms.date: 10/23/2019
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 175f3fbba7e18f625dc3425c236162737689f068
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
-ms.translationtype: HT
+ms.openlocfilehash: 5505e0dbf23dd02f4ae5924ff4f2bacff3f11eea
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630456"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627226"
 ---
 # <a name="porting-guide-spy"></a>포팅 가이드: Spy++
 
@@ -15,7 +15,7 @@ ms.locfileid: "69630456"
 
 ## <a name="spy"></a>Spy++
 
-Spy++는 Windows 데스크톱의 사용자 인터페이스 요소에 대해 모든 종류의 정보를 제공하는 널리 사용되는 Windows 데스크톱용 GUI 진단 도구입니다. 창의 전체 계층 구조를 표시하고 각 창과 컨트롤에 대한 메타데이터에 액세스할 수 있게 합니다. 이 유용한 애플리케이션은 수년 동안 Visual Studio와 함께 제공되었습니다. Visual C++ 6.0에서 마지막으로 컴파일된 이전 버전이 Visual Studio 2015로 이식되었습니다. Visual Studio 2017의 환경은 거의 동일해야 합니다.
+Spy++는 Windows 데스크톱의 사용자 인터페이스 요소에 대해 모든 종류의 정보를 제공하는 널리 사용되는 Windows 데스크톱용 GUI 진단 도구입니다. 창의 전체 계층 구조를 표시하고 각 창과 컨트롤에 대한 메타데이터에 액세스할 수 있게 합니다. 이 유용한 애플리케이션은 수년 동안 Visual Studio와 함께 제공되었습니다. Visual C++ 6.0에서 마지막으로 컴파일된 이전 버전이 Visual Studio 2015로 이식되었습니다. Visual Studio 2017 또는 Visual Studio 2019 환경은 거의 동일 해야 합니다.
 
 이 사례가 특히 Visual C++ 6.0 이후 Visual C++의 각 릴리스로 업데이트되지 않은 오래된 프로젝트에 대해 MFC 및 Win32 API를 사용하는 Windows 데스크톱 애플리케이션을 포팅하는 일반적인 경우라고 간주했습니다.
 
@@ -25,7 +25,7 @@ Spy++는 Windows 데스크톱의 사용자 인터페이스 요소에 대해 모�
 
 두 프로젝트를 업그레이드한 후 솔루션은 다음과 같았습니다.
 
-![감시&#43;&#43; 솔루션](../porting/media/spyxxsolution.PNG "&#43;&#43; 솔루션")
+![Spy&#43; &#43; 솔루션](../porting/media/spyxxsolution.PNG "Spy&#43; &#43; 솔루션")
 
 하나는 많은 C++ 파일을 포함하고 다른 하나는 C로 작성된 DLL을 포함하는 두 개의 프로젝트가 있습니다.
 
@@ -280,7 +280,7 @@ END_MESSAGE_MAP()
 (static_cast< LRESULT (AFX_MSG_CALL CWnd::*)(CPoint) > (&ThisClass :: OnNcHitTest)) },
 ```
 
-문제는 멤버 함수 형식에 대한 포인터의 불일치와 관련이 있습니다. 클래스 형식인 `CHotLinkCtrl`에서 클래스 형식인 `CWnd`로의 변환은 유효한 파생 형식-기본 형식 변환이기 때문에 문제가 아닙니다. 문제는 반환 형식인 UINT 및 LRESULT입니다. LRESULT는 대상 이진 형식에 따라 64비트 포인터 또는 32비트 포인터인 LONG_PTR로 확인되므로 UINT는 이 형식으로 변환되지 않습니다. 이 문제는 Visual Studio 2005에서 64비트 호환성 변경의 일부로 많은 메시지 맵 메서드의 반환 형식이 UINT에서 LRESULT로 변경되었기 때문에 2005 이전에 작성된 코드를 업그레이드하는 경우에 자주 발생합니다. 다음 코드에서 반환 형식을 UINT에서 LRESULT로 변경합니다.
+문제는 멤버 함수 형식에 대한 포인터의 불일치와 관련이 있습니다. 클래스 형식인 `CHotLinkCtrl`에서 클래스 형식인 `CWnd`로의 변환은 유효한 파생 형식-기본 형식 변환이기 때문에 문제가 아닙니다. 문제는 반환 형식 UINT 및 LRESULT입니다. LRESULT는 대상 이진 형식에 따라 64비트 포인터 또는 32비트 포인터인 LONG_PTR로 확인되므로 UINT는 이 형식으로 변환되지 않습니다. 이 문제는 Visual Studio 2005에서 64비트 호환성 변경의 일부로 많은 메시지 맵 메서드의 반환 형식이 UINT에서 LRESULT로 변경되었기 때문에 2005 이전에 작성된 코드를 업그레이드하는 경우에 자주 발생합니다. 다음 코드에서 반환 형식을 UINT에서 LRESULT로 변경합니다.
 
 ```cpp
 afx_msg UINT OnNcHitTest(CPoint point);
@@ -292,7 +292,7 @@ afx_msg UINT OnNcHitTest(CPoint point);
 afx_msg LRESULT OnNcHitTest(CPoint point);
 ```
 
-CWnd에서 파생된 다른 클래스에서 이 함수가 10번 발생하기 때문에 커서가 편집기에 있는 함수에 있을 때 **정의로 이동**(키보드: **F12**) 및 **선언으로 이동**(키보드: **Ctrl**+**F12**)을 사용하여 다음을 찾아서 **기호 찾기** 도구 창으로부터 이동하는 것이 유용합니다. 일반적으로 **정의로 이동**이 둘 중에서 더 유용합니다. **선언으로 이동**은 friend 클래스 선언이나 정방향 참조와 같은 정의하는 클래스 선언 이외의 선언을 찾습니다.
+CWnd에서 파생된 서로 다른 클래스에 이 함수가 모두 10개 정도 있기 때문에 편집기에서 해당 함수에 커서가 있을 때 **정의로 이동**(키보드: **F12**) 및 **선언으로 이동**(키보드: **Ctrl**+**F12**)을 사용하여 찾고, **기호 찾기** 도구 창에서 함수로 이동하면 도움이 됩니다. 일반적으로 **정의로 이동**이 둘 중에서 더 유용합니다. **선언으로 이동**은 friend 클래스 선언이나 정방향 참조와 같은 정의하는 클래스 선언 이외의 선언을 찾습니다.
 
 ##  <a name="mfc_changes"></a> 9단계. MFC 변경
 
@@ -466,7 +466,7 @@ class CTreeListBox : public CListBox
   BOOL m_bStdMouse : 1;
 ```
 
-이 코드는 기본 제공 bool 형식이 Visual C++에서 지원되기 전에 작성되었습니다. 이러한 코드에서 BOOL은 **int**의 **typedef**였습니다. **int** 형식은 **signed** 형식이고, **signed int**의 비트 표현은 첫째 비트를 부호 비트로 사용하는 것입니다. 따라서 int 형식의 비트 필드는 의도한 것과 달리 0 또는 -1을 나타내는 것으로 해석될 수 있었습니다.
+이 코드는 기본 제공 bool 형식이 Visual C++에서 지원되기 전에 작성되었습니다. 이러한 코드에서 BOOL은 **int**의 **typedef** 였습니다. **Int** 형식은 **부호** 있는 형식이 고 **부호 있는 int** 의 비트 표현은 첫째 비트를 부호 비트로 사용 하는 것 이므로 int 형식의 비트 필드는 의도 한 것이 아닌 0 또는-1을 나타내는 것으로 해석 될 수 있습니다.
 
 코드에서는 비트 필드인 이유를 알 수 없습니다. 의도가 개체 크기를 작게 유지하는 것인가요, 또는 개체의 이진 레이아웃이 사용되는 곳이 있나요? 비트 필드의 사용 이유를 찾지 못했기 때문에 일반 BOOL 멤버로 변경했습니다. 비트 필드를 사용하여 개체 크기를 작게 유지하는 것은 효과가 보장되지 않습니다. 컴파일러가 형식을 레이아웃하는 방식에 따라 달라집니다.
 
@@ -542,7 +542,7 @@ wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-\_T 매크로는 문자열 리터럴이 MBCS 또는 UNICODE 설정에 따라 **char** 문자열이나 **wchar_t** 문자열로 컴파일되게 하는 효과가 있습니다. Visual Studio에서 \_T로 모든 문자열을 바꾸려면 먼저 **빠른 바꾸기**(키보드: **Ctrl**+**F**) 상자 또는 **파일에서 바꾸기**(키보드: **Ctrl**+**Shift**+**H**)를 연 다음, **정규식 사용** 확인란을 선택합니다. `((\".*?\")|('.+?'))`를 검색 텍스트로 입력하고 `_T($1)`를 바꿀 텍스트로 입력합니다. \_T 매크로가 일부 문자열 앞뒤에 이미 있는 경우 이 절차에서 다시 추가하며, `#include`를 사용하는 경우와 같이 \_T를 원하지 않는 경우도 있으므로 **모두 바꾸기** 대신 **다음 바꾸기**를 사용하는 것이 가장 좋습니다.
+\_T 매크로는 문자열 리터럴이 MBCS 또는 UNICODE 설정에 따라 **char** 문자열이나 **wchar_t** 문자열로 컴파일되게 하는 효과가 있습니다. Visual Studio에서 모든 문자열을 \_T로 바꾸려면 먼저 **빠른 바꾸기**(키보드: **Ctrl**+**F**) 상자 또는 **파일에서 바꾸기**(키보드: **Ctrl**+**Shift**+**H**)를 연 다음, **정규식 사용** 확인란을 선택합니다. `((\".*?\")|('.+?'))`를 검색 텍스트로 입력하고 `_T($1)`를 바꿀 텍스트로 입력합니다. \_T 매크로가 일부 문자열 앞뒤에 이미 있는 경우 이 절차에서 다시 추가하며, `#include`를 사용하는 경우와 같이 \_T를 원하지 않는 경우도 있으므로 **모두 바꾸기** 대신 **다음 바꾸기**를 사용하는 것이 가장 좋습니다.
 
 이 특정 함수 [wsprintf](/windows/win32/api/winuser/nf-winuser-wsprintfw)는 실제로 Windows 헤더에서 정의되며, 해당 설명서에서 가능한 버퍼 오버런으로 인해 사용하지 않도록 권장합니다. `szTmp` 버퍼에 대한 크기가 지정되지 않으므로 함수에서 버퍼가 기록되는 모든 데이터를 포함할 수 있는지 확인할 방법이 없습니다. 보안 CRT로 포팅하는 방법에 대한 다음 섹션을 참조하세요. 여기서는 다른 유사한 문제를 해결합니다. 결국 [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)로 바꾸었습니다.
 
@@ -671,7 +671,7 @@ int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const
 
 원래 Visual C++ 6.0 코드에서 최신 컴파일러로 Spy++를 포팅하는 데 약 1주 동안 20시간의 코딩 시간이 소요되었습니다. Visual Studio 6.0에서 Visual Studio 2015로 8개 제품 릴리스가 직접 업그레이드되었습니다. 이 방법은 현재 큰 프로젝트와 작은 프로젝트의 업그레이드에 모두 권장되는 방법입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[이식 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
+[포팅 및 업그레이드: 예제 및 사례 연구](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [이전 사례 연구: COM Spy](../porting/porting-guide-com-spy.md)

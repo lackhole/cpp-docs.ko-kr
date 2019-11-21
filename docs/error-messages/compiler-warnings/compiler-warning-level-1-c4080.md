@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4080
 ms.assetid: 964fb3f4-b9fd-450b-aa23-35cece126172
-ms.openlocfilehash: a91963d524300c8768768a8a4615b1ab27e033e2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ecc50d4f967826cca691fae4f119c1dee2efef5
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62256286"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73626889"
 ---
 # <a name="compiler-warning-level-1-c4080"></a>컴파일러 경고(수준 1) C4080
 
@@ -21,7 +21,7 @@ ms.locfileid: "62256286"
 
 다음 샘플에서는 C4080을 생성합니다.
 
-```
+```cpp
 // C4080.cpp
 // compile with: /W1
 extern "C" void func(void);

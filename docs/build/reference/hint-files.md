@@ -11,12 +11,12 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-ms.openlocfilehash: af28dac17c57c8c0699950cc1fdb542642c01722
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: ca111fcb8b0fc511fda3bbb3a4769ebc9fdd28bc
+ms.sourcegitcommit: 217fac22604639ebd62d366a69e6071ad5b724ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707108"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74189001"
 ---
 # <a name="hint-files"></a>힌트 파일
 
@@ -36,8 +36,8 @@ C++ 검색 데이터베이스 파서는 짧은 시간 내에 많은 양의 코�
 
 > [!IMPORTANT]
 > 힌트 파일을 수정 또는 추가하는 경우 변경 내용을 적용하려면 추가 단계를 수행해야 합니다.
-> - Visual Studio 2017 15.6 이전 버전: 모든 변경 내용에 대한 솔루션에서 .sdf 파일 및/또는 VC.db 파일을 삭제합니다.
-> - Visual Studio 2017 15.6 ~ 15.9 버전: 새 힌트 파일을 추가한 후 솔루션을 닫았다가 다시 엽니다.
+> - In versions before Visual Studio 2017 version 15.6: Delete the .sdf file and/or VC.db file in the solution for all changes.
+> - In Visual Studio 2017 version 15.6 and later: Close and reopen the solution after adding new hint files.
 
 ## <a name="scenario"></a>시나리오
 
@@ -92,13 +92,13 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
 
 - 빠른 작업을 통해 강조 표시된 매크로를 포함하는 힌트 파일을 만들거나 기존 힌트 파일이 있는 경우 해당 매크로를 힌트 파일에 추가합니다.
 
-![강조 표시된 매크로](media/hint-squiggle-and-actions.png "힌트 오류 표시선 및 빠른 작업")
+![Highlighted Macro.](media/hint-squiggle-and-actions.png "Hint squiggle and Quick Actions")
 
 빠른 작업 중 하나를 실행하면 파서가 힌트 파일에 의해 영향을 받는 파일을 다시 구문 분석합니다.
 
-기본적으로 문제 매크로는 제안으로 강조 표시됩니다. 강조 표시는 빨간색 또는 녹색 오류 표시선처럼 보다 눈에 띄는 것으로 변경할 수 있습니다. **도구** > **옵션** > **텍스트 편집기** > **C/C++** > **보기** 아래 **코드 오류 표시선** 섹션에서 **Macros in Skipped Browsing Regions**(건너뛴 검색 영역의 매크로) 옵션을 사용합니다.
+기본적으로 문제 매크로는 제안으로 강조 표시됩니다. 강조 표시는 빨간색 또는 녹색 오류 표시선처럼 보다 눈에 띄는 것으로 변경할 수 있습니다. **도구** > **옵션** > **텍스트 편집기** > **C/C++**  > **보기** 아래 **코드 오류 표시선** 섹션에서 **Macros in Skipped Browsing Regions**(건너뛴 검색 영역의 매크로) 옵션을 사용합니다.
 
-![건너뛴 검색 영역의 매크로 옵션](media/skipped-regions-squiggle-option.png "건너뛴 영역 오류 표시선 옵션")
+![Macros in Skipped Browsing Regions Option.](media/skipped-regions-squiggle-option.png "Skipped regions squiggle option.")
 
 ## <a name="display-browsing-database-errors"></a>검색 데이터베이스 오류 표시
 
@@ -156,7 +156,7 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
 |`@>`|맵 요소 집합의 끝을 나타내는 힌트 파일 특정 *replacement-string*입니다.|
 |`#undef` *hint-name*|기존 힌트를 삭제하는 전처리기 지시문입니다. 힌트의 이름은 *hint-name* 식별자로 제공됩니다.|
 |`//` *comment*|한 줄 주석문입니다.|
-|`/*` *주석* `*/`|여러 줄 주석입니다.|
+|`/*` *comment* `*/`|여러 줄 주석입니다.|
 
 ## <a name="example"></a>예제
 
@@ -166,7 +166,7 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
 
 ### <a name="hint-file-directories"></a>힌트 파일 디렉터리
 
-![일반 및 프로젝트 &#45; 특정 힌트 파일 디렉터리](media/hintfile.png "HintFile")
+![Common and project&#45;specific hint file directories.](media/hintfile.png "HintFile")
 
 ### <a name="directories-and-hint-file-contents"></a>디렉터리 및 힌트 파일 내용
 
@@ -183,7 +183,7 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
     #define _In_count_(size)
     ```
 
-- 디버그
+- Debug
 
     ```cpp.hint
     // Debug
@@ -242,7 +242,7 @@ Visual Studio 2017 버전 15.8부터 방해가 되는 매크로를 식별할 수
 
 - `A2` 디렉터리의 `#undef` 힌트에서 `Debug` 디렉터리 힌트 파일의 `OBRACE` 및 `CBRACE`에 대한 힌트를 제거했습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Visual Studio C++ 프로젝트용으로 만든 파일 형식](file-types-created-for-visual-cpp-projects.md)<br>
 [#define 지시문(C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>

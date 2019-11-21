@@ -38,12 +38,12 @@ helpviewer_keywords:
 - _mbscat_s_l function
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-ms.openlocfilehash: 4449ec788b33a541a04a46d972f56f792797a16e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b0f2d1a295908ba2f0c8a89f57e81d6f822f3535
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957988"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73625787"
 ---
 # <a name="strcat_s-wcscat_s-_mbscat_s-_mbscat_s_l"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 
@@ -122,10 +122,10 @@ null 종료 소스 문자열 버퍼입니다.
 |*strDestination*|*numberOfElements*|*strSource*|반환 값|*Strdestination* 의 내용|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |**NULL** 또는 종결 되지 않음|any|any|**EINVAL**|수정 안 됨|
-|any|any|**NULL**|**EINVAL**|*Strdestination* [0]을 0으로 설정 합니다.|
-|any|0 또는 너무 작음|any|**ERANGE**|*Strdestination* [0]을 0으로 설정 합니다.|
+|any|any|**NULL**|**EINVAL**|*Strdestination*[0]을 0으로 설정 합니다.|
+|any|0 또는 너무 작음|any|**ERANGE**|*Strdestination*[0]을 0으로 설정 합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **Strcat_s** 함수는 *Strsource* 를 *strsource* 에 추가 하 고 결과 문자열을 null 문자를 사용 하 여 종료 합니다. *Strsource* 의 초기 문자는 *strsource*의 종료 null 문자를 덮어씁니다. 원본 및 대상 문자열이 겹치면 **strcat_s** 의 동작이 정의 되지 않습니다.
 
@@ -144,9 +144,9 @@ strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 
 **_L** 접미사가 있는 함수 버전의 동작은 같지만 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
+C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [안전한 템플릿 오버로드](../../c-runtime-library/secure-template-overloads.md)를 참조하세요.
 
-이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
+이러한 함수의 디버그 라이브러리 버전은 먼저 0xFE를 사용 하 여 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
@@ -162,13 +162,13 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 |**wcscat_s**|\<string.h> 또는 \<wchar.h>|
 |**_mbscat_s**|\<mbstring.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
 [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)의 코드 예제를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [문자열 조작](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>

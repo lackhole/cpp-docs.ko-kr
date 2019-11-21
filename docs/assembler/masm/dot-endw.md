@@ -1,28 +1,28 @@
 ---
 title: .ENDW
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .ENDW
 helpviewer_keywords:
 - .ENDW directive
 ms.assetid: c288fa8a-2f1b-4a13-aba2-04157e84110e
-ms.openlocfilehash: 28c93dce3a713cd98d6c45bbd2b95a13b76bf700
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41d94d4c9caca4fc05b4996b3614526dd2808799
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62204273"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703369"
 ---
-# <a name="endw"></a>.ENDW
+# <a name="endw-32-bit-masm"></a>. ENDW (32 비트 MASM)
 
 ## <a name="syntax"></a>구문
 
 > .ENDW
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-참조 [합니다. 하지만](../../assembler/masm/dot-while.md)합니다.
+(32 비트 MASM에만 해당) [을 참조 하세요. WHILE](../../assembler/masm/dot-while.md).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)<br/>

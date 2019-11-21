@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4094
 ms.assetid: e68929fb-3a1c-4be7-920b-d5f79f534f99
-ms.openlocfilehash: 73805afc897d14c6d2cc87490dfa0769a8de5193
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c293522e5d60d0edb4cc2da289e0ece71f89329f
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350519"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052210"
 ---
 # <a name="compiler-warning-level-2-c4094"></a>컴파일러 경고 (수준 2) C4094
 
-태그가 지정 되지 않은 ' token' 기호가 없는 선언
+태그가 없는 ' token '은 기호를 선언 하지 않았습니다.
 
-컴파일러는 태그가 지정 되지 않은 구조체, 공용 구조체 또는 클래스를 사용 하 여 빈 선언을 발견 했습니다. 선언이 무시 됩니다.
+컴파일러가 태그가 없는 구조체, 공용 구조체 또는 클래스를 사용 하 여 빈 선언을 검색 했습니다. 선언이 무시 됩니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // C4094.cpp
 // compile with: /W2
 struct
@@ -33,4 +33,4 @@ int main()
 }
 ```
 
-ANSI 호환성 오류를 생성 하는이 조건 ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+이 조건은 ANSI 호환성 ([/za](../../build/reference/za-ze-disable-language-extensions.md))에서 오류를 생성 합니다.

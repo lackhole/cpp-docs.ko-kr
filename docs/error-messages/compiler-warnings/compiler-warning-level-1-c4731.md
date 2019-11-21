@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 1) C4731
+title: 컴파일러 경고 (수준 1) C4731
 ms.date: 11/04/2016
 f1_keywords:
 - C4731
 helpviewer_keywords:
 - C4731
 ms.assetid: 5658c24c-3e6f-4505-835b-1fb92d47cab0
-ms.openlocfilehash: af091d1d35fff955afcc5af3da48b80416e79f36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2591756dfaa8887affbe4e470f1c98738b6b680
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385435"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052422"
 ---
-# <a name="compiler-warning-level-1-c4731"></a>컴파일러 경고(수준 1) C4731
+# <a name="compiler-warning-level-1-c4731"></a>컴파일러 경고 (수준 1) C4731
 
-'pointer': 프레임 포인터 레지스터가 인라인 어셈블리 코드에 의해 수정 '등록'
+' pointer ': 프레임 포인터의 ' register ' 레지스터가 인라인 어셈블리 코드에 의해 수정 되었습니다.
 
-프레임 포인터 레지스터를 수정 했습니다. 저장 하 고를 인라인 어셈블리 블록 또는 프레임 변수 (로컬 또는 매개 변수를 수정 하는 레지스터에 따라) 레지스터를 복원 해야 하거나 코드가 제대로 작동 하지 않을 수 있습니다.
+프레임 포인터 레지스터가 수정 되었습니다. 인라인 어셈블리 블록 또는 프레임 변수 (수정 된 레지스터에 따라 로컬 또는 매개 변수)에 등록을 저장 하 고 복원 해야 합니다. 그렇지 않으면 코드가 제대로 작동 하지 않을 수 있습니다.
 
-다음 샘플에서는 C4731 오류가 생성 됩니다.
+다음 샘플에서는 C4731를 생성 합니다.
 
-```
+```cpp
 // C4731.cpp
 // compile with: /W1 /LD
 // processor: x86
@@ -39,4 +39,4 @@ void bad(int p) {
 }
 ```
 
-EBP 프레임 포인터 (fpo 거부 됨) 이며 수정 중입니다. 때 `p` 중이면 적절 하 게 참조는 참조 `EBP`합니다. 하지만 `EBP` 코드 되므로 프로그램이 제대로 작동 하지 것입니다 오류도 덮어 쓰여졌습니다.
+EBP는 프레임 포인터 (FPO는 허용 되지 않음)이 고 수정 되 고 있습니다. `p` 나중에 참조 되는 경우 `EBP`을 기준으로 참조 됩니다. 그러나 코드에서 `EBP`를 덮어쓰므로 프로그램이 제대로 작동 하지 않으며 오류가 발생할 수 있습니다.

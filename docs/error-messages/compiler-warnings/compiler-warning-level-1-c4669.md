@@ -1,19 +1,19 @@
 ---
-title: 컴파일러 경고(수준 1) C4669
+title: 컴파일러 경고 (수준 1) C4669
 ms.date: 11/04/2016
 f1_keywords:
 - C4669
 helpviewer_keywords:
 - C4669
 ms.assetid: 97730679-e3dc-44d4-b2a8-aa65badc17f2
-ms.openlocfilehash: f4d0b87c91649c5f2f6b5823fea82d2ce355d11a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58f7150caeb3e06ba400a08c6e484f677a8deff9
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374601"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74051381"
 ---
-# <a name="compiler-warning-level-1-c4669"></a>컴파일러 경고(수준 1) C4669
+# <a name="compiler-warning-level-1-c4669"></a>컴파일러 경고 (수준 1) C4669
 
 'cast': 안전하지 않은 변환입니다. 'class'는 WinRT 또는 관리되는 형식 개체입니다.
 
@@ -21,7 +21,7 @@ ms.locfileid: "62374601"
 
 다음 샘플에서는 C4669 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C4669.cpp
 // compile with: /clr /W1
 ref struct A {

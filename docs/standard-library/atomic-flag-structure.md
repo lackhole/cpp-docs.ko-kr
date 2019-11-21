@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68447399"
 ---
-# <a name="atomicflag-structure"></a>atomic_flag 구조체
+# <a name="atomic_flag-structure"></a>atomic_flag 구조체
 
 **bool** 플래그를 원자 단위로 설정하고 지우는 개체를 설명합니다. 원자 플래그에 대한 작업은 항상 잠금 해제입니다.
 

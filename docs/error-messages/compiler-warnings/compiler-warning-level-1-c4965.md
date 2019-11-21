@@ -1,31 +1,31 @@
 ---
-title: 컴파일러 경고(수준 1) C4965
+title: 컴파일러 경고 (수준 1) C4965
 ms.date: 11/04/2016
 f1_keywords:
 - C4965
 helpviewer_keywords:
 - C4965
 ms.assetid: 47f3f6dc-459b-4a25-9947-f394c8966cb5
-ms.openlocfilehash: 2e93fdeba7f9b5b10340ccd1920807a3fcb345a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac1ffc1626a8b72fd7c9026afb6c6a54bace3750
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383854"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052228"
 ---
-# <a name="compiler-warning-level-1-c4965"></a>컴파일러 경고(수준 1) C4965
+# <a name="compiler-warning-level-1-c4965"></a>컴파일러 경고 (수준 1) C4965
 
-정수 0; 암시적 상자 nullptr 또는 명시적 캐스트를 사용 하 여
+정수 0의 암시적 상자 nullptr 또는 명시적 캐스트 사용
 
-Visual C++ 값 형식 명시적 boxing 기능입니다. Managed Extensions for를 사용 하 여 null 할당을 발생 시킨 명령 C++ boxed int 할당 표현 됩니다.
+시각적 C++ 기능은 값 형식의 암시적 boxing을 제공 합니다. 이제 관리 되는 확장을 C++ 사용 하 여 null 할당을 발생 시킨 명령은 boxed int에 할당 됩니다.
 
 자세한 내용은 [boxing](../../extensions/boxing-cpp-component-extensions.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4965를 생성합니다.
+다음 샘플에서는 C4965를 생성 합니다.
 
-```
+```cpp
 // C4965.cpp
 // compile with: /clr /W1
 int main() {

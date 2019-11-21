@@ -8,12 +8,12 @@ helpviewer_keywords:
 - hardware exceptions [C++]
 - low level errors
 ms.assetid: 06ac6f01-a8cf-4426-bb12-1688315ae1cd
-ms.openlocfilehash: 17775f3b2ee6dfa235c93d0bf0e3335b464aaa69
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59b74f47cd86d94b50ab9213b3e517c2b08db696
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153673"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246557"
 ---
 # <a name="hardware-exceptions"></a>하드웨어 예외
 
@@ -27,7 +27,7 @@ Windows에서 인식하는 하드웨어 예외는 다음 표에 요약되어 있
 |--------------------|------------------------|
 |STATUS_ACCESS_VIOLATION|액세스할 수 없는 메모리 위치를 읽거나 씁니다.|
 |STATUS_BREAKPOINT|하드웨어 정의 중단점이 발생합니다. 디버거에서만 사용됩니다.|
-|STATUS_DATATYPE_MISALIGNMENT|올바르게 정렬되지 않은 주소에 있는 데이터를 읽거나 씁니다. 예를 들어, 16비트 엔티티는 2바이트 경계에 정렬되어야 합니다. (Intel 80 적용할 수 없습니다*x*86 프로세서.)|
+|STATUS_DATATYPE_MISALIGNMENT|올바르게 정렬되지 않은 주소에 있는 데이터를 읽거나 씁니다. 예를 들어, 16비트 엔티티는 2바이트 경계에 정렬되어야 합니다. (Not applicable to Intel 80*x*86 processors.)|
 |STATUS_FLOAT_DIVIDE_BY_ZERO|부동 소수점 형식을 0.0으로 나눕니다.|
 |STATUS_FLOAT_OVERFLOW|부동 소수점 형식의 최대 양의 지수를 초과합니다.|
 |STATUS_FLOAT_UNDERFLOW|부동 소수점 형식의 최저 음의 지수 크기를 초과합니다.|
@@ -38,9 +38,9 @@ Windows에서 인식하는 하드웨어 예외는 다음 표에 요약되어 있
 |STATUS_INTEGER_OVERFLOW|정수 범위를 초과하는 연산을 시도합니다.|
 |STATUS_SINGLE_STEP|단일 단계 모드에서 하나의 명령을 실행합니다. 디버거에서만 사용됩니다.|
 
-앞의 표에 나온 예외 목록의 대부분은 디버거, 운영 체제 또는 다른 하위 수준 코드에서 처리됩니다. 정수 및 부동 소수점 오류를 제외하고 사용자 코드로 이러한 오류를 처리해서는 안 됩니다. 따라서 일반적으로 예외 처리 필터를 사용하여 예외를 무시하도록 하십시오(0으로 계산). 그러지 않으면 하위 수준 메커니즘이 적절하게 응답하지 않을 수 있습니다. 하지만 하위 수준의 오류의 잠재적 영향에 대해 적절 한 예방 조치를 수행 수 [종료 처리기 작성](../cpp/writing-a-termination-handler.md)합니다.
+앞의 표에 나온 예외 목록의 대부분은 디버거, 운영 체제 또는 다른 하위 수준 코드에서 처리됩니다. 정수 및 부동 소수점 오류를 제외하고 사용자 코드로 이러한 오류를 처리해서는 안 됩니다. 따라서 일반적으로 예외 처리 필터를 사용하여 예외를 무시하도록 하십시오(0으로 계산). 그러지 않으면 하위 수준 메커니즘이 적절하게 응답하지 않을 수 있습니다. You can, however, take appropriate precautions against the potential effect of these low-level errors by [writing termination handlers](../cpp/writing-a-termination-handler.md).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[예외 처리기 작성](../cpp/writing-an-exception-handler.md)<br/>
+[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)

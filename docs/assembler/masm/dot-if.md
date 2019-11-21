@@ -1,36 +1,36 @@
 ---
 title: .IF
-ms.date: 08/30/2018
+ms.date: 11/05/2019
 f1_keywords:
 - .IF
 helpviewer_keywords:
 - .IF directive
 ms.assetid: dccc7615-8fc7-4829-9f39-0ee405f6c1e3
-ms.openlocfilehash: cf9c594d843c937dd2191bee2a7cebadbc615c82
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 83c9ff588e2fe273e24e1d0b1c16517c5eee3365
+ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185269"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73703782"
 ---
-# <a name="if"></a>.IF
+# <a name="if-32-bit-masm"></a>. IF (32 비트 MASM)
 
-테스트는 코드를 생성 `condition1` (예를 들어 AX > 7) 하 고 실행 합니다 *문을* 해당 조건이 true 인 경우.
+`condition1` (예: AX > 7)를 테스트 하 고 해당 조건이 true 인 경우 *문을* 실행 하는 코드를 생성 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> . IF 조건 1<br/>
+> . Condition1 인 경우<br/>
 > 문<br/>
 > [[. ELSEIF condition2<br/>
-> statements]]<br/>
-> [[.ELSE<br/>
-> statements]]<br/>
+> 문]]<br/>
+> [[. 사람이<br/>
+> 문]]<br/>
 > .ENDIF
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-경우는 [합니다. 다른](../../assembler/masm/dot-else.md) 원래 조건이 false 되었으면 같이 해당 문이 실행 됩니다. 조건을 런타임 시 계산 되는 참고 합니다.
+[인 경우 그 다음에](../../assembler/masm/dot-else.md) 는 원래 조건이 false 인 경우 해당 문이 실행 됩니다. 조건은 런타임에 평가 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)<br/>

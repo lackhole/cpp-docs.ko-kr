@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;array&gt; 연산자'
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,7 +18,7 @@ ms.locfileid: "72688464"
 ---
 # <a name="ltarraygt-operators"></a>&lt;array&gt; 연산자
 
-\<array> 헤더에는 이러한 **배열**의 비 멤버 템플릿 비교 함수가 포함 됩니다.
+\<array> 헤더에는 다음과 같은 **배열**의 비 멤버 템플릿 비교 함수가 포함됩니다.
 
 ||||
 |-|-|-|

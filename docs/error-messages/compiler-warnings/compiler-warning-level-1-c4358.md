@@ -1,27 +1,27 @@
 ---
-title: 컴파일러 경고(수준 1) C4358
+title: 컴파일러 경고 (수준 1) C4358
 ms.date: 11/04/2016
 f1_keywords:
 - C4358
 helpviewer_keywords:
 - C4358
 ms.assetid: a9848f84-14b3-405e-81bf-ee3e91a51511
-ms.openlocfilehash: aebac17a343efedf678b55f8940004c85a2db708
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7fd3109df3ecd32933b5fc217dfc02181f43d97c
+ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408383"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73966532"
 ---
-# <a name="compiler-warning-level-1-c4358"></a>컴파일러 경고(수준 1) C4358
+# <a name="compiler-warning-level-1-c4358"></a>컴파일러 경고 (수준 1) C4358
 
-'operator': 반환 결합된 대리자의 형식이 'void'; 반환된 값 정의 되지 않습니다.
+' operator ': 결합 된 대리자의 반환 형식이 ' void '가 아닙니다. 반환 된 값이 정의 되지 않았습니다.
 
-두 명의 대리자 결합 된 이며 반환 void 없습니다. Void가 아닌 반환 값을 사용 하 여 두 명의 대리자를 결합 하는 경우 컴파일러 대리자의 반환 값을 사용 하는 경우 적절 한 할당을 수행할 수 없습니다.
+두 개의 대리자가 결합 되었으며 반환 값은 void가 아닙니다. Void가 아닌 반환 값을 포함 하는 두 개의 대리자가 결합 된 경우 대리자의 반환 값이 사용 되는 경우 컴파일러에서 적절 한 할당을 수행할 수 없습니다.
 
-다음 샘플에서는 C4358 오류가 생성 됩니다.
+다음 샘플에서는 C4358를 생성 합니다.
 
-```
+```cpp
 // C4358.cpp
 // compile with: /clr /W1
 delegate int D();

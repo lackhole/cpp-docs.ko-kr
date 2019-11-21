@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4722
 ms.assetid: d8660710-f67b-4f59-a5fd-59259475529e
-ms.openlocfilehash: 320061c2daf2be042afe45828af637638399beaf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85921d67b764a28f9251f0c8b6e3fc807edd0f5b
+ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327290"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74052448"
 ---
 # <a name="compiler-warning-level-1-c4722"></a>컴파일러 경고(수준 1) C4722
 
@@ -25,7 +25,7 @@ ms.locfileid: "62327290"
 
 다음 샘플에서는 C4722를 생성합니다.
 
-```
+```cpp
 // C4722.cpp
 // compile with: /O1 /W1 /c
 #include <stdlib.h>
