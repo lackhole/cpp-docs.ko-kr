@@ -1,49 +1,49 @@
 ---
 title: const 및 volatile 포인터
-ms.date: 11/04/2016
+ms.date: 11/19/2019
 helpviewer_keywords:
 - volatile keyword [C++], and pointers
 - pointers, and const
 - pointers, and volatile
 - const keyword [C++], volatile pointers
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
-ms.openlocfilehash: c869adbbdc8a5a17d315e64e5ac15545e0c46e26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c0aafde9070275abcb270710e2d4a7a8d9806267
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399124"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74246623"
 ---
 # <a name="const-and-volatile-pointers"></a>const 및 volatile 포인터
 
-합니다 [상수](../cpp/const-cpp.md) 및 [volatile](../cpp/volatile-cpp.md) 키워드는 포인터 처리 방법을 변경 합니다. 합니다 **const** 키워드 포인터가 초기화 후 수정 될 수 없음을 지정 합니다. 즉 포인터 이후 수정 되지 않도록에서 보호 됩니다.
+The [const](const-cpp.md) and [volatile](volatile-cpp.md) keywords change how pointers are treated. The **const** keyword specifies that the pointer cannot be modified after initialization; the pointer is protected from modification thereafter.
 
-합니다 **volatile** 키워드 뒤에 오는 이름과 관련 된 값을 사용자 응용 프로그램에서 이외의 작업에 의해 수정 될 수 있음을 지정 합니다. 따라서 합니다 **volatile** 키워드 여러 프로세스 또는 인터럽트 서비스 루틴을 사용 하 여 통신에 사용 되는 전역 데이터 영역에서 액세스할 수 있는 공유 메모리에서 개체를 선언 하는 데 유용 합니다.
+The **volatile** keyword specifies that the value associated with the name that follows can be modified by actions other than those in the user application. Therefore, the **volatile** keyword is useful for declaring objects in shared memory that can be accessed by multiple processes or global data areas used for communication with interrupt service routines.
 
-이름으로 선언 되는 경우 **volatile**, 컴파일러는 프로그램에 액세스할 때마다 메모리에서 값을 다시 로드 합니다. 개체의 최적화 횟수가 상당히 줄어들게 됩니다. 이 키워드는 개체 상태가 예기치 않게 변경되는 경우 예상 가능한 프로그램 성능을 보장하는 유일한 방법이기도 합니다.
+When a name is declared as **volatile**, the compiler reloads the value from memory each time it is accessed by the program. 개체의 최적화 횟수가 상당히 줄어들게 됩니다. 이 키워드는 개체 상태가 예기치 않게 변경되는 경우 예상 가능한 프로그램 성능을 보장하는 유일한 방법이기도 합니다.
 
-으로 포인터에서 가리키는 개체를 선언 하 **상수** 또는 **volatile**, 폼의 선언을 사용:
+To declare the object pointed to by the pointer as **const** or **volatile**, use a declaration of the form:
 
 ```cpp
 const char *cpch;
 volatile char *vpch;
 ```
 
-포인터의 값을 선언할-포인터에 저장 된 실제 주소 즉,-으로 **상수** 또는 **volatile**, 폼의 선언을 사용:
+To declare the value of the pointer — that is, the actual address stored in the pointer — as **const** or **volatile**, use a declaration of the form:
 
 ```cpp
 char * const pchc;
 char * volatile pchv;
 ```
 
-C++ 개체의 수정을 허용 하는 할당을 금지 하는 언어 또는로 선언한 포인터 **const**합니다. 그와 같은 할당은 개체 또는 포인터가 선언된 정보를 제거하기 때문에 원래의 선언 의도에 위배됩니다. 다음의 선언을 살펴보세요.
+The C++ language prevents assignments that would allow modification of an object or pointer declared as **const**. 그와 같은 할당은 개체 또는 포인터가 선언된 정보를 제거하기 때문에 원래의 선언 의도에 위배됩니다. 다음의 선언을 살펴보세요.
 
 ```cpp
 const char cch = 'A';
 char ch = 'B';
 ```
 
-앞의 선언에서 두 개체의 지정 된 (`cch`, 형식 **const char**, 및 `ch`, 형식의 **char)**, 다음의 선언/초기화 유효:
+Given the preceding declarations of two objects (`cch`, of type **const char**, and `ch`, of type **char)** , the following declaration/initializations are valid:
 
 ```cpp
 const char *pch1 = &cch;
@@ -61,7 +61,7 @@ char *pch2 = &cch;   // Error
 char *const pch3 = &cch;   // Error
 ```
 
-`pch2` 선언은 상수 개체가 수정될 수 있는 포인터를 선언하기 때문에 허용되지 않습니다. 선언의 `pch3` 포인터 상수를 지정 개체가 아닌 선언 마찬가지 이유로 허용 되지 않습니다는 `pch2` 선언은 허용 되지 않습니다.
+`pch2` 선언은 상수 개체가 수정될 수 있는 포인터를 선언하기 때문에 허용되지 않습니다. The declaration of `pch3` specifies that the pointer is constant, not the object; the declaration is disallowed for the same reason the `pch2` declaration is disallowed.
 
 다음 8개의 할당에서는 포인터를 통한 할당과 이전 선언에 대한 포인터 값의 변경을 표시합니다. 이제 `pch1`을 통해 `pch8`에 대한 초기화가 올바르다고 가정합니다.
 
@@ -76,20 +76,20 @@ pch3 = &ch;   // Error: pointer declared const
 pch4 = &ch;   // Error: pointer declared const
 ```
 
-로 선언 된 포인터 **volatile**, 또는 혼합 된 형태로 **const** 하 고 **volatile**, 동일한 규칙을 따릅니다.
+Pointers declared as **volatile**, or as a mixture of **const** and **volatile**, obey the same rules.
 
-에 대 한 포인터 **const** 개체 종종 함수 선언에 다음과 같이 사용 됩니다.
+Pointers to **const** objects are often used in function declarations as follows:
 
 ```cpp
 errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *strSource );
 ```
 
-위의 문은 함수를 선언 [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)형식의 포인터가 있는 두 개의 세 가지 인수를 **char**합니다. 하며 하기 때문에 참조로 인수 전달 하지 값으로 함수는 모두 자유롭게 수정할 `strDestination` 하 고 `strSource` 하는 경우 `strSource` 로 선언 되지 않은 **const**합니다. 선언의 `strSource` 으로 **const** 호출자에 게는 보장 `strSource` 호출된 함수에서 변경할 수 없습니다.
+The preceding statement declares a function, [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md), where two of the three arguments are of type pointer to **char**. Because the arguments are passed by reference and not by value, the function would be free to modify both `strDestination` and `strSource` if `strSource` were not declared as **const**. The declaration of `strSource` as **const** assures the caller that `strSource` cannot be changed by the called function.
 
 > [!NOTE]
-> 표준 변환이 없으므로 *typename* <strong>\*</strong> 하 **const** *typename* <strong>\*</strong>, 형식의 인수를 전달 하는 것이 유효 `char *` 하 [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)합니다. 그러나는 성립 되지; 제거 하는 암시적 변환이 존재 합니다 **const** 개체 또는 포인터의 특성입니다.
+> Because there is a standard conversion from *typename* <strong>\*</strong> to **const** *typename* <strong>\*</strong>, it is legal to pass an argument of type `char *` to [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). However, the reverse is not true; no implicit conversion exists to remove the **const** attribute from an object or pointer.
 
-A **const** 동일한 형식의 포인터에 지정 된 형식의 대 한 포인터를 할당할 수 있습니다. 그러나 포인터 없는 **const** 할당할 수 없습니다는 **const** 포인터입니다. 다음 코드는 올바른 할당과 잘못된 할당을 보여 줍니다.
+A **const** pointer of a given type can be assigned to a pointer of the same type. However, a pointer that is not **const** cannot be assigned to a **const** pointer. 다음 코드는 올바른 할당과 잘못된 할당을 보여 줍니다.
 
 ```cpp
 // const_pointer.cpp
@@ -124,6 +124,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[포인터](../cpp/pointers-cpp.md)
+[Pointers](pointers-cpp.md)
+[Raw pointers](raw-pointers.md)

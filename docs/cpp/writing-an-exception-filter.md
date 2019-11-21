@@ -4,21 +4,21 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - exception handling [C++], filters
 ms.assetid: 47fc832b-a707-4422-b60a-aaefe14189e5
-ms.openlocfilehash: f0234d36fb70c646e2d97540cbfa6ce5ae1e0ba9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: aaf0dc77207399d7c6be86127d7decf03895ced5
+ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498455"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74245982"
 ---
 # <a name="writing-an-exception-filter"></a>예외 필터 작성
 
-예외 처리기의 수준으로 이동하거나 계속 실행하여 예외를 처리할 수 있습니다. 예외 처리기 코드를 사용 하 여 예외를 처리 하 고이를 통과 하는 대신 *필터* 를 사용 하 여 문제를 정리한 다음-1을 반환 하 여 스택을 지우지 않고 일반 흐름을 다시 시작할 수 있습니다.
+예외 처리기의 수준으로 이동하거나 계속 실행하여 예외를 처리할 수 있습니다. Instead of using the exception handler code to handle the exception and falling through, you can use *filter* to clean up the problem and then, by returning -1, resume normal flow without clearing the stack.
 
 > [!NOTE]
->  일부 예외는 계속할 수 없습니다. 이러한 예외에 대해 *필터가* -1로 계산 되 면 시스템은 새 예외를 발생 시킵니다. [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)를 호출 하면 예외가 계속 발생 하는지 여부가 결정 됩니다.
+>  일부 예외는 계속할 수 없습니다. If *filter* evaluates to -1 for such an exception, the system raises a new exception. When you call [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception), you determine whether the exception will continue.
 
-예를 들어 다음 코드는 *필터* 식에서 함수 호출을 사용 합니다 .이 함수는 문제를 처리 한 다음-1을 반환 하 여 정상적인 제어 흐름을 다시 시작 합니다.
+For example, the following code uses a function call in the *filter* expression: this function handles the problem and then returns -1 to resume normal flow of control:
 
 ```cpp
 // exceptions_Writing_an_Exception_Filter.cpp
@@ -45,11 +45,11 @@ int Eval_Exception ( int n_except ) {
 }
 ```
 
-*필터가* 복잡 한 작업을 수행 해야 할 때마다 *필터* 식에서 함수 호출을 사용 하는 것이 좋습니다. 식을 계산하면 함수가 실행됩니다. 이 경우에는 `Eval_Exception`입니다.
+It is a good idea to use a function call in the *filter* expression whenever *filter* needs to do anything complex. 식을 계산하면 함수가 실행됩니다. 이 경우에는 `Eval_Exception`입니다.
 
-[Getexceptioncode](/windows/win32/Debug/getexceptioncode) 를 사용 하 여 예외를 확인 합니다. 필터 자체 내에서 이 함수를 호출해야 합니다. `Eval_Exception`는를 `GetExceptionCode`호출할 수 없지만 예외 코드가 전달 되어야 합니다.
+Note the use of [GetExceptionCode](/windows/win32/Debug/getexceptioncode) to determine the exception. 필터 자체 내에서 이 함수를 호출해야 합니다. `Eval_Exception` cannot call `GetExceptionCode`, but it must have the exception code passed to it.
 
-이 처리기는 예외가 정수 또는 부동 소수점 오버플로가 아닌 경우 제어를 다른 처리기에 전달합니다. 그럴 경우 처리기는 함수(`ResetVars`가 유일한 예이며, API 함수가 아님)를 호출하여 일부 전역 변수를 다시 설정합니다. 이 예에서는 비어 있으므로 EXCEPTION_EXECUTE_HANDLER (1)를 반환 하지 않으므로 `Eval_Exception` 실행할 수 없습니다.
+이 처리기는 예외가 정수 또는 부동 소수점 오버플로가 아닌 경우 제어를 다른 처리기에 전달합니다. 그럴 경우 처리기는 함수(`ResetVars`가 유일한 예이며, API 함수가 아님)를 호출하여 일부 전역 변수를 다시 설정합니다. *Statement-block-2*, which in this example is empty, can never be executed because `Eval_Exception` never returns EXCEPTION_EXECUTE_HANDLER (1).
 
 함수 호출 사용은 복잡한 필터 식을 처리하는 좋은 일반 용도의 기술입니다. 유용한 두 개의 다른 C 언어 기능은 다음과 같습니다.
 
@@ -57,7 +57,7 @@ int Eval_Exception ( int n_except ) {
 
 - 쉼표 연산자
 
-조건 연산자는 특정 반환 코드를 검사한 다음 서로 다른 두 값 중 하나를 반환하는 데 사용될 수 있기 때문에 대개 유용합니다. 예를 들어 다음 코드의 필터는 예외가 STATUS_INTEGER_OVERFLOW 인 경우에만 예외를 인식 합니다.
+조건 연산자는 특정 반환 코드를 검사한 다음 서로 다른 두 값 중 하나를 반환하는 데 사용될 수 있기 때문에 대개 유용합니다. For example, the filter in the following code recognizes the exception only if the exception is STATUS_INTEGER_OVERFLOW:
 
 ```cpp
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {
@@ -69,7 +69,7 @@ __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {
 ```
 
-조건 연산자는 필터를-1, EXCEPTION_CONTINUE_EXECUTION로 평가 하려는 경우에 더 유용 합니다.
+The conditional operator is more useful in situations where you might want the filter to evaluate to -1, EXCEPTION_CONTINUE_EXECUTION.
 
 쉼표 연산자를 사용하면 단일 식 내의 여러 독립적인 연산을 수행할 수 있습니다. 여러 문을 실행한 다음 마지막 식의 값을 반환하는 효과와 대체로 비슷합니다. 예를 들어 다음 코드는 예외 코드를 변수에 저장한 다음 테스트합니다.
 
@@ -77,7 +77,7 @@ __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {
 __except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[예외 처리기 작성](../cpp/writing-an-exception-handler.md)<br/>
+[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)
