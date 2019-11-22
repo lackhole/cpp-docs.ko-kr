@@ -5,12 +5,12 @@ helpviewer_keywords:
 - header files, C++ Standard Library
 - C++ Standard Library, header files
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
-ms.openlocfilehash: dc337ef078108d86849aa7b7452512dfb69e6e18
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: 807e65c69e55d8790b77a493e4ae1878aa740557
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341130"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74305413"
 ---
 # <a name="c-standard-library-header-files"></a>C++표준 라이브러리 헤더 파일
 
@@ -34,7 +34,7 @@ ms.locfileid: "68341130"
 | 컨테이너 뷰 | \<span><sup>20</sup> |
 | [오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md) | [\<cassert>](cassert.md), [\<exception>](exception.md), [\<stdexcept>](stdexcept.md), [\<system_error>](system-error.md)<sup>11</sup> |
 | 일반 유틸리티 | \<any><sup>17</sup>, [\<bitset>](bitset.md), \<charconv><sup>17</sup>, [\<cstdlib>](cstdlib.md), \<execution><sup>17</sup>, [\<functional>](functional.md), [\<memory>](memory.md), \<memory_resource><sup>17</sup>, \<optional><sup>17</sup>, [\<ratio>](ratio.md)<sup>11</sup>, [\<scoped_allocator>](scoped-allocator.md)<sup>11</sup>, [\<tuple>](tuple.md)<sup>11</sup>, [\<ype_traits>](type-traits.md)<sup>11</sup>, [\<typeindex>](typeindex.md)<sup>11</sup>, [\<utility>](utility.md), \<variant><sup>17</sup> |
-| [I/O 및 서식 지정](../cpp/string-and-i-o-formatting-modern-cpp.md) | [\<cinttypes>](cinttypes.md)<sup>11</sup>, [\<cstdio>](cstdio.md), [\<filesystem>](filesystem.md)<sup>17</sup>, [\<fstream>](fstream.md), [\<iomanip>](iomanip.md), [\<ios>](ios.md), [\<iosfwd>](iosfwd.md), [\<iostream>](iostream.md), [\<istream>](istream.md), [\<ostream>](ostream.md), [\<sstream>](sstream.md), [\<streambuf>](streambuf.md), [\<strstream>](strstream.md)<sup>c</sup>, \<syncstream><sup>20</sup> |
+| [I/O 및 서식 지정](../text/string-and-i-o-formatting-modern-cpp.md) | [\<cinttypes>](cinttypes.md)<sup>11</sup>, [\<cstdio>](cstdio.md), [\<filesystem>](filesystem.md)<sup>17</sup>, [\<fstream>](fstream.md), [\<iomanip>](iomanip.md), [\<ios>](ios.md), [\<iosfwd>](iosfwd.md), [\<iostream>](iostream.md), [\<istream>](istream.md), [\<ostream>](ostream.md), [\<sstream>](sstream.md), [\<streambuf>](streambuf.md), [\<strstream>](strstream.md)<sup>c</sup>, \<syncstream><sup>20</sup> |
 | 반복기 | [\<iterator>](iterator.md) |
 | 언어 지원 | [\<cfloat>](cfloat.md), [\<climits>](climits.md), [\<codecvt>](codecvt.md)<sup>11</sup>, \<compare><sup>20</sup>, \<contract><sup>20</sup>, \<coroutine><sup>20</sup>, [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdarg>](cstdarg.md), [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md)<sup>11</sup>, [\<cstdlib>](cstdlib.md), [\<exception>](exception.md), [\<initializer_list>](initializer-list.md)<sup>11</sup>, [\<limits>](limits.md), [\<new>](new.md), [\<typeinfo>](typeinfo.md), \<version><sup>20</sup> |
 | 지역화 | [\<clocale>](clocale.md), [\<codecvt>](codecvt.md)<sup>11 a</sup>, [\<cvt/wbuffer>](cvt-wbuffer.md), [\<cvt/wstring>](cvt-wstring.md), [\<locale>](locale.md) |
@@ -67,19 +67,19 @@ ms.locfileid: "68341130"
 |정렬된 연관 컨테이너| [\<map>](map.md), [\<set>](set.md)|
 |순서가 지정되지 않은 연관 컨테이너|[\<unordered_map>](unordered-map.md)<sup>11</sup>, [\<unordered_set>](unordered-set.md)<sup>11</sup>|
 |어댑터 컨테이너|[\<queue>](queue.md), [\<stack>](stack.md)|
-|[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)|예외 > [, stdexcept>>\<](stdexcept.md), [ system_error\<>](system-error.md) [ \<](exception.md)|
-|[I/O 및 서식 지정](../cpp/string-and-i-o-formatting-modern-cpp.md)|[\<filesystem>](filesystem.md), [\<fstream>](fstream.md), [\<iomanip>](iomanip.md), [\<ios>](ios.md), [\<iosfwd>](iosfwd.md), [\<iostream>](iostream.md), [\<istream>](istream.md), [\<ostream>](ostream.md), [\<sstream>](sstream.md), [\<streambuf>](streambuf.md), [\<strstream>](strstream.md)|
+|[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)|[\<exception >](exception.md) [\<stdexcept> >](stdexcept.md) [\<system_error >](system-error.md)|
+|[I/O 및 서식 지정](../text/string-and-i-o-formatting-modern-cpp.md)|[\<filesystem>](filesystem.md), [\<fstream>](fstream.md), [\<iomanip>](iomanip.md), [\<ios>](ios.md), [\<iosfwd>](iosfwd.md), [\<iostream>](iostream.md), [\<istream>](istream.md), [\<ostream>](ostream.md), [\<sstream>](sstream.md), [\<streambuf>](streambuf.md), [\<strstream>](strstream.md)|
 |반복기|[\<iterator>](iterator.md)|
 |지역화|[\<codecvt>](codecvt.md), [\<cvt/wbuffer>](cvt-wbuffer.md), [\<cvt/wstring>](cvt-wstring.md), [\<locale>](locale.md)|
 |수학 및 숫자|[\<complex>](complex.md), [\<limits>](limits.md), [\<numeric>](numeric.md), [\<random>](random.md), [\<ratio>](ratio.md), [\<valarray>](valarray.md)|
 |[메모리 관리](../cpp/smart-pointers-modern-cpp.md)|[\<allocators>](allocators-header.md), [\<memory>](memory.md), [\<new>](new.md), [\<scoped_allocator>](scoped-allocator.md)|
 |다중 스레딩|[\<atomic>](atomic.md), [\<condition_variable>](condition-variable.md), [\<future>](future.md), [\<mutex>](mutex.md), [\<shared_mutex>](shared-mutex.md), [\<thread>](thread.md)|
-|기타 유틸리티|[\<initializer_list>](initializer-list.md), [\<tuple>](tuple.md), [\<bitset>](bitset.md), [\<chrono>](chrono.md), [\<functional>](functional.md), [\<type_traits>](type-traits.md), [\<typeinfo >](typeinfo.md), [\<typeindex>](typeindex.md), [\<utility>](utility.md)|
+|기타 유틸리티|[\<initializer_list>](bitset.md), [\<tuple>](chrono.md), [\<bitset>](functional.md), [\<chrono>](initializer-list.md), [\<functional>](tuple.md), [\<type_traits>](type-traits.md), [\<typeinfo >](typeinfo.md), [\<typeindex>](typeindex.md), [\<utility>](utility.md)|
 |문자열 및 문자 데이터|[\<regex>](regex.md), [\<string>](string.md), [\<string_view>](string-view.md)
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[라이브러리 C++ 헤더 사용](using-cpp-library-headers.md)\
+[라이브러리 C++ 헤더\ 사용](using-cpp-library-headers.md)
 [C++표준 라이브러리](cpp-standard-library-reference.md)

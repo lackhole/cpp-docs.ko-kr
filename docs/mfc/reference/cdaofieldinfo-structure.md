@@ -7,16 +7,16 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Fields collection
 - CDaoFieldInfo structure [MFC]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-ms.openlocfilehash: e98f5ba69f6702dd768cfe6605f993064e1b896c
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: e2638ac908e4e286530301bc913173e87008df47
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096107"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303694"
 ---
 # <a name="cdaofieldinfo-structure"></a>CDaoFieldInfo 구조체
 
-구조 `CDaoFieldInfo` 에는 DAO (data access objects)에 대해 정의 된 필드 개체에 대 한 정보가 포함 되어 있습니다.
+`CDaoFieldInfo` 구조에는 DAO (data access objects)에 대해 정의 된 필드 개체에 대 한 정보가 포함 되어 있습니다.
 
 DAO는 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다.
 
@@ -50,29 +50,29 @@ struct CDaoFieldInfo
 *m_nType*<br/>
 필드의 데이터 형식을 나타내는 값입니다. 자세한 내용은 DAO 도움말의 "형식 속성" 항목을 참조 하십시오. 이 속성의 값은 다음 중 하나일 수 있습니다.
 
-- `dbBoolean`예/아니요, TRUE/FALSE와 동일 합니다.
+- `dbBoolean` 예/아니요, TRUE/FALSE와 동일 합니다.
 
-- `dbByte`바이트만
+- `dbByte` 바이트
 
-- `dbInteger`간략히
+- `dbInteger` Short
 
-- `dbLong`시간과
+- `dbLong` Long
 
-- `dbCurrency`최신 MFC 클래스 [COleCurrency](../../mfc/reference/colecurrency-class.md) 를 참조 하세요.
+- `dbCurrency` Currency; MFC 클래스 [COleCurrency](../../mfc/reference/colecurrency-class.md) 를 참조 하세요.
 
-- `dbSingle`단
+- 단일 `dbSingle`
 
-- `dbDouble`차례로
+- `dbDouble` Double
 
-- `dbDate`날짜/시간; MFC 클래스 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 를 참조 하세요.
+- `dbDate` 날짜/시간; MFC 클래스 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 를 참조 하세요.
 
-- `dbText`본문 MFC 클래스 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 참조
+- 텍스트 `dbText` MFC 클래스 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 참조
 
-- `dbLongBinary`Long Binary (OLE 개체); 보다 풍부하고 사용하기 쉬운 `CLongBinary` 클래스대신 `CByteArray` MFC 클래스 [CByteArray](../../mfc/reference/cbytearray-class.md)를 사용하는 것이 좋습니다.
+- `dbLongBinary` Long Binary (OLE 개체); [보다 풍부하고 사용하기 쉬운 ](../../mfc/reference/cbytearray-class.md)클래스 대신 MFC 클래스 `CLongBinary`CByteArray`CByteArray`를 사용하는 것이 좋습니다.
 
-- `dbMemo`Memo MFC 클래스 참조`CString`
+- `dbMemo` Memo; MFC 클래스 `CString`를 참조 하세요.
 
-- `dbGUID`원격 프로시저 호출에 사용 되는 전역적으로 고유한 식별자/범용 고유 식별자입니다. 자세한 내용은 DAO 도움말의 "형식 속성" 항목을 참조 하십시오.
+- 원격 프로시저 호출에 사용 되는 전역적으로 고유한 식별자/범용 고유 식별자를 `dbGUID` 합니다. 자세한 내용은 DAO 도움말의 "형식 속성" 항목을 참조 하십시오.
 
 > [!NOTE]
 >  이진 데이터에는 문자열 데이터 형식을 사용 하지 마십시오. 이렇게 하면 데이터가 유니코드/ANSI 변환 계층을 통과 하 여 오버 헤드가 증가 하 고 예기치 않은 번역이 발생할 수 있습니다.
@@ -80,33 +80,33 @@ struct CDaoFieldInfo
 *m_lSize*<br/>
 텍스트 또는 숫자 값을 포함 하는 필드 개체의 고정 크기를 포함 하는 DAO field 개체의 최대 크기 (바이트)를 나타내는 값입니다. 자세한 내용은 DAO 도움말의 "크기 속성" 항목을 참조 하십시오. 크기는 다음 값 중 하나일 수 있습니다.
 
-|형식|크기(바이트)|Description|
+|형식|크기(바이트)|설명|
 |----------|--------------------|-----------------|
 |`dbBoolean`|1바이트|예/아니요 (True/False와 동일)|
 |`dbByte`|1|Byte|
-|`dbInteger`|2|정수|
+|`dbInteger`|2|String|
 |`dbLong`|4|Long|
 |`dbCurrency`|8|통화 ([COleCurrency](../../mfc/reference/colecurrency-class.md))|
 |`dbSingle`|4|Single|
 |`dbDouble`|8|Double|
 |`dbDate`|8|날짜/시간 ([COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md))|
 |`dbText`|1 - 255|텍스트 ([CString](../../atl-mfc-shared/reference/cstringt-class.md))|
-|`dbLongBinary`|0|Long Binary (OLE 개체; [CByteArray](../../mfc/reference/cbytearray-class.md); 대신 `CLongBinary`사용)|
+|`dbLongBinary`|0|Long Binary (OLE 개체; [CByteArray](../../mfc/reference/cbytearray-class.md); `CLongBinary`대신 사용)|
 |`dbMemo`|0|메모 ([CString](../../atl-mfc-shared/reference/cstringt-class.md))|
 |`dbGUID`|16|원격 프로시저 호출에 사용 되는 전역적으로 고유한 식별자/범용 고유 식별자입니다.|
 
 *m_lAttributes*<br/>
 테이블 정의, 레코드 집합, 쿼리 정의 또는 인덱스 개체에 포함 된 field 개체의 특성을 지정 합니다. 반환 되는 값은 C++ 비트 or ( **&#124;** ) 연산자를 사용 하 여 만든 이러한 상수의 합계 일 수 있습니다.
 
-- `dbFixedField`필드 크기가 고정 되어 있습니다 (숫자 필드의 경우 기본값).
+- 필드 크기가 고정 되어 있는 `dbFixedField` (숫자 필드의 경우 기본값).
 
-- `dbVariableField`필드 크기가 variable (텍스트 필드에만 해당)입니다.
+- 필드 크기가 variable `dbVariableField` (텍스트 필드만)입니다.
 
-- `dbAutoIncrField`새 레코드에 대 한 필드 값이 자동으로 변경 될 수 없는 고유한 정수 (long)로 증가 합니다. Microsoft Jet 데이터베이스 테이블에만 지원 됩니다.
+- 새 레코드에 대 한 필드 값이 변경 될 수 없는 고유한 정수 (long)로 자동 증가 `dbAutoIncrField`. Microsoft Jet 데이터베이스 테이블에만 지원 됩니다.
 
-- `dbUpdatableField`필드 값을 변경할 수 있습니다.
+- `dbUpdatableField` 필드 값을 변경할 수 있습니다.
 
-- `dbDescending`필드는 내림차순 (Z-A 또는 100-0) 순서로 정렬 됩니다. index 개체의 Fields 컬렉션에 있는 field 개체에만 적용 됩니다. MFC에서는 인덱스 개체가 테이블 정의 개체에 포함 됩니다. 이 상수를 생략 하면 필드가 오름차순 (a-z 또는 0-100) 순서 (기본값)로 정렬 됩니다.
+- `dbDescending` 필드는 내림차순 (Z-A 또는 100-0) 순서로 정렬 됩니다. index 개체의 Fields 컬렉션에 있는 field 개체에만 적용 됩니다. MFC에서 인덱스 개체는 모두 테이블 정의 개체에 포함 되어 있습니다. 이 상수를 생략 하면 필드가 오름차순 (a-z 또는 0-100) 순서 (기본값)로 정렬 됩니다.
 
 이 속성의 설정을 확인할 때 C++ 비트 and 연산자 ( **&** )를 사용 하 여 특정 특성을 테스트할 수 있습니다. 여러 특성을 설정할 때는 적절 한 상수와 비트 or ( **&#124;** ) 연산자를 결합 하 여 결합할 수 있습니다. 자세한 내용은 DAO 도움말의 "Attributes 속성" 항목을 참조 하십시오.
 
@@ -120,7 +120,7 @@ DAO 필드 개체에 Null이 아닌 값이 필요한 지 여부를 나타냅니�
 빈 문자열 ("")이 Text 또는 Memo 데이터 형식의 DAO field 개체의 유효한 값 인지 여부를 나타냅니다. 이 속성이 TRUE 이면 빈 문자열이 올바른 값입니다. 이 속성을 FALSE로 설정 하 여 빈 문자열을 사용 하 여 필드의 값을 설정할 수 없도록 할 수 있습니다. 자세한 내용은 DAO 도움말의 "AllowZeroLength 속성" 항목을 참조 하십시오. [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)를 사용 하 여 테이블 정의에 대해이 속성을 설정할 수 있습니다.
 
 *m_lCollatingOrder*<br/>
-텍스트에서 문자열 비교 또는 정렬 순서를 지정 합니다. 자세한 내용은 DAO 도움말의 "데이터 액세스에 대 한 Windows 레지스트리 설정 사용자 지정" 항목을 참조 하십시오. 반환 가능한 값의 목록은 `m_lCollatingOrder` [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) 구조체의 멤버를 참조 하십시오. [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)를 사용 하 여 테이블 정의에 대해이 속성을 설정할 수 있습니다.
+텍스트에서 문자열 비교 또는 정렬 순서를 지정 합니다. 자세한 내용은 DAO 도움말의 "데이터 액세스에 대 한 Windows 레지스트리 설정 사용자 지정" 항목을 참조 하십시오. 반환 가능한 값의 목록은 [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) 구조체의 `m_lCollatingOrder` 멤버를 참조 하십시오. [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)를 사용 하 여 테이블 정의에 대해이 속성을 설정할 수 있습니다.
 
 *m_strForeignName*<br/>
 관계에서 기본 테이블의 필드에 해당 하는 외래 테이블의 DAO 필드 개체 이름을 지정 하는 값입니다. 자세한 내용은 DAO 도움말의 "ForeignName 속성" 항목을 참조 하십시오.
@@ -146,17 +146,17 @@ DAO field 개체의 기본값입니다. 새 레코드가 생성 되 면 DefaultV
 
 위의 기본, 보조 및 모든에 대 한 참조는 [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getfieldinfo), [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo)및 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)클래스의 `GetFieldInfo` 멤버 함수에서 정보를 반환 하는 방법을 표시 합니다.
 
-Field 개체는 MFC 클래스로 표현 되지 않습니다. 대신, 다음 클래스의 기본 MFC 개체에 있는 DAO 개체는 field 개체의 컬렉션을 포함 합니다. [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)및 [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md)입니다. 이러한 클래스는 필드 정보의 일부 개별 항목에 액세스 하는 멤버 함수를 제공 하거나, 포함 하는 개체의 `CDaoFieldInfo` `GetFieldInfo` 멤버 함수를 호출 하 여 개체를 사용 하 여 한 번에 모두 액세스할 수 있습니다.
+Field 개체는 MFC 클래스로 표현 되지 않습니다. 대신, 다음 클래스의 기본 MFC 개체에 포함 된 DAO 개체는 [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md), [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)및 [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md)필드 개체의 컬렉션을 포함 합니다. 이러한 클래스는 필드 정보의 일부 개별 항목에 액세스 하는 멤버 함수를 제공 하거나, 포함 하는 개체의 `GetFieldInfo` 멤버 함수를 호출 하 여 `CDaoFieldInfo` 개체를 사용 하 여 한 번에 모두 액세스할 수 있습니다.
 
-개체 속성을 검사 하는 데 사용 하는 것 외 `CDaoFieldInfo` 에도를 사용 하 여 테이블 정의에 새 필드를 만들기 위한 입력 매개 변수를 생성할 수 있습니다. 이 작업에는 보다 간단한 옵션을 사용할 수 있지만 보다 세부적인 제어를 원하는 경우 매개 변수를 `CDaoFieldInfo` 사용 하는 [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield) 버전을 사용할 수 있습니다.
+개체 속성을 검사 하는 데 사용 하는 것 외에도 `CDaoFieldInfo`를 사용 하 여 테이블 정의에 새 필드를 만들기 위한 입력 매개 변수를 생성할 수 있습니다. 이 작업에는 보다 간단한 옵션을 사용할 수 있지만 보다 세부적인 제어를 원하는 경우 `CDaoFieldInfo` 매개 변수를 사용 하는 [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield) 버전을 사용할 수 있습니다.
 
-`GetFieldInfo` 멤버 함수 (필드를 포함 하는 클래스)에 의해 검색 된 정보는 `CDaoFieldInfo` 구조체에 저장 됩니다. 필드 개체가 `GetFieldInfo` 저장 된 필드 컬렉션을 포함 하는 개체의 멤버 함수를 호출 합니다. `CDaoFieldInfo`또한 디버그 빌드에서 `Dump` 멤버 함수를 정의 합니다. 를 사용 `Dump` 하 여 `CDaoFieldInfo` 개체의 콘텐츠를 덤프할 수 있습니다.
+필드를 포함 하는 클래스의 `GetFieldInfo` 멤버 함수에서 검색 된 정보는 `CDaoFieldInfo` 구조에 저장 됩니다. 필드 개체가 저장 된 필드 컬렉션이 있는 포함 하는 개체의 `GetFieldInfo` 멤버 함수를 호출 합니다. 또한 `CDaoFieldInfo`는 디버그 빌드에서 `Dump` 멤버 함수를 정의 합니다. `Dump`를 사용 하 여 `CDaoFieldInfo` 개체의 콘텐츠를 덤프할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao
+**헤더:** afxdao.h
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoTableDef::GetFieldInfo](../../mfc/reference/cdaotabledef-class.md#getfieldinfo)<br/>

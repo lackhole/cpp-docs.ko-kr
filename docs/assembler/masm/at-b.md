@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@B symbol'
 ms.assetid: ca17c71a-4a5d-4470-a098-484c781dbfa7
-ms.openlocfilehash: dc3e06283f1dc552a5f0cee6c8a7b608b5c421e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0d21f09491a7349585e2a1a33092177940aac163
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166375"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302865"
 ---
-# <a name="b"></a>@B
+# <a name="b"></a>\@B
 
-이전 위치의 [@ @:](../../assembler/masm/at-at.md) 레이블.
+이전 [\@\@:](../../assembler/masm/at-at.md) 레이블의 위치입니다.
 
 ## <a name="syntax"></a>구문
 
-> @B
+> **\@B**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](../../assembler/masm/symbols-reference.md)

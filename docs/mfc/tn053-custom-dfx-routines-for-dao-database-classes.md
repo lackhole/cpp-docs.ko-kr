@@ -1,5 +1,5 @@
 ---
-title: 'TN053: DAO 데이터베이스 클래스에 대 한 사용자 지정 DFX 루틴'
+title: 'TN053: DAO 데이터베이스 클래스에 대한 사용자 지정 DFX 루틴'
 ms.date: 09/17/2019
 helpviewer_keywords:
 - MFC, DAO and
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - DFX (DAO record field exchange) [MFC]
 - custom DFX routines [MFC]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
-ms.openlocfilehash: 949e1a07b2b45b01b08efb368046e0c65b1264e1
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 6dde96520d9472726da86f8da295770cccc5d42c
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095982"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303430"
 ---
-# <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO 데이터베이스 클래스에 대 한 사용자 지정 DFX 루틴
+# <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO 데이터베이스 클래스에 대한 사용자 지정 DFX 루틴
 
 > [!NOTE]
->  DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. 3.6는 최종 버전 이며 더 이상 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
+>  DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). Microsoft는 새 프로젝트에 대해 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md)를 사용할 것을 권장합니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
 
-이 기술 정보는 DAO 레코드 필드 교환 (DFX) 메커니즘을 설명 합니다. DFX 루틴에서 발생 하는 상황을 이해 하는 데 `DFX_Text` 도움이 되도록 함수는 예제로 자세히 설명 됩니다. 이 기술 정보에 대 한 추가 정보 소스로 서 다른 개별 DFX 함수의 코드를 검사할 수 있습니다. 사용자 지정 RFX 루틴이 필요할 때 (ODBC 데이터베이스 클래스와 함께 사용 됨) 사용자 지정 DFX 루틴이 필요 하지 않을 수 있습니다.
+이 기술 정보는 DAO 레코드 필드 교환 (DFX) 메커니즘을 설명 합니다. DFX 루틴에서 발생 하는 상황을 이해 하려면 `DFX_Text` 함수에 대 한 자세한 내용은 예제를 참조 하십시오. 이 기술 정보에 대 한 추가 정보 소스로 서 다른 개별 DFX 함수의 코드를 검사할 수 있습니다. 사용자 지정 RFX 루틴이 필요할 때 (ODBC 데이터베이스 클래스와 함께 사용 됨) 사용자 지정 DFX 루틴이 필요 하지 않을 수 있습니다.
 
 이 기술 참고 사항은 다음과 같습니다.
 
@@ -39,14 +39,14 @@ ms.locfileid: "71095982"
 
 **DFX 개요**
 
-DAO 레코드 필드 교환 메커니즘 (DFX)은 클래스를 `CDaoRecordset` 사용할 때 데이터를 검색 하 고 업데이트 하는 절차를 간소화 하는 데 사용 됩니다. `CDaoRecordset` 클래스의 데이터 멤버를 사용 하 여 프로세스를 간소화 합니다. 에서 `CDaoRecordset`파생 하 여 테이블 또는 쿼리의 각 필드를 나타내는 파생 클래스에 데이터 멤버를 추가할 수 있습니다. 이 "정적 바인딩" 메커니즘은 간단 하지만 모든 응용 프로그램에 대해 선택 하는 데이터 인출/업데이트 방법이 아닐 수도 있습니다. DFX는 현재 레코드가 변경 될 때마다 바인딩된 모든 필드를 검색 합니다. 통화가 변경 될 때 모든 필드를 인출 하지 않아도 되는 성능에 민감한 응용 프로그램을 개발 하는 경우 및 `CDaoRecordset::GetFieldValue` `CDaoRecordset::SetFieldValue` 를 통해 "동적 바인딩"을 선택 하는 것이 좋습니다.
+DAO 레코드 필드 교환 메커니즘 (DFX)은 `CDaoRecordset` 클래스를 사용할 때 데이터를 검색 하 고 업데이트 하는 절차를 간소화 하는 데 사용 됩니다. `CDaoRecordset` 클래스의 데이터 멤버를 사용 하 여 프로세스를 간소화 합니다. `CDaoRecordset`에서 파생 하 여 테이블 또는 쿼리의 각 필드를 나타내는 파생 클래스에 데이터 멤버를 추가할 수 있습니다. 이 "정적 바인딩" 메커니즘은 간단 하지만 모든 응용 프로그램에 대해 선택 하는 데이터 인출/업데이트 방법이 아닐 수도 있습니다. DFX는 현재 레코드가 변경 될 때마다 바인딩된 모든 필드를 검색 합니다. Currency가 변경 될 때 모든 필드를 인출 하지 않아도 되는 성능에 민감한 응용 프로그램을 개발 하는 경우 `CDaoRecordset::GetFieldValue` 및 `CDaoRecordset::SetFieldValue`를 통한 "동적 바인딩"은 선택한 데이터 액세스 방법 일 수 있습니다.
 
 > [!NOTE]
 >  DFX 및 동적 바인딩은 함께 사용할 수 없으므로 정적 및 동적 바인딩의 하이브리드 사용을 사용할 수 있습니다.
 
 ## <a name="_mfcnotes_tn053_examples"></a>예 1-DAO 레코드 필드 교환과 사용
 
-(가정 `CDaoRecordset` -파생 클래스가 `CMySet` 이미 열려 있는 경우)
+`CDaoRecordset` (파생 클래스 `CMySet` 이미 열려 있는 경우)를 가정 합니다.
 
 ```
 // Add a new record to the customers table
@@ -61,7 +61,7 @@ myset.Update();
 
 **예 2-동적 바인딩만 사용**
 
-(클래스를 `CDaoRecordset` `rs`사용 한다고 가정 하 고 이미 열려 있는 경우)
+(`CDaoRecordset` 클래스, `rs`를 사용 한다고 가정 하 고 이미 열려 있습니다.)
 
 ```
 // Add a new record to the customers table
@@ -86,7 +86,7 @@ rs.Update();
 
 **예제 3-DAO 레코드 필드 교환 및 동적 바인딩 사용**
 
-(파생 클래스 `emp`를 사용 하 `CDaoRecordset`여 직원 데이터를 검색 하는 것으로 가정)
+(`CDaoRecordset`파생 클래스를 사용 하 여 직원 데이터를 검색 하는 것으로 가정 `emp`)
 
 ```
 // Get the employee's data so that it can be displayed
@@ -117,9 +117,9 @@ DFX 메커니즘은 MFC ODBC 클래스에서 사용 하는 RFX (레코드 필드
 
 - DFX는 **NULL** 및 **더티** 상태 배열을 관리 하 고 업데이트에 필요한 경우 값을 설정 합니다.
 
-DFX 메커니즘 `CDaoRecordset` 의 핵심은 파생 클래스의 `DoFieldExchange` 함수입니다. 이 함수는 적절 한 작업 형식의 개별 DFX 함수에 대 한 호출을 디스패치합니다. 내부 MFC `DoFieldExchange` 함수를 호출 하기 전에 작업 유형을 설정 합니다. 다음 목록에서는 다양 한 작업 유형 및 간단한 설명을 보여 줍니다.
+DFX 메커니즘의 핵심은 파생 클래스의 `DoFieldExchange` 함수 `CDaoRecordset`입니다. 이 함수는 적절 한 작업 형식의 개별 DFX 함수에 대 한 호출을 디스패치합니다. `DoFieldExchange`를 호출 하기 전에 내부 MFC 함수는 작업 유형을 설정 합니다. 다음 목록에서는 다양 한 작업 유형 및 간단한 설명을 보여 줍니다.
 
-|연산|Description|
+|작업|설명|
 |---------------|-----------------|
 |`AddToParameterList`|빌드 매개 변수 절|
 |`AddToSelectList`|빌드 SELECT 절|
@@ -135,42 +135,42 @@ DFX 메커니즘 `CDaoRecordset` 의 핵심은 파생 클래스의 `DoFieldExcha
 |`MarkForEdit`|캐시와 일치 하지 않는 경우 더티 필드 표시|
 |`SetDirtyField`|변경 된 것으로 표시 된 필드 값 설정|
 
-다음 섹션에서는에 대 한 각 작업에 대해 `DFX_Text`자세히 설명 합니다.
+다음 섹션에서는 각 작업에 대 한 자세한 내용은 `DFX_Text`에 대해 자세히 설명 합니다.
 
-DAO 레코드 필드 교환 프로세스를 이해 하는 가장 중요 한 기능은 `GetRows` `CDaoRecordset` 개체의 기능을 사용 한다는 것입니다. DAO `GetRows` 함수는 여러 가지 방법으로 작동할 수 있습니다. 이 기술 참고 사항은이 기술 정보 `GetRows` 에 대 한 범위를 벗어나므로 간략하게 설명 합니다.
-DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. `GetRows`여러 가지 방법으로 작동할 수 있습니다.
+DAO 레코드 필드 교환 프로세스를 이해 하는 가장 중요 한 기능은 `CDaoRecordset` 개체의 `GetRows` 함수를 사용 한다는 것입니다. DAO `GetRows` 함수는 여러 가지 방법으로 작동할 수 있습니다. 이 기술 참고 사항은이 기술 메모의 범위를 벗어난 `GetRows`에 대해서만 간략하게 설명 합니다.
+DAO `GetRows`는 여러 가지 방법으로 작동할 수 있습니다.
 
 - 여러 레코드와 여러 데이터 필드를 한 번에 페치할 수 있습니다. 이렇게 하면 대량 데이터 구조를 처리 하는 것이 복잡 하 고, 각 필드에 대 한 적절 한 오프셋과 구조에 있는 각 데이터 레코드에 대 한 적절 한 오프셋을 사용 하는 것이 복잡 하 게 됩니다. MFC는이 다중 레코드 인출 메커니즘을 활용 하지 않습니다.
 
-- 또 다른 `GetRows` 방법은 프로그래머가 한 데이터 레코드에 대해 각 필드의 검색 된 데이터에 대 한 바인딩 주소를 지정할 수 있도록 하는 것입니다.
+- `GetRows`는 다른 방법으로는 프로그래머가 한 데이터 레코드에 대해 각 필드의 검색 된 데이터에 대 한 바인딩 주소를 지정 하는 데 사용할 수 있습니다.
 
-- 또한 호출자가 메모리를 할당할 수 있도록 하기 위해 DAO는 가변 길이 열에 대해 호출자에 게 "콜백" 합니다. 이 두 번째 기능을 통해 데이터의 복사본 수를 최소화 하 고 데이터를 클래스의 멤버 ( `CDaoRecordset` 파생 클래스)로 직접 저장할 수 있습니다. 이 두 번째 메커니즘은 MFC에서 파생 클래스의 `CDaoRecordset` 데이터 멤버에 바인딩하는 데 사용 하는 메서드입니다.
+- 또한 호출자가 메모리를 할당할 수 있도록 하기 위해 DAO는 가변 길이 열에 대해 호출자에 게 "콜백" 합니다. 이 두 번째 기능은 데이터의 복사본 수를 최소화 하 고 데이터를 클래스의 멤버 (`CDaoRecordset` 파생 클래스)로 직접 저장할 수 있도록 하는 이점을 제공 합니다. 이 두 번째 메커니즘은 MFC에서 `CDaoRecordset` 파생 클래스의 데이터 멤버에 바인딩하는 데 사용 하는 메서드입니다.
 
 ##  <a name="_mfcnotes_tn053_what_your_custom_dfx_routine_does"></a>사용자 지정 DFX 루틴의 기능
 
-모든 DFX 함수에서 구현 되는 가장 중요 한 작업은 성공적인 호출 `GetRows`을 위해 필요한 데이터 구조를 설정 하는 기능 이어야 한다는 것을 알 수 있습니다. DFX 함수 에서도 지원 해야 하는 다른 작업은 여러 가지가 있지만, `GetRows` 호출을 올바르게 준비 하는 것은 중요 하거나 복잡 하지 않습니다.
+모든 DFX 함수에서 구현 되는 가장 중요 한 작업은 `GetRows`성공적으로 호출 하는 데 필요한 데이터 구조를 설정 하는 기능 이어야 한다는 것을 알 수 있습니다. DFX 함수에서 지원 해야 하는 다른 작업은 여러 가지가 있지만, `GetRows` 호출을 올바르게 준비 하는 것은 중요 하거나 복잡 하지 않습니다.
 
-DFX 사용에 대해서는 온라인 설명서에 설명 되어 있습니다. 기본적으로 두 가지 요구 사항이 있습니다. 먼저 각 바인딩된 필드 및 매개 변수에 대해 `CDaoRecordset` 파생 클래스에 멤버를 추가 해야 합니다. `CDaoRecordset::DoFieldExchange` 다음은 재정의 되어야 합니다. 멤버의 데이터 형식이 중요 합니다. 데이터베이스에 있는 필드의 데이터와 일치 하거나 적어도 해당 형식으로 변환할 수 있어야 합니다. 예를 들어 정수 (long)와 같은 데이터베이스의 숫자 필드는 항상 텍스트로 변환 하 여 `CString` 멤버에 바인딩할 수 있지만, 데이터베이스의 텍스트 필드는 long 정수와 같은 숫자 표현으로 변환 되지 않을 수 있으며 long integ에 바인딩됩니다. er 멤버. DAO 및 Microsoft Jet 데이터베이스 엔진은 MFC가 아닌 변환을 담당 합니다.
+DFX 사용에 대해서는 온라인 설명서에 설명 되어 있습니다. 기본적으로 두 가지 요구 사항이 있습니다. 먼저 각 바인딩된 필드 및 매개 변수에 대 한 `CDaoRecordset` 파생 클래스에 멤버를 추가 해야 합니다. 이 `CDaoRecordset::DoFieldExchange` 뒤에 재정의 해야 합니다. 멤버의 데이터 형식이 중요 합니다. 데이터베이스에 있는 필드의 데이터와 일치 하거나 적어도 해당 형식으로 변환할 수 있어야 합니다. 예를 들어 정수 (long)와 같은 데이터베이스의 숫자 필드는 항상 텍스트로 변환 하 여 `CString` 멤버에 바인딩할 수 있지만, 데이터베이스의 텍스트 필드는 long 정수와 같은 숫자 표현으로 변환 되지 않을 수 있으며 long 정수 멤버에 바인딩됩니다. DAO 및 Microsoft Jet 데이터베이스 엔진은 MFC가 아닌 변환을 담당 합니다.
 
 ##  <a name="_mfcnotes_tn053_details_of_dfx_text"></a>DFX_Text의 세부 정보
 
-앞서 언급 했 듯이, DFX의 작동 방식을 설명 하는 가장 좋은 방법은 예제를 사용 하는 것입니다. 이러한 목적을 위해의 `DFX_Text` 내부를 살펴보면 DFX를 최소한으로 이해 하는 데 유용 하 게 사용할 수 있습니다.
+앞서 언급 했 듯이, DFX의 작동 방식을 설명 하는 가장 좋은 방법은 예제를 사용 하는 것입니다. 이러한 목적을 위해 `DFX_Text`의 내부를 통해 가장 잘 이해할 수 있도록 하는 것이 가장 좋습니다.
 
 - `AddToParameterList`
 
-   이 작업을 수행 하면 Jet에 필요한 SQL`Parameters <param name>, <param type> ... ;`PARAMETERS 절 ("")이 작성 됩니다. 각 매개 변수는 RFX 호출에 지정 된 대로 이름이 지정 되 고 형식화 됩니다. 개별 형식의 이름을 `CDaoFieldExchange::AppendParamType` 보려면 함수 함수를 참조 하세요. 의 `DFX_Text`경우 사용 되는 형식은 **text**입니다.
+   이 작업을 수행 하면 Jet에 필요한 SQL **PARAMETERS** 절 ("`Parameters <param name>, <param type> ... ;`")이 작성 됩니다. 각 매개 변수는 RFX 호출에 지정 된 대로 이름이 지정 되 고 형식화 됩니다. 개별 형식의 이름을 보려면 함수 `CDaoFieldExchange::AppendParamType` 함수를 참조 하세요. `DFX_Text`의 경우 사용 되는 형식은 **텍스트**입니다.
 
 - `AddToSelectList`
 
-   SQL **SELECT** 절을 작성 합니다. 이는 DFX 호출로 지정 된 열 이름이 추가 ("`SELECT <column name>, ...`") 되는 것 처럼 간단 합니다.
+   SQL **SELECT** 절을 작성 합니다. 이는 DFX 호출로 지정 된 열 이름이 추가 ("`SELECT <column name>, ...`") 하는 것 처럼 간단 합니다.
 
 - `BindField`
 
-   가장 복잡 한 작업입니다. 앞에서 설명한 것 처럼에서 사용 하 `GetRows` 는 DAO 바인딩 구조가 설정 됩니다. 구조에 있는 `DFX_Text` 정보 형식의 코드에서 볼 수 있듯이 사용 된 DAO 형식 (의 `DFX_Text`경우**DAO_CHAR** 또는 **DAO_WCHAR** )이 포함 됩니다. 또한 사용 되는 바인딩 형식을 설정 합니다. 이전 섹션 `GetRows` 에서는 간략하게 설명 했지만 MFC에서 사용 하는 바인딩 형식이 항상**DAOBINDING_DIRECT**(직접 주소 바인딩) 임을 설명 하기에 충분 했습니다. 변수 길이 열 바인딩 ( `DFX_Text`예:) 외에도, MFC에서 메모리 할당을 제어 하 고 올바른 길이의 주소를 지정할 수 있도록 콜백 바인딩이 사용 됩니다. 즉, MFC에서 항상 데이터를 저장 하기 위해 DAO에 지시할 수 있으므로 멤버 변수에 직접 바인딩을 허용 합니다. 바인딩 구조의 나머지 부분은 메모리 할당 콜백 함수의 주소와 열 바인딩 유형 (열 이름으로 바인딩)과 같은 항목으로 채워집니다.
+   가장 복잡 한 작업입니다. 앞에서 설명한 것 처럼 `GetRows`에서 사용 하는 DAO 바인딩 구조는 설정 됩니다. `DFX_Text` 코드에서 볼 수 있듯이 구조체의 정보 형식에는 사용 된 DAO 형식 (**DAO_CHAR** 또는 `DFX_Text`의 경우 **DAO_WCHAR** )이 포함 됩니다. 또한 사용 되는 바인딩 형식을 설정 합니다. 이전 섹션에서는 간략하게 설명 했지만 `GetRows`는 MFC에서 사용 하는 바인딩의 형식이 항상 직접 주소 바인딩 (**DAOBINDING_DIRECT**) 임을 설명 하기에 충분 했습니다. 변수 길이 열 바인딩 (예: `DFX_Text`) 외에도, MFC에서 메모리 할당을 제어 하 고 올바른 길이의 주소를 지정할 수 있도록 콜백 바인딩이 사용 됩니다. 즉, MFC에서 항상 데이터를 저장 하기 위해 DAO에 지시할 수 있으므로 멤버 변수에 직접 바인딩을 허용 합니다. 바인딩 구조의 나머지 부분은 메모리 할당 콜백 함수의 주소와 열 바인딩 유형 (열 이름으로 바인딩)과 같은 항목으로 채워집니다.
 
 - `BindParam`
 
-   이는 매개 변수 멤버에 지정 `SetParamValue` 된 매개 변수 값을 사용 하 여를 호출 하는 간단한 작업입니다.
+   이는 매개 변수 멤버에 지정 된 매개 변수 값을 사용 하 여 `SetParamValue`를 호출 하는 간단한 작업입니다.
 
 - `Fixup`
 
@@ -182,9 +182,9 @@ DFX 사용에 대해서는 온라인 설명서에 설명 되어 있습니다. �
 
 - `SetDirtyField`
 
-   커밋되지 `SetFieldValue` 않은 것으로 표시 된 각 필드에 대해를 호출 합니다.
+   변경 된 것으로 표시 된 각 필드에 대 한 `SetFieldValue`를 호출 합니다.
 
-나머지 작업은 모두 데이터 캐시를 사용 하는 것만을 처리 합니다. 데이터 캐시는 특정 작업을 단순화 하는 데 사용 되는 현재 레코드의 추가 버퍼입니다. 예를 들어 "더티" 필드는 자동으로 검색 될 수 있습니다. 온라인 설명서에 설명 된 대로 완전히 끄거나 필드 수준에서 해제할 수 있습니다. 버퍼의 구현은 맵을 활용 합니다. 이 맵은 "bound" 필드 (또는 `CDaoRecordset` 파생 된 데이터 멤버)의 주소를 사용 하 여 동적으로 할당 된 데이터 복사본을 일치 시키는 데 사용 됩니다.
+나머지 작업은 모두 데이터 캐시를 사용 하는 것만을 처리 합니다. 데이터 캐시는 특정 작업을 단순화 하는 데 사용 되는 현재 레코드의 추가 버퍼입니다. 예를 들어 "더티" 필드는 자동으로 검색 될 수 있습니다. 온라인 설명서에 설명 된 대로 완전히 끄거나 필드 수준에서 해제할 수 있습니다. 버퍼의 구현은 맵을 활용 합니다. 이 맵은 동적으로 할당 된 데이터 복사본을 "bound" 필드의 주소 (또는 파생 데이터 멤버 `CDaoRecordset`)와 일치 시키는 데 사용 됩니다.
 
 - `AllocCache`
 
@@ -213,7 +213,7 @@ DFX 사용에 대해서는 온라인 설명서에 설명 되어 있습니다. �
 > [!TIP]
 > 표준 데이터 형식에 대 한 기존 DFX 루틴에 대 한 사용자 지정 DFX 루틴을 모델링 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

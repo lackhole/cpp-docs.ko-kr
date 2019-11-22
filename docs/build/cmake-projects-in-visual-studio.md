@@ -4,12 +4,12 @@ ms.date: 10/31/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 2efd228971f19ca525f245014f3046b1b62995dc
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: d27ea235290115a43bacb38d4dc3da536a06f527
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73624588"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303310"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -83,7 +83,7 @@ CMake 프로젝트를 빌드하려면 다음과 같이 선택할 수 있습니�
 
 ![CMake 빌드 오류](media/cmake-build-errors.png "CMake 빌드 오류")
 
-여러 빌드 대상이 있는 폴더의 **CMake** 메뉴 또는 상황에 맞는 *CMakeLists.txt* 메뉴에서 **빌드** 항목을 선택하여 빌드할 CMake 대상을 지정할 수 있습니다. CMake 프로젝트에서 **Ctrl+Shift+B**를 누르면 현재 활성 문서가 빌드됩니다.
+여러 빌드 대상이 있는 폴더의 **CMake** 메뉴 또는 상황에 맞는 **CMakeLists.txt** 메뉴에서 *빌드* 항목을 선택하여 빌드할 CMake 대상을 지정할 수 있습니다. CMake 프로젝트에서 **Ctrl+Shift+B**를 누르면 현재 활성 문서가 빌드됩니다.
 
 ## <a name="debugging-cmake-projects"></a>CMake 프로젝트 디버깅
 
@@ -228,7 +228,7 @@ CMake 프로젝트를 빌드하려면 다음과 같이 선택할 수 있습니�
 
 ![CMake 빌드 오류](media/cmake-build-errors.png "CMake 빌드 오류")
 
-여러 빌드 대상이 있는 폴더의 **CMake** 메뉴 또는 상황에 맞는 *CMakeLists.txt* 메뉴에서 **빌드** 항목을 선택하여 빌드할 CMake 대상을 지정할 수 있습니다. CMake 프로젝트에서 **Ctrl+Shift+B**를 누르면 현재 활성 문서가 빌드됩니다.
+여러 빌드 대상이 있는 폴더의 **CMake** 메뉴 또는 상황에 맞는 **CMakeLists.txt** 메뉴에서 *빌드* 항목을 선택하여 빌드할 CMake 대상을 지정할 수 있습니다. CMake 프로젝트에서 **Ctrl+Shift+B**를 누르면 현재 활성 문서가 빌드됩니다.
 
 ## <a name="debugging-cmake-projects"></a>CMake 프로젝트 디버깅
 
@@ -262,7 +262,7 @@ CMakeLists.txt 파일을 편집하려면 **솔루션 탐색기**에서 파일을
 
 ## <a name="troubleshooting-cmake-cache-errors"></a>CMake 캐시 오류 문제 해결
 
-문제를 진단하는 데 CMake 캐시의 상태에 대한 추가 정보가 필요하면, **CMake** 주 메뉴 또는 **솔루션 탐색기**의 상황에 맞는 *CMakeLists.txt* 메뉴를 열어 다음 명령 중 하나를 실행합니다.
+문제를 진단하는 데 CMake 캐시의 상태에 대한 추가 정보가 필요하면, **CMake** 주 메뉴 또는 *솔루션 탐색기*의 상황에 맞는 **CMakeLists.txt** 메뉴를 열어 다음 명령 중 하나를 실행합니다.
 
 - **캐시 보기**는 편집기의 빌드 루트 폴더에서 CMakeCache.txt 파일을 엽니다. 캐시를 정리하면 CMakeCache.txt에 대해 여기서 편집한 내용이 모두 지워집니다. 캐시가 정리 된 후에 유지 되는 변경 내용을 만들려면 [cmake 설정 사용자 지정](customize-cmake-settings.md)을 참조 하세요.
 
@@ -299,7 +299,7 @@ Visual Studio 2015에서 Visual Studio 사용자는 [CMake 생성기](https://cm
 ::: moniker-end
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [자습서: Visual C++ Studio에서 플랫폼 간 프로젝트 만들기](get-started-linux-cmake.md)<br/>
 [Linux CMake 프로젝트 구성](../linux/cmake-linux-project.md)<br/>

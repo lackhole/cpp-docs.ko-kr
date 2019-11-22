@@ -25,7 +25,7 @@ Visual Studio 2015부터 `steady_clock`의 구현이 조성에 및 단 조성에
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<chrono >
+**헤더:** \<chrono>
 
 **네임스페이스:** std
 

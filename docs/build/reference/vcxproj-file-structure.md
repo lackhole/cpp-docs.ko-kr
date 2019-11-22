@@ -4,12 +4,12 @@ ms.date: 05/16/2019
 helpviewer_keywords:
 - .vcxproj file structure
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
-ms.openlocfilehash: 86c393796b1ce3efdb92d8aefd1f653390619ea4
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: a24349980e9395257f20fcfcc0987883060a7c1d
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837510"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303131"
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj 및 .props 파일 구조
 
@@ -33,7 +33,7 @@ ms.locfileid: "65837510"
    <ClCompile Include="$(IntDir)\generated.cpp"/>
    ```
 
-   “지원 안 함”은 IDE의 모든 조작에 대해 매크로가 작동하도록 보장되지 않음을 의미합니다. 다른 구성에서 값을 변경하지 않는 매크로는 작동해야 하지만 항목을 다른 필터 또는 프로젝트로 이동해도 유지되지 않을 수 있습니다. IDE가 프로젝트 구성마다 다른 프로젝트 항목 경로를 예상하지 않으므로, 다른 구성에 대한 값을 변경하는 매크로로 인해 문제가 발생합니다.
+   “지원 안 함”은 IDE의 모든 조작에 대해 매크로가 작동하도록 보장되지 않음을 의미합니다. 다른 구성에서 값을 변경 하지 않는 매크로는 작동 해야 하지만 항목이 다른 필터나 프로젝트로 이동 하는 경우에는 유지 되지 않을 수 있습니다. IDE가 프로젝트 구성마다 다른 프로젝트 항목 경로를 예상하지 않으므로, 다른 구성에 대한 값을 변경하는 매크로로 인해 문제가 발생합니다.
 
 1. **프로젝트 속성** 대화 상자에서 편집할 때 프로젝트 속성이 올바르게 추가, 제거 또는 수정되도록 하려면, 파일에 각 프로젝트 구성에 대한 별도의 그룹이 있어야 하며 조건이 다음과 같은 형식이어야 합니다.
 
@@ -55,7 +55,7 @@ ms.locfileid: "65837510"
 
 - 각각 고유한 레이블이 있는 여러 속성 그룹이 있으며 특정 순서로 표시됩니다.
 
-MSBuild는 순차적 평가 모델을 기반으로 하므로 프로젝트 파일에 있는 요소의 순서는 매우 중요합니다.  가져온 .props 및 .targets 파일을 모두 포함한 프로젝트 파일이 속성의 여러 정의로 구성되어 있으면 마지막 정의가 앞의 정의를 재정의합니다. 다음 예제에서는 "xyz" 값이 MSBUild 엔진에서 평가 중에 마지막으로 발생하기 때문에 컴파일하는 동안 설정됩니다.
+MSBuild는 순차적 평가 모델을 기반으로 하므로 프로젝트 파일에 있는 요소의 순서는 매우 중요합니다.  가져온 .props 및 .targets 파일을 모두 포함한 프로젝트 파일이 속성의 여러 정의로 구성되어 있으면 마지막 정의가 앞의 정의를 재정의합니다. 다음 예제에서는 MSBUild 엔진에서 계산 중에 마지막으로 발생 하기 때문에 값 "xyz"가 컴파일 중에 설정 됩니다.
 
 ```xml
   <MyProperty>abc</MyProperty>
@@ -104,7 +104,7 @@ MSBuild는 순차적 평가 모델을 기반으로 하므로 프로젝트 파일
 
 ### <a name="projectconfiguration-elements"></a>ProjectConfiguration 요소
 
-다음 코드 조각에서는 프로젝트 구성을 보여 줍니다. 이 예제에서 'Debug|x64'는 구성 이름입니다. 프로젝트 구성 이름은 $(구성)|$(플랫폼) 형식이어야 합니다. 프로젝트 구성 노드에는 Configuration 및 Platform의  두 가지 속성이 있을 수 있습니다. 구성이 활성화되면 이러한 속성이 자동으로 여기에 지정된 값으로 설정됩니다.
+다음 코드 조각에서는 프로젝트 구성을 보여 줍니다. 이 예제에서 'Debug|x64'는 구성 이름입니다. 프로젝트 구성 이름은 $(구성)|$(플랫폼) 형식이어야 합니다. 프로젝트 구성 노드에는 Configuration 및 Platform의 두 가지 속성이 있을 수 있습니다. 구성이 활성화되면 이러한 속성이 자동으로 여기에 지정된 값으로 설정됩니다.
 
 ```xml
 <ProjectConfiguration Include="Debug|x64">
@@ -153,7 +153,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 <PropertyGroup Label="Configuration" />
 ```
 
-`Configuration` 속성 그룹에는 연결된 구성 조건(예: `Condition=”'$(Configuration)|$(Platform)'=='Debug|Win32'”`)이 있으며 구성별로 하나씩 여러 복사본이 제공됩니다. 이 속성 그룹은 특정 구성에 대해 설정된 속성을 호스팅합니다. Configuration 속성에는 PlatformToolset이 포함되며, **Microsoft.Cpp.props**의 시스템 속성 시트 포함 여부를 제어합니다. 예를 들어 `<CharacterSet>Unicode</CharacterSet>` 속성을 정의하면 **microsoft.Cpp.unicodesupport.props** 시스템 속성 시트가 포함됩니다. **Microsoft.Cpp.props**를 검사하면 `<Import Condition=”'$(CharacterSet)' == 'Unicode'”   Project=”$(VCTargetsPath)\microsoft.Cpp.unicodesupport.props”/>` 줄이 표시됩니다.
+`Configuration` 속성 그룹에는 연결된 구성 조건(예: `Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"`)이 있으며 구성별로 하나씩 여러 복사본이 제공됩니다. 이 속성 그룹은 특정 구성에 대해 설정된 속성을 호스팅합니다. Configuration 속성에는 PlatformToolset이 포함되며, **Microsoft.Cpp.props**의 시스템 속성 시트 포함 여부를 제어합니다. 예를 들어 `<CharacterSet>Unicode</CharacterSet>` 속성을 정의하면 **microsoft.Cpp.unicodesupport.props** 시스템 속성 시트가 포함됩니다. **Microsoft.Cpp.props**를 검사하면 `<Import Condition="'$(CharacterSet)' == 'Unicode'" Project="$(VCTargetsPath)\microsoft.Cpp.unicodesupport.props" />` 줄이 표시됩니다.
 
 ### <a name="microsoftcppprops-import-element"></a>Microsoft.Cpp.props Import 요소
 
@@ -195,7 +195,7 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 
 이 속성 그룹에는 모든 프로젝트 구성에 대해 구성별로 하나씩 여러 개의 인스턴스가 있습니다. 각 속성 그룹은 하나의 구성 조건에 연결되어야 합니다. 누락된 구성이 있으면 **프로젝트 속성** 대화 상자가 올바르게 작동하지 않습니다. 위의 속성 그룹과는 달리 이 속성 그룹에는 레이블이 없습니다. 이 그룹에는 프로젝트 구성 수준 설정이 포함됩니다. 이러한 설정은 지정된 항목 그룹에 속한 모든 파일에 적용됩니다. 빌드 사용자 지정 항목 정의 메타데이터는 여기서 초기화됩니다.
 
-이 PropertyGroup은 `<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />` 뒤에 나와야 하며, 앞에는 레이블이 없는 다른 PropertyGroup이 없어야 합니다. 그렇지 않으면 프로젝트 속성 편집이 올바르게 작동하지 않습니다.
+이 PropertyGroup는 `<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />` 후에 야 하며 앞에는 레이블이 없는 다른 PropertyGroup 없어야 합니다 (그렇지 않은 경우 프로젝트 속성 편집은 제대로 작동 하지 않음).
 
 ### <a name="per-configuration-itemdefinitiongroup-elements"></a>구성별 ItemDefinitionGroup 요소
 
@@ -218,8 +218,8 @@ IDE는 모든 ProjectConfiguration 항목에 사용된 구성 및 플랫폼 값�
 ```xml
 <ItemGroup>
   <ClCompile Include="stdafx.cpp">
-    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
-    <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|x64’">true</TreatWarningAsError>
+    <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningAsError>
+    <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWarningAsError>
   </ClCompile>
 </ItemGroup>
 ```

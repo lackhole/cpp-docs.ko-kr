@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@CurSeg symbol'
 ms.assetid: 8fbf90c1-7734-4113-9ba2-6ec664b3b59f
-ms.openlocfilehash: c575c1c5f25e72f34525c0802483fdb61844293c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69e8c762a10b2cda03cbd5e02708e7510daad1be
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166830"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302748"
 ---
-# <a name="curseg"></a>@CurSeg
+# <a name="curseg"></a>\@CurSeg
 
-현재 세그먼트 (text 매크로)의 이름입니다.
+현재 세그먼트의 이름 (텍스트 매크로)입니다.
 
 ## <a name="syntax"></a>구문
 
-> @CurSeg
+> **\@CurSeg**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](../../assembler/masm/symbols-reference.md)

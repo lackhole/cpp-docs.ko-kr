@@ -11,12 +11,12 @@ f1_keywords:
 - filesystem/std::filesystem::perms
 - filesystem/std::experimental::filesystem::perms
 ms.assetid: 0096c046-d101-464c-8259-b878a48280b0
-ms.openlocfilehash: dfbcf65462f0bb7bc6ca44f43507efa7b753e7bc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f148347cd132a604622415c65bb3e0352f5308eb
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457708"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303502"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;filesystem&gt; 열거형
 
@@ -51,7 +51,7 @@ enum class copy_options {
 
 ### <a name="values"></a>값
 
-|`Name`|Description|
+|`Name`|설명|
 |------------|-----------------|
 |`none`|작업의 기본 동작을 수행합니다.|
 |`skip_existing`|파일이 이미 있는 경우 복사하지 않고 오류를 보고하지 않습니다.|
@@ -79,7 +79,7 @@ enum class directory_options {
 
 ### <a name="values"></a>값
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |`none`|기본 동작: 디렉터리에 대한 기호 링크를 무시합니다. 사용 권한이 거부됨은 오류입니다.|
 |`follow_directory_symlink`|디렉터리에 대한 기호화된 링크를 실제 디렉터리로 처리합니다.|
@@ -122,7 +122,7 @@ enum class file_type {
 
 ## <a name="perm_options"></a>perm_options
 
-에는 `replace`, `add`, `remove` 및`nofollow`값이 포함 됩니다.
+`replace`, `add`, `remove`및 `nofollow`값을 포함 합니다.
 
 ```cpp
 enum class perm_options;
@@ -130,7 +130,7 @@ enum class perm_options;
 
 ## <a name="perms"></a>  perms
 
-파일 사용 권한에 대한 플래그입니다. 지원되는 값은 기본적으로 "읽기 전용"과 모두입니다. 읽기 전용 파일의 경우 *_write 비트가 설정되지 않습니다. 그렇지 않은 경우에는 `all` 비트(0x0777)가 설정됩니다.
+파일 사용 권한에 대한 플래그입니다. 지원 되는 값은 기본적으로 "readonly" 및 all입니다. 읽기 전용 파일의 경우 *_write 비트가 설정되지 않습니다. 그렇지 않은 경우에는 `all` 비트(0x0777)가 설정됩니다.
 
 ### <a name="syntax"></a>구문
 
@@ -161,7 +161,7 @@ enum class perms {// names for permissions
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)\
 [\<filesystem>](../standard-library/filesystem.md)

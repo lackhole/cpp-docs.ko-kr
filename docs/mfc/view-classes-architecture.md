@@ -9,24 +9,24 @@ helpviewer_keywords:
 - control views [MFC]
 - view classes [MFC], architecture
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
-ms.openlocfilehash: c6c1272d41eb7a01ec5a7ee10fadb4ab21547ce7
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: fda4e968a4761fcf1e2245964bd5dca3f41a82ad
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71096051"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302980"
 ---
 # <a name="view-classes-architecture"></a>뷰 클래스(아키텍처)
 
-`CView`및 해당 파생 클래스는 프레임 창의 클라이언트 영역을 나타내는 자식 창입니다. 보기는 데이터를 표시 하 고 문서에 대 한 입력을 허용 합니다.
+`CView` 및 해당 파생 클래스는 프레임 창의 클라이언트 영역을 나타내는 자식 창입니다. 보기는 데이터를 표시 하 고 문서에 대 한 입력을 허용 합니다.
 
 뷰 클래스는 문서 클래스 및 문서 템플릿 개체를 사용 하는 프레임 창 클래스와 연결 됩니다.
 
 [CView](../mfc/reference/cview-class.md)<br/>
-문서 데이터의 응용 프로그램별 보기에 대 한 기본 클래스입니다. 보기 데이터를 표시 하 고 사용자 입력을 수락 하 여 데이터를 편집 하거나 선택 합니다. 에서 `CView`뷰 클래스를 파생 시킵니다.
+문서 데이터의 응용 프로그램별 보기에 대 한 기본 클래스입니다. 보기 데이터를 표시 하 고 사용자 입력을 수락 하 여 데이터를 편집 하거나 선택 합니다. `CView`에서 뷰 클래스를 파생 시킵니다.
 
 [CScrollView](../mfc/reference/cscrollview-class.md)<br/>
-스크롤 기능이 있는 뷰의 기본 클래스입니다. 자동 스크롤을 위해에서 `CScrollView` 뷰 클래스를 파생 합니다.
+스크롤 기능이 있는 뷰의 기본 클래스입니다. 자동 스크롤을 위해 `CScrollView`에서 뷰 클래스를 파생 시킵니다.
 
 ## <a name="form-and-record-views"></a>폼 및 레코드 뷰
 
@@ -35,10 +35,10 @@ ms.locfileid: "71096051"
 레코드 뷰는 폼 보기에서 파생 됩니다. 대화 상자 템플릿 외에도 데이터베이스에도 연결 되어 있습니다.
 
 [CFormView](../mfc/reference/cformview-class.md)<br/>
-대화 상자 템플릿에서 레이아웃을 정의 하는 스크롤 뷰입니다. 대화 상자 템플릿을 기반 `CFormView` 으로 사용자 인터페이스를 구현 하려면에서 클래스를 파생 시킵니다.
+대화 상자 템플릿에서 레이아웃을 정의 하는 스크롤 뷰입니다. `CFormView`에서 클래스를 파생 하 여 대화 상자 템플릿을 기반으로 사용자 인터페이스를 구현 합니다.
 
 [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)<br/>
-DAO (Data Access Object) 레코드 집합 개체에 직접 연결 되는 폼 뷰를 제공 합니다. 모든 폼 보기와 마찬가지로는 `CDaoRecordView` 대화 상자 템플릿을 기반으로 합니다. DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. 3.6는 최종 버전 이며 더 이상 사용 되지 않는 것으로 간주 됩니다.
+DAO (Data Access Object) 레코드 집합 개체에 직접 연결 되는 폼 뷰를 제공 합니다. 모든 폼 보기와 마찬가지로 `CDaoRecordView`는 대화 상자 템플릿을 기반으로 합니다. DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다.
 
 [CHtmlView](../mfc/reference/chtmlview-class.md)<br/>
 응용 프로그램 내에서 웹 검색을 위한 컨트롤을 지원 합니다. 컨트롤은 MFC에서 동적 HTML을 지원 합니다.
@@ -47,7 +47,7 @@ DAO (Data Access Object) 레코드 집합 개체에 직접 연결 되는 폼 뷰
 MFC OLE DB 폼 보기에 대 한 지원을 제공 합니다.
 
 [CRecordView](../mfc/reference/crecordview-class.md)<br/>
-ODBC (Open Database Connectivity) 레코드 집합 개체에 직접 연결 된 폼 뷰를 제공 합니다. 모든 폼 보기와 마찬가지로는 `CRecordView` 대화 상자 템플릿을 기반으로 합니다.
+ODBC (Open Database Connectivity) 레코드 집합 개체에 직접 연결 된 폼 뷰를 제공 합니다. 모든 폼 보기와 마찬가지로 `CRecordView`는 대화 상자 템플릿을 기반으로 합니다.
 
 ## <a name="control-views"></a>컨트롤 뷰
 
@@ -68,6 +68,6 @@ Windows 목록 컨트롤을 포함 하는 뷰입니다 ( [CListCtrl](../mfc/refe
 [CTreeView](../mfc/reference/ctreeview-class.md)<br/>
 Windows 트리 컨트롤을 포함 하는 뷰입니다 ( [CTreeCtrl](../mfc/reference/ctreectrl-class.md)참조). 트리 컨트롤은 파일 탐색기의 왼쪽 창과 비슷한 방식으로 계층 구조에 정렬 된 아이콘 및 문자열을 표시 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [클래스 개요](../mfc/class-library-overview.md)

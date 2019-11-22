@@ -1,26 +1,26 @@
 ---
 title: '@CodeSize'
-ms.date: 08/30/2018
+ms.date: 11/21/2019
 f1_keywords:
 - '@CodeSize'
 helpviewer_keywords:
 - '@CodeSize symbol'
 ms.assetid: 6e18d99f-9999-41fe-9330-b80de8f735d5
-ms.openlocfilehash: 36befca435c6aedcad442711caaa8a884cc52394
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 586b2921e708542c38dede240c5ebaed83590fab
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166687"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302909"
 ---
-# <a name="codesize"></a>@CodeSize
+# <a name="codesize"></a>\@CodeSize
 
-0 **작습니다**를 **작은**를 **COMPACT**, 및 **플랫** 모델과 1 **보통**,  **대규모**, 및 **가장 크게** 모델 (숫자와 같습니다.).
+0은 **작음**, **소형**, **컴팩트**및 **플랫** 모델의 경우 0이 고, **중간**, **크고, 큰** **모델의** 경우 1입니다 (숫자는 1).
 
 ## <a name="syntax"></a>구문
 
-> @CodeSize
+> **\@CodeSize**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](../../assembler/masm/symbols-reference.md)
