@@ -55,9 +55,9 @@ constexpr typename common_type<Duration1, Duration2>::type
 
 첫 번째 함수는 간격 길이가 두 인수의 시간 간격 간 차이인 `duration` 개체를 반환합니다.
 
-두 번째 함수를 반환 합니다는 `time_point` 시간으로 표현 되는 시간 간격의 부정 만큼 치환 된 시점을 나타내는 개체 *기간*를 지정 된 시점에서 *시간*.
+두 번째 함수를 반환 합니다는 `time_point` 시간으로 표현 되는 시간 간격의 부정 만큼 치환 된 시점을 나타내는 개체 *Dur*를 지정 된 시점에서 *Time*.
 
-세 번째 함수를 반환 합니다는 `duration` 사이의 시간 간격을 나타내는 개체 *왼쪽* 하 고 *오른쪽*합니다.
+세 번째 함수를 반환 합니다는 `duration` 사이의 시간 간격을 나타내는 개체 *Left* 하 고 *Right*합니다.
 
 ## <a name="op_neq"></a> operator!=
 
@@ -116,7 +116,7 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
 
 ### <a name="return-value"></a>반환 값
 
-각 함수가 반환 하는 `duration` 개체는 간격 길이가 *Mult* 의 길이로 곱해지고 *기간*합니다.
+각 함수가 반환 하는 `duration` 개체는 간격 길이가 *Mult* 의 길이로 곱해지고 *Dur*합니다.
 
 `is_convertible<Rep2, common_type<Rep1, Rep2>>`가 *true*가 아닌 한 첫 번째 함수는 오버로드 확인에 참여하지 않습니다. 자세한 내용은 [<type_traits>](../standard-library/type-traits.md)를 참조하세요.
 
@@ -156,7 +156,7 @@ constexpr typename common_type<Rep1, Rep2>::type
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 연산자 개체를 반환 합니다 시간 간격이 길이가 길이의 *기간* 값으로 나눈 *Div*합니다.
+첫 번째 연산자 개체를 반환 합니다 시간 간격이 길이가 길이의 *Dur* 값으로 나눈 *Div*합니다.
 
 두 번째 연산자의 간격 길이 비율을 반환 합니다. *왼쪽* 하 고 *오른쪽*합니다.
 
@@ -202,9 +202,9 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 함수는 `duration` 간격의 합계와 동일한 시간 간격을 가진 개체를 *왼쪽* 하 고 *오른쪽*합니다.
+첫 번째 함수는 `duration` 간격의 합계와 동일한 시간 간격을 가진 개체를 *Left* 하 고 *Right*합니다.
 
-두 번째 및 세 번째 함수는 반환을 `time_point` 시간 간격에 의해 치환 되는 시점을 나타내는 개체 *기간*, 특정 시점에서 *시간*합니다.
+두 번째 및 세 번째 함수는 반환을 `time_point` 시간 간격에 의해 치환 되는 시점을 나타내는 개체 *Dur*, 특정 시점에서 *Time*합니다.
 
 ## <a name="op_lt"></a> 연산자&lt;
 
@@ -232,9 +232,9 @@ constexpr bool operator<(
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 함수 **true** 하는 경우의 간격 길이가 *왼쪽* 간격 길이 보다 작으면 *오른쪽*합니다. 반환이 고, 그렇지 **false**합니다.
+첫 번째 함수 **true** 하는 경우의 간격 길이가 *Left* 간격 길이 보다 작으면 *Right*합니다. 반환이 고, 그렇지 **false**합니다.
 
-두 번째 함수는 반환 **true** 하는 경우 *왼쪽* 앞에 오는 *오른쪽*합니다. 반환이 고, 그렇지 **false**합니다.
+두 번째 함수는 반환 **true** 하는 경우 *Left* 앞에 오는 *Right*합니다. 반환이 고, 그렇지 **false**합니다.
 
 ## <a name="op_lt_eq"></a> 연산자&lt;=
 
@@ -290,9 +290,9 @@ constexpr bool operator==(
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 함수 **true** 하는 경우 *왼쪽* 하 고 *오른쪽* 길이가 같은 시간 간격을 나타냅니다. 반환이 고, 그렇지 **false**합니다.
+첫 번째 함수 **true** 하는 경우 *Left* 하 고 *Right* 길이가 같은 시간 간격을 나타냅니다. 반환이 고, 그렇지 **false**합니다.
 
-두 번째 함수는 반환 **true** 경우 *왼쪽* 하 고 *오른쪽* 동일한 시각을 나타내는지 합니다. 반환이 고, 그렇지 **false**합니다.
+두 번째 함수는 반환 **true** 경우 *Left* 하 고 *Right* 동일한 시각을 나타내는지 합니다. 반환이 고, 그렇지 **false**합니다.
 
 ## <a name="op_gt"></a> 연산자&gt;
 
@@ -384,6 +384,6 @@ constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>
 
 ### <a name="return-value"></a>반환 값
 
-첫 번째 함수는 `duration` 개체는 간격 길이가 *기간* 모듈로 *Div*합니다.
+첫 번째 함수는 `duration` 개체는 간격 길이가 *Dur* 모듈로 *Div*합니다.
 
-두 번째 함수를 나타내는 값을 반환 *왼쪽* 모듈로 *오른쪽*합니다.
+두 번째 함수를 나타내는 값을 반환 *Left* 모듈로 *Right*합니다.
