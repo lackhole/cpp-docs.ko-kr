@@ -2,16 +2,16 @@
 title: ARM ABI 규칙 개요
 ms.date: 07/11/2018
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-ms.openlocfilehash: 17f2598912879d0eb54fd189e1fae541ba2f874f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 176aaaa17af1ce358255ca94eaccc7d5217f2a87
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295243"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303190"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI 규칙 개요
 
-Windows on ARM 프로세서용으로 컴파일된 코드의 ABI(애플리케이션 이진 인터페이스)는 표준 ARM EABI를 기반으로 합니다. 이 문서에서는 Windows on ARM과 표준 간의 주요 차이점에 대해 주로 설명합니다. 이 문서에서는 ARM32 ABI를 설명합니다. ARM64 ABI에 대 한 자세한 내용은 [ARM64 ABI 개요 규칙](arm64-windows-abi-conventions.md)합니다. 표준 ARM EABI에 대 한 자세한 내용은 참조 하세요. [이진 인터페이스 ABI (응용 프로그램) ARM 아키텍처용](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) (외부 링크).
+Windows on ARM 프로세서용으로 컴파일된 코드의 ABI(애플리케이션 이진 인터페이스)는 표준 ARM EABI를 기반으로 합니다. 이 문서에서는 Windows on ARM과 표준 간의 주요 차이점에 대해 주로 설명합니다. 이 문서에서는 ARM32 ABI에 대해 설명 합니다. ARM64 ABI에 대 한 자세한 내용은 [ARM64 abi 규칙 개요](arm64-windows-abi-conventions.md)를 참조 하세요. 표준 ARM EABI에 대 한 자세한 내용은 [ARM 아키텍처에 대 한 ABI (응용 프로그램 이진 인터페이스](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) ) (외부 링크)를 참조 하세요.
 
 ## <a name="base-requirements"></a>기본 요구 사항
 
@@ -23,7 +23,7 @@ Windows on ARM은 항상 ARMv7 아키텍처에서 실행된다고 가정합니�
 
 ## <a name="endianness"></a>endian
 
-Windows on ARM은 little endian 모드에서 실행됩니다. MSVC 컴파일러와 Windows 런타임 항상 little endian 데이터를 기대합니다. ARM ISA(명령 집합 아키텍처)의 SETEND 명령은 사용자 모드 코드도 현재 endian을 변경하도록 허용하지만 이 작업은 애플리케이션에 위험하므로 수행하지 않는 것이 좋습니다. big endian 모드에서 예외가 생성되면 동작을 예측할 수 없으며 사용자 모드에서 애플리케이션 오류가 발생하거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
+Windows on ARM은 little endian 모드에서 실행됩니다. MSVC 컴파일러와 Windows 런타임에서는 항상 작은 endian 데이터를 필요로 합니다. ARM ISA(명령 집합 아키텍처)의 SETEND 명령은 사용자 모드 코드도 현재 endian을 변경하도록 허용하지만 이 작업은 애플리케이션에 위험하므로 수행하지 않는 것이 좋습니다. big endian 모드에서 예외가 생성되면 동작을 예측할 수 없으며 사용자 모드에서 애플리케이션 오류가 발생하거나 커널 모드에서 버그 검사가 수행될 수 있습니다.
 
 ## <a name="alignment"></a>맞춤
 
@@ -53,7 +53,7 @@ Windows on ARM의 명령 집합은 Thumb-2로 엄격하게 제한됩니다. 이 
 
 - 대상 명령이 다음 중 하나여야 하는 경우
 
-   |16비트 opcode|클래스|제한|
+   |16비트 opcode|클래스|Restrictions|
    |---------------------|-----------|------------------|
    |MOV, MVN|이동|Rm != PC, Rd != PC|
    |LDR, LDR[S]B, LDR[S]H|메모리에서 로드|LDR 리터럴 폼은 아님|
@@ -135,9 +135,9 @@ Windows에서는 VFPv3-D32 보조 프로세서가 지원되는 ARM 변형만을 
 
 ## <a name="parameter-passing"></a>매개 변수 전달
 
-variadic이 아닌 함수의 경우 Windows on ARM ABI는 매개 변수 전달에 대한 ARM 규칙을 따릅니다. 여기에는 VFP 및 고급 SIMD 확장이 포함됩니다. 이러한 규칙에 따라 합니다 [ARM 아키텍처에 대 한 프로시저 호출 표준](http://infocenter.arm.com/help/topic/com.arm.doc.ihi0042c/IHI0042C_aapcs.pdf)VFP 확장을 사용 하 여 통합 합니다. 기본적으로 처음 4개 정수와 최대 8개의 부동 소수점 또는 벡터 인수가 레지스터로 전달되며 추가 인수는 스택에 전달됩니다. 인수는 다음 절차를 통해 레지스터나 스택에 할당됩니다.
+variadic이 아닌 함수의 경우 Windows on ARM ABI는 매개 변수 전달에 대한 ARM 규칙을 따릅니다. 여기에는 VFP 및 고급 SIMD 확장이 포함됩니다. 이러한 규칙은 [ARM 아키텍처에 대 한](http://infocenter.arm.com/help/topic/com.arm.doc.ihi0042c/IHI0042C_aapcs.pdf)VFP 확장과 통합 된 프로시저 호출 표준을 따릅니다. 기본적으로 처음 4개 정수와 최대 8개의 부동 소수점 또는 벡터 인수가 레지스터로 전달되며 추가 인수는 스택에 전달됩니다. 인수는 다음 절차를 통해 레지스터나 스택에 할당됩니다.
 
-### <a name="stage-a-initialization"></a>A: 단계 초기화
+### <a name="stage-a-initialization"></a>단계 A: 초기화
 
 초기화는 인수 전달이 시작되기 전에 정확히 한 번 수행됩니다.
 
@@ -149,7 +149,7 @@ variadic이 아닌 함수의 경우 Windows on ARM ABI는 매개 변수 전달�
 
 1. 메모리에서 결과를 반환하는 함수를 호출하면 결과의 주소가 r0에 배치되고 NCRN은 r1로 설정됩니다.
 
-### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>단계 b: 미리 안쪽 여백 및 인수 확장명
+### <a name="stage-b-pre-padding-and-extension-of-arguments"></a>B 단계: 인수 미리 채우기 및 확장
 
 목록의 각 인수에 대해 다음 목록에서 일치하는 첫 번째 규칙이 적용됩니다.
 
@@ -159,7 +159,7 @@ variadic이 아닌 함수의 경우 Windows on ARM ABI는 매개 변수 전달�
 
 1. 인수가 복합 형식이면 크기가 가장 가까운 4의 배수로 반올림됩니다.
 
-### <a name="stage-c-assignment-of-arguments-to-registers-and-stack"></a>단계 c: 레지스터와 스택에 인수 할당
+### <a name="stage-c-assignment-of-arguments-to-registers-and-stack"></a>C 단계: 레지스터 및 스택에 인수 할당
 
 목록의 각 인수에 대해 인수가 할당될 때까지 다음 규칙이 차례로 적용됩니다.
 
@@ -187,7 +187,7 @@ variadic 함수에는 VFP 레지스터가 사용되지 않으며 단계 C 규칙
 
 `alloca`를 호출하는 함수나 스택 포인터를 동적으로 변경하는 함수 등 프레임 포인터를 사용해야 하는 함수는 함수 프롤로그에서 r11에 프레임 포인터를 설정해야 하며 에필로그까지 해당 설정 상태를 그대로 유지해야 합니다. 프레임 포인터가 필요하지 않은 함수는 모든 스택 업데이트를 프롤로그에서 수행해야 하며 에필로그까지 스택 포인터를 변경하지 않고 유지해야 합니다.
 
-스택에서 4KB 이상을 할당하는 함수는 최종 페이지 이전의 각 페이지에 순서대로 연결해야 합니다. 그러면 Windows에서 스택을 확장하기 위해 사용하는 가드 페이지를 코드가 건너뛰지 않습니다. 일반적으로는 `__chkstk` 도우미를 사용하여 이 작업을 수행합니다. 이 도우미에는 r4에서 총 스택 할당(바이트)을 4로 나눈 값이 전달되며, 그 결과로 최종 스택 할당량(바이트)이 r4에 다시 전달됩니다.
+스택에서 4KB 이상을 할당하는 함수는 최종 페이지 이전의 각 페이지에 순서대로 연결해야 합니다. 이렇게 하면 Windows에서 스택을 확장 하는 데 사용 하는 가드 페이지를 코드에서 "leap" 할 수 없습니다. 일반적으로는 `__chkstk` 도우미를 사용하여 이 작업을 수행합니다. 이 도우미에는 r4에서 총 스택 할당(바이트)을 4로 나눈 값이 전달되며, 그 결과로 최종 스택 할당량(바이트)이 r4에 다시 전달됩니다.
 
 ### <a name="red-zone"></a>빨간색 영역
 
@@ -197,31 +197,31 @@ variadic 함수에는 VFP 레지스터가 사용되지 않으며 단계 C 규칙
 
 Windows의 기본 커널 모드 스택은 3개 페이지(12KB)입니다. 커널 모드에서 큰 스택 버퍼가 포함된 함수를 만들지 않도록 주의해야 합니다. 인터럽트에 스택 위쪽 공간이 거의 없어서 스택에서 비상 버그 검사가 수행될 수 있습니다.
 
-## <a name="cc-specifics"></a>C /C++ 세부 정보
+## <a name="cc-specifics"></a>C/C++ 세부 정보
 
 열거형은 포함된 값 하나 이상에 64비트 2배 워드 스토리지가 필요하지 않으면 32비트 정수 형식입니다. 이러한 저장소가 필요한 경우 열거형 수준이 64비트 정수 형식으로 올라갑니다.
 
-다른 플랫폼과의 호환성을 유지하기 위해 `wchar_t`는 `unsigned short`와 동일하게 정의됩니다.
+`wchar_t`는 다른 플랫폼과의 호환성을 유지 하기 위해 `unsigned short`와 동일 하 게 정의 됩니다.
 
 ## <a name="stack-walking"></a>스택 워크
 
-사용 하도록 설정 하는 프레임 포인터를 사용 하 여 Windows 코드가 컴파일되면 ([/Oy (프레임 포인터 생략)](reference/oy-frame-pointer-omission.md)) 빠른 스택 워크를 사용 하도록 설정 합니다. 일반적으로 r11 레지스터는 체인의 다음 링크를 가리킵니다. 이 링크는 포인터를 스택의 이전 프레임 및 반환 주소로 지정하는 {r11, lr} 쌍입니다. 프로파일링 및 추적 개선을 위해 코드에서 프레임 포인터도 사용하도록 설정하는 것이 좋습니다.
+빠른 스택 워크를 사용할 수 있도록 프레임 포인터 ([/oy (프레임 포인터 생략)](reference/oy-frame-pointer-omission.md))를 사용 하 여 Windows 코드를 컴파일합니다. 일반적으로 r11 레지스터는 체인의 다음 링크를 가리킵니다. 이 링크는 포인터를 스택의 이전 프레임 및 반환 주소로 지정하는 {r11, lr} 쌍입니다. 프로파일링 및 추적 개선을 위해 코드에서 프레임 포인터도 사용하도록 설정하는 것이 좋습니다.
 
 ## <a name="exception-unwinding"></a>예외 해제
 
 해제 코드를 사용하여 예외 처리 중의 스택 해제를 사용하도록 설정합니다. 해제 코드는 실행 가능 이미지의 .xdata 섹션에 저장되는 바이트 시퀀스로, 함수 프롤로그 및 에필로그 코드의 작동을 요약하여 설명하므로 호출자 스택 프레임 해제를 준비하기 위해 적용된 함수 프롤로그를 실행 취소할 수 있습니다.
 
-ARM EABI는 해제 코드를 사용하는 예외 해제 모델을 지정합니다. 그러나 프로세서가 함수의 프롤로그 또는 에필로그 중간에 포함된 사례를 처리해야 하는 Windows의 해제에는 이 사양만으로는 부족합니다. ARM 예외 데이터 및 해제에 Windows에 대 한 자세한 내용은 참조 하세요 [ARM 예외 처리](arm-exception-handling.md)합니다.
+ARM EABI는 해제 코드를 사용하는 예외 해제 모델을 지정합니다. 그러나 프로세서가 함수의 프롤로그 또는 에필로그 중간에 포함된 사례를 처리해야 하는 Windows의 해제에는 이 사양만으로는 부족합니다. Windows의 ARM 예외 데이터 및 해제에 대 한 자세한 내용은 [Arm 예외 처리](arm-exception-handling.md)를 참조 하세요.
 
 `RtlAddFunctionTable` 및 관련 함수 호출에 지정된 동적 함수 테이블을 사용하여 동적으로 생성된 코드를 설명하는 것이 좋습니다. 그러면 생성된 코드가 예외 처리에 참여할 수 있습니다.
 
-## <a name="cycle-counter"></a>사이클 카운터
+## <a name="cycle-counter"></a>Cycle 카운터
 
 Windows를 실행하는 ARM 프로세서는 사이클 카운터를 지원해야 합니다. 그러나 카운터를 직접 사용하면 문제가 발생할 수 있습니다. 이러한 문제를 방지하기 위해 Windows on ARM은 정의되지 않은 opcode를 사용하여 정규화된 64비트 사이클 카운터 값을 요청합니다. C 또는 C++에서는 `__rdpmccntr64` 내장 함수를 사용하여 해당 opcode를 내보내고 어셈블리에서는 `__rdpmccntr64` 명령을 사용합니다. Cortex-A9에서는 사이클 카운터를 읽는 데 약 60개 사이클이 소요됩니다.
 
 카운터는 클록이 아닌 실제 사이클 카운터이므로 계산 빈도는 프로세서 빈도에 따라 달라집니다. 경과된 클록 시간을 측정하려면 `QueryPerformanceCounter`를 사용합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [일반적인 Visual C++ ARM 마이그레이션 문제](common-visual-cpp-arm-migration-issues.md)<br/>
 [ARM 예외 처리](arm-exception-handling.md)

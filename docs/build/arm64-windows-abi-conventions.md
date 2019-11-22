@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI 규칙 개요
 ms.date: 03/27/2019
-ms.openlocfilehash: 3a3df475b8f814fcecaf2e67a0a62c7267a0de30
-ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
+ms.openlocfilehash: 07d58bbd64795235ad63a7b26b6f18fcffdcd1d2
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74163227"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303264"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI 규칙 개요
 
@@ -65,7 +65,7 @@ Globals 및 정적의 기본 레이아웃 맞춤:
 | 1 | 1 |
 | 2 - 7 | 4 |
 | 8 - 63 | 8 |
-| > = 64 | 16 |
+| >= 64 | 16 |
 
 ## <a name="integer-registers"></a>정수 레지스터
 
@@ -73,8 +73,8 @@ AArch64 아키텍처는 32 정수 레지스터를 지원 합니다.
 
 | 레지스터 | 휘발성 여부 | 역할 |
 | - | - | - |
-| x 0 | 휘발성 | 매개 변수/스크래치 레지스터 1, 결과 등록 |
-| x1-120 | 휘발성 | 매개 변수/스크래치 레지스터 2-8 |
+| x0 | 휘발성 | 매개 변수/스크래치 레지스터 1, 결과 등록 |
+| x1-x7 | 휘발성 | 매개 변수/스크래치 레지스터 2-8 |
 | x8-x15 | 휘발성 | 스크래치 레지스터 |
 | x16-x17 | 휘발성 | 프로시저 내-호출 스크래치 레지스터 |
 | x18 | 비휘발성 | Platform register: 커널 모드에서 현재 프로세서의 KPCR을 가리킵니다. 사용자 모드에서 TEB를 가리킵니다. |
@@ -111,7 +111,7 @@ FPCR (부동 소수점 제어 레지스터)에는 it 내의 다양 한 비트 �
 | 25 | DN | 비휘발성 | 기본 NaN 모드 컨트롤입니다. |
 | 24 | FZ | 비휘발성 | 0에서 플러시 모드로의 컨트롤입니다. |
 | 23-22 | RMode | 비휘발성 | 반올림 모드 컨트롤입니다. |
-| 15, 12-8 | IDE/IXE/등 | 비휘발성 | 예외 트랩 사용 비트는 항상 0 이어야 합니다. |
+| 15, 12-8 | IDE/IXE/etc | 비휘발성 | 예외 트랩 사용 비트는 항상 0 이어야 합니다. |
 
 ## <a name="system-registers"></a>시스템 레지스터
 
@@ -253,7 +253,7 @@ ARM EABI는 해제 코드를 사용 하는 예외 해제 모델도 지정 합니
 
 여기서 주기 카운터는 벽 클록이 아닌 진정한 주기 카운터입니다. 계산 빈도는 프로세서 빈도에 따라 달라 집니다. 주기 카운터의 빈도를 알고 있어야 하는 경우에는 cycle 카운터를 사용 하지 않아야 합니다. 대신 `QueryPerformanceCounter`를 사용 해야 하는 벽 시계 시간을 측정 하려고 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [일반적인 Visual C++ ARM 마이그레이션 문제](common-visual-cpp-arm-migration-issues.md)<br/>
 [ARM64 예외 처리](arm64-exception-handling.md)

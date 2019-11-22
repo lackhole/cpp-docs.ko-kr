@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@Model symbol'
 ms.assetid: a67c04ac-6ba7-458c-8138-0346e5b85eb6
-ms.openlocfilehash: 806c631a18044b98af77ad55ec44a434b2617d34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09e5663a8c3bfe0f2ce0a94bcb4006f2dd654cc2
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180299"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301918"
 ---
-# <a name="model"></a>@Model
+# <a name="model"></a>\@모델
 
-1 **작습니다** 모델에 대 한 2 **작은** 모델에 대 한 3 **COMPACT** 모델에 대 한 4 **보통** 모델을 5 **큰**모델에 대 한 6 **아주** 모델과 7 **플랫** 모델 (숫자와 같습니다.).
+1 **작음** 모델의 경우 2, **작은** 모델의 경우 2, **COMPACT** 모델의 경우 3, **중간** 모델인 경우 4, **큰** **모델의** 경우 5
 
 ## <a name="syntax"></a>구문
 
-> @Model
+> **\@모델**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](../../assembler/masm/symbols-reference.md)
