@@ -8,25 +8,25 @@ helpviewer_keywords:
 - SECTIONREL operator
 - operator SECTIONREL
 ms.assetid: db033a9d-b029-48dd-a010-d19e3a9d1af2
-ms.openlocfilehash: 6908d8a0d21e601217b0dea34ae1f2f7f01dd1ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac8f99758541d975a1a2e505a6a7fcf3482a4432
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176345"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396479"
 ---
 # <a name="operator-sectionrel"></a>연산자 SECTIONREL
 
-최종 실행 파일 대상이 포함 된 섹션을 기준으로 식의 섹션 상대 오프셋을 반환 합니다.
+Returns the section relative offset of expression relative to the section containing the target in the final executable.
 
 ## <a name="syntax"></a>구문
 
-> SECTIONREL 식
+> **SECTIONREL** *expression*
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-SECTIONREL은 COFF 개체 내보내기만 제공 됩니다.
+**SECTIONREL** is available only with COFF object emission.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

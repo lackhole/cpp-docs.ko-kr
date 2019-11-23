@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - IFNDEF directive
 ms.assetid: 8c93efc4-9375-45b6-8583-95f0c92f2a3a
-ms.openlocfilehash: 6312b012ca49633da44272825e09aa9d9b0320f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94a1e364cb9af6e4b1a35ef52bc24a2888acac1e
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62202819"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397350"
 ---
 # <a name="ifndef"></a>IFNDEF
 
-경우에 어셈블리를 부여 *이름을* 정의 되지 않았습니다.
+Grants assembly if *name* has not been defined.
 
 ## <a name="syntax"></a>구문
 
-> IFNDEF 이름
+> **IFNDEF** *name*
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-참조 [경우](../../assembler/masm/if-masm.md) 전체 구문에 대 한 합니다.
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

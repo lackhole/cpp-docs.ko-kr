@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .UNTIL directive
 ms.assetid: 491de65d-cfb7-4d17-86b1-be83d3d84083
-ms.openlocfilehash: 8c4f7d5aa7a479cc5014f0761f4228488201a070
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 0ae9b2995a63c03c6f779540d84c3e409fe28429
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703486"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397867"
 ---
-# <a name="until-32-bit-masm"></a>. UNTIL (32 비트 MASM)
+# <a name="until-32-bit-masm"></a>.UNTIL (32-bit MASM)
 
-(32 비트 MASM에만 해당) [을 참조 하세요. 반복](../../assembler/masm/dot-repeat.md)합니다.
+(32-bit MASM only.) See [.REPEAT](../../assembler/masm/dot-repeat.md).
 
 ## <a name="syntax"></a>구문
 
-> .UNTIL
+> **.UNTIL**
 
 ## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

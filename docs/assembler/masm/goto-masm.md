@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - GOTO directive
 ms.assetid: 6a5f73e7-6784-4eae-ac52-4fc77a7f369f
-ms.openlocfilehash: a03cbda5a8ff64f6c167766f416e7744a5382ad5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 424ff295fe37e7c5ff02897a01b99a7c75876f85
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62203086"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397491"
 ---
 # <a name="goto-masm"></a>GOTO (MASM)
 
-표시 된 줄에 어셈블리를 전송할 **:**_macrolabel_합니다.
+Transfers assembly to the line marked **:** _macrolabel_.
 
 ## <a name="syntax"></a>구문
 
 > **GOTO** *macrolabel*
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**GOTO** 안에서 허용 됩니다 [매크로](macro.md)를 [에 대 한](for-masm.md)를 [FORC](forc.md)를 [반복](repeat.md), 및 [하는동안](while-masm.md)블록입니다. 합니다 *macrolabel* 대상 줄에서 유일한 지시문 이어야 하며 선행 콜론 뒤에 야 합니다.
+**GOTO** is permitted only inside [MACRO](macro.md), [FOR](for-masm.md), [FORC](forc.md), [REPEAT](repeat.md), and [WHILE](while-masm.md) blocks. The *macrolabel* target must be the only directive on the line and must be preceded by a leading colon.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

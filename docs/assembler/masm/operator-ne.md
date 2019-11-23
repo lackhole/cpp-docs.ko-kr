@@ -8,21 +8,21 @@ helpviewer_keywords:
 - NE operator
 - operator NE
 ms.assetid: 0364a3aa-e2f1-499d-8cc7-1fbec318715c
-ms.openlocfilehash: 6a088c0cbe50911cd03d694e178635e8f937fbcb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4accdc038273647197051df719ac408cb76e0c44
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176826"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396610"
 ---
 # <a name="operator-ne"></a>연산자 NE
 
-True (-1)를 반환 합니다 *expression1* 같지 *expression2*, 그렇지 않으면 false(0)를 반환 합니다.
+Returns true (-1) if *expression1* does not equal *expression2*, or returns false (0) if it does.
 
 ## <a name="syntax"></a>구문
 
-> expression1 NE expression2
+> *expression1* **NE** *expression2*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

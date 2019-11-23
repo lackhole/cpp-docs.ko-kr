@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - EXITM directive
 ms.assetid: a3484d33-04a9-4791-8d53-3fc3bc7b417c
-ms.openlocfilehash: 8d9b1e118e8afd8e2f001d5b2afca5c3d449fa4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0fc40b6dad2785c02f097910f26b7465ddf5dbcc
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62203148"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397572"
 ---
 # <a name="exitm"></a>EXITM
 
-현재 반복 또는 매크로 블록의 확장을 종료 하 고 블록 외부에서 다음 문의 어셈블리를 시작 합니다.
+Terminates expansion of the current repeat or macro block and begins assembly of the next statement outside the block.
 
 ## <a name="syntax"></a>구문
 
-> EXITM [[textitem]]
+> **EXITM** ⟦*textitem*⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-매크로 함수에서 *textitem* 값이 반환 됩니다.
+In a macro function, *textitem* is the value returned.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

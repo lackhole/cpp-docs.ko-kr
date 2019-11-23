@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - INCLUDE directive
 ms.assetid: 1c7964ee-715c-414e-a45e-74af93476eb4
-ms.openlocfilehash: e63d7cb85ad5379adcc1beea3c3c96eff0d91339
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e04cd761a7456c7337669822be87e8e5da8e805b
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184543"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397341"
 ---
 # <a name="include-masm"></a>INCLUDE (MASM)
 
-삽입 원본 제공한 소스 파일에서 코드 *filename* 어셈블리 중 현재 소스 파일에 있습니다.
+Inserts source code from the source file given by *filename* into the current source file during assembly.
 
 ## <a name="syntax"></a>구문
 
-> 파일 이름 포함
+> **INCLUDE** *filename*
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-합니다 *filename* 세미콜론으로 큰 백슬래시를 포함 하는 경우 꺾쇠 괄호로 묶어야 합니다-기호 적은 보다-기호, 작은따옴표, 큰따옴표 보다 합니다.
+The *filename* must be enclosed in angle brackets if it includes a backslash, semicolon, greater-than symbol, less-than symbol, single quotation mark, or double quotation mark.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

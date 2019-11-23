@@ -8,28 +8,28 @@ helpviewer_keywords:
 - SAFESEH directive
 - .SAFESEH directive
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
-ms.openlocfilehash: 4577bd5d76949dfb777a359c80d91814f1c45fe2
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: df9798800da293e5e0b4f545a8442380b7ff9408
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703947"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397993"
 ---
-# <a name="safeseh-32-bit-masm"></a>. SAFESEH (32 비트 MASM)
+# <a name="safeseh-32-bit-masm"></a>.SAFESEH (32-bit MASM)
 
-함수를 구조화 된 예외 처리기로 등록 합니다. (32 비트 MASM에만 해당)
+Registers a function as a structured exception handler. (32-bit MASM only.)
 
 ## <a name="syntax"></a>구문
 
-> . SAFESEH 식별자
+> **.SAFESEH** *identifier*
 
 ## <a name="remarks"></a>주의
 
-*식별자* 는 로컬로 정의 된 [Proc](../../assembler/masm/proc.md) 또는 [extrn](../../assembler/masm/extrn.md) PROC의 ID 여야 합니다. [레이블은](../../assembler/masm/label-masm.md) 허용 되지 않습니다. 여. SAFESEH 지시문을 사용 하려면 [/safeseh](../../assembler/masm/ml-and-ml64-command-line-reference.md) ml 명령줄 옵션이 필요 합니다.
+*identifier* must be the ID for a locally defined [PROC](../../assembler/masm/proc.md) or [EXTRN](../../assembler/masm/extrn.md) PROC. A [LABEL](../../assembler/masm/label-masm.md) is not allowed. The .SAFESEH directive requires the [/safeseh](../../assembler/masm/ml-and-ml64-command-line-reference.md) ml.exe command-line option.
 
-구조적 예외 처리기에 대 한 자세한 내용은 [/safeseh](../../build/reference/safeseh-image-has-safe-exception-handlers.md)를 참조 하십시오.
+For more information about structured exception handlers, see [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md).
 
-예를 들어 안전한 예외 처리기를 등록 하려면 다음과 같이 새 MASM 파일을 만들고,/safeseh를 사용 하 여 어셈블한 다음 연결 된 개체에 추가 합니다.
+For example, to register a safe exception handler, create a new MASM file (as follows), assemble with /safeseh, and add it to the linked objects.
 
 ```asm
 .386
@@ -41,4 +41,4 @@ end
 
 ## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

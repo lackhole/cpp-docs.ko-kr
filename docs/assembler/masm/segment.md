@@ -6,62 +6,62 @@ f1_keywords:
 helpviewer_keywords:
 - SEGMENT directive
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
-ms.openlocfilehash: f37be47b92a71e20821cd1e40f8cf1350dfedaff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b7344d9cb685e0212748d7835e19f398f14979e7
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210377"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393734"
 ---
 # <a name="segment"></a>SEGMENT
 
-호출 프로그램 세그먼트를 정의 *이름을* 세그먼트 특성이
+Defines a program segment called *name* having segment attributes
 
 ## <a name="syntax"></a>구문
 
-> *이름을* 세그먼트 [[읽기 전용]] [[*맞춤*]] [[*결합*]] [[*사용 하 여*]] [[*특징*]] 별칭 (*문자열*) [['*클래스*']]<br/>
-> *statements*<br/>
-> *name* ENDS
+> *name* **SEGMENT** ⟦**READONLY**⟧ ⟦*align*⟧ ⟦*combine*⟧ ⟦*use*⟧ ⟦*characteristics*⟧ **ALIAS(** _string_ **)** ⟦ __'__ *class* __'__ ⟧\
+> *statements*\
+> *name* **ENDS**
 
 #### <a name="parameters"></a>매개 변수
 
-*align(C++)*<br/>
-범위는 세그먼트의 시작 주소를을 선택할 수 있는 메모리 주소입니다. 맞춤 유형 중 하나를 수 있습니다.
+*align*<br/>
+The range of memory addresses from which a starting address for the segment can be selected. The alignment type can be any one of the following:
 
-|유형 맞춤|시작 주소|
+|Align Type|Starting Address|
 |----------------|----------------------|
-|**BYTE**|다음 사용 가능한 바이트 주소입니다.|
-|**WORD**|다음 사용 가능한 word 주소 (단어 당 2 바이트)입니다.|
-|**DWORD**|다음 사용 가능한 2 배 워드 주소 (2 배 워드 당 4 바이트)입니다.|
-|**PARA**|다음 단락을 사용할 수 있는 주소 (단락 당 16 바이트)입니다.|
-|**PAGE**|다음 사용 가능한 페이지 주소 (페이지당 256 바이트)입니다.|
-|**ALIGN**(*n*)|다음 사용 가능한 *n*번째 바이트 주소입니다. 자세한 내용은 설명 섹션을 참조 하세요.|
+|**BYTE**|Next available byte address.|
+|**WORD**|Next available word address (2 bytes per word).|
+|**DWORD**|Next available double word address (4 bytes per double word).|
+|**PARA**|Next available paragraph address (16 bytes per paragraph).|
+|**PAGE**|Next available page address (256 bytes per page).|
+|**ALIGN**(*n*)|Next available *n*th byte address. See Remarks section for more information.|
 
-이 매개 변수를 지정 하지 않으면 **반** 기본적으로 사용 됩니다.
+If this parameter is not specified, **PARA** is used by default.
 
-*combine*<br/>
+*combine*\
 **PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**
 
-*use*<br/>
+*use*\
 **USE16**, **USE32**, **FLAT**
 
-*characteristics*<br/>
-**정보**, **읽을**, **작성**를 **EXECUTE**, **공유**를 **NOPAGE**, **NOCACHE**, 및 **삭제**
+*characteristics*\
+**INFO**, **READ**, **WRITE**, **EXECUTE**, **SHARED**, **NOPAGE**, **NOCACHE**, and **DISCARD**
 
-비슷한 이름의 COFF 섹션 특성에 해당 및 COFF에 대해서만 지원 됩니다 (예를 들어 **공유** IMAGE_SCN_MEM_SHARED에 해당). 읽기는 IMAGE_SCN_MEM_READ 플래그를 설정합니다. 사용 되지 않는 읽기 전용 플래그 IMG_SCN_MEM_WRITE 플래그를 지우려면 섹션을 발생 합니다. 있는 경우 *특징* 는 설정, 기본 특성은 사용 되지 않으며 프로그래머가 지정한 플래그만 적용 됩니다.
+These are supported for COFF only and correspond to the COFF section characteristics of similar name (for example, **SHARED** corresponds to IMAGE_SCN_MEM_SHARED). READ sets the IMAGE_SCN_MEM_READ flag. The obsolete READONLY flag caused the section to clear the IMG_SCN_MEM_WRITE flag. If any *characteristics* are set, the default characteristics are not used and only the programmer-specified flags are in effect.
 
-`ALIAS(` *string* `)`<br/>
-이 문자열은 내보낸된 COFF 개체의 섹션 이름으로 사용 됩니다.  같은 이름의 외부, 서로 다른 MASM 세그먼트 이름 가진 여러 섹션을 만듭니다.
+_string_\
+This string is used as the section name in the emitted COFF object.  Creates multiple sections with the same external name, with distinct MASM segment names.
 
-지원 되지 않습니다 **/omf**합니다.
+Not supported with **/omf**.
 
-*class*<br/>
-세그먼트 해야 결합 및 어셈블된 파일의 정렬 방법을 지정 합니다. 일반적인 값은 `'DATA'`하십시오 `'CODE'`, `'CONST'` 및 `'STACK'`
+*class*\
+Designates how segments should be combined and ordered in the assembled file. Typical values are, `'DATA'`, `'CODE'`, `'CONST'` and `'STACK'`
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-에 대 한 `ALIGN(n)`하십시오 *n* 8192 개로 1에서 2의 배수가 될 수 있으며 지원 되지 않습니다 **/omf**합니다.
+For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/omf**.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

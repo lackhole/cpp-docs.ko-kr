@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - EQU directive
 ms.assetid: 96db466a-1eab-45bd-a3c2-5a59bd754eab
-ms.openlocfilehash: b08b103886330a7ffc604d0070aa6956ba68b873
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 111493690e6619c44158470fd40705cc177c544d
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185077"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397618"
 ---
 # <a name="equ"></a>EQU
 
-첫 번째 지시문의 숫자 값을 할당 *식을* 하 *이름*합니다.
+The first directive assigns numeric value of *expression* to *name*.
 
 ## <a name="syntax"></a>구문
 
-> *name* EQU *expression*
+> *name* **EQU** *expression*
 >
-> *name* EQU \<*text*>
+> *name* **EQU** __\<__ *text* __>__
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-합니다 *이름을* 나중에 다시 정의할 수 없습니다.
+The *name* cannot be redefined later.
 
-지정 된 두 번째 지시문 할당 *텍스트* 하 *이름*합니다. 합니다 *이름을* 다른 할당 될 수 있습니다 *텍스트* 나중입니다. 참조 [TEXTEQU](../../assembler/masm/textequ.md)합니다.
+The second directive assigns specified *text* to *name*. The *name* can be assigned a different *text* later. See [TEXTEQU](../../assembler/masm/textequ.md).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

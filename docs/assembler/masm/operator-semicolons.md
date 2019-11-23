@@ -8,21 +8,21 @@ helpviewer_keywords:
 - ;; operator
 - operator ;;
 ms.assetid: 94320c71-70df-4e71-8c22-e36797294e2b
-ms.openlocfilehash: 10c7395a29b3e9d7792939c3c54e9108a255f1ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f776c0e285b522c0a424fdb003e25602419a956b
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199069"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396455"
 ---
 # <a name="operator-"></a>연산자 ;;
 
-처리 *텍스트* 매크로 정의에 표시 되는 매크로에 주석으로 합니다. 목록에 표시 되지 않습니다 *텍스트* 여기서 매크로가 확장 됩니다.
+Treats *text* as a comment in a macro that appears only in the macro definition. The listing does not show *text* where the macro is expanded.
 
 ## <a name="syntax"></a>구문
 
-> ;; *text*
+> **;;** *text*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - EXTERNDEF directive
 ms.assetid: 95a10de6-c345-4428-a2f2-90f7d411dc86
-ms.openlocfilehash: 23d34af470e825a8535de8cb28645a7bfb4c4d1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 469b49832c171ee78336a0c457f0d269acd3b59d
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62203099"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397536"
 ---
 # <a name="externdef"></a>EXTERNDEF
 
-하나 이상의 외부 변수, 레이블 또는 이라는 기호를 정의 *이름을* 형식인 `type`합니다.
+Defines one or more external variables, labels, or symbols called *name* whose type is *type*.
 
 ## <a name="syntax"></a>구문
 
-> EXTERNDEF [[langtype]] 이름: 유형 [[, [[langtype]] 이름: type]]...
+> **EXTERNDEF** ⟦*language-type*⟧ *name* __:__ *type* ⟦ __,__ ⟦*language-type*⟧ *name* __:__ *type* ...⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-하는 경우 *이름을* 정의 된 모듈의 것으로 간주 됩니다 [공용](../../assembler/masm/public-masm.md)합니다. 하는 경우 *이름을* 참조 하는 모듈의 것으로 간주 됩니다 [EXTERN](../../assembler/masm/extern-masm.md)합니다. 하는 경우 *이름을* 가 참조 되지 않으면이 무시 합니다. 합니다 `type` 될 수 있습니다 [ABS](../../assembler/masm/operator-abs.md), 가져오는 *이름* 상수입니다. 일반적으로 사용 되는 파일 포함 합니다.
+If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/masm/public-masm.md). If *name* is referenced in the module, it is treated as [EXTERN](../../assembler/masm/extern-masm.md). If *name* is not referenced, it is ignored. The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Normally used in include files.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

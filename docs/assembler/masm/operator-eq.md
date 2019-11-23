@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator EQ
 - EQ operator
 ms.assetid: d88afd01-dd8e-419d-ac4e-49afb4a67197
-ms.openlocfilehash: 3e8af453b30220057179676fe0f34183f3881bd2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 20c066f8baf7c764e89ca29a7b27118437f7faa5
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62200967"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396999"
 ---
 # <a name="operator-eq"></a>연산자 EQ
 
-True (-1)를 반환 합니다 *expression1* equals *expression2*, 그렇지 않으면 false(0)를 반환 합니다.
+Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if it does not.
 
 ## <a name="syntax"></a>구문
 
-> expression1 EQ expression2
+> *expression1* **EQ** *expression2*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

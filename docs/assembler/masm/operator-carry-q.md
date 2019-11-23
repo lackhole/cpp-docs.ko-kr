@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator CARRY?
 - CARRY? operator
 ms.assetid: 5b195de7-3f66-436a-b75a-4b8d7c3c83b7
-ms.openlocfilehash: a793ec50cc5fac08b35f810b2e161b5a253b49a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 297e4501d87217d112a3163efc76368571c41d6d
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62200913"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397067"
 ---
 # <a name="operator-carry"></a>연산자 CARRY?
 
-전달 플래그의 상태입니다. 내부 에서만 사용 [합니다. IF](../../assembler/masm/dot-if.md), [합니다. 하는 동안](../../assembler/masm/dot-while.md), 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 어셈블리 때가 아니라 런타임 시 평가 차단 합니다.
+Status of carry flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## <a name="syntax"></a>구문
 
-> CARRY?
+> **CARRY?**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](../../assembler/masm/operators-reference.md)

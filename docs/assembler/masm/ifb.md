@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - IFB directive
 ms.assetid: 6395e313-e590-41b3-824c-577f200faf80
-ms.openlocfilehash: 815cb75e0d00cc660c8dfad896fbe0064881edd7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f45ce4e50e8cc33dc060e8cc4a48626e677b3c2
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62202932"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397436"
 ---
 # <a name="ifb"></a>IFB
 
-경우에 어셈블리를 부여 *textitem* 비어 있습니다.
+Grants assembly if *textitem* is blank.
 
 ## <a name="syntax"></a>구문
 
-> IFB *textitem*
+> **IFB** *textitem*
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-참조 [경우](../../assembler/masm/if-masm.md) 전체 구문에 대 한 합니다.
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

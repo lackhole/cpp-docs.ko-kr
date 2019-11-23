@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - SWORD directive
 ms.assetid: 99228a2a-4ed1-4343-a317-e59302620a55
-ms.openlocfilehash: 6209cab0de471a673d97daaeb9de42f9a1f6e2df
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0a8c28ea5666ed5d4bd606d08ddfe5455c706a3
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210042"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393583"
 ---
 # <a name="sword"></a>SWORD
 
-할당 하 고 필요에 따라 각각에 대 한 저장소의 서명 된 단어 (2 바이트)를 초기화 `initializer`합니다. 형식 지정자로 사용할 수도 있습니다 어디서 나 형식이 유효 합니다.
+Allocates and optionally initializes a signed word (2 bytes) of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal.
 
 ## <a name="syntax"></a>구문
 
-> 이름 검 이니셜라이저 [[, 이니셜라이저]]...
+> *name* **SWORD** *initializer* ⟦ __,__ *initializer* ...⟧
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
-[WORD](../../assembler/masm/word.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)\
+[WORD](../../assembler/masm/word.md)
