@@ -109,7 +109,7 @@ ms.locfileid: "72444969"
 **리소스 뷰** 창을 사용 하 여 프로젝트에 포함 된 리소스 파일을 표시할 수 있습니다. 최상위 폴더 (예: *Project1*)를 확장 하면 해당 파일 내의 리소스 종류가 표시 됩니다. 각 리소스 종류를 확장 하 여 해당 형식의 개별 리소스를 표시 합니다.
 
 > [!TIP]
-> **리소스 뷰** 창을 열려면 메뉴 **보기**@no__t**기타 Windows** > **리소스 뷰** 로 이동 하거나 **Ctrl**+**Shift**+**E**를 누릅니다.
+> **리소스 뷰** 창을 열려면 메뉴 **보기** > **기타 Windows** > **리소스 뷰** 로 이동 하거나 **ctrl**+**Shift**+**E**를 누릅니다.
 
 **리소스 뷰** 창에서 마우스 오른쪽 단추를 클릭 하 여 명령의 바로 가기 메뉴를 시작 하거나 제목 표시줄을 두 번 클릭 하 여 창의 도킹을 해제 하 고 도킹을 해제할 수도 있습니다. 창의 동작을 제어 하는 명령에 대 한 제목 표시줄을 마우스 오른쪽 단추로 클릭 합니다. 자세한 내용은 [Windows Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio)를 참조 하세요.
 
@@ -117,15 +117,15 @@ Windows 데스크톱 응용 프로그램 프로젝트에 C++ 리소스를 추가
 
 | 속성 | 설명 |
 |---|---|
-| **리소스 종류** | 만들려는 리소스의 종류를 지정 합니다.<br/><br/>커서 및 대화 상자 리소스 범주를 확장 하 여에 있는 추가 리소스를 표시할 수 *있습니다. \Microsoft Visual Studio \<version @ no__t-2\VC\VCResourceTemplates @ no__t < LCID @ no__t-4\mfc.rct*. .Rct 파일을 추가 해야 하는 경우 여기에 배치 하거나 다른 [포함 경로](../windows/how-to-specify-include-directories-for-resources.md)를 지정 합니다. 트리 컨트롤의 최상위 수준에 표시 되는 리소스는 Visual Studio에서 제공 하는 기본 리소스입니다. .Rct 파일의 리소스는 해당 범주의 두 번째 수준에 나타납니다. 추가할 수 있는 .rct 파일의 수에는 미리 설정 된 제한이 없습니다.<br/><br/> |
+| **리소스 종류** | 만들려는 리소스의 종류를 지정 합니다.<br/><br/>커서 및 대화 상자 리소스 범주를 확장 하 여에 있는 추가 리소스를 표시할 수 *있습니다. \Microsoft Visual Studio \<version\>\VC\VCResourceTemplates\\< LCID\>\mfc.rct*. .Rct 파일을 추가 해야 하는 경우 여기에 배치 하거나 다른 [포함 경로](../windows/how-to-specify-include-directories-for-resources.md)를 지정 합니다. 트리 컨트롤의 최상위 수준에 표시 되는 리소스는 Visual Studio에서 제공 하는 기본 리소스입니다. .Rct 파일의 리소스는 해당 범주의 두 번째 수준에 나타납니다. 추가할 수 있는 .rct 파일의 수에는 미리 설정 된 제한이 없습니다.<br/><br/> |
 | **새로 만들기** | **리소스 유형** 상자에서 선택한 유형을 기반으로 리소스를 만들고 해당 편집기에서 리소스를 엽니다.<br/><br/>예를 들어, 대화 상자 리소스를 만들면 [대화 상자 편집기](../windows/dialog-editor.md)에서 리소스를 엽니다. |
-| **Import** | **가져오기** 대화 상자를 열어 현재 프로젝트로 가져올 리소스로 이동 합니다.<br/><br/>비트맵, 아이콘, 커서, HTML, 소리 (.)를 가져올 수 있습니다. WAV) 또는 사용자 지정 리소스 파일을 지정 합니다. |
+| **가져오기** | **가져오기** 대화 상자를 열어 현재 프로젝트로 가져올 리소스로 이동 합니다.<br/><br/>비트맵, 아이콘, 커서, HTML, 소리 (.)를 가져올 수 있습니다. WAV) 또는 사용자 지정 리소스 파일을 지정 합니다. |
 | **사용자 지정** | **새 사용자 지정 리소스** 대화 상자를 열고 사용자 지정 리소스를 만듭니다.<br/><br/>에는 사용자 지정 리소스 종류의 이름을 입력할 수 있는 텍스트 상자를 제공 하는 **리소스 종류** 속성도 포함 되어 있습니다. 종료 C++ 하면 자동으로 이름을 대문자로 표시 합니다. 사용자 지정 리소스는 [이진 편집기](../windows/binary-editor.md)에서만 편집 됩니다. |
 
-새 리소스를 만드는 경우 시각적 C++ 개체에 고유한 이름이 할당 됩니다 (예: `IDD_Dialog1`). 연결 된 리소스 편집기 또는 [속성 창](/visualstudio/ide/reference/properties-window)에서 리소스 속성을 편집 하 여이 리소스 ID를 사용자 지정할 수 있습니다.
+새 리소스를 만들면 Visual C++은 `IDD_Dialog1`과 같은 고유 이름을 할당합니다. 연결 된 리소스 편집기 또는 [속성 창](/visualstudio/ide/reference/properties-window)에서 리소스 속성을 편집 하 여이 리소스 ID를 사용자 지정할 수 있습니다.
 
 > [!NOTE]
-> Visual Studio에서 예약 된 리소스 이름 또는 ID를 지정 하지 마세요. 예약 된 이름은 `DESIGNINFO`, `HWB` 및 `TEXTINCLUDE` 이며 예약 된 ID는-3 @no__t입니다.
+> Visual Studio에서 예약 된 리소스 이름 또는 ID를 지정 하지 마세요. 예약 된 이름은 `DESIGNINFO`, `HWB`및 `TEXTINCLUDE`이며 예약 된 ID는 `255`입니다.
 
 ### <a name="to-create-a-resource"></a>리소스를 만들려면
 
@@ -141,7 +141,7 @@ Windows 데스크톱 응용 프로그램 프로젝트에 C++ 리소스를 추가
 
 - [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 클래스를 마우스 오른쪽 단추로 클릭 하 고 **추가** > **리소스 추가** 를 선택한 다음 프로젝트에 추가할 리소스 형식을 선택 합니다.
 
-- 메뉴 **프로젝트** > **리소스 추가**를 사용 합니다.
+- 메뉴 **프로젝트** 를 사용 하 여 **리소스 > 추가**합니다.
 
 ## <a name="use-resource-templates"></a>리소스 템플릿 사용
 
@@ -153,13 +153,13 @@ Windows 데스크톱 응용 프로그램 프로젝트에 C++ 리소스를 추가
 > 리소스 편집기에서 자동으로 고유한 리소스 ID를 제공합니다. 필요에 따라 [리소스 속성](../windows/changing-the-properties-of-a-resource.md) 을 수정할 수 있습니다.
 
 > [!NOTE]
-> 기본 템플릿 디렉터리의 하위 디렉터리에 언어별 템플릿 파일을 저장 합니다. 예를 들어 영어 전용 템플릿 파일은로 이동 *합니다. \\ < 리소스 템플릿 디렉터리 @ no__t-2\1033*.
+> 기본 템플릿 디렉터리의 하위 디렉터리에 언어별 템플릿 파일을 저장 합니다. 예를 들어 영어 전용 템플릿 파일은 *\\< 리소스 템플릿 디렉터리\>\ 1033*로 이동 합니다.
 >
-> Visual Studio에서 새 .rct 파일을 검색 합니다. *Files\Microsoft Visual studio \<version @ no__t-2\VC\VCResourceTemplates*, *fileFiles\Microsoft visual studio \<version > \VC\VCResourceTemplates @ no__t-5 < LCID @ no__t* (예: 영어의 lcid 1033) 또는 [포함 경로의](../windows/how-to-specify-include-directories-for-resources.md)아무 곳에 나 있습니다. 다른 위치에 .rct 파일을 저장 하려면 해당 위치를 포함 경로에 추가 해야 합니다.
+> Visual Studio는 *Files\Microsoft Visual studio \<version\>\VC\VCResourceTemplates*, *fileFiles\Microsoft visual studio \<version > \VC\VCRESOURCETEMPLATES\\< lcid\>* (예: 영어에 대 한 1033 lcid) 또는 [포함 경로의](../windows/how-to-specify-include-directories-for-resources.md)아무 곳에서 나 새 .rct 파일을 검색 합니다. 다른 위치에 .rct 파일을 저장 하려면 해당 위치를 포함 경로에 추가 해야 합니다.
 
 ### <a name="to-create-and-use-a-resource-template"></a>리소스 템플릿을 만들고 사용 하려면
 
-1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** >  추가**새 항목**을 선택 합니다.
+1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** > **새 항목 추가**를 선택 합니다.
 
 1. **템플릿:** 창에서 **리소스 템플릿 파일 (.rct)** 을 선택 합니다.
 
@@ -181,13 +181,13 @@ Windows 데스크톱 응용 프로그램 프로젝트에 C++ 리소스를 추가
 
 ### <a name="to-convert-an-existing-resource-file-to-a-template"></a>기존 리소스 파일을 템플릿으로 변환 하려면
 
-리소스 스크립트 파일을 열고 메뉴에서 **파일** > **저장 \<*파일 이름*** 로 이동 합니다. 위치를 지정 하 고 **확인**을 선택 합니다.
+리소스 스크립트 파일을 연 상태에서 메뉴의 **파일 > 파일** 이름으로 **저장 \<파일 *이름*>을로**이동 합니다. 위치를 지정 하 고 **확인**을 선택 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 Win32
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [방법: 리소스 관리](../windows/how-to-copy-resources.md)<br/>

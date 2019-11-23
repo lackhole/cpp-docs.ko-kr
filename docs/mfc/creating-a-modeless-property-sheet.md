@@ -21,13 +21,13 @@ ms.locfileid: "71685686"
 
 추가 작업 중 하나는 속성 시트와 속성 시트를 열 때 수정 하는 외부 개체 간에 데이터를 교환 하는 것입니다. 일반적으로 표준 모덜리스 대화 상자와 같은 작업입니다. 이 작업의 일부는 모덜리스 속성 시트와 속성 설정이 적용 되는 외부 개체 간의 통신 채널을 구현 하는 것입니다. 이 구현은 모덜리스 속성 시트에 대해 [CPropertySheet](../mfc/reference/cpropertysheet-class.md) 에서 클래스를 파생 하는 경우 훨씬 더 쉽습니다. 이 문서에서는 사용자가를 완료 했다고 가정 합니다.
 
-모덜리스 속성 시트와 외부 개체 (예: 뷰의 현재 선택 항목) 간에 통신 하는 한 가지 방법은 속성 시트에서 외부 개체에 대 한 포인터를 정의 하는 것입니다. @No__t -1 파생 클래스에 함수 (`SetMyExternalObject`과 같은 함수)를 정의 하 여 포커스가 외부 개체 간에 변경 될 때마다 포인터를 변경 합니다. @No__t-0 함수는 새로 선택한 외부 개체가 반영 되도록 각 속성 페이지에 대 한 설정을 다시 설정 해야 합니다. 이를 위해 `SetMyExternalObject` 함수는 @no__t 2 클래스에 속하는 [CPropertyPage](../mfc/reference/cpropertypage-class.md) 개체에 액세스할 수 있어야 합니다.
+모덜리스 속성 시트와 외부 개체 (예: 뷰의 현재 선택 항목) 간에 통신 하는 한 가지 방법은 속성 시트에서 외부 개체에 대 한 포인터를 정의 하는 것입니다. `CPropertySheet`파생 클래스에 `SetMyExternalObject`와 같은 함수를 정의 하 여 포커스가 외부 개체 간에 변경 될 때마다 포인터를 변경 합니다. `SetMyExternalObject` 함수는 새로 선택한 외부 개체가 반영 되도록 각 속성 페이지에 대 한 설정을 다시 설정 해야 합니다. 이를 수행 하려면 `SetMyExternalObject` 함수에서 `CPropertySheet` 클래스에 속한 [CPropertyPage](../mfc/reference/cpropertypage-class.md) 개체에 액세스할 수 있어야 합니다.
 
-속성 시트 내에서 속성 페이지에 대 한 액세스를 제공 하는 가장 편리한 방법은 @no__t -1 된 개체에 `CPropertyPage` 개체를 포함 하는 것입니다. @No__t -1 파생 개체에 `CPropertyPage` 개체를 포함 하는 것은 속성 시트의 소유자가 `CPropertyPage` 개체를 만들고이를 [CPropertySheet:: AddPage](../mfc/reference/cpropertysheet-class.md#addpage)를 통해 속성 시트에 전달 하는 일반적인 모달 디자인 대화 상자와 다릅니다.
+속성 시트 내에서 속성 페이지에 대 한 액세스를 제공 하는 가장 편리한 방법은 `CPropertySheet`파생 개체에 `CPropertyPage` 개체를 포함 하는 것입니다. `CPropertySheet`파생 개체에 `CPropertyPage` 개체를 포함 하는 것은 속성 시트의 소유자가 `CPropertyPage` 개체를 만들고 [CPropertySheet:: AddPage](../mfc/reference/cpropertysheet-class.md#addpage)를 통해 속성 시트에 전달 하는 일반적인 모달 디자인 대화 상자와 다릅니다.
 
 모덜리스 속성 시트의 설정을 외부 개체에 적용할지 여부를 결정 하는 데는 여러 가지 사용자 인터페이스 대안이 있습니다. 한 가지 대안은 사용자가 값을 변경할 때마다 현재 속성 페이지의 설정을 적용 하는 것입니다. 또 다른 방법은 적용 단추를 제공 하는 것입니다 .이 단추를 사용 하면 사용자가 속성 페이지에서 변경 내용을 외부 개체에 커밋하기 전에 누적 시킬 수 있습니다. 적용 단추를 처리 하는 방법에 대 한 자세한 내용은 [적용 단추 처리](../mfc/handling-the-apply-button.md)문서를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [속성 시트](../mfc/property-sheets-mfc.md)<br/>
 [데이터 교환](../mfc/exchanging-data.md)<br/>

@@ -30,7 +30,7 @@ Intel 고급 벡터 확장명 2 명령을 사용하도록 설정합니다.
 **/arch: AVX512**<br/>
 Intel Advanced Vector Extensions 512 지침을 사용할 수 있습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **/Arch** 옵션을 사용 하면 INTEL 및 AMD의 프로세서에서 사용할 수 있는 특정 명령 집합 확장 (특히 벡터 계산의 경우)을 사용할 수 있습니다. 일반적으로 가장 최근에 도입된 프로세서는 이전 프로세서에서 지원하는 것 보다 더 많은 확장을 지원할 수 있습니다. 그러나 특정 프로세서에 대한 설명서를 참조하거나 [__cpuid](../../intrinsics/cpuid-cpuidex.md)을 사용하여 명령 집합 확장을 지원하는지 테스트해야 합니다.
 
@@ -48,11 +48,11 @@ Intel Advanced Vector Extensions 512 지침을 사용할 수 있습니다.
 
 각 **/arch** 옵션은 해당 옵션과 관련 된 다른 벡터가 아닌 명령을 사용 하도록 설정할 수도 있습니다. 예를 들어 **/arch: AVX2** 가 지정 된 경우 특정 BMI 명령을 사용 하는 경우를 들 수 있습니다.
 
-@No__t-0 전처리기 기호는 **/arch: AVX**, **/arch: AVX2** 또는 **/arch: AVX512** 컴파일러 옵션이 지정 된 경우에 정의 됩니다. @No__t-0 전처리기 기호는 **/arch: AVX2** 또는 **/arch: AVX512** 컴파일러 옵션을 지정할 때 정의 됩니다. @No__t-0, `__AVX512CD__`, @no__t 2, `__AVX512DQ__` 및 `__AVX512VL__` 전처리기 기호는 **/arch: AVX512** 컴파일러 옵션이 지정 된 경우에 정의 됩니다. 자세한 내용은 [Predefined Macros](../../preprocessor/predefined-macros.md)을 참조하십시오. **/Arch: AVX2** 옵션은 업데이트 2, 버전 12.0.34567.1 Visual Studio 2013에서 도입 되었습니다. **/Arch: AVX512** 에 대 한 제한 된 지원은 visual studio 2017에 추가 되었으며 visual studio 2019에서 확장 되었습니다.
+`__AVX__` 전처리기 기호는 **/arch: AVX**, **/arch: AVX2** 또는 **/arch: AVX512** 컴파일러 옵션이 지정 된 경우에 정의 됩니다. `__AVX2__` 전처리기 기호는 **/arch: AVX2** 또는 **/arch: AVX512** 컴파일러 옵션을 지정할 때 정의 됩니다. `__AVX512F__`, `__AVX512CD__`, `__AVX512BW__`, `__AVX512DQ__` 및 `__AVX512VL__` 전처리기 기호는 **/arch: AVX512** 컴파일러 옵션이 지정 된 경우에 정의 됩니다. 자세한 내용은 [Predefined Macros](../../preprocessor/predefined-macros.md)을 참조하십시오. **/Arch: AVX2** 옵션은 업데이트 2, 버전 12.0.34567.1 Visual Studio 2013에서 도입 되었습니다. **/Arch: AVX512** 에 대 한 제한 된 지원은 visual studio 2017에 추가 되었으며 visual studio 2019에서 확장 되었습니다.
 
 ### <a name="to-set-the-archavx-archavx2-or-archavx512-compiler-option-in-visual-studio"></a>Visual Studio에서/arch: AVX,/arch: AVX2 또는/arch: AVX512 컴파일러 옵션을 설정 하려면
 
-1. 프로젝트에 대한 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조합니다.
+1. 프로젝트에 대한 **속성 페이지** 대화 상자를 엽니다. 자세한 정보는 [Visual Studio에서 C++ 컴파일러 및 빌드 속성 설정](../working-with-project-properties.md)을 참조하세요.
 
 1. **구성 속성**, **C/C++** 폴더를 선택합니다.
 
@@ -64,7 +64,7 @@ Intel Advanced Vector Extensions 512 지침을 사용할 수 있습니다.
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>을 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [/arch(최소 CPU 아키텍처)](arch-minimum-cpu-architecture.md)<br/>
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
