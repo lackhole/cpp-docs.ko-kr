@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - .ENDPROLOG directive
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35
-ms.openlocfilehash: e6450ff0daaf679738cbbfe224002b01fe97b8ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2eb635264590d7323c67d69b56a539907fe2c25
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185331"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398461"
 ---
 # <a name="endprolog"></a>.ENDPROLOG
 
-프롤로그 선언의 끝 신호를 보냅니다.
+Signals the end of the prologue declarations.
 
 ## <a name="syntax"></a>구문
 
-> .ENDPROLOG
+> **.ENDPROLOG**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-간의 지역 외부에서 프롤로그 선언 중 하나를 사용 하는 것 [PROC](../../assembler/masm/proc.md) 프레임 및 합니다. 프롤로그 끝입니다.
+It is an error to use any of the prologue declarations outside of the region between [PROC](../../assembler/masm/proc.md) **FRAME** and **.ENDPROLOG**.
 
-자세한 내용은 [MASM (ml64.exe) x64](../../assembler/masm/masm-for-x64-ml64-exe.md)합니다.
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

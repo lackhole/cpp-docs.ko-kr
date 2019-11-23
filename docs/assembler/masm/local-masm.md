@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - LOCAL directive
 ms.assetid: 76147e2d-23ca-4f1e-8817-81428becd113
-ms.openlocfilehash: 94af498865151ff5c49fac9dbc03de65c4ecb934
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3a04f68b7fd17b2b6459c219a98fd99ec2d62d4
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178009"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397250"
 ---
 # <a name="local-masm"></a>LOCAL (MASM)
 
-매크로 내 첫 번째 지시문에서 **로컬** 매크로의 각 인스턴스에 대해 고유한 레이블을 정의 합니다.
+In the first directive, within a macro, **LOCAL** defines labels that are unique to each instance of the macro.
 
 ## <a name="syntax"></a>구문
 
-> LOCAL *localname* \[, *localname*] ...
+> **LOCAL** *localname* ⟦, *localname* ...⟧
 >
-> LOCAL *label* \[ __\[__*count*__]__ ] \[__:__*type*] \[__,__ *label* \[ __\[__*count*__]__ ] \[*type*] ] ...
+> **LOCAL** *label* ⟦ __\[__ *count* __]__ ⟧ ⟦ __:__ *type*⟧ ⟦ __,__ *label* ⟦ __\[__ *count* __]__ ⟧ ⟦*type*⟧ ...⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-프로시저 정의 내에서 두 번째 지시문에서 (**PROC**), **로컬** 절차 중에 존재 하는 스택 기반 변수를 만듭니다. *레이블을* 단순 변수 또는 포함 하는 배열 될 수 있습니다 *개수* 요소입니다.
+In the second directive, within a procedure definition (**PROC**), **LOCAL** creates stack-based variables that exist for the duration of the procedure. The *label* may be a simple variable or an array containing *count* elements.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

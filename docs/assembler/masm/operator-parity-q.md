@@ -8,21 +8,21 @@ helpviewer_keywords:
 - PARITY? operator
 - operator PARITY?
 ms.assetid: f8c52def-c4b7-4b81-af96-2b0c2d943f6c
-ms.openlocfilehash: 12c9a8a4e2127274f915a60c83232c0266a17061
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5abfcf12a22240f5ffe7ef01c0156c0f48845e5
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199543"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396522"
 ---
 # <a name="operator-parity"></a>연산자 PARITY?
 
-패리티 플래그의 상태입니다. 내부 에서만 사용 [합니다. IF](../../assembler/masm/dot-if.md), [합니다. 하는 동안](../../assembler/masm/dot-while.md), 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 어셈블리 때가 아니라 런타임 시 평가 차단 합니다.
+Status of parity flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## <a name="syntax"></a>구문
 
-> 패리티?
+> **PARITY?**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

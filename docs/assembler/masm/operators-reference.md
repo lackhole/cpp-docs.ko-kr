@@ -1,93 +1,93 @@
 ---
-title: MASM 연산자 참조
+title: MASM Operators reference
 ms.date: 08/30/2018
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), operators reference
 - operators [MASM]
 ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
-ms.openlocfilehash: cb97c5dcb640b8d8592d842afd7dbb8cf9d0852c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5295307ad668b76e5ff39882ce2613f2042f914a
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210816"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395210"
 ---
-# <a name="masm-operators-reference"></a>MASM 연산자 참조
+# <a name="masm-operators-reference"></a>MASM Operators reference
 
-## <a name="arithmetic"></a>산술 연산
+## <a name="arithmetic"></a>Arithmetic
 
 ||||
 |-|-|-|
-|[* (곱하기)](operator-multiply.md)|[+ (더하기)](operator-add.md)|[-(빼기 또는 부정)](operator-subtract-2.md)|
-|[. (필드)](operator-dot.md)|[/ (나누기)](operator-subtract-1.md)|[&#91;&#93;(인덱스)](operator-brackets.md)|
-|[MOD (나머지)](operator-mod.md)|||
+|[* (multiply)](operator-multiply.md)|[+ (add)](operator-add.md)|[- (subtract or negate)](operator-subtract-2.md)|
+|[. (field)](operator-dot.md)|[/ (divide)](operator-subtract-1.md)|[&#91;&#93; (index)](operator-brackets.md)|
+|[MOD (remainder)](operator-mod.md)|||
 
 ## <a name="control-flow"></a>제어 흐름
 
 ||||
 |-|-|-|
-|[\! (논리적 not 런타임)](operator-logical-not-masm-run-time.md)|[\!= (같지 않음 런타임)](operator-not-equal-masm.md)|[&#124;&#124;(런타임 논리 또는)](operator-logical-or.md)|
-|[& & (논리적 런타임 및)](operator-logical-and-masm-run-time.md)|[< (런타임 미만)](operator-less-than-masm-run-time.md)|[\<= (작거나 런타임)](operator-less-or-equal-masm-run-time.md)|
-|[(같은 런타임) = =](operator-equal-masm-run-time.md)|[> (보다 큰 런타임)](operator-greater-than-masm-run-time.md)|[> = (크거나 런타임)](operator-greater-or-equal-masm-run-time.md)|
-|[& (비트 런타임 및)](operator-bitwise-and.md)|||
-|[CARRY? (런타임 전달 테스트)](operator-carry-q.md)|[OVERFLOW? (런타임 오버플로 테스트)](operator-overflow-q.md)|[패리티? (런타임 패리티 테스트)](operator-parity-q.md)|
-|[SIGN? (런타임 sign 테스트)](operator-sign-q.md)|[ZERO? (0 런타임 테스트)](operator-zero-q.md)||
+|[\! (runtime logical not)](operator-logical-not-masm-run-time.md)|[\!= (runtime not equal)](operator-not-equal-masm.md)|[&#124;&#124; (runtime logical or)](operator-logical-or.md)|
+|[&& (runtime logical and)](operator-logical-and-masm-run-time.md)|[< (runtime less than)](operator-less-than-masm-run-time.md)|[\<= (runtime less or equal)](operator-less-or-equal-masm-run-time.md)|
+|[== (runtime equal)](operator-equal-masm-run-time.md)|[> (runtime greater than)](operator-greater-than-masm-run-time.md)|[>= (runtime greater or equal)](operator-greater-or-equal-masm-run-time.md)|
+|[& (runtime bitwise and)](operator-bitwise-and.md)|||
+|[CARRY? (runtime carry test)](operator-carry-q.md)|[OVERFLOW? (runtime overflow test)](operator-overflow-q.md)|[PARITY? (runtime parity test)](operator-parity-q.md)|
+|[SIGN? (runtime sign test)](operator-sign-q.md)|[ZERO? (runtime zero test)](operator-zero-q.md)||
 
-## <a name="logical-and-shift"></a>논리적 및 Shift
+## <a name="logical-and-shift"></a>Logical and Shift
 
 ||||
 |-|-|-|
-|[및 (비트 및)](operator-and.md)|[없습니다 (비트 not)](operator-not.md)|[OR (비트 또는)](operator-or.md)|
-|[SHL (shift 왼쪽 비트)](operator-shl.md)|[SHR (오른쪽 shift 비트)](operator-shr.md)|[XOR (배타적 비트 또는)](operator-xor.md)|
+|[AND (bitwise and)](operator-and.md)|[NOT (bitwise not)](operator-not.md)|[OR (bitwise or)](operator-or.md)|
+|[SHL (shift bits left)](operator-shl.md)|[SHR (shift bits right)](operator-shr.md)|[XOR (bitwise exclusive or)](operator-xor.md)|
 
 ## <a name="macro"></a>매크로
 
 ||||
 |-|-|-|
-|[\! (리터럴 문자)](operator-logical-not-masm.md)|[% (텍스트로 처리)](operator-percent.md)||
-|[;; (주석으로 처리)](operator-semicolons.md)|[&lt; &gt; (하나의 리터럴로 처리)](operator-literal.md)|[& & (매개 변수 값 대체)](operator-logical-and-masm.md)|
+|[\! (character literal)](operator-logical-not-masm.md)|[% (treat as text)](operator-percent.md)||
+|[;; (treat as comment)](operator-semicolons.md)|[&lt; &gt; (treat as one literal)](operator-literal.md)|[& & (substitute parameter value)](operator-logical-and-masm.md)|
 
 ## <a name="miscellaneous"></a>기타
 
 ||||
 |-|-|-|
-|[' ' (문자열로 처리 됨)](operator-single-quote.md)|["" (문자열로 처리 됨)](operator-double-quote.md)||
-|: (로컬 레이블 정의)|:: (세그먼트와 오프셋을 등록)|:: (전역 레이블 정의)|
-|[; (주석으로 처리)](operator-semicolon.md)|[DUP (반복 선언)](operator-dup.md)||
+|[' ' (treat as string)](operator-single-quote.md)|[" " (treat as string)](operator-double-quote.md)||
+|: (local label definition)|:: (register segment and offset)|:: (global label definition)|
+|[; (treat as comment)](operator-semicolon.md)|[DUP (repeat declaration)](operator-dup.md)||
 
 ## <a name="record"></a>녹음
 
 |||
 |-|-|
-|[마스크 (레코드 또는 필드 비트 마스크 가져오기)](operator-mask.md)|[너비 (레코드 또는 필드 너비 get)](operator-width.md)|
+|[MASK (get record or field bitmask)](operator-mask.md)|[WIDTH (get record or field width)](operator-width.md)|
 
 ## <a name="relational"></a>관계
 
 ||||
 |-|-|-|
-|[EQ (같음)](operator-eq.md)|[GE (크거나 같음)](operator-ge.md)|[GT (보다 큼)](operator-gt.md)|
-|[LE (보다 작거나)](operator-le.md)|[LT (보다 작음)](operator-lt.md)|[NE (같지 않음)](operator-ne.md)|
+|[EQ (equal)](operator-eq.md)|[GE (greater or equal)](operator-ge.md)|[GT (greater than)](operator-gt.md)|
+|[LE (less or equal)](operator-le.md)|[LT (less than)](operator-lt.md)|[NE (not equal)](operator-ne.md)|
 
-## <a name="segment"></a>세그먼트
+## <a name="segment"></a>Segment
 
 |||
 |-|-|
-|[: (재정의 세그먼트)](operator-colon.md)|:: (세그먼트와 오프셋을 등록)|
-|[IMAGEREL (이미지 상대 오프셋)](operator-imagerel.md)|[LROFFSET (로더 오프셋을 해결 하는 데 사용)](operator-lroffset.md)|
-|[오프셋 (세그먼트 상대 오프셋)](operator-offset.md)|[SECTIONREL (섹션 상대 오프셋)](operator-sectionrel.md)|
-|[SEG (get 세그먼트)](operator-seg.md)||
+|[: (segment override)](operator-colon.md)|:: (register segment and offset)|
+|[IMAGEREL (image relative offset)](operator-imagerel.md)|[LROFFSET (loader resolved offset)](operator-lroffset.md)|
+|[OFFSET (segment relative offset)](operator-offset.md)|[SECTIONREL (section relative offset)](operator-sectionrel.md)|
+|[SEG (get segment)](operator-seg.md)||
 
-## <a name="type"></a>형식
+## <a name="type"></a>Type
 
 ||||
 |-|-|-|
-|[높음 (가장 낮은 16 비트의 상위 8 비트)](operator-high.md)|[HIGH32 (64 비트의 상위 32 비트)](operator-high32.md)|[HIGHWORD (가장 낮은 32 비트의 상위 16 비트)](operator-highword.md)|
-|[길이 (배열의 요소 수)](operator-length.md)|[LENGTHOF (배열의 요소 수)](operator-lengthof.md)|[낮음 (낮은 8 비트)](operator-low.md)|
-|[LOW32 (낮은 32 비트)](operator-low32.md)|[LOWWORD (낮은 16 비트)](operator-lowword.md)|[OPATTR (get 인수 형식 정보)](operator-opattr.md)|
-|[PTR (포인터와 형식으로)](operator-ptr.md)|[SHORT (mark 짧은 레이블 형식)](operator-short.md)|[크기 (형식 또는 변수의 크기)](operator-size.md)|
-|[SIZEOF (형식 또는 변수의 크기)](operator-sizeof.md)|[이 (현재 위치)](operator-this.md)|[유형 (가져오기 식 유형)](operator-type.md)|
-|[. 형식 (get 인수 형식 정보)](operator-dot-type.md)|||
+|[HIGH (high 8 bits of lowest 16 bits)](operator-high.md)|[HIGH32 (high 32 bits of 64 bits)](operator-high32.md)|[HIGHWORD (high 16 bits of lowest 32 bits)](operator-highword.md)|
+|[LENGTH (number of elements in array)](operator-length.md)|[LENGTHOF (number of elements in array)](operator-lengthof.md)|[LOW (low 8 bits)](operator-low.md)|
+|[LOW32 (low 32 bits)](operator-low32.md)|[LOWWORD (low 16 bits)](operator-lowword.md)|[OPATTR (get argument type info)](operator-opattr.md)|
+|[PTR (pointer to or as type)](operator-ptr.md)|[SHORT (mark short label type)](operator-short.md)|[SIZE (size of type or variable)](operator-size.md)|
+|[SIZEOF (size of type or variable)](operator-sizeof.md)|[THIS (current location)](operator-this.md)|[TYPE (get expression type)](operator-type.md)|
+|[.TYPE (get argument type info)](operator-dot-type.md)|||
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [Microsoft 매크로 어셈블러 참조](microsoft-macro-assembler-reference.md)<br/>

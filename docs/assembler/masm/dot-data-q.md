@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .DATA? directive
 ms.assetid: f454f8d7-e23b-458c-a2c4-8441f1afdc82
-ms.openlocfilehash: 93dcc302ec0a5d5e79ae6389e592e7dc2eb6c373
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e70a18af9e932b4aad587df576e49f820881595
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62204611"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398525"
 ---
 # <a name="data"></a>.DATA?
 
-와 함께 사용할 경우 [합니다. 모델](../../assembler/masm/dot-model.md), 초기화 되지 않은 데이터 (세그먼트 이름 _BSS)에 대 한 거의 데이터 세그먼트를 시작 합니다.
+When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for uninitialized data (segment name _BSS).
 
 ## <a name="syntax"></a>구문
 
-> .DATA?
+> **.DATA?**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

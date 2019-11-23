@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - ALIGN directive
 ms.assetid: 1c386b23-439f-4ec3-a6de-74427b25e47f
-ms.openlocfilehash: eb42b1952b3fd59438f0dd4c29d48c91c4d8864d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22b18f2e238c780377b84fc2be3eb6678686bb73
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166479"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399281"
 ---
 # <a name="align-masm"></a>ALIGN (MASM)
 
-합니다 **ALIGN** 지시문 다음 데이터 요소 또는 해당 매개 변수의 배수인 주소에는 명령에 맞춥니다. 매개 변수 2의 거듭제곱 이어야 합니다 (예: 1, 2, 4, 및 등)는 보다 작거나 세그먼트 맞춤 합니다.
+The **ALIGN** directive aligns the next data element or instruction on an address that is a multiple of its parameter. The parameter must be a power of 2 (for example, 1, 2, 4, and so on) that is less than or equal to the segment alignment.
 
 ## <a name="syntax"></a>구문
 
-> ALIGN [[*number*]]
+> **ALIGN** ⟦*number*⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-합니다 **ALIGN** 지시문을 사용 하면 데이터 요소 또는 명령의의 시작 오프셋을 지정할 수 있습니다. 정렬 된 데이터는 데이터 요소 사이 불필요 하 게 공백 희생 성능을 개선할 수 있습니다. 캐시 라인 내에 맞는 경계에 데이터 액세스의 경우 성능이 크게 향상을 볼 수 있습니다. 네이티브 형식에 대 한 자연 경계에 대 한 액세스는 내부 하드웨어 재정렬 마이크로코드에 소요 된 시간을 의미 합니다.
+The **ALIGN** directive allows you to specify the beginning offset of a data element or an instruction. Aligned data can improve performance, at the expense of wasted space between data elements. Large performance improvements can be seen when data accesses are on boundaries that fit within cache lines. Accesses on natural boundaries for native types means less time spent in internal hardware realignment microcode.
 
-정렬 된 지침에 대 한 필요성은 플랫 주소 지정 모델을 사용 하지만 다른 주소 지정 모델에 대 한 이전 코드에서 점프 대상에 필요할 수 있습니다 최신 프로세서에서 드물게 나타납니다.
+The need for aligned instructions is rare on modern processors that use a flat addressing model, but may be required for jump targets in older code for other addressing models.
 
-데이터 aligned 인 경우 건너뛴된 공간을 0으로 채워집니다. 지침, 맞춰진 경우 건너뛴된 공간 크기가 적절 하 게 NOP 지침으로 채워집니다.
+When data is aligned, the skipped space is padded with zeroes. When instructions are aligned, the skipped space is filled with appropriately-sized NOP instructions.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[EVEN](even.md)<br/>
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[EVEN](even.md)\
+[Directives reference](directives-reference.md)

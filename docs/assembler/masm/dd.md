@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - DD directive
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-ms.openlocfilehash: 6022da53ad8cde2b90431bfaf5b1ea2ddc0cac34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e87098d2536cce5d818a0759f50b42fa50cb887a
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178810"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398792"
 ---
 # <a name="dd"></a>DD
 
-할당 하 고 필요에 따라 각각에 대 한 저장소의 2 배 워드 (4 바이트)를 초기화 `initializer`합니다. `DD` 동의어 [DWORD](../../assembler/masm/dword.md)합니다.
+Allocates and optionally initializes a double word (4 bytes) of storage for each *initializer*. **DD** is a synonym of [DWORD](../../assembler/masm/dword.md).
 
 ## <a name="syntax"></a>구문
 
-> [[name]] DD 이니셜라이저 [[, 이니셜라이저]]...
+> ⟦*name*⟧ **DD** *initializer* ⟦ __,__ *initializer* ...⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-형식 지정자로 사용할 수도 있습니다 어디서 나 형식이 유효 합니다.
+Can also be used as a type specifier anywhere a type is legal.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

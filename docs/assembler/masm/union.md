@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - UNION directive
 ms.assetid: 52504abf-7dc1-47c5-944c-b886803a0c6a
-ms.openlocfilehash: 37d486c6a9b8ba66a892e3cf9b3f68532509782d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7cb39d578fd96603bc769333b48c27669a94db9
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216893"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74392988"
 ---
 # <a name="union"></a>UNION
 
-하나 이상의 데이터 형식의 공용 구조체를 선언합니다. 합니다 *필드 선언* 유효한 데이터 정의 해야 합니다. 생략 된 [종료](../../assembler/masm/ends-masm.md) *이름* 레이블 중첩 **UNION** 정의 합니다.
+Declares a union of one or more data types. The *field-declarations* must be valid data definitions. Omit the [ENDS](../../assembler/masm/ends-masm.md) *name* label on nested **UNION** definitions.
 
 ## <a name="syntax"></a>구문
 
-> *이름을* 공용 구조체 [[*맞춤*]] [[, 고유 하지 않은]]<br/>
-> *field-declarations*<br/>
-> [[*name*]] ENDS
+> *name* **UNION** ⟦*alignment*⟧ ⟦ __,__ **NONUNIQUE**⟧\
+> *field-declarations*\
+> ⟦*name*⟧ **ENDS**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

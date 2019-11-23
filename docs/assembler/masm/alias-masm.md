@@ -6,29 +6,29 @@ f1_keywords:
 helpviewer_keywords:
 - ALIAS directive
 ms.assetid: d9725c49-58de-41da-ab01-b06a56cf5cf2
-ms.openlocfilehash: ab00092f410d34119e876db4562e6d0709743d79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 274ac451005015b2693d8674673af574ec781bdc
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166492"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399288"
 ---
 # <a name="alias-masm"></a>ALIAS (MASM)
 
-합니다 **별칭** 지시문을 함수에 대 한 대체 이름을 만듭니다.  이 함수에 대해 여러 이름을 만들거나 링커 (LINK.exe)를 새 함수로 이전 함수에 매핑할 수 있는 라이브러리를 만들 수 있습니다.
+The **ALIAS** directive creates an alternate name for a function.  This lets you create multiple names for a function, or create libraries that allow the linker (LINK.exe) to map an old function to a new function.
 
 ## <a name="syntax"></a>구문
 
-> 별칭 \< *별칭*> = \< *실제 이름*>
+> **ALIAS \<** _alias_ **> = \<** _actual-name_ **>**
 
 #### <a name="parameters"></a>매개 변수
 
-*actual-name*<br/>
-함수 또는 프로시저의 실제 이름입니다.  꺾쇠 괄호는 필수입니다.
+*actual-name*\
+The actual name of the function or procedure.  The angle brackets are required.
 
-*alias*<br/>
-대체 또는 별칭 이름입니다.  꺾쇠 괄호는 필수입니다.
+*alias*\
+The alternate or alias name.  The angle brackets are required.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

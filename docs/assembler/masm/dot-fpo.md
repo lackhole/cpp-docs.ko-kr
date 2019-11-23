@@ -6,41 +6,41 @@ f1_keywords:
 helpviewer_keywords:
 - .FPO directive
 ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
-ms.openlocfilehash: 3938d9194c35d567ea670e0b92a731193ccd2254
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 650c69be17c9271c343360edbb90f093841a1047
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703797"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398251"
 ---
-# <a name="fpo-32-bit-masm"></a>. FPO (32 비트 MASM)
+# <a name="fpo-32-bit-masm"></a>.FPO (32-bit MASM)
 
-여. FPO 지시문은 디버그 레코드를 debug $ F 세그먼트 또는 섹션으로 내보내기를 제어 합니다. (32 비트 MASM에만 해당)
+The **.FPO** directive controls the emission of debug records to the .debug$F segment or section. (32-bit MASM only.)
 
 ## <a name="syntax"></a>구문
 
-> FPO (*Cdwlocals*, *cdwlocals*, *cbprolog*, *cbregs*, *fUseBP*, *cbprolog*)
+> **.FPO** (*cdwLocals*, *cdwParams*, *cbProlog*, *cbRegs*, *fUseBP*, *cbFrame*)
 
 ### <a name="parameters"></a>매개 변수
 
-*cdwLocals*<br/>
-지역 변수의 수 이며, 부호 없는 32 비트 값입니다.
+*cdwLocals*\
+Number of local variables, an unsigned 32 bit value.
 
-*cdwParams*<br/>
-DWORD에서 부호 없는 16 비트 값인 매개 변수의 크기입니다.
+*cdwParams*\
+Size of the parameters in DWORDS, an unsigned 16 bit value.
 
-*cbProlog*<br/>
-부호 없는 8 비트 값인 함수 프롤로그 코드의 바이트 수입니다.
+*cbProlog*\
+Number of bytes in the function prolog code, an unsigned 8 bit value.
 
-*cbRegs*<br/>
-숫자 레지스터가 저장 되었습니다.
+*cbRegs*\
+Number registers saved.
 
-*fUseBP*<br/>
-EBP 레지스터가 할당 되었는지 여부를 나타냅니다. 0 또는 1입니다.
+*fUseBP*\
+Indicates whether the EBP register has been allocated. either 0 or 1.
 
-*cbFrame*<br/>
-프레임 유형을 나타냅니다.  자세한 내용은 [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_data) 를 참조 하세요.
+*cbFrame*\
+Indicates the frame type.  See [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_data) for more information.
 
 ## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

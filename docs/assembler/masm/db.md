@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - DB directive
 ms.assetid: 0c69ccaa-043f-46e1-9f95-dc76d9bc87c8
-ms.openlocfilehash: 0dd3a4e06b19c04a495c5c30f5d10405ddfea57e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc67cd01990f541e6d2590a08c988476324c297f
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179044"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398814"
 ---
 # <a name="db"></a>DB
 
-할당 하 고 필요에 따라 각 바이트 저장소를 초기화 `initializer`합니다. `DB` 동의어 [바이트](../../assembler/masm/byte-masm.md)
+Allocates and optionally initializes a byte of storage for each *initializer*. **DB** is a synonym of [BYTE](../../assembler/masm/byte-masm.md).
 
 ## <a name="syntax"></a>구문
 
-> [[name]] DB 이니셜라이저 [[, 이니셜라이저]]...
+> ⟦*name*⟧ **DB** *initializer* ⟦ __,__ *initializer* ...⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-형식 지정자로 사용할 수도 있습니다 어디서 나 형식이 유효 합니다.
+Can also be used as a type specifier anywhere a type is legal.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
-[DB](../../assembler/masm/db.md)<br/>
-[SBYTE](../../assembler/masm/sbyte-masm.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)\
+[DB](../../assembler/masm/db.md)\
+[SBYTE](../../assembler/masm/sbyte-masm.md)
