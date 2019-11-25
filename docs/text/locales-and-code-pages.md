@@ -1,5 +1,5 @@
 ---
-title: 지역화 및 코드 페이지
+title: 로캘 및 코드 페이지
 ms.date: 11/04/2016
 helpviewer_keywords:
 - locales [C++], about locales
@@ -15,34 +15,34 @@ helpviewer_keywords:
 - code pages [C++], locales
 - conventions [C++], international character support
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
-ms.openlocfilehash: c0cfc7f192b65738984feb1933ea720fdf18fc6d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5821048363d92911f2902a580cb11f5b349f5e7c
+ms.sourcegitcommit: 4f15b69e35dd112001b24fe9dc836dd5d6902465
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410644"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474074"
 ---
-# <a name="locales-and-code-pages"></a>지역화 및 코드 페이지
+# <a name="locales-and-code-pages"></a>로캘 및 코드 페이지
 
-로캘 ID는 특정 지역에 대한 지리적 규칙 및 언어를 반영합니다. 특정 언어는 하개 이상의 국가나 지역에서 통용될 수 있습니다. 예를 들어 포르투갈어는 포르투갈 뿐만 아니라 브라질에서도 통용됩니다. 반대로 하나의 국가 및 지역에 여러개의 공식 언어가 통용될 수 있습니다. 예를 들어 캐나다에서는: 영어와 프랑스어를 제공 합니다. 따라서 캐나다에 두 개의 고유 로캘: 캐나다 영어와 프랑스어 (캐나다)입니다. 일부 로캘 종속 범주에는 날짜 형식 지정 및 통화 값의 형식 표시가 포함됩니다.
+A locale ID reflects the local conventions and language for a particular geographical region. 지정된 언어는 여러 국가/지역에서 통용될 수 있습니다. 예를 들어 포르투갈어는 브라질과 포르투갈에서 통용됩니다. 반대로 한 국가/지역에 여러 개의 공식 언어가 있을 수 있습니다. For example, Canada has two languages: English and French. Thus, Canada has two distinct locales: Canadian-English and Canadian-French. 일부 로캘 종속 범주에는 날짜 형식 지정 및 통화 값의 형식 표시가 포함됩니다.
 
-언어는 텍스트 및 데이터 형식 규칙을 결정하고 국가 및 지역은 지역 규칙을 결정합니다. 모든 언어는 알파벳 이외의 고유 문자, 예를 들어 문장 부호나 숫자와 같은 문자가 포함된 코드 페이지를 포함합니다. 코드 페이지는 문자 집합이며 언어와 관련 있습니다. 따라서 [로캘](../c-runtime-library/locale.md)이란 언어, 국가 및 지역, 코드 페이지의 고유한 조합을 말합니다. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 함수를 이용해 런타임시 로캘 및 코드 페이지 설정을 변경할 수 있습니다.
+언어에 따라 텍스트 및 데이터 형식 지정 규칙이 결정되고 국가/지역에 따라 지역 규칙이 결정됩니다. Every language has a unique mapping, represented by code pages, which includes characters other than those in the alphabet (such as punctuation marks and numbers). A code page is a character set and is related to the language. As such, a [locale](../c-runtime-library/locale.md) is a unique combination of language, country/region, and code page. The locale and code page setting can be changed at run time by calling the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) function.
 
-언어간에는 서로 다른 코드 페이지를 사용할 수 있습니다. 예를 들어 ANSI 코드 페이지 1252는 영어와 대부분의 유럽 언어에서 사용되고 ANSI 코드 페이지 932는 일본어 간지(Kanji)에 사용 됩니다. 사실상 거의 모든 코드 페이지는 가장 처음 값인 0x00-0x7F의 128자에 대하여 ASCII 문자와 집합을 공유합니다.
+Different languages might use different code pages. For example, the ANSI code page 1252 is used for English and most European languages, and the ANSI code page 932 is used for Japanese Kanji. Virtually all code pages share the ASCII character set for the lowest 128 characters (0x00 to 0x7F).
 
-숫자 및 문장 부호 등이 포함된 싱글 바이트 코드 페이지는 256개의 바이트 값과 문자 또는 문자 모양이 서로 매칭되는 표로 표현할 수 있습니다. 더블 바이트 문자 값 역시 64k의 매우 큰 표로 멀티 바이트 코드 페이지를 표현할 수 있습니다. 그러나 실제로는 싱글 바이트와 마찬가지로 처음 256자에 대한 더블 바이트 값의 범위로 표시됩니다.
+Any single-byte code page can be represented in a table (with 256 entries) as a mapping of byte values to characters (including numbers and punctuation marks), or glyphs. Any multibyte code page can also be represented as a very large table (with 64K entries) of double-byte values to characters. In practice, however, it is usually represented as a table for the first 256 (single-byte) characters and as ranges for the double-byte values.
 
-코드 페이지에 대한 자세한 내용은 [코드 페이지](../c-runtime-library/code-pages.md)를 참조하세요.
+코드 페이지에 대한 자세한 내용은 [Code Pages](../c-runtime-library/code-pages.md)를 참조하세요.
 
-C 런타임 라이브러리는 로캘 및 멀티 바이트, 이 두 가지 유형 모두의 내부 코드 페이지를 가지고 있습니다. 프로그램 실행 중에 현재 코드 페이지를 변경할 수 있습니다. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)과 [_setmbcp](../c-runtime-library/reference/setmbcp.md) 함수에 대한 문서를 참조하세요. 또한 런타임 라이브러리는 프로그램 실행 기간 동안 항상 같게 유지되는 운영체제 코드 페이지 값을 얻고 사용할 수 있습니다.
+The C run-time library has two types of internal code pages: locale and multibyte. You can change the current code page during program execution (see the documentation for the [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) and [_setmbcp](../c-runtime-library/reference/setmbcp.md) functions). Also, the run-time library might obtain and use the value of the operating system code page, which is constant for the duration of the program's execution.
 
-로캘 코드 페이지가 변경되면 코드 페이지에 종속되어 있는 함수들 또한 선택된 코드 페이지로 동작이 변경됩니다. 기본적으로 모든 로캘 종속 함수는 'C' 로캘에 고유한 로캘 코드 페이지를 사용하여 실행됩니다. `setlocale` 함수를 이용해 내부 로캘 코드 페이지 및 기타 로캘 관련 등록 정보를 변경할 수 있습니다. `setlocale`을 호출하면 운영체제 사용자 로캘에 지정된 로캘로 설정됩니다.
+When the locale code page changes, the behavior of the locale-dependent set of functions changes to that dictated by the chosen code page. By default, all locale-dependent functions begin execution with a locale code page unique to the "C" locale. You can change the internal locale code page (as well as other locale-specific properties) by calling the `setlocale` function. A call to `setlocale`(LC_ALL, "") sets the locale to that indicated by the operating system user locale.
 
-마찬가지로 멀티바이트 코드 페이지가 변경되면 멀티바이트 함수의 동작이 선택한 코드 페이지에 의해 지정되고 변경됩니다. 기본적으로 모든 멀티바이트 함수는 운영체제의 기본 코드 페이지에 해당하는 멀티바이트 코드 페이지를 사용하여 실행을 시작합니다. `_setmbcp` 함수를 사용하여 내부 멀티바이트 코드 페이지를 변경할 수 있습니다.
+Similarly, when the multibyte code page changes, the behavior of the multibyte functions changes to that dictated by the chosen code page. By default, all multibyte functions begin execution with a multibyte code page corresponding to the operating system's default code page. You can change the internal multibyte code page by calling the `_setmbcp` function.
 
-C 런타임 함수 `setlocale`은 현재 프로그램에서 로캘 정보 일부 또는 전체에 대해 설정, 변경 또는 질의합니다. [_wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 루틴은 `setlocale`의 와이드 문자 버전입니다. `_wsetlocale` 는 인수와 반환값 모두 와이드 문자 문자열을 다룹니다.
+The C run-time function `setlocale` sets, changes, or queries some or all of the current program's locale information. The [_wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) routine is a wide-character version of `setlocale`; the arguments and return values of `_wsetlocale` are wide-character strings.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[유니코드 및 MBCS](../text/unicode-and-mbcs.md)<br/>
+[유니코드 및 멀티바이트 문자 집합(MBCS)](../text/unicode-and-mbcs.md)<br/>
 [문자 집합 이식성의 이점](../text/benefits-of-character-set-portability.md)
