@@ -39,16 +39,16 @@ constexpr typename common_type<Duration1, Duration2>::type
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
-*시간*\
+*Time*\
 `time_point` 개체입니다.
 
-*기간*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -77,10 +77,10 @@ constexpr bool operator!=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -108,7 +108,7 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
 
 ### <a name="parameters"></a>매개 변수
 
-*기간*\
+*Dur*\
 `duration` 개체입니다.
 
 *Mult*\
@@ -142,23 +142,23 @@ constexpr typename common_type<Rep1, Rep2>::type
 
 ### <a name="parameters"></a>매개 변수
 
-*기간*\
+*Dur*\
 `duration` 개체입니다.
 
 *div*\
 정수 값입니다.
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 첫 번째 연산자 개체를 반환 합니다 시간 간격이 길이가 길이의 *Dur* 값으로 나눈 *Div*합니다.
 
-두 번째 연산자의 간격 길이 비율을 반환 합니다. *왼쪽* 하 고 *오른쪽*합니다.
+두 번째 연산자의 간격 길이 비율을 반환 합니다. *Left* 하 고 *Right*합니다.
 
 `is_convertible<Rep2, common_type<Rep1, Rep2>>`가 *true*이고 `Rep2`가 `duration`의 인스턴스화가 아닌 경우 외에는 첫 번째 연산자가 오버로드 확인에 참여하지 않습니다. 자세한 내용은 [<type_traits>](../standard-library/type-traits.md)를 참조하세요.
 
@@ -188,16 +188,16 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
-*시간*\
+*Time*\
 `time_point` 개체입니다.
 
-*기간*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -224,10 +224,10 @@ constexpr bool operator<(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -254,10 +254,10 @@ constexpr bool operator<=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -282,10 +282,10 @@ constexpr bool operator==(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -312,10 +312,10 @@ constexpr bool operator>(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -340,10 +340,10 @@ constexpr bool operator>=(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 또는 `time_point` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 또는 `time_point` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -370,16 +370,16 @@ constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>
 
 ### <a name="parameters"></a>매개 변수
 
-*기간*\
+*Dur*\
 `duration` 개체입니다.
 
 *div*\
 정수 값입니다.
 
-*왼쪽*\
+*Left*\
 왼쪽 `duration` 개체입니다.
 
-*오른쪽*\
+*Right*\
 오른쪽 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
