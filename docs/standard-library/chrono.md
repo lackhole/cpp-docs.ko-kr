@@ -19,9 +19,9 @@ ms.locfileid: "72689874"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
-표준 헤더 \<chrono>를 포함하여 기간 및 시간 인스턴트를 나타내고 조작하는 클래스와 함수를 정의합니다.
+표준 헤더 \<chrono>를 포함하여 지속되는 시간과 순간의 시간을 표현하고 다룰 수 있는 클래스와 함수를 정의합니다.
 
-Visual Studio 2015부터 `steady_clock`의 구현은 안전성과 단조성이 C++ 표준 요구 사항을 충족하도록 변경되었습니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 결과적으로 Microsoft C++ 컴파일러 `steady_clock::time_point`는 이제 `chrono::time_point<steady_clock>`에 대 한 typedef입니다. 그러나이 규칙은 다른 구현에 반드시 필요한 것은 아닙니다.
+Visual Studio 2015부터 `steady_clock`의 구현이 조성에 및 단 조성에의 C++ 표준 요구 사항을 충족 하도록 변경 되었습니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 결과적으로 Microsoft C++ 컴파일러 `steady_clock::time_point`는 이제 `chrono::time_point<steady_clock>`에 대 한 typedef입니다. 그러나이 규칙은 다른 구현에 반드시 필요한 것은 아닙니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -42,7 +42,7 @@ Visual Studio 2015부터 `steady_clock`의 구현은 안전성과 단조성이 C
 
 |||
 |-|-|
-|[common_type 구조체](../standard-library/common-type-structure.md)|@No__t_1 및 `time_point`의 인스턴스화에 대 한 클래스 템플릿 [common_type](../standard-library/common-type-class.md) 의 특수화를 설명 합니다.|
+|[common_type 구조체](../standard-library/common-type-structure.md)|`duration` 및 `time_point`의 인스턴스화에 대한 클래스 템플릿 [common_type](../standard-library/common-type-class.md)의 특수화를 설명합니다.|
 |[duration_values 구조체](../standard-library/duration-values-structure.md)|`duration` 템플릿 매개 변수 `Rep`에 대한 특정 값을 제공합니다.|
 |[high_resolution_clock 구조체](../standard-library/high-resolution-clock-struct.md)||
 |[steady_clock 구조체](../standard-library/steady-clock-struct.md)|`steady` 클록을 나타냅니다.|
@@ -87,7 +87,7 @@ Visual Studio 2015부터 `steady_clock`의 구현은 안전성과 단조성이 C
 
 ### <a name="literals"></a>리터럴
 
-**(C + + 11)** @No__t_1chrono > 헤더는 코드의 편리 함, 형식 안전성 및 유지 관리에 사용할 수 있는 다음과 같은 [사용자 정의 리터럴을](../cpp/user-defined-literals-cpp.md) 정의 합니다. 이러한 리터럴은 `literals::chrono_literals` 인라인 네임스페이스에 정의되며 std::chrono가 범위 내에 있을 때 범위 안에 있습니다.
+**(C++11)** \<chrono> 헤더는 코드의 편의성, 형식 안전성 및 유지 관리에 사용할 수 있는 다음과 같은 [사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md)을 정의합니다. 이러한 리터럴은 `literals::chrono_literals` 인라인 네임스페이스에 정의되며 std::chrono가 범위 내에 있을 때 범위 안에 있습니다.
 
 |||
 |-|-|

@@ -118,7 +118,7 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 *R*\
 기본 기간의 틱 수입니다.
 
-*최악*\
+*Dur*\
 *Period2*로 지정 된 기간 (틱) 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -270,7 +270,7 @@ duration& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -287,7 +287,7 @@ duration& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
