@@ -23,7 +23,7 @@ struct steady_clock;
 
 ## <a name="remarks"></a>설명
 
-Windows에서 `steady_clock`은 `QueryPerformanceCounter`의 래퍼함수 입니다.
+Windows에서 `steady_clock`은 `QueryPerformanceCounter`의 래퍼 함수입니다.
 
 `now`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *monotonic*입니다. 클록이 *monotonic*이고 클록 틱간 시간이 지속적이면 해당 클록은 *steady*입니다.
 
@@ -35,14 +35,14 @@ Windows에서 `steady_clock`은 `QueryPerformanceCounter`의 래퍼함수 입니
 |----------|-----------------|
 |`steady_clock::duration`|\<chrono>에 정의된 `nanoseconds`의 동의어|
 |`steady_clock::period`|\<ratio>에 정의된 `nano`의 동의어|
-|`steady_clock::rep`|`duration`의 인스턴스화에서 클록 틱 수를 나타내는데 사용되는 **long** **long** 형식|
+|`steady_clock::rep`|`duration`의 인스턴스화에서 클록 틱 수를 나타내는 데 사용되는 **long** **long** 형식|
 |`steady_clock::time_point`|`chrono::time_point<steady_clock>`의 동의어|
 
 ## <a name="public-functions"></a>공용 함수
 
 |함수|설명|
 |--------------|-----------------|
-|`now`|현재 시간을 `time_point` 값으로 반환 합니다.|
+|`now`|현재 시간을 `time_point` 값으로 반환합니다.|
 
 ## <a name="public-constants"></a>공용 상수
 
