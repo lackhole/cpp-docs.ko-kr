@@ -16,7 +16,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68450183"
 ---
-# <a name="systemclock-structure"></a>system_clock 구조체
+# <a name="system_clock-structure"></a>system_clock 구조체
 
 시스템의 실시간 시계를 기준으로 하는 *시간 형식*을 나타냅니다.
 

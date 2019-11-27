@@ -1,4 +1,4 @@
----
+﻿---
 title: '&lt;cassert&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,7 +18,7 @@ ms.locfileid: "68449917"
 C 표준 라이브러리 헤더 \<assert.h>를 포함하고 `std` 네임스페이스에 연결된 이름을 추가합니다. 이 헤더를 포함하면 C 표준 라이브러리 헤더에서 외부 링크를 사용하여 선언한 이름이 `std` 네임스페이스에 선언됩니다.
 
 > [!NOTE]
-> \<assert.h>는 `static_assert` 매크로를 정의하지 않습니다.
+> \<assert. h >는 `static_assert` 매크로를 정의하지 않습니다.
 
 ## <a name="syntax"></a>구문
 

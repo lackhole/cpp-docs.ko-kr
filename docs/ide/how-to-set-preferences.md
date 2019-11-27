@@ -32,7 +32,7 @@ Visual Studio 창 내에서 공간은 주 메뉴, 도구 모음, 코드 편집�
 
 문서 창에서 열려 있는 각 파일은 탭 프레임에 포함 되어 있습니다. 도구 창과 마찬가지로 이러한 탭을 고정 하거나 잠글 수 있습니다. 자세한 내용은 [Visual Studio에서 창 레이아웃 사용자 지정](/visualstudio/ide/customizing-window-layouts-in-visual-studio)을 참조하세요.
 
-모든 도구 창을 숨기고 코드 편집기 창을 최대화 하려면 **Alt** + **Shift** + **enter** 키를 눌러 *전체 화면 모드*를 설정/해제 합니다.
+모든 도구 창을 숨기고 코드 편집기 창을 최대화 하려면 **Alt** + **shift** ** + enter 키를 눌러** *전체 화면 모드*를 설정/해제 합니다.
 
 ## <a name="set-c-coding-styles-and-formatting"></a>코딩 C++ 스타일 및 서식 설정
 
@@ -58,11 +58,11 @@ Visual Studio 2019에서는 미리 정의 된 세 가지 *색 구성표*에서 �
 
 ![고급 강조 C++ 표시 된 색 구성표 옵션의 스크린샷](media/color-schemes.png)
 
-**Visual Studio 2017**색 구성표에서 대부분의 코드 요소는 간단 하 게 검은색입니다. **향상** 된 색 구성표에서 함수, 지역 변수, 매크로 및 기타 요소는 색이 있습니다. @No__t-0Enhanced (Globals 및 멤버) ** 체계, 전역 함수 및 변수는 클래스 멤버와 대조 되는 색으로 되어 있습니다. 기본 **모드는 다음과**같습니다.
+**Visual Studio 2017**색 구성표에서 대부분의 코드 요소는 간단 하 게 검은색입니다. **향상** 된 색 구성표에서 함수, 지역 변수, 매크로 및 기타 요소는 색이 있습니다. 향상 된 **(Globals 및 Members)** 스키마에서 전역 함수 및 변수는 클래스 멤버와 대조 되는 색으로 되어 있습니다. 기본 **모드는 다음과**같습니다.
 
 ![고급 색 구성표의 스크린샷](media/color-scheme-enhanced.png)
 
-활성화 된 테마나 색 구성표에 관계 없이 개별 코드 요소의 글꼴 및 색을 사용자 지정할 수 있습니다. 이렇게 하려면 **도구** > **옵션** > **환경** > **글꼴 및 색** 으로 이동 합니다. 또는 **Ctrl + Q** 를 입력 하 고 "Fonts"를 검색 합니다. C++ 옵션이 표시 될 때까지 표시 항목 목록을 아래로 스크롤합니다.
+활성화 된 테마나 색 구성표에 관계 없이 개별 코드 요소의 글꼴 및 색을 사용자 지정할 수 있습니다. 이렇게 하려면 **도구** > **옵션** > **환경** > **글꼴 및 색** 으로 이동 합니다 (또는 **Ctrl + Q** 를 입력 하 고 "Fonts"를 검색). C++ 옵션이 표시 될 때까지 표시 항목 목록을 아래로 스크롤합니다.
 
 ![글꼴 및 C++ 색 옵션의 스크린샷](media/tools-options-cpp-colors.png)
 
@@ -78,9 +78,9 @@ Visual Studio 2019에서는 미리 정의 된 세 가지 *색 구성표*에서 �
 
 아래쪽 화살표를 선택 하 여 명령을 추가 또는 제거 하거나 사용자 지정 도구 모음을 만들 수 있습니다. 도구 모음을 새 위치로 이동 하려면 왼쪽의 점선 막대로 끕니다.
 
-![아래쪽 화살표 및 점선 막대가 강조 표시 된 도구 모음의 스크린샷](media/toolbar-move-edit.png)을 선택합니다.
+![아래쪽 화살표 및 점선 막대가 강조 표시 된 도구 모음의 스크린샷](media/toolbar-move-edit.png).
 
-자세한 내용은 [방법: Visual Studio @ no__t에서 메뉴 및 도구 모음 사용자 지정-0
+자세한 내용은 [방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정](/visualstudio/ide/how-to-customize-menus-and-toolbars-in-visual-studio)을 참조 하세요.
 
 ## <a name="show-or-hide-line-numbers"></a>줄 번호 표시 또는 숨기기
 
@@ -90,4 +90,4 @@ Visual Studio 2019에서는 미리 정의 된 세 가지 *색 구성표*에서 �
 
 ## <a name="create-keyboard-shortcuts"></a>바로 가기 키 만들기
 
-Visual Studio의 많은 명령에는 Ctrl, Alt 및 Shift 키와 키 조합이 포함 된 *바로 가기*키가 있습니다. 이러한 바로 가기 키를 수정 하거나 Visual Studio에서 직접 새로 만들 수 있습니다. **도구** > **옵션** > **환경** > **키보드** 로 이동 합니다 (또는 **Ctrl + Q** 를 입력 하 고 "바로 가기"를 검색). 자세한 내용은 [Visual Studio에서 바로 가기 키 식별 및 사용자 지정](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)을 참조 하세요.
+Visual Studio의 많은 명령에는 Ctrl, Alt 및 Shift 키와 키 조합이 포함 된 *바로 가기*키가 있습니다. 이러한 바로 가기 키를 수정 하거나 Visual Studio에서 직접 새로 만들 수 있습니다. **도구** > **옵션** > **환경** > **키보드** 로 이동 하거나 **Ctrl + Q** 를 입력 하 고 "바로 가기"를 검색 합니다. 자세한 내용은 [Visual Studio에서 바로 가기 키 식별 및 사용자 지정](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)을 참조 하세요.

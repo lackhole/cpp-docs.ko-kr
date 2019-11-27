@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - .DATA directive
 ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
-ms.openlocfilehash: 77c5327b5b6dc3fc93bec7181bb1cbf855d43fec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85aa334ef067705fd5befc95393e60490842fc79
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185383"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398509"
 ---
 # <a name="data"></a>.DATA
 
-와 함께 사용할 경우 [합니다. 모델](../../assembler/masm/dot-model.md), 거의 데이터 세그먼트 초기화 데이터 (세그먼트 이름 (_d))를 시작 합니다.
+과 함께 사용 [됩니다. 모델](../../assembler/masm/dot-model.md)에서는 초기화 된 데이터 (세그먼트 이름 _DATA)에 대해 near 데이터 세그먼트를 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
-> .DATA
+> **.DATA**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
-[.DATA?](../../assembler/masm/dot-data-q.md)<br/>
-[.CONST](../../assembler/masm/dot-const.md)<br/>
-[.FARDATA](../../assembler/masm/dot-fardata.md)<br/>
-[.FARDATA?](../../assembler/masm/dot-fardata-q.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)\
+[. 데이터?](../../assembler/masm/dot-data-q.md)\
+[. CONST](../../assembler/masm/dot-const.md)\
+[. FARDATA](../../assembler/masm/dot-fardata.md)\
+[.FARDATA?](../../assembler/masm/dot-fardata-q.md)

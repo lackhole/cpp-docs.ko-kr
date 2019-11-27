@@ -1,26 +1,26 @@
 ---
-title: TITLE
+title: 제목
 ms.date: 08/30/2018
 f1_keywords:
 - title
 helpviewer_keywords:
 - TITLE directive
 ms.assetid: d49df4dc-75db-472c-950e-75344e3c81eb
-ms.openlocfilehash: 3bd6f2e29282992aed36589be4219a7d1878abb6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e5f10e99413d85546b24dbb5db2b69705d62506
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216990"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393201"
 ---
-# <a name="title"></a>TITLE
+# <a name="title"></a>제목
 
-Title을 나열 하는 프로그램을 정의 합니다.
+프로그램 목록 제목을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
-> 제목 텍스트
+> **제목** *텍스트*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

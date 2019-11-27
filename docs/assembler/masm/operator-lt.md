@@ -8,21 +8,21 @@ helpviewer_keywords:
 - LT operator
 - operator LT
 ms.assetid: 6a7b43cc-2f38-49e9-b42e-8e5b5c41b965
-ms.openlocfilehash: d8014cd610aa439a888b8ef0af50202e22cd81b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 55c0db5ebd681d0cd9399f3b925eb0a04b893e6b
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176618"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396668"
 ---
 # <a name="operator-lt"></a>연산자 LT
 
-True (-1)를 반환 합니다 *expression1* 는 보다 작은 *expression2*, 있지 않으면 false(0)를 반환 합니다.
+*Expression1* 가 *식 2*보다 작은 경우 true (-1)를 반환 하 고 그렇지 않으면 false (0)를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> expression1 LT expression2
+> *expression1* **LT** *식*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

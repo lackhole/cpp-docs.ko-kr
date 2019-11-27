@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - .LFCOND directive
 ms.assetid: ed35590d-cc48-4de6-b775-b4f3434d08af
-ms.openlocfilehash: 68dce22f2040468dde1bfae88d1192c0d49900c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65d44a1815bb9ae0d95c5c70516dbe4c1350c66a
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178758"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398197"
 ---
 # <a name="lfcond"></a>.LFCOND
 
 ## <a name="syntax"></a>구문
 
-> .LFCOND
+> **.LFCOND**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-참조 [합니다. 목록](../../assembler/masm/dot-listif.md)합니다.
+[을 참조 하세요. .LISTIF](../../assembler/masm/dot-listif.md).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

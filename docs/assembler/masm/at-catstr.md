@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@CatStr symbol'
 ms.assetid: 01fcc590-1ec2-42f6-b868-ed0433297c26
-ms.openlocfilehash: 7c314ee362132da75a6024b76b011963fe6ce3db
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8c9995365b2fda16721b28805ece13102fed7505
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166752"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399229"
 ---
-# <a name="catstr"></a>@CatStr
+# <a name="catstr"></a>\@하는 문자열
 
 하나 이상의 문자열을 연결 하는 매크로 함수입니다. 문자열을 반환합니다.
 
 ## <a name="syntax"></a>구문
 
-> @CatStr( string1 [[, string2...]] )
+> **\@** __하는__ 문자열 ( *문자열* 1 ⟦, *문자열*1 ... ⟧ **)**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](symbols-reference.md)

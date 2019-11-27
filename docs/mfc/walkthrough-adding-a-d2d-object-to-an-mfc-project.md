@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, D2D
 - D2D [MFC]
 ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
-ms.openlocfilehash: cbb9e4002bb47ad8f65678c7a324267ca9717e94
-ms.sourcegitcommit: f82a6de52470070accb09a3a8f8b08060c492efa
+ms.openlocfilehash: 5e1c75e32899ef9697025d662eeec4a6a2482f2b
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411761"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74304306"
 ---
 # <a name="walkthrough-adding-a-d2d-object-to-an-mfc-project"></a>연습: MFC 프로젝트에 D2D 개체 추가
 
@@ -30,13 +30,13 @@ ms.locfileid: "68411761"
 
 [!INCLUDE[note_settings_general](../mfc/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
 
 이 연습을 완료 하려면 워크 로드를  **C++ 사용 하 여 데스크톱 개발과** 함께 visual Studio를 설치 하 고 선택적으로 **visual C++ Studio for x86 및 x64** 구성 요소를 설치 해야 합니다.
 
 ## <a name="to-create-an-mfc-application"></a>MFC 응용 프로그램을 만들려면
 
-1. Mfc **응용 프로그램 마법사** 를 사용 하 여 mfc 응용 프로그램을 만듭니다. [연습: Visual Studio 버전에 대 한](walkthrough-using-the-new-mfc-shell-controls.md) 마법사를 여는 방법에 대 한 지침은 새 MFC 셸 컨트롤을 사용 합니다.
+1. Mfc **응용 프로그램 마법사** 를 사용 하 여 mfc 응용 프로그램을 만듭니다. 사용 중인 Visual Studio 버전에 대 한 마법사를 여는 방법에 대 한 지침은 [연습: 새 MFC 셸 컨트롤 사용](walkthrough-using-the-new-mfc-shell-controls.md) 을 참조 하세요.
 
 1. **이름** 상자에 *MFCD2DWalkthrough*을 입력 합니다. **확인**을 선택합니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "68411761"
 
 ## <a name="to-create-a-solid-color-brush-and-a-linear-gradient-brush"></a>단색 브러시 및 선형 그라데이션 브러시를 만들려면
 
-1. **솔루션 탐색기**의 **MFCD2DWalkthrough** 프로젝트에 있는 **헤더 파일** 폴더에서 MFCD2DWalkthroughView를 엽니다. 다음 코드를 `CMFCD2DWalkthroughView` 클래스에 추가 하 여 세 개의 데이터 변수를 만듭니다.
+1. **솔루션 탐색기**의 **MFCD2DWalkthrough** 프로젝트에 있는 **헤더 파일** 폴더에서 MFCD2DWalkthroughView를 엽니다. `CMFCD2DWalkthroughView` 클래스에 다음 코드를 추가 하 여 세 개의 데이터 변수를 만듭니다.
 
    ```cpp
    CD2DTextFormat* m_pTextFormat;
@@ -102,11 +102,11 @@ ms.locfileid: "68411761"
 
 1. **프로젝트** 메뉴에서 **클래스 마법사**를 선택 합니다.
 
-1. **MFC 클래스 마법사**의 **클래스 이름**에서를 선택 `CMFCD2DWalkthroughView`합니다.
+1. **MFC 클래스 마법사**의 **클래스 이름**에서 `CMFCD2DWalkthroughView`를 선택 합니다.
 
-1. **메시지** 탭의 **메시지** 상자에서를 선택 `WM_SIZE` 하 고 **처리기 추가**를 선택 합니다. 이 작업 `OnSize` `CMFCD2DWalkthroughView` 을 수행 하면 메시지 처리기가 클래스에 추가 됩니다.
+1. **메시지** 탭의 **메시지** 상자에서 `WM_SIZE`를 선택한 다음 **처리기 추가**를 선택 합니다. 이 작업을 수행 하면 `CMFCD2DWalkthroughView` 클래스에 `OnSize` 메시지 처리기가 추가 됩니다.
 
-1. **기존 처리기** 상자에서를 선택 `OnSize`합니다. **코드 편집** 을 선택 하 여 `CMFCD2DWalkthroughView::OnSize` 메서드를 표시 합니다. 메서드 끝에 다음 코드를 추가 합니다.
+1. **기존 처리기** 상자에서 `OnSize`를 선택 합니다. **코드 편집** 을 선택 하 `CMFCD2DWalkthroughView::OnSize` 메서드를 표시 합니다. 메서드 끝에 다음 코드를 추가 합니다.
 
    ```cpp
    m_pLinearGradientBrush->SetEndPoint(CPoint(cx, cy));
@@ -118,13 +118,13 @@ ms.locfileid: "68411761"
 
 1. **프로젝트** 메뉴에서 **클래스 마법사**를 선택 합니다.
 
-1. **MFC 클래스 마법사**의 **클래스 이름**에서를 선택 `CMFCD2DWalkthroughView`합니다.
+1. **MFC 클래스 마법사**의 **클래스 이름**에서 `CMFCD2DWalkthroughView`를 선택 합니다.
 
 1. **메시지** 탭에서 **사용자 지정 메시지 추가**를 선택 합니다.
 
-1. 사용자 지정 **메시지 추가** 대화 상자의 **사용자 지정 Windows 메시지** 상자에 *AFX_WM_DRAW2D*을 입력 합니다. **메시지 처리기 이름** 상자에 *OnDraw2D*을 입력 합니다. 등록 된 **메시지** 옵션을 선택한 다음 **확인을**선택 합니다. 이 작업을 수행 하면 AFX_WM_DRAW2D 메시지에 대 한 메시지 처리기 `CMFCD2DWalkthroughView` 가 클래스에 추가 됩니다.
+1. 사용자 지정 **메시지 추가** 대화 상자의 **사용자 지정 Windows 메시지** 상자에 *AFX_WM_DRAW2D*을 입력 합니다. **메시지 처리기 이름** 상자에 *OnDraw2D*을 입력 합니다. 등록 된 **메시지** 옵션을 선택한 다음 **확인을**선택 합니다. 이 작업을 수행 하면 AFX_WM_DRAW2D 메시지의 메시지 처리기가 `CMFCD2DWalkthroughView` 클래스에 추가 됩니다.
 
-1. **기존 처리기** 상자에서를 선택 `OnDraw2D`합니다. **코드 편집** 을 선택 하 여 `CMFCD2DWalkthroughView::OnDraw2D` 메서드를 표시 합니다. 메서드에 다음 코드를 사용 `CMFCD2DWalkthroughView::OnDrawD2D` 합니다.
+1. **기존 처리기** 상자에서 `OnDraw2D`를 선택 합니다. **코드 편집** 을 선택 하 `CMFCD2DWalkthroughView::OnDraw2D` 메서드를 표시 합니다. `CMFCD2DWalkthroughView::OnDrawD2D` 메서드에이 코드를 사용 합니다.
 
    ```cpp
    afx_msg LRESULT CMFCD2DWalkthroughView::OnDraw2D(
@@ -155,6 +155,6 @@ ms.locfileid: "68411761"
 
 애플리케이션을 빌드 및 실행합니다. 창의 크기를 조정할 때 그라데이션 사각형을 변경 해야 합니다. "Hello World!" 사각형의 가운데에 표시 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [연습](../mfc/walkthroughs-mfc.md)

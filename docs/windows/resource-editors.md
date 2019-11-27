@@ -30,19 +30,19 @@ ms.locfileid: "72444999"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (C++)
 
-리소스 편집기는 Visual Studio 프로젝트에 포함 된 리소스를 만들거나 수정 하기 위한 특수 한 환경입니다. Visual Studio 리소스 편집기는 애플리케이션 리소스를 쉽고 빠르게 만들고 수정할 수 있도록 기술 및 인터페이스를 공유합니다. 리소스 편집기를 사용 하면 적절 한 편집기에서 리소스를 보고 편집 하며 리소스를 미리 볼 수 있습니다.
+리소스 편집기는 Visual Studio 프로젝트에 포함 된 리소스를 만들거나 수정 하기 위한 특수 한 환경입니다. Visual Studio 리소스 편집기는 애플리케이션 리소스를 쉽고 빠르게 만들고 수정할 수 있도록 기술 및 인터페이스를 공유합니다. 리소스 편집기를 사용하면 적절한 편집기에서 리소스를 보고 편집하며 리소스를 미리 볼 수 있습니다.
 
 리소스를 만들거나 열면 적절한 편집기가 자동으로 열립니다.
 
 > [!NOTE]
-> 관리 되는 프로젝트는 리소스 스크립트 파일을 사용 하지 않으므로 **솔루션 탐색기**에서 리소스를 열어야 합니다. 관리 되는 프로젝트에서 리소스 파일로 작업 하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
+> 관리 되는 프로젝트는 리소스 스크립트 파일을 사용 하지 않으므로 **솔루션 탐색기**에서 리소스를 열어야 합니다. 관리 되는 프로젝트에서 리소스 파일로 작업 하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집하고자 하는 관리되는 모든 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
 
 |사용...|편집...|
 |----------------|----------------|
 |[액셀러레이터 키 편집기](../windows/accelerator-editor.md)|Visual Studio C++ 프로젝트의 액셀러레이터 키 테이블입니다.|
-|[Binary Editor](binary-editor.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 이진 데이터 정보 및 사용자 지정 리소스입니다.|
+|[바이너리 편집기](binary-editor.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 이진 데이터 정보 및 사용자 지정 리소스입니다.|
 |[대화 상자 편집기](../windows/dialog-editor.md)|Visual Studio C++ 프로젝트의 대화 상자.|
-|[Image Editor](../windows/image-editor-for-icons.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 비트맵, 아이콘, 커서 및 기타 이미지 파일입니다.|
+|[이미지 편집기](../windows/image-editor-for-icons.md)|Visual C++, Visual Basic 또는 Visual C# 프로젝트의 비트맵, 아이콘, 커서 및 기타 이미지 파일입니다.|
 |[메뉴 편집기](../windows/menu-editor.md)|Visual Studio C++ 프로젝트의 메뉴 리소스입니다.|
 |[리본 편집기](../mfc/ribbon-designer-mfc.md)|MFC 프로젝트의 리본 리소스입니다.|
 |[문자열 편집기](../windows/string-editor.md)|Visual Studio C++ 프로젝트의 문자열 테이블|
@@ -73,13 +73,13 @@ ms.locfileid: "72444999"
 
 #### <a name="to-view-a-win32-resource-in-a-resource-editor"></a>리소스 편집기에서 Win32 리소스를 보려면
 
-1. 메뉴 **보기**@no__t**다른 Windows** > **리소스 뷰**로 이동 합니다.
+1. 메뉴 **뷰로** 이동 하 여 **다른 Windows** > **리소스 뷰** > 합니다.
 
 1. **리소스 뷰** 창이 맨 위 창이 아닌 경우 **리소스 뷰** 탭을 선택 하 여 맨 위로 이동 합니다.
 
 1. **리소스 뷰**에서 보려는 리소스를 포함 하는 프로젝트의 폴더를 확장 합니다. 예를 들어 대화 상자 리소스를 보려면 **대화 상자** 폴더를 확장 합니다.
 
-1. 리소스 (예: **IDD_ABOUTBOX**)를 두 번 클릭 합니다.
+1. 리소스를 두 번 클릭 합니다 (예: **IDD_ABOUTBOX**).
 
    리소스가 해당 편집기에서 열립니다. 예를 들어, 대화 상자 리소스의 경우 리소스가 **대화 상자 편집기**내부에서 열립니다.
 
@@ -126,7 +126,7 @@ ms.locfileid: "72444999"
 
 없음
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>

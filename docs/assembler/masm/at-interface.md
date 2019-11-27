@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@Interface symbol'
 ms.assetid: 266ecba9-9e96-4086-8ee4-a3d0161b6e29
-ms.openlocfilehash: 4c9ab7bc70315f725de410b7f47803cc22cb8acc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e654f533c9e2f17b3c5d123997bb6260a855a4b7
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179005"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398979"
 ---
-# <a name="interface"></a>@Interface
+# <a name="interface"></a>\@인터페이스
 
-언어 매개 변수 (숫자와 같습니다.)에 대 한 정보를 제공 합니다.
+언어 매개 변수에 대 한 정보입니다 (숫자-같게).
 
 ## <a name="syntax"></a>구문
 
-> @Interface
+> **\@인터페이스**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](symbols-reference.md)

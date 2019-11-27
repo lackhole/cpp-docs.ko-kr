@@ -9,21 +9,21 @@ helpviewer_keywords:
 - semicolon operator
 - ; operator
 ms.assetid: 8369b28c-1fee-4e9a-a4a6-7db627e21075
-ms.openlocfilehash: e7ab11485e772431b684f22aa5ec0278e4bde7af
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df1e75f749e00781ae7ce1ffc580632d6216201c
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176280"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396451"
 ---
 # <a name="operator-"></a>연산자 ;
 
-처리 *텍스트* 주석으로 합니다.
+*텍스트* 를 주석으로 처리 합니다.
 
 ## <a name="syntax"></a>구문
 
-> ; *text*
+> __;__ *텍스트*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

@@ -2,12 +2,12 @@
 title: Visual Studio에서 C++ 코드 읽기 및 이해
 description: Visual Studio의 C++ 코드 편집기를 사용하여 코드를 서식 지정하고, 이해합니다.
 ms.date: 05/28/2019
-ms.openlocfilehash: c5e4d7f3e53ef37649e3635d11cf99b10cb8a7ee
-ms.sourcegitcommit: 65ed563a8a1d4d90f872a2a6edcb086f84ec9f77
-ms.translationtype: HT
+ms.openlocfilehash: d4af4c9bc747540bada49de305c45cffc5c44374
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66742029"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303009"
 ---
 # <a name="read-and-understand-c-code-in-visual-studio"></a>Visual Studio에서 C++ 코드 읽기 및 이해
 
@@ -17,11 +17,11 @@ C++ 코드 편집기 및 Visual Studio IDE에서는 많은 코딩 보조 기능�
 
 Visual Studio는 구문 요소에 색을 지정하여 언어 키워드, 형식 이름, 변수 이름, 함수 매개 변수, 문자열 리터럴 등과 같은 기호의 형식을 구분합니다.
 
-![코드 색 지정](../ide/media/code-outline-colorization.png "C++ 색 지정")
+![코드 색 지정](../ide/media/code-outline-colorization.png "C++색상화")
 
  사용되지 않는 코드(예: #if 0 아래의 코드)는 색에서 희미하게 표시됩니다.
 
- ![비활성 코드](../ide/media/inactive-code-cpp.png "C++ 비활성 코드")
+ ![비활성 코드](../ide/media/inactive-code-cpp.png "C++비활성 코드")
 
 **빠른 실행**에서 "글꼴"을 입력한 다음, **글꼴 및 색**을 선택하여 색을 사용자 지정할 수 있습니다. **글꼴 및 색** 대화 상자에서 C/C++ 옵션으로 스크롤한 다음, 사용자 지정 글꼴 및/또는 색을 선택합니다.
 
@@ -29,7 +29,7 @@ Visual Studio는 구문 요소에 색을 지정하여 언어 키워드, 형식 �
 
 소스 코드 파일의 아무 곳이나 마우스 오른쪽 단추로 클릭하고 **개요**를 선택하여 코드 블록 및/또는 사용자 지정 영역을 축소하거나 확장하면 관심 있는 코드만 쉽게 찾을 수 있습니다. 자세한 내용은 [개요](/visualstudio/ide/outlining)를 참조하세요.
 
-![C&#43;&#43; 개요](../ide/media/vs2015_cpp_outlining.png "개요")
+![C&#43; &#43; 개요](../ide/media/vs2015_cpp_outlining.png "개요")
 
 커서를 중괄호, '{' 또는 '}' 앞에 배치하면 편집기는 일치하는 항목을 강조 표시합니다.
 
@@ -37,19 +37,19 @@ Visual Studio는 구문 요소에 색을 지정하여 언어 키워드, 형식 �
 
 ## <a name="line-numbers"></a>줄 번호
 
-**도구** > **옵션** > **텍스트 편집기** > **모든 언어** > **일반**으로 이동하거나 **빠른 실행(Ctrl + Q)** 으로 "줄 번호"를 검색하여 프로젝트에 줄 번호를 추가할 수 있습니다. 모든 언어에 대해 또는 C++를 포함하는 특정 언어에 대해서만 줄 번호를 설정할 수 있습니다.
+**도구** > **옵션** > **텍스트 편집기** > **모든 언어** > **일반** 으로 이동 하거나 빠른 실행을 사용 하는 "줄 번호" **(Ctrl + Q)** 를 검색 하 여 프로젝트에 줄 번호를 추가할 수 있습니다. 모든 언어에 대해 또는 C++를 포함하는 특정 언어에 대해서만 줄 번호를 설정할 수 있습니다.
 
 ## <a name="scroll-and-zoom"></a>스크롤 및 확대/축소
 
 **Ctrl** 키를 누르고 마우스 휠로 스크롤하여 편집기에서 확대/축소할 수 있습니다. 왼쪽 아래 모퉁이에서 확대/축소 설정을 사용하여 확대/축소할 수도 있습니다.
 
-![C&#43;&#43; 확대/축소 컨트롤](../ide/media/zoom-control.png "확대/축소 컨트롤")
+![C&#43; &#43; 확대/축소 컨트롤](../ide/media/zoom-control.png "확대/축소 컨트롤")
 
 스크롤 막대 **맵 모드**를 사용하면 현재 위치를 벗어나지 않고 코드 파일을 신속하게 스크롤하여 찾아볼 수 있습니다. 코드 맵의 아무 곳이나 클릭하여 해당 위치로 직접 이동할 수 있습니다.
 
 ![C의 코드 맵&#43;&#43;](../ide/media/vs2015-cpp-code-map.png "코드 맵")
 
-**맵 모드**를 켜려면 주 도구 모음 상자의 **빠른 실행** 검색 상자에 “맵”을 입력하고 **스크롤 맵 모드 사용**을 선택합니다. 자세한 내용은 [방법: 스크롤 막대를 사용자 지정하여 코드 추적](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar)을 참조하세요.
+**지도 모드**를 켜려면 기본 도구 모음의 **빠른 실행** 검색 상자에 "맵"을 입력 하 고 **스크롤 맵 모드 사용**을 선택 합니다. 자세한 내용은 [방법: 스크롤 막대를 사용자 지정하여 코드 추적](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar)을 참조하세요.
 
 **맵 모드**가 꺼진 경우 스크롤 막대는 여전히 파일의 변경 내용을 강조 표시합니다. 녹색은 저장된 변경 내용을 나타내며 노란색은 저장되지 않은 변경 내용을 나타냅니다.
 
@@ -65,7 +65,7 @@ Visual Studio는 구문 요소에 색을 지정하여 언어 키워드, 형식 �
 
 코드에 오류가 있는 경우 마우스로 가리키면 **요약 정보**가 오류 메시지를 표시합니다. 오류 메시지를 오류 목록 창에서 찾을 수도 있습니다.
 
-![오류에 대한 요약 정보](../ide/media/quickinfo-on-error.png "오류에 대한 요약 정보")
+![오류에 대 한 요약 정보](../ide/media/quickinfo-on-error.png "오류에 대 한 요약 정보")
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ Visual Studio는 구문 요소에 색을 지정하여 언어 키워드, 형식 �
 
 코드에 오류가 있는 경우 마우스로 가리키면 **요약 정보**가 오류 메시지를 표시합니다. 오류 메시지를 **오류 목록** 창에서 찾을 수도 있습니다.
 
-![오류에 대한 요약 정보](../ide/media/quickinfo-on-error.png "오류에 대한 요약 정보")
+![오류에 대 한 요약 정보](../ide/media/quickinfo-on-error.png "오류에 대 한 요약 정보")
 
 ::: moniker-end
 
@@ -83,11 +83,11 @@ Visual Studio는 구문 요소에 색을 지정하여 언어 키워드, 형식 �
 
 ![C의 매개 변수 정보&#43;&#43;](../ide/media/parameter-info.png "매개 변수 정보")
 
-## <a name="peek-definition"></a>정의 피킹(Peeking)
+## <a name="peek-definition"></a>정의 피킹
 
 변수 또는 함수 선언을 마우스로 가리키고, 마우스 오른쪽 단추를 클릭한 다음, **정의 피킹(Peeking)** 을 선택하여 현재 위치에서 이동하지 않고 해당 정의의 인라인 뷰를 표시합니다. 자세한 내용은 [정의 피킹(Peeking)(Alt+F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12)을 참조하세요.
 
-![C&#43;&#43; 정의 피킹(Peeking)](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
+![C&#43; &#43; 정의 피킹](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
 
 ##  <a name="f1-help"></a>F1 도움말
 
@@ -103,13 +103,13 @@ Visual Studio는 구문 요소에 색을 지정하여 언어 키워드, 형식 �
 
 프로젝트에서 코드 파일을 마우스 오른쪽 단추로 클릭하고 **포함 파일의 그래프 생성**을 선택하여 다른 파일에 포함된 파일의 그래프를 표시합니다.
 
-![C&#43;&#43; 포함 파일의 그래프](../ide/media/vs2015_cpp_include_graph.png "vs2015_cpp_include_graph")
+![포함&#43; &#43; 파일의 C 그래프](../ide/media/vs2015_cpp_include_graph.png "vs2015_cpp_include_graph")
 
 ## <a name="view-call-hierarchy"></a>호출 계층 구조 보기
 
 함수 호출을 마우스 오른쪽 단추로 클릭하고 함수가 호출하는 모든 함수와 함수를 호출하는 모든 함수의 재귀적 목록을 표시합니다. 목록의 각 함수를 동일한 방식으로 확장할 수 있습니다. 자세한 내용은 [호출 계층 구조](/visualstudio/ide/reference/call-hierarchy)를 참조하세요.
 
-![C&#43;&#43; 호출 계층 구조](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
+![C&#43; &#43; 호출 계층 구조](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
 
 ## <a name="see-also"></a>참고 항목
 

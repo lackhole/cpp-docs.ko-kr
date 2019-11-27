@@ -17,7 +17,7 @@ ms.locfileid: "74245953"
 ---
 # <a name="bad_cast-exception"></a>bad_cast 예외
 
-The **bad_cast** exception is thrown by the **dynamic_cast** operator as the result of a failed cast to a reference type.
+**Bad_cast** 예외는 참조 형식으로의 실패 한 캐스팅의 결과로 **dynamic_cast** 연산자에 의해 throw 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,13 +28,13 @@ catch (bad_cast)
 
 ## <a name="remarks"></a>주의
 
-The interface for **bad_cast** is:
+**Bad_cast** 에 대 한 인터페이스는 다음과 같습니다.
 
 ```cpp
 class bad_cast : public exception
 ```
 
-The following code contains an example of a failed **dynamic_cast** that throws the **bad_cast** exception.
+다음 코드에는 **bad_cast** 예외를 throw 하는 실패 한 **dynamic_cast** 의 예가 포함 되어 있습니다.
 
 ```cpp
 // expre_bad_cast_Exception.cpp
@@ -65,14 +65,14 @@ int main() {
 }
 ```
 
-The exception is thrown because the object being cast (a Shape) isn't derived from the specified cast type (Circle). 예외를 방지하려면 `main`에 다음과 같은 선언을 추가합니다.
+캐스팅 되는 개체 (도형)가 지정 된 캐스트 형식 (원)에서 파생 되지 않기 때문에 예외가 throw 됩니다. 예외를 방지하려면 `main`에 다음과 같은 선언을 추가합니다.
 
 ```cpp
 Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-Then reverse the sense of the cast in the **try** block as follows:
+그런 다음 **try** 블록에서 캐스트의 의미를 다음과 같이 바꿉니다.
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
@@ -88,17 +88,17 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 ### <a name="functions"></a>함수
 
-|기능|설명|
+|함수|설명|
 |-|-|
-|[what](#what)|TBD|
+|[이며](#what)|TBD|
 
 ### <a name="operators"></a>연산자
 
 |연산자|설명|
 |-|-|
-|[operator=](#op_eq)|An assignment operator that assigns one `bad_cast` object to another.|
+|[operator=](#op_eq)|`bad_cast` 한 개체를 다른 개체에 할당 하는 대입 연산자입니다.|
 
-## <a name="bad_cast"></a> bad_cast
+## <a name="bad_cast"></a>bad_cast
 
 `bad_cast` 형식의 개체에 대한 생성자입니다.
 
@@ -107,22 +107,22 @@ bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="op_eq"></a> operator=
+## <a name="op_eq"></a>연산자 =
 
-An assignment operator that assigns one `bad_cast` object to another.
+`bad_cast` 한 개체를 다른 개체에 할당 하는 대입 연산자입니다.
 
 ```cpp
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a> what
+## <a name="what"></a>이며
 
 ```cpp
 const char* what() const noexcept override;
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[dynamic_cast Operator](../cpp/dynamic-cast-operator.md)\
+[Dynamic_cast 연산자](../cpp/dynamic-cast-operator.md)\
 [키워드](../cpp/keywords-cpp.md)\
-[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)
+[예외 C++ 및 오류 처리에 대 한 최신 모범 사례](../cpp/errors-and-exception-handling-modern-cpp.md)

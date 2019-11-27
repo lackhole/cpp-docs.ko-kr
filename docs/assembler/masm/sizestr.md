@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - SIZESTR directive
 ms.assetid: 8fe88b2e-8a44-4787-9015-030dfb6ea70e
-ms.openlocfilehash: cfb0eb83e52e567c60f0bf600444efb2b73c69ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 44260cc22bdbbb092533926634db03187f6f4507
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210284"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393702"
 ---
 # <a name="sizestr"></a>SIZESTR
 
@@ -19,8 +19,8 @@ ms.locfileid: "62210284"
 
 ## <a name="syntax"></a>구문
 
-> SIZESTR textitem 이름
+> *이름* **SIZESTR** *textitem*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

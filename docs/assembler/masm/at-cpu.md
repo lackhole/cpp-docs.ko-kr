@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@Cpu symbol'
 ms.assetid: 04f9fdf6-9772-407e-9c09-c12bed29087b
-ms.openlocfilehash: 022b8ae6a38026d360d0f553c6fa65a2430fe02d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 528db8ce2a23cefaeef0b1e52f4a373b49d1cbeb
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167065"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399178"
 ---
-# <a name="cpu"></a>@Cpu
+# <a name="cpu"></a>\@Cpu
 
-프로세서 모드를 지정 하는 비트 마스크를 (숫자와 같습니다.).
+프로세서 모드 (숫자는)를 지정 하는 비트 마스크입니다.
 
 ## <a name="syntax"></a>구문
 
-> @Cpu
+> **\@Cpu**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](symbols-reference.md)

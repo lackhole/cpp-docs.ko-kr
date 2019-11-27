@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - PUSHCONTEXT directive
 ms.assetid: 18e528ee-df6c-4ce6-8823-b35b40f757fd
-ms.openlocfilehash: b657b6519fd9e4cbd367eaefc984fd959618c57d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d042ad50fef6d9834b35b66c88b3f83ec4995d4
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62217246"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395714"
 ---
 # <a name="pushcontext"></a>PUSHCONTEXT
 
-현재 전체 또는 일부 저장 `context`: 기 수 값, 목록 및 cref 플래그 또는 프로세서/프로세서 값 세그먼트 등록 가정 합니다. `context` 될 수 있습니다 **가정**, `RADIX`를 **나열**를 **CPU**, 또는 **모든**합니다.
+현재 *컨텍스트의*일부 또는 전체를 저장 합니다. 세그먼트 레지스터는, 기 하 값, 목록 및 cref 플래그 또는 프로세서/보조 프로세서 값을 가정 합니다. *컨텍스트* 는 **가정**, **기**수, **목록**, **CPU**또는 **모두**를 사용할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-> PUSHCONTEXT 컨텍스트
+> **Pushcontext** *컨텍스트*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

@@ -1,66 +1,25 @@
 ﻿---
-title: 개체 수명 및 리소스 관리(최신 C++)
-ms.date: 11/04/2016
+title: 개체 수명 및 리소스 관리 (RAII)
+description: 리소스 누수를 방지 하려면 최신 C++ RAII의 원칙을 따릅니다.
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
-ms.openlocfilehash: 91229ea1b2d7a85f852138176d8cdb46dfa8c0df
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 01867ec0a71ba54bb6534da1b408cb0610d652a7
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246436"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303367"
 ---
-# <a name="object-lifetime-and-resource-management-modern-c"></a>개체 수명 및 리소스 관리(최신 C++)
+# <a name="object-lifetime-and-resource-management-raii"></a>개체 수명 및 리소스 관리 (RAII)
 
-Unlike managed languages, C++ doesn’t have garbage collection (GC), which automatically releases no-longer-used memory resources as a program runs. In C++, resource management is directly related to object lifetime. This document describes the factors that affect object lifetime in C++ and how to manage it.
+관리 되는 언어 C++ 와 달리에는 자동 *가비지 컬렉션이*없습니다. 프로그램이 실행 될 때 힙 메모리 및 기타 리소스를 해제 하는 내부 프로세스입니다. C++ 프로그램은 가져온 모든 리소스를 운영 체제에 반환 해야 합니다. 사용 하지 않는 리소스를 해제 하는 데 실패 하는 것을 *누출*이라고 합니다. 프로세스가 종료 될 때까지 다른 프로그램에서 유출 된 리소스를 사용할 수 없습니다. 특히 메모리 누수는 C 스타일 프로그래밍에서 발생 하는 버그의 일반적인 원인입니다.
 
-C++ doesn’t have GC primarily because it doesn't handle non-memory resources. Only deterministic destructors like those in C++ can handle memory and non-memory resources equally. GC also has other problems, like higher overhead in memory and CPU consumption, and locality. But universality is a fundamental problem that can't be mitigated through clever optimizations.
+최신 C++ 에서는 스택에 개체를 선언 하 여 최대한 많은 힙 메모리를 사용 하지 않도록 방지 합니다. 스택에 대 한 리소스가 너무 크면 개체가 *소유* 해야 합니다. 개체는 초기화 될 때 소유 하 고 있는 리소스를 가져옵니다. 그런 다음 개체는 해당 소멸자에서 리소스를 해제 해야 합니다. 소유 하는 개체 자체가 스택에 선언 됩니다. *리소스를 소유* 하는 개체를 "리소스 획득이 초기화" 또는 RAII 이라고 합니다.
 
-## <a name="concepts"></a>개념
+리소스 소유 스택 개체가 범위를 벗어나면 해당 소멸자가 자동으로 호출 됩니다. 이러한 방식으로의 C++ 가비지 수집은 개체 수명과 밀접 하 게 관련 되며 결정적입니다. 리소스는 항상 프로그램의 알려진 지점에서 해제 되므로 사용자가 제어할 수 있습니다. 만 C++에서와 같이 결정적 소멸자 메모리 및 메모리 내 리소스를 균등 하 게 처리할 수 있습니다.
 
-An important thing in object-lifetime management is the encapsulation—whoever's using an object doesn't have to know what resources that object owns, or how to get rid of them, or even whether it owns any resources at all. It just has to destroy the object. The C++ core language is designed to ensure that objects are destroyed at the correct times, that is, as blocks are exited, in reverse order of construction. When an object is destroyed, its bases and members are destroyed in a particular order.  The language automatically destroys objects, unless you do special things like heap allocation or placement new.  For example, [smart pointers](../cpp/smart-pointers-modern-cpp.md) like `unique_ptr` and `shared_ptr`, and C++ Standard Library containers like `vector`, encapsulate **new**/**delete** and `new[]`/`delete[]` in objects, which have destructors. That's why it's so important to use smart pointers and C++ Standard Library containers.
-
-Another important concept in lifetime management: destructors. Destructors encapsulate resource release.  (The commonly used mnemonic is RRID, Resource Release Is Destruction.)  A resource is something that you get from "the system" and have to give back later.  Memory is the most common resource, but there are also files, sockets, textures, and other non-memory resources. "Owning" a resource means you can use it when you need it but you also have to release it when you're finished with it.  When an object is destroyed, its destructor releases the resources that it owned.
-
-The final concept is the DAG (Directed Acyclic Graph).  The structure of ownership in a program forms a DAG. No object can own itself—that's not only impossible but also inherently meaningless. But two objects can share ownership of a third object.  Several kinds of links are possible in a DAG like this: A is a member of B (B owns A), C stores a `vector<D>` (C owns each D element), E stores a `shared_ptr<F>` (E shares ownership of F, possibly with other objects), and so forth.  As long as there are no cycles and every link in the DAG is represented by an object that has a destructor (instead of a raw pointer, handle, or other mechanism), then resource leaks are impossible because the language prevents them. Resources are released immediately after they're no longer needed, without a garbage collector running. The lifetime tracking is overhead-free for stack scope, bases, members, and related cases, and inexpensive for `shared_ptr`.
-
-### <a name="heap-based-lifetime"></a>Heap-based lifetime
-
-For heap object lifetime, use [smart pointers](../cpp/smart-pointers-modern-cpp.md). Use `shared_ptr` and `make_shared` as the default pointer and allocator. Use `weak_ptr` to break cycles, do caching, and observe objects without affecting or assuming anything about their lifetimes.
-
-```cpp
-void func() {
-
-auto p = make_shared<widget>(); // no leak, and exception safe
-...
-p->draw();
-
-} // no delete required, out-of-scope triggers smart pointer destructor
-```
-
-Use `unique_ptr` for unique ownership, for example, in the *pimpl* idiom. (See [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md).) Make a `unique_ptr` the primary target of all explicit **new** expressions.
-
-```cpp
-unique_ptr<widget> p(new widget());
-```
-
-You can use raw pointers for non-ownership and observation. A non-owning pointer may dangle, but it can’t leak.
-
-```cpp
-class node {
-  ...
-  vector<unique_ptr<node>> children; // node owns children
-  node* parent; // node observes parent, which is not a concern
-  ...
-};
-node::node() : parent(...) { children.emplace_back(new node(...) ); }
-```
-
-When performance optimization is required, you might have to use *well-encapsulated* owning pointers and explicit calls to delete. An example is when you implement your own low-level data structure.
-
-### <a name="stack-based-lifetime"></a>Stack-based lifetime
-
-In modern C++, *stack-based scope* is a powerful way to write robust code because it combines automatic *stack lifetime* and *data member lifetime* with high efficiency—lifetime tracking is essentially free of overhead. Heap object lifetime requires diligent manual management and can be the source of resource leaks and inefficiencies, especially when you are working with raw pointers. Consider this code, which demonstrates stack-based scope:
+다음 예에서는 `w`간단한 개체를 보여 줍니다. 함수 범위에서 스택에 선언 되며 함수 블록의 끝에서 제거 됩니다. 개체 `w`는 *리소스* (예: 힙 할당 메모리)를 소유 하지 않습니다. 유일한 멤버 `g`은 스택에 선언 되 고 `w`와 함께 범위에서 제외 됩니다. `widget` 소멸자에는 특별 한 코드가 필요 하지 않습니다.
 
 ```cpp
 class widget {
@@ -81,10 +40,57 @@ void functionUsingWidget () {
   // as if "finally { w.dispose(); w.g.dispose(); }"
 ```
 
-Use static lifetime sparingly (global static, function local static) because problems can arise. What happens when the constructor of a global object throws an exception? Typically, the app faults in a way that can be difficult to debug. Construction order is problematic for static lifetime objects, and is not concurrency-safe. Not only is object construction a problem, destruction order can be complex, especially where polymorphism is involved. Even if your object or variable isn’t polymorphic and doesn't have complex construction/destruction ordering, there’s still the issue of thread-safe concurrency. A multithreaded app can’t safely modify the data in static objects without having thread-local storage, resource locks, and other special precautions.
+다음 예제에서 `w`는 메모리 리소스를 소유 하므로 메모리를 삭제 하려면 해당 소멸자에 코드가 있어야 합니다.
+ 
+```cpp
+class widget
+{
+private:
+    int* data;
+public:
+    widget(const int size) { data = new int[size]; } // acquire
+    ~widget() { delete[] data; } // release
+    void do_something() {}
+};
 
-## <a name="see-also"></a>참조
+void functionUsingWidget() {
+    widget w(1000000);   // lifetime automatically tied to enclosing scope
+                        // constructs w, including the w.data member
+    w.do_something();
 
-[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+} // automatic destruction and deallocation for w and w.data
+
+```
+
+C + + 11부터 표준 라이브러리의 스마트 포인터를 사용 하 여 이전 예제를 작성 하는 것이 더 좋은 방법입니다. 스마트 포인터는 소유 하 고 있는 메모리의 할당 및 삭제를 처리 합니다. 스마트 포인터를 사용 하면 `widget` 클래스에서 명시적 소멸자가 필요 하지 않습니다.
+
+```cpp
+#include <memory>
+class widget
+{
+private:
+    std::unique_ptr<int> data;
+public:
+    widget(const int size) { data = std::make_unique<int>(size); }
+    void do_something() {}
+};
+
+void functionUsingWidget() {
+    widget w(1000000);   // lifetime automatically tied to enclosing scope
+                // constructs w, including the w.data gadget member
+    // ...
+    w.do_something();
+    // ...
+} // automatic destruction and deallocation for w and w.data
+
+```
+
+메모리 할당을 위한 스마트 포인터를 사용 하 여 메모리 누수 가능성을 없앨 수 있습니다. 이 모델은 파일 핸들 또는 소켓과 같은 다른 리소스에 대해 작동 합니다. 클래스에서 비슷한 방법으로 리소스를 관리할 수 있습니다. 자세한 내용은 [스마트 포인터](smart-pointers-modern-cpp.md)를 참조 하세요.
+
+디자인은 개체가 C++ 범위를 벗어날 때 소멸 되도록 합니다. 즉, 블록이 종료 될 때 생성의 역순으로 소멸 됩니다. 개체 소멸 될 때 해당 기본 항목 및 멤버는 특정 순서로 삭제 됩니다. 전역 범위에서 블록 외부에 선언 된 개체는 문제를 일으킬 수 있습니다. 전역 개체의 생성자가 예외를 throw 하는 경우 디버깅 하기 어려울 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[다시 시작C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

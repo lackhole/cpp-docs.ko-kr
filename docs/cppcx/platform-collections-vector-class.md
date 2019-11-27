@@ -47,9 +47,9 @@ Vector 개체에 포함된 요소의 형식입니다.
 *E*<br/>
 *T*형식의 값과 같은지 테스트 하기 위한 이진 조건자를 지정 합니다. 기본값은 `std::equal_to<T>`입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-허용되는 형식은 다음과 같습니다.
+사용할 수 있는 유형은
 
 1. 정수
 
@@ -57,7 +57,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 
 1. public ref 클래스 ^
 
-1. value struct
+1. 값 구조체
 
 1. public enum 클래스
 
@@ -73,7 +73,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 |----------|-----------------|
 |[Vector::Vector](#ctor)|Vector 클래스의 새 인스턴스를 초기화합니다.|
 
-### <a name="public-methods"></a>Public 메서드
+### <a name="public-methods"></a>공용 방법
 
 |이름|설명|
 |----------|-----------------|
@@ -96,7 +96,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 |||
 |-|-|
 |이름|설명|
-|이벤트 [Windows:: Foundation:: Collection:: VectorChangedEventHandler @ no__t-1T > ^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vector가 변경될 때 발생합니다.|
+|이벤트 [Windows:: Foundation:: Collection:: VectorChangedEventHandler\<t > ^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vector가 변경될 때 발생합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -147,9 +147,9 @@ virtual Windows::Foundation::Collections::IIterator <T>^ First();
 
 Vector의 첫 번째 요소를 가리키는 반복기입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 **auto** 형식 추론 키워드로 선언 된 변수에 반환 값을 할당 하는 것입니다. 예를 들어, `auto x = myVector->First();`을 입력합니다. 이 반복기는 컬렉션의 길이를 알고 있습니다.
+First ()에서 반환 된 반복기를 편리 하 게 유지 하는 방법은 **auto** 형식 추론 키워드로 선언 된 변수에 반환 값을 할당 하는 것입니다. 예를 들어 `auto x = myVector->First();`과 같은 형식입니다. 이 반복기는 컬렉션의 길이를 알고 있습니다.
 
 STL 함수에 전달할 반복기 쌍이 필요한 경우 free 함수 [Windows:: foundation:: collections:: begin](../cppcx/begin-function.md) 및 [Windows:: Foundation:: collections:: end](../cppcx/end-function.md) 를 사용 합니다.
 
@@ -196,7 +196,7 @@ virtual unsigned int GetMany(
 
 검색된 항목의 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 함수는 클라이언트 코드에서 직접 사용하지 않습니다. [To_vector 함수](../cppcx/to-vector-function.md) 에서 내부적으로 사용 되어 Platform:: vector 인스턴스로만를 std:: vector 인스턴스로 효율적으로 변환할 수 있습니다.
 
@@ -238,7 +238,7 @@ virtual bool IndexOf(T value, unsigned int* index);
 
 지정 된 항목을 찾은 경우 **true** 입니다. 그렇지 않으면 **false**입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 IndexOf는 std::find_if를 사용하여 항목을 찾습니다. 그러므로 find_if에 필요한 같음 비교를 사용하려면 사용자 지정 요소 형식이 == 및 != 연산자를 오버로드해야 합니다.
 
@@ -367,7 +367,7 @@ Vector를 초기화 하는 데 사용 되는 [Platform:: Array](../cppcx/platfor
 현재 Vector를 초기화하는 데 사용되는 개체 컬렉션의 형식입니다.
 
 *il*<br/>
-Vector를 초기화 하는 데 사용 되는 *T* 형식의 개체에 대 한 [std:: initializer_list](../standard-library/initializer-list-class.md) 입니다.
+Vector를 초기화 하는 데 사용 되는 *T* 형식의 개체의 [std:: initializer_list](../standard-library/initializer-list-class.md) 입니다.
 
 *N*<br/>
 현재 Vector를 초기화하는 데 사용되는 개체 컬렉션의 요소 수입니다.
@@ -390,7 +390,7 @@ Vector의 요소 수입니다.
 *last*<br/>
 현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. *마지막* 의 형식은 *완벽 한 전달*방법으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [컬렉션(C++/CX)](collections-c-cx.md)<br/>
 [Platform 네임 스페이스](platform-namespace-c-cx.md)<br/>

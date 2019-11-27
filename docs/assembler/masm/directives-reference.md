@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-ms.openlocfilehash: 655c177b8e5b859faf3b6d9c3250bc3ced31b430
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 12effa33b80403f3e8f1a130ac53a75b02cfefff
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178940"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398780"
 ---
 # <a name="directives-reference"></a>지시문 참조
 
-## <a name="x64"></a>X64
+## <a name="x64"></a>x64
 
 ||||
 |-|-|-|
@@ -27,24 +27,24 @@ ms.locfileid: "62178940"
 
 |||
 |-|-|
-|[ALIGN](../../assembler/masm/align-masm.md)|[EVEN](../../assembler/masm/even.md)|
-|[LABEL](../../assembler/masm/label-masm.md)|[ORG](../../assembler/masm/org.md)|
+|[않아](../../assembler/masm/align-masm.md)|[EVEN](../../assembler/masm/even.md)|
+|[레이블](../../assembler/masm/label-masm.md)|[ORG](../../assembler/masm/org.md)|
 
 ### <a name="conditional-assembly"></a>조건부 어셈블리
 
 ||||
 |-|-|-|
-|[ELSE](../../assembler/masm/else-masm.md)|[ELSEIF](../../assembler/masm/elseif-masm.md)|[ELSEIF2](../../assembler/masm/elseif2.md)|
-|[IF](../../assembler/masm/if-masm.md)|[IF2](../../assembler/masm/if2.md)|[IFB](../../assembler/masm/ifb.md)/[IFNB](../../assembler/masm/ifnb.md)|
-|[IFDEF](../../assembler/masm/ifdef.md)/[IFNDEF](../../assembler/masm/ifndef.md)|[IFDIF](../../assembler/masm/ifdif.md)/[IFDIF&#91;&#91;I&#93;&#93;](../../assembler/masm/ifdif.md)|[IFE](../../assembler/masm/ife.md)|
-|[IFIDN](../../assembler/masm/ifidn.md)/[IFIDN&#91;&#91;I&#93;&#93;](../../assembler/masm/ifidn.md)|||
+|[사람이](../../assembler/masm/else-masm.md)|[그렇지](../../assembler/masm/elseif-masm.md)|[ELSEIF2](../../assembler/masm/elseif2.md)|
+|[때](../../assembler/masm/if-masm.md)|[IF2](../../assembler/masm/if2.md)|[IFB](../../assembler/masm/ifb.md)/[ifnb](../../assembler/masm/ifnb.md)|
+|[IFDEF](../../assembler/masm/ifdef.md)/[IFNDEF](../../assembler/masm/ifndef.md)|[IFDIF](../../assembler/masm/ifdif.md)/[IFDIF&#91;&#91;I&#93; ](../../assembler/masm/ifdif.md)|[IFE](../../assembler/masm/ife.md)|
+|[Ifidn](../../assembler/masm/ifidn.md)/[ifidn&#91;&#91;I&#93; ](../../assembler/masm/ifidn.md)|||
 
 ### <a name="conditional-control-flow"></a>조건부 제어 흐름
 
 ||||
 |-|-|-|
 |[.BREAK](../../assembler/masm/dot-break.md)|[.CONTINUE](../../assembler/masm/dot-continue.md)|[.ELSE](../../assembler/masm/dot-else.md)|
-|[.ELSEIF](../../assembler/masm/dot-if.md)|[.ENDIF](../../assembler/masm/dot-endif.md)|[.ENDW](../../assembler/masm/dot-endw.md)|
+|[. 그렇지](../../assembler/masm/dot-if.md)|[.ENDIF](../../assembler/masm/dot-endif.md)|[.ENDW](../../assembler/masm/dot-endw.md)|
 |[.IF](../../assembler/masm/dot-if.md)|[.REPEAT](../../assembler/masm/dot-repeat.md)|[.UNTIL](../../assembler/masm/dot-until.md)|
 |[.UNTILCXZ](../../assembler/masm/dot-untilcxz.md)|[.WHILE](../../assembler/masm/dot-while.md)||
 
@@ -53,19 +53,19 @@ ms.locfileid: "62178940"
 ||||
 |-|-|-|
 |[.ERR](../../assembler/masm/dot-err.md)|[.ERR2](../../assembler/masm/dot-err2.md)|[.ERRB](../../assembler/masm/dot-errb.md)|
-|[.ERRDEF](../../assembler/masm/dot-errdef.md)|[.ERRDIF](../../assembler/masm/dot-errdif.md)/[.ERRDIF&#91;&#91;I&#93;&#93;&#93;](../../assembler/masm/dot-errdif.md)|[.ERRE](../../assembler/masm/dot-erre.md)|
-|[.ERRIDN](../../assembler/masm/dot-erridn.md)/[.ERRIDN&#91;&#91;I&#93;&#93;](../../assembler/masm/dot-erridn.md)|[.ERRNB](../../assembler/masm/dot-errnb.md)|[.ERRNDEF](../../assembler/masm/dot-errndef.md)|
+|[.ERRDEF](../../assembler/masm/dot-errdef.md)|[. .ERRDIF](../../assembler/masm/dot-errdif.md)/[. .ERRDIF&#91;I&#93; &#91;&#93; ](../../assembler/masm/dot-errdif.md)|[.ERRE](../../assembler/masm/dot-erre.md)|
+|[. ERRIDN](../../assembler/masm/dot-erridn.md)/[입니다. ERRIDN&#91;&#91;I&#93; ](../../assembler/masm/dot-erridn.md)|[.ERRNB](../../assembler/masm/dot-errnb.md)|[.ERRNDEF](../../assembler/masm/dot-errndef.md)|
 |[.ERRNZ](../../assembler/masm/dot-errnz.md)|||
 
 ### <a name="data-allocation"></a>데이터 할당
 
 ||||
 |-|-|-|
-|[ALIGN](../../assembler/masm/align-masm.md)|[BYTE](../../assembler/masm/byte-masm.md)/[SBYTE](../../assembler/masm/sbyte-masm.md)|[DWORD](../../assembler/masm/dword.md)/[SDWORD](../../assembler/masm/sdword.md)|
-|[EVEN](../../assembler/masm/even.md)|[FWORD](../../assembler/masm/fword.md)|[LABEL](../../assembler/masm/label-masm.md)|
+|[않아](../../assembler/masm/align-masm.md)|[BYTE](../../assembler/masm/byte-masm.md)/[SBYTE](../../assembler/masm/sbyte-masm.md)|[DWORD](../../assembler/masm/dword.md)/[sdword](../../assembler/masm/sdword.md)|
+|[EVEN](../../assembler/masm/even.md)|[FWORD](../../assembler/masm/fword.md)|[레이블](../../assembler/masm/label-masm.md)|
 |[ORG](../../assembler/masm/org.md)|[QWORD](../../assembler/masm/qword.md)|[REAL4](../../assembler/masm/real4.md)|
 |[REAL8](../../assembler/masm/real8.md)|[REAL10](../../assembler/masm/real10.md)|[TBYTE](../../assembler/masm/tbyte.md)|
-|[WORD](../../assembler/masm/word.md)/[SWORD](../../assembler/masm/sword.md)|||
+|[단어](../../assembler/masm/word.md)/[소드](../../assembler/masm/sword.md)|||
 
 ### <a name="equates"></a>매월
 
@@ -88,16 +88,16 @@ ms.locfileid: "62178940"
 ||||
 |-|-|-|
 |[ENDM](../../assembler/masm/endm.md)|[EXITM](../../assembler/masm/exitm.md)|[GOTO](../../assembler/masm/goto-masm.md)|
-|[LOCAL](../../assembler/masm/local-masm.md)|[MACRO](../../assembler/masm/macro.md)|[PURGE](../../assembler/masm/purge.md)|
+|[로컬](../../assembler/masm/local-masm.md)|[MACRO](../../assembler/masm/macro.md)|[PURGE](../../assembler/masm/purge.md)|
 
 ### <a name="miscellaneous"></a>기타
 
 ||||
 |-|-|-|
-|[ALIAS](../../assembler/masm/alias-masm.md)|[ASSUME](../../assembler/masm/assume.md)|[COMMENT](../../assembler/masm/comment-masm.md)|
-|[ECHO](../../assembler/masm/echo.md)|[END](../../assembler/masm/end-masm.md)|[.FPO](../../assembler/masm/dot-fpo.md)|
-|[INCLUDE](../../assembler/masm/include-masm.md)|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[MMWORD](../../assembler/masm/mmword.md)|
-|[옵션](../../assembler/masm/option-masm.md)|[POPCONTEXT](../../assembler/masm/popcontext.md)|[PUSHCONTEXT](../../assembler/masm/pushcontext.md)|
+|[앤티앨리어스](../../assembler/masm/alias-masm.md)|[ASSUME](../../assembler/masm/assume.md)|[주석의](../../assembler/masm/comment-masm.md)|
+|[ECHO](../../assembler/masm/echo.md)|[종단](../../assembler/masm/end-masm.md)|[.FPO](../../assembler/masm/dot-fpo.md)|
+|[되어야](../../assembler/masm/include-masm.md)|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[MMWORD](../../assembler/masm/mmword.md)|
+|[OPTION](../../assembler/masm/option-masm.md)|[POPCONTEXT](../../assembler/masm/popcontext.md)|[PUSHCONTEXT](../../assembler/masm/pushcontext.md)|
 |[.RADIX](../../assembler/masm/dot-radix.md)|[.SAFESEH](../../assembler/masm/dot-safeseh.md)|[XMMWORD](../../assembler/masm/xmmword.md)|
 |[YMMWORD](../../assembler/masm/ymmword.md)|||
 
@@ -117,29 +117,29 @@ ms.locfileid: "62178940"
 |[.586P](../../assembler/masm/dot-586p.md)|[.686](../../assembler/masm/dot-686.md)|[.686P](../../assembler/masm/dot-686p.md)|
 |[.K3D](../../assembler/masm/dot-k3d.md)|[.MMX](../../assembler/masm/dot-mmx.md)|[.XMM](../../assembler/masm/dot-xmm.md)|
 
-### <a name="repeat-blocks"></a>요소를 반복 합니다.
+### <a name="repeat-blocks"></a>반복 블록
 
 ||||
 |-|-|-|
-|[ENDM](../../assembler/masm/endm.md)|[FOR](../../assembler/masm/for-masm.md)|[FORC](../../assembler/masm/forc.md)|
-|[GOTO](../../assembler/masm/goto-masm.md)|[REPEAT](../../assembler/masm/repeat.md)|[WHILE](../../assembler/masm/while-masm.md)|
+|[ENDM](../../assembler/masm/endm.md)|[에 대 한](../../assembler/masm/for-masm.md)|[FORC](../../assembler/masm/forc.md)|
+|[GOTO](../../assembler/masm/goto-masm.md)|[REPEAT](../../assembler/masm/repeat.md)|[진행](../../assembler/masm/while-masm.md)|
 
 ### <a name="scope"></a>범위
 
 ||||
 |-|-|-|
-|[COMM](../../assembler/masm/comm.md)|[EXTERN](../../assembler/masm/extern-masm.md)|[EXTERNDEF](../../assembler/masm/externdef.md)|
-|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[PUBLIC](../../assembler/masm/public-masm.md)||
+|[COMM](../../assembler/masm/comm.md)|[시키거나](../../assembler/masm/extern-masm.md)|[EXTERNDEF](../../assembler/masm/externdef.md)|
+|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[공개적](../../assembler/masm/public-masm.md)||
 
-### <a name="segment"></a>세그먼트
+### <a name="segment"></a>세그먼트가
 
 ||||
 |-|-|-|
 |[.ALPHA](../../assembler/masm/dot-alpha.md)|[ASSUME](../../assembler/masm/assume.md)|[.DOSSEG](../../assembler/masm/dot-dosseg.md)|
-|[END](../../assembler/masm/end-masm.md)|[ENDS](../../assembler/masm/ends-masm.md)|[GROUP](../../assembler/masm/group.md)|
+|[종단](../../assembler/masm/end-masm.md)|[종료](../../assembler/masm/ends-masm.md)|[GROUP](../../assembler/masm/group.md)|
 |[SEGMENT](../../assembler/masm/segment.md)|[.SEQ](../../assembler/masm/dot-seq.md)||
 
-### <a name="simplified-segment"></a>간소화 된 세그먼트
+### <a name="simplified-segment"></a>단순화 된 세그먼트
 
 ||||
 |-|-|-|
@@ -148,7 +148,7 @@ ms.locfileid: "62178940"
 |[.FARDATA](../../assembler/masm/dot-fardata.md)|[.FARDATA?](../../assembler/masm/dot-fardata-q.md)|[.MODEL](../../assembler/masm/dot-model.md)|
 |[.STACK](../../assembler/masm/dot-stack.md)|[.STARTUP](../../assembler/masm/dot-startup.md)||
 
-### <a name="string"></a>문자열
+### <a name="string"></a>String
 
 |||
 |-|-|
@@ -159,9 +159,9 @@ ms.locfileid: "62178940"
 
 ||||
 |-|-|-|
-|[ENDS](../../assembler/masm/ends-masm.md)|[RECORD](../../assembler/masm/record-masm.md)|[STRUCT](../../assembler/masm/struct-masm.md)|
-|[TYPEDEF](../../assembler/masm/typedef-masm.md)|[UNION](../../assembler/masm/union.md)||
+|[종료](../../assembler/masm/ends-masm.md)|[기록은](../../assembler/masm/record-masm.md)|[구조체](../../assembler/masm/struct-masm.md)|
+|[였](../../assembler/masm/typedef-masm.md)|[UNION](../../assembler/masm/union.md)||
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Microsoft 매크로 어셈블러 참조](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[Microsoft 매크로 어셈블러 참조](../../assembler/masm/microsoft-macro-assembler-reference.md)

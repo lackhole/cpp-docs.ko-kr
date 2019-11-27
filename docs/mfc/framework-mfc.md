@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: d93d2d50bab4b63258a3e0fe4cd2f24c2fcde4f3
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 387f53e3123b6863fcf218da39c7c5e356eb8219
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095797"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74303412"
 ---
 # <a name="framework-mfc"></a>프레임워크(MFC)
 
 MFC (Microsoft Foundation Class) 라이브러리 프레임 워크를 사용 하는 작업은 주로 몇 가지 주요 클래스와 여러 시각적 C++ 도구를 기반으로 합니다. 일부 클래스는 Win32 API (응용 프로그래밍 인터페이스)의 많은 부분을 캡슐화 합니다. 다른 클래스는 문서, 뷰 및 응용 프로그램 자체와 같은 응용 프로그램 개념을 캡슐화 합니다. OLE 기능과 ODBC 및 DAO 데이터 액세스 기능을 캡슐화 하는 경우도 있습니다.  (DAO는 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다.)
 
-예를 들어 Win32의 창 개념은 MFC 클래스의 `CWnd`에 의해 캡슐화됩니다. 즉, `CWnd`라는 C++ 클래스는 Windows 창을 나타내는`HWND` 핸들을 캡슐화 또는 "래핑"합니다. 마찬가지로 `CDialog` 클래스는 Win32 대화 상자를 캡슐화합니다.
+예를 들어 Win32's 창의 개념은 MFC 클래스 `CWnd`에 의해 캡슐화 됩니다. 즉, `CWnd` 라는 C++ 클래스가 Windows 창을 나타내는 `HWND` 핸들을 캡슐화 하거나 "래핑" 합니다. 마찬가지로 클래스 `CDialog`는 Win32 대화 상자를 캡슐화 합니다.
 
-캡슐화는 예를 들어 C++ `CWnd` 클래스에 `HWND` 형식의 멤버 변수가 포함되며 클래스의 멤버 함수는 `HWND`를 매개 변수로 사용하는 Win32 함수에 대한 호출을 캡슐화합니다. 클래스 멤버 함수는 일반적으로 캡슐화하는 Win32 함수와 이름이 같습니다.
+캡슐화는 C++ 클래스 `CWnd`(예:) `HWND`형식의 멤버 변수를 포함 하 고, 클래스의 멤버 함수는 `HWND`를 매개 변수로 사용 하는 Win32 함수에 대 한 호출을 캡슐화 하는 것을 의미 합니다. 클래스 멤버 함수는 일반적으로 캡슐화하는 Win32 함수와 이름이 같습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -49,6 +49,6 @@ MFC (Microsoft Foundation Class) 라이브러리 프레임 워크를 사용 하�
 
 [창 개체](../mfc/window-objects.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [클래스를 사용하여 Windows 애플리케이션 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)

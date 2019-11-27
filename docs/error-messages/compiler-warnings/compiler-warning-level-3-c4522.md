@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4522
+title: 컴파일러 경고(수준 3) C4522
 ms.date: 11/04/2016
 f1_keywords:
 - C4522
@@ -13,17 +13,17 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188965"
 ---
-# <a name="compiler-warning-level-3-c4522"></a>Compiler Warning (level 3) C4522
+# <a name="compiler-warning-level-3-c4522"></a>컴파일러 경고(수준 3) C4522
 
-'class' : multiple assignment operators specified
+' class ': 할당 연산자를 여러 개 지정 했습니다.
 
-The class has multiple assignment operators of a single type. This warning is informational; the constructors are callable in your program.
+클래스에는 단일 형식의 여러 대입 연산자가 있습니다. 이 경고는 정보 제공 용입니다. 프로그램에서 생성자를 호출할 수 있습니다.
 
-Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.
+이 경고를 표시 하지 않으려면 [warning](../../preprocessor/warning.md) pragma를 사용 합니다.
 
 ## <a name="example"></a>예제
 
-The following sample generates C4522.
+다음 샘플에서는 C4522를 생성 합니다.
 
 ```cpp
 // C4522.cpp

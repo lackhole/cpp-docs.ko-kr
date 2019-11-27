@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - GROUP directive
 ms.assetid: 55dc9548-154e-486d-849a-135e4631eca9
-ms.openlocfilehash: 1a192005c325905e6f40643c5f16e185f67265ad
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 1465d114bc2ea060e8cc8d1dd0aa3484b2f6c10d
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73704248"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397467"
 ---
 # <a name="group-32-bit-masm"></a>GROUP (32 비트 MASM)
 
@@ -19,8 +19,8 @@ ms.locfileid: "73704248"
 
 ## <a name="syntax"></a>구문
 
-> 이름 그룹 세그먼트 [[, 세그먼트]] ...
+> **그룹** *세그먼트* 의 이름을 ⟦ __,__ *segment* ... ⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

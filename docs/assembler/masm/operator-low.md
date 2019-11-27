@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator LOW
 - LOW operator
 ms.assetid: d09e1f6a-dcf5-444d-81fd-3670178d6885
-ms.openlocfilehash: f5c6d38a56d58a82784ac4778f7057ce631bd91d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f47bb98f06a9bd2e7fd46ac528f863aa8bf6765a
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176644"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396699"
 ---
 # <a name="operator-low"></a>연산자 LOW
 
-낮은 8 비트를 반환 합니다 *식*합니다. MASM 식은 64 비트 값입니다.
+*식*의 하위 8 비트를 반환 합니다. MASM 식은 64 비트 값입니다.
 
 ## <a name="syntax"></a>구문
 
-> 하위 식
+> **LOW** *식*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

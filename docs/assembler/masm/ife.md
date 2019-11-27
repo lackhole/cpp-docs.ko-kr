@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - IFE directive
 ms.assetid: bac5659d-9d2e-406d-89b7-e05b335ab0fd
-ms.openlocfilehash: b623bc18634b040d928cade7a7529d08b49063a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca934671ed38abde1f188cf79f5e9074115de1d8
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184625"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397390"
 ---
 # <a name="ife"></a>IFE
 
-경우에 어셈블리를 부여 *식* 이 false (0).
+*식이* false (0) 이면 assembly를 부여 합니다.
 
 ## <a name="syntax"></a>구문
 
-> IFE 식
+> **Ife** *식*
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-참조 [경우](../../assembler/masm/if-masm.md) 전체 구문에 대 한 합니다.
+전체 [구문에 대 한 자세한 내용은](../../assembler/masm/if-masm.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

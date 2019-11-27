@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4538
+title: 컴파일러 경고(수준 3) C4538
 ms.date: 11/04/2016
 f1_keywords:
 - C4538
@@ -13,13 +13,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188956"
 ---
-# <a name="compiler-warning-level-3-c4538"></a>Compiler Warning (level 3) C4538
+# <a name="compiler-warning-level-3-c4538"></a>컴파일러 경고(수준 3) C4538
 
-'type' : const/volatile qualifiers on this type are not supported
+' type ':이 형식에는 const/volatile 한정자를 사용할 수 없습니다.
 
-A qualifier keyword was applied to an array incorrectly. 자세한 내용은 [배열](../../extensions/arrays-cpp-component-extensions.md)을 참조하세요.
+한정자 키워드가 배열에 잘못 적용 되었습니다. 자세한 내용은 [배열](../../extensions/arrays-cpp-component-extensions.md)을 참조하세요.
 
-The following sample generates C4538:
+다음 샘플에서는 C4538를 생성 합니다.
 
 ```cpp
 // C4538.cpp

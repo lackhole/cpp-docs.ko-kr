@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator ' '
 - "' ' operator"
 ms.assetid: 62a5d993-3d9b-470d-ba8a-53d76afd29b1
-ms.openlocfilehash: 0b3fb01136a5021cd67c8b72925b9ca4c6a4b2ed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4bb7e5b82abd5a76209785b814571172ec2ea54e
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176241"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395844"
 ---
 # <a name="operator-39-39"></a>연산자 &#39;&#39;
 
-처리*텍스트*' 문자열입니다.
+'*텍스트*'를 문자열로 처리 합니다.
 
 ## <a name="syntax"></a>구문
 
-> ' text'
+> __'__ *텍스트* __'__
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

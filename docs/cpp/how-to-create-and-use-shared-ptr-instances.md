@@ -1,5 +1,5 @@
 ﻿---
-title: 'How to: Create and use shared_ptr instances'
+title: '방법: shared_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
@@ -11,13 +11,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74245824"
 ---
-# <a name="how-to-create-and-use-shared_ptr-instances"></a>How to: Create and Use shared_ptr instances
+# <a name="how-to-create-and-use-shared_ptr-instances"></a>방법: shared_ptr 인스턴스 만들기 및 사용
 
 `shared_ptr` 형식은 둘 이상의 소유자가 메모리에 있는 개체의 수명을 관리하는 시나리오를 위해 디자인된 C++ 표준 라이브러리의 스마트 포인터입니다. `shared_ptr`을 초기화한 후 복사, 함수 인수의 값으로 전달 및 다른 `shared_ptr` 인스턴스로 할당할 수 있습니다. 모든 인스턴스는 동일한 개체를 가리키고 새 `shared_ptr`이 추가되거나 범위를 벗어나거나 다시 설정될 때마다 하나의 "제어 블록"에 대한 액세스를 공유합니다. 참조 횟수가 0에 도달하면 메모리 리소스 및 제어 블록이 삭제됩니다.
 
 다음 그림에서는 한 개의 메모리 위치를 가리키는 여러 `shared_ptr` 인스턴스를 보여 줍니다.
 
-![Shared pointer diagram](media/shared_ptr.png "Shared pointer diagram")
+![공유 포인터 다이어그램](media/shared_ptr.png "공유 포인터 다이어그램")
 
 ## <a name="example-setup"></a>예제 설정
 
@@ -72,17 +72,17 @@ int main()
 
 ## <a name="example-1"></a>예 1
 
-가능하면 메모리 리소스를 처음으로 만들 때 [make_shared](../standard-library/memory-functions.md#make_shared) 함수를 사용하여 `shared_ptr`을 만듭니다. `make_shared`는 예외로부터 안전합니다. 동일한 호출을 사용하여 제어 블록 및 리소스에 대한 메모리를 할당하므로 생성 오버헤드가 감소됩니다. `make_shared`를 사용하지 않는 경우 `shared_ptr` 생성자에 전달하기 전에 명시적 `new` 식을 사용하여 개체를 만들어야 합니다. 다음 예제에서는 새 개체와 함께 `shared_ptr`을 선언하고 초기화하는 다양한 방법을 보여 줍니다.
+가능하면 메모리 리소스를 처음으로 만들 때 [make_shared](../standard-library/memory-functions.md#make_shared) 함수를 사용하여 `shared_ptr`을 만듭니다. `make_shared`은 예외를 안전 하 게 보호 합니다. 동일한 호출을 사용하여 제어 블록 및 리소스에 대한 메모리를 할당하므로 생성 오버헤드가 감소됩니다. `make_shared`를 사용하지 않는 경우 `new` 생성자에 전달하기 전에 명시적 `shared_ptr` 식을 사용하여 개체를 만들어야 합니다. 다음 예제에서는 새 개체와 함께 `shared_ptr`을 선언하고 초기화하는 다양한 방법을 보여 줍니다.
 
 [!code-cpp[stl_smart_pointers#1](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
-## <a name="example-2"></a>예제 2
+## <a name="example-2"></a>예 2
 
 다음 예제에서는 이미 다른 `shared_ptr`로 할당된 개체의 소유권을 공유하는 `shared_ptr` 인스턴스를 선언하고 초기화하는 방법을 보여 줍니다. `sp2`가 초기화된 `shared_ptr`임을 가정하십시오.
 
 [!code-cpp[stl_smart_pointers#2](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]
 
-## <a name="example-3"></a>예제 3
+## <a name="example-3"></a>예 3
 
 `shared_ptr`은 요소를 복사하는 알고리즘을 사용할 때 C++ 표준 템플릿 라이브러리 컨테이너에서도 유용합니다. `shared_ptr`에 요소를 래핑한 다음 내부 메모리가 필요할 때까지 유효하거나 더 이상 유효하지 않음을 인식하며 해당 요소를 다른 컨테이너에 복사할 수 있습니다. 다음 예제에서는 벡터의 `remove_copy_if` 인스턴스에서 `shared_ptr` 알고리즘을 사용하는 방법을 보여 줍니다.
 
@@ -116,6 +116,6 @@ int main()
 
 [!code-cpp[stl_smart_pointers#3](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_6.cpp)]
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [스마트 포인터(모던 C++)](smart-pointers-modern-cpp.md)

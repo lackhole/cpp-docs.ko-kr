@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - .WHILE directive
 ms.assetid: 7c5e78ae-1bfd-4dcf-aa4c-ba940bcf7793
-ms.openlocfilehash: 70a2405d28c3f7a40187d8b431a0f823cca55c6f
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 32bb48bbf83f16d9604861f2cea71f9680b87de3
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73704211"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397837"
 ---
 # <a name="while-32-bit-masm"></a>. WHILE (32 비트 MASM)
 
-`condition` true 상태로 유지 되는 동안 `statements` 블록을 실행 하는 코드를 생성 합니다. (32 비트 MASM에만 해당)
+*조건이* true 인 동안 *문* 블록을 실행 하는 코드를 생성 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> . WHILE 조건<br/>
-> 문<br/>
-> .ENDW
+> **. WHILE** *조건*\
+> *문*\
+> **.ENDW**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

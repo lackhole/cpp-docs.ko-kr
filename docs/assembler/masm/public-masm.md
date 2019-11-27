@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - PUBLIC directive
 ms.assetid: 56e15a68-8a35-4bdd-b1ec-a38cbbf1c582
-ms.openlocfilehash: 1ff18d3a4e3e5c6141b12c269a7faac1ff0cdefa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec76b88134d2d9e4cfc3f18abf78f43007ef3806
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210648"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74394748"
 ---
 # <a name="public-masm"></a>PUBLIC (MASM)
 
-각 변수, 레이블 또는로 지정 하는 절대 기호를 사용 하면 *이름을* 프로그램의 다른 모든 모듈을 사용할 수 있습니다.
+프로그램의 다른 모든 모듈에서 *이름* 으로 지정 된 각 변수, 레이블 또는 절대 기호를 사용할 수 있도록 합니다.
 
 ## <a name="syntax"></a>구문
 
-> [[Langtype]] 공용 이름 [[, [[langtype]] name]]...
+> **PUBLIC** ⟦ language-type ⟧ *name* ⟦ __,__ ⟦ ⟧ *name* ... ⟧
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

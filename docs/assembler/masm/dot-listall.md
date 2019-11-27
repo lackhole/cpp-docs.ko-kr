@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - .LISTALL directive
 ms.assetid: fccb5117-542d-4ae3-869b-40cc2ab55ecb
-ms.openlocfilehash: 611370c3d599946e9ec50b53662bab4438dc5c72
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b5c88bcf6d6fdb7f127ccc4b2eb927186dbcab8
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62178529"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398173"
 ---
 # <a name="listall"></a>.LISTALL
 
-나열 된 모든 문으로 시작 합니다.
+모든 문의 목록을 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
-> .LISTALL
+> **.LISTALL**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-조합에 해당 [합니다. 목록](../../assembler/masm/dot-list.md), [합니다. 목록](../../assembler/masm/dot-listif.md), 및 [합니다. LISTMACROALL](../../assembler/masm/dot-listmacroall.md)합니다.
+의 조합에 해당 [합니다. 목록](../../assembler/masm/dot-list.md), [. .LISTIF](../../assembler/masm/dot-listif.md)및 [입니다. .LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

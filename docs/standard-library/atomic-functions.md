@@ -344,7 +344,7 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 함수 `atomic_fetch_add`는 `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건을 사용하여 *Atom*의 저장된 값에 *Value*를 원자 단위로 추가하는 `read-modify-write` 연산을 수행합니다.
 
-원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업은 저장된 포인터를`char *`로 처리합니다.
+원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업에서는 저장된 포인터를 `char *`로 처리합니다.
 
 이 연산은 또한 정수 형식에 대해 오버로드됩니다.
 
@@ -564,7 +564,7 @@ T* atomic_fetch_sub(
 
 함수 `atomic_fetch_sub`는 `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건을 사용하여 *Atom*의 저장된 값에서 자동으로 *Value*를 빼는 `read-modify-write` 작업을 수행합니다.
 
-원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업에서는 저장된 포인터를`char *`로 처리합니다.
+원자성 형식이 `atomic_address`이면 *Value*의 형식은 `ptrdiff_t`이고 작업에서는 저장된 포인터를 `char *`로 처리합니다.
 
 이 연산은 또한 정수 형식에 대해 오버로드됩니다.
 

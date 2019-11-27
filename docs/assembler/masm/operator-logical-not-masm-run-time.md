@@ -7,21 +7,21 @@ helpviewer_keywords:
 - operator !, syntax
 - '! operator'
 ms.assetid: e94f737a-8251-4a3d-95ec-e95c35689b37
-ms.openlocfilehash: 4a10fa603449e72108977604697227bbb24c3bfc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c412fcbdd9fc8cefb28a9e84d1651a96be2c998c
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199941"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396752"
 ---
 # <a name="operator--masm-run-time"></a>operator ! (MASM 런타임)
 
-논리 부정입니다. 내부 에서만 사용 [합니다. IF](../../assembler/masm/dot-if.md), [합니다. 하는 동안](../../assembler/masm/dot-while.md), 또는 [합니다. 반복](../../assembler/masm/dot-repeat.md) 어셈블리 때가 아니라 런타임 시 평가 차단 합니다.
+논리 부정. 내 에서만 사용 [됩니다. 이면](../../assembler/masm/dot-if.md)이 고, 그렇지 않으면 [입니다. WHILE](../../assembler/masm/dot-while.md)또는 [. 반복](../../assembler/masm/dot-repeat.md) 블록 및 런타임에 계산 되며 어셈블리 시간이 아닙니다.
 
 ## <a name="syntax"></a>구문
 
-> ! *expression*
+> **!** *expression*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

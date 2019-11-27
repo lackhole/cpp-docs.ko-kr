@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .MMX directive
 ms.assetid: 69d360cb-b530-46e3-9cfe-204d71baa38d
-ms.openlocfilehash: a65aead34c34bee0cf3cdc3825cc568aa5690d1a
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 9385a66448f8e5896b34874b48fce9423579d006
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703665"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398140"
 ---
 # <a name="mmx-32-bit-masm"></a>. MMX (32 비트 MASM)
 
@@ -19,8 +19,8 @@ MMX 또는 단일 명령, 다중 데이터 (SIMD) 명령의 어셈블리를 사�
 
 ## <a name="syntax"></a>구문
 
-> .MMX
+> **.MMX**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

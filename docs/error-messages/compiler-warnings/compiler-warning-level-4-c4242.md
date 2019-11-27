@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4242
 ms.assetid: 8df742e1-fbf1-42f3-8e93-c0e1c222dc7e
-ms.openlocfilehash: ed145444d6eec583c448a3a49167ca1f82644f0b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3123a414dc7a169d2a472dad96d659a9e56c9020
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510002"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541742"
 ---
 # <a name="compiler-warning-level-4-c4242"></a>컴파일러 경고(수준 4) C4242
 
@@ -25,7 +25,7 @@ C4242에 대 한 자세한 내용은 [일반적인 컴파일러 오류](/windows
 
 다음 샘플에서는 C4242를 생성 합니다.
 
-```
+```cpp
 // C4242.cpp
 // compile with: /W4
 #pragma warning(4:4242)

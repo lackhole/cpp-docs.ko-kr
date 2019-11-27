@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - SUBTTL directive
 ms.assetid: 927efadd-ec99-4de9-b64d-229bb2df3bf4
-ms.openlocfilehash: ca0dfe4382e56edd157c0669fb5a2b591f6abb02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91d744ec823dc737e45b580207bdf98d03326912
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210154"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393485"
 ---
 # <a name="subttl"></a>SUBTTL
 
-참조 [부제목](../../assembler/masm/subtitle.md)합니다.
+[부제](../../assembler/masm/subtitle.md)를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
-> SUBTTL
+> **SUBTTL**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

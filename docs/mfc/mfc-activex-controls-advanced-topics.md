@@ -12,16 +12,16 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], parameterized property
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-ms.openlocfilehash: e0daabf3d236eb7038f22c54ea76d616baf613a0
-ms.sourcegitcommit: 2f96e2fda591d7b1b28842b2ea24e6297bcc3622
+ms.openlocfilehash: 9f1fa862a30a83cbda049fc63bac6c33a101587b
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095994"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74305388"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX 컨트롤: 고급 항목
 
-이 문서에서는 ActiveX 컨트롤 개발과 관련 된 고급 항목을 다룹니다. 여기에는 다음이 포함됩니다.
+이 문서에서는 ActiveX 컨트롤 개발과 관련 된 고급 항목을 다룹니다. 이러한 개체는 다음과 같습니다.
 
 - [ActiveX 컨트롤에서 데이터베이스 클래스 사용](#_core_using_database_classes_in_activex_controls)
 
@@ -43,7 +43,7 @@ ActiveX 컨트롤 클래스는 클래스 라이브러리의 일부 이므로 표
 MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이터베이스 클래스 (DAO 및 ODBC)](../data/mfc-database-classes-odbc-and-dao.md)를 참조 하세요. 이 문서에서는 MFC ODBC 클래스와 MFC DAO 클래스를 모두 소개 하 고 이러한 클래스에 대해 자세히 설명 합니다.
 
 > [!NOTE]
->   DAO는 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-programming.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
+> DAO는 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-programming.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
 
 ##  <a name="_core_implementing_a_parameterized_property"></a>매개 변수가 있는 속성 구현
 
@@ -67,7 +67,7 @@ MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이�
 
 1. 바로 가기 메뉴에서 **추가** 를 클릭 한 다음 **속성 추가**를 클릭 합니다.
 
-1. **속성 이름** 상자에을 입력 `Array`합니다.
+1. **속성 이름** 상자에 `Array`을 입력 합니다.
 
 1. **속성 유형** 상자에서 **short**를 선택 합니다.
 
@@ -89,7 +89,7 @@ MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이�
 
 [!code-cpp[NVC_MFC_AxUI#35](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_2.h)]
 
-이 코드는 사용자가 속성 `GetArray` 에 `SetArray` 액세스할 때 특정 행과 열을 요청할 수 있도록 하는 및 라는 두 개의 함수를 선언 합니다.
+이 코드는 사용자가 속성에 액세스할 때 특정 행과 열을 요청할 수 있도록 하는 `GetArray` 및 `SetArray` 라는 두 개의 함수를 선언 합니다.
 
 또한 속성 추가 마법사는 컨트롤 클래스 구현 ()에 있는 컨트롤 디스패치 맵에 다음 줄을 추가 합니다. CPP) 파일:
 
@@ -103,15 +103,15 @@ MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이�
 
 컨트롤에서 오류 조건이 발생 하는 경우 컨트롤 컨테이너에 오류를 보고 해야 할 수 있습니다. 오류가 발생 하는 상황에 따라 오류를 보고 하는 방법에는 두 가지가 있습니다. 오류가 속성의 Get 또는 Set 함수 내에서 발생 하거나 OLE 자동화 메서드 구현 내에서 발생 하는 경우 컨트롤은 [COleControl:: ThrowError](../mfc/reference/colecontrol-class.md#throwerror)를 호출 하 여 오류가 발생 했음을 컨트롤 사용자에 게 알립니다. 오류가 다른 시간에 발생 하는 경우 컨트롤은 스톡 오류 이벤트를 발생 시키는 [COleControl:: FireError](../mfc/reference/colecontrol-class.md#fireerror)를 호출 해야 합니다.
 
-발생 한 오류의 종류를 나타내려면 컨트롤이 또는 `ThrowError` `FireError`에 오류 코드를 전달 해야 합니다. 오류 코드는 32 비트 값을 포함 하는 OLE 상태 코드입니다. 가능 하면 OLECTL에 정의 된 표준 코드 집합에서 오류 코드를 선택 합니다. H 헤더 파일입니다. 다음 표에서는 이러한 코드를 요약 합니다.
+발생 한 오류의 종류를 나타내려면 컨트롤에서 `ThrowError` 또는 `FireError`에 오류 코드를 전달 해야 합니다. 오류 코드는 32 비트 값을 포함 하는 OLE 상태 코드입니다. 가능 하면 OLECTL에 정의 된 표준 코드 집합에서 오류 코드를 선택 합니다. H 헤더 파일입니다. 다음 표에서는 이러한 코드를 요약 합니다.
 
 ### <a name="activex-control-error-codes"></a>ActiveX 컨트롤 오류 코드
 
-|Error|설명|
+|오류|설명|
 |-----------|-----------------|
 |CTL_E_ILLEGALFUNCTIONCALL|함수 호출이 잘못 되었습니다.|
 |CTL_E_OVERFLOW|오버플로|
-|CTL_E_OUTOFMEMORY|메모리 부족|
+|CTL_E_OUTOFMEMORY|메모리가 부족합니다.|
 |CTL_E_DIVISIONBYZERO|0으로 나누었습니다.|
 |CTL_E_OUTOFSTRINGSPACE|문자열 공간이 부족합니다.|
 |CTL_E_OUTOFSTACKSPACE|스택 공간이 부족합니다.|
@@ -119,7 +119,7 @@ MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이�
 |CTL_E_FILENOTFOUND|파일을 찾을 수 없음|
 |CTL_E_BADFILEMODE|파일 모드가 잘못되었습니다.|
 |CTL_E_FILEALREADYOPEN|파일이 이미 열려 있습니다.|
-|CTL_E_DEVICEIOERROR|장치 입/출력(I/O) 오류입니다.|
+|CTL_E_DEVICEIOERROR|디바이스 입/출력(I/O) 오류입니다.|
 |CTL_E_FILEALREADYEXISTS|파일이 이미 있습니다.|
 |CTL_E_BADRECORDLENGTH|레코드 길이가 잘못되었습니다.|
 |CTL_E_DISKFULL|디스크가 꽉 참|
@@ -150,7 +150,7 @@ MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이�
 |CTL_E_SEARCHTEXTNOTFOUND|검색 텍스트를 찾을 수 없습니다.|
 |CTL_E_REPLACEMENTSTOOLONG|대체 텍스트가 너무 깁니다.|
 
-필요한 경우 CUSTOM_CTL_SCODE 매크로를 사용 하 여 표준 코드 중 하나에 포함 되지 않은 조건에 대 한 사용자 지정 오류 코드를 정의 합니다. 이 매크로에 대 한 매개 변수는 1000 및 32767 (포함) 사이의 정수 여야 합니다. 예를 들어:
+필요한 경우 CUSTOM_CTL_SCODE 매크로를 사용 하 여 표준 코드 중 하나에 포함 되지 않은 조건에 대 한 사용자 지정 오류 코드를 정의 합니다. 이 매크로에 대 한 매개 변수는 1000 및 32767 (포함) 사이의 정수 여야 합니다. 예를 들면 다음과 같습니다.
 
 [!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]
 
@@ -160,7 +160,7 @@ ActiveX 컨트롤을 만들어 기존 VBX 컨트롤을 바꾸려면 VBX 컨트�
 
 경우에 따라 특정 한 키 입력 조합을 특수 한 방식으로 처리 하는 것이 좋습니다. 예를 들어 여러 줄 텍스트 상자 컨트롤에서 ENTER 키를 누를 때 새 줄을 삽입 하거나 방향 키 ID를 누를 때 편집 컨트롤 그룹 간을 이동 합니다.
 
-ActiveX 컨트롤 `COleControl`의 기본 클래스가 이면 [CWnd::P retranslatemessage](../mfc/reference/cwnd-class.md#pretranslatemessage) 를 재정의 하 여 컨테이너에서 처리 하기 전에 메시지를 처리할 수 있습니다. 이 기술을 사용 하는 경우의 `PreTranslateMessage`재정의에서 메시지를 처리 하는 경우 항상 TRUE를 반환 합니다.
+ActiveX 컨트롤의 기본 클래스가 `COleControl`경우 [CWnd::P retranslatemessage](../mfc/reference/cwnd-class.md#pretranslatemessage) 를 재정의 하 여 컨테이너에서 메시지를 처리 하기 전에 메시지를 처리할 수 있습니다. 이 기술을 사용 하는 경우 `PreTranslateMessage`재정의에서 메시지를 처리 하는 경우 항상 **TRUE** 를 반환 합니다.
 
 다음 코드 예제에서는 방향 키와 관련 된 모든 메시지를 처리할 수 있는 방법을 보여 줍니다.
 
@@ -174,12 +174,12 @@ ActiveX 컨트롤에 대 한 키보드 인터페이스를 처리 하는 방법�
 
 - 멤버 변수 추가 마법사를 사용 하 여 **제어 변수** 를 선택한 다음 컨트롤의 ID를 선택 합니다. 멤버 변수 이름을 입력 하 고 컨트롤의 래퍼 클래스를 **컨트롤 형식**으로 선택 합니다.
 
-     또는
+     -또는-
 
-- 로컬 변수와 하위 클래스를 대화 상자 항목으로 선언 합니다. 다음과 유사한 코드를 삽입 합니다 (`CMyCtrl` 는 래퍼 클래스, IDC_MYCTRL1는 컨트롤의 ID).
+- 로컬 변수와 하위 클래스를 대화 상자 항목으로 선언 합니다. 다음과 비슷한 코드를 삽입 합니다 (`CMyCtrl`는 래퍼 클래스 이며 IDC_MYCTRL1 컨트롤의 ID).
 
    [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)

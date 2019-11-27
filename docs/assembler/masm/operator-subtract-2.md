@@ -1,5 +1,5 @@
 ---
-title: 연산자-
+title: 연산자 -
 ms.date: 08/30/2018
 f1_keywords:
 - operator -
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - operators [MASM], subtraction
 - arithmetic operators [C++], subtraction
 ms.assetid: 474607cb-e48d-4c91-bef6-91ff0971d5cf
-ms.openlocfilehash: 4046123a43e8bf0fe6831a7d51820501830e8dc1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04a0932215254b015b10e21971baed01443e5efd
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176319"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395480"
 ---
-# <a name="operator--"></a>연산자-
+# <a name="operator--"></a>연산자 -
 
-반환 *expression1* 빼기 *expression2*합니다. 두 번째 연산자의 부호를 반대로 뒤바꿉니다 *식*합니다.
+*Expression1* 를 빼기 *식*으로 반환 합니다. 두 번째 연산자는 *식*의 부호를 반대로 바꿉니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* - *expression2*
+> *expression1* **-** *expression2*
 >
-> -*expression*
+> __-__ *식*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

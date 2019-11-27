@@ -10,21 +10,21 @@ helpviewer_keywords:
 - arithmetic operators [C++], addition
 - operators [MASM], arithmetic
 ms.assetid: 89e31a6e-2f68-4481-b394-1348e14e4653
-ms.openlocfilehash: 01bb647b6cef0bb417a9c897912387dc0019bf0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6f1e587e192fbf38d26c4485e97831b2242effc
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177242"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397128"
 ---
 # <a name="operator-"></a>operator +
 
-첫 번째 연산자 *expression1* plus *expression2*합니다.
+첫 번째 연산자는 *expression1* 와 *식 2*를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* + *expression2*
+> *expression1* + *식 2*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](../../assembler/masm/operators-reference.md)

@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@fardata symbol'
 ms.assetid: b1e096b3-54fc-44ef-bbe6-0c6d5f5d206d
-ms.openlocfilehash: 32accbf29779378c610ae375ff7faba858833c55
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0baf79493db318b69e346084963cb605a1738bed
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62179031"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399063"
 ---
-# <a name="fardata"></a>@fardata
+# <a name="fardata"></a>\@fardata
 
-정의한 세그먼트의 이름을 합니다 [합니다. FARDATA](../../assembler/masm/dot-fardata.md) 지시문 (text 매크로).
+로 정의 된 세그먼트의 이름 [입니다. FARDATA](../../assembler/masm/dot-fardata.md) 지시문 (텍스트 매크로).
 
 ## <a name="syntax"></a>구문
 
-> @fardata
+> **\@fardata**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](symbols-reference.md)

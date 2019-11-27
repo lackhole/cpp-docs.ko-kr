@@ -18,19 +18,19 @@ ms.locfileid: "74246643"
 ---
 # <a name="cleaning-up-resources"></a>리소스 정리
 
-종료 처리기를 실행하는 동안 종료 처리기가 호출되기 전에 어떤 리소스가 실제로 할당되는지 알 수 없을 수 있습니다. It is possible that the **__try** statement block was interrupted before all resources were allocated, so that not all resources were opened.
+종료 처리기를 실행하는 동안 종료 처리기가 호출되기 전에 어떤 리소스가 실제로 할당되는지 알 수 없을 수 있습니다. 모든 리소스가 할당 되기 전에 **__try** 문 블록이 중단 되어 모든 리소스가 열리지 않을 수 있습니다.
 
 따라서 만일에 대비해 종료 처리 정리를 진행하기 전에 어떤 리소스가 실제로 열렸는지 확인해야 합니다. 권장 절차는 다음과 같습니다.
 
 1. 핸들을 NULL로 초기화합니다.
 
-1. In the **__try** statement block, allocate resources. 리소스가 할당되면 핸들은 양수 값으로 설정됩니다.
+1. **__Try** 문 블록에서 리소스를 할당 합니다. 리소스가 할당되면 핸들은 양수 값으로 설정됩니다.
 
-1. In the **__finally** statement block, release each resource whose corresponding handle or flag variable is nonzero or not NULL.
+1. **__Finally** 문 블록에서 해당 핸들 또는 플래그 변수가 0이 아니거나 NULL이 아닌 각 리소스를 해제 합니다.
 
 ## <a name="example"></a>예제
 
-For example, the following code uses a termination handler to close three files and a memory block that were allocated in the **__try** statement block. 리소스를 정리하기 전에 코드는 먼저 리소스가 할당되었는지 확인합니다.
+예를 들어 다음 코드에서는 종료 처리기를 사용 하 여 **__try** 문 블록에 할당 된 파일 세 개와 메모리 블록을 닫습니다. 리소스를 정리하기 전에 코드는 먼저 리소스가 할당되었는지 확인합니다.
 
 ```cpp
 // exceptions_Cleaning_up_Resources.cpp
@@ -70,7 +70,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
+[종료 처리기 작성](../cpp/writing-a-termination-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)

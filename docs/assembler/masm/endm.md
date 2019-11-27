@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - ENDM directive
 ms.assetid: 697ea303-1e47-4ee9-9e67-77b83c3fe35a
-ms.openlocfilehash: 709892c5b60864eafcb4a351c0d775e81597333a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c2bdbe8eb22340a1952b33e5951a374da0ab87fb
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62186194"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397660"
 ---
 # <a name="endm"></a>ENDM
 
-매크로 또는 반복 블록을 종료합니다.
+매크로 또는 반복 블록을 종료 합니다.
 
 ## <a name="syntax"></a>구문
 
-> ENDM
+> **ENDM**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-참조 [매크로](../../assembler/masm/macro.md)를 [에 대 한](../../assembler/masm/for-masm.md)를 [FORC](../../assembler/masm/forc.md)를 [반복](../../assembler/masm/repeat.md), 또는 **하는 동안**합니다.
+[매크로](../../assembler/masm/macro.md), [FOR](../../assembler/masm/for-masm.md), [Forc](../../assembler/masm/forc.md), [REPEAT](../../assembler/masm/repeat.md)또는 [WHILE](while-masm.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

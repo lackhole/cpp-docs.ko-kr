@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62412399"
 ---
-# <a name="steadyclock-struct"></a>steady_clock 구조체
+# <a name="steady_clock-struct"></a>steady_clock 구조체
 
 *안정적인* 시간을 표현합니다.
 

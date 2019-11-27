@@ -1,4 +1,4 @@
----
+﻿---
 title: common_type 구조체
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,7 +13,7 @@ ms.locfileid: "72689798"
 ---
 # <a name="common_type-structure"></a>common_type 구조체
 
-[duration](../standard-library/duration-class.md) 및 [time_point](../standard-library/time-point-class.md) 인스턴스화에 대한 클래스 템플릿 [common_type](../standard-library/common-type-class.md)의 특수화를 설명합니다.
+[duration](../standard-library/duration-class.md) 및 [time_point](../standard-library/time-point-class.md) 인스턴스화에 대한 클래스 템플릿 [common_type](../standard-library/common-type-class.md) 의 특수화를 설명합니다.
 
 ## <a name="syntax"></a>구문
 

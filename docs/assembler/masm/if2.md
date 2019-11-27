@@ -1,30 +1,48 @@
 ---
-title: IF2
-ms.date: 08/30/2018
+title: IF1 및 IF2
+ms.date: 11/21/2019
 f1_keywords:
 - IF2
+- IF1
 helpviewer_keywords:
 - IF2 directive
+- IF2 directive
 ms.assetid: a0f75564-b51b-4e39-ad3b-f7421e7ecad6
-ms.openlocfilehash: 04d6d83e0a06581234b242926299530183b61643
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f1b5126d9294c229d773acd29af463164bb46536
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184859"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397442"
 ---
-# <a name="if2"></a>IF2
+# <a name="if1-and-if2"></a>IF1 및 IF2
 
-**IF** 블록 인 경우 모든 어셈블리 패스에서 계산 됩니다 **옵션: SETIF2** 됩니다 **TRUE**합니다.
+**IF1** 블록은 첫 번째 어셈블리 패스에서 계산 됩니다.
+
+**IF2** 블록은 **SETIF2** 가 **TRUE**인 경우 모든 어셈블리 pass에서 평가 됩니다.
 
 ## <a name="syntax"></a>구문
 
-> IF2 *expression*
+> **IF1;;**
 
-## <a name="remarks"></a>설명
+> **IF2;;**
 
-참조 [경우](../../assembler/masm/if-masm.md) 전체 구문에 대 한 합니다.
+## <a name="remarks"></a>주의
 
-## <a name="see-also"></a>참고자료
+전체 [구문에 대 한 자세한 내용은](../../assembler/masm/if-masm.md) 을 참조 하세요.
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+5\.1 버전의 경우와 달리 MASM 6.1 이상에서는 첫 번째 패스에서 대부분의 작업을 수행 하며, 그런 다음 필요한 만큼 후속 패스를 수행 합니다. 이와 대조적으로 MASM 5.1은 항상 두 개의 소스 패스에서 어셈블합니다. 따라서 MASM 6.1 이상에서 일부 패스 종속 구문을 수정 하거나 삭제 해야 할 수 있습니다.
+
+### <a name="two-pass-directives"></a>2 단계 지시문
+
+호환성을 보장 하기 위해 MASM 6.1 이상에서는 두 개의 패스를 참조 하는 5.1 지시문을 지원 합니다. 여기에는가 포함 **됩니다. ERR1**, **. .ERR2**, **IF1**, **IF2**, **ELSEIF1**및 **ELSEIF2**입니다. 두 번째 패스 구문의 경우 [SETIF2 옵션](option-masm.md)을 지정 해야 합니다. **옵션 SETIF2**가 없는 경우 **IF2** 및 **입니다. .ERR2** 지시문을 통해 오류가 발생 합니다.
+
+```output
+.ERR2 not allowed : single-pass assembler
+```
+
+MASM 6.1 이상에서는 첫 번째 패스 구문을 다르게 처리 합니다. 를 처리 **합니다. ERR1** 지시문 **입니다. ERR**및 **IF1** 지시문은 **IF**와 같습니다.
+
+## <a name="see-also"></a>참고 항목
+
+[지시문 참조](directives-reference.md)

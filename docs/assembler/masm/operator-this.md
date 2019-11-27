@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator THIS
 - THIS operator
 ms.assetid: d795aa0e-6c01-49b7-8c64-8ab111fd82d3
-ms.openlocfilehash: cfc53da4a2a8285d439d0c6c570c180ca6773df3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: de680deccb5492201eaf335b27c7121fc707a35f
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198404"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395476"
 ---
 # <a name="operator-this"></a>연산자 THIS
 
-피연산자에 지정 된 반환 `type` 오프셋과 세그먼트 값은 현재 위치 카운터 값으로 동일 합니다.
+오프셋과 세그먼트 값이 현재 위치 카운터 값과 같은 지정 된 *형식의* 피연산자를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> 이 유형
+> **이** *형식*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

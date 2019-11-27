@@ -15,11 +15,11 @@ ms.locfileid: "74188997"
 ---
 # <a name="arrays-c"></a>배열 (C++)
 
-An array is a sequence of objects of the same type that occupy a contiguous area of memory. Traditional C-style arrays are the source of many bugs, but are still common, especially in older code bases. In modern C++, we strongly recommend using [std::vector](../standard-library/vector-class.md) or [std::array](../standard-library/array-class-stl.md) instead of C-style arrays described in this section. Both of these standard library types store their elements as a contiguous block of memory but provide much greater type safety along with iterators that are guaranteed to point to a valid location within the sequence. For more information, see [Containers (Modern C++)](containers-modern-cpp.md).
+배열은 인접 한 메모리 영역을 차지 하는 동일한 형식의 개체 시퀀스입니다. 기존의 C 스타일 배열은 많은 버그의 소스 이지만 특히 이전 코드 베이스에서는 여전히 일반적입니다. 현대 C++에서는이 섹션에 설명 된 C 스타일 배열 대신 [std:: vector](../standard-library/vector-class.md) 또는 [std:: array](../standard-library/array-class-stl.md) 를 사용 하는 것이 좋습니다. 이러한 표준 라이브러리 형식은 모두 인접 한 메모리 블록으로 해당 요소를 저장 하지만 시퀀스 내에서 유효한 위치를 가리키도록 보장 되는 반복기와 함께 훨씬 더 큰 형식 안전성을 제공 합니다. 자세한 내용은 [컨테이너 (최신 C++)](containers-modern-cpp.md)를 참조 하세요.
 
-## <a name="stack-declarations"></a>Stack declarations
+## <a name="stack-declarations"></a>스택 선언
 
-In a C++ array declaration, the array size is specified after the variable name, not after the type name as in some other languages. The following example declares an array of 1000 doubles to be allocated on the stack. The number of elements must be supplied as an integer literal or else as a constant expression because the compiler has to know how much stack space to allocate; it cannot use a value computed at run-time. Each element in the array is assigned a default value of 0. If you do not assign a default value, each element will initially contain whatever random values happen to be at that location.
+C++ 배열 선언에서 배열 크기는 다른 언어에서와 같이 형식 이름이 아닌 변수 이름 뒤에 지정 됩니다. 다음 예제에서는 스택에 할당 될 1000의 배열을 선언 합니다. 컴파일러가 할당할 스택 공간의 크기를 알고 있어야 하기 때문에 요소 수를 정수 리터럴로 제공 하거나 다른 상수 식으로 제공 해야 합니다. 런타임에 계산 된 값을 사용할 수 없습니다. 배열의 각 요소에는 기본값 0이 할당 됩니다. 기본값을 할당 하지 않는 경우 각 요소에는 해당 위치에서 발생 하는 임의의 값이 처음에 포함 됩니다.
 
 ```cpp
     constexpr size_t size = 1000;
@@ -44,20 +44,20 @@ In a C++ array declaration, the array size is specified after the variable name,
     }
 ```
 
-The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `(size - 1)`.
+배열의 첫 번째 요소는 0 번째 요소이 고 마지막 요소는 (*n*-1) 요소입니다. 여기서 *n* 은 배열에 포함 될 수 있는 요소 수입니다. 선언에 있는 요소 수는 정수 계열 형식 이어야 하며 0 보다 커야 합니다. 프로그램에서 `(size - 1)`보다 큰 첨자 연산자에 값을 전달 하지 않도록 하는 것은 사용자의 책임입니다.
 
-A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
+크기가 0 인 배열은 배열이 **구조체** 또는 **공용 구조체** 의 마지막 필드이 고 Microsoft 확장 (/ze)이 사용 하도록 설정 된 경우에만 유효 합니다.
 
-Stack-based arrays are faster to allocate and access than heap-based arrays, but the number of elements can't be so large that it uses up too much stack memory. How much is too much depends on your program. You can use profiling tools to determine whether an array is too large.
+스택 기반 배열은 힙 기반 배열 보다 할당 및 액세스 속도가 더 빠르지만 요소 수는 너무 커서 너무 많은 스택 메모리를 사용할 수 없습니다. 프로그램에 따라 너무 많이 달라 집니다. 프로 파일링 도구를 사용 하 여 배열이 너무 큰지 여부를 확인할 수 있습니다.
 
-## <a name="heap-declarations"></a>Heap declarations
+## <a name="heap-declarations"></a>힙 선언
 
-If you require an array that is too large to be allocated on the stack, or whose size cannot be known at compile time, you can allocate it on the heap with a [new\[\]](new-operator-cpp.md) expression. The operator returns a pointer to the first element. You can use the subscript operator with the pointer variable just as with a stack-based array. You can also use [pointer arithmetic](../c-language/pointer-arithmetic.md) to move the pointer to any arbitrary elements in the array. It is your responsibility to ensure that:
+스택에 할당할 수 없는 배열이 너무 많거나 컴파일 시간에 크기를 알 수 없는 경우 [새\[\]](new-operator-cpp.md) 식을 사용 하 여 힙에이 배열을 할당할 수 있습니다. 연산자는 첫 번째 요소에 대 한 포인터를 반환 합니다. 첨자 연산자는 스택 기반 배열과 마찬가지로 포인터 변수와 함께 사용할 수 있습니다. [포인터 산술 연산을](../c-language/pointer-arithmetic.md) 사용 하 여 포인터를 배열의 임의 요소로 이동할 수도 있습니다. 다음을 확인 하는 것은 사용자의 책임입니다.
 
-- you always keep a copy of the original pointer address so that you can delete the memory when you no longer need the array.
-- you do not increment or decrement the pointer address past the array bounds.
+- 배열이 더 이상 필요 하지 않을 때 메모리를 삭제할 수 있도록 항상 원래 포인터 주소의 복사본을 보관 합니다.
+- 배열 범위를 벗어난 포인터 주소는 증가 하거나 감소 하지 않습니다.
 
-The following example shows how to define an array on the heap at run time, and how to access the array elements using the subscript operator or by using pointer arithmetic:
+다음 예제에서는 런타임에 힙의 배열을 정의 하는 방법과 첨자 연산자 또는 포인터 산술 연산을 사용 하 여 배열 요소에 액세스 하는 방법을 보여 줍니다.
 
 ```cpp
 
@@ -117,7 +117,7 @@ int main()
 
 ## <a name="initializing-arrays"></a>배열 초기화
 
-You can initialize an array in a loop, one element at a time, or in a single statement. The contents of the following two arrays are identical:
+루프, 한 번에 한 개의 요소 또는 단일 문에서 배열을 초기화할 수 있습니다. 다음 두 배열의 내용이 동일 합니다.
 
 ```cpp
     int a[10];
@@ -129,11 +129,11 @@ You can initialize an array in a loop, one element at a time, or in a single sta
     int b[10]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 ```
 
-## <a name="passing-arrays-to-functions"></a>Passing arrays to functions
+## <a name="passing-arrays-to-functions"></a>함수에 배열 전달
 
-When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. This behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as a pointer to **const** elements.
+배열이 함수에 전달 되 면 첫 번째 요소에 대 한 포인터로 전달 됩니다. 이는 스택 기반 배열과 힙 기반 배열 모두에 적용 됩니다. 포인터에 추가 크기 또는 형식 정보가 포함 되어 있지 않습니다. 이 동작을 *포인터 감소*라고 합니다. 배열을 함수에 전달 하는 경우에는 항상 별도의 매개 변수에서 요소 수를 지정 해야 합니다. 이 동작은 배열이 함수에 전달 될 때 배열 요소가 복사 되지 않는다는 의미 이기도 합니다. 함수가 요소를 수정 하지 않도록 하려면 매개 변수를 **const** 요소에 대 한 포인터로 지정 합니다.
 
-The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **const**, the function can modify the array elements.
+다음 예제에서는 배열 및 길이를 허용 하는 함수를 보여 줍니다. 포인터가 복사본이 아니라 원래 배열을 가리킵니다. 매개 변수가 **const**가 아니기 때문에 함수는 배열 요소를 수정할 수 있습니다.
 
 ```cpp
 void process(double p*, const size_t len)
@@ -146,13 +146,13 @@ void process(double p*, const size_t len)
 }
 ```
 
-Declare the array as const to make it read-only within the function block:
+함수 블록 내에서 읽기 전용으로 만들려면 배열을 const로 선언 합니다.
 
 ```cpp
 void process(const double p*, const size_t len);
 ```
 
-The same function can also be declared in these ways, with no change in behavior. The array is still passed as a pointer to the first element:
+동작을 변경 하지 않고 동일한 함수를 이러한 방식으로 선언할 수도 있습니다. 배열은 여전히 첫 번째 요소에 대 한 포인터로 전달 됩니다.
 
 ```cpp
 // Unsized array
@@ -162,7 +162,7 @@ void process(const double p[] const size_t len);
 void process(const double p[1000], const size_t len);
 ```
 
-## <a name="multidimensional-arrays"></a>Multidimensional arrays
+## <a name="multidimensional-arrays"></a>다차원 배열
 
 다른 배열에서 생성된 배열은 다차원 배열입니다. 이러한 다차원 배열은 여러 개의 대괄호로 묶인 상수 식을 순서대로 배치하여 지정됩니다. 예를 들어 다음 선언을 생각해 볼 수 있습니다.
 
@@ -170,12 +170,12 @@ void process(const double p[1000], const size_t len);
 int i2[5][7];
 ```
 
-It specifies an array of type **int**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:
+다음 그림에 표시 된 것 처럼 5 개의 행과 7 개의 열로 이루어진 2 차원 행렬에 개념적으로 정렬 된 **int**형식의 배열을 지정 합니다.
 
-![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "Conceptual layout of a multi&#45;dimensional array") <br/>
+![다차원&#45;배열의 개념적 레이아웃](../cpp/media/vc38rc1.gif "다차원&#45;배열의 개념적 레이아웃") <br/>
 다차원 배열의 개념적 레이아웃
 
-In declarations of multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)), the constant expression that specifies the bounds for the first dimension can be omitted. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+[이니셜라이저에 설명](../cpp/initializers.md)된 대로 이니셜라이저 목록을 포함 하는 다중 차원이 지정 된 배열의 선언에서 첫 번째 차원의 경계를 지정 하는 상수 식은 생략할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 // arrays2.cpp
@@ -191,7 +191,7 @@ double TransportCosts[][cMarkets] = {
 
 앞의 선언은 세 개의 행과 네 개의 열로 구성된 배열을 정의합니다. 행은 공장을 나타내고 열은 공장에서 출하되는 시장을 나타냅니다. 값은 공장에서 시장까지의 운송 비용입니다. 배열의 첫 번째 차원은 생략되었지만 컴파일러가 이니셜라이저를 검사하여 해당 차원을 채웁니다.
 
-Use of the indirection operator (*) on an n-dimensional array type yields an n-1 dimensional array. If n is 1, a scalar (or array element) is yielded.
+N 차원 배열 형식에 대 한 간접 참조 연산자 (*)를 사용 하면 n-1 차원 배열이 생성 됩니다. n이 1인 경우 스칼라(또는 배열 요소)가 생성됩니다.
 
 C++ 배열은 행 중심 순서로 저장됩니다. 행 중심 순서는 마지막 첨자가 가장 빠르게 변경됨을 의미합니다.
 
@@ -283,7 +283,7 @@ int main()
 
 `aPoint`의 첫 번째 요소는 `Point( int, int )` 생성자를 사용하여 생성되고 나머지 두 요소는 기본 생성자를 사용하여 생성됩니다.
 
-Static member arrays (whether **const** or not) can be initialized in their definitions (outside the class declaration). 예를 들어 다음과 같은 가치를 제공해야 합니다.
+정적 멤버 배열 ( **const** 여부에 관계 없이)은 해당 정의에서 초기화할 수 있습니다 (클래스 선언 외부). 예를 들면 다음과 같습니다.
 
 ```cpp
 // initializing_arrays2.cpp
@@ -301,7 +301,7 @@ int main()
 }
 ```
 
-## <a name="accessing-array-elements"></a>Accessing array elements
+## <a name="accessing-array-elements"></a>배열 요소 액세스
 
 배열 첨자 연산자(`[ ]`)를 사용하여 배열의 개별 요소에 액세스할 수 있습니다. 식에서 아래 첨자 없이 1차원 배열이 사용된 경우 배열 이름은 배열의 첫 번째 요소에 대한 포인터로 평가됩니다.
 
@@ -336,15 +336,15 @@ int main() {
 }
 ```
 
-In the preceding code, `multi` is a three-dimensional array of type **double**. The `p2multi` pointer points to an array of type **double** of size three. 이 예제에서 배열은 한 개, 두 개 및 세 개의 아래 첨자와 함께 사용됩니다. `cout` 문에서처럼 모든 첨자를 지정하는 것이 더 일반적이기는 하지만 `cout` 문에서처럼 배열 요소의 특정 하위 집합을 선택하는 것이 유용할 때도 있습니다.
+위의 코드에서 `multi`는 **double**형식의 3 차원 배열입니다. `p2multi` 포인터는 크기가 3 인 **double** 형식의 배열을 가리킵니다. 이 예제에서 배열은 한 개, 두 개 및 세 개의 아래 첨자와 함께 사용됩니다. `cout` 문에서처럼 모든 첨자를 지정하는 것이 더 일반적이기는 하지만 `cout` 문에서처럼 배열 요소의 특정 하위 집합을 선택하는 것이 유용할 때도 있습니다.
 
-## <a name="overloading-subscript-operator"></a>Overloading subscript operator
+## <a name="overloading-subscript-operator"></a>첨자 연산자 오버 로드
 
-Like other operators, the subscript operator (`[]`) can be redefined by the user. 첨자 연산자의 기본 동작은 다음 메서드를 사용하여 배열 이름과 첨자를 결합하는 것입니다.
+다른 연산자와 마찬가지로, 사용자가 첨자 연산자 (`[]`)를 다시 정의할 수 있습니다. 첨자 연산자의 기본 동작은 다음 메서드를 사용하여 배열 이름과 첨자를 결합하는 것입니다.
 
 `*((array_name) + (subscript))`
 
-포인터 형식을 비롯한 모든 추가에서와 마찬가지로 형식 크기를 조정하기 위해 크기 조정이 자동으로 수행됩니다. Therefore, the resultant value is not *n* bytes from the origin of array-name; rather, it is the *n*th element of the array. For more information about this conversion, see [Additive operators](additive-operators-plus-and.md).
+포인터 형식을 비롯한 모든 추가에서와 마찬가지로 형식 크기를 조정하기 위해 크기 조정이 자동으로 수행됩니다. 따라서 결과 값은 배열 이름 원점에서 *n* 바이트가 아닙니다. 대신, 배열의 *n*번째 요소입니다. 이 변환에 대 한 자세한 내용은 [덧셈 연산자](additive-operators-plus-and.md)를 참조 하세요.
 
 다차원 배열에서도 다음 메서드를 사용하여 주소가 파생됩니다.
 
@@ -352,19 +352,19 @@ Like other operators, the subscript operator (`[]`) can be redefined by the user
 
 ## <a name="arrays-in-expressions"></a>식의 배열
 
-배열 형식의 식별자가 `sizeof`, address-of(`&`) 또는 참조의 초기화 이외의 식에 나타나는 경우 첫 번째 배열 요소에 대한 포인터로 변환됩니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+배열 형식의 식별자가 `sizeof`, 주소 (`&`) 또는 참조의 초기화 이외의 식에 표시 되는 경우 첫 번째 배열 요소에 대 한 포인터로 변환 됩니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";
 char *psz = szError1;
 ```
 
-`psz` 포인터는 `szError1` 배열의 첫 번째 요소를 가리킵니다. Arrays, unlike pointers, are not modifiable l-values. 따라서 다음 대입은 올바르지 않습니다.
+`psz` 포인터는 `szError1` 배열의 첫 번째 요소를 가리킵니다. 포인터와 달리 배열은 수정할 수 있는 l-value가 아닙니다. 따라서 다음 대입은 올바르지 않습니다.
 
 ```cpp
 szError1 = psz;
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[std::array](../standard-library/array-class-stl.md)
+[std:: array](../standard-library/array-class-stl.md)

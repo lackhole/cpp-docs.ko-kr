@@ -18,33 +18,33 @@ ms.locfileid: "74245124"
 ---
 # <a name="structured-exception-handling-cc"></a>Structured Exception Handling (C/C++)
 
-Structured exception handling (SEH) is a Microsoft extension to C to handle certain exceptional code situations, such as hardware faults, gracefully. Although Windows and Microsoft C++ support SEH, we recommend that you use ISO-standard C++ exception handling because it makes your code more portable and flexible. Nevertheless, to maintain existing code or for particular kinds of programs, you still might have to use SEH.
+SEH (구조적 예외 처리)는 하드웨어 오류와 같은 특정 예외 코드 상황을 정상적으로 처리 하기 위해 C에 대 한 Microsoft 확장입니다. Windows 및 Microsoft C++ 가 SEH를 지원 하지만 코드를 더 이식 하 고 유연 C++ 하 게 만들 수 있으므로 ISO 표준 예외 처리를 사용 하는 것이 좋습니다. 그럼에도 불구 하 고 기존 코드 또는 특정 종류의 프로그램을 유지 관리 하려면 SEH를 사용 해야 할 수도 있습니다.
 
-**Microsoft specific:**
+**Microsoft 전용:**
 
 ## <a name="grammar"></a>문법
 
-*try-except-statement* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__except** **(** *expression* **)** *compound-statement*
+*try-문 제외* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__try** **(** *식* **)** *복합 문*
 
-*try-finally-statement* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__finally** *compound-statement*
+*try-finally-문* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__try** *복합 문* **__finally**
 
 ## <a name="remarks"></a>주의
 
-With SEH, you can ensure that resources such as memory blocks and files are released correctly if execution unexpectedly terminates. You can also handle specific problems—for example, insufficient memory—by using concise structured code that does not rely on **goto** statements or elaborate testing of return codes.
+SEH를 사용 하면 실행이 예기치 않게 종료 되는 경우 메모리 블록 및 파일과 같은 리소스가 올바르게 해제 되도록 할 수 있습니다. **Goto** 문이나 반환 코드의 정교한 테스트를 사용 하지 않는 간결한 구조화 된 코드를 사용 하 여 메모리 부족 등의 특정 문제를 처리할 수도 있습니다.
 
-이 문서에서 참조된 try-except 및 try-finally 문은 C 언어에 대한 Microsoft 확장입니다. 둘 다 애플리케이션이 그렇지 않을 경우 실행을 종료하는 이벤트 후에 프로그램을 제어할 수 있도록 하여 SEH를 지원합니다. SEH는 C++ 소스 파일에서 작동하지만 C++용으로 특별히 설계된 것은 아닙니다. If you use SEH in a C++ program that you compile by using the [/EHa or /EHsc](../build/reference/eh-exception-handling-model.md) option, destructors for local objects are called but other execution behavior might not be what you expect. For an illustration, see the example later in this article. In most cases, instead of SEH we recommend that you use ISO-standard [C++ exception handling](../cpp/try-throw-and-catch-statements-cpp.md), which the Microsoft C++ compiler also supports. C++ 예외 처리를 사용하면 코드 포팅 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다.
+이 문서에서 참조된 try-except 및 try-finally 문은 C 언어에 대한 Microsoft 확장입니다. 둘 다 애플리케이션이 그렇지 않을 경우 실행을 종료하는 이벤트 후에 프로그램을 제어할 수 있도록 하여 SEH를 지원합니다. SEH는 C++ 소스 파일에서 작동하지만 C++용으로 특별히 설계된 것은 아닙니다. [/Eha 또는/ehsc](../build/reference/eh-exception-handling-model.md) 옵션을 사용 C++ 하 여 컴파일하는 프로그램에서 SEH를 사용 하는 경우 로컬 개체에 대 한 소멸자가 호출 되지만 다른 실행 동작이 필요한 것은 아닐 수 있습니다. 예시를 보려면이 문서의 뒷부분에 나오는 예제를 참조 하세요. 대부분의 경우 SEH 대신 Microsoft C++ 컴파일러에서 지 원하는 ISO 표준 [ C++ 예외 처리](../cpp/try-throw-and-catch-statements-cpp.md)를 사용 하는 것이 좋습니다. C++ 예외 처리를 사용하면 코드 포팅 가능성이 향상되며 모든 형식의 예외를 처리할 수 있습니다.
 
-If you have C code that uses SEH, you can mix it with C++ code that uses C++ exception handling. For information, see [Handle structured exceptions in C++](../cpp/exception-handling-differences.md).
+SEH를 사용 하는 C 코드가 있는 경우 예외 처리를 사용 C++ C++ 하는 코드와 혼합할 수 있습니다. 자세한 내용은 [에서 C++구조적 예외 처리 ](../cpp/exception-handling-differences.md)를 참조 하세요.
 
 SEH 메커니즘에는 다음 두 가지가 있습니다.
 
-- [Exception handlers](../cpp/writing-an-exception-handler.md), or **__except** blocks, which can respond to or dismiss the exception.
+- 예외 [처리기](../cpp/writing-an-exception-handler.md)또는 예외에 응답 하거나 해제할 수 있는 **__except** 블록.
 
-- [Termination handlers](../cpp/writing-a-termination-handler.md), or **__finally** blocks, which are always called, whether an exception causes termination or not.
+- [종료 처리기](../cpp/writing-a-termination-handler.md)또는 **__finally** 블록은 예외가 종료를 발생 시키는 지 여부를 항상 호출 합니다.
 
-이러한 두 종류의 처리기는 별개이지만 "스택 해제"라는 프로세스를 통해 긴밀하게 연결됩니다. When a structured exception occurs, Windows looks for the most recently installed exception handler that is currently active. 처리기는 다음 세 가지 작업 중 하나를 수행할 수 있습니다.
+이러한 두 종류의 처리기는 별개이지만 "스택 해제"라는 프로세스를 통해 긴밀하게 연결됩니다. 구조화 된 예외가 발생 하면 Windows는 현재 활성 상태인 가장 최근에 설치 된 예외 처리기를 찾습니다. 처리기는 다음 세 가지 작업 중 하나를 수행할 수 있습니다.
 
 - 예외를 인식하지 못하고 다른 처리기에 제어를 전달합니다.
 
@@ -52,21 +52,21 @@ SEH 메커니즘에는 다음 두 가지가 있습니다.
 
 - 예외를 인식하고 처리합니다.
 
-예외가 발생할 때 실행 중이던 함수에 예외를 인식하는 예외 처리기가 없을 수 있습니다. 스택의 훨씬 상위 함수에 있는 경우도 있습니다. 현재 실행 중인 함수 및 스택 프레임의 다른 모든 함수가 종료됩니다. During this process, the stack is "unwound;" that is, local non-static variables of terminated functions are cleared from the stack.
+예외가 발생할 때 실행 중이던 함수에 예외를 인식하는 예외 처리기가 없을 수 있습니다. 스택의 훨씬 상위 함수에 있는 경우도 있습니다. 현재 실행 중인 함수 및 스택 프레임의 다른 모든 함수가 종료됩니다. 이 과정에서 스택은 "해제" 됩니다. 즉, 종료 된 함수의 로컬 비정적 변수는 스택에서 지워집니다.
 
-스택을 해제할 때 운영 체제는 각 함수에 대해 작성된 종료 처리기를 모두 호출합니다. 종료 처리기를 사용하면 그렇지 않을 경우 비정상적인 종료 때문에 열려 있을 리소스를 정리할 수 있습니다. If you've entered a critical section, you can exit it in the termination handler. 프로그램이 종료되는 경우 임시 파일 닫기 및 제거와 같은 기타 관리 작업을 수행할 수 있습니다.
+스택을 해제할 때 운영 체제는 각 함수에 대해 작성된 종료 처리기를 모두 호출합니다. 종료 처리기를 사용하면 그렇지 않을 경우 비정상적인 종료 때문에 열려 있을 리소스를 정리할 수 있습니다. 임계 영역을 입력 한 경우 종료 처리기에서 종료할 수 있습니다. 프로그램이 종료되는 경우 임시 파일 닫기 및 제거와 같은 기타 관리 작업을 수행할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Writing an exception handler](../cpp/writing-an-exception-handler.md)
+- [예외 처리기 작성](../cpp/writing-an-exception-handler.md)
 
-- [Writing a termination handler](../cpp/writing-a-termination-handler.md)
+- [종료 처리기 작성](../cpp/writing-a-termination-handler.md)
 
 - [C++에서 구조적 예외 처리](../cpp/exception-handling-differences.md)
 
 ## <a name="example"></a>예제
 
-As stated earlier, destructors for local objects are called if you use SEH in a C++ program and compile it by using the **/EHa** or **/EHsc** option. 그러나 C++ 예외도 사용하는 경우 실행 중의 동작은 예상과 다를 수 있습니다. This example demonstrates these behavioral differences.
+앞서 설명한 것 처럼 C++ 프로그램에서 SEH를 사용 하 고 **/eha** 또는 **/ehsc** 옵션을 사용 하 여 컴파일하는 경우 로컬 개체에 대 한 소멸자가 호출 됩니다. 그러나 C++ 예외도 사용하는 경우 실행 중의 동작은 예상과 다를 수 있습니다. 이 예제에서는 이러한 동작의 차이점을 보여 줍니다.
 
 ```cpp
 #include <stdio.h>
@@ -115,14 +115,14 @@ int main()
 }
 ```
 
-If you use **/EHsc** to compile this code but the local test control macro `CPPEX` is undefined, there is no execution of the `TestClass` destructor and the output looks like this:
+**/Ehsc** 를 사용 하 여이 코드를 컴파일할 때 로컬 테스트 컨트롤 매크로 `CPPEX` 정의 되지 않은 경우 `TestClass` 소멸자가 실행 되지 않으며 출력은 다음과 같습니다.
 
 ```Output
 Triggering SEH exception
 Executing SEH __except block
 ```
 
-If you use **/EHsc** to compile the code and `CPPEX` is defined by using `/DCPPEX` (so that a C++ exception is thrown), the `TestClass` destructor executes and the output looks like this:
+**/Ehsc** 를 사용 하 여 코드를 컴파일하고 `/DCPPEX` ( C++ 예외가 throw 되도록)를 사용 하 여 `CPPEX` 정의 된 경우 `TestClass` 소멸자가 실행 되 고 출력은 다음과 같이 표시 됩니다.
 
 ```Output
 Throwing C++ exception
@@ -130,7 +130,7 @@ Destroying TestClass!
 Executing SEH __except block
 ```
 
-If you use **/EHa** to compile the code, the `TestClass` destructor executes regardless of whether the exception was thrown by using `std::throw` or by using SEH to trigger the exception, that is, whether `CPPEX` defined or not. 출력은 다음과 같습니다.
+**/Eha** 를 사용 하 여 코드를 컴파일하는 경우 `std::throw`를 사용 하 여 예외가 throw 되었는지 아니면 SEH를 사용 하 여 예외를 트리거하고 (`CPPEX` 정의 되었는지 여부에 관계 없이) `TestClass` 소멸자가 실행 됩니다. 출력은 다음과 같습니다.
 
 ```Output
 Throwing C++ exception
@@ -138,14 +138,14 @@ Destroying TestClass!
 Executing SEH __except block
 ```
 
-자세한 내용은 [/EH(예외 처리 모델)](../build/reference/eh-exception-handling-model.md)를 참조하세요.
+자세한 내용은 [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)을 참조하세요.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)<br/>
+[키워드](../cpp/keywords-cpp.md)<br/>
 [\<exception>](../standard-library/exception.md)<br/>
-[Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[Structured Exception Handling (Windows)](/windows/win32/debug/structured-exception-handling)
+[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[구조적 예외 처리 (Windows)](/windows/win32/debug/structured-exception-handling)

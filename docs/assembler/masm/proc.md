@@ -6,31 +6,31 @@ f1_keywords:
 helpviewer_keywords:
 - PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-ms.openlocfilehash: e7931c97570c0fefcacb0123d75934867793fba4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d1e44fcc4adbbe012b2f31fe9c6c27511bafff1
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210536"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395032"
 ---
 # <a name="proc"></a>PROC
 
-호출 프로시저 블록의 시작 및 끝 표시 *레이블*합니다. 블록의 문에서 호출할 수는 **호출** 명령 또는 [INVOKE](../../assembler/masm/invoke.md) 지시문입니다.
+*레이블*이라는 프로시저 블록의 시작과 끝을 표시 합니다. **호출** 명령 또는 [INVOKE](../../assembler/masm/invoke.md) 지시문을 사용 하 여 블록의 문을 호출할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-> *레이블을* PROC [[*거리*]] [[*langtype*]] [[*가시성*]] [[\<*prologuearg*>]] [[ 사용 하 여 *reglist*]] [[합니다 *매개 변수* [[:*태그*]]]...<br/>
-> [[FRAME [[:*ehandler-address*]] ]]<br/>
-> *statements*<br/>
-> *label* ENDP
+> *label* **PROC** ⟦*distance* *⟧ ⟦ ⟧* *⟦ ⟧ ⟦ ⟧* __\<__ *prologuearg* __>__ ⟦ ⟧**사용** *reglist*⟦ ⟦ __,__ *parameter* ⟧ __:__ *tag*... ⟧\
+> ⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧ \
+> *문*\
+> **endp** 레이블
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-[[프레임 [[:*ehandler 주소*]]]] ml64.exe를 사용 하 여만 유효 하 고 MASM.pdata 함수 테이블 항목을 생성 하 여 함수의 구조적에 대 한.xdata에서 정보를 해제 하면 예외 처리 동작을 해제 합니다.
+⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧는 ml64.exe 에서만 유효 하며,이를 통해 MASM에서 함수 테이블 항목을 생성 하 고 .xdata의 해제 정보를 사용 하 여 함수의 구조화 된 예외 처리 해제 동작을 발생 시킵니다.
 
-경우는 **프레임** 특성을 사용 하 여 따라야는 [합니다. 프롤로그 끝](../../assembler/masm/dot-endprolog.md) 지시문입니다.
+**FRAME** 특성을 사용 하는 경우 뒤에가와 야 합니다 [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) 지시문입니다.
 
-참조 [MASM (ml64.exe) x64](../../assembler/masm/masm-for-x64-ml64-exe.md) ml64.exe를 사용 하 여 대 한 자세한 내용은 합니다.
+Ml64.exe를 사용 하는 방법에 대 한 자세한 내용은 x [64 용 MASM (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) 을 참조 하세요.
 
 ## <a name="example"></a>예제
 
@@ -54,7 +54,7 @@ _text ENDS
 END
 ```
 
-위의 코드는 다음 함수 테이블 내보내고 정보를 해제 됩니다.
+위의 코드는 다음 함수 테이블 및 해제 정보를 내보냅니다.
 
 ```Output
 FileHeader->Machine 34404
@@ -77,6 +77,6 @@ Dumping Unwind Information for file ex2.exe
       Code offset: 0x01, PUSH_NONVOL, register=rbp
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

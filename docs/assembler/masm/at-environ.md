@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - '@Environ symbol'
 ms.assetid: 4b0b7e93-9ebe-413b-8196-1a504eb6d1d0
-ms.openlocfilehash: 2f4d5725d37a74ff0c9c19ad5206478196f28a13
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b9e31c91f42330c5173edaee1865a4f584ae572
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62166310"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399128"
 ---
-# <a name="environ"></a>@Environ
+# <a name="environ"></a>\@Environ
 
-환경 변수의 값 *envvar* (매크로 함수 사용).
+환경 변수 *envvar* 의 값 (매크로 함수)입니다.
 
 ## <a name="syntax"></a>구문
 
-> @Environ( envvar )
+> **\@Environ (** *envvar* **)**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)<br/>
+[기호 참조](symbols-reference.md)

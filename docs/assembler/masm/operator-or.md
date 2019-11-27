@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator OR
 - OR operator, bitwise
 ms.assetid: fab36ba6-8ee0-4778-beb9-21dce6d99db7
-ms.openlocfilehash: ded25f2e8732348485deabae73f4620a4e26918a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84724b47fd2f7f55e78b00eb37d6bdabb47e265e
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198850"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396546"
 ---
 # <a name="operator-or"></a>연산자 OR
 
-비트 결과 반환 합니다 `OR` 에 대 한 작업 *expression1* 하 고 *expression2*합니다.
+*Expression1* 및 *식 2*에 대 한 비트 or 연산의 결과를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> expression1 OR expression2
+> *expression1* **또는** *식 2*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

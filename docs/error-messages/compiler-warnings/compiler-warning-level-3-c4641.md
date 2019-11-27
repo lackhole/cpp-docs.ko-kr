@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4641
+title: 컴파일러 경고(수준 3) C4641
 ms.date: 11/04/2016
 f1_keywords:
 - C4641
@@ -13,17 +13,17 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189419"
 ---
-# <a name="compiler-warning-level-3-c4641"></a>Compiler Warning (level 3) C4641
+# <a name="compiler-warning-level-3-c4641"></a>컴파일러 경고(수준 3) C4641
 
 XML 문서 주석에 모호한 상호 참조가 있습니다.
 
-The compiler was unable to unambiguously resolve a reference. To resolve this warning, specify the parameter information necessary to make the reference unambiguous.
+컴파일러가 참조를 명확 하 게 확인할 수 없습니다. 이 경고를 해결 하려면 참조를 명확 하 게 만드는 데 필요한 매개 변수 정보를 지정 합니다.
 
 자세한 내용은 [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
-The following sample generates C4641.
+다음 샘플에서는 C4641를 생성 합니다.
 
 ```cpp
 // C4641.cpp

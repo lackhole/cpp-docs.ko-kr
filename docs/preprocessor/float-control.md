@@ -1,6 +1,7 @@
 ---
 title: float_control pragma
-ms.date: 08/29/2019
+description: Float_control pragma 지시문의 사용량과 효과를 설명 합니다. Float_control 지시문은 런타임에 부동 소수점 정확한 의미 체계 및 예외 의미 체계의 상태를 제어 합니다.
+ms.date: 11/18/2019
 f1_keywords:
 - vc-pragma.float_control
 - float_control_CPP
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - float_control pragma
 - pragmas, float_control
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
-ms.openlocfilehash: aa8cdc07953405175c1753791ab53214d73ba516
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0c9caea5ba35a55a53f7b9340cf9bfd2cce80561
+ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218572"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74305499"
 ---
 # <a name="float_control-pragma"></a>float_control pragma
 
@@ -22,49 +23,69 @@ ms.locfileid: "70218572"
 ## <a name="syntax"></a>구문
 
 > **#pragma float_control**\
-> **#pragma float_control (** { **precise** | **strict** | **except** } **,** { **on** | **off** } [ **, push** ] **)** \
+> **#pragma float_control (precise,** { **on** | **off** } [ **, push** ] **)** \
+> **#pragma float_control (를 제외** 하 고 { **on** | **off** } [ **, push** ] **)** \
 > **#pragma float_control (** { **push** | **pop** } **)**
 
-## <a name="options"></a>변수
+## <a name="options"></a>옵션
 
-**정확한** **strict (** **꺼짐**,꺼짐,푸시) |  |  | \
-**정확**하 고 **strict**이거나 **except**일 수 있는 부동 소수점 동작을 지정 합니다. 자세한 내용은 [/fp(부동 소수점 동작 지정)](../build/reference/fp-specify-floating-point-behavior.md)를 참조하세요. 설정은 설정 하거나 **해제할**수 있습니다.
+**정확한** |  **꺼짐**, **푸시**\
+정확한 부동 소수점 의미 체계를 사용 하거나 사용 하지**않도록 (설정) 할지** **여부를 지정**합니다. 이 옵션이 이름이 지정 된 **/fp: precise** 컴파일러 옵션과 어떻게 다른 지에 대 한 자세한 내용은 설명 부분을 참조 하십시오. 선택적 **푸시** 토큰은 내부 컴파일러 스택에 **float_control** 의 현재 설정을 푸시하는 컴파일러에 지시 합니다.
 
-**Strict**인 경우 **strict** 와 **except** 모두에 대 한 설정이 **on** 또는 **off** 설정으로 지정 됩니다. **except** 가 **on**으로 설정 된 경우에 만을 **on** 으로 설정할 수 있습니다.
+**제외**하 고 | **해제** **시** **푸시**\
+부동 소수점 예외 의미 체계를 사용 하거나 사용 하지**않도록 (설정) 할지** **여부를 지정**합니다. 이 옵션이 이름이 지정 된 **/fp: except** 컴파일러 옵션과 어떻게 다른 지에 대 한 자세한 내용은 설명 부분을 참조 하세요. 선택적 **푸시** 토큰은 내부 컴파일러 스택에 **float_control** 의 현재 설정을 푸시하는 컴파일러에 지시 합니다.
 
-선택적 **푸시** 토큰이 추가 되 면 **float_control** 의 현재 설정이 내부 컴파일러 스택으로 푸시됩니다.
+**except** 는 **on**으로 **설정 된 경우** 에만 **on** 으로 설정할 수 있습니다.
 
-**누르기**\
+**푸시**\
 현재 **float_control** 설정을 내부 컴파일러 스택에 푸시합니다.
 
-**창을**\
-내부 컴파일러 스택 맨 위에서 **float_control** 설정을 제거 하 고 새 **float_control** 설정을 만듭니다.
+**pop**\
+내부 컴파일러 스택 맨 위에서 **float_control** 설정을 제거 하 고 새 **float_control** 설정 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**Float_control** 를 사용 하 여가 on으로 설정 되어 있으면 **정확도** 를 해제할 수 없습니다. 마찬가지로 [fenv_access](../preprocessor/fenv-access.md) 를 on으로 설정 하면 **precise** 를 끌 수 없습니다. **Float_control** pragma를 사용 하 여 strict 모델에서 fast model로 이동 하려면 다음 코드를 사용 합니다.
+**정확한** 및 **제외** 옵션은 동일한 이름의 [/fp](../build/reference/fp-specify-floating-point-behavior.md) 컴파일러 옵션과 정확히 동일한 동작을 포함 하지 않습니다. **Float_control** pragma는 부동 소수점 동작의 일부를 제어 합니다. [Fp_contract](../preprocessor/fp-contract.md) 및 [fenv_access](../preprocessor/fenv-access.md) pragma를 조합 하 여 **/fp** 컴파일러 옵션을 다시 만들어야 합니다. 다음 표에서는 각 컴파일러 옵션에 대 한 동일한 pragma 설정을 보여 줍니다.
+
+| | float_control (정확한, \*) | float_control (제외, \*) | fp_contract (\*) | fenv_access (\*) |
+|-|-|-|-|-|
+| /fp:strict             | 위치:  | 위치:  | 해제 | 위치:  |
+| /fp:strict /fp:except- | 위치:  | 해제 | 해제 | 위치:  |
+| /fp:precise            | 위치:  | 해제 | 위치:  | 해제 |
+| /fp:precise /fp:except | 위치:  | 위치:  | 위치:  | 해제 |
+| /fp:fast               | 해제 | 해제 | 위치:  | 해제 |
+
+즉, 여러 pragma를 조합 하 여 **/fp: fast**, **/fp: precise**, **/fp: strict**및 **/fp: except** 명령줄 옵션을 에뮬레이션 해야 합니다.
+
+**Float_control** 를 사용 하 고 부동 소수점 pragma를 **fenv_access** 하는 방법에는 다음과 같은 제한 사항이 있습니다.
+
+- 정확한 의미 체계를 사용 하도록 설정 하는 **경우를** **제외 하 고** 는 **float_control** 만 사용할 수 있습니다. **Float_control** pragma를 사용 하거나 **/fp: precise** 또는 **/fp: strict** 컴파일러 옵션을 사용 하 여 정확한 의미 체계를 사용 하도록 설정할 수 있습니다.
+
+- **Float_control** pragma 또는 **/fp: except** 컴파일러 옵션을 사용 하 여 예외 의미 체계를 사용 하는 경우에는 **float_control** 를 사용 하 여 **정확한** 해제를 설정할 수 없습니다.
+
+- **Float_control** pragma 또는 컴파일러 옵션을 사용 하 여 정확한 의미 체계를 사용 하도록 설정 하지 않으면 **fenv_access** 를 사용 하도록 설정할 수 없습니다.
+
+- **Fenv_access** 사용 하도록 설정 된 경우 **float_control** 를 사용 하 여 **정확한** 기능을 해제할 수 없습니다.
+
+이러한 제한 사항은 일부 부동 소수점 pragma의 순서가 중요 함을 의미 합니다. **Float_control** 및 관련 pragma를 사용 하 여 빠른 모델에서 엄격한 모델로 이동 하려면 다음 코드를 사용 합니다.
 
 ```cpp
-#pragma float_control(except, off)
-#pragma fenv_access(off)
-#pragma float_control(precise, off)
+#pragma float_control(precise, on)  // enable precise semantics
+#pragma fenv_access(on)             // enable environment sensitivity
+#pragma float_control(except, on)   // enable exception semantics
+#pragma fp_contract(off)            // disable contractions
 ```
 
-**Float_control** pragma를 사용 하 여 빠른 모델에서 엄격한 모델로 이동 하려면 다음 코드를 사용 합니다.
+**Float_control** pragma를 사용 하 여 엄격한 모델에서 빠른 모델로 이동 하려면 다음 코드를 사용 합니다.
 
 ```cpp
-#pragma float_control(precise, on)
-#pragma fenv_access(on)
-#pragma float_control(except, on)
+#pragma float_control(except, off)  // disable exception semantics
+#pragma fenv_access(off)            // disable environment sensitivity
+#pragma float_control(precise, off) // disable precise semantics
+#pragma fp_contract(on)             // ensable contractions
 ```
 
-옵션을 지정 하지 않으면 **float_control** 는 영향을 주지 않습니다.
-
-다른 부동 소수점 pragma는 다음과 같습니다.
-
-- [fenv_access](../preprocessor/fenv-access.md)
-
-- [fp_contract](../preprocessor/fp-contract.md)
+옵션을 지정 하지 않으면 **float_control** 적용 되지 않습니다.
 
 ## <a name="example"></a>예제
 
@@ -108,6 +129,8 @@ int main( ) {
 Pass
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma 지시문 및 __pragma 키워드](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+[fenv_access](../preprocessor/fenv-access.md)\
+[fp_contract](../preprocessor/fp-contract.md)

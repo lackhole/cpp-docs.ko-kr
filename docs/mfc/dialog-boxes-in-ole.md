@@ -37,9 +37,9 @@ ms.locfileid: "71685783"
 링크 편집 대화 상자를 사용 하 여 사용자는 연결 된 개체의 원본에 대 한 정보를 변경할 수 있습니다. 업데이트 링크 대화 상자는 현재 대화 상자에 있는 모든 연결 된 항목의 원본을 확인 하 고 필요한 경우 링크 편집 대화 상자를 표시 합니다. 사용자가 편집 메뉴에서 링크를 선택할 때 링크 편집 대화 상자를 표시 합니다. 업데이트 링크 대화 상자는 일반적으로 복합 문서를 처음 열 때 표시 됩니다. 표시 하려는 대화 상자에 따라 [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) 또는 [coleupdatedialog](../mfc/reference/coleupdatedialog-class.md) 클래스 중 하나를 사용 합니다.
 
 *서버 작업 중 또는 서버가 응답 하지 않음*<br/>
-서버 작업 중 대화 상자는 사용자가 항목을 활성화 하려고 할 때 서버에서 현재 요청을 처리할 수 없는 경우 (일반적으로 다른 사용자 또는 작업에서 서버를 사용 하 고 있기 때문에) 표시 됩니다. 서버가 활성화 요청에 응답 하지 않으면 서버가 응답 하지 않습니다. 대화 상자가 표시 됩니다. 이러한 대화 상자는-1 @no__t OLE 인터페이스의 구현에 따라 `COleMessageFilter`을 통해 표시 되며, 사용자는 활성화 요청을 다시 시도할지 여부를 결정할 수 있습니다. [COleBusyDialog](../mfc/reference/colebusydialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다.
+서버 작업 중 대화 상자는 사용자가 항목을 활성화 하려고 할 때 서버에서 현재 요청을 처리할 수 없는 경우 (일반적으로 다른 사용자 또는 작업에서 서버를 사용 하 고 있기 때문에) 표시 됩니다. 서버가 활성화 요청에 응답 하지 않으면 서버가 응답 하지 않습니다. 대화 상자가 표시 됩니다. 이러한 대화 상자는 OLE 인터페이스 `IMessageFilter`의 구현에 따라 `COleMessageFilter`를 통해 표시 되며, 사용자는 활성화 요청을 다시 시도할지 여부를 결정할 수 있습니다. [COleBusyDialog](../mfc/reference/colebusydialog-class.md) 클래스를 사용 하 여이 대화 상자를 표시 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [MFC에서 대화 상자 작업](../mfc/life-cycle-of-a-dialog-box.md)<br/>

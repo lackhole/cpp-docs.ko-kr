@@ -15,9 +15,9 @@ ms.locfileid: "74189114"
 ---
 # <a name="compiler-warning-level-3-c4637"></a>컴파일러 경고(수준 3) C4637
 
-XML document comment target: \<include> tag discarded.  이유
+XML 문서 주석 대상: \<태그를 삭제 > 포함 합니다.  reason
 
-The syntax of an [\<include>](../../build/reference/include-visual-cpp.md) tag was not correct.
+> 태그가 포함 된 [\<](../../build/reference/include-visual-cpp.md) 구문이 올바르지 않습니다.
 
 다음 샘플에서는 C4637을 생성합니다.
 
