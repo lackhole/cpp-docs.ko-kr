@@ -15,12 +15,12 @@ ms.locfileid: "74399059"
 ---
 # <a name="filecur"></a>\@FileCur
 
-The name of the current file (text macro).
+현재 파일의 이름입니다 (텍스트 매크로).
 
 ## <a name="syntax"></a>구문
 
 > **\@FileCur**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

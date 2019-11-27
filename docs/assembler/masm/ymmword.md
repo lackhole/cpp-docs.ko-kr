@@ -15,7 +15,7 @@ ms.locfileid: "74392761"
 ---
 # <a name="ymmword"></a>YMMWORD
 
-Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX) instructions.
+Intel AVX (Advanced Vector Extensions) 명령을 사용 하는 256 비트 멀티미디어 피연산자에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## <a name="remarks"></a>주의
 
-**YMMWORD** is intended to represent the same type as `__m256` for the AVX intrinsics.
+**YMMWORD** 는 AVX 내장 함수에 대해 `__m256`와 동일한 형식을 표시 하기 위한 것입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

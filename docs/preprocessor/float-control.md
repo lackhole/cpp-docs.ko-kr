@@ -37,23 +37,23 @@ ms.locfileid: "74305499"
 
 **except** 는 **on**으로 **설정 된 경우** 에만 **on** 으로 설정할 수 있습니다.
 
-**push**\
+**푸시**\
 현재 **float_control** 설정을 내부 컴파일러 스택에 푸시합니다.
 
 **pop**\
 내부 컴파일러 스택 맨 위에서 **float_control** 설정을 제거 하 고 새 **float_control** 설정 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **정확한** 및 **제외** 옵션은 동일한 이름의 [/fp](../build/reference/fp-specify-floating-point-behavior.md) 컴파일러 옵션과 정확히 동일한 동작을 포함 하지 않습니다. **Float_control** pragma는 부동 소수점 동작의 일부를 제어 합니다. [Fp_contract](../preprocessor/fp-contract.md) 및 [fenv_access](../preprocessor/fenv-access.md) pragma를 조합 하 여 **/fp** 컴파일러 옵션을 다시 만들어야 합니다. 다음 표에서는 각 컴파일러 옵션에 대 한 동일한 pragma 설정을 보여 줍니다.
 
 | | float_control (정확한, \*) | float_control (제외, \*) | fp_contract (\*) | fenv_access (\*) |
 |-|-|-|-|-|
-| /fp:strict             | On  | On  | 해제 | On  |
-| /fp:strict /fp:except- | On  | 해제 | 해제 | On  |
-| /fp:precise            | On  | 해제 | On  | 해제 |
-| /fp:precise /fp:except | On  | On  | On  | 해제 |
-| /fp:fast               | 해제 | 해제 | On  | 해제 |
+| /fp:strict             | 위치:  | 위치:  | 해제 | 위치:  |
+| /fp:strict /fp:except- | 위치:  | 해제 | 해제 | 위치:  |
+| /fp:precise            | 위치:  | 해제 | 위치:  | 해제 |
+| /fp:precise /fp:except | 위치:  | 위치:  | 위치:  | 해제 |
+| /fp:fast               | 해제 | 해제 | 위치:  | 해제 |
 
 즉, 여러 pragma를 조합 하 여 **/fp: fast**, **/fp: precise**, **/fp: strict**및 **/fp: except** 명령줄 옵션을 에뮬레이션 해야 합니다.
 

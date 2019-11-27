@@ -15,16 +15,16 @@ ms.locfileid: "74398509"
 ---
 # <a name="data"></a>.DATA
 
-When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for initialized data (segment name _DATA).
+과 함께 사용 [됩니다. 모델](../../assembler/masm/dot-model.md)에서는 초기화 된 데이터 (세그먼트 이름 _DATA)에 대해 near 데이터 세그먼트를 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
 > **.DATA**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[.DATA?](../../assembler/masm/dot-data-q.md)\
-[.CONST](../../assembler/masm/dot-const.md)\
-[.FARDATA](../../assembler/masm/dot-fardata.md)\
+[지시문 참조](../../assembler/masm/directives-reference.md)\
+[. 데이터?](../../assembler/masm/dot-data-q.md)\
+[. CONST](../../assembler/masm/dot-const.md)\
+[. FARDATA](../../assembler/masm/dot-fardata.md)\
 [.FARDATA?](../../assembler/masm/dot-fardata-q.md)

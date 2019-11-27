@@ -15,12 +15,12 @@ ms.locfileid: "74398870"
 ---
 # <a name="wordsize"></a>\@WordSize
 
-Two for a 16-bit segment or four for a 32-bit segment (numeric equate).
+16 비트 세그먼트의 경우 2이 고, 32 비트 세그먼트의 경우 4입니다 (숫자는).
 
 ## <a name="syntax"></a>구문
 
 > **\@WordSize**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

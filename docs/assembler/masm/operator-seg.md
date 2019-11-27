@@ -17,12 +17,12 @@ ms.locfileid: "74396471"
 ---
 # <a name="operator-seg"></a>연산자 SEG
 
-Returns the segment of *expression*.
+*식*의 세그먼트를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **SEG** *expression*
+> **SEG** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

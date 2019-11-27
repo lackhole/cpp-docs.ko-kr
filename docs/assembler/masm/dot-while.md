@@ -13,16 +13,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397837"
 ---
-# <a name="while-32-bit-masm"></a>.WHILE (32-bit MASM)
+# <a name="while-32-bit-masm"></a>. WHILE (32 비트 MASM)
 
-Generates code that executes the block of *statements* while *condition* remains true. (32-bit MASM only.)
+*조건이* true 인 동안 *문* 블록을 실행 하는 코드를 생성 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> **.WHILE** *condition*\
-> *statements*\
+> **. WHILE** *조건*\
+> *문*\
 > **.ENDW**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

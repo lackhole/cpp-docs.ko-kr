@@ -15,12 +15,12 @@ ms.locfileid: "74393702"
 ---
 # <a name="sizestr"></a>SIZESTR
 
-Finds the size of a text item.
+텍스트 항목의 크기를 찾습니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **SIZESTR** *textitem*
+> *이름* **SIZESTR** *textitem*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

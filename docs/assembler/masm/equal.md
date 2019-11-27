@@ -15,16 +15,16 @@ ms.locfileid: "74397607"
 ---
 # <a name=""></a>=
 
-Assigns the numeric value of *expression* to *name*.
+*식* 의 숫자 값을 *이름*에 할당 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **=** *expression*
+> *이름* **=** *식*
 
 ## <a name="remarks"></a>주의
 
-The symbol can be redefined later.
+기호는 나중에 다시 정의할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

@@ -19,12 +19,12 @@ ms.locfileid: "74396624"
 ---
 # <a name="operator-"></a>연산자 *
 
-Returns *expression1* times *expression2*.
+*Expression1* 를 *식 2*번 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
 > *expression1* __\*__ *expression2*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397467"
 ---
-# <a name="group-32-bit-masm"></a>GROUP (32-bit MASM)
+# <a name="group-32-bit-masm"></a>GROUP (32 비트 MASM)
 
-Add the specified *segments* to the group called *name*. (32-bit MASM only.)
+지정 된 *세그먼트* 를 *이름*이라는 그룹에 추가 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> *name* **GROUP** *segment* ⟦ __,__ *segment* ...⟧
+> **그룹** *세그먼트* 의 이름을 ⟦ __,__ *segment* ... ⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

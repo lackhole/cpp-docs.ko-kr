@@ -17,12 +17,12 @@ ms.locfileid: "74395362"
 ---
 # <a name="operator-type"></a>연산자 TYPE
 
-Returns the type of *expression*.
+*식*의 유형을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **TYPE** *expression*
+> **유형** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

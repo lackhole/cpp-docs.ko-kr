@@ -15,16 +15,16 @@ ms.locfileid: "74397572"
 ---
 # <a name="exitm"></a>EXITM
 
-Terminates expansion of the current repeat or macro block and begins assembly of the next statement outside the block.
+현재 반복 또는 매크로 블록의 확장을 종료 하 고 블록 외부에 있는 다음 문의 어셈블리를 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **EXITM** ⟦*textitem*⟧
+> **Exitm** ⟦*textitem*⟧
 
 ## <a name="remarks"></a>주의
 
-In a macro function, *textitem* is the value returned.
+매크로 함수에서 *textitem* 은 반환 된 값입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

@@ -15,16 +15,16 @@ ms.locfileid: "74397557"
 ---
 # <a name="extern-masm"></a>EXTERN (MASM)
 
-Defines one or more external variables, labels, or symbols called *name* whose type is *type*.
+형식이 *형식인* *name* 이라는 외부 변수, 레이블 또는 기호를 하나 이상 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **EXTERN** ⟦*language-type*⟧ *name* ⟦ __(__ *altid* __)__ ⟧ __:__ *type* ⟦ __,__ ⟦*language-type*⟧ *name* ⟦ __(__ *altid* __)__ ⟧ __:__ *type* ...⟧
+> **EXTERN** ⟦*language-type*⟧ *name* ⟦ __(__ *altid* __)__ ⟧ __:__ *type* ⟦ __,__ ⟦*language-type*⟧ *name* ⟦ __(__ *altid* __)__ ⟧ __:__ *type* ... ⟧
 
 ## <a name="remarks"></a>주의
 
-The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Same as [EXTRN](../../assembler/masm/extrn.md).
+*형식은* *이름* 을 상수로 가져오는 [ABS](../../assembler/masm/operator-abs.md)일 수 있습니다. [Extrn](../../assembler/masm/extrn.md)과 동일 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

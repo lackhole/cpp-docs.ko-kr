@@ -17,12 +17,12 @@ ms.locfileid: "74396508"
 ---
 # <a name="operator-"></a>연산자 %
 
-Treats the value of *expression* in a macro argument as text.
+매크로 인수에서 *식* 의 값을 텍스트로 처리 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **%** *expression*
+> **%** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

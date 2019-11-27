@@ -35,4 +35,4 @@ public ref class Test {};
 
 이 샘플은 **끝 태그 'member'가 시작 태그 'summary'와 일치하지 않습니다**를 출력합니다.
 
-The problem with this sample is that the end tag for \<summary> is poorly formed, and the compiler does not recognize it as the \<summary> end tag.  The \<member> tag is embedded in the .xdc file by the compiler in every /doc compilation.  So, the problem here is that the end tag \</member>, does not match the previous start tag that the compiler processed (\<summary>.
+이 샘플의 문제는 \<요약 >의 끝 태그 형식이 잘못 되어 컴파일러에서이 태그를 \<summary > 끝 태그로 인식 하지 않는다는 것입니다.  \<멤버 > 태그는 모든/doc 컴파일의 컴파일러에 의해 .xdc 파일에 포함 됩니다.  따라서 여기에서 발생 하는 문제는 끝 태그 \</멤버 >가 컴파일러가 처리 한 이전 시작 태그 (\<요약 >와 일치 하지 않는다는 것입니다.

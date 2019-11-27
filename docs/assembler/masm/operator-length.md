@@ -17,12 +17,12 @@ ms.locfileid: "74396853"
 ---
 # <a name="operator-length"></a>연산자 LENGTH
 
-Returns the number of data items in *variable* created by the first initializer.
+첫 번째 이니셜라이저가 만든 *변수의* 데이터 항목 수를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **LENGTH** *variable*
+> **길이** *변수*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

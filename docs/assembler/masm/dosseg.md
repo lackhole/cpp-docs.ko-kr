@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398744"
 ---
-# <a name="dosseg-32-bit-masm"></a>DOSSEG (32-bit MASM)
+# <a name="dosseg-32-bit-masm"></a>.DOSSEG (32 비트 MASM)
 
-Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferred form. (32-bit MASM only.)
+와 동일 [합니다. ](../../assembler/masm/dot-dosseg.md)기본 형식인 .dosseg. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
 > **DOSSEG**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

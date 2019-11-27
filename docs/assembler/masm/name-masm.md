@@ -15,12 +15,12 @@ ms.locfileid: "74397144"
 ---
 # <a name="name-masm"></a>NAME (MASM)
 
-무시됩니다.
+무시.
 
 ## <a name="syntax"></a>구문
 
-> **NAME**
+> **이름의**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

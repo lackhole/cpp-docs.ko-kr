@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398677"
 ---
-# <a name="486p-32-bit-masm"></a>.486P (32-bit MASM)
+# <a name="486p-32-bit-masm"></a>. .486P (32 비트 MASM)
 
-Enables assembly of all instructions (including privileged) for the 80486 processor. (32-bit MASM only.)
+80486 프로세서에 대 한 모든 명령 (권한 포함)의 어셈블리를 사용 하도록 설정 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
 > **.486P**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

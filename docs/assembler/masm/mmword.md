@@ -15,7 +15,7 @@ ms.locfileid: "74397171"
 ---
 # <a name="mmword"></a>MMWORD
 
-Used for 64-bit multimedia operands with MMX and SSE (XMM) instructions.
+MMX 및 SSE (XMM) 명령을 포함 하는 64 비트 멀티미디어 피연산자에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,15 +23,15 @@ Used for 64-bit multimedia operands with MMX and SSE (XMM) instructions.
 
 ## <a name="remarks"></a>주의
 
-**MMWORD** is a type.  Prior to **MMWORD** being added to MASM, equivalent functionality could have been achieved with:
+**Mmword** 는 형식입니다.  MASM에 **단어가** 추가 되기 전에 다음을 사용 하 여 동일한 기능을 달성할 수 있습니다.
 
 ```asm
     mov mm0, qword ptr [ebx]
 ```
 
-While both instructions work on 64-bit operands, **QWORD** is the type for 64-bit unsigned integers and **MMWORD** is the type for a 64-bit multimedia value.
+두 명령이 모두 64 비트 피연산자에 적용 되는 반면, **qword(64** 는 64 비트 부호 없는 정수의 형식이 고 **mmword** 는 64 비트 멀티미디어 값의 형식입니다.
 
-**MMWORD** is intended to represent the same type as [__m64](../../cpp/m64.md).
+**Mmword** 는 [__m64](../../cpp/m64.md)와 동일한 형식을 나타냅니다.
 
 ## <a name="example"></a>예제
 

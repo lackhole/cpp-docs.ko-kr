@@ -15,53 +15,53 @@ ms.locfileid: "74393734"
 ---
 # <a name="segment"></a>SEGMENT
 
-Defines a program segment called *name* having segment attributes
+세그먼트 특성이 있는 *이름* 이라는 프로그램 세그먼트를 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **SEGMENT** ⟦**READONLY**⟧ ⟦*align*⟧ ⟦*combine*⟧ ⟦*use*⟧ ⟦*characteristics*⟧ **ALIAS(** _string_ **)** ⟦ __'__ *class* __'__ ⟧\
-> *statements*\
-> *name* **ENDS**
+> *이름* **세그먼트** ⟦**READONLY**⟧ ⟦*align*⟧ ⟦*combine*⟧ ⟦*use*⟧ ⟦*특징*⟧ **ALIAS (** _string_ **)** ⟦ __'__ *class* __'__ ⟧ \
+> *문*\
+> *이름* **끝**
 
 #### <a name="parameters"></a>매개 변수
 
 *align*<br/>
-The range of memory addresses from which a starting address for the segment can be selected. The alignment type can be any one of the following:
+세그먼트의 시작 주소를 선택할 수 있는 메모리 주소 범위입니다. 맞춤 유형은 다음 중 하나일 수 있습니다.
 
-|Align Type|Starting Address|
+|정렬 유형|시작 주소|
 |----------------|----------------------|
-|**BYTE**|Next available byte address.|
-|**WORD**|Next available word address (2 bytes per word).|
-|**DWORD**|Next available double word address (4 bytes per double word).|
-|**PARA**|Next available paragraph address (16 bytes per paragraph).|
-|**PAGE**|Next available page address (256 bytes per page).|
-|**ALIGN**(*n*)|Next available *n*th byte address. See Remarks section for more information.|
+|**BYTE**|사용 가능한 다음 바이트 주소입니다.|
+|**WORD**|사용 가능한 다음 word 주소 (word 당 2 바이트)|
+|**DWORD**|다음 사용 가능한 이중 단어 주소 (이중 단어 당 4 바이트)|
+|**이전**|사용 가능한 다음 단락 주소 (단락 당 16 바이트)입니다.|
+|**PAGE**|다음 사용 가능한 페이지 주소 (페이지당 256 바이트)|
+|**ALIGN**(*n*)|사용할 수 있는 다음 *n*번째 바이트 주소입니다. 자세한 내용은 설명 부분을 참조 하세요.|
 
-If this parameter is not specified, **PARA** is used by default.
+이 매개 변수를 지정 하지 않으면 기본적으로 **단락** 을 사용 합니다.
 
-*combine*\
-**PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**
+\ *결합*
+**공용**, **스택**, **공용**, **메모리**,<em>주소</em>, **개인**
 
-*use*\
+\ *사용*
 **USE16**, **USE32**, **FLAT**
 
-*characteristics*\
-**INFO**, **READ**, **WRITE**, **EXECUTE**, **SHARED**, **NOPAGE**, **NOCACHE**, and **DISCARD**
+*특성*\
+**정보**, **읽기**, **쓰기**, **실행**, **공유**, **nopage**, **NOCACHE**및 **취소**
 
-These are supported for COFF only and correspond to the COFF section characteristics of similar name (for example, **SHARED** corresponds to IMAGE_SCN_MEM_SHARED). READ sets the IMAGE_SCN_MEM_READ flag. The obsolete READONLY flag caused the section to clear the IMG_SCN_MEM_WRITE flag. If any *characteristics* are set, the default characteristics are not used and only the programmer-specified flags are in effect.
+이러한 기능은 COFF 에서만 지원 되며 유사한 이름의 COFF 섹션 특성에 해당 합니다. 예를 들어 **SHARED** 는 IMAGE_SCN_MEM_SHARED에 해당 합니다. 읽기 IMAGE_SCN_MEM_READ 플래그를 설정 합니다. 사용 되지 않는 READONLY 플래그는 섹션을 사용 하 여 IMG_SCN_MEM_WRITE 플래그를 지웁니다. *특성이* 설정 되 면 기본 특성이 사용 되지 않으며 프로그래머 지정 플래그만 적용 됩니다.
 
 _string_\
-This string is used as the section name in the emitted COFF object.  Creates multiple sections with the same external name, with distinct MASM segment names.
+이 문자열은 내보낸 COFF 개체의 섹션 이름으로 사용 됩니다.  고유한 MASM 세그먼트 이름을 사용 하 여 동일한 외부 이름으로 여러 섹션을 만듭니다.
 
-Not supported with **/omf**.
+**/Omf**에서 지원 되지 않습니다.
 
 *class*\
-Designates how segments should be combined and ordered in the assembled file. Typical values are, `'DATA'`, `'CODE'`, `'CONST'` and `'STACK'`
+어셈블된 파일에서 세그먼트를 결합 하 고 정렬 하는 방법을 지정 합니다. 일반적인 값은, `'DATA'`, `'CODE'`, `'CONST'` 및 `'STACK'`
 
 ## <a name="remarks"></a>주의
 
-For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/omf**.
+`ALIGN(n)`의 경우 *n* 은 1에서 8192 사이에 2의 거듭제곱이 될 수 있습니다. **/omf**에서 지원 되지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

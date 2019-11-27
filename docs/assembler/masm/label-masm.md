@@ -15,14 +15,14 @@ ms.locfileid: "74397263"
 ---
 # <a name="label-masm"></a>LABEL (MASM)
 
-Creates a new label by assigning the current location-counter value and the given *type* to *name*.
+현재 위치 카운터 값과 지정 된 *형식을* *이름*에 할당 하 여 새 레이블을 만듭니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **LABEL** *type*
+> *이름* **레이블** *유형*
 >
-> *name* **LABEL** ⟦**NEAR** | **FAR** | **PROC**⟧ **PTR** ⟦*type*⟧
+> *이름* **레이블** ⟦**NEAR** | **FAR** | **PROC**⟧ **PTR** ⟦*type*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

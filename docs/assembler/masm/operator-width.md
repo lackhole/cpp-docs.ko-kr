@@ -17,12 +17,12 @@ ms.locfileid: "74395325"
 ---
 # <a name="operator-width"></a>연산자 WIDTH
 
-Returns the width in bits of the current *recordfieldname* or *record*.
+현재 *recordfieldname* 또는 *record*의 너비 (비트)를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
 > **WIDTH** {*recordfieldname* | *record*}
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

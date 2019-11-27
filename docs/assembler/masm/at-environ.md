@@ -15,12 +15,12 @@ ms.locfileid: "74399128"
 ---
 # <a name="environ"></a>\@Environ
 
-Value of environment variable *envvar* (macro function).
+환경 변수 *envvar* 의 값 (매크로 함수)입니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@Environ(** *envvar* **)**
+> **\@Environ (** *envvar* **)**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

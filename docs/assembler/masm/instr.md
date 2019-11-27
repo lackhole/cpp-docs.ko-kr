@@ -15,16 +15,16 @@ ms.locfileid: "74397321"
 ---
 # <a name="instr"></a>INSTR
 
-Finds the first occurrence of *textitem2* in *textitem1*.
+*Textitem1*에서 *textitem2* 의 첫 번째 발생을 찾습니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **INSTR** ⟦*position* __,__ ⟧ *textitem1* __,__ *textitem2*
+> *이름* **INSTR** ⟦*position* __,__ ⟧ *textitem1* __,__ *textitem2*
 
 ## <a name="remarks"></a>주의
 
-The starting *position* is optional. Each text item can be a literal string, a constant preceded by a **%** , or the string returned by a macro function.
+시작 *위치* 는 선택 사항입니다. 각 텍스트 항목은 리터럴 문자열, **%** 앞에 오는 상수 또는 매크로 함수에서 반환 된 문자열이 될 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

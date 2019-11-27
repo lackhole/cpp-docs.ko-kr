@@ -13,24 +13,24 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398232"
 ---
-# <a name="if-32-bit-masm"></a>.IF (32-bit MASM)
+# <a name="if-32-bit-masm"></a>. IF (32 비트 MASM)
 
-Generates code that tests *condition1* (for example, AX > 7) and executes the *statements* if that condition is true. (32-bit MASM only.)
+*Condition1* (예: AX > 7)를 테스트 하 고 해당 조건이 true 인 경우 *문을* 실행 하는 코드를 생성 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> **.IF** *condition1*\
-> *statements*\
-> ⟦ **.ELSEIF** *condition2*\
-> *statements*⟧\
-> ⟦ **.ELSE**\
-> *statements*⟧\
+> **.**  *Condition1*\
+> *문*\
+> ⟦ **. ELSEIF** *condition2*\
+> *문*⟧ \
+> ⟦ **. ELSE**\
+> *문*⟧ \
 > **.ENDIF**
 
 ## <a name="remarks"></a>주의
 
-If a [.ELSE](../../assembler/masm/dot-else.md) follows, its statements are executed if the original condition was false. Note that the conditions are evaluated at run time.
+[인 경우 그 다음에](../../assembler/masm/dot-else.md) 는 원래 조건이 false 인 경우 해당 문이 실행 됩니다. 조건은 런타임에 평가 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

@@ -21,8 +21,8 @@ ms.locfileid: "74397285"
 
 ## <a name="remarks"></a>주의
 
-See [FOR](../../assembler/masm/for-masm.md).
+[을](../../assembler/masm/for-masm.md)참조 하십시오.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

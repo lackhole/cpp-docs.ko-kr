@@ -42,71 +42,71 @@ ms.locfileid: "74246726"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC의 예외 처리
 
-This article explains the exception-handling mechanisms available in MFC. Two mechanisms are available:
+이 문서에서는 MFC에서 사용할 수 있는 예외 처리 메커니즘에 대해 설명 합니다. 다음 두 가지 메커니즘을 사용할 수 있습니다.
 
-- C++ exceptions, available in MFC version 3.0 and later
+- C++예외 (MFC 버전 3.0 이상에서 사용 가능)
 
-- The MFC exception macros, available in MFC versions 1.0 and later
+- Mfc 예외 매크로 (MFC 버전 1.0 이상에서 사용 가능)
 
-If you're writing a new application using MFC, you should use the C++ mechanism. You can use the macro-based mechanism if your existing application already uses that mechanism extensively.
+MFC를 사용 하 여 새 응용 프로그램을 작성 하는 경우에 C++ 는 메커니즘을 사용 해야 합니다. 기존 응용 프로그램에서 이미 해당 메커니즘을 광범위 하 게 사용 하는 경우 매크로 기반 메커니즘을 사용할 수 있습니다.
 
-You can readily convert existing code to use C++ exceptions instead of the MFC exception macros. Advantages of converting your code and guidelines for doing so are described in the article [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md).
+MFC 예외 매크로 대신 예외를 사용 C++ 하도록 기존 코드를 쉽게 변환할 수 있습니다. 코드를 변환 하는 경우의 이점 및이에 대 한 지침은 [예외: MFC 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)문서에 설명 되어 있습니다.
 
-If you have already developed an application using the MFC exception macros, you can continue using these macros in your existing code, while using C++ exceptions in your new code. The article [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) gives guidelines for doing so.
+MFC 예외 매크로를 사용 하 여 응용 프로그램을 이미 개발한 경우 새 코드에서 예외를 사용 C++ 하면서 기존 코드에서 이러한 매크로를 계속 사용할 수 있습니다. 문서 [예외: 버전 3.0의 예외 매크로 변경 내용](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) 에 대 한 지침을 제공 합니다.
 
 > [!NOTE]
->  To enable C++ exception handling in your code, select Enable C++ Exceptions on the Code Generation page in the C/C++ folder of the project's [Property Pages](../build/reference/property-pages-visual-cpp.md) dialog box, or use the [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option.
+>  코드에서 C++ 예외 처리를 사용 하도록 설정 하려면 프로젝트 C++ 의C++ [속성 페이지](../build/reference/property-pages-visual-cpp.md) 대화 상자에서 C/폴더의 코드 생성 페이지에서 예외 사용을 선택 하거나 [/ehsc](../build/reference/eh-exception-handling-model.md) 컴파일러 옵션을 사용 합니다.
 
-This article covers the following topics:
+이 문서에서는 다음 항목을 다룹니다.
 
-- [When to use exceptions](#_core_when_to_use_exceptions)
+- [예외를 사용 하는 경우](#_core_when_to_use_exceptions)
 
-- [MFC exception support](#_core_mfc_exception_support)
+- [MFC 예외 지원](#_core_mfc_exception_support)
 
-- [Further reading about exceptions](#_core_further_reading_about_exceptions)
+- [예외에 대 한 추가 정보](#_core_further_reading_about_exceptions)
 
-##  <a name="_core_when_to_use_exceptions"></a> When to Use Exceptions
+##  <a name="_core_when_to_use_exceptions"></a>예외를 사용 하는 경우
 
-Three categories of outcomes can occur when a function is called during program execution: normal execution, erroneous execution, or abnormal execution. Each category is described below.
+프로그램 실행 중에 함수가 호출 되는 경우 (일반적인 실행, 잘못 된 실행 또는 비정상적인 실행) 세 가지 범주의 결과가 발생할 수 있습니다. 각 범주는 아래에 설명 되어 있습니다.
 
-- Normal execution
+- 일반 실행
 
-   The function may execute normally and return. Some functions return a result code to the caller, which indicates the outcome of the function. The possible result codes are strictly defined for the function and represent the range of possible outcomes of the function. The result code can indicate success or failure or can even indicate a particular type of failure that is within the normal range of expectations. For example, a file-status function can return a code that indicates that the file does not exist. Note that the term "error code" is not used because a result code represents one of many expected outcomes.
+   함수는 정상적으로 실행 되 고를 반환할 수 있습니다. 일부 함수는 결과 코드를 호출자에 게 반환 하며,이는 함수의 결과를 나타냅니다. 가능한 결과 코드는 함수에 대해 엄격 하 게 정의 되며 함수의 가능한 결과 범위를 나타냅니다. 결과 코드는 성공 또는 실패를 나타내거나 일반적인 예상 범위 내에 있는 특정 유형의 오류를 나타낼 수도 있습니다. 예를 들어 파일 상태 함수는 파일이 없다는 것을 나타내는 코드를 반환할 수 있습니다. 결과 코드는 예상 되는 많은 결과 중 하나를 나타내므로 "오류 코드" 라는 용어는 사용 되지 않습니다.
 
-- Erroneous execution
+- 잘못 실행
 
-   The caller makes some mistake in passing arguments to the function or calls the function in an inappropriate context. This situation causes an error, and it should be detected by an assertion during program development. (For more information on assertions, see [C/C++ Assertions](/visualstudio/debugger/c-cpp-assertions).)
+   호출자는 함수에 인수를 전달 하거나 적절 하지 않은 컨텍스트에서 함수를 호출 하는 실수를 발생 시킬 수 있습니다. 이 경우 오류가 발생 하 고 프로그램 개발 중 어설션이 어설션에 의해 검색 됩니다. 어설션에 대 한 자세한 내용은 [C/C++ 어설션](/visualstudio/debugger/c-cpp-assertions)을 참조 하십시오.
 
-- Abnormal execution
+- 비정상적인 실행
 
-   Abnormal execution includes situations where conditions outside the program's control, such as low memory or I/O errors, are influencing the outcome of the function. Abnormal situations should be handled by catching and throwing exceptions.
+   비정상적인 실행에는 메모리 부족 또는 i/o 오류와 같은 프로그램 제어 외부의 조건이 함수의 결과에 영향을 주는 경우가 포함 됩니다. 예외를 catch 하 고 throw 하 여 비정상적인 상황을 처리 해야 합니다.
 
-Using exceptions is especially appropriate for abnormal execution.
+예외를 사용 하는 것은 비정상적인 실행에 특히 적합 합니다.
 
-##  <a name="_core_mfc_exception_support"></a> MFC Exception Support
+##  <a name="_core_mfc_exception_support"></a>MFC 예외 지원
 
-Whether you use the C++ exceptions directly or use the MFC exception macros, you will use [CException Class](../mfc/reference/cexception-class.md) or `CException`-derived objects that may be thrown by the framework or by your application.
+예외를 C++ 직접 사용 하거나 MFC 예외 매크로를 사용 하는 경우에는 프레임 워크 또는 응용 프로그램에서 throw 될 수 있는 [cexception 클래스](../mfc/reference/cexception-class.md) 또는 `CException`파생 개체를 사용 합니다.
 
-The following table shows the predefined exceptions provided by MFC.
+다음 표에서는 MFC에서 제공 하는 미리 정의 된 예외를 보여 줍니다.
 
 |Exception 클래스|의미|
 |---------------------|-------------|
-|[CMemoryException 클래스](../mfc/reference/cmemoryexception-class.md)|Out-of-memory|
-|[CFileException 클래스](../mfc/reference/cfileexception-class.md)|File exception|
-|[CArchiveException 클래스](../mfc/reference/carchiveexception-class.md)|Archive/Serialization exception|
-|[CNotSupportedException 클래스](../mfc/reference/cnotsupportedexception-class.md)|Response to request for unsupported service|
-|[CResourceException 클래스](../mfc/reference/cresourceexception-class.md)|Windows resource allocation exception|
-|[CDaoException 클래스](../mfc/reference/cdaoexception-class.md)|Database exceptions (DAO classes)|
-|[CDBException 클래스](../mfc/reference/cdbexception-class.md)|Database exceptions (ODBC classes)|
+|[CMemoryException 클래스](../mfc/reference/cmemoryexception-class.md)|메모리 부족|
+|[CFileException 클래스](../mfc/reference/cfileexception-class.md)|파일 예외|
+|[CArchiveException 클래스](../mfc/reference/carchiveexception-class.md)|보관/Serialization 예외|
+|[CNotSupportedException 클래스](../mfc/reference/cnotsupportedexception-class.md)|지원 되지 않는 서비스 요청에 대 한 응답|
+|[CResourceException 클래스](../mfc/reference/cresourceexception-class.md)|Windows 리소스 할당 예외|
+|[CDaoException 클래스](../mfc/reference/cdaoexception-class.md)|데이터베이스 예외 (DAO 클래스)|
+|[CDBException 클래스](../mfc/reference/cdbexception-class.md)|데이터베이스 예외 (ODBC 클래스)|
 |[COleException 클래스](../mfc/reference/coleexception-class.md)|OLE 예외|
-|[COleDispatchException 클래스](../mfc/reference/coledispatchexception-class.md)|Dispatch (automation) exceptions|
-|[CUserException 클래스](../mfc/reference/cuserexception-class.md)|Exception that alerts the user with a message box, then throws a generic [CException Class](../mfc/reference/cexception-class.md)|
+|[COleDispatchException 클래스](../mfc/reference/coledispatchexception-class.md)|디스패치 (자동화) 예외|
+|[CUserException 클래스](../mfc/reference/cuserexception-class.md)|메시지 상자를 사용 하 여 사용자에 게 경고 한 다음 일반 [Cexception 클래스](../mfc/reference/cexception-class.md) 를 throw 하는 예외입니다.|
 
-버전 3.0 이상에서는 MFC가 C++ 예외를 사용했으나 형식에서 C++ 예외와 유사한 이전 예외 처리 매크로를 여전히 지원합니다. 이러한 매크로는 새 프로그래밍에는 권장되지 않지만 여전히 역 호환성에 대해 지원됩니다. 매크로를 이미 사용하는 프로그램에서 자유롭게 C++ 예외를 사용할 수 있습니다. During preprocessing, the macros evaluate to the exception handling keywords defined in the MSVC implementation of the C++ language as of Visual C++ version 2.0. C++ 예외를 사용하는 동안 기존 예외 매크로를 남겨둘 수 있습니다. For information on mixing macros and C++ exception handling and on converting old code to use the new mechanism, see the articles [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md) and [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md). 이전 MFC 예외 매크로를 계속 사용하는 경우 C++ 예외 키워드로 평가합니다. See [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md). MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](/windows/win32/debug/structured-exception-handling).
+버전 3.0 이상에서는 MFC가 C++ 예외를 사용했으나 형식에서 C++ 예외와 유사한 이전 예외 처리 매크로를 여전히 지원합니다. 이러한 매크로는 새 프로그래밍에는 권장되지 않지만 여전히 역 호환성에 대해 지원됩니다. 매크로를 이미 사용하는 프로그램에서 자유롭게 C++ 예외를 사용할 수 있습니다. 전처리 하는 동안 매크로는 시각적 C++ C++ 버전 2.0에 따라 언어의 MSVC 구현에 정의 된 예외 처리 키워드로 평가 됩니다. C++ 예외를 사용하는 동안 기존 예외 매크로를 남겨둘 수 있습니다. 매크로 및 C++ 예외 처리를 혼합 하는 방법과 기존 코드를 새 메커니즘을 사용 하도록 변환 하는 방법에 대 한 자세한 내용은 [예외: C++ mfc 매크로 사용](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md) 및 예외 및 [예외: mfc 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)문서를 참조 하세요. 이전 MFC 예외 매크로를 계속 사용하는 경우 C++ 예외 키워드로 평가합니다. [예외: 버전 3.0의 예외 매크로에 대 한 변경 내용을](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)참조 하세요. MFC는 [구조적 예외 처리](/windows/win32/debug/structured-exception-handling)에 설명 된 대로 WINDOWS NT SEH (구조적 예외 처리기)를 직접 지원 하지 않습니다.
 
-##  <a name="_core_further_reading_about_exceptions"></a> Further Reading About Exceptions
+##  <a name="_core_further_reading_about_exceptions"></a>예외에 대 한 추가 정보
 
-The following articles explain using the MFC library for exception handing:
+다음 문서에서는 예외 처리를 위해 MFC 라이브러리를 사용 하는 방법을 설명 합니다.
 
 - [예외: 예외 Catch 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)
 
@@ -120,7 +120,7 @@ The following articles explain using the MFC library for exception handing:
 
 - [예외: OLE 예외](../mfc/exceptions-ole-exceptions.md)
 
-The following articles compare the MFC exception macros with the C++ exception keywords and explain how you can adapt your code:
+다음 문서에서는 MFC 예외 매크로와 C++ 예외 키워드를 비교 하 고 코드를 조정 하는 방법을 설명 합니다.
 
 - [예외: 버전 3.0의 예외 매크로 변경 사항](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)
 
@@ -128,7 +128,7 @@ The following articles compare the MFC exception macros with the C++ exception k
 
 - [예외: MFC 매크로 및 C++ 예외 사용](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[How Do I: Create my Own Custom Exception Classes](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[예외 C++ 및 오류 처리에 대 한 최신 모범 사례](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[방법: 고유한 사용자 지정 예외 클래스 만들기](https://go.microsoft.com/fwlink/p/?linkid=128045)

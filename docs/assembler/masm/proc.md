@@ -15,22 +15,22 @@ ms.locfileid: "74395032"
 ---
 # <a name="proc"></a>PROC
 
-Marks start and end of a procedure block called *label*. The statements in the block can be called with the **CALL** instruction or [INVOKE](../../assembler/masm/invoke.md) directive.
+*레이블*이라는 프로시저 블록의 시작과 끝을 표시 합니다. **호출** 명령 또는 [INVOKE](../../assembler/masm/invoke.md) 지시문을 사용 하 여 블록의 문을 호출할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-> *label* **PROC** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦*visibility*⟧ ⟦ __\<__ *prologuearg* __>__ ⟧ ⟦**USES** *reglist*⟧ ⟦ __,__ *parameter* ⟦ __:__ *tag*⟧ ...⟧\
-> ⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧\
-> *statements*\
-> *label* **ENDP**
+> *label* **PROC** ⟦*distance* *⟧ ⟦ ⟧* *⟦ ⟧ ⟦ ⟧* __\<__ *prologuearg* __>__ ⟦ ⟧**사용** *reglist*⟦ ⟦ __,__ *parameter* ⟧ __:__ *tag*... ⟧\
+> ⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧ \
+> *문*\
+> **endp** 레이블
 
 ## <a name="remarks"></a>주의
 
-⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
+⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧는 ml64.exe 에서만 유효 하며,이를 통해 MASM에서 함수 테이블 항목을 생성 하 고 .xdata의 해제 정보를 사용 하 여 함수의 구조화 된 예외 처리 해제 동작을 발생 시킵니다.
 
-When the **FRAME** attribute is used, it must be followed by an [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive.
+**FRAME** 특성을 사용 하는 경우 뒤에가와 야 합니다 [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) 지시문입니다.
 
-See [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) for more information on using ml64.exe.
+Ml64.exe를 사용 하는 방법에 대 한 자세한 내용은 x [64 용 MASM (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) 을 참조 하세요.
 
 ## <a name="example"></a>예제
 
@@ -54,7 +54,7 @@ _text ENDS
 END
 ```
 
-The above code will emit the following function table and unwind information:
+위의 코드는 다음 함수 테이블 및 해제 정보를 내보냅니다.
 
 ```Output
 FileHeader->Machine 34404
@@ -77,6 +77,6 @@ Dumping Unwind Information for file ex2.exe
       Code offset: 0x01, PUSH_NONVOL, register=rbp
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

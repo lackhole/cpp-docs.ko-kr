@@ -48,7 +48,7 @@ Microsoft Windows 도움말 파일의 정규화 된 경로입니다. 자세한 �
 *m_lHelpContext*<br/>
 Microsoft Windows 도움말 파일의 항목에 대 한 컨텍스트 ID입니다. 자세한 내용은 DAO 도움말에서 "HelpContext, HelpFile Properties" 항목을 참조 하십시오.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 MFC는 클래스의 DAO 오류 개체를 캡슐화 하지 않습니다. 대신, [CDaoException](../../mfc/reference/cdaoexception-class.md) 클래스는 모든 작업 영역을 포함 하는 개체인 DAO `DBEngine` 개체에 포함 된 Errors 컬렉션에 액세스 하기 위한 인터페이스를 제공 합니다. MFC DAO 작업에서 catch 한 `CDaoException` 개체를 throw 하는 경우 MFC는 `CDaoErrorInfo` 구조를 채우고 예외 개체의 [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) 멤버에 저장 합니다. (DAO를 직접 호출 하도록 선택 하는 경우 예외 개체의 [Geterrorinfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) 멤버 함수를 직접 호출 하 여 `m_pErrorInfo`채워야 합니다.)
 
@@ -58,7 +58,7 @@ DAO 오류를 처리 하는 방법에 대 한 자세한 내용은 [예외: 데�
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ## <a name="see-also"></a>참고 항목
 

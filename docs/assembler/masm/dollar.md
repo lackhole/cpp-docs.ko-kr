@@ -15,12 +15,12 @@ ms.locfileid: "74398765"
 ---
 # <a name=""></a>$
 
-The current value of the location counter.
+Location 카운터의 현재 값입니다.
 
 ## <a name="syntax"></a>구문
 
 > **$**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [기호 참조](../../assembler/masm/symbols-reference.md)

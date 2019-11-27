@@ -21,7 +21,7 @@ ms.locfileid: "74303430"
 # <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO 데이터베이스 클래스에 대한 사용자 지정 DFX 루틴
 
 > [!NOTE]
->  DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). Microsoft는 새 프로젝트에 대해 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md)를 사용할 것을 권장합니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
+>  DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
 
 이 기술 정보는 DAO 레코드 필드 교환 (DFX) 메커니즘을 설명 합니다. DFX 루틴에서 발생 하는 상황을 이해 하려면 `DFX_Text` 함수에 대 한 자세한 내용은 예제를 참조 하십시오. 이 기술 정보에 대 한 추가 정보 소스로 서 다른 개별 DFX 함수의 코드를 검사할 수 있습니다. 사용자 지정 RFX 루틴이 필요할 때 (ODBC 데이터베이스 클래스와 함께 사용 됨) 사용자 지정 DFX 루틴이 필요 하지 않을 수 있습니다.
 
@@ -119,7 +119,7 @@ DFX 메커니즘은 MFC ODBC 클래스에서 사용 하는 RFX (레코드 필드
 
 DFX 메커니즘의 핵심은 파생 클래스의 `DoFieldExchange` 함수 `CDaoRecordset`입니다. 이 함수는 적절 한 작업 형식의 개별 DFX 함수에 대 한 호출을 디스패치합니다. `DoFieldExchange`를 호출 하기 전에 내부 MFC 함수는 작업 유형을 설정 합니다. 다음 목록에서는 다양 한 작업 유형 및 간단한 설명을 보여 줍니다.
 
-|작업|설명|
+|연산|설명|
 |---------------|-----------------|
 |`AddToParameterList`|빌드 매개 변수 절|
 |`AddToSelectList`|빌드 SELECT 절|

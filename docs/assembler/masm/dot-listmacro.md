@@ -15,7 +15,7 @@ ms.locfileid: "74398143"
 ---
 # <a name="listmacro"></a>.LISTMACRO
 
-Starts listing of macro expansion statements that generate code or data.
+코드 또는 데이터를 생성 하는 매크로 확장 문 목록을 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Starts listing of macro expansion statements that generate code or data.
 
 ## <a name="remarks"></a>주의
 
-기본값입니다. Same as [.XALL](../../assembler/masm/dot-xall.md).
+이 값이 기본값입니다. 와 동일 [합니다. XALL](../../assembler/masm/dot-xall.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

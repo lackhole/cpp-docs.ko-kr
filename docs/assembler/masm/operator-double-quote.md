@@ -1,5 +1,5 @@
 ---
-title: operator &quot; &quot;
+title: 연산자 &quot; &quot;
 ms.date: 08/30/2018
 f1_keywords:
 - '&#34; &#34;'
@@ -15,14 +15,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397031"
 ---
-# <a name="operator-quot-quot"></a>operator &quot; &quot;
+# <a name="operator-quot-quot"></a>연산자 &quot; &quot;
 
-Treats "*text*" as a string.
+"*Text*"를 문자열로 처리 합니다.
 
 ## <a name="syntax"></a>구문
 
-> __"__ *text* __"__
+> __"__ *텍스트* __"__
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

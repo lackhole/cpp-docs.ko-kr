@@ -19,12 +19,12 @@ ms.locfileid: "74397128"
 ---
 # <a name="operator-"></a>operator +
 
-The first operator returns *expression1* plus *expression2*.
+첫 번째 연산자는 *expression1* 와 *식 2*를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* + *expression2*
+> *expression1* + *식 2*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [연산자 참조](../../assembler/masm/operators-reference.md)

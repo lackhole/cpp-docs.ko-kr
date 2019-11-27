@@ -15,7 +15,7 @@ ms.locfileid: "74398051"
 ---
 # <a name="nolistmacro"></a>.NOLISTMACRO
 
-Suppresses listing of macro expansions.
+매크로 확장 목록을 표시 하지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Suppresses listing of macro expansions.
 
 ## <a name="remarks"></a>주의
 
-Same as [.SALL](../../assembler/masm/dot-sall.md).
+와 동일 [합니다. .SALL](../../assembler/masm/dot-sall.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

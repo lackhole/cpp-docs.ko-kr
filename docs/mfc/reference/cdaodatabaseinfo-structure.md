@@ -94,7 +94,7 @@ Microsoft Jet 데이터베이스 엔진이 ODBC 데이터베이스에서 쿼리�
 *m_strConnect*<br/>
 열려 있는 데이터베이스의 원본에 대 한 정보를 제공 합니다. 연결 문자열에 대 한 자세한 내용과이 속성의 값을 직접 검색 하는 방법에 대 한 자세한 내용은 [CDaoDatabase:: GetConnect](../../mfc/reference/cdaodatabase-class.md#getconnect) 멤버 함수를 참조 하세요. 자세한 내용은 DAO 도움말의 "연결 속성" 항목을 참조 하십시오.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 데이터베이스는 [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md)클래스의 MFC 개체 내부에 있는 DAO 개체입니다. 위의 기본, 보조 및 모든에 대 한 참조는 [CDaoWorkspace:: GetDatabaseInfo](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) 멤버 함수에서 정보를 반환 하는 방법을 표시 합니다.
 
@@ -102,7 +102,7 @@ Microsoft Jet 데이터베이스 엔진이 ODBC 데이터베이스에서 쿼리�
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ## <a name="see-also"></a>참고 항목
 

@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398235"
 ---
-# <a name="k3d-32-bit-masm"></a>.K3D (32-bit MASM)
+# <a name="k3d-32-bit-masm"></a>. .K3D (32 비트 MASM)
 
-Enables assembly of **K3D** instructions. (32-bit MASM only.)
+**.K3d** 명령 어셈블리를 사용 하도록 설정 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
 > **.K3D**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

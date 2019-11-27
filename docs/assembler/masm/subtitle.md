@@ -15,12 +15,12 @@ ms.locfileid: "74393465"
 ---
 # <a name="subtitle"></a>SUBTITLE
 
-Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
+목록 부제를 정의 합니다. [Subttl](../../assembler/masm/subttl.md)과 동일 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **SUBTITLE** *text*
+> **부제목** *텍스트*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

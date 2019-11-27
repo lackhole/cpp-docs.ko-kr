@@ -17,12 +17,12 @@ ms.locfileid: "74396636"
 ---
 # <a name="operator-mask"></a>연산자 MASK
 
-Returns a bit mask in which the bits in *recordfieldname* or *record* are set and all other bits are cleared.
+*Recordfieldname* 또는 *record* 의 비트가 설정 되 고 다른 모든 비트가 지워지는 비트 마스크를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
 > **MASK** {*recordfieldname* | *record*}
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

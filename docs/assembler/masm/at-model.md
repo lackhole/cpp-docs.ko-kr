@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398949"
 ---
-# <a name="model"></a>\@Model
+# <a name="model"></a>\@모델
 
-1 for **TINY** model, 2 for **SMALL** model, 3 for **COMPACT** model, 4 for **MEDIUM** model, 5 for **LARGE** model, 6 for **HUGE** model, and 7 for **FLAT** model (numeric equate).
+1 **작음** 모델의 경우 2, **작은** 모델의 경우 2, **COMPACT** 모델의 경우 3, **중간** 모델인 경우 4, **큰** **모델의** 경우 5
 
 ## <a name="syntax"></a>구문
 
-> **\@Model**
+> **\@모델**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

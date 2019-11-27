@@ -15,7 +15,7 @@ ms.locfileid: "74397660"
 ---
 # <a name="endm"></a>ENDM
 
-Terminates a macro or repeat block.
+매크로 또는 반복 블록을 종료 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Terminates a macro or repeat block.
 
 ## <a name="remarks"></a>주의
 
-See [MACRO](../../assembler/masm/macro.md), [FOR](../../assembler/masm/for-masm.md), [FORC](../../assembler/masm/forc.md), [REPEAT](../../assembler/masm/repeat.md), or [WHILE](while-masm.md).
+[매크로](../../assembler/masm/macro.md), [FOR](../../assembler/masm/for-masm.md), [Forc](../../assembler/masm/forc.md), [REPEAT](../../assembler/masm/repeat.md)또는 [WHILE](while-masm.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

@@ -17,12 +17,12 @@ ms.locfileid: "74395318"
 ---
 # <a name="operator-xor"></a>연산자 XOR
 
-Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.
+*Expression1* 및 *식 2*에 대 한 비트 **XOR** 연산의 결과를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **XOR** *expression2*
+> *expression1* **XOR** *식 2*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

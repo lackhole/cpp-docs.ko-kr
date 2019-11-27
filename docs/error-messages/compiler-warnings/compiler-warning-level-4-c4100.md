@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4100
 ms.assetid: 478ed97d-e502-49e4-9afb-ac2a6c61194b
-ms.openlocfilehash: ccb438cf7c80edb1403683ac4817617ffccc690d
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 80794d270b40a8f40d44630da70455c015158423
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447736"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541239"
 ---
 # <a name="compiler-warning-level-4-c4100"></a>컴파일러 경고(수준 4) C4100
 
-'identifier': 참조 되지 않은 정식 매개 변수
+' identifier ': 참조 되지 않은 정식 매개 변수입니다.
 
-형식 매개 변수는 함수 본문에서 참조 되지 않습니다. 참조 되지 않은 매개 변수가 무시 됩니다.
+정식 매개 변수가 함수 본문에서 참조 되지 않습니다. 참조 되지 않은 매개 변수는 무시 됩니다.
 
-코드에서 소멸자를 호출할 때 C4100 발급할 수도 있습니다는 참조 되지 않는 기본 형식의 매개 변수입니다.  Microsoft의 제한 사항 C++ 컴파일러.
+C4100는 코드에서 기본 형식의 참조 되지 않은 매개 변수에 대해 소멸자를 호출 하는 경우에도 실행 될 수 있습니다.  이는 Microsoft C++ 컴파일러의 제한 사항입니다.
 
-다음 샘플에서는 C4100 오류가 생성 됩니다.
+다음 샘플에서는 C4100를 생성 합니다.
 
-```
+```cpp
 // C4100.cpp
 // compile with: /W4
 void func(int i) {   // C4100, delete the unreferenced parameter to

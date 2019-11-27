@@ -1,5 +1,5 @@
 ---
-title: operator dot
+title: 연산자 점
 ms.date: 08/30/2018
 f1_keywords:
 - operator .
@@ -17,14 +17,14 @@ ms.locfileid: "74397023"
 ---
 # <a name="operator-"></a>연산자 .
 
-The first operator returns *expression* plus the offset of *field* within its structure or union. The second operator returns value at the location pointed to by *register* plus the offset of *field* within its structure or union.
+첫 번째 연산자는 구조체 또는 공용 구조체 내에서 *식* 과 *필드* 의 오프셋을 더한 값을 반환 합니다. 두 번째 연산자는 *register* 가 가리키는 위치에 있는 값과 해당 구조체 또는 공용 구조체 내의 *필드* 오프셋을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression* __.__ *field*⟦ __.__ *field* ...⟧
+> *식*__입니다.__ ⟦ 필드__입니다.__ *필드* ... ⟧
 >
-> **\[** _register_ **]** __.__ *field*⟦ __.__ *field* ...⟧
+> **\[** _등록_ **]** __.__ ⟦ 필드__입니다.__ *필드* ... ⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

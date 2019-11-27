@@ -15,12 +15,12 @@ ms.locfileid: "74397590"
 ---
 # <a name="even"></a>EVEN
 
-Aligns the next variable or instruction on an even byte.
+짝수 바이트의 다음 변수 또는 명령을 정렬 합니다.
 
 ## <a name="syntax"></a>구문
 
 > **EVEN**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

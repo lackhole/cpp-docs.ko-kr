@@ -15,28 +15,28 @@ ms.locfileid: "74395175"
 ---
 # <a name="option-masm"></a>OPTION (MASM)
 
-Enables and disables features of the assembler.
+어셈블러의 기능을 사용 하거나 사용 하지 않도록 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **OPTION** *optionlist*
+> **옵션 옵션** *목록*
 
 ## <a name="remarks"></a>주의
 
-Available options include:
+사용할 수 있는 옵션은 다음과 같습니다.
 
 |||||
 |-|-|-|-|
-|**CASEMAP**|**DOTNAME**|**NODOTNAME**|**EMULATOR**|
-|**NOEMULATOR**|**EPILOGUE**|**EXPR16**|**EXPR32**|
-|**LANGUAGE**|**LJMP**|**NOLJMP**|**M510**|
-|**NOM510**|**NOKEYWORD**|**NOSIGNEXTEND**|**OFFSET**|
+|**CASEMAP**|**DOTNAME**|**NODOTNAME**|**에뮬레이터**|
+|**NOEMULATOR**|**에필로그**|**EXPR16**|**EXPR32**|
+|**언어도**|**LJMP**|**NOLJMP**|**M510**|
+|**NOM510**|**NOKEYWORD**|**NOSIGNEXTEND**|**이동**|
 |**OLDMACROS**|**NOOLDMACROS**|**OLDSTRUCTS**|**NOOLDSTRUCTS**|
-|**PROC**|**PROLOGUE**|**READONLY**|**NOREADONLY**|
-|**SCOPED**|**NOSCOPED**|**SEGMENT**|**SETIF2**.|
+|**PROC**|**프롤로그**|**READONLY**|**NOREADONLY**|
+|**범위**|**NOSCOPED 지정 된**|**SEGMENT**|**SETIF2**.|
 
-The syntax for LANGUAGE is **OPTION LANGUAGE:** <em>x</em>, where *x* is one of C, SYSCALL, STDCALL, PASCAL, FORTRAN, or BASIC.  SYSCALL, PASCAL, FORTRAN, and BASIC are not supported with used with [.MODEL](../../assembler/masm/dot-model.md) FLAT.
+LANGUAGE의 구문은 **language:** <em>x</em>입니다. 여기서 *x* 는 C, SYSCALL, STDCALL, 파스칼, 포트란 또는 BASIC 중 하나입니다.  SYSCALL, 파스칼, 포트란 및 BASIC은에서 사용 되는와 함께 지원 되지 않습니다 [. 모델](../../assembler/masm/dot-model.md) FLAT.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

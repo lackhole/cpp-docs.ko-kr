@@ -15,12 +15,12 @@ ms.locfileid: "74399063"
 ---
 # <a name="fardata"></a>\@fardata
 
-The name of the segment defined by the [.FARDATA](../../assembler/masm/dot-fardata.md) directive (text macro).
+로 정의 된 세그먼트의 이름 [입니다. FARDATA](../../assembler/masm/dot-fardata.md) 지시문 (텍스트 매크로).
 
 ## <a name="syntax"></a>구문
 
 > **\@fardata**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

@@ -15,18 +15,18 @@ ms.locfileid: "74397250"
 ---
 # <a name="local-masm"></a>LOCAL (MASM)
 
-In the first directive, within a macro, **LOCAL** defines labels that are unique to each instance of the macro.
+첫 번째 지시문의 매크로 내에서 **로컬** 은 매크로의 각 인스턴스에 고유한 레이블을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **LOCAL** *localname* ⟦, *localname* ...⟧
+> **로컬** *localname* ⟦, *localname* ... ⟧
 >
-> **LOCAL** *label* ⟦ __\[__ *count* __]__ ⟧ ⟦ __:__ *type*⟧ ⟦ __,__ *label* ⟦ __\[__ *count* __]__ ⟧ ⟦*type*⟧ ...⟧
+> **LOCAL** *label* ⟦ __\[__ *count* __]__ ⟧ ⟦ __:__ *type*⟧ ⟦ __,__ *label* ⟦ __\[__ *count* __]__ ⟧ ⟦*type*⟧ ... ⟧
 
 ## <a name="remarks"></a>주의
 
-In the second directive, within a procedure definition (**PROC**), **LOCAL** creates stack-based variables that exist for the duration of the procedure. The *label* may be a simple variable or an array containing *count* elements.
+두 번째 지시문의 프로시저 정의 (**PROC**) 내에서 **로컬** 은 프로시저 기간 동안 존재 하는 스택 기반 변수를 만듭니다. *레이블은* 단순 변수 이거나 *count* 요소를 포함 하는 배열일 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

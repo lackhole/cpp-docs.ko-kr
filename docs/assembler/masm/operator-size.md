@@ -17,12 +17,12 @@ ms.locfileid: "74395802"
 ---
 # <a name="operator-size"></a>연산자 SIZE
 
-Returns the number of bytes in *variable* allocated by the first initializer.
+첫 번째 이니셜라이저가 할당 한 *변수의* 바이트 수를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **SIZE** *variable*
+> **크기** *변수*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

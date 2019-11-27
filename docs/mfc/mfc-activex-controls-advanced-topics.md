@@ -21,7 +21,7 @@ ms.locfileid: "74305388"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX 컨트롤: 고급 항목
 
-이 문서에서는 ActiveX 컨트롤 개발과 관련 된 고급 항목을 다룹니다. 여기에는 다음이 포함됩니다.
+이 문서에서는 ActiveX 컨트롤 개발과 관련 된 고급 항목을 다룹니다. 이러한 개체는 다음과 같습니다.
 
 - [ActiveX 컨트롤에서 데이터베이스 클래스 사용](#_core_using_database_classes_in_activex_controls)
 
@@ -43,7 +43,7 @@ ActiveX 컨트롤 클래스는 클래스 라이브러리의 일부 이므로 표
 MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이터베이스 클래스 (DAO 및 ODBC)](../data/mfc-database-classes-odbc-and-dao.md)를 참조 하세요. 이 문서에서는 MFC ODBC 클래스와 MFC DAO 클래스를 모두 소개 하 고 이러한 클래스에 대해 자세히 설명 합니다.
 
 > [!NOTE]
-> DAO는 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). Microsoft는 새 프로젝트에 대해 [OLE DB 템플릿](../data/oledb/ole-db-programming.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md)를 사용할 것을 권장합니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
+> DAO는 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-programming.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
 
 ##  <a name="_core_implementing_a_parameterized_property"></a>매개 변수가 있는 속성 구현
 
@@ -107,7 +107,7 @@ MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이�
 
 ### <a name="activex-control-error-codes"></a>ActiveX 컨트롤 오류 코드
 
-|Error|설명|
+|오류|설명|
 |-----------|-----------------|
 |CTL_E_ILLEGALFUNCTIONCALL|함수 호출이 잘못 되었습니다.|
 |CTL_E_OVERFLOW|오버플로|
@@ -150,7 +150,7 @@ MFC 데이터베이스 클래스에 대 한 일반적인 개요는 [Mfc 데이�
 |CTL_E_SEARCHTEXTNOTFOUND|검색 텍스트를 찾을 수 없습니다.|
 |CTL_E_REPLACEMENTSTOOLONG|대체 텍스트가 너무 깁니다.|
 
-필요한 경우 CUSTOM_CTL_SCODE 매크로를 사용 하 여 표준 코드 중 하나에 포함 되지 않은 조건에 대 한 사용자 지정 오류 코드를 정의 합니다. 이 매크로에 대 한 매개 변수는 1000 및 32767 (포함) 사이의 정수 여야 합니다. 예:
+필요한 경우 CUSTOM_CTL_SCODE 매크로를 사용 하 여 표준 코드 중 하나에 포함 되지 않은 조건에 대 한 사용자 지정 오류 코드를 정의 합니다. 이 매크로에 대 한 매개 변수는 1000 및 32767 (포함) 사이의 정수 여야 합니다. 예를 들면 다음과 같습니다.
 
 [!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]
 
@@ -174,7 +174,7 @@ ActiveX 컨트롤에 대 한 키보드 인터페이스를 처리 하는 방법�
 
 - 멤버 변수 추가 마법사를 사용 하 여 **제어 변수** 를 선택한 다음 컨트롤의 ID를 선택 합니다. 멤버 변수 이름을 입력 하 고 컨트롤의 래퍼 클래스를 **컨트롤 형식**으로 선택 합니다.
 
-     또는
+     -또는-
 
 - 로컬 변수와 하위 클래스를 대화 상자 항목으로 선언 합니다. 다음과 비슷한 코드를 삽입 합니다 (`CMyCtrl`는 래퍼 클래스 이며 IDC_MYCTRL1 컨트롤의 ID).
 

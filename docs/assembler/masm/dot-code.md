@@ -15,18 +15,18 @@ ms.locfileid: "74398573"
 ---
 # <a name="code"></a>.CODE
 
-When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start of a code segment.
+과 함께 사용 [됩니다. MODEL](../../assembler/masm/dot-model.md)-코드 세그먼트의 시작을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
-> **.CODE** ⟦*name*⟧
+> **. CODE** ⟦*name*⟧
 
 ### <a name="parameters"></a>매개 변수
 
-*name*\
-Optional parameter that specifies the name of the code segment. The default name is **_TEXT** for tiny, small, compact, and flat [models](../../assembler/masm/dot-model.md). The default name is *modulename*_TEXT for other models.
+*이름*\
+코드 세그먼트의 이름을 지정 하는 선택적 매개 변수입니다. 기본 이름은 소형, 소형, 소형 및 플랫 [모델](../../assembler/masm/dot-model.md)에 **_TEXT** 됩니다. 다른 모델에 대 한 기본 이름은 *modulename*_TEXT입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[지시문 참조](../../assembler/masm/directives-reference.md)\
 [.DATA](../../assembler/masm/dot-data.md)

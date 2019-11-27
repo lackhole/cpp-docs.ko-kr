@@ -21,7 +21,7 @@ ms.locfileid: "74303420"
 # <a name="tn054-calling-dao-directly-while-using-mfc-dao-classes"></a>TN054: MFC DAO 클래스를 사용하면서 직접 DAO 호출
 
 > [!NOTE]
-> DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). Microsoft는 새 프로젝트에 대해 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md)를 사용할 것을 권장합니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
+> DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
 
 MFC DAO 데이터베이스 클래스를 사용 하는 경우 DAO를 직접 사용 해야 하는 경우가 있을 수 있습니다. 일반적으로이는 그렇지 않지만 mfc 클래스 사용과 직접 DAO 호출을 결합 하는 경우 직접 DAO 호출을 용이 하 게 하는 도우미 메커니즘을 제공 합니다. MFC 관리 DAO 개체의 메서드에 대 한 직접 DAO 호출을 수행 하려면 몇 줄의 코드만 필요 합니다. MFC를 통해 관리 *되지* 않는 DAO 개체를 만들고 사용 해야 하는 경우 실제로 개체에서 `Release`를 호출 하 여 좀 더 많은 작업을 수행 해야 합니다. 이 기술 정보는 DAO를 직접 호출할 수 있는 경우, MFC 도우미가 도움을 주는 기능 및 DAO OLE 인터페이스를 사용 하는 방법을 설명 합니다. 마지막으로,이 참고는 DAO 보안 기능에 대해 DAO를 직접 호출 하는 방법을 보여 주는 몇 가지 샘플 함수를 제공 합니다.
 

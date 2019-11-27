@@ -18,39 +18,39 @@ ms.locfileid: "74246700"
 ---
 # <a name="exceptions-catching-and-deleting-exceptions"></a>예외: 예외 Catch 및 삭제
 
-The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and **throw** keywords, see [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
+다음 지침 및 예제에서는 예외를 catch 하 고 삭제 하는 방법을 보여 줍니다. **Try**, **catch**및 **throw** 키워드에 대 한 자세한 내용은 [예외 및 오류 처리 C++ 에 대 한 최신 모범 사례](../cpp/errors-and-exception-handling-modern-cpp.md)를 참조 하세요.
 
-Your exception handlers must delete exception objects they handle, because failure to delete the exception causes a memory leak whenever that code catches an exception.
+예외를 삭제 하지 못하면 코드가 예외를 catch 할 때마다 예외 처리기가 처리 하는 예외 개체를 삭제 해야 합니다.
 
-Your **catch** block must delete an exception when:
+**Catch** 블록은 다음과 같은 경우 예외를 삭제 해야 합니다.
 
-- The **catch** block throws a new exception.
+- **Catch** 블록은 새 예외를 throw 합니다.
 
-   Of course, you must not delete the exception if you throw the same exception again:
+   물론 동일한 예외를 다시 throw 하는 경우 예외를 삭제 하면 안 됩니다.
 
    [!code-cpp[NVC_MFCExceptions#3](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_1.cpp)]
 
-- Execution returns from within the **catch** block.
+- **Catch** 블록 내에서 실행이 반환 됩니다.
 
 > [!NOTE]
->  When deleting a `CException`, use the `Delete` member function to delete the exception. Do not use the **delete** keyword, because it can fail if the exception is not on the heap.
+>  `CException`를 삭제 하는 경우 `Delete` 멤버 함수를 사용 하 여 예외를 삭제 합니다. 예외가 힙에 없는 경우 실패할 수 있으므로 **delete** 키워드를 사용 하지 마십시오.
 
-#### <a name="to-catch-and-delete-exceptions"></a>To catch and delete exceptions
+#### <a name="to-catch-and-delete-exceptions"></a>예외를 catch 하 고 삭제 하려면
 
-1. Use the **try** keyword to set up a **try** block. Execute any program statements that might throw an exception within a **try** block.
+1. **Try 키워드를** 사용 하 여 **try** 블록을 설정 합니다. **Try** 블록 내에서 예외를 throw 할 수 있는 모든 프로그램 문을 실행 합니다.
 
-   Use the **catch** keyword to set up a **catch** block. Place exception-handling code in a **catch** block. The code in the **catch** block is executed only if the code within the **try** block throws an exception of the type specified in the **catch** statement.
+   **Catch 키워드를** 사용 하 여 **catch** 블록을 설정 합니다. **Catch** 블록에 예외 처리 코드를 추가 합니다. **Catch** 블록의 코드는 **try** 블록 내의 코드가 **catch** 문에 지정 된 형식의 예외를 throw 하는 경우에만 실행 됩니다.
 
-   The following skeleton shows how **try** and **catch** blocks are normally arranged:
+   다음 기본 구조는 **try** 블록과 **catch** 블록을 일반적으로 정렬 하는 방법을 보여 줍니다.
 
    [!code-cpp[NVC_MFCExceptions#4](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_2.cpp)]
 
-   When an exception is thrown, control passes to the first **catch** block whose exception-declaration matches the type of the exception. You can selectively handle different types of exceptions with sequential **catch** blocks as listed below:
+   예외가 throw 되 면 예외 선언이 예외 형식과 일치 하는 첫 번째 **catch** 블록으로 제어가 전달 됩니다. 아래에 나열 된 대로 순차 **catch** 블록을 사용 하 여 다양 한 유형의 예외를 선택적으로 처리할 수 있습니다.
 
    [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]
 
-For more information, see [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md).
+자세한 내용은 [예외: MFC 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)

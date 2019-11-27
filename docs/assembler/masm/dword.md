@@ -15,18 +15,18 @@ ms.locfileid: "74397729"
 ---
 # <a name="dword"></a>DWORD
 
-Allocates and optionally initializes a double word (4 bytes) of storage for each *initializer*.
+각 *이니셜라이저의*저장소에 대해 2 배 워드 (4 바이트)를 할당 하 고 선택적으로 초기화 합니다.
 
 ## <a name="syntax"></a>구문
 
-> ⟦*name*⟧ **DWORD** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*name*⟧ **DWORD** *이니셜라이저* ⟦ __,__ *이니셜라이저가* 있습니다. ⟧
 
 ## <a name="remarks"></a>주의
 
-Can also be used as a type specifier anywhere a type is legal.
+형식이 유효한 모든 곳에서 형식을 형식 지정자로 사용할 수도 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[SDWORD](../../assembler/masm/sdword.md)\
+[지시문 참조](../../assembler/masm/directives-reference.md)\
+[Sdword](../../assembler/masm/sdword.md)\
 [DD](../../assembler/masm/dd.md)

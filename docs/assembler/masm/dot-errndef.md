@@ -15,12 +15,12 @@ ms.locfileid: "74398314"
 ---
 # <a name="errndef"></a>.ERRNDEF
 
-Generates an error if *name* has not been defined.
+*이름이* 정의 되지 않은 경우 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **.ERRNDEF** *name* ⟦ __,__ *message*⟧
+> **. .Errndef** *name* ⟦ __,__ *message*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

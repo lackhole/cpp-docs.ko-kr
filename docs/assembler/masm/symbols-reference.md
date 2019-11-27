@@ -13,31 +13,31 @@ ms.locfileid: "74393565"
 ---
 # <a name="symbols-reference"></a>기호 참조
 
-## <a name="date-and-time-information"></a>Date and time information
+## <a name="date-and-time-information"></a>날짜 및 시간 정보
 
 |||
 |-|-|
-|[\@Date](../../assembler/masm/at-date.md)|[\@Time](../../assembler/masm/at-time.md)|
+|[\@날짜](../../assembler/masm/at-date.md)|[\@시간](../../assembler/masm/at-time.md)|
 
-## <a name="environment-information"></a>Environment information
+## <a name="environment-information"></a>환경 정보
 
 |||
 |-|-|
 |[\@Cpu](../../assembler/masm/at-cpu.md)|[\@Environ](../../assembler/masm/at-environ.md)|
-|[\@Interface](../../assembler/masm/at-interface.md)|[\@Version](../../assembler/masm/at-version.md)|
+|[\@인터페이스](../../assembler/masm/at-interface.md)|[\@버전](../../assembler/masm/at-version.md)|
 
-## <a name="file-information"></a>File information
-
-|||
-|-|-|
-|[\@FileCur](../../assembler/masm/at-filecur.md)|[\@FileName](../../assembler/masm/at-filename.md)|
-|[\@Line](../../assembler/masm/at-line.md)||
-
-## <a name="macro-functions"></a>Macro functions
+## <a name="file-information"></a>파일 정보
 
 |||
 |-|-|
-|[\@CatStr](../../assembler/masm/at-catstr.md)|[\@InStr](../../assembler/masm/at-instr.md)|
+|[\@FileCur](../../assembler/masm/at-filecur.md)|[파일 이름 \@](../../assembler/masm/at-filename.md)|
+|[\@줄](../../assembler/masm/at-line.md)||
+
+## <a name="macro-functions"></a>매크로 함수
+
+|||
+|-|-|
+|[\@하는 문자열](../../assembler/masm/at-catstr.md)|[\@InStr](../../assembler/masm/at-instr.md)|
 |[\@SizeStr](../../assembler/masm/at-sizestr.md)|[\@SubStr](../../assembler/masm/at-substr.md)|
 
 ## <a name="miscellaneous"></a>기타
@@ -47,15 +47,15 @@ ms.locfileid: "74393565"
 |[\$](../../assembler/masm/dollar.md)|[\?](../../assembler/masm/q.md)|[\@\@:](../../assembler/masm/at-at.md)|
 |[\@B](../../assembler/masm/at-b.md)|[\@F](../../assembler/masm/at-f.md)||
 
-## <a name="segment-information"></a>Segment information
+## <a name="segment-information"></a>세그먼트 정보
 
 ||||
 |-|-|-|
-|[\@code](../../assembler/masm/at-code.md)|[\@CodeSize](../../assembler/masm/at-codesize.md)|[\@CurSeg](../../assembler/masm/at-curseg.md)|
-|[\@data](../../assembler/masm/at-data.md)|[\@DataSize](../../assembler/masm/at-datasize.md)|[\@fardata](../../assembler/masm/at-fardata.md)|
-|[\@fardata?](../../assembler/masm/at-fardata-q.md)|[\@Model](../../assembler/masm/at-model.md)|[\@stack](../../assembler/masm/at-stack.md)|
+|[\@코드](../../assembler/masm/at-code.md)|[\@CodeSize](../../assembler/masm/at-codesize.md)|[\@CurSeg](../../assembler/masm/at-curseg.md)|
+|[\@데이터](../../assembler/masm/at-data.md)|[\@DataSize](../../assembler/masm/at-datasize.md)|[\@fardata](../../assembler/masm/at-fardata.md)|
+|[\@fardata?](../../assembler/masm/at-fardata-q.md)|[\@모델](../../assembler/masm/at-model.md)|[\@스택](../../assembler/masm/at-stack.md)|
 |[\@WordSize](../../assembler/masm/at-wordsize.md)|||
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft 매크로 어셈블러 참조](../../assembler/masm/microsoft-macro-assembler-reference.md)

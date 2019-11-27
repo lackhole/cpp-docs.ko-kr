@@ -17,12 +17,12 @@ ms.locfileid: "74396546"
 ---
 # <a name="operator-or"></a>연산자 OR
 
-Returns the result of a bitwise OR operation for *expression1* and *expression2*.
+*Expression1* 및 *식 2*에 대 한 비트 or 연산의 결과를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **OR** *expression2*
+> *expression1* **또는** *식 2*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

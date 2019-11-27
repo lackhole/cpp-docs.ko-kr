@@ -13,10 +13,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397845"
 ---
-# <a name="untilcxz-32-bit-masm"></a>.UNTILCXZ (32-bit MASM)
+# <a name="untilcxz-32-bit-masm"></a>. .UNTILCXZ (32 비트 MASM)
 
-(32-bit MASM only.) See [.REPEAT](../../assembler/masm/dot-repeat.md).
+(32 비트 MASM에만 해당) [을 참조 하세요. 반복](../../assembler/masm/dot-repeat.md)합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

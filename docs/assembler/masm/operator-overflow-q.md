@@ -17,12 +17,12 @@ ms.locfileid: "74396535"
 ---
 # <a name="operator-overflow"></a>연산자 OVERFLOW?
 
-Status of overflow flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+오버플로 플래그의 상태입니다. 내 에서만 사용 [됩니다. 이면](../../assembler/masm/dot-if.md)이 고, 그렇지 않으면 [입니다. WHILE](../../assembler/masm/dot-while.md)또는 [. 반복](../../assembler/masm/dot-repeat.md) 블록 및 런타임에 계산 되며 어셈블리 시간이 아닙니다.
 
 ## <a name="syntax"></a>구문
 
-> **OVERFLOW?**
+> **오버플로?**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

@@ -15,16 +15,16 @@ ms.locfileid: "74398777"
 ---
 # <a name="df"></a>DF
 
-Allocates and optionally initializes 6 bytes of storage for each *initializer*. **DF** is a synonym of [FWORD](../../assembler/masm/fword.md).
+각 *이니셜라이저의*6 바이트의 저장소를 할당 하 고 선택적으로 초기화 합니다. **DF** 는 [fword](../../assembler/masm/fword.md)의 동의어입니다.
 
 ## <a name="syntax"></a>구문
 
-> ⟦*name*⟧ **DF** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*name*⟧ **DF** *이니셜라이저가* ⟦ __,__ *이니셜라이저가* 있습니다. ⟧
 
 ## <a name="remarks"></a>주의
 
-Also can be used as a type specifier anywhere a type is legal.
+또한 형식이 유효한 모든 곳에서 형식 지정자로 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

@@ -15,12 +15,12 @@ ms.locfileid: "74394617"
 ---
 # <a name="real8"></a>REAL8
 
-Allocates and optionally initializes a double-precision (8-byte) floating-point number for each *initializer*.
+각 *이니셜라이저*에 대 한 배정밀도 (8 바이트) 부동 소수점 숫자를 할당 하 고 필요에 따라 초기화 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **REAL8** *initializer* ⟦ __,__ *initializer* ...⟧
+> **REAL8** *이니셜라이저* ⟦ __,__ *이니셜라이저의* 이름 ... ⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

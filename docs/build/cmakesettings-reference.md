@@ -44,7 +44,7 @@ IDE에서 구성을 추가 하거나 제거한 다음 JSON 파일에서 직접 �
 - `configurationType`: 선택한 생성기의 빌드 형식 구성을 지정합니다. 다음 중 하나일 수 있습니다.
 
   - 디버그
-  - Release
+  - 릴리스
   - MinSizeRel
   - RelWithDebInfo
   
@@ -84,7 +84,7 @@ Visual Studio 2019에서 Visual Studio 생성기를 지정 하려면 **솔루션
 - `configurationType`: 선택한 생성기의 빌드 형식 구성을 지정합니다. 다음 중 하나일 수 있습니다.
 
   - 디버그
-  - Release
+  - 릴리스
   - MinSizeRel
   - RelWithDebInfo
  

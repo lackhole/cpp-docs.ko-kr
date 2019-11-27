@@ -15,16 +15,16 @@ ms.locfileid: "74397414"
 ---
 # <a name="ifdef"></a>IFDEF
 
-Grants assembly if *name* is a previously defined label, variable, or symbol.
+*이름이* 이전에 정의 된 레이블, 변수 또는 기호인 경우 어셈블리를 부여 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **IFDEF** *name*
+> **IFDEF** *이름*
 
 ## <a name="remarks"></a>주의
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+전체 [구문에 대 한 자세한 내용은](../../assembler/masm/if-masm.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

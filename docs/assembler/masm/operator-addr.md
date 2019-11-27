@@ -17,12 +17,12 @@ ms.locfileid: "74397127"
 ---
 # <a name="operator-addr"></a>연산자 ADDR
 
-See the [INVOKE](../../assembler/masm/invoke.md) directive.
+[INVOKE](../../assembler/masm/invoke.md) 지시문을 참조 하십시오.
 
 ## <a name="syntax"></a>구문
 
 > **ADDR**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [연산자 참조](../../assembler/masm/operators-reference.md)

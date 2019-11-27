@@ -15,12 +15,12 @@ ms.locfileid: "74397816"
 ---
 # <a name="xlist"></a>.XLIST
 
-See [.NOLIST](../../assembler/masm/dot-nolist.md).
+[을 참조 하세요. NOLIST](../../assembler/masm/dot-nolist.md).
 
 ## <a name="syntax"></a>구문
 
 > **.XLIST**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

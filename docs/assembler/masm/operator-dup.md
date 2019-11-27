@@ -16,12 +16,12 @@ ms.locfileid: "74396997"
 ---
 # <a name="operator-dup"></a>연산자 DUP
 
-Specifies *count* number of declarations of *initialvalue*.
+*Initialvalue* *선언의 수를 지정 합니다* .
 
 ## <a name="syntax"></a>구문
 
-> *count* **DUP** __(__ *initialvalue* ⟦ __,__ *initialvalue* ...⟧ __)__
+> *중복 수* __(__ *initialvalue* ⟦ __,__ *initialvalue* ... ⟧ __)__
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](../../assembler/masm/operators-reference.md)
+[연산자 참조](../../assembler/masm/operators-reference.md)

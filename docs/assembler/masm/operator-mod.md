@@ -17,12 +17,12 @@ ms.locfileid: "74396650"
 ---
 # <a name="operator-mod"></a>연산자 MOD
 
-Returns the integer value of the remainder (modulo) when dividing *expression1* by *expression2*.
+*Expression1* 를 *식 2*로 나눌 때 나머지 (모듈로)의 정수 값을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **MOD** *expression2*
+> *expression1* **MOD** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

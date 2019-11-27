@@ -17,12 +17,12 @@ ms.locfileid: "74396836"
 ---
 # <a name="operator-lengthof"></a>연산자 LENGTHOF
 
-Returns the number of data objects in *variable*.
+*변수의*데이터 개체 수를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **LENGTHOF** *variable*
+> **LENGTHOF** *변수*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

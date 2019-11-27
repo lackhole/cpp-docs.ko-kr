@@ -1,5 +1,5 @@
 ---
-title: Substitution operator (MASM)
+title: 대체 연산자 (MASM)
 ms.date: 08/30/2018
 f1_keywords:
 - operator &&
@@ -14,14 +14,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74396782"
 ---
-# <a name="substitution-operator-masm"></a>Substitution operator (MASM)
+# <a name="substitution-operator-masm"></a>대체 연산자 (MASM)
 
-Replaces *parameter* with its corresponding argument value.
+*매개 변수* 를 해당 인수 값으로 바꿉니다.
 
 ## <a name="syntax"></a>구문
 
-> __&__ *parameter* __&__
+> __&__ *매개 변수* __&__
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

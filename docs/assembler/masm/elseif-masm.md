@@ -15,16 +15,16 @@ ms.locfileid: "74398428"
 ---
 # <a name="elseif-masm"></a>ELSEIF (MASM)
 
-Combines [ELSE](../../assembler/masm/else-masm.md) and [IF](../../assembler/masm/if-masm.md) into one statement.
+[ELSE](../../assembler/masm/else-masm.md) 와 [if](../../assembler/masm/if-masm.md) 를 하나의 문으로 결합 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **ELSEIF**
+> **그렇지**
 
 ## <a name="remarks"></a>주의
 
-See [IF](../../assembler/masm/if-masm.md).
+[IF](../../assembler/masm/if-masm.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

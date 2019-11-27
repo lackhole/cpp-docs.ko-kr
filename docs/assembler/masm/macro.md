@@ -15,18 +15,18 @@ ms.locfileid: "74397238"
 ---
 # <a name="macro"></a>MACRO
 
-Marks a macro block called *name* and establishes *parameter* placeholders for arguments passed when the macro is called.
+매크로 블록을 *이름* 이라고 표시 하 고 매크로가 호출 될 때 전달 되는 인수에 대 한 *매개 변수* 자리 표시자를 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name*  **MACRO** ⟦*parameter* ⟦ **:REQ** | :=*default* |  **:VARARG**⟧ ...⟧\
-> *statements*\
-> **ENDM** ⟦*value*⟧
+> *name***매크로** ⟦*parameter* ⟦ **: 필수** | : =*기본* |  **: VARARG**⟧ ... ⟧\
+> *문*\
+> **Endm** ⟦*값*⟧
 
 ## <a name="remarks"></a>주의
 
-A macro function returns *value* to the calling statement.
+매크로 함수는 호출 하는 문에 *값* 을 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

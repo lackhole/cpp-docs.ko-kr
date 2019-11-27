@@ -15,12 +15,12 @@ ms.locfileid: "74399159"
 ---
 # <a name="curseg"></a>\@CurSeg
 
-The name of the current segment (text macro).
+현재 세그먼트의 이름 (텍스트 매크로)입니다.
 
 ## <a name="syntax"></a>구문
 
 > **\@CurSeg**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

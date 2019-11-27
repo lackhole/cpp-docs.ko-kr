@@ -23,7 +23,7 @@ DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 �
 |[AfxDaoInit](#afxdaoinit)|DAO 데이터베이스 엔진을 초기화 합니다.|
 |[AfxDaoTerm](#afxdaoterm)|DAO 데이터베이스 엔진을 종료 합니다.|
 
-##  <a name="afxdaoinit"></a>  AfxDaoInit
+##  <a name="afxdaoinit"></a>AfxDaoInit
 
 이 함수는 DAO 데이터베이스 엔진을 초기화 합니다.
 
@@ -34,7 +34,7 @@ void AfxDaoInit();
 throw(CDaoException*);
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 대부분의 경우 필요한 경우 응용 프로그램이 자동으로 호출 하므로 `AfxDaoInit`를 호출할 필요가 없습니다.
 
@@ -44,7 +44,7 @@ throw(CDaoException*);
 
   **헤더** afxdao
 
-##  <a name="afxdaoterm"></a>  AfxDaoTerm
+##  <a name="afxdaoterm"></a>AfxDaoTerm
 
 이 함수는 DAO 데이터베이스 엔진을 종료 합니다.
 
@@ -53,7 +53,7 @@ throw(CDaoException*);
 void AfxDaoTerm();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 일반적으로 일반 MFC DLL 에서만이 함수를 호출 해야 합니다. 응용 프로그램은 필요할 때 `AfxDaoTerm`를 자동으로 호출 합니다.
 

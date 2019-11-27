@@ -15,21 +15,21 @@ ms.locfileid: "74399281"
 ---
 # <a name="align-masm"></a>ALIGN (MASM)
 
-The **ALIGN** directive aligns the next data element or instruction on an address that is a multiple of its parameter. The parameter must be a power of 2 (for example, 1, 2, 4, and so on) that is less than or equal to the segment alignment.
+**ALIGN** 지시문은 해당 매개 변수의 배수 인 주소에 다음 데이터 요소 또는 명령을 맞춥니다. 매개 변수는 세그먼트 맞춤 보다 작거나 같은 2의 거듭제곱 이어야 합니다 (예: 1, 2, 4 등).
 
 ## <a name="syntax"></a>구문
 
-> **ALIGN** ⟦*number*⟧
+> ⟦*Number*⟧ **맞추기**
 
 ## <a name="remarks"></a>주의
 
-The **ALIGN** directive allows you to specify the beginning offset of a data element or an instruction. Aligned data can improve performance, at the expense of wasted space between data elements. Large performance improvements can be seen when data accesses are on boundaries that fit within cache lines. Accesses on natural boundaries for native types means less time spent in internal hardware realignment microcode.
+**ALIGN** 지시어를 사용 하면 데이터 요소 또는 명령의 시작 오프셋을 지정할 수 있습니다. 데이터 요소 사이에 공간이 낭비 되는 경우 데이터를 정렬 하면 성능을 향상 시킬 수 있습니다. 데이터 액세스가 캐시 선 내에 적합 한 경계에 있는 경우 성능이 크게 향상 될 수 있습니다. 네이티브 형식에 대 한 자연 경계의 액세스는 내부 하드웨어 재정렬 마이크로코드에 소요 되는 시간을 의미 합니다.
 
-The need for aligned instructions is rare on modern processors that use a flat addressing model, but may be required for jump targets in older code for other addressing models.
+정렬 된 지침은 주로 플랫 주소 지정 모델을 사용 하는 최신 프로세서에서 드물게 발생 하지만 다른 주소 지정 모델의 경우 이전 코드의 점프 대상에 필요할 수 있습니다.
 
-When data is aligned, the skipped space is padded with zeroes. When instructions are aligned, the skipped space is filled with appropriately-sized NOP instructions.
+데이터를 정렬할 때 건너뛴 공간은 0으로 채워집니다. 지침이 정렬 되 면 건너뛴 공간이 적절 한 크기의 NOP 명령으로 채워집니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[EVEN](even.md)\
-[Directives reference](directives-reference.md)
+[심지어](even.md)\
+[지시문 참조](directives-reference.md)

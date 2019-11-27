@@ -15,12 +15,12 @@ ms.locfileid: "74399199"
 ---
 # <a name="codesize"></a>\@CodeSize
 
-0 for **TINY**, **SMALL**, **COMPACT**, and **FLAT** models, and 1 for **MEDIUM**, **LARGE**, and **HUGE** models (numeric equate).
+0은 **작음**, **소형**, **컴팩트**및 **플랫** 모델의 경우 0이 고, **중간**, **크고, 큰** **모델의** 경우 1입니다 (숫자는 1).
 
 ## <a name="syntax"></a>구문
 
 > **\@CodeSize**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

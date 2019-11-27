@@ -83,7 +83,7 @@ class CDaoDatabase : public CObject
 |----------|-----------------|
 |[CDaoDatabase::CDaoDatabase](#cdaodatabase)|`CDaoDatabase` 개체를 생성합니다. `Open`를 호출 하 여 개체를 데이터베이스에 연결 합니다.|
 
-### <a name="public-methods"></a>Public 메서드
+### <a name="public-methods"></a>공용 방법
 
 |이름|설명|
 |----------|-----------------|
@@ -118,11 +118,11 @@ class CDaoDatabase : public CObject
 |[CDaoDatabase::m_pDAODatabase](#m_pdaodatabase)|기본 DAO 데이터베이스 개체에 대 한 포인터입니다.|
 |[CDaoDatabase::m_pWorkspace](#m_pworkspace)|데이터베이스를 포함 하 고 해당 트랜잭션 공간을 정의 하는 [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) 개체에 대 한 포인터입니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 지원 되는 데이터베이스 형식에 대 한 자세한 내용은 [GetName](../../mfc/reference/cdaoworkspace-class.md#getname) 멤버 함수를 참조 하세요. `CDaoDatabase`CDaoWorkspace[ 개체로 표시되는 지정된 "작업 영역"에서 한 번에 하나 이상의 ](../../mfc/reference/cdaoworkspace-class.md) 개체를 활성화할 수 있습니다. 작업 영역은 Databases 컬렉션 이라고 하는 open database 개체의 컬렉션을 유지 관리 합니다.
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용법
 
 레코드 집합 개체를 만들 때 데이터베이스 개체를 암시적으로 만들 수 있습니다. 그러나 데이터베이스 개체를 명시적으로 만들 수도 있습니다. `CDaoDatabase`에서 명시적으로 기존 데이터베이스를 사용 하려면 다음 중 하나를 수행 합니다.
 
@@ -159,7 +159,7 @@ ODBC 데이터 원본에 대 한 작업을 수행 하는 데 권장 되는 방�
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ##  <a name="cantransact"></a>  CDaoDatabase::CanTransact
 
@@ -173,7 +173,7 @@ BOOL CanTransact();
 
 데이터베이스가 트랜잭션을 지 원하는 경우 0이 아닙니다. 그렇지 않으면 0입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 트랜잭션은 데이터베이스의 작업 영역에서 관리 됩니다.
 
@@ -189,7 +189,7 @@ BOOL CanUpdate();
 
 `CDaoDatabase` 개체가 업데이트를 허용 하는 경우 0이 아닙니다. 그렇지 않으면 0은 `CDaoDatabase` 개체를 열 때 *Breadonly* 에 TRUE를 전달 했거나 데이터베이스 자체가 읽기 전용일 수 있음을 나타냅니다. [Open](#open) 멤버 함수를 참조 하세요.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터베이스 업데이트 가능성에 대 한 자세한 내용은 DAO 도움말의 "업데이트할 수 있는 속성" 항목을 참조 하십시오.
 
@@ -206,7 +206,7 @@ CDaoDatabase(CDaoWorkspace* pWorkspace = NULL);
 *pWorkspace*<br/>
 새 데이터베이스 개체를 포함 하는 `CDaoWorkspace` 개체에 대 한 포인터입니다. 기본값 NULL을 적용 하면 생성자는 기본 DAO 작업 영역을 사용 하는 임시 `CDaoWorkspace` 개체를 만듭니다. [M_pWorkspace](#m_pworkspace) 데이터 멤버를 통해 작업 영역 개체에 대 한 포인터를 가져올 수 있습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 개체를 생성 한 후 새 Microsoft Jet (. MDB) 데이터베이스에서 개체의 [Create](#create) member 함수를 호출 합니다. 사용자가 아닌 경우 기존 데이터베이스를 열 때 개체의 [Open](#open) 멤버 함수를 호출 합니다.
 
@@ -225,7 +225,7 @@ CDaoDatabase(CDaoWorkspace* pWorkspace = NULL);
 virtual void Close();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수를 호출 하기 전에 이러한 개체를 직접 닫는 것이 좋습니다. `CDaoDatabase` 개체를 닫으면 연결 된 [작업 영역의](../../mfc/reference/cdaoworkspace-class.md)데이터베이스 컬렉션에서 해당 개체가 제거 됩니다. `Close`은 `CDaoDatabase` 개체를 소멸 시 키 지 않으므로 동일한 데이터베이스 또는 다른 데이터베이스를 열어 개체를 다시 사용할 수 있습니다.
 
@@ -304,7 +304,7 @@ virtual void Create(
 > [!CAUTION]
 >  데이터베이스가 암호화 되지 않은 경우 사용자/암호 보안을 구현 하는 경우에도 데이터베이스를 구성 하는 이진 디스크 파일을 직접 읽을 수 있습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `Create`는 데이터베이스 파일과 기본 DAO 데이터베이스 개체를 만들고 개체를 C++ 초기화 합니다. 연결 된 작업 영역의 데이터베이스 컬렉션에 개체가 추가 됩니다. 데이터베이스 개체가 열려 있는 상태입니다. `Create`후에는 `Open*`를 호출 하지 마세요.
 
@@ -360,7 +360,7 @@ void CreateRelation(CDaoRelationInfo& relinfo);
 *relinfo*<br/>
 만들려는 관계에 대 한 정보를 포함 하는 [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) 개체에 대 한 참조입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 관계는 외부 데이터베이스의 쿼리 또는 연결 된 테이블을 포함할 수 없습니다.
 
@@ -387,7 +387,7 @@ void DeleteQueryDef(LPCTSTR lpszName);
 *lpszName*<br/>
 삭제할 저장 된 쿼리의 이름입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 그런 다음이 쿼리는 데이터베이스에서 더 이상 정의 되지 않습니다.
 
@@ -406,7 +406,7 @@ void DeleteRelation(LPCTSTR lpszName);
 *lpszName*<br/>
 삭제할 관계의 이름입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 그런 다음, 관계가 더 이상 존재 하지 않습니다.
 
@@ -425,7 +425,7 @@ void DeleteTableDef(LPCTSTR lpszName);
 *lpszName*<br/>
 삭제할 테이블 정의의 이름입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 그런 다음 해당 테이블이 더 이상 데이터베이스에 정의 되어 있지 않습니다.
 
@@ -469,7 +469,7 @@ void Execute(
 > [!NOTE]
 >  `dbInconsistent`와 `dbConsistent`를 모두 포함 하거나 둘 다 포함 하지 않을 경우 결과는 기본값입니다. 이러한 상수에 대 한 설명은 DAO 도움말의 "메서드 실행" 항목을 참조 하십시오.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `Execute`은 결과를 반환 하지 않는 동작 쿼리 또는 SQL 통과 쿼리에서만 사용할 수 있습니다. 레코드를 반환 하는 select 쿼리에는 적용 되지 않습니다.
 
@@ -494,7 +494,7 @@ CString GetConnect();
 
 ODBC 데이터 원본에서 [Open](#open) 이 성공적으로 호출 된 경우 연결 문자열은입니다. 그렇지 않으면 빈 문자열입니다. Microsoft Jet (. MDB) 데이터베이스를 사용 하도록 설정 하지 않으면 [Execute](#execute) member 함수와 함께 사용 되거나 레코드 집합을 여는 데 사용 되는 `dbSQLPassThrough` 옵션을 사용 하도록 설정 하지 않는 한 문자열은 항상 비어 있습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 문자열은 통과 쿼리에 사용 되는 데이터베이스 또는 열린 데이터베이스의 원본에 대 한 정보를 제공 합니다. 연결 문자열은 데이터베이스 유형 지정자와 0 개 이상의 매개 변수를 세미콜론으로 구분 하 여 구성 됩니다.
 
@@ -518,7 +518,7 @@ CString GetName();
 
 성공 하는 경우 데이터베이스의 전체 경로 및 파일 이름입니다. 그렇지 않으면 빈 [CString](../../atl-mfc-shared/reference/cstringt-class.md)이 됩니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 네트워크에서 UNC (uniform 명명 규칙)를 지 원하는 경우 네트워크 경로 (예: "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB.)를 지정할 수도 있습니다. MDB ". "\\"은 C++ 이스케이프 문자 이기 때문에 문자열 리터럴에 이중 백슬래시가 필요 합니다.
 
@@ -551,7 +551,7 @@ short GetQueryDefCount();
 
 데이터베이스에 정의 된 쿼리 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `GetQueryDefCount`는 쿼리 정의 컬렉션의 모든 쿼리 정의를 반복 해야 하는 경우에 유용 합니다. 컬렉션에서 지정 된 쿼리에 대 한 정보를 얻으려면 [GetQueryDefInfo](#getquerydefinfo)를 참조 하세요.
 
@@ -591,7 +591,7 @@ void GetQueryDefInfo(
 *lpszName*<br/>
 이름으로 조회 하기 위해 데이터베이스에 정의 된 쿼리 이름을 포함 하는 문자열입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터베이스의 쿼리 정의 컬렉션에서 인덱스 또는 쿼리 이름을 기준으로 쿼리를 선택할 수 있도록 두 가지 버전의 함수가 제공 됩니다.
 
@@ -609,7 +609,7 @@ short GetQueryTimeout();
 
 제한 시간 값 (초)을 포함 하는 정수 (short)입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 네트워크 액세스 문제, 과도 한 쿼리 처리 시간 등으로 인해 작업 시간이 초과 될 수 있습니다. 설정이 적용 되는 동안이 `CDaoDatabase` 개체와 연결 된 모든 레코드 집합에 대 한 모든 열기, 새로 추가, 업데이트 및 삭제 작업에 영향을 줍니다. [SetQueryTimeout](#setquerytimeout)을 호출 하 여 현재 제한 시간 설정을 변경할 수 있습니다. 열을 연 후 레코드 집합에 대 한 쿼리 제한 시간 값을 변경 해도 레코드 집합에 대 한 값은 변경 되지 않습니다. 예를 들어 후속 [이동](../../mfc/reference/cdaorecordset-class.md#move) 작업에서는 새 값을 사용 하지 않습니다. 기본값은 데이터베이스 엔진이 초기화 될 때 초기에 설정 됩니다.
 
@@ -629,7 +629,7 @@ long GetRecordsAffected();
 
 영향을 받는 레코드 수를 포함 하는 정수 (long)입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 반환 되는 값에는 `Execute`를 사용 하 여 실행 되는 작업 쿼리를 통해 삭제, 업데이트 또는 삽입 된 레코드 수가 포함 됩니다. 연속 업데이트 또는 삭제가 적용 되는 경우 반환 되는 개수는 관련 테이블의 변경 내용을 반영 하지 않습니다.
 
@@ -647,7 +647,7 @@ short GetRelationCount();
 
 데이터베이스의 테이블 간에 정의 된 관계의 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `GetRelationCount`은 데이터베이스의 관계 컬렉션에 정의 된 모든 관계를 반복 해야 하는 경우에 유용 합니다. 컬렉션에서 지정 된 관계에 대 한 정보를 얻으려면 [GetRelationInfo](#getrelationinfo)를 참조 하세요.
 
@@ -689,7 +689,7 @@ void GetRelationInfo(
 *lpszName*<br/>
 이름으로 조회 하는 데 사용할 관계 개체의 이름을 포함 하는 문자열입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 함수의 두 버전은 인덱스 또는 이름으로 액세스를 제공 합니다. *Relinfo*에서 반환 되는 정보에 대 한 설명은 [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) 구조체를 참조 하세요. 이 구조에는 위의 정보 항목에 해당 하는 멤버가 포함 되어 *있습니다.* 한 수준에서 정보를 요청 하는 경우 모든 이전 수준 에서도 정보를 얻을 수 있습니다.
 
@@ -708,7 +708,7 @@ short GetTableDefCount();
 
 데이터베이스에 정의 된 테이블 정의의 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `GetTableDefCount`은 데이터베이스의 테이블 컬렉션에 있는 모든 테이블을 반복 해야 하는 경우에 유용 합니다. 컬렉션의 지정 된 테이블에 대 한 정보를 얻으려면 [GetTableDefInfo](#gettabledefinfo)를 참조 하세요.
 
@@ -748,7 +748,7 @@ void GetTableDefInfo(
 *lpszName*<br/>
 이름으로 조회 하기 위한 테이블 정의 개체의 이름입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터베이스의 테이블 테이블 컬렉션에서 인덱스 또는 테이블 이름을 기준으로 테이블을 선택할 수 있도록 두 가지 버전의 함수가 제공 됩니다.
 
@@ -769,7 +769,7 @@ CString GetVersion();
 
 개체와 연결 된 데이터베이스 파일의 버전을 나타내는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 반환 되는 값은 "major. minor" 형식의 버전 번호를 나타냅니다. 예를 들면 "3.0"입니다. 제품 버전 번호 (예: 3.0)는 버전 번호 (3), 마침표 및 릴리스 번호 (0)로 구성 됩니다. 최신 버전은 1.0, 1.1, 2.0 및 3.0입니다.
 
@@ -787,13 +787,13 @@ BOOL IsOpen() const;
 
 `CDaoDatabase` 개체가 현재 열려 있으면 0이 아닌 값이 고, 그렇지 않으면 0입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 ##  <a name="m_pdaodatabase"></a>  CDaoDatabase::m_pDAODatabase
 
 `CDaoDatabase` 개체의 내부에 있는 DAO 데이터베이스 개체의 OLE 인터페이스에 대 한 포인터를 포함 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 DAO 인터페이스에 직접 액세스 해야 하는 경우이 포인터를 사용 합니다.
 
@@ -803,7 +803,7 @@ DAO를 직접 호출 하는 방법에 대 한 자세한 내용은 [Technical Not
 
 데이터베이스 개체를 포함 하는 [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) 개체에 대 한 포인터를 포함 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 작업 영역에 직접 액세스 해야 하는 경우 (예: 작업 영역의 데이터베이스 컬렉션에 있는 다른 데이터베이스 개체에 대 한 포인터를 가져오기 위해)이 포인터를 사용 합니다.
 
@@ -844,7 +844,7 @@ virtual void Open(
 *lpszConnect*<br/>
 데이터베이스를 여는 데 사용 되는 문자열 식입니다. 이 문자열은 ODBC connect 인수를 구성 합니다. 원본 문자열을 제공 하려면 전용 및 읽기 전용 인수를 제공 해야 합니다. 데이터베이스가 Microsoft Jet 데이터베이스 이면이 고, 그렇지 않으면입니다. MDB),이 문자열은 비어 있습니다 (""). 기본값 ( **_T**("")의 구문은 응용 프로그램의 ANSI 빌드 뿐만 아니라 유니코드에 대 한 이식성을 제공 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `Open`는 데이터베이스를 기본 DAO 개체와 연결 합니다. 데이터베이스 개체를 사용 하 여 초기화 될 때까지 recordset, tabledef 또는 querydef 개체를 생성할 수 없습니다. `Open` 데이터베이스 개체를 연결 된 작업 영역의 데이터베이스 컬렉션에 추가 합니다.
 
@@ -882,7 +882,7 @@ void SetQueryTimeout(short nSeconds);
 *nSeconds*<br/>
 쿼리 시도 시간이 초과 될 때까지 허용 되는 시간 (초)입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 네트워크 액세스 문제, 과도 한 쿼리 처리 시간 등으로 인해 작업 시간이 초과 될 수 있습니다. 쿼리 제한 시간 값을 변경 하려면 레코드 집합을 열기 전에 또는 레코드 집합의 [AddNew](../../mfc/reference/cdaorecordset-class.md#addnew), [Update](../../mfc/reference/cdaorecordset-class.md#update)또는 [Delete](../../mfc/reference/cdaorecordset-class.md#delete) 멤버 함수를 호출 하기 전에 `SetQueryTimeout`를 호출 합니다. 설정은 이 [ 개체와 연결된 모든 레코드 집합에 대한 모든 후속 ](../../mfc/reference/cdaorecordset-class.md#open)Open`AddNew`, `Update`, `Delete` 및 `CDaoDatabase`호출에 영향을 줍니다. 열을 연 후 레코드 집합에 대 한 쿼리 제한 시간 값을 변경 해도 레코드 집합에 대 한 값은 변경 되지 않습니다. 예를 들어 후속 [이동](../../mfc/reference/cdaorecordset-class.md#move) 작업에서는 새 값을 사용 하지 않습니다.
 

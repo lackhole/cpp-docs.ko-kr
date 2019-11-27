@@ -15,44 +15,44 @@ ms.locfileid: "74394750"
 ---
 # <a name="proto"></a>PROTO
 
-Prototypes a function or procedure. You can call the function prototyped by the PROTO directive by using the [INVOKE](invoke.md) directive.
+함수 또는 프로시저를 프로토타입 합니다. [INVOKE](invoke.md) 지시어를 사용 하 여 PROTO 지시문에 의해 프로토타입화 된 함수를 호출할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-> *label* **PROTO** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦ __,__ ⟦*parameter*⟧ __:__ *tag* ...⟧
+> *label* **PROTO** ⟦*distance* *⟧ ⟦ ⟧* ⟦ __,__ ⟦*parameter*⟧ __:__ *tag* ... ⟧
 
 ### <a name="parameters"></a>매개 변수
 
-*label*\
-The name of the prototyped function.
+*레이블*\
+프로토타입화 된 함수의 이름입니다.
 
-*distance*\
-(Optional) Used in 16-bit memory models to override the default and indicate **NEAR** or **FAR** calls.
+*거리*\
+필드 16 비트 메모리 모델에서 기본값을 재정의 하 고 **NEAR** 또는 **FAR** 호출을 나타내는 데 사용 됩니다.
 
-*language-type*\
-(Optional) Sets the calling and naming convention for procedures and public symbols. Supported conventions are:
+*언어 유형*\
+필드 프로시저 및 공용 기호에 대 한 호출 및 명명 규칙을 설정 합니다. 지원 되는 규칙은 다음과 같습니다.
 
-- 32-bit **FLAT** model: **C**, **STDCALL**
+- 32 비트 **플랫** 모델: **C**, **STDCALL**
 
-- 16-bit models: **C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**
+- 16 비트 모델: **C**, **BASIC**, **포트란**, **파스칼**, **SYSCALL**, **STDCALL**
 
-*parameter*\
-The optional name for a function parameter.
+*매개 변수*\
+함수 매개 변수의 선택적 이름입니다.
 
-*tag*\
-The type of a function parameter.
+*태그*\
+함수 매개 변수의 형식입니다.
 
-The *parameter* and *tag* parameters may appear multiple times, once for each passed argument.
+*매개 변수* 및 *태그* 매개 변수는 전달 된 각 인수에 대해 한 번씩 여러 번 나타날 수 있습니다.
 
 ## <a name="example"></a>예제
 
-This sample shows a **PROTO** declaration for a function named `addup3` that uses a **NEAR** call to override the 16-bit model default for procedure calls, and uses the **C** calling convention for stack parameters and return values. It takes two arguments, a **WORD** and a **VARARG**.
+이 샘플에서는 **NEAR** 호출을 사용 하 여 프로시저 호출에 대 한 16 비트 모델 기본값을 재정의 하 고 스택 매개 변수 및 반환 값에 대해 **C** 호출 규칙을 사용 하는 `addup3` 라는 함수의 **프로토콜** 선언을 보여 줍니다. **단어** 와 **VARARG**라는 두 개의 인수를 사용 합니다.
 
 ```MASM
 addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives Reference](directives-reference.md)\
-[.MODEL Reference](dot-model.md)
+[지시문 참조](directives-reference.md)\
+[. 모델 참조](dot-model.md)

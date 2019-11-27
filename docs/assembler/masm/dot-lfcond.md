@@ -21,8 +21,8 @@ ms.locfileid: "74398197"
 
 ## <a name="remarks"></a>주의
 
-See [.LISTIF](../../assembler/masm/dot-listif.md).
+[을 참조 하세요. .LISTIF](../../assembler/masm/dot-listif.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

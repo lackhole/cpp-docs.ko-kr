@@ -15,16 +15,16 @@ ms.locfileid: "74397723"
 ---
 # <a name="echo"></a>ECHO
 
-Displays *message* to the standard output device (by default, the screen).
+표준 출력 장치 (기본적으로 화면)로 *메시지* 를 표시 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **ECHO** *message*
+> **ECHO** *메시지*
 
 ## <a name="remarks"></a>주의
 
-Same as [%OUT](../../assembler/masm/percent-out.md).
+[% OUT](../../assembler/masm/percent-out.md)과 동일 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

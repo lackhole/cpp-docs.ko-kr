@@ -15,12 +15,12 @@ ms.locfileid: "74397819"
 ---
 # <a name="xall"></a>.XALL
 
-See [.LISTMACRO](../../assembler/masm/dot-listmacro.md).
+[을 참조 하세요. LISTMACRO](../../assembler/masm/dot-listmacro.md).
 
 ## <a name="syntax"></a>구문
 
 > **.XALL**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

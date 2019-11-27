@@ -15,20 +15,20 @@ ms.locfileid: "74397618"
 ---
 # <a name="equ"></a>EQU
 
-The first directive assigns numeric value of *expression* to *name*.
+첫 번째 지시문은 *식* 의 숫자 값을 *이름*에 할당 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **EQU** *expression*
+> *이름* **같음** *식*
 >
-> *name* **EQU** __\<__ *text* __>__
+> *이름* **같음** __\<__ *텍스트* __>__
 
 ## <a name="remarks"></a>주의
 
-The *name* cannot be redefined later.
+나중에 *이름을* 다시 정의할 수 없습니다.
 
-The second directive assigns specified *text* to *name*. The *name* can be assigned a different *text* later. See [TEXTEQU](../../assembler/masm/textequ.md).
+두 번째 지시문은 지정 된 *텍스트* 를 *이름*에 할당 합니다. 이 *이름* 에는 나중에 다른 *텍스트* 를 할당할 수 있습니다. [TEXTEQU](../../assembler/masm/textequ.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

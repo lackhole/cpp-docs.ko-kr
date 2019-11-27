@@ -15,7 +15,7 @@ ms.locfileid: "74392789"
 ---
 # <a name="xmmword"></a>XMMWORD
 
-Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.
+MMX 및 SSE (XMM) 명령을 포함 하는 128 비트 멀티미디어 피연산자에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,7 +23,7 @@ Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.
 
 ## <a name="remarks"></a>주의
 
-**XMMWORD** is intended to represent the same type as [__m128](../../cpp/m128.md).
+**Xmmword** 는 [__m128](../../cpp/m128.md)와 동일한 형식을 표시 하기 위한 것입니다.
 
 ## <a name="example"></a>예제
 

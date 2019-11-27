@@ -15,13 +15,13 @@ ms.locfileid: "74397751"
 ---
 # <a name="dw"></a>DW
 
-Allocates and optionally initializes a word (2 bytes) of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal. **DW** is a synonym of [WORD](../../assembler/masm/word.md).
+각 *이니셜라이저의*저장소의 단어 (2 바이트)를 할당 하 고 선택적으로 초기화 합니다. 형식이 유효한 모든 곳에서 형식을 형식 지정자로 사용할 수도 있습니다. **DW** 는 [WORD](../../assembler/masm/word.md)의 동의어입니다.
 
 ## <a name="syntax"></a>구문
 
-> ⟦*name*⟧ **DW** *initializer* ⟦ __,__ *initializer* ...⟧
+> ⟦*name*⟧ **DW** *이니셜라이저* ⟦ __,__ *이니셜라이저가* 있습니다. ⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[지시문 참조](../../assembler/masm/directives-reference.md)\
 [SWORD](../../assembler/masm/sword.md)

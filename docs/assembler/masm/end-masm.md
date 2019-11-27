@@ -15,12 +15,12 @@ ms.locfileid: "74397662"
 ---
 # <a name="end-masm"></a>END (MASM)
 
-Marks the end of a module and, optionally, sets the program entry point to *address*.
+모듈의 끝을 표시 하 고 선택적으로 프로그램 진입점을 *address*로 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
 > **END** ⟦*address*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

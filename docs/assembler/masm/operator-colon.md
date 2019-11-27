@@ -16,12 +16,12 @@ ms.locfileid: "74397052"
 ---
 # <a name="operator-"></a>연산자 :
 
-Overrides the default segment of *expression* with *segment*. The *segment* can be a segment register, group name, segment name, or segment expression. The *expression* must be a constant.
+*식* 의 기본 세그먼트를 *세그먼트로*재정의 합니다. 세그먼트는 세그먼트 레지스터, 그룹 이름, 세그먼트 이름 또는 세그먼트 식일 *수 있습니다.* *식은* 상수 여야 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *segment* **:** *expression*
+> *segment* **:** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

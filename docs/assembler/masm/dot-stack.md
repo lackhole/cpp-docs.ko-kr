@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397902"
 ---
-# <a name="stack-32-bit-masm"></a>.STACK (32-bit MASM)
+# <a name="stack-32-bit-masm"></a>. STACK (32 비트 MASM)
 
-When used with [.MODEL](../../assembler/masm/dot-model.md), defines a stack segment (with segment name **STACK**). The optional *size* specifies the number of bytes for the stack (default 1,024). The **.STACK** directive automatically closes the stack statement. (32-bit MASM only.)
+과 함께 사용 [됩니다. 모델](../../assembler/masm/dot-model.md)-스택 세그먼트 (세그먼트 이름 **스택**포함)를 정의 합니다. 선택적 *크기* 는 스택의 바이트 수를 지정 합니다 (기본값 1024). **입니다. STACK** 지시어는 stack 문을 자동으로 닫습니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> **.STACK** ⟦*size*⟧
+> **. STACK** ⟦*size*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

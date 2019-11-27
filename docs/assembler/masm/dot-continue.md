@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398550"
 ---
-# <a name="continue-32-bit-masm"></a>.CONTINUE (32-bit MASM)
+# <a name="continue-32-bit-masm"></a>. CONTINUE (32 비트 MASM)
 
-Generates code to jump to the top of a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true. (32-bit MASM only.)
+의 맨 위로 이동 하는 코드를 생성 [합니다. 또는 중](../../assembler/masm/dot-while.md) 하나 [입니다. ](../../assembler/masm/dot-repeat.md) *조건이* true 인 경우 블록을 반복 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> **.CONTINUE** ⟦ **.IF** *condition*⟧
+> **.** ⟦**를 계속 합니다. IF** *condition*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

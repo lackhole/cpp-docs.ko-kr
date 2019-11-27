@@ -15,12 +15,12 @@ ms.locfileid: "74393676"
 ---
 # <a name="struc"></a>STRUC
 
-See [STRUCT](../../assembler/masm/struct-masm.md).
+[구조체](../../assembler/masm/struct-masm.md)를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
 > **STRUC**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

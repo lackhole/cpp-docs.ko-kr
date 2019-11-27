@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398590"
 ---
-# <a name="break-32-bit-masm"></a>.BREAK (32-bit MASM)
+# <a name="break-32-bit-masm"></a>. 중단 (32 비트 MASM)
 
-Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true. (32-bit MASM only.)
+를 종료 하는 코드를 생성 [합니다. 또는 중](../../assembler/masm/dot-while.md) 하나 [입니다. ](../../assembler/masm/dot-repeat.md) *조건이* true 인 경우 블록을 반복 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> **.BREAK** ⟦ **.IF** *condition*⟧
+> **.** ⟦**를 중단 합니다. IF** *condition*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

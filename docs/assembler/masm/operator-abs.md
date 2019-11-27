@@ -16,12 +16,12 @@ ms.locfileid: "74397162"
 ---
 # <a name="operator-abs"></a>연산자 ABS
 
-See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.
+[EXTERNDEF](../../assembler/masm/externdef.md) 지시문을 참조 하십시오.
 
 ## <a name="syntax"></a>구문
 
 > **ABS**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

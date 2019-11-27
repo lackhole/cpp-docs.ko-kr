@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74397937"
 ---
-# <a name="seq-32-bit-masm"></a>.SEQ (32-bit MASM)
+# <a name="seq-32-bit-masm"></a>. SEQ (32 비트 MASM)
 
-Orders segments sequentially (the default order). (32-bit MASM only.)
+세그먼트를 순차적으로 (기본 순서) 순서 대로 정렬 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
 > **.SEQ**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

@@ -15,12 +15,12 @@ ms.locfileid: "74394595"
 ---
 # <a name="record-masm"></a>RECORD (MASM)
 
-Declares a record type consisting of the specified fields. *fieldname* names the field, *width* specifies the number of bits, and *expression* gives its initial value.
+지정 된 필드로 구성 된 레코드 형식을 선언 합니다. *fieldname* 은 필드의 이름을 지정 하 고 *width* 는 비트 수를 지정 하며 *식은* 초기 값을 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *recordname* **RECORD** *fieldname* __:__ *width* ⟦ __=__ *expression*⟧ ⟦ __,__ *fieldname* __:__ *width* ⟦ __=__ *expression*⟧ ...⟧
+> *recordname* **레코드** *fieldname* __:__ *width* ⟦ __=__ *expression*⟧ ⟦ __,__ *fieldname* __:__ *width* ⟦ __=__ *expression*⟧ ... ⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

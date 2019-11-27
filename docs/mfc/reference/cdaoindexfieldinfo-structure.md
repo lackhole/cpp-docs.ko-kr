@@ -38,7 +38,7 @@ struct CDaoIndexFieldInfo
 *m_bDescending*<br/>
 인덱스 개체에서 정의한 인덱스 순서를 나타냅니다. 순서가 내림차순 이면 TRUE입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 인덱스 개체는 여러 필드를 가질 수 있습니다 .이 필드에는 테이블 형식 (또는 테이블 기반 레코드 집합)이 인덱싱되는 필드가 표시 됩니다. 위의 주에 대 한 참조는 [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo)클래스의 `GetIndexInfo` 멤버 함수를 호출 하 여 가져온 [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) 개체의 `m_pFieldInfos` 멤버에서 정보가 반환 되는 방법을 표시 합니다.
 
@@ -48,10 +48,10 @@ struct CDaoIndexFieldInfo
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ## <a name="see-also"></a>참고 항목
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoTableDef::GetIndexInfo](../../mfc/reference/cdaotabledef-class.md#getindexinfo)<br/>
-[CDaoRecordset::GetIndexInfo](../../mfc/reference/cdaorecordset-class.md#getindexinfo)
+[CDaoTableDef:: GetIndexInfo](../../mfc/reference/cdaotabledef-class.md#getindexinfo)<br/>
+[CDaoRecordset:: GetIndexInfo](../../mfc/reference/cdaorecordset-class.md#getindexinfo)

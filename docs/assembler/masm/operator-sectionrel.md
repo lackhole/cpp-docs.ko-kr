@@ -17,16 +17,16 @@ ms.locfileid: "74396479"
 ---
 # <a name="operator-sectionrel"></a>연산자 SECTIONREL
 
-Returns the section relative offset of expression relative to the section containing the target in the final executable.
+최종 실행 파일의 대상이 포함 된 섹션을 기준으로 하는 식의 상대적인 섹션 오프셋을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **SECTIONREL** *expression*
+> **섹션 rel** *식*
 
 ## <a name="remarks"></a>주의
 
-**SECTIONREL** is available only with COFF object emission.
+**섹션 rel** 는 COFF 개체 내보내기와 함께 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

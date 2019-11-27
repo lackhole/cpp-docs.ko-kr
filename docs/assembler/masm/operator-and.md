@@ -17,12 +17,12 @@ ms.locfileid: "74397102"
 ---
 # <a name="operator-and"></a>연산자 AND
 
-Returns the result of a bitwise AND operation for *expression1* and *expression2*.
+*Expression1* 및 *식 2*에 대 한 비트 and 연산의 결과를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **AND** *expression2*
+> *expression1* **및** *식 2*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [연산자 참조](../../assembler/masm/operators-reference.md)

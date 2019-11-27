@@ -15,7 +15,7 @@ ms.locfileid: "74398173"
 ---
 # <a name="listall"></a>.LISTALL
 
-Starts listing of all statements.
+모든 문의 목록을 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Starts listing of all statements.
 
 ## <a name="remarks"></a>주의
 
-Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LISTIF](../../assembler/masm/dot-listif.md), and [.LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
+의 조합에 해당 [합니다. 목록](../../assembler/masm/dot-list.md), [. .LISTIF](../../assembler/masm/dot-listif.md)및 [입니다. .LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

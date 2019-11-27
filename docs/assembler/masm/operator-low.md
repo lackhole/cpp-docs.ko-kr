@@ -17,12 +17,12 @@ ms.locfileid: "74396699"
 ---
 # <a name="operator-low"></a>연산자 LOW
 
-Returns the low 8 bits of *expression*. MASM expressions are 64-bit values.
+*식*의 하위 8 비트를 반환 합니다. MASM 식은 64 비트 값입니다.
 
 ## <a name="syntax"></a>구문
 
-> **LOW** *expression*
+> **LOW** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

@@ -17,12 +17,12 @@ ms.locfileid: "74396873"
 ---
 # <a name="operator-highword"></a>연산자 HIGHWORD
 
-Returns the high 16 bits of the low 32 bits of *expression*. MASM expressions are 64-bit values.
+낮은 32 비트 *식*의 상위 16 비트를 반환 합니다. MASM 식은 64 비트 값입니다.
 
 ## <a name="syntax"></a>구문
 
-> **HIGHWORD** *expression*
+> **Highword** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

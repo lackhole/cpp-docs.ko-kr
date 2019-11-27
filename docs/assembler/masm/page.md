@@ -15,14 +15,14 @@ ms.locfileid: "74395125"
 ---
 # <a name="page"></a>PAGE
 
-The first directive sets line *length* and character *width* of the program listing. If no arguments are given, generates a page break. The second directive increments the section number and resets the page number to 1.
+첫 번째 지시문은 프로그램 목록의 줄 *길이* 와 문자 *너비* 를 설정 합니다. 인수를 지정 하지 않으면에서 페이지 나누기를 생성 합니다. 두 번째 지시문은 섹션 번호를 증가 시키고 페이지 번호를 1로 다시 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **PAGE** ⟦*length*⟧⟦ __,__ *width*⟧
+> **PAGE** ⟦*length*⟧ ⟦ __,__ *width*⟧
 
-> **PAGE +**
+> **페이지 +**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

@@ -15,12 +15,12 @@ ms.locfileid: "74398301"
 ---
 # <a name="errnz"></a>**.ERRNZ**
 
-Generates an error if *expression* is true (nonzero).
+*Expression* 이 true (0이 아님) 인 경우 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **.ERRNZ** *expression* ⟦ __,__ *message*⟧
+> **. Errnz** *식* ⟦ __,__ *message*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

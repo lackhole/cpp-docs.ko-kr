@@ -24,7 +24,7 @@ ms.locfileid: "74305850"
 
 > **#pragma fenv_access (** { **on** | **off** } **)**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 기본적으로 **fenv_access** 는 **해제**되어 있습니다. 컴파일러는 코드가 부동 소수점 환경을 액세스 하거나 조작 하지 않는다고 가정 합니다. 환경 액세스가 필요 하지 않은 경우 컴파일러는 부동 소수점 코드를 최적화 하기 위해 더 많은 작업을 수행할 수 있습니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "74305850"
 
 - [fp_contract](../preprocessor/fp-contract.md)
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
 이 예제에서는 24 비트 전체 자릿수에 대해 부동 소수점 제어 레지스터를 설정 하기 위해 **fenv_access** 를 **on** 으로 설정 합니다.
 

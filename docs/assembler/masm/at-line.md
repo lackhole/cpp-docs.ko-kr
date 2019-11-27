@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398964"
 ---
-# <a name="line"></a>\@Line
+# <a name="line"></a>\@줄
 
-The source line number in the current file (numeric equate).
+현재 파일의 소스 줄 번호 (숫자는)입니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@Line**
+> **\@줄**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

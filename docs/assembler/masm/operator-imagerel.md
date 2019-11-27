@@ -17,18 +17,18 @@ ms.locfileid: "74396883"
 ---
 # <a name="operator-imagerel"></a>연산자 IMAGEREL
 
-Returns the image relative offset of *expression*.
+*식*의 상대 오프셋 이미지를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **IMAGEREL** *expression*
+> **Imagerel** *식*
 
 ## <a name="remarks"></a>주의
 
-The resulting value is often referred to as an RVA or Relative Virtual Address.
+결과 값은 대체로 RVA 또는 상대 가상 주소 라고 합니다.
 
-IMAGEREL is available only with COFF object emission.
+IMAGEREL은 COFF 개체 내보내기와 함께 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

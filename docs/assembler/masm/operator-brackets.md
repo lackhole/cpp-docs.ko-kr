@@ -1,5 +1,5 @@
 ---
-title: operator brackets
+title: 연산자 대괄호
 ms.date: 08/30/2018
 f1_keywords:
 - operator []
@@ -17,12 +17,12 @@ ms.locfileid: "74397076"
 ---
 # <a name="operator-"></a>연산자 \[\]
 
-Returns *expression1* plus \[*expression2*\].
+*Expression1* 와 \[*식*\]를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **[** expression2 **]**
+> *expression1* **[** 식 2 **]**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [연산자 참조](../../assembler/masm/operators-reference.md)

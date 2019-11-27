@@ -15,14 +15,14 @@ ms.locfileid: "74392819"
 ---
 # <a name="while-masm"></a>WHILE (MASM)
 
-Repeats assembly of block *statements* as long as *expression* remains true.
+*식이* true로 유지 되는 한 블록 *문의* 어셈블리를 반복 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **WHILE** *expression*\
-> *statements*\
+> **WHILE** *식*\
+> *문*\
 > **ENDM**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

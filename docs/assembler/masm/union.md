@@ -15,14 +15,14 @@ ms.locfileid: "74392988"
 ---
 # <a name="union"></a>UNION
 
-Declares a union of one or more data types. The *field-declarations* must be valid data definitions. Omit the [ENDS](../../assembler/masm/ends-masm.md) *name* label on nested **UNION** definitions.
+하나 이상의 데이터 형식에 대 한 공용 구조체를 선언 합니다. *필드 선언은* 올바른 데이터 정의 여야 합니다. 중첩 된 **공용 구조체** 정의에서 [end](../../assembler/masm/ends-masm.md) *name* 레이블을 생략 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **UNION** ⟦*alignment*⟧ ⟦ __,__ **NONUNIQUE**⟧\
-> *field-declarations*\
-> ⟦*name*⟧ **ENDS**
+> *이름* **UNION** ⟦*alignment*⟧ ⟦ __,__ **고유**하지 않은 ⟧ \
+> *필드 선언*\
+> ⟦*name*⟧ **end**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

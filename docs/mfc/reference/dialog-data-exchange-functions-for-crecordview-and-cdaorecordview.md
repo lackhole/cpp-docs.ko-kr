@@ -82,7 +82,7 @@ void AFXAPI DDX_FieldCBIndex(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 *인덱스*에 지정 된 값에 따라 컨트롤에서 선택 항목을 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 MFC는 인덱스의 값을 0으로 설정 합니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있거나 선택 된 항목이 없는 경우에는 레코드 집합 필드가 0으로 설정 됩니다.
 
@@ -96,7 +96,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ##  <a name="ddx_fieldcbstring"></a>  DDX_FieldCBString
 
@@ -130,7 +130,7 @@ void AFXAPI DDX_FieldCBString(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 콤보 상자의 현재 선택 항목을 *값*에 지정 된 문자열의 문자로 시작 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 콤보 상자에서 제거 되 고 콤보 상자의 편집 컨트롤은 빈 상태로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송 시 컨트롤이 비어 있으면 필드에서을 허용 하는 경우 레코드 집합 필드가 Null로 설정 됩니다.
 
@@ -178,7 +178,7 @@ void AFXAPI DDX_FieldCBStringExact(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 콤보 상자의 현재 선택 항목을 *값*에 지정 된 문자열과 정확히 일치 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 NULL 이면 모든 선택 항목이 콤보 상자에서 제거 되 고 콤보 상자의 편집 상자는 비어 있는 것으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 NULL로 설정 됩니다.
 
@@ -226,7 +226,7 @@ void AFXAPI DDX_FieldCheck(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 `DDX_FieldCheck`가 호출 되 면 *값* 이 확인란 컨트롤의 현재 상태로 설정 되거나 전송 방향에 따라 컨트롤의 상태가 *값*으로 설정 됩니다.
 
@@ -268,7 +268,7 @@ void AFXAPI DDX_FieldLBIndex(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 *인덱스*에 지정 된 값에 따라 컨트롤에서 선택 항목을 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 MFC는 인덱스의 값을 0으로 설정 합니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 0으로 설정 됩니다.
 
@@ -316,7 +316,7 @@ void AFXAPI DDX_FieldLBString(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 반대 방향으로이 함수는 목록 상자에서 현재 선택 영역을 *값*으로 지정 된 문자열의 문자로 시작 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 목록 상자에서 제거 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 Null로 설정 됩니다.
 
@@ -364,7 +364,7 @@ void AFXAPI DDX_FieldLBStringExact(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 반대 방향으로이 함수는 목록 상자에서 현재 선택 영역을 *값*에 지정 된 문자열과 정확히 일치 하는 첫 번째 행으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 모든 선택 항목이 목록 상자에서 제거 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 Null로 설정 됩니다.
 
@@ -412,7 +412,7 @@ void AFXAPI DDX_FieldRadio(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 레코드 집합 필드에서 뷰로 전송할 때이 함수는 *n 번째* 라디오 단추 (0부터 시작)를 설정 하 고 다른 단추를 끕니다. 역방향으로이 함수는 레코드 집합 필드를 현재 설정 되어 있는 라디오 단추 (선택)의 서 수로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 단추가 선택 되지 않습니다. 컨트롤에서 레코드 집합으로 전송 하는 경우 컨트롤을 선택 하지 않으면 필드에서 허용 하는 경우 레코드 집합 필드가 Null로 설정 됩니다.
 
@@ -460,7 +460,7 @@ void AFXAPI DDX_FieldScroll(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터 집합에서 컨트롤로 데이터를 이동 하는 경우이 함수는 스크롤 막대 컨트롤의 스크롤 위치를 *value*에 지정 된 값으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 scroll bar 컨트롤이 0으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드의 값은 0입니다.
 
@@ -509,7 +509,7 @@ void AFXAPI DDX_FieldSlider(
 *pRecordset*<br/>
 데이터를 교환 하는 데 사용 되는 연결 된 `CRecordset` 또는 `CDaoRecordset` 개체에 대 한 포인터입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 데이터 집합의 데이터를 슬라이더로 이동 하는 경우이 함수는 슬라이더의 위치를 *value*에 지정 된 값으로 설정 합니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 slider 컨트롤의 위치는 0으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송 시 컨트롤이 비어 있으면 레코드 집합 필드의 값은 0입니다.
 
@@ -525,7 +525,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ### <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText
 
@@ -655,7 +655,7 @@ void AFXAPI DDX_FieldText(
 *pRecordset*<br/>
 데이터를 교환 하는 [CRecordset](../../mfc/reference/crecordset-class.md) 또는 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) 개체에 대 한 포인터입니다. 이 포인터를 사용 하면 `DDX_FieldText`에서 Null 값을 검색 하 고 설정할 수 있습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) `DDX_FieldText` 개체의 경우 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)및 [COleCurrency](../../mfc/reference/colecurrency-class.md) 값의 전송도 관리 합니다. 빈 편집 상자 컨트롤은 Null 값을 나타냅니다. 레코드 집합에서 컨트롤로 전송할 때 레코드 집합 필드가 Null 이면 편집 상자는 비어 있는 것으로 설정 됩니다. 컨트롤에서 레코드 집합으로의 전송에서 컨트롤이 비어 있으면 레코드 집합 필드가 Null로 설정 됩니다.
 

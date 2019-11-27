@@ -15,12 +15,12 @@ ms.locfileid: "74399145"
 ---
 # <a name="datasize"></a>\@DataSize
 
-0 for **TINY**, **SMALL**, **MEDIUM**, and **FLAT** models, 1 for **COMPACT** and **LARGE** models, and 2 for **HUGE** model (numeric equate).
+0은 **작음**, **소형**, **중형**및 **플랫** 모델의 경우 1, **크고 큰** **모델의 경우** 1, 큰 모델의 경우 2 개 ( **숫자는)**
 
 ## <a name="syntax"></a>구문
 
 > **\@DataSize**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

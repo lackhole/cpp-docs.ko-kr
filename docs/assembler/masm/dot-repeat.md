@@ -13,16 +13,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398002"
 ---
-# <a name="repeat-32-bit-masm"></a>.REPEAT (32-bit MASM)
+# <a name="repeat-32-bit-masm"></a>. 반복 (32 비트 MASM)
 
-Generates code that repeats execution of the block of *statements* until *condition* becomes true. [.UNTILCXZ](../../assembler/masm/dot-untilcxz.md), which becomes true when CX is zero, may be substituted for [.UNTIL](../../assembler/masm/dot-until.md). The *condition* is optional with **.UNTILCXZ**. (32-bit MASM only.)
+*조건이* true가 될 때까지 *문* 블록의 실행을 반복 하는 코드를 생성 합니다. [. ](../../assembler/masm/dot-untilcxz.md)CX가 0 일 때 true가 되는 .untilcxz는로 대체 될 수 있습니다 [. UNTIL](../../assembler/masm/dot-until.md). *조건은* 에서 선택 사항입니다 **. .UNTILCXZ**. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> **.REPEAT**\
-> *statements*\
-> **.UNTIL** *condition*
+> **. 반복**\
+> *문*\
+> **. UNTIL** *조건*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

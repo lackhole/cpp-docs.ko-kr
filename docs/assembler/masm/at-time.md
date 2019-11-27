@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398906"
 ---
-# <a name="time"></a>\@Time
+# <a name="time"></a>\@시간
 
-The system time in 24-hour hh:mm:ss format (text macro).
+24 시간 hh: mm: ss 형식 (텍스트 매크로)의 시스템 시간입니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@Time**
+> **\@시간**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

@@ -17,12 +17,12 @@ ms.locfileid: "74396558"
 ---
 # <a name="operator-opattr"></a>연산자 OPATTR
 
-Returns a word defining the mode and scope of *expression*. The low byte is identical to the byte returned by [.TYPE](../../assembler/masm/operator-dot-type.md). The high byte contains additional information.
+*식*의 모드와 범위를 정의 하는 단어를 반환 합니다. 낮은 바이트는에서 반환 하는 바이트와 동일 합니다 [. 을 입력](../../assembler/masm/operator-dot-type.md)합니다. 높은 바이트는 추가 정보를 포함 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **OPATTR** *expression*
+> **Opattr** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399229"
 ---
-# <a name="catstr"></a>\@CatStr
+# <a name="catstr"></a>\@하는 문자열
 
-Macro function that concatenates one or more strings. Returns a string.
+하나 이상의 문자열을 연결 하는 매크로 함수입니다. 문자열을 반환합니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@CatStr(** *string1* ⟦ __,__ *string2*...⟧ **)**
+> **\@** __하는__ 문자열 ( *문자열* 1 ⟦, *문자열*1 ... ⟧ **)**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

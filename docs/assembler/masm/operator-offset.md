@@ -17,12 +17,12 @@ ms.locfileid: "74396571"
 ---
 # <a name="operator-offset"></a>연산자 OFFSET
 
-Returns the offset into the relevant segment of *expression*.
+*식*의 관련 세그먼트로 오프셋을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **OFFSET** *expression*
+> **OFFSET** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

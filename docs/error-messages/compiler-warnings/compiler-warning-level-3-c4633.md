@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4633
+title: 컴파일러 경고(수준 3) C4633
 ms.date: 11/04/2016
 f1_keywords:
 - C4633
@@ -13,13 +13,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189163"
 ---
-# <a name="compiler-warning-level-3-c4633"></a>Compiler Warning (level 3) C4633
+# <a name="compiler-warning-level-3-c4633"></a>컴파일러 경고(수준 3) C4633
 
-XML document comment target: error:  reason
+XML 문서 주석 대상: 오류: 이유
 
-A name passed to the [\<param>](../../build/reference/param-visual-cpp.md) tag was not found by the compiler.
+컴파일러가 [\<매개 변수 >](../../build/reference/param-visual-cpp.md) 태그에 전달 하는 이름을 찾지 못했습니다.
 
-The following sample generates C4633:
+다음 샘플에서는 C4633를 생성 합니다.
 
 ```cpp
 // C4633.cpp

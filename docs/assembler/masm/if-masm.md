@@ -15,22 +15,22 @@ ms.locfileid: "74397458"
 ---
 # <a name="if-masm"></a>IF (MASM)
 
-Grants assembly of *ifstatements* if *expression1* is true (nonzero) or *elseifstatements* if *expression1* is false (0) and *expression2* is true.
+*Expression1* 가 true (0이 아닌 경우) 또는 *elseifstatements* ( *expression1* 가 false)이 고 *식* 1이 true 인 경우 *ifstatements* 의 어셈블리를 부여 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **IF** *expression1*\
-> *if-statements*\
-> ⟦**ELSEIF** *expression2*\
-> *elseif-statements*⟧\
+> *Expression1*\
+> *if 문*\
+> ⟦**ELSEIF** *식*\
+> *elseif-문*⟧ \
 > ⟦**ELSE**\
-> *else-statements*⟧\
+> *else 문*⟧ \
 > **ENDIF**
 
 ## <a name="remarks"></a>주의
 
-The following directives may be substituted for [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**, **ELSEIFDIF**, **ELSEIFDIFI**, **ELSEIFE**, **ELSEIFIDN**, **ELSEIFIDNI**, **ELSEIFNB**, and **ELSEIFNDEF**. Optionally, assembles *else-statements* if the previous expression is false. Note that the expressions are evaluated at assembly time.
+다음 지시문은 [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**, **ELSEIFDIF**, **ELSEIFDIFI**, **ELSEIFE**, **ELSEIFIDN**, **ELSEIFIDNI**, **ELSEIFNB**및 **ELSEIFNDEF**로 대체 될 수 있습니다. 필요에 따라 이전 식이 false 인 경우 *else 문을* 어셈블합니다. 식은 어셈블리 시간에 계산 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

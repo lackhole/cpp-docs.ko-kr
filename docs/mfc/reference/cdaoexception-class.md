@@ -43,7 +43,7 @@ class CDaoException : public CException
 |----------|-----------------|
 |[CDaoException::CDaoException](#cdaoexception)|`CDaoException` 개체를 생성합니다.|
 
-### <a name="public-methods"></a>Public 메서드
+### <a name="public-methods"></a>공용 방법
 
 |이름|설명|
 |----------|-----------------|
@@ -58,7 +58,7 @@ class CDaoException : public CException
 |[CDaoException::m_pErrorInfo](#m_perrorinfo)|한 DAO 오류 개체에 대 한 정보를 포함 하는 [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) 개체에 대 한 포인터입니다.|
 |[CDaoException::m_scode](#m_scode)|오류와 연결 [된 값입니다](#m_scode) .|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 클래스에는 예외의 원인을 확인 하는 데 사용할 수 있는 공용 데이터 멤버가 포함 되어 있습니다. `CDaoException` 개체는 DAO 데이터베이스 클래스의 멤버 함수에 의해 생성 및 throw 됩니다.
 
@@ -83,7 +83,7 @@ DAO 오류 코드는 DAOERR 파일을 참조 하세요. 넣기. 관련 정보는
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ##  <a name="cdaoexception"></a>  CDaoException::CDaoException
 
@@ -93,7 +93,7 @@ DAO 오류 코드는 DAOERR 파일을 참조 하세요. 넣기. 관련 정보는
 CDaoException();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 일반적으로 프레임 워크는 예외를 throw 하는 예외 개체를 만듭니다. 예외 개체를 명시적으로 생성 해야 하는 경우는 거의 없습니다. 사용자 고유의 코드에서 `CDaoException`을 throw 하려면 전역 함수 [AfxThrowDaoException](../../mfc/reference/exception-processing.md#afxthrowdaoexception)를 호출 합니다.
 
@@ -127,7 +127,7 @@ short GetErrorCount();
 
 데이터베이스 엔진의 Errors 컬렉션에 있는 DAO 오류 개체의 수입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 정보는 컬렉션에서 하나 이상의 DAO 오류 개체를 검색 하기 위해 Errors 컬렉션을 반복 하는 데 유용 합니다. 인덱스 또는 DAO 오류 번호로 오류 개체를 검색 하려면 [Geterrorinfo](#geterrorinfo) 멤버 함수를 호출 합니다.
 
@@ -147,7 +147,7 @@ void GetErrorInfo(int nIndex);
 *nIndex*<br/>
 인덱스를 기준으로 조회 하기 위해 데이터베이스 엔진의 Errors 컬렉션에 있는 오류 정보의 인덱스입니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 함수를 호출 하 여 예외에 대 한 다음과 같은 종류의 정보를 가져옵니다.
 
@@ -169,7 +169,7 @@ DAO 예외 및 예제 코드에 대 한 자세한 내용은 [예외: 데이터�
 
 MFC 확장 오류 코드를 포함 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 코드는 MFC DAO 클래스의 특정 구성 요소가 erred 경우에 제공 됩니다.
 
@@ -187,7 +187,7 @@ MFC 확장 오류 코드를 포함 합니다.
 
 [Geterrorinfo](#geterrorinfo)를 호출 하 여 마지막으로 검색 한 DAO error 개체에 대 한 정보를 제공 하는 `CDaoErrorInfo` 구조체에 대 한 포인터를 포함 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 개체에는 다음 정보가 포함 되어 있습니다.
 
@@ -205,7 +205,7 @@ MFC 확장 오류 코드를 포함 합니다.
 
 오류를 설명 하는 `SCODE` 형식의 값을 포함 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이는 OLE 코드입니다. 거의 모든 경우에는 다른 `CDaoException` 데이터 멤버에서 더 구체적인 MFC 또는 DAO 오류 정보를 사용할 수 있기 때문에이 값을 반드시 사용 해야 하는 경우는 거의 없습니다.
 

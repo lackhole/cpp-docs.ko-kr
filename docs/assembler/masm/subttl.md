@@ -15,12 +15,12 @@ ms.locfileid: "74393485"
 ---
 # <a name="subttl"></a>SUBTTL
 
-See [SUBTITLE](../../assembler/masm/subtitle.md).
+[부제](../../assembler/masm/subtitle.md)를 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
 > **SUBTTL**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

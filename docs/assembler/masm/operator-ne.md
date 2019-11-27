@@ -17,12 +17,12 @@ ms.locfileid: "74396610"
 ---
 # <a name="operator-ne"></a>연산자 NE
 
-Returns true (-1) if *expression1* does not equal *expression2*, or returns false (0) if it does.
+*Expression1* 가 *식 2*와 같지 않으면 true (-1)를 반환 하 고, 그렇지 않으면 false (0)를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **NE** *expression2*
+> *expression1* **NE** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

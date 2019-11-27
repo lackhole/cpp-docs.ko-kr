@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4254
 ms.assetid: c7dcef24-d535-4c98-bb41-fc3d2b88fd11
-ms.openlocfilehash: 925428cffae37ea26144e5b550cbc7988b33ef01
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 33b3ba795acb8c72c7d1630071aa2884b6137464
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400983"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541939"
 ---
 # <a name="compiler-warning-level-4-c4254"></a>컴파일러 경고(수준 4) C4254
 
-'operator': 'type1'에서 'type2', 데이터 손실으로 변환
+' operator ': ' type1 '에서 ' type2 ' (으)로 변환 하 여 데이터가 손실 될 수 있습니다.
 
-큰 비트 필드를 더 작은 비트 필드에 할당 되었습니다. 데이터 손실이 있을 수 있습니다.
+더 큰 비트 필드가 더 작은 비트 필드에 할당 되었습니다. 데이터가 손실 될 수 있습니다.
 
 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
 
-다음 샘플에서는 C4254 오류가 생성 됩니다.
+다음 샘플에서는 C4254를 생성 합니다.
 
-```
+```cpp
 // C4254.cpp
 // compile with: /W4
 #pragma warning(default: 4254)

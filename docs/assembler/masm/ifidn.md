@@ -17,17 +17,17 @@ ms.locfileid: "74397387"
 ---
 # <a name="ifidn-ifidni"></a>IFIDN, IFIDNI
 
-Grants assembly if the text items are identical.
+텍스트 항목이 동일한 경우 어셈블리를 부여 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **IFIDN** *textitem1* __,__ *textitem2*\
-> **IFIDNI** *textitem1* __,__ *textitem2*
+> **Ifidn** *textitem1* __,__ *textitem2*\
+> **Ifidni** *textitem1* __,__ *textitem2*
 
 ## <a name="remarks"></a>주의
 
-If **IFIDNI** is given, the comparison is case insensitive. See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+**Ifidni** 를 지정 하는 경우 비교 시 대/소문자를 구분 하지 않습니다. 전체 [구문에 대 한 자세한 내용은](../../assembler/masm/if-masm.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

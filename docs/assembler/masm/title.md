@@ -1,5 +1,5 @@
 ---
-title: TITLE
+title: 제목
 ms.date: 08/30/2018
 f1_keywords:
 - title
@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74393201"
 ---
-# <a name="title"></a>TITLE
+# <a name="title"></a>제목
 
-Defines the program listing title.
+프로그램 목록 제목을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **TITLE** *text*
+> **제목** *텍스트*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

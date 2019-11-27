@@ -15,7 +15,7 @@ ms.locfileid: "74397436"
 ---
 # <a name="ifb"></a>IFB
 
-Grants assembly if *textitem* is blank.
+*Textitem* 이 비어 있는 경우 어셈블리를 부여 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Grants assembly if *textitem* is blank.
 
 ## <a name="remarks"></a>주의
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+전체 [구문에 대 한 자세한 내용은](../../assembler/masm/if-masm.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

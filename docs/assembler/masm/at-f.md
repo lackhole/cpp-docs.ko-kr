@@ -15,12 +15,12 @@ ms.locfileid: "74399105"
 ---
 # <a name="f"></a>\@F
 
-The location of the next [\@\@:](../../assembler/masm/at-at.md) label.
+다음 [\@\@](../../assembler/masm/at-at.md) 의 위치: 레이블.
 
 ## <a name="syntax"></a>구문
 
 > **\@F**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

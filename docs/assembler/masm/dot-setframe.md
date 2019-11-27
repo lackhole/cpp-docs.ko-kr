@@ -15,23 +15,23 @@ ms.locfileid: "74397925"
 ---
 # <a name="setframe"></a>.SETFRAME
 
-Fills in the frame register field and offset in the unwind information using the specified register (*reg*) and offset (*offset*). The offset must be a multiple of 16 and less than or equal to 240. This directive also generates a `UWOP_SET_FPREG` unwind code entry for the specified register using the current prologue offset.
+지정 된 레지스터 (*reg*)와 오프셋 (*오프셋*)을 사용 하 여 해제 정보에서 프레임 레지스터 필드와 오프셋을 채웁니다. 오프셋은 16의 배수 여야 하며 240 보다 작거나 같아야 합니다. 이 지시문은 현재 프롤로그 오프셋을 사용 하 여 지정 된 레지스터에 대 한 `UWOP_SET_FPREG` 해제 코드 항목도 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **.SETFRAME** *reg*, *offset*
+> **. SETFRAME** *reg*, *offset*
 
 ## <a name="remarks"></a>주의
 
-**.SETFRAME** allows ml64.exe users to specify how a frame function unwinds, and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.SETFRAME** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
+**. SETFRAME** 을 사용 하면 ml64.exe 사용자가 프레임 함수를 해제 하는 방법을 지정할 수 있으며, 프롤로그 내 에서만 허용 되며, [프로시저](../../assembler/masm/proc.md) 프레임 선언에서로 확장 됩니다 [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) 지시문입니다. 이러한 지시문은 코드를 생성 하지 않습니다. `.xdata` 및 `.pdata`생성 합니다. **. SETFRAME** 앞에는 해제할 작업을 실제로 구현 하는 지침이 있어야 합니다. 규약을 보장 하기 위해 매크로에서 해제할 해제 지시문과 코드를 모두 래핑하는 것이 좋습니다.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+자세한 내용은 [x 64 용 MASM (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)을 참조 하세요.
 
-## <a name="sample"></a>예제
+## <a name="sample"></a>샘플
 
 ### <a name="description"></a>설명
 
-The following sample shows how to use a frame pointer:
+다음 샘플에서는 프레임 포인터를 사용 하는 방법을 보여 줍니다.
 
 ### <a name="code"></a>코드
 
@@ -62,6 +62,6 @@ _text ENDS
 END
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

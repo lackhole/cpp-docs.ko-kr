@@ -15,7 +15,7 @@ ms.locfileid: "74398076"
 ---
 # <a name="nolistif"></a>.NOLISTIF
 
-Suppresses listing of conditional blocks whose condition evaluates to false (0).
+조건이 false (0)로 평가 되는 조건부 블록의 목록을 표시 하지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Suppresses listing of conditional blocks whose condition evaluates to false (0).
 
 ## <a name="remarks"></a>주의
 
-기본값입니다. Same as [.SFCOND](../../assembler/masm/dot-sfcond.md).
+이 값이 기본값입니다. 와 동일 [합니다. SFCOND](../../assembler/masm/dot-sfcond.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

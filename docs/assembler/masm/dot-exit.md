@@ -13,18 +13,18 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398289"
 ---
-# <a name="exit-32-bit-masm"></a>.EXIT (32-bit MASM)
+# <a name="exit-32-bit-masm"></a>. 끝내기 (32 비트 MASM)
 
-Generates termination code. (32-bit MASM only.)
+종료 코드를 생성 합니다. (32 비트 MASM에만 해당)
 
 ## <a name="syntax"></a>구문
 
-> **.EXIT** ⟦*expression*⟧
+> **. EXIT** ⟦*expression*⟧
 
 ## <a name="remarks"></a>주의
 
-Returns optional *expression* to shell.
+셸에 선택적 *식을* 반환 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

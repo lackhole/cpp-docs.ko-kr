@@ -40,7 +40,7 @@ struct CDaoParameterInfo
 *m_varValue*<br/>
 [COleVariant](../../mfc/reference/colevariant-class.md) 개체에 저장 된 매개 변수의 값입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 위의 주 및 보조에 대 한 참조는 `CDaoQueryDef`클래스의 [GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) 멤버 함수가 정보를 반환 하는 방법을 표시 합니다.
 
@@ -55,7 +55,7 @@ MFC는 클래스의 DAO 매개 변수 개체를 캡슐화 하지 않습니다. D
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ## <a name="see-also"></a>참고 항목
 

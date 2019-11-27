@@ -1,5 +1,5 @@
 ---
-title: operator &#39; &#39;
+title: 연산자 &#39;&#39;
 ms.date: 08/30/2018
 f1_keywords:
 - operator ' '
@@ -15,14 +15,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74395844"
 ---
-# <a name="operator-39-39"></a>operator &#39; &#39;
+# <a name="operator-39-39"></a>연산자 &#39;&#39;
 
-Treats '*text*' as a string.
+'*텍스트*'를 문자열로 처리 합니다.
 
 ## <a name="syntax"></a>구문
 
-> __'__ *text* __'__
+> __'__ *텍스트* __'__
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

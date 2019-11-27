@@ -16,12 +16,12 @@ ms.locfileid: "74396178"
 ---
 # <a name="operator-short"></a>operator SHORT
 
-Sets the type of *label* to short. All jumps to *label* must be short (within the range -128 to +127 bytes from the jump instruction to *label*).
+*레이블* 형식을 short로 설정 합니다. *레이블로* 의 모든 점프는 약식 이어야 합니다 (-128에서 + 127 바이트 범위 내에서 *레이블로*이동).
 
 ## <a name="syntax"></a>구문
 
-> **SHORT** *label*
+> **짧은** *레이블*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

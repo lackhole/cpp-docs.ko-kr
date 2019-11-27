@@ -15,12 +15,12 @@ ms.locfileid: "74393180"
 ---
 # <a name="textequ"></a>TEXTEQU
 
-Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+*이름*에 *textitem* 을 할당 합니다. *Textitem* 은 리터럴 문자열, `%`앞에 오는 상수 또는 매크로 함수에서 반환 된 문자열이 될 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **TEXTEQU** ⟦*textitem*⟧
+> *이름* **TEXTEQU** ⟦*textitem*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

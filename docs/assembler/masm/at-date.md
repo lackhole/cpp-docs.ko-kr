@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399138"
 ---
-# <a name="date"></a>\@Date
+# <a name="date"></a>\@날짜
 
-The system date in the format mm/dd/yy (text macro).
+Mm/dd/yy (텍스트 매크로) 형식의 시스템 날짜입니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@Date**
+> **\@날짜**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

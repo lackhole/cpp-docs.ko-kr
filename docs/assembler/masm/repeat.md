@@ -1,5 +1,5 @@
 ---
-title: REPEAT
+title: 반복
 ms.date: 08/30/2018
 f1_keywords:
 - REPEAT
@@ -13,16 +13,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74394323"
 ---
-# <a name="repeat"></a>REPEAT
+# <a name="repeat"></a>반복
 
-Marks a block that is to be repeated *expression* times. Same as [REPT](../../assembler/masm/rept.md).
+반복 되는 *식* 시간으로 사용할 블록을 표시 합니다. [REPT](../../assembler/masm/rept.md)와 동일 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **REPEAT** *expression*\
-> *statements*\
+> **반복** *식*\
+> *문*\
 > **ENDM**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

@@ -15,12 +15,12 @@ ms.locfileid: "74398354"
 ---
 # <a name="erre"></a>.ERRE
 
-Generates an error if *expression* is false (0).
+*식이* false (0) 인 경우 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **.ERRE** *expression* ⟦ __,__ *message*⟧
+> **. Erre** *식* ⟦ __,__ *message*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

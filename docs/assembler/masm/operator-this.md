@@ -17,12 +17,12 @@ ms.locfileid: "74395476"
 ---
 # <a name="operator-this"></a>연산자 THIS
 
-Returns an operand of specified *type* whose offset and segment values are equal to the current location counter value.
+오프셋과 세그먼트 값이 현재 위치 카운터 값과 같은 지정 된 *형식의* 피연산자를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **THIS** *type*
+> **이** *형식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

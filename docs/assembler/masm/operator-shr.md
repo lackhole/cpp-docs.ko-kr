@@ -17,12 +17,12 @@ ms.locfileid: "74396154"
 ---
 # <a name="operator-shr"></a>연산자 SHR
 
-Returns the result of shifting the bits of *expression* right *count* number of bits.
+*식* 의 *비트 수를 비트 수로* 이동한 결과를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression* **SHR** *count*
+> *식* **SHR** *개수*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

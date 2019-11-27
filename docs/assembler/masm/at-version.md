@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398887"
 ---
-# <a name="version"></a>\@Version
+# <a name="version"></a>\@버전
 
-The major and minor version of MASM reported at the command line, as a single number (text macro). For example, MASM version 14.23.28107.0 produces "1423".
+명령줄에서 단일 숫자 (텍스트 매크로)로 보고 되는 MASM의 주 버전 및 부 버전입니다. 예를 들어 MASM 버전 14.23.28107.0는 "1423"을 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@Version**
+> **\@버전**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

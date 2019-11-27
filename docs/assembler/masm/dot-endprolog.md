@@ -15,7 +15,7 @@ ms.locfileid: "74398461"
 ---
 # <a name="endprolog"></a>.ENDPROLOG
 
-Signals the end of the prologue declarations.
+프롤로그 선언의 끝을 신호로 보냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,10 +23,10 @@ Signals the end of the prologue declarations.
 
 ## <a name="remarks"></a>주의
 
-It is an error to use any of the prologue declarations outside of the region between [PROC](../../assembler/masm/proc.md) **FRAME** and **.ENDPROLOG**.
+[PROC](../../assembler/masm/proc.md) **프레임** 및 간의 지역 외부에서 프롤로그 선언을 사용 하면 오류가 발생 합니다 **. ENDPROLOG**.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+자세한 내용은 [x 64 용 MASM (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

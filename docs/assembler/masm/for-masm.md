@@ -15,18 +15,18 @@ ms.locfileid: "74397507"
 ---
 # <a name="for-masm"></a>FOR (MASM)
 
-Marks a block that will be repeated once for each *argument*, with the current *argument* replacing *parameter* on each repetition.
+각 *인수*에 대해 한 번씩 반복 되는 블록을 표시 하 고 각 반복에서 현재 *인수* 를 대체 하는 *매개 변수* 를 사용 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **FOR** *parameter* ⟦ **:REQ** |  __:=__ *default*⟧ **, \<** _argument_ ⟦ __,__ *argument* ...⟧ **>** \
-> *statements*\
+> ⟦ *매개 변수* **: 요청** |  __: =__ *default*⟧ **, \<** _인수_ ⟦ __,__ *argument* ... ⟧ **>** \
+> *문*\
 > **ENDM**
 
 ## <a name="remarks"></a>주의
 
-Same as [IRP](../../assembler/masm/irp.md).
+[IRP](../../assembler/masm/irp.md)와 동일 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

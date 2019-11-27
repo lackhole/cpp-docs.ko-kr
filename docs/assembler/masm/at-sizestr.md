@@ -15,12 +15,12 @@ ms.locfileid: "74398939"
 ---
 # <a name="sizestr"></a>\@SizeStr
 
-A macro function that returns the length of the given string. Returns an integer.
+지정 된 문자열의 길이를 반환 하는 매크로 함수입니다. 정수를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@SizeStr(** *string* **)**
+> **\@SizeStr (** *string* **)**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

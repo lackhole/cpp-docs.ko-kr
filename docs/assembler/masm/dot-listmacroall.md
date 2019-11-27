@@ -15,7 +15,7 @@ ms.locfileid: "74398119"
 ---
 # <a name="listmacroall"></a>.LISTMACROALL
 
-Starts listing of all statements in macros.
+매크로의 모든 문 목록을 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Starts listing of all statements in macros.
 
 ## <a name="remarks"></a>주의
 
-Same as [.LALL](../../assembler/masm/dot-lall.md).
+와 동일 [합니다. LALL](../../assembler/masm/dot-lall.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)
