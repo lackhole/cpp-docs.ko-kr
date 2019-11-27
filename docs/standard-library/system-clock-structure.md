@@ -32,7 +32,7 @@ struct system_clock;
 
 `now()`에 대한 첫 번째 호출에서 반환되는 값이 항상 `now()`에 대한 순차적 호출에서 반환되는 값보다 작거나 같을 경우 클록은 *monotonic*입니다.
 
-클록이 *단조*이고 클록 틱 간 시간이 지속적이면 해당 클록은 *지속*입니다.
+클록이 *monotonic*이고 클록 틱 간 시간이 지속적이면 해당 클록은 *steady*입니다.
 
 ## <a name="members"></a>멤버
 
@@ -109,7 +109,7 @@ static const bool is_steady = false;
 
 ### <a name="remarks"></a>설명
 
-클록이 [단조](#is_monotonic_constant)이고 클록 틱 간 시간이 지속적이면 해당 클록은 *지속*입니다.
+클록이 [monotonic](#is_monotonic_constant)이고 클록 틱 간 시간이 지속적이면 해당 클록은 *steady*입니다.
 
 ## <a name="now"></a>  system_clock::now
 
@@ -133,7 +133,7 @@ static time_t to_time_t(const time_point& Time) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*런타임*\
+*Time*\
 [time_point](../standard-library/time-point-class.md) 개체입니다.
 
 ## <a name="see-also"></a>참고자료

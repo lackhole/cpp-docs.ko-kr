@@ -33,8 +33,8 @@ Windows에서 `steady_clock`은 `QueryPerformanceCounter`의 래퍼 함수입니
 
 |이름|설명|
 |----------|-----------------|
-|`steady_clock::duration`|에 대 한 동의어 `nanoseconds`에 정의 된 \<chrono >.|
-|`steady_clock::period`|에 대 한 동의어 `nano`에 정의 된 \<비율 >.|
+|`steady_clock::duration`|\<chrono>에 정의된 `nanoseconds`의 동의어|
+|`steady_clock::period`|\<ratio>에 정의된 `nano`의 동의어|
 |`steady_clock::rep`|`duration`의 인스턴스화에서 클록 틱 수를 나타내는 데 사용되는 **long** **long** 형식|
 |`steady_clock::time_point`|`chrono::time_point<steady_clock>`의 동의어|
 
@@ -52,7 +52,7 @@ Windows에서 `steady_clock`은 `QueryPerformanceCounter`의 래퍼 함수입니
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<chrono >
+**헤더:** \<chrono>
 
 **네임스페이스:** std::chrono
 
