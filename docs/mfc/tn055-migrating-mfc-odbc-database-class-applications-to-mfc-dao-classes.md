@@ -22,7 +22,7 @@ ms.locfileid: "74305374"
 # <a name="tn055-migrating-mfc-odbc-database-class-applications-to-mfc-dao-classes"></a>TN055: MFC ODBC 데이터베이스 클래스 애플리케이션을 MFC DAO 클래스로 마이그레이션
 
 > [!NOTE]
-> DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). Microsoft는 새 프로젝트에 대해 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md)를 사용할 것을 권장합니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
+> DAO는 Access 데이터베이스에 사용 되며 Office 2013을 통해 지원 됩니다. DAO 3.6은 최종 버전이 며 사용 되지 않는 것으로 간주 됩니다. 시각적 C++ 환경 및 마법사는 dao를 지원 하지 않습니다 (dao 클래스가 포함 되어 있지만 계속 사용할 수 있음). 새 프로젝트에 [OLE DB 템플릿](../data/oledb/ole-db-templates.md) 또는 [ODBC 및 MFC](../data/odbc/odbc-and-mfc.md) 를 사용 하는 것이 좋습니다. DAO는 기존 응용 프로그램을 유지 관리 하는 데만 사용 해야 합니다.
 
 ## <a name="overview"></a>개요
 
@@ -87,9 +87,9 @@ DAO 클래스에는 더 많은 개체와 다양한 메서드 집합이 포함되
 
    ODBC 클래스의 경우 MFC에서는 매크로 또는 열거 형식을 통해 이러한 옵션을 정의해야 합니다.
 
-   DAO 클래스의 경우, DAO는 헤더 파일(DBDAOINT.H)에서 이러한 옵션의 정의를 제공합니다. 따라서 레코드 집합 형식이 `CRecordset`의 열거된 멤버이지만 DAO에서는 상수입니다. 예를 들어 ODBC에서 **형식을 지정할 때는**snapshot`CRecordset`이 사용되지만 **형식을 지정할 때는**DB_OPEN_SNAPSHOT`CDaoRecordset`이 사용됩니다.
+   DAO 클래스의 경우, DAO는 헤더 파일(DBDAOINT.H)에서 이러한 옵션의 정의를 제공합니다. 따라서 레코드 집합 형식이 `CRecordset`의 열거된 멤버이지만 DAO에서는 상수입니다. 예를 들어 ODBC에서 `CRecordset` 유형을 지정 하는 경우에는 **스냅숏을** 사용 하지만 `CDaoRecordset`유형을 지정 하는 경우에는 **DB_OPEN_SNAPSHOT** 합니다.
 
-- `CRecordset`의 기본 레코드 집합 형식은 **snapshot**이지만 `CDaoRecordset`의 기본 레코드 집합 형식은 **dynaset**입니다. ODBC 클래스 스냅숏에 대한 추가 문제는 아래의 참고를 참조하십시오.
+- `CRecordset`의 기본 레코드 집합 형식은 **snapshot** 이지만 `CDaoRecordset`의 기본 레코드 집합 형식은 **다이너셋** 입니다 (ODBC 클래스 스냅숏에 대 한 추가 문제는 아래 참고 참조).
 
 - ODBC `CRecordset` 클래스에는 전달 전용 레코드 집합 형식을 생성하는 옵션이 포함됩니다. `CDaoRecordset` 클래스에서 전달 전용은 레코드 집합 형식이 아니고, 특정 유형의 레코드 집합이 갖는 속성(또는 옵션)입니다.
 
