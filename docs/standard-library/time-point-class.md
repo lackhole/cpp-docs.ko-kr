@@ -51,7 +51,7 @@ class time_point;
 |이름|Description|
 |----------|-----------------|
 |[max](#max)|`time_point::ref`의 상한을 지정합니다.|
-|[분](#min)|`time_point::ref`의 하한을 지정합니다.|
+|[min](#min)|`time_point::ref`의 하한을 지정합니다.|
 |[time_since_epoch](#time_since_epoch)|저장된 `duration` 값을 반환합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
@@ -63,7 +63,7 @@ class time_point;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<chrono >
+**헤더:** \<chrono>
 
 **네임스페이스:** std::chrono
 
@@ -101,7 +101,7 @@ time_point& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -118,7 +118,7 @@ time_point& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -140,7 +140,7 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 [duration](../standard-library/duration-class.md) 개체입니다.
 
 *Tp*\
