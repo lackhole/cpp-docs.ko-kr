@@ -8,21 +8,21 @@ helpviewer_keywords:
 - ADDR operator
 - operator ADDR
 ms.assetid: 9c2a46e4-3222-4a5b-baa2-07bdb62b7d03
-ms.openlocfilehash: 79e7df05adc19ad6e795c16044b02b1e6b286da4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8e45b2dfc05b3708e37618f42491ec47d90a8d9c
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176839"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397127"
 ---
 # <a name="operator-addr"></a>연산자 ADDR
 
-참조 된 [INVOKE](../../assembler/masm/invoke.md) 지시문입니다.
+[INVOKE](../../assembler/masm/invoke.md) 지시문을 참조 하십시오.
 
 ## <a name="syntax"></a>구문
 
-> ADDR
+> **ADDR**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](../../assembler/masm/operators-reference.md)

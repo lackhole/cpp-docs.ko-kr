@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4557
+title: 컴파일러 경고(수준 3) C4557
 ms.date: 11/04/2016
 f1_keywords:
 - C4557
@@ -13,15 +13,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188946"
 ---
-# <a name="compiler-warning-level-3-c4557"></a>Compiler Warning (level 3) C4557
+# <a name="compiler-warning-level-3-c4557"></a>컴파일러 경고(수준 3) C4557
 
 '__assume'에 'effect' 효과가 있습니다.
 
-The value passed to an [__assume](../../intrinsics/assume.md) statement2 was modified.
+[__Assume](../../intrinsics/assume.md) 문 2 전달 된 값이 수정 되었습니다.
 
 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
 
-The following sample generates C4557:
+다음 샘플에서는 C4557를 생성 합니다.
 
 ```cpp
 // C4557.cpp

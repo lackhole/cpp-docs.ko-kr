@@ -2,33 +2,32 @@
 title: '&period;ERRIDN, &period;ERRIDNI'
 ms.date: 05/23/2019
 f1_keywords:
-- .ERRIDN[[I]]
 - .ERRIDN
 - .ERRIDNI
 helpviewer_keywords:
-- .ERRIDN[[I]] directive
 - .ERRIDN directive
 - .ERRIDNI directive
 ms.assetid: 89507db3-7d40-4a5e-a378-24d30feda9d1
-ms.openlocfilehash: cbac548efd1a8b030100e26ddf966b93c15ed3f4
-ms.sourcegitcommit: 79e985d3c6e8ccaf94f6e641972887cae8c6eeb0
+ms.openlocfilehash: a83015e8cd1354732bd8427bcb865ac241a6caed
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197707"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398339"
 ---
 # <a name="perioderridn-perioderridni"></a>&period;ERRIDN, &period;ERRIDNI
 
-텍스트 항목 동일 하면 오류가 발생 합니다.
+텍스트 항목이 동일 하면 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **.ERRIDN**\[**I**] *textitem1* __,__ *textitem2* \[ __,__ *message*]
+> **. Erridn** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧ \
+> **. Erridni** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-하는 경우  **&period;ERRIDNI** 는, 비교는 대/소문자 구분 합니다.
+**&period;ERRIDNI** 가 지정 된 경우 대/소문자를 구분 하지 않고 비교 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

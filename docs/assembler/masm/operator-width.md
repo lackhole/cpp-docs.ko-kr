@@ -8,21 +8,21 @@ helpviewer_keywords:
 - WIDTH operator
 - operator WIDTH
 ms.assetid: 7b00e296-a101-4cd5-a578-17eec7a4eb44
-ms.openlocfilehash: d77bc86a8b1aab1654198c58a42b0b0449502622
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81fb9926116d805df32e7bbc14bccbcac95aa9eb
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198888"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395325"
 ---
 # <a name="operator-width"></a>연산자 WIDTH
 
-현재 비트에 너비를 반환 *recordfieldname* 하거나 *레코드*합니다.
+현재 *recordfieldname* 또는 *record*의 너비 (비트)를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> 너비 {recordfieldname | 레코드}
+> **WIDTH** {*recordfieldname* | *record*}
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

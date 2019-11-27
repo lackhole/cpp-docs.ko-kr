@@ -8,27 +8,27 @@ helpviewer_keywords:
 - operator IMAGEREL
 - IMAGEREL operator
 ms.assetid: 5b5ea425-36f0-467c-9262-62c484b7fdb4
-ms.openlocfilehash: 1363297cc1627775093f0f5e78937b981e41bdc7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f88501d007ece1e3b9f45620953a911d4a6aa66e
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176878"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396883"
 ---
 # <a name="operator-imagerel"></a>연산자 IMAGEREL
 
-이미지의 상대 오프셋을 반환 `expression`합니다.
+*식*의 상대 오프셋 이미지를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> IMAGEREL 식
+> **Imagerel** *식*
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-결과 값은 RVA 또는 상대 가상 주소를이 라고도 합니다.
+결과 값은 대체로 RVA 또는 상대 가상 주소 라고 합니다.
 
-IMAGEREL은 COFF 개체 내보내기만 제공 됩니다.
+IMAGEREL은 COFF 개체 내보내기와 함께 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

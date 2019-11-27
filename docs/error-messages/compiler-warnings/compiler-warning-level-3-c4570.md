@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4570
+title: 컴파일러 경고(수준 3) C4570
 ms.date: 11/04/2016
 f1_keywords:
 - C4570
@@ -13,15 +13,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188881"
 ---
-# <a name="compiler-warning-level-3-c4570"></a>Compiler Warning (level 3) C4570
+# <a name="compiler-warning-level-3-c4570"></a>컴파일러 경고(수준 3) C4570
 
-'type' : is not explicitly declared as abstract but has abstract functions
+' type ':가 abstract로 명시적으로 선언 되지 않았지만 추상 함수를 포함 합니다.
 
-A type that contains [abstract](../../extensions/abstract-cpp-component-extensions.md) functions should itself be marked as abstract.
+[추상](../../extensions/abstract-cpp-component-extensions.md) 함수를 포함 하는 형식은 abstract로 표시 되어야 합니다.
 
 ## <a name="example"></a>예제
 
-The following sample generates C4570.
+다음 샘플에서는 C4570를 생성 합니다.
 
 ```cpp
 // C4570.cpp

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '@Version symbol'
 ms.assetid: d7005811-de5c-4f8f-96e9-0e50d7ebca90
-ms.openlocfilehash: e086064e8b294214b71974809c5b35fa2f736157
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: f98ce829aaf423e1d515f32a0fa9800c304bb4ad
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301873"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398887"
 ---
 # <a name="version"></a>\@버전
 
@@ -23,4 +23,4 @@ ms.locfileid: "74301873"
 
 ## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)
+[기호 참조](symbols-reference.md)

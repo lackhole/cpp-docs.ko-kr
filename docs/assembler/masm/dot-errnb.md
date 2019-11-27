@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - .ERRNB directive
 ms.assetid: 3b9a6f5e-9a4d-47a8-a1f6-b199328937de
-ms.openlocfilehash: 0c2f588c48f73c788106692c6bb8e3525c96056e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3d8165f255e00163f880ef902282a1c8e508f551
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62185241"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398327"
 ---
 # <a name="errnb"></a>.ERRNB
 
-경우 오류를 생성 *textitem* 비어 있지 않음.
+*Textitem* 이 비어 있지 않으면 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> .ERRNB *textitem* [[, *message*]]
+> **. Errnb** *textitem* ⟦ __,__ *message*⟧
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

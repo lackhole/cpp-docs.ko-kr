@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - XMMWORD directive
 ms.assetid: 18026d32-5cab-403e-ad7e-382fb41aa9b8
-ms.openlocfilehash: 59d1ba71260ed08b761c332e887cf27517762303
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c7783049a143b19295a67cd3e9e40afeab3c814f
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62210107"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74392789"
 ---
 # <a name="xmmword"></a>XMMWORD
 
-MMX와 SSE (XMM) 지침을 사용 하 여 128 비트 멀티미디어 피연산자에 사용 됩니다.
+MMX 및 SSE (XMM) 명령을 포함 하는 128 비트 멀티미디어 피연산자에 사용 됩니다.
 
 ## <a name="syntax"></a>구문
 
-> XMMWORD
+> **XMMWORD**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-`XMMWORD` 동일한 형식으로 표시 하기 위해 [__m128](../../cpp/m128.md)합니다.
+**Xmmword** 는 [__m128](../../cpp/m128.md)와 동일한 형식을 표시 하기 위한 것입니다.
 
 ## <a name="example"></a>예제
 

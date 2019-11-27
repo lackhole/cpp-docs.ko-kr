@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '@CodeSize symbol'
 ms.assetid: 6e18d99f-9999-41fe-9330-b80de8f735d5
-ms.openlocfilehash: 586b2921e708542c38dede240c5ebaed83590fab
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: dc5da8ffbd4f58eca470e1c23321d104c2d9449d
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302909"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399199"
 ---
 # <a name="codesize"></a>\@CodeSize
 
@@ -23,4 +23,4 @@ ms.locfileid: "74302909"
 
 ## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)
+[기호 참조](symbols-reference.md)

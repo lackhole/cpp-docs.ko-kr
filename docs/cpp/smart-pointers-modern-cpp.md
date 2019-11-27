@@ -12,7 +12,7 @@ ms.locfileid: "74303360"
 ---
 # <a name="smart-pointers-modern-c"></a>스마트 포인터(최신 C++)
 
-최신 C++ 프로그래밍에서 표준 라이브러리 포함 *스마트 포인터*, 프로그램이 수 있도록 하는 데 사용 되는 것은 메모리 및 리소스 누수 되며 예외 로부터 안전 합니다.
+최신 C++ 프로그래밍에서 표준 라이브러리에는 프로그램이 메모리 및 리소스 누수를 방지 하 고 예외를 안전 하 게 유지 하는 데 사용 되는 *스마트 포인터가*포함 되어 있습니다.
 
 ## <a name="uses-for-smart-pointers"></a>스마트 포인터 용도
 
@@ -33,7 +33,7 @@ C++ 스마트 포인터 관용구는 C# 같은 언어에서의 개체 생성과 
 > [!IMPORTANT]
 >  매개 변수 목록이 아닌 별도 코드 줄에서 스마트 포인터를 만들어야 특정 매개 변수 목록 할당 규칙으로 인해 아주 작은 리소스 누수도 발생하지 않습니다.
 
-다음 예제에서는 어떻게는 `unique_ptr` C++ 표준 라이브러리에서 스마트 포인터 형식이 큰 개체에 대 한 포인터를 캡슐화 하 사용할 수 있습니다.
+다음 예제에서는 C++ 표준 라이브러리의 `unique_ptr` 스마트 포인터 형식을 사용 하 여 여러 개체에 대 한 포인터를 캡슐화 하는 방법을 보여 줍니다.
 
 [!code-cpp[smart_pointers_intro#2](codesnippet/CPP/smart-pointers-modern-cpp_2.cpp)]
 
@@ -55,7 +55,7 @@ C++ 스마트 포인터 관용구는 C# 같은 언어에서의 개체 생성과 
 
 [!code-cpp[smart_pointers_intro#3](codesnippet/CPP/smart-pointers-modern-cpp_3.cpp)]
 
-스마트 포인터는 일반적으로 원시 포인터를 직접 액세스하는 방법을 제공합니다. C++ 표준 라이브러리 스마트 포인터를 `get` 이 목적을 위해 멤버 함수 및 `CComPtr` 에 공용 `p` 클래스 멤버입니다. 기본 포인터에 대한 직접 액세스를 제공하면 스마트 포인터를 사용하여 자체 코드에서 메모리를 관리하고 스마트 포인터를 지원하지 않는 코드에 원시 포인터를 전달할 수 있습니다.
+스마트 포인터는 일반적으로 원시 포인터를 직접 액세스하는 방법을 제공합니다. C++표준 라이브러리 스마트 포인터에는이 목적을 위한 `get` 멤버 함수가 있으며 `CComPtr`에는 public `p` 클래스 멤버가 있습니다. 기본 포인터에 대한 직접 액세스를 제공하면 스마트 포인터를 사용하여 자체 코드에서 메모리를 관리하고 스마트 포인터를 지원하지 않는 코드에 원시 포인터를 전달할 수 있습니다.
 
 [!code-cpp[smart_pointers_intro#4](codesnippet/CPP/smart-pointers-modern-cpp_4.cpp)]
 
@@ -68,7 +68,7 @@ C++ 스마트 포인터 관용구는 C# 같은 언어에서의 개체 생성과 
 POCO(Plain Old C++ 개체)에 대한 포인터를 캡슐화하는 데 가장 먼저 스마트 포인터를 사용합니다.
 
 - `unique_ptr`<br/>
-   기본 포인터로 한 명의 소유자만 허용합니다. `shared_ptr`이 필요하다는 점을 확실히 알 경우 POCO의 기본 선택으로 사용합니다. 새 소유자로 이동할 수 있지만 복사하거나 공유할 수 없습니다. 사용하지 않는 `auto_ptr`을 대체합니다. `boost::scoped_ptr`과 비교합니다. `unique_ptr` 작고 효율적 이며, 크기는 1 포인터 및 빠른 삽입 및 C++ 표준 라이브러리 컬렉션에서 검색에 대 한 rvalue 참조를 지원 합니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: Unique_ptr 인스턴스](how-to-create-and-use-unique-ptr-instances.md) 및 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)만들기 및 사용을 참조 하세요.
+   기본 포인터로 한 명의 소유자만 허용합니다. `shared_ptr`이 필요하다는 점을 확실히 알 경우 POCO의 기본 선택으로 사용합니다. 새 소유자로 이동할 수 있지만 복사하거나 공유할 수 없습니다. 사용하지 않는 `auto_ptr`을 대체합니다. `boost::scoped_ptr`과 비교합니다. `unique_ptr` 작고 효율적입니다. 크기는 하나의 포인터 이며 표준 라이브러리 컬렉션에서 C++ 빠른 삽입 및 검색을 위해 rvalue 참조를 지원 합니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: Unique_ptr 인스턴스](how-to-create-and-use-unique-ptr-instances.md) 및 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)만들기 및 사용을 참조 하세요.
 
 - `shared_ptr`<br/>
    참조 횟수가 계산되는 스마트 포인터입니다. 원시 포인터 하나를 여러 소유자에게 할당하려고 할 경우 사용합니다(예: 컨테이너에서 포인터 복사본을 반환할 때 원본을 유지하고 싶을 경우). 원시 포인터는 모든 `shared_ptr` 소유자가 범위를 벗어나거나 소유권을 포기할 때까지 삭제되지 않습니다. 크기는 2개의 포인터입니다. 하나는 개체용이고, 다른 하나는 참조 횟수가 포함된 공유 제어 블록용입니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: Shared_ptr 인스턴스](how-to-create-and-use-shared-ptr-instances.md) 및 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)만들기 및 사용을 참조 하세요.

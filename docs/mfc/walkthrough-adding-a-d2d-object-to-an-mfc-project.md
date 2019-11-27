@@ -30,7 +30,7 @@ ms.locfileid: "74304306"
 
 [!INCLUDE[note_settings_general](../mfc/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
 
 이 연습을 완료 하려면 워크 로드를  **C++ 사용 하 여 데스크톱 개발과** 함께 visual Studio를 설치 하 고 선택적으로 **visual C++ Studio for x86 및 x64** 구성 요소를 설치 해야 합니다.
 

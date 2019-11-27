@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4535
+title: 컴파일러 경고(수준 3) C4535
 ms.date: 11/04/2016
 f1_keywords:
 - C4535
@@ -13,15 +13,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189015"
 ---
-# <a name="compiler-warning-level-3-c4535"></a>Compiler Warning (level 3) C4535
+# <a name="compiler-warning-level-3-c4535"></a>컴파일러 경고(수준 3) C4535
 
-calling _set_se_translator() requires /EHa
+_set_se_translator ()를 호출 하려면/EHa를 사용 해야 합니다.
 
-The use of [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) requires the [/EHa](../../build/reference/eh-exception-handling-model.md) compiler option and not **/EHs**.
+[_Set_se_translator](../../c-runtime-library/reference/set-se-translator.md) 를 사용 하려면 **/EHs**가 아닌 [/eha](../../build/reference/eh-exception-handling-model.md) 컴파일러 옵션을 사용 해야 합니다.
 
 ## <a name="example"></a>예제
 
-The following sample generates C4535.
+다음 샘플에서는 C4535를 생성 합니다.
 
 ```cpp
 // C4535.cpp

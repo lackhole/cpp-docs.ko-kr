@@ -28,19 +28,19 @@ auto declarator initializer;
 [](auto param1, auto param2) {};
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **Auto** 키워드는 선언 된 변수 또는 람다 식 매개 변수의 초기화 식을 사용 하 여 해당 형식을 추론 하도록 컴파일러에 지시 합니다.
 
 이러한 혜택을 제공 하기 때문에 대부분의 경우에는 **자동** 키워드를 사용 하 여 변환 하지 않는 것이 좋습니다.
 
-- **강력함:** 함수의 반환 형식이 변경할 때 포함되므로 식의 형식이 변경되는 경우에도 작동합니다.
+- **견고성:** 식의 형식이 변경 된 경우 (함수 반환 형식이 변경 되는 경우 포함)에만 작동 합니다.
 
-- **성능:** 변환되지 않도록 보장할 수 있습니다.
+- **성능:** 변환이 발생 하지 않을 것으로 보장 됩니다.
 
 - **유용성:** 형식 이름 철자 문제 및 오타가 걱정 하지 않아도 됩니다.
 
-- **효율성:** 코딩의 효율성이 향상됩니다.
+- **효율성:** 코딩을 보다 효율적으로 수행할 수 있습니다.
 
 **Auto**를 사용 하지 않을 수 있는 변환 사례는 다음과 같습니다.
 
@@ -50,7 +50,7 @@ auto declarator initializer;
 
 **Auto** 키워드를 사용 하려면 형식 대신이 키워드를 사용 하 여 변수를 선언 하 고 초기화 식을 지정 합니다. 또한 **const**, **volatile**, 포인터 (`*`), 참조 (`&`) 및 rvalue 참조 (`&&`)와 같은 지정자와 선언 자를 사용 하 여 **auto** 키워드를 수정할 수 있습니다. 컴파일러는 초기화 식을 계산하고 해당 정보를 사용하여 변수의 형식을 추론합니다.
 
-초기화 식은 할당 (등호 구문), 직접 초기화 (함수 스타일 구문), [operator new](new-operator-cpp.md) 식 또는 초기화 식이 [범위 기반 for statement (C++)](../cpp/range-based-for-statement-cpp.md) 문의 *범위 선언* 매개 변수가 될 수 있습니다. 자세한 내용은 [이니셜라이저](../cpp/initializers.md) 및 이 문서의 뒷부분에 있는 코드 예제를 참조하세요.
+초기화 식은 할당 (등호 구문), 직접 초기화 (함수 스타일 구문), [operator new](new-operator-cpp.md) 식 또는 초기화 식이 [범위 기반 for statement (C++)](../cpp/range-based-for-statement-cpp.md) 문의 *범위 선언* 매개 변수가 될 수 있습니다. 자세한 내용은이 문서의 뒷부분에 나오는 [이니셜라이저](../cpp/initializers.md) 및 코드 예제를 참조 하세요.
 
 **Auto** 키워드는 형식에 대 한 자리 표시자 이지만 자체 형식이 아닙니다. 따라서 **auto** 키워드는 [sizeof](../cpp/sizeof-operator.md) 및 (/cli의 경우 C++) [typeid](../extensions/typeid-cpp-component-extensions.md)와 같은 캐스트 또는 연산자에서 사용할 수 없습니다.
 
@@ -58,7 +58,7 @@ auto declarator initializer;
 
 **Auto** 키워드는 복잡 한 형식의 변수를 선언 하는 간단한 방법입니다. 예를 들어 **auto** 를 사용 하 여 초기화 식에 템플릿, 함수에 대 한 포인터 또는 멤버에 대 한 포인터를 포함 하는 변수를 선언할 수 있습니다.
 
-**Auto** 를 사용 하 여 람다 식에 대 한 변수를 선언 하 고 초기화할 수도 있습니다. 람다 식의 형식은 컴파일러에만 알려져 있기 때문에 직접 변수 유형을 선언할 수 없습니다. 자세한 내용은 [람다 식의 예](../cpp/examples-of-lambda-expressions.md)를 참조하세요.
+**Auto** 를 사용 하 여 람다 식에 대 한 변수를 선언 하 고 초기화할 수도 있습니다. 람다 식의 형식은 컴파일러에만 알려져 있기 때문에 직접 변수 유형을 선언할 수 없습니다. 자세한 내용은 [람다 식의 예](../cpp/examples-of-lambda-expressions.md)를 참조 하세요.
 
 ## <a name="trailing-return-types"></a>후행 반환 형식
 
@@ -135,7 +135,7 @@ int main()
 |[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|**Auto** 키워드를 사용 하 여 선언 된 선언 자 목록의 모든 기호는 동일한 형식으로 확인 되어야 합니다. 자세한 내용은 [선언 및 정의](declarations-and-definitions-cpp.md)를 참조 하세요.|
 |[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|**Auto** 키워드를 사용 하 여 선언 된 기호에는 [sizeof](../cpp/sizeof-operator.md) 및 [typeid](../extensions/typeid-cpp-component-extensions.md) 연산자를 적용할 수 없습니다.|
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 
 이러한 코드 조각은 **auto** 키워드를 사용할 수 있는 몇 가지 방법을 보여 줍니다.
 
@@ -225,7 +225,7 @@ int main()
 [키워드](../cpp/keywords-cpp.md)<br/>
 [/Zc:auto(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof 연산자](../cpp/sizeof-operator.md)<br/>
-[typeid(C++ 구성 요소 확장)](../extensions/typeid-cpp-component-extensions.md)<br/>
+[typeid](../extensions/typeid-cpp-component-extensions.md)<br/>
 [operator new](new-operator-cpp.md)<br/>
 [선언 및 정의](declarations-and-definitions-cpp.md)<br/>
 [람다 식의 예](../cpp/examples-of-lambda-expressions.md)<br/>

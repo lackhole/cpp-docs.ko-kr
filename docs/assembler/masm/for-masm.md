@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - FOR directive
 ms.assetid: 99872e61-f503-4d34-b305-59f8556ba6b7
-ms.openlocfilehash: 5e365ee45396d581f0580e078496aeb2ecab165a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75e27948a523cb23c42df6f7691d54c3170c656e
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184924"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397507"
 ---
 # <a name="for-masm"></a>FOR (MASM)
 
-각각에 대해 한 번씩 반복 되는 블록 표시 *인수*, 현재 *인수* 교체 *매개 변수* 각 반복에서.
+각 *인수*에 대해 한 번씩 반복 되는 블록을 표시 하 고 각 반복에서 현재 *인수* 를 대체 하는 *매개 변수* 를 사용 합니다.
 
 ## <a name="syntax"></a>구문
 
-> FOR *parameter* [[:REQ | :=*default*]] , \<*argument* [[, *argument*]]...><br/>
-> *statements*<br/>
-> ENDM
+> ⟦ *매개 변수* **: 요청** |  __: =__ *default*⟧ **, \<** _인수_ ⟦ __,__ *argument* ... ⟧ **>** \
+> *문*\
+> **ENDM**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-동일 [IRP](../../assembler/masm/irp.md)합니다.
+[IRP](../../assembler/masm/irp.md)와 동일 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

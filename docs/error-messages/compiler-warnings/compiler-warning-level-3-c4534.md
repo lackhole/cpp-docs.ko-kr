@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4534
+title: 컴파일러 경고(수준 3) C4534
 ms.date: 11/04/2016
 f1_keywords:
 - c4534
@@ -13,15 +13,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189097"
 ---
-# <a name="compiler-warning-level-3-c4534"></a>Compiler Warning (level 3) C4534
+# <a name="compiler-warning-level-3-c4534"></a>컴파일러 경고(수준 3) C4534
 
-'constructor' will not be a default constructor for class 'class' due to the default argument
+기본 인수로 인해 ' n a t e '는 ' class ' 클래스의 기본 생성자가 되지 않습니다.
 
-An unmanaged class can have a constructor with parameters that have default values and the compiler will use this as the default constructor. A class marked with the `value` keyword will not use a constructor with default values for its parameters as a default constructor.
+관리 되지 않는 클래스에는 기본값이 있는 매개 변수가 있는 생성자가 있을 수 있으며, 컴파일러는이를 기본 생성자로 사용 합니다. `value` 키워드로 표시 된 클래스는 매개 변수의 기본값을 기본 생성자로 사용 하는 생성자를 사용 하지 않습니다.
 
 자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md)를 참조하세요.
 
-The following sample generates C4534:
+다음 샘플에서는 C4534를 생성 합니다.
 
 ```cpp
 // C4534.cpp

@@ -1,6 +1,6 @@
 ---
-title: Raw pointers (C++)
-description: How to use raw pointers in C++
+title: 원시 포인터 (C++)
+description: 에서 원시 포인터를 사용 하는 방법C++
 ms.date: 11/19/2019
 helpviewer_keywords:
 - pointers [C++]
@@ -11,11 +11,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74250687"
 ---
-# <a name="raw-pointers-c"></a>Raw pointers (C++)
+# <a name="raw-pointers-c"></a>원시 포인터 (C++)
 
-A pointer is a type of variable that stores the address of an object in memory and is used to access that object. A *raw pointer* is a pointer whose lifetime is not controlled by an encapsulating object such as a [smart pointer](smart-pointers-modern-cpp.md). A raw pointer can be assigned the address of another non-pointer variable, or it can be assigned a value of [nullptr](nullptr.md). A pointer that has not been assigned a value contains random data.
+포인터는 개체의 주소를 메모리에 저장 하 고 해당 개체에 액세스 하는 데 사용 되는 변수의 형식입니다. *원시 포인터* 는 수명이 [스마트 포인터](smart-pointers-modern-cpp.md)와 같은 캡슐화 된 개체에 의해 제어 되지 않는 포인터입니다. 원시 포인터에는 다른 비 포인터 변수의 주소를 할당할 수 있습니다. 그렇지 않으면 [nullptr](nullptr.md)값을 할당할 수 있습니다. 값이 할당 되지 않은 포인터에 임의의 데이터가 포함 되어 있습니다.
 
-A pointer can also be *dereferenced* to retrieve the value of the object that it points at. The *member access operator* provides access to an object's members.
+포인터가 가리키는 개체의 값을 검색 하기 위해 포인터를 *역참조* 할 수도 있습니다. *멤버 액세스 연산자* 는 개체의 멤버에 대 한 액세스를 제공 합니다.
 
 ```cpp
     int* p = nullptr; // declare pointer and initialize it
@@ -26,7 +26,7 @@ A pointer can also be *dereferenced* to retrieve the value of the object that it
 
 ```
 
-A pointer can point to a typed object or to **void**. When a program allocates a new object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*; an owning pointer (or a copy of it) must be used to explicitly delete the heap-allocated object when it is no longer needed. Failure to delete the memory results in a *memory leak* and renders that memory location unavailable to any other program on the machine. For more information, see [new and delete operators](new-and-delete-operators.md).
+포인터는 형식화 된 개체 또는 **void**를 가리킬 수 있습니다. 프로그램은 메모리의 [힙에](https://wikipedia.org/wiki/Heap) 새 개체를 할당 하는 경우 해당 개체의 주소를 포인터 형식으로 받습니다. 이러한 포인터는 *소유 포인터*라고 합니다. 더 이상 필요 하지 않은 힙 할당 개체를 명시적으로 삭제 하려면 소유 하는 포인터 (또는 it의 복사본)를 사용 해야 합니다. 메모리를 삭제 하지 못하면 *메모리 누수가* 발생 하 고 컴퓨터의 다른 프로그램에서 해당 메모리 위치를 사용할 수 없게 됩니다. 자세한 내용은 [new 및 delete 연산자](new-and-delete-operators.md)를 참조 하세요.
 
 ```cpp
 
@@ -35,7 +35,7 @@ A pointer can point to a typed object or to **void**. When a program allocates a
     delete mc; // delete object (please don't forget!)
 ```
 
-A pointer (if it isn't declared as **const**) can be incremented or decremented so that it points to a new location in memory. This is called *pointer arithmetic* and is used in C-style programming to iterate over elements in arrays or other data structures. A **const** pointer can't be made to point to a different memory location, and in that sense is very similar to a [reference](references-cpp.md). For more information, see [const and volatile pointers](const-and-volatile-pointers.md).
+포인터 ( **const**로 선언 되지 않은 경우)는 메모리의 새 위치를 가리키도록 증가 하거나 감소할 수 있습니다. 이를 *포인터 산술 연산* 이라고 하 고 C 스타일 프로그래밍에서 배열 또는 다른 데이터 구조의 요소를 반복 하는 데 사용 됩니다. **Const** 포인터는 다른 메모리 위치를 가리키도록 만들 수 없으며,이는 [참조](references-cpp.md)와 매우 비슷합니다. 자세한 내용은 [const 및 volatile 포인터](const-and-volatile-pointers.md)를 참조 하세요.
 
 ```cpp
     // declare a C-style string. Compiler adds terminating '\0'.
@@ -49,13 +49,13 @@ A pointer (if it isn't declared as **const**) can be incremented or decremented 
     // pconst2 = &c2; // Error! pconst2 is const.
 ```
 
-On 64-bit operating systems, a pointer has a size of 64 bits; a system's pointer size determines how much addressable memory it can have. All copies of a pointer point to the same memory location. Pointers (along with references) are used extensively in C++ to pass larger objects to and from functions because it is usually far more efficient to copy an object's 64-bit address than to copy an entire object. When defining a function, specify pointer parameters as **const** unless you intend for the function to modify the object. In general, **const** references are the preferred way to pass objects to functions unless the value of the object can possibly be **nullptr**.
+64 비트 운영 체제에서 포인터의 크기는 64 비트입니다. 시스템의 포인터 크기는 사용할 수 있는 주소 지정 가능한 메모리의 양을 결정 합니다. 포인터의 모든 복사본은 동일한 메모리 위치를 가리킵니다. 포인터 (참조와 함께)는 개체의 64 C++ 비트 주소를 복사 하는 것이 전체 개체를 복사 하는 것 보다 일반적으로 훨씬 효율적 이기 때문에 더 큰 개체를 함수에 전달 하는 데 광범위 하 게 사용 됩니다. 함수를 정의 하는 경우 함수에서 개체를 수정 하지 않으려는 경우 포인터 매개 변수를 **const** 로 지정 합니다. 일반적으로 개체의 값이 **nullptr**일 수 있는 경우를 제외 하 고 개체를 함수에 전달 하는 데는 **const** 참조가 기본 설정 되어 있습니다.
 
-[Pointers to functions](#pointers_to_functions) enable functions to be passed to other functions and are used for "callbacks" in C-style programming. Modern C++ uses [lambda expressions](lambda-expressions-in-cpp.md) for this purpose.
+함수에 대 한 [포인터](#pointers_to_functions) 는 함수를 다른 함수에 전달 하 고 C 스타일 프로그래밍의 "콜백"에 사용 됩니다. 최신 C++ 에서는 이러한 용도로 [람다 식을](lambda-expressions-in-cpp.md) 사용 합니다.
 
-## <a name="initialization-and-member-access"></a>Initialization and member access
+## <a name="initialization-and-member-access"></a>초기화 및 멤버 액세스
 
-The following example shows how to declare a raw pointer and initialize it with an object allocated on the heap, and then how to use it. It also shows a few of the dangers associated with raw pointers. (Remember, this is C-style programming and not modern C++!)
+다음 예제에서는 원시 포인터를 선언 하 고 힙에 할당 된 개체를 사용 하 여 초기화 한 다음 사용 하는 방법을 보여 줍니다. 또한 원시 포인터와 관련 된 몇 가지 위험을 보여 줍니다. (이는 C 스타일 프로그래밍 이며 최신 C++이 아님)
 
 ```cpp
 #include <iostream>
@@ -133,14 +133,14 @@ int main()
 }
 ```
 
-## <a name="pointer-arithmetic-and-arrays"></a>Pointer arithmetic and arrays
+## <a name="pointer-arithmetic-and-arrays"></a>포인터 산술 및 배열
 
-Pointers and arrays are closely related. When an array is passed by-value to a function, it is passed as a pointer to the first element. The following example demonstrates the following important properties of pointers and arrays:
+포인터와 배열은 밀접 하 게 관련 되어 있습니다. 배열이 값으로 함수에 전달 되 면 첫 번째 요소에 대 한 포인터로 전달 됩니다. 다음 예제에서는 포인터와 배열의 다음과 같은 중요 한 속성을 보여 줍니다.
 
-- the `sizeof` operator returns the total size in bytes of an array
-- to determine the number of elements, divide total bytes by the size of one element
-- when an array is passed to a function, it *decays* to a pointer type
-- the `sizeof` operator when applied to a pointer returns the pointer size, 4 bytes on x86 or 8 bytes on x64
+- `sizeof` 연산자는 배열의 전체 크기 (바이트)를 반환 합니다.
+- 요소 수를 확인 하려면 전체 바이트를 한 요소의 크기로 나눕니다.
+- 배열이 함수에 전달 되 면 포인터 형식으로 *decays* .
+- 포인터에 적용 될 때 `sizeof` 연산자는 포인터 크기, x 86의 경우 4 바이트, x 64에서는 8 바이트를 반환 합니다.
 
 ```cpp
 #include <iostream>
@@ -166,9 +166,9 @@ int main()
 }
 ```
 
-Certain arithmetic operations can be performed on non-const pointers to make them point to a new memory location. A pointer can be incremented and decremented using the **++** , **+=** , **-=** and **--** operators. This technique can be used in arrays and is especially useful in buffers of untyped data. A **void\*** increments by the size of a **char** (1 byte). A typed pointer increments by size of the type it points to.
+Const가 아닌 포인터에 대해 특정 산술 연산을 수행 하 여 새 메모리 위치를 가리키도록 할 수 있습니다. **++** , **+=** , **-=** 및 **--** 연산자를 사용 하 여 포인터를 증가 및 감소 시킬 수 있습니다. 이 기술은 배열에서 사용할 수 있으며 형식화 되지 않은 데이터의 버퍼에서 특히 유용 합니다. **Void\*** **char** 크기 (1 바이트) 만큼 증가 합니다. 형식화 된 포인터는 포인터가 가리키는 형식의 크기 만큼 증가 합니다.
 
-The following example demonstrates how pointer arithmetic can be used to access individual pixels in a bitmap on Windows. Note the use of **new** and **delete**, and the dereference operator. 
+다음 예제에서는 포인터 산술 연산을 사용 하 여 Windows에서 비트맵의 개별 픽셀에 액세스 하는 방법을 보여 줍니다. **New** 및 **delete**를 사용 하 고 역참조 연산자를 사용 합니다. 
 
 ```cpp
 #include <Windows.h>
@@ -233,11 +233,11 @@ int main()
 }
 ```
 
-## <a name="void-pointers"></a>void* pointers
+## <a name="void-pointers"></a>void * 포인터
 
-A pointer to **void** simply points to a raw memory location. Sometimes it is necessary to use **void\*** pointers, for example when passing between C++ code and C functions. 
+**Void** 에 대 한 포인터는 단순히 원시 메모리 위치를 가리킵니다. 코드와 C 함수를 전달 하는 경우와 같이 **void\*** 포인터를 사용 해야 하는 경우도 있습니다. C++ 
 
-When a typed pointer is cast to a void pointer, the contents of the memory location are not changed, but the type information is lost, so that you can't perform increment or decrement operations. A memory location can be cast, for example, from MyClass* to void* and back again to MyClass*. Such operations are inherently error-prone and require great care to avoid errors. Modern C++ discourages the use of void pointers unless absolutely necessary.
+형식화 된 포인터가 void 포인터로 캐스팅 되 면 메모리 위치의 내용이 변경 되지 않지만, 증가 또는 감소 작업을 수행할 수 없도록 형식 정보가 손실 됩니다. 예를 들어 MyClass *에서 void *로, 다시 MyClass *로 다시 변환 하는 등의 방법으로 메모리 위치를 캐스팅할 수 있습니다. 이러한 작업은 기본적으로 오류가 발생 하기 쉬우며 오류가 발생 하지 않도록 주의 해야 합니다. 현재 C++ 는 반드시 필요한 경우를 제외 하 고는 void 포인터 사용을 사용 하지 않습니다.
 
 ```cpp
 
@@ -290,11 +290,11 @@ int main()
 }
 ```
 
-## <a name="pointers_to_functions"></a> Pointers to functions
+## <a name="pointers_to_functions"></a>함수에 대 한 포인터
 
-In C-style programming, function pointers are used primarily to pass functions to other functions. In this scenario, the caller can customize the behavior of a function without modifying it. In modern C++, [lambda expressions](lambda-expressions-in-cpp.md) provide the same capability with greater type safety and other advantages.
+C 스타일 프로그래밍에서 함수 포인터는 주로 함수를 다른 함수에 전달 하는 데 사용 됩니다. 이 시나리오에서 호출자는 함수를 수정 하지 않고 동작의 동작을 사용자 지정할 수 있습니다. 현대 C++에서 [람다 식은](lambda-expressions-in-cpp.md) 형식 안전 성과 기타 이점을 가진 동일한 기능을 제공 합니다.
 
-A function pointer declaration specifies the signature that the pointed-to function must have:
+함수 포인터 선언은 뾰족한 함수에 필요한 시그니처를 지정 합니다.
 
 ```cpp
 // Declare pointer to any function that...
@@ -310,7 +310,7 @@ void (*x)();
 int (*i)(int i, string s, double d);
 ```
 
-The following example shows a function `combine` that takes as a parameter any function that accepts a `std::string` and returns a `std::string`. Depending on the function that is passed to `combine` it will either prepend or append a string.
+다음 예제에서는 `std::string`를 수락 하 고 `std::string`를 반환 하는 함수를 매개 변수로 사용 하는 `combine` 함수를 보여 줍니다. `combine` 전달 되는 함수에 따라 문자열 앞에 추가 하거나 추가 합니다.
 
 ```cpp
 #include <iostream>
@@ -342,9 +342,9 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Smart pointers](smart-pointers-modern-cpp.md)
-[Indirection Operator: *](indirection-operator-star.md)<br/>
+[스마트 포인터](smart-pointers-modern-cpp.md)
+[간접 참조 연산자: *](indirection-operator-star.md)<br/>
 [주소 연산자: &](address-of-operator-amp.md)</br>
-[Welcome back to C++](welcome-back-to-cpp-modern-cpp.md)
+[다시 시작C++](welcome-back-to-cpp-modern-cpp.md)

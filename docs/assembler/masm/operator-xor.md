@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator XOR
 - XOR operator
 ms.assetid: 856eb920-314a-49b9-aebf-7d50e5384e4d
-ms.openlocfilehash: 78a06c7a40e046fe4bf6063754f73f0928f98b58
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72f4c58e95f44cbebac0a0eb441eccc6c9700e05
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62176332"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74395318"
 ---
 # <a name="operator-xor"></a>연산자 XOR
 
-비트 결과 반환 합니다 **XOR** 에 대 한 작업 *expression1* 하 고 *expression2*합니다.
+*Expression1* 및 *식 2*에 대 한 비트 **XOR** 연산의 결과를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> expression1 XOR expression2
+> *expression1* **XOR** *식 2*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

@@ -58,7 +58,7 @@ class duration <duration<Rep, Period1>, Period2>;
 |----------|-----------------|
 |[count](#count)|시간 간격의 클록 틱 수를 반환합니다.|
 |[max](#max)|정적. 템플릿 매개 변수 `Ref`의 최대 허용 값을 반환합니다.|
-|[분](#min)|정적. 템플릿 매개 변수 `Ref`의 최저 허용 값을 반환합니다.|
+|[min](#min)|정적. 템플릿 매개 변수 `Ref`의 최저 허용 값을 반환합니다.|
 |[zero](#zero)|정적. 실제로 `Rep`(0)를 반환합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
@@ -118,7 +118,7 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 *R*\
 기본 기간의 틱 수입니다.
 
-*최악*\
+*Dur*\
 *Period2*로 지정 된 기간 (틱) 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -270,7 +270,7 @@ duration& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -287,7 +287,7 @@ duration& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

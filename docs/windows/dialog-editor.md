@@ -34,7 +34,7 @@ ms.locfileid: "72445018"
 
 **대화 상자 편집기** 를 사용 하 여 대화 상자 리소스를 만들거나 편집할 수 있습니다.
 
-- 편집기를 열려면 **리소스 뷰** 창에서 대화 상자의 .rc 파일을 두 번 클릭 하거나 메뉴 **보기**@no__t**기타 Windows** > **리소스 뷰**로 이동 합니다.
+- 편집기를 열려면 **리소스 뷰** 창에서 대화 상자의 .rc 파일을 두 번 클릭 하거나 메뉴 **보기** > **다른 Windows** > **리소스 뷰**로 이동 합니다.
 
 새 대화 상자 또는 대화 상자 템플릿을 만드는 첫 번째 단계 중 하나는 컨트롤을 추가 하는 것입니다. 대화 상자 **편집기**에서 특정 크기, 모양 또는 맞춤에 맞게 컨트롤을 정렬 하거나 대화 상자 내에서 작업으로 이동할 수 있습니다. 또한 컨트롤을 쉽게 삭제할 수 있습니다.
 
@@ -62,12 +62,12 @@ Visual Studio 2015부터 **대화 상자 편집기** 를 사용 하 여 사용�
 |![권한 맞춤 단추](../mfc/media/vcdialogeditoralignrights.png "vcDialogEditorAlignRights")|오른쪽 맞춤|![같은 너비로 단추 만들기](../mfc/media/vcdialogeditorsamewidth.png "vcDialogEditorSameWidth")|같은 너비로|
 |![위쪽 맞춤 단추](../mfc/media/vcdialogeditoraligntops.png "vcDialogEditorAlignTops")|위쪽 맞춤|![같은 높이로 단추 만들기](../mfc/media/vcdialogeditormakesameheight.png "vcDialogEditorMakeSameHeight")|같은 높이로|
 |![아래쪽 맞춤 단추](../mfc/media/vcdialogeditoralignbottoms.png "vcDialogEditorAlignBottoms")|아래쪽 맞춤|![같은 크기로 단추 만들기](../mfc/media/vcdialogeditorsamesize.png "vcDialogEditorSameSize")|같은 크기로|
-|![세로 가운데 맞춤 단추](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|쓰기|![모눈 설정/해제 단추](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|모눈 설정/해제|
+|![세로 가운데 맞춤 단추](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|세로|![모눈 설정/해제 단추](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|모눈 설정/해제|
 |![가로 가운데 단추](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|가로|![안내선 설정/해제 단추](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|안내선 설정/해제|
 
 - **대화 상자 편집기** 도구 모음을 표시 하거나 숨기려면 메뉴 **보기** > **도구 모음** > **대화 상자 편집기**로 이동 합니다.
 
-프로젝트에서 **대화 상자 편집기** 를 열면 솔루션 위쪽에 **대화 상자 편집기** 도구 모음이 자동으로 표시 되지만 도구 모음을 명시적으로 닫으면 다음에 대화 상자 편집기를 열 때 호출 해야 합니다. C++. 사용 가능한 도구 모음 및 창 목록에서 선택 하 여 표시를 전환할 수 있습니다.
+프로젝트에서 **대화 상자 편집기** 를 열면 솔루션 위쪽에 **대화 상자 편집기** 도구 모음이 자동으로 표시 되지만 도구 모음을 명시적으로 닫으면 다음에 **대화 상자 편집기**를 열 때 호출 해야 합니다. C++ 사용 가능한 도구 모음 및 창 목록에서 선택 하 여 표시를 전환할 수 있습니다.
 
 ## <a name="switch-between-dialog-box-controls-and-code"></a>대화 상자 컨트롤과 코드 사이를 전환 합니다.
 
@@ -94,7 +94,7 @@ MFC 응용 프로그램에서 대화 상자 컨트롤을 두 번 클릭 하 여 
 
 |명령|키|설명|
 |-------------|----------|-----------------|
-|Format.AlignBottoms|**Ctrl** + **shift** + **아래쪽 화살표**|선택한 컨트롤의 아래쪽 가장자리를 기준 컨트롤과 맞춥니다.|
+|Format.AlignBottoms|**Ctrl** + **Shift** + **아래쪽 화살표**|선택한 컨트롤의 아래쪽 가장자리를 기준 컨트롤과 맞춥니다.|
 |Format.AlignCenters|**Shift** + **F9**|선택한 컨트롤의 세로 가운데를 기준 컨트롤에 맞춥니다.|
 |Format.AlignLefts|**Ctrl** + **Shift** + **왼쪽 화살표**|선택한 컨트롤의 왼쪽 가장자리를 기준 컨트롤에 맞춥니다.|
 |Format.AlignMiddles|**F9**|선택한 컨트롤의 가로 가운데를 기준 컨트롤에 맞춥니다.|
@@ -105,7 +105,7 @@ MFC 응용 프로그램에서 대화 상자 컨트롤을 두 번 클릭 하 여 
 |Format.CenterHorizontal|**Ctrl** + **Shift** + **F9**|대화 상자 내에서 컨트롤을 가로로 가운데 맞춤 합니다.|
 |Format.CenterVertical|**Ctrl** + **F9**|대화 상자 내에서 컨트롤을 세로 방향으로 가운데에 맞춥니다.|
 |Format.CheckMnemonics|**Ctrl** + **M**|니모닉의 고유성을 검사 합니다.|
-|System.windows.window.sizetocontent|**Shift** + **F7**|선택한 컨트롤의 크기를 캡션 텍스트에 맞게 조정 합니다.|
+|Format.SizeToContent|**Shift** + **F7**|선택한 컨트롤의 크기를 캡션 텍스트에 맞게 조정 합니다.|
 |Format.SpaceAcross|**Alt** + **왼쪽 화살표**|선택한 컨트롤을 가로로 간격 하 게 배치 합니다.|
 |Format.SpaceDown|**Alt** + **아래쪽 화살표**|선택한 컨트롤을 세로로 균등 하 게 배치 합니다.|
 |Format.TabOrder|**Ctrl** + **D**|대화 상자 내에서 컨트롤의 순서를 설정 합니다.|
@@ -124,7 +124,7 @@ MFC 응용 프로그램에서 대화 상자 컨트롤을 두 번 클릭 하 여 
 
 Win32
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [방법: 대화 상자 만들기](../windows/creating-a-new-dialog-box.md)<br/>

@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - MACRO directive
 ms.assetid: 89434f7c-bc2c-4e91-8940-fe2db8785233
-ms.openlocfilehash: 321f8472cd1622716af1114deefbee70e1982724
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 860d538a2f461db1d5fd6bb24d078f644af2156f
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62202871"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397238"
 ---
 # <a name="macro"></a>MACRO
 
-호출 매크로 블록 표시 *이름을* 설정 *매개 변수* 매크로 호출 될 때 자리 표시자 인수에 전달 합니다.
+매크로 블록을 *이름* 이라고 표시 하 고 매크로가 호출 될 때 전달 되는 인수에 대 한 *매개 변수* 자리 표시자를 설정 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* MACRO [[*parameter* [[:REQ | :=*default* | :VARARG]] ]] ...<br/>
-> *statements*<br/>
-> ENDM [[*value*]]
+> *name***매크로** ⟦*parameter* ⟦ **: 필수** | : =*기본* |  **: VARARG**⟧ ... ⟧\
+> *문*\
+> **Endm** ⟦*값*⟧
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-매크로 함수가 반환 *값* 문 호출 시.
+매크로 함수는 호출 하는 문에 *값* 을 반환 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)

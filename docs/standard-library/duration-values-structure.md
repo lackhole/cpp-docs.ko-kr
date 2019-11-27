@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68454297"
 ---
-# <a name="durationvalues-structure"></a>duration_values 구조체
+# <a name="duration_values-structure"></a>duration_values 구조체
 
 [duration](../standard-library/duration-class.md) 템플릿 매개 변수 `Rep`에 대한 특정 값을 제공합니다.
 
@@ -32,7 +32,7 @@ struct duration_values;
 |이름|설명|
 |----------|-----------------|
 |[max](#max)|정적. `Rep` 형식 값의 상한을 지정합니다.|
-|[분](#min)|정적. `Rep` 형식 값의 하한을 지정합니다.|
+|[min](#min)|정적. `Rep` 형식 값의 하한을 지정합니다.|
 |[zero](#zero)|정적. `Rep(0)`를 반환합니다.|
 
 ## <a name="requirements"></a>요구 사항

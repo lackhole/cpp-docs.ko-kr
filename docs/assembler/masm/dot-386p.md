@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .386P directive
 ms.assetid: 15199091-3bb7-4270-bb9b-878c1c2f2146
-ms.openlocfilehash: d4b969d509e18b53fa08c8329027dbd6b7a6a5b3
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: 33ec3ddb52305b29afbacd3fd858018e6e0d9aed
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703000"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398716"
 ---
 # <a name="386p-32-bit-masm"></a>.386P (32 비트 MASM)
 
@@ -19,12 +19,12 @@ ms.locfileid: "73703000"
 
 ## <a name="syntax"></a>구문
 
-> .386P
+> **.386P**
 
 ## <a name="remarks"></a>주의
 
 80387 명령도 사용할 수 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

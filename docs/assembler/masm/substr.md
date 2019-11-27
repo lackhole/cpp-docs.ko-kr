@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - SUBSTR directive
 ms.assetid: d1aa9a7d-a03a-4213-93ad-ee92635fd58a
-ms.openlocfilehash: 93aa1bd434a645f3c7e29fc42429e48978f062fa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b284ca80bc2db195c35af3e5ca45441e97d9b7f1
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62217101"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74393503"
 ---
 # <a name="substr"></a>SUBSTR
 
-부분 문자열을 반환 *textitem*부터 *위치*합니다. *textitem* 리터럴 문자열을 앞에 상수 수를 `%`, 또는 매크로 함수에 의해 반환 되는 문자열입니다.
+*위치*에서 시작 하 여 *textitem*의 부분 문자열을 반환 합니다. *Textitem* 은 리터럴 문자열, `%`앞에 오는 상수 또는 매크로 함수에서 반환 된 문자열이 될 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-> SUBSTR textitem, 위치 [[, 길이]] 이름
+> *이름* **SUBSTR** *textitem* __,__ *position* ⟦ __,__ *length*⟧
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

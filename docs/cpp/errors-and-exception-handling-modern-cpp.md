@@ -1,5 +1,5 @@
 ﻿---
-title: Modern C++ best practices for exceptions and error handling
+title: 예외 C++ 및 오류 처리에 대 한 최신 모범 사례
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
@@ -10,23 +10,23 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/20/2019
 ms.locfileid: "74245871"
 ---
-# <a name="modern-c-best-practices-for-exceptions-and-error-handling"></a>Modern C++ best practices for exceptions and error handling
+# <a name="modern-c-best-practices-for-exceptions-and-error-handling"></a>예외 C++ 및 오류 처리에 대 한 최신 모범 사례
 
-In modern C++, in most scenarios, the preferred way to report and handle both logic errors and runtime errors is to use exceptions. This is especially true when the stack might contain several function calls between the function that detects the error and the function that has the context to know how to handle it. Exceptions provide a formal, well-defined way for code that detects errors to pass the information up the call stack.
+대부분의 시나리오에서 모던 C++은 논리 오류 및 런타임 오류를 처리하는 기본 방법으로 예외를 사용합니다. 스택에 오류를 감지하는 함수 간의 몇 가지 함수호출이 포함될 수 있고 이를 처리하는 방법을 확인하기 위한 컨텍스트가 있는 경우 특히 더 그렇습니다. 예외는 오류를 감지하여 정보를 호출 스택에 정보를 전달하는 코드에 대한 공식적이고 잘 정의된 방법을 제공합니다.
 
-Program errors are generally divided into two categories: logic errors that are caused by programming mistakes, for example, an "index out of range" error, and runtime errors that are beyond the control of programmer, for example, a "network service unavailable" error. In C-style programming and in COM, error reporting is managed either by returning a value that represents an error code or a status code for a particular function, or by setting a global variable that the caller may optionally retrieve after every function call to see whether errors were reported. For example, COM programming uses the HRESULT return value to communicate errors to the caller, and the Win32 API has the GetLastError function to retrieve the last error that was reported by the call stack. In both of these cases, it's up to the caller to recognize the code and respond to it appropriately. If the caller doesn't explicitly handle the error code, the program might crash without warning, or continue to execute with bad data and produce incorrect results.
+프로그램 오류는 일반적으로 프로그래밍 실수로 인 한 논리 오류 (예: "범위를 벗어난 인덱스" 오류, "네트워크 서비스를 사용할 수 없음"과 같은 프로그래머의 제어를 벗어난 런타임 오류)로 구분 됩니다. 메시지가. C 스타일 프로그래밍과 COM에서 오류 보고는 오류 코드 또는 특정 함수에 대한 상태 코드를 나타내는 값을 반환하거나 호출자가 모든 함수 호출 후 오류가 있었는지 선택적으로 확인할 수 있는 전역 변수를 설정하여 관리합니다. 예를 들어 COM 프로그래밍은 HRESULT 반환 값을 사용하여 호출자에게 오류를 전달하고 Win32 API에는 호출 스택에서 보고된 마지막 오류를 확인하는 GetLastError 함수가 있습니다. 두 경우 모두 호출자가 코드를 인식하고 적절하게 응답할 수 있습니다. 호출자가 오류 코드를 명시적으로 처리하지 않는 경우 프로그램이 경고 없이 중단되거나 계속 잘못된 데이터를 사용하여 실행되고 잘못된 결과를 생성할 수 있습니다.
 
-Exceptions are preferred in modern C++ for the following reasons:
+다음과 같은 이유로 모던 C++에서는 예외를 선호합니다.
 
-- An exception forces calling code to recognize an error condition and handle it. Unhandled exceptions stop program execution.
+- 예외는 호출 코드가 오류 조건을 인식하고 처리하도록 합니다. 예외가 처리되지 않으면 프로그램 실행이 중지됩니다.
 
-- An exception jumps to the point in the call stack that can handle the error. Intermediate functions can let the exception propagate. They do not have to coordinate with other layers.
+- 예외는 오류를 처리할 수 있는 호출 스택의 지점으로 이동 합니다. 중간 함수를 사용 하 여 예외를 전파할 수 있습니다. 다른 레이어와 조정 하지 않아도 됩니다.
 
-- The exception stack-unwinding mechanism destroys all objects in scope according to well-defined rules after an exception is thrown.
+- 예외 스택 언와인딩 메커니즘은 예외가 발생된 후 잘 정의된 규칙에 따라 범위의 모든 개체를 제거합니다.
 
-- An exception enables a clean separation between the code that detects the error and the code that handles the error.
+- 예외는 오류를 감지하는 코드 및 오류를 처리하는 코드를 분명히 구분할 수 있습니다.
 
-The following simplified example shows the necessary syntax for throwing and catching exceptions in C++.
+다음 간단한 예제는 C++에서 예외를 발생(throw)하고 처리(catch)하는 데 필요한 구문을 보여줍니다.
 
 ```cpp
 
@@ -60,45 +60,45 @@ int main()
 }
 ```
 
-Exceptions in C++ resemble those in languages such as C# and Java. In the **try** block, if an exception is *thrown* it will be *caught* by the first associated **catch** block whose type matches that of the exception. In other words, execution jumps from the **throw** statement to the **catch** statement. If no usable catch block is found, `std::terminate` is invoked and the program exits. In C++, any type may be thrown; however, we recommend that you throw a type that derives directly or indirectly from `std::exception`. In the previous example, the exception type, [invalid_argument](../standard-library/invalid-argument-class.md), is defined in the standard library in the [\<stdexcept>](../standard-library/stdexcept.md) header file. C++ does not provide, and does not require, a **finally** block to make sure that all resources are released if an exception is thrown. The resource acquisition is initialization (RAII) idiom, which uses smart pointers, provides the required functionality for resource cleanup. For more information, see [How to: Design for Exception Safety](how-to-design-for-exception-safety.md). For information about the C++ stack-unwinding mechanism, see [Exceptions and Stack Unwinding](exceptions-and-stack-unwinding-in-cpp.md).
+C++에서 예외 사용은 C# 및 Java와 같은 언어에서의 예외와 비슷합니다. **Try** 블록에서 예외가 *throw* 되 면 예외와 일치 하는 형식을 가진 첫 번째 연결 된 **catch** 블록에 의해 *catch* 됩니다. 즉, 실행은 **throw** 문에서 **catch** 문으로 이동 합니다. 사용할 수 있는 catch 블록이 없으면 `std::terminate`이 호출 되 고 프로그램이 종료 됩니다. 에서 C++모든 형식이 throw 될 수 있습니다. 그러나 `std::exception`에서 직접 또는 간접적으로 파생 되는 형식을 throw 하는 것이 좋습니다. 이전 예제에서 예외 형식 [invalid_argument](../standard-library/invalid-argument-class.md)는 [\<stdexcept> >](../standard-library/stdexcept.md) 헤더 파일의 표준 라이브러리에 정의 되어 있습니다. C++는 예외가 throw 되는 경우 모든 리소스가 해제 되도록 **finally** 블록을 제공 하지 않으며 필요 하지 않습니다. 스마트 포인터를 사용하는 리소스 획득 초기화(RAII) 관용구는 리소스 정리에 필요한 기능을 제공합니다. 자세한 내용은 [방법: 예외 안전성을 위한 디자인](how-to-design-for-exception-safety.md)을 참조 하세요. C++ 스택 해제 메커니즘에 대 한 자세한 내용은 [예외 및 스택](exceptions-and-stack-unwinding-in-cpp.md)해제를 참조 하세요.
 
-## <a name="basic-guidelines"></a>Basic guidelines
+## <a name="basic-guidelines"></a>기본 지침
 
-Robust error handling is challenging in any programming language. Although exceptions provide several features that support good error handling, they can't do all the work for you. To realize the benefits of the exception mechanism, keep exceptions in mind as you design your code.
+강력한 오류 처리는 모든 프로그래밍 언어에서 어렵습니다. 예외가 좋은 오류 처리를 지원하는 여러 기능을 제공하기는 하지만 사용자를 대신해 모든 작업을 수행할 수는 없습니다. 예외 메커니즘의 혜택을 누리려면 코드를 디자인할 때 예뢰를 염두에 둡니다.
 
-- Use asserts to check for errors that should never occur. Use exceptions to check for errors that might occur, for example, errors in input validation on parameters of public functions. For more information, see the section titled **Exceptions vs. Assertions**.
+- 절대 발생하지 않아야 하는 오류를 확인하려면 어설션을 사용합니다. 예외를 사용하여 발생할 수 있는 오류, 예를 들어 공용 함수의 매개 변수에 대한 입력 유효성 검증 오류를 점검하세요. 자세한 내용은 **예외 및 어설션**이라는 섹션을 참조 하십시오.
 
-- Use exceptions when the code that handles the error might be separated from the code that detects the error by one or more intervening function calls. Consider whether to use error codes instead in performance-critical loops when code that handles the error is tightly-coupled to the code that detects it.
+- 오류를 처리하는 코드가 하나 이상의 개입 함수 호출로 오류를 감지하는 코드와 분리될 수 있는 경우 예외를 사용합니다. 오류를 처리하는 코드가 오류를 감지하는 코드에 밀접하게 연결되어 있으면 성능이 중요한 루프에서 오류 코드를 대신 사용할지 고려합니다.
 
-- For every function that might throw or propagate an exception, provide one of the three exception guarantees: the strong guarantee, the basic guarantee, or the nothrow (noexcept) guarantee. For more information, see [How to: Design for Exception Safety](how-to-design-for-exception-safety.md).
+- 예외를 throw 하거나 전파 하는 모든 함수에 대해, 강력한 보장, 기본 보장 또는 nothrow (noexcept) 보장의 세 가지 예외 보장 중 하나를 제공 합니다. 자세한 내용은 [방법: 예외 안전성을 위한 디자인](how-to-design-for-exception-safety.md)을 참조 하세요.
 
-- Throw exceptions by value, catch them by reference. Don’t catch what you can't handle.
+- 값에 따라 예외를 발생(throw)시키고 참조로 포착(catch)합니다. 처리할 수 없는 것은 포착(catch)하지 않도록 주의합니다.
 
-- Don't use exception specifications, which are deprecated in C++11. For more information, see the section titled **Exception specifications and noexcept**.
+- C++11에서 더이상 사용되지 않는 예외 사양을 사용하지 마세요. 자세한 내용은 **예외 사양 및 noexcept**섹션을 참조 하세요.
 
-- Use standard library exception types when they apply. Derive custom exception types from the [exception Class](../standard-library/exception-class.md) hierarchy.
+- 가능하다면 표준 라이브러리 예외 형식을 사용합니다. [예외 클래스](../standard-library/exception-class.md) 계층 구조에서 사용자 지정 예외 형식을 파생 시킵니다.
 
-- Don't allow exceptions to escape from destructors or memory-deallocation functions.
+- 소멸자 또는 메모리 할당 해제 함수에서 예외가 빠져나오는 것을 허용하지 마세요.
 
-## <a name="exceptions-and-performance"></a>Exceptions and performance
+## <a name="exceptions-and-performance"></a>예외 및 성능
 
-The exception mechanism has a very minimal performance cost if no exception is thrown. If an exception is thrown, the cost of the stack traversal and unwinding is roughly comparable to the cost of a function call. Additional data structures are required to track the call stack after a **try** block is entered, and additional instructions are required to unwind the stack if an exception is thrown. However, in most scenarios, the cost in performance and memory footprint is not significant. The adverse effect of exceptions on performance is likely to be significant only on very memory-constrained systems, or in performance-critical loops where an error is likely to occur regularly and the code to handle it is tightly coupled to the code that reports it. In any case, it's impossible to know the actual cost of exceptions without profiling and measuring. Even in those rare cases when the cost is significant, you can weigh it against the increased correctness, easier maintainability, and other advantages that are provided by a well-designed exception policy.
+예외가 발생하지 않으면 예외 메커니즘은 성능 비용이 매우 적습니다. 예외가 발생하면 스택 통과 및 해제 비용은 함수 호출 비용과 거의 비슷합니다. **Try** 블록을 입력 한 후 호출 스택을 추적 하려면 추가 데이터 구조가 필요 하며, 예외가 throw 되는 경우 스택을 해제 하려면 추가 지침이 필요 합니다. 그러나 대부분의 시나리오에서 성능 및 메모리 사용 공간 비용은 중요하지 않습니다. 성능에 예외가 미치는 부정적인 영향은 매우 메모리 제약이 심한 시스템이나 오류가 정기적으로 발생하고 이를 처리하는 코드가 이를 보고하는 코드와 밀접하게 결합되어 있는, 성능이 중요한 루프에서만 중요합니다. 어떤 경우든 프로파일링하거나 측정하지 않고 예외의 실제 비용을 알 수는 없습니다. 드문 경우이지만 비용이 중요한 경우라도 정확성이 향상되고 유지 관리가 용이하며 잘 설계된 예외 정책에 의해 제공되는 다른 장점에 대해 비교하여 평가할 수 있습니다.
 
-## <a name="exceptions-vs-assertions"></a>Exceptions vs. assertions
+## <a name="exceptions-vs-assertions"></a>예외 vs 어셜션
 
-Exceptions and asserts are two distinct mechanisms for detecting run-time errors in a program. Use asserts to test for conditions during development that should never be true if all your code is correct. There is no point in handling such an error by using an exception because the error indicates that something in the code has to be fixed, and doesn't represent a condition that the program has to recover from at run time. An assert stops execution at the statement so that you can inspect the program state in the debugger; an exception continues execution from the first appropriate catch handler. Use exceptions to check error conditions that might occur at run time even if your code is correct, for example, "file not found" or "out of memory." You might want to recover from these conditions, even if the recovery just outputs a message to a log and ends the program. Always check arguments to public functions by using exceptions. Even if your function is error-free, you might not have complete control over arguments that a user might pass to it.
+예외와 어설션은 프로그램에서 런타임 오류를 감지하기 위한 두 가지 고유 메커니즘입니다. 어설션을 사용하여 개발 중에 모든 코드가 올바른 경우 절대로 맞지 않는 조건을 테스트합니다. 예외를 사용하여 이러한 오류를 처리하는 것은 의미가 없습니다. 오류는 코드의 무언가를 수정해야 한다는 것을 나타내며, 프로그램이 런타임 시 복구해야 하는 조건을 나타내지는 않기 때문입니다. 어설션은 명령문에서 실행을 중지하므로 디버거에서 프로그램 상태를 검사할 수 있습니다. 예외는 첫 번째 적절한 catch 핸들러에서 계속 실행됩니다. "파일을 찾을 수 없음" 또는 "메모리 부족"과 같이 코드가 올바른 경우에도 런타임에 발생할 수 있는 오류 조건을 확인하려면 예외를 사용하세요. 복구 과정이 단지 메시지를 로그에 출력하고 프로그램을 종료하더라도 이러한 조건에서 복구하고자 할 수 있습니다. 항상 예외를 사용하여 공용 함수에 대한 인수를 확인하세요. 함수에 오류가 없더라도 사용자가 전달할 수 있는 인수를 완전히 제어하지 못할 수 있습니다.
 
-## <a name="c-exceptions-versus-windows-seh-exceptions"></a>C++ exceptions versus Windows SEH exceptions
+## <a name="c-exceptions-versus-windows-seh-exceptions"></a>Windows SEH 예외 vs C++ 예외
 
-Both C and C++ programs can use the structured exception handling (SEH) mechanism in the Windows operating system. The concepts in SEH resemble those in C++ exceptions, except that SEH uses the **__try**, **__except**, and **__finally** constructs instead of **try** and **catch**. In the Microsoft C++ compiler (MSVC), C++ exceptions are implemented for SEH. However, when you write C++ code, use the C++ exception syntax.
+C 및 C++ 프로그램 모두 Windows 운영 체제에서 구조적 예외 처리(SEH) 메커니즘을 사용할 수 있습니다. Seh의 C++ 개념은 예외의 개념과 유사 합니다. 단, seh는 **try** 및 **catch**대신 **__try**, **__except**및 **__finally** 구문을 사용 합니다. Microsoft C++ 컴파일러(MSVC)에서는 SEH에 대해 C++ 예외가 구현됩니다. 그러나 C++ 코드를 작성할 때는 C++ 예외 구문을 사용하세요.
 
-For more information about SEH, see [Structured Exception Handling (C/C++)](structured-exception-handling-c-cpp.md).
+SEH에 대 한 자세한 내용은 [구조적 예외 처리 (C/C++)](structured-exception-handling-c-cpp.md)를 참조 하세요.
 
-## <a name="exception-specifications-and-noexcept"></a>Exception specifications and noexcept
+## <a name="exception-specifications-and-noexcept"></a>예외 사양 및 noexcept
 
-Exception specifications were introduced in C++ as a way to specify the exceptions that a function might throw. However, exception specifications proved problematic in practice, and are deprecated in the C++11 draft standard. We recommend that you do not use exception specifications except for `throw()`, which indicates that the function allows no exceptions to escape. If you must use exception specifications of the type `throw(`*type*`)`, be aware that MSVC departs from the standard in certain ways. For more information, see [Exception Specifications (throw)](exception-specifications-throw-cpp.md). The `noexcept` specifier is introduced in C++11 as the preferred alternative to `throw()`.
+예외 사양은 함수에서 발생할 수 있는 예외를 지정하는 방식으로 C++에 도입되었습니다. 그러나 예외 사양은 실제로 문제가 있는 것으로 나타났으며 C++11 초안 표준에서는 더 이상 사용되지 않습니다. `throw()`를 제외 하 고 예외 사양을 사용 하지 않는 것이 좋습니다 .이는 함수에서 이스케이프할 예외를 허용 하지 않음을 나타냅니다. *형식`)``throw(`형식* 에 대 한 예외 사양을 사용 해야 하는 경우에는 MSVC 분리를 특정 방식으로 표준에서 지정 해야 합니다. 자세한 내용은 [예외 사양 (throw)](exception-specifications-throw-cpp.md)을 참조 하세요. `noexcept` 지정자는 `throw()`대신 c + + 11에서 기본 설정 된 방법으로 도입 되었습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [방법: 예외 코드와 예외가 아닌 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>

@@ -1,5 +1,5 @@
 ---
-title: DLL loading exception codes (C/C++)
+title: DLL 로드 예외 코드 (C/C++)
 ms.date: 11/19/2019
 f1_keywords:
 - ERROR_MOD_NOT_FOUND
@@ -21,13 +21,13 @@ ms.locfileid: "74243848"
 ---
 # <a name="exceptions-cc"></a>예외(C/C++)
 
-Two exception codes can be raised when failures are encountered:
+오류가 발생 하면 두 가지 예외 코드가 발생할 수 있습니다.
 
-- For a **LoadLibrary** failure
+- **LoadLibrary** 오류
 
-- For a **GetProcAddress** failure
+- **GetProcAddress** 오류의 경우
 
-Here is the exception information:
+예외 정보는 다음과 같습니다.
 
 ```
 //
@@ -37,12 +37,12 @@ Here is the exception information:
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-The exception codes thrown are the standard VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) and VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) values. The exception passes a pointer to a **DelayLoadInfo** structure in the LPDWORD value that can be retrieved by **GetExceptionInformation** in the [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) structure, ExceptionInformation[0] field.
+Throw 된 예외 코드는 표준 VcppException (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) 및 VcppException (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) 값입니다. 예외는 [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) 구조, exceptioninformation [0] 필드의 **getexceptioninformation** 에서 검색할 수 있는 Lpdword 값의 **delayloadinfo** 구조에 대 한 포인터를 전달 합니다.
 
-Additionally, if the incorrect bits are set in the grAttrs field, the exception ERROR_INVALID_PARAMETER is thrown. This exception is, for all intents and purposes, fatal.
+또한 grAttrs 필드에 잘못 된 비트가 설정 되어 있으면 ERROR_INVALID_PARAMETER 예외가 throw 됩니다. 이 예외는 모든 의도 및 목적을 위해 치명적입니다.
 
-See [Structure and Constant Definitions](structure-and-constant-definitions.md) for more information.
+자세한 내용은 [구조체 및 상수 정의](structure-and-constant-definitions.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [오류 처리 및 알림](error-handling-and-notification.md)

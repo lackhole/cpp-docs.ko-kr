@@ -3648,24 +3648,7 @@
             - name: C++ 언어 참조
               href: cpp/cpp-language-reference.md
             - name: C++(최신 C++) 시작하기
-              expanded: false
-              items:
-                - name: C++(최신 C++) 시작하기
-                  href: cpp/welcome-back-to-cpp-modern-cpp.md
-                - name: 균일 초기화 및 생성자 위임
-                  href: cpp/uniform-initialization-and-delegating-constructors.md
-                - name: 개체 수명 및 리소스 관리(최신 C++)
-                  href: cpp/object-lifetime-and-resource-management-modern-cpp.md
-                - name: 개체가 리소스 소유(RAII)
-                  href: cpp/objects-own-resources-raii.md
-                - name: 컨테이너(최신 C++)
-                  href: cpp/containers-modern-cpp.md
-                - name: 알고리즘(최신 C++)
-                  href: cpp/algorithms-modern-cpp.md
-                - name: 문자열 및 I/O 서식 지정(최신 C++)
-                  href: cpp/string-and-i-o-formatting-modern-cpp.md
-                - name: ABI 경계의 이식성(최신 C++)
-                  href: cpp/portability-at-abi-boundaries-modern-cpp.md
+              href: cpp/welcome-back-to-cpp-modern-cpp.md
             - name: 어휘 규칙
               expanded: false
               items:
@@ -3807,46 +3790,55 @@
                   href: cpp/alignof-and-alignas-cpp.md
                 - name: 'Trivial, 표준 레이아웃 및 POD 형식'
                   href: cpp/trivial-standard-layout-and-pod-types.md
-            - name: 기본 형식
-              expanded: false
-              items:
-                - name: 기본 형식
-                  href: cpp/fundamental-types-cpp.md
-                - name: 데이터 형식 범위
-                  href: cpp/data-type-ranges.md
-                - name: nullptr
-                  href: cpp/nullptr.md
-                - name: void
-                  href: cpp/void-cpp.md
-                - name: bool
-                  href: cpp/bool-cpp.md
-                - name: false
-                  href: cpp/false-cpp.md
-                - name: true
-                  href: cpp/true-cpp.md
-                - name: 'char, wchar_t, char16_t, char32_t'
-                  href: cpp/char-wchar-t-char16-t-char32-t.md
-                - name: '__int8, __int16, __int32, __int64'
-                  href: cpp/int8-int16-int32-int64.md
-                - name: __m64
-                  href: cpp/m64.md
-                - name: __m128
-                  href: cpp/m128.md
-                - name: __m128d
-                  href: cpp/m128d.md
-                - name: __m128i
-                  href: cpp/m128i.md
-                - name: '__ptr32, __ptr64'
-                  href: cpp/ptr32-ptr64.md
-                - name: 숫자 제한
+                - name: 형식 시스템
                   expanded: false
                   items:
-                    - name: 숫자 제한
-                      href: cpp/numerical-limits-cpp.md
-                    - name: 정수 제한
-                      href: cpp/integer-limits.md
-                    - name: 부동 한계
-                      href: cpp/floating-limits.md
+                    - name: 형식 시스템
+                      href: cpp/cpp-type-system-modern-cpp.md
+                    - name: 값 형식
+                      href: cpp/value-types-modern-cpp.md
+                    - name: 형식 변환 및 형식 안전성
+                      href: cpp/type-conversions-and-type-safety-modern-cpp.md
+                    - name: 기본 형식
+                      expanded: false
+                      items:
+                        - name: 기본 형식
+                          href: cpp/fundamental-types-cpp.md
+                        - name: 데이터 형식 범위
+                          href: cpp/data-type-ranges.md
+                        - name: nullptr
+                          href: cpp/nullptr.md
+                        - name: void
+                          href: cpp/void-cpp.md
+                        - name: bool
+                          href: cpp/bool-cpp.md
+                        - name: false
+                          href: cpp/false-cpp.md
+                        - name: true
+                          href: cpp/true-cpp.md
+                        - name: 'char, wchar_t, char16_t, char32_t'
+                          href: cpp/char-wchar-t-char16-t-char32-t.md
+                        - name: '__int8, __int16, __int32, __int64'
+                          href: cpp/int8-int16-int32-int64.md
+                        - name: __m64
+                          href: cpp/m64.md
+                        - name: __m128
+                          href: cpp/m128.md
+                        - name: __m128d
+                          href: cpp/m128d.md
+                        - name: __m128i
+                          href: cpp/m128i.md
+                        - name: '__ptr32, __ptr64'
+                          href: cpp/ptr32-ptr64.md
+                        - name: 숫자 제한
+                          expanded: false
+                          items:
+                            - name: 숫자 제한
+                              href: cpp/numerical-limits-cpp.md
+                            - name: 정수 제한
+                              href: cpp/integer-limits.md
+                            - name: 부동 한계
+                              href: cpp/floating-limits.md
                 - name: 표준 변환
                   href: cpp/standard-conversions.md
                 - name: 형식 변환 및 형식 안전성
@@ -4107,6 +4099,12 @@
                       href: cpp/public-cpp.md
                 - name: 중괄호 초기화
                   href: cpp/initializing-classes-and-structs-without-constructors-cpp.md
+                - name: 개체 수명 및 리소스 관리(RAII)
+                  href: cpp/object-lifetime-and-resource-management-modern-cpp.md
+                - name: 컴파일 시간 캡슐화에 대한 Pimpl 관용구
+                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
+                - name: ABI 경계의 이식성
+                  href: cpp/portability-at-abi-boundaries-modern-cpp.md
                 - name: 생성자
                   expanded: false
                   items:
@@ -9790,6 +9788,8 @@
               items:
                 - name: iostream 프로그래밍
                   href: standard-library/iostream-programming.md
+                - name: 문자열 및 I/O 서식 지정
+                  href: text/string-and-i-o-formatting-modern-cpp.md
                 - name: 스트림이란
                   expanded: false
                   items:

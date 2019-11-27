@@ -24,7 +24,7 @@ Windows에서는 더 이상 Visual Studio C 및 C++ 개발을 지원하지 않�
 > * Linux 머신에 대한 연결 추가
 > * Linux에서 동일한 대상 빌드 및 디버그
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>필수 조건
 
 * 플랫폼 간 C++ 개발용 Visual Studio 설정
   * 먼저 [Visual Studio를 설치](https://visualstudio.microsoft.com/vs/) 하 고 **워크 로드를 C++** 사용 하 여 **데스크톱 개발 C++**  및 Linux 개발을 선택 합니다. 이 최소 설치는 3gb에 불과합니다. 다운로드 속도에 따라 설치는 10 분 이상 소요 되어서는 안 됩니다.

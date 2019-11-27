@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .BREAK directive
 ms.assetid: 4f55dfce-ff41-4a68-9423-b0077dfc9206
-ms.openlocfilehash: b08f1953aaf6b77925f38739c5ad79cec283617e
-ms.sourcegitcommit: 45f1d889df633f0f7e4a8e813b46fa73c9858b81
+ms.openlocfilehash: e4692e38cbbdda4ad09bdfa248c9bc386c27dd3d
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73703047"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398590"
 ---
 # <a name="break-32-bit-masm"></a>. 중단 (32 비트 MASM)
 
@@ -19,8 +19,8 @@ ms.locfileid: "73703047"
 
 ## <a name="syntax"></a>구문
 
-> . BREAK [[. IF condition]]
+> **.** ⟦**를 중단 합니다. IF** *condition*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](../../assembler/masm/directives-reference.md)

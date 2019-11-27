@@ -84,7 +84,7 @@ struct CDaoFieldInfo
 |----------|--------------------|-----------------|
 |`dbBoolean`|1바이트|예/아니요 (True/False와 동일)|
 |`dbByte`|1|Byte|
-|`dbInteger`|2|String|
+|`dbInteger`|2|정수|
 |`dbLong`|4|Long|
 |`dbCurrency`|8|통화 ([COleCurrency](../../mfc/reference/colecurrency-class.md))|
 |`dbSingle`|4|Single|
@@ -142,7 +142,7 @@ DAO 필드 개체에 Null이 아닌 값이 필요한 지 여부를 나타냅니�
 *m_strDefaultValue*<br/>
 DAO field 개체의 기본값입니다. 새 레코드가 생성 되 면 DefaultValue 속성 설정이 자동으로 필드 값으로 입력 됩니다. 자세한 내용은 DAO 도움말의 "DefaultValue 속성" 항목을 참조 하십시오. [CDaoTableDef:: CreateField](../../mfc/reference/cdaotabledef-class.md#createfield)를 사용 하 여 테이블 정의에 대해이 속성을 설정할 수 있습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 위의 기본, 보조 및 모든에 대 한 참조는 [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getfieldinfo), [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo)및 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)클래스의 `GetFieldInfo` 멤버 함수에서 정보를 반환 하는 방법을 표시 합니다.
 
@@ -154,7 +154,7 @@ Field 개체는 MFC 클래스로 표현 되지 않습니다. 대신, 다음 클�
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxdao.h
+**헤더:** afxdao
 
 ## <a name="see-also"></a>참고 항목
 

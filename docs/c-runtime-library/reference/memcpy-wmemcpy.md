@@ -36,7 +36,7 @@ ms.locfileid: "74303293"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 
-버퍼 간에 바이트를 복사합니다. 이러한 기능의 더 안전한 버전을 사용할 수 있습니다. [memcpy_s, wmemcpy_s](memcpy-s-wmemcpy-s.md)를 참조하세요.
+버퍼 간에 바이트를 복사합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [memcpy_s, wmemcpy_s](memcpy-s-wmemcpy-s.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -68,7 +68,7 @@ wchar_t *wmemcpy(
 
 *Dest*의 값입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **memcpy** 복사본은 *src* 에서 *dest*로 바이트 *수를 계산* 합니다. **wmemcpy** 복사본은 와이드 문자 (2 바이트)를 *계산* 합니다. 원본과 대상이 겹치면 **memcpy** 의 동작이 정의 되지 않습니다. **Memmove** 를 사용 하 여 겹치는 영역을 처리할 수 있습니다.
 
@@ -87,7 +87,7 @@ wchar_t *wmemcpy(
 #include <memory.h>
 ```
 
-또는
+로 구분하거나 여러
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -101,7 +101,7 @@ wchar_t *wmemcpy(
 |**memcpy**|\<memory.h> 또는 \<string.h>|
 |**wmemcpy**|\<wchar.h>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 

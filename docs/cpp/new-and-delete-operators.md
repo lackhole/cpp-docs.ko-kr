@@ -17,38 +17,38 @@ ms.locfileid: "74246443"
 ---
 # <a name="new-and-delete-operators"></a>new 및 delete 연산자
 
-C++ supports dynamic allocation and deallocation of objects using the [new](new-operator-cpp.md) and [delete](delete-operator-cpp.md) operators. 이러한 연산자는 사용 가능한 저장소라고 하는 풀에서 개체에 대한 메모리를 할당합니다. The **new** operator calls the special function [operator new](new-operator-cpp.md), and the **delete** operator calls the special function [operator delete](delete-operator-cpp.md).
+C++[new](new-operator-cpp.md) 및 [delete](delete-operator-cpp.md) 연산자를 사용 하 여 개체의 동적 할당 및 할당 취소를 지원 합니다. 이러한 연산자는 사용 가능한 저장소라고 하는 풀에서 개체에 대한 메모리를 할당합니다. **New** 연산자는 특수 함수 [operator new](new-operator-cpp.md)를 호출 하 고 **delete** 연산자는 특수 함수 [operator delete](delete-operator-cpp.md)를 호출 합니다.
 
-The **new** function in the C++ Standard Library supports the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of **new**, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default **operator new** in the C++ Standard Library no longer functions.
+표준 라이브러리의 **새** 함수는 C++ 표준에 지정 된 동작을 지원 합니다 .이는 메모리 할당이 실패 하는 경우 std:: bad_alloc 예외를 throw 하는 것입니다. C++ 예외가 발생 하지 않는 **새**버전을 계속 사용 하려면 프로그램을 nothrownew에 연결 합니다. 그러나 nothrownew를 사용 하 여 연결 하면 C++ 표준 라이브러리의 기본 **operator new** 가 더 이상 작동 하지 않습니다.
 
-For a list of the library files that comprise the C Runtime Library and the C++ Standard Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).
+C 런타임 라이브러리와 C++ 표준 라이브러리를 구성 하는 라이브러리 파일의 목록은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조 하세요.
 
-##  <a id="new_operator"> </a> The new operator
+##  <a id="new_operator"></a> New 연산자
 
-When a statement such as the following is encountered in a program, it translates into a call to the function **operator new**:
+프로그램에서 다음과 같은 문이 발견 되 면 함수 **operator new**에 대 한 호출로 변환 됩니다.
 
 ```cpp
 char *pch = new char[BUFFER_SIZE];
 ```
 
-If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** throws a `std::bad_alloc` exception, or returns **nullptr** if you have linked in non-throwing **operator new** support.
+요청이 0 바이트의 저장소에 대 한 요청인 경우 **operator new** 는 고유 개체에 대 한 포인터를 반환 합니다. 즉, **operator new** 에 대 한 반복 호출은 다른 포인터를 반환 합니다. 할당 요청을 위한 메모리가 부족 한 경우 **operator new** 는 `std::bad_alloc` 예외를 throw 하거나, 비 throw **연산자 새** 지원에 연결 된 경우 **nullptr** 를 반환 합니다.
 
-You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) for more information. For more details on the recovery scheme, see the Handling insufficient memory section of this topic.
+메모리를 확보 하 고 할당을 다시 시도 하는 루틴을 작성할 수 있습니다. 자세한 내용은 [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) 를 참조 하세요. 복구 체계에 대 한 자세한 내용은이 항목의 메모리 부족 처리 섹션을 참조 하십시오.
 
-The two scopes for **operator new** functions are described in the following table.
+**Operator new** 함수에 대 한 두 범위는 다음 표에 설명 되어 있습니다.
 
-### <a name="scope-for-operator-new-functions"></a>Scope for operator new functions
+### <a name="scope-for-operator-new-functions"></a>Operator 새 함수의 범위
 
-|연산자|Scope|
+|연산자|범위|
 |--------------|-----------|
-|**::operator new**|Global|
-|*class-name* **::operator new**|인스턴스|
+|**:: operator new**|Global|
+|*클래스-이름* **:: operator new**|클래스|
 
-The first argument to **operator new** must be of type `size_t` (a type defined in \<stddef.h>), and the return type is always **void** <strong>\*</strong>.
+**Operator new** 의 첫 번째 인수는 `size_t` 형식 이어야 하며 (\<stddef. h >에 정의 된 형식) 반환 형식은 항상 **void** <strong>\*</strong>입니다.
 
-The global **operator new** function is called when the **new** operator is used to allocate objects of built-in types, objects of class type that do not contain user-defined **operator new** functions, and arrays of any type. When the **new** operator is used to allocate objects of a class type where an **operator new** is defined, that class's **operator new** is called.
+Global **operator new** 함수는 **new** 연산자를 사용 하 여 기본 제공 형식의 개체, 사용자 정의 **operator 새** 함수를 포함 하지 않는 클래스 형식의 개체 및 모든 형식의 배열을 할당할 때 호출 됩니다. **New 연산자를** 사용 하 여 **operator new** 가 정의 된 클래스 형식의 개체를 할당 하는 경우 해당 클래스의 **operator new** 가 호출 됩니다.
 
-An **operator new** function defined for a class is a static member function (which cannot, therefore, be virtual) that hides the global **operator new** function for objects of that class type. Consider the case where **new** is used to allocate and set memory to a given value:
+클래스에 대해 정의 된 **operator new** 함수는 해당 클래스 형식의 개체에 대 한 전역 **operator new** 함수를 숨기는 정적 멤버 함수 (따라서 가상 일 수 없음)입니다. **새** 를 사용 하 여 메모리를 할당 하 고 지정 된 값으로 설정 하는 경우를 고려 합니다.
 
 ```cpp
 #include <malloc.h>
@@ -77,13 +77,13 @@ int main()
 }
 ```
 
-The argument supplied in parentheses to **new** is passed to `Blanks::operator new` as the `chInit` argument. However, the global **operator new** function is hidden, causing code such as the following to generate an error:
+**New** 에 대 한 괄호에 제공 된 인수는 `Blanks::operator new` `chInit` 인수로 전달 됩니다. 그러나 전역 **operator new** 함수가 숨겨져 있어 다음과 같은 코드가 오류를 발생 시킵니다.
 
 ```cpp
 Blanks *SomeBlanks = new Blanks;
 ```
 
-The compiler supports member array **new** and **delete** operators in a class declaration. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+컴파일러는 클래스 선언에서 멤버 배열 **new** 및 **delete** 연산자를 지원 합니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 class MyClass
@@ -107,7 +107,7 @@ int main()
 
 ### <a name="handling-insufficient-memory"></a>메모리 부족 처리
 
-Testing for failed memory allocation can be done as shown here:
+실패 한 메모리 할당에 대 한 테스트는 다음과 같이 수행할 수 있습니다.
 
 ```cpp
 #include <iostream>
@@ -122,28 +122,28 @@ int main() {
 }
 ```
 
-There is another way to handle failed memory allocation requests. Write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time function.
+실패 한 메모리 할당 요청을 처리 하는 또 다른 방법이 있습니다. 이러한 오류를 처리 하는 사용자 지정 복구 루틴을 작성 한 다음 [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) 런타임 함수를 호출 하 여 함수를 등록 합니다.
 
-##  <a id="delete_operator"> </a> The delete operator
+##  <a id="delete_operator"></a> Delete 연산자
 
-Memory that is dynamically allocated using the **new** operator can be freed using the **delete** operator. The delete operator calls the **operator delete** function, which frees memory back to the available pool. Using the **delete** operator also causes the class destructor (if there is one) to be called.
+**New** 연산자를 사용 하 여 동적으로 할당 되는 메모리는 **delete** 연산자를 사용 하 여 해제할 수 있습니다. Delete 연산자는 사용 가능한 풀로 메모리를 다시 확보 하는 **operator delete** 함수를 호출 합니다. **Delete** 연산자를 사용 하면 클래스 소멸자 (있는 경우)도 호출 됩니다.
 
-There are global and class-scoped **operator delete** functions. Only one **operator delete** function can be defined for a given class; if defined, it hides the global **operator delete** function. The global **operator delete** function is always called for arrays of any type.
+전역 및 클래스 범위의 **operator delete** 함수가 있습니다. 지정 된 클래스에 대해 하나의 **operator delete** 함수만 정의할 수 있습니다. 정의 된 경우 전역 **operator delete** 함수를 숨깁니다. 전역 **operator delete** 함수는 항상 모든 형식의 배열에 대해 호출 됩니다.
 
-The global **operator delete** function. Two forms exist for the  global **operator delete**  and class-member **operator delete** functions:
+전역 **operator delete** 함수입니다. 전역 **operator delete** 및 클래스 멤버 **operator delete** 함수에는 두 가지 형태가 있습니다.
 
 ```cpp
 void operator delete( void * );
 void operator delete( void *, size_t );
 ```
 
-Only one of the preceding two forms can be present for a given class. The first form takes a single argument of type `void *`, which contains a pointer to the object to deallocate. The second form—sized deallocation—takes two arguments, the first of which is a pointer to the memory block to deallocate and the second of which is the number of bytes to deallocate. The return type of both forms is **void** (**operator delete** cannot return a value).
+지정 된 클래스에 대해 앞의 두 형태 중 하나만 있을 수 있습니다. 첫 번째 폼은 할당을 취소할 개체에 대 한 포인터를 포함 하는 `void *`형식의 단일 인수를 사용 합니다. 두 번째 형태 (크기 할당 취소)는 두 개의 인수를 사용 합니다. 첫 번째는 할당을 취소할 메모리 블록에 대 한 포인터이 고 두 번째는 할당을 취소할 바이트 수입니다. 두 폼의 반환 형식은 **void** 입니다 (**operator delete** 는 값을 반환할 수 없음).
 
-The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached. The second form is useful when an **operator delete** function from a base class is used to delete an object of a derived class.
+두 번째 폼의 목적은 삭제할 개체의 올바른 크기 범주에 대 한 검색 속도를 높이는 것입니다 .이는 할당 자체 근처에 저장 되지 않는 경우가 캐시 되지 않은 가능성이 높습니다. 두 번째 형태는 기본 클래스의 **operator delete** 함수를 사용 하 여 파생 클래스의 개체를 삭제 하는 경우에 유용 합니다.
 
-The **operator delete** function is static; therefore, it cannot be virtual. The **operator delete** function obeys access control, as described in [Member-Access Control](member-access-control-cpp.md).
+**Operator delete** 함수는 정적입니다. 따라서 가상 일 수 없습니다. **Operator delete** 함수는 [멤버 Access Control](member-access-control-cpp.md)에 설명 된 대로 access control을 따르는 합니다.
 
-The following example shows user-defined **operator new** and **operator delete** functions designed to log allocations and deallocations of memory:
+다음 예에서는 할당을 기록 하 고 메모리 할당을 취소 하기 위해 설계 된 사용자 정의 **operator new** 및 **operator delete** 함수를 보여 줍니다.
 
 ```cpp
 #include <iostream>
@@ -191,9 +191,9 @@ int main( int argc, char *argv[] ) {
 }
 ```
 
-앞의 코드를 사용하여 "메모리 누수"를 검색할 수 있습니다. 메모리 누수는 사용 가능한 저장소에 할당되었지만 비워지지 않은 메모리를 의미합니다. To perform this detection, the global **new** and **delete** operators are redefined to count allocation and deallocation of memory.
+앞의 코드를 사용하여 "메모리 누수"를 검색할 수 있습니다. 메모리 누수는 사용 가능한 저장소에 할당되었지만 비워지지 않은 메모리를 의미합니다. 이 검색을 수행 하기 위해 global **new** 및 **delete** 연산자를 다시 정의 하 여 메모리 할당 및 할당 취소를 계산 합니다.
 
-The compiler supports member array **new** and **delete** operators in a class declaration. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+컴파일러는 클래스 선언에서 멤버 배열 **new** 및 **delete** 연산자를 지원 합니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp

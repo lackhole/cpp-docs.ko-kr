@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator .TYPE
 - .TYPE operator
 ms.assetid: bf4a4be6-d019-40df-a966-8f8f34f775ea
-ms.openlocfilehash: 5e51ccd682129c618ccafd2e3ef26ed093b9c5a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 476026bddb4629b231baa76322f5cf0e835cd40b
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62201079"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74397040"
 ---
 # <a name="operator-type"></a>연산자 .TYPE
 
-참조 [OPATTR](../../assembler/masm/operator-opattr.md)합니다.
+[Opattr](../../assembler/masm/operator-opattr.md)을 참조 하세요.
 
 ## <a name="syntax"></a>구문
 
-> . 유형 식
+> **. 유형** *식*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

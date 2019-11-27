@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - '@fardata symbol'
 ms.assetid: b1e096b3-54fc-44ef-bbe6-0c6d5f5d206d
-ms.openlocfilehash: c5a659c0592103ac5c52729c09d37cbe94d3bad2
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 0baf79493db318b69e346084963cb605a1738bed
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302616"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74399063"
 ---
 # <a name="fardata"></a>\@fardata
 
@@ -23,4 +23,4 @@ ms.locfileid: "74302616"
 
 ## <a name="see-also"></a>참고 항목
 
-[기호 참조](../../assembler/masm/symbols-reference.md)
+[기호 참조](symbols-reference.md)

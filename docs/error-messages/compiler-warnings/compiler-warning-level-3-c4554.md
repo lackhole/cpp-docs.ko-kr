@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (level 3) C4554
+title: 컴파일러 경고(수준 3) C4554
 ms.date: 11/04/2016
 f1_keywords:
 - C4554
@@ -13,11 +13,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188888"
 ---
-# <a name="compiler-warning-level-3-c4554"></a>Compiler Warning (level 3) C4554
+# <a name="compiler-warning-level-3-c4554"></a>컴파일러 경고(수준 3) C4554
 
-'operator' : check operator precedence for possible error; use parentheses to clarify precedence
+' operator ': 연산자 우선 순위를 검사 하 여 가능한 오류를 확인 하십시오. 괄호를 사용 하 여 우선 순위를 명확 하 게 설명
 
-The following sample generates C4554:
+다음 샘플에서는 C4554를 생성 합니다.
 
 ```cpp
 // C4554.cpp

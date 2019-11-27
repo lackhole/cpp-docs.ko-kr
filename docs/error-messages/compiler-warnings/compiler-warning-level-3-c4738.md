@@ -1,5 +1,5 @@
 ---
-title: Compiler Warning (Level 3) C4738
+title: 컴파일러 경고(수준 3) C4738
 ms.date: 11/04/2016
 f1_keywords:
 - C4738
@@ -13,21 +13,21 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74189405"
 ---
-# <a name="compiler-warning-level-3-c4738"></a>Compiler Warning (Level 3) C4738
+# <a name="compiler-warning-level-3-c4738"></a>컴파일러 경고(수준 3) C4738
 
 32비트 float 결과를 메모리에 저장하면 성능이 저하될 수 있습니다.
 
-C4738 warns that the result of an assignment, cast, passed argument, or other operation may need to be rounded or that the operation ran out of registers and needed to use memory (spilling). This can result in performance loss.
+C4738는 할당, 캐스트, 전달 된 인수 또는 기타 작업의 결과를 반올림 하거나 작업에서 레지스터를 모두 실행 하 고 메모리를 사용 하는 데 필요한 (분산)를 경고 합니다. 이로 인해 성능이 저하 될 수 있습니다.
 
-To resolve this warning and avoid rounding, compile with [/fp:fast](../../build/reference/fp-specify-floating-point-behavior.md) or use `double` instead of `float`.
+이 경고를 해결 하 고 반올림을 방지 하려면 [/fp: fast](../../build/reference/fp-specify-floating-point-behavior.md) 로 컴파일하거나 `float`대신 `double`를 사용 합니다.
 
-To resolve this warning and avoid running out of registers, change the order of computation and modify your use of inlining
+이 경고를 해결 하 고 레지스터의 실행을 방지 하려면 계산 순서를 변경 하 고 인라인 사용을 수정 합니다.
 
 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
-The following sample generates C4738:
+다음 샘플에서는 C4738를 생성 합니다.
 
 ```cpp
 // C4738.cpp

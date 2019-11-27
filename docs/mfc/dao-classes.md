@@ -55,13 +55,13 @@ DAO 데이터베이스 클래스에서 사용하는 DAO 레코드 필드 교환(
 비트맵과 같은 BLOB (binary large object)의 저장소에 대 한 핸들을 캡슐화 합니다. `CLongBinary` 개체는 데이터베이스 테이블에 저장 된 대량 데이터 개체를 관리 하는 데 사용 됩니다.
 
 [COleCurrency](../mfc/reference/colecurrency-class.md)<br/>
-소수점 앞에 15 자릿수, 소수점 뒤에 4 자릿수를 포함하는 고정 소수점 산술 형식인 OLE 자동화 형식 **CURRENCY**에 대한 래퍼입니다.
+소수점 앞에 15 자리가 있고 그 뒤에 4 자리가 있는 고정 소수점 산술 형식인 OLE 자동화 형식 **통화**에 대 한 래퍼입니다.
 
 [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md)<br/>
-OLE 자동화 형식 **DATE**에 대한 래퍼입니다. 날짜 및 시간 값을 나타냅니다.
+OLE 자동화 형식 **날짜**에 대 한 래퍼입니다. 날짜 및 시간 값을 나타냅니다.
 
 [COleVariant](../mfc/reference/colevariant-class.md)<br/>
-OLE 자동화 형식 **VARIANT**에 대한 래퍼입니다. **VARIANT**의 데이터는 여러 형식으로 저장할 수 있습니다.
+OLE 자동화 유형 **변형**에 대 한 래퍼입니다. **VARIANT**의 데이터는 다양 한 형식으로 저장할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

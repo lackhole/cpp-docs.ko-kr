@@ -10,21 +10,21 @@ helpviewer_keywords:
 - arithmetic operators [C++], multiplication
 - operators [MASM], multiplication
 ms.assetid: 6a66521c-664f-41c3-8a77-5a948df1e9ad
-ms.openlocfilehash: 8d115d41e9d24cc036fd641669c0f11baa31b756
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78e11a075351f91b9fe47e9c2be72ffa4d557075
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199805"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396624"
 ---
 # <a name="operator-"></a>연산자 *
 
-반환 *expression1* 번 *expression2*합니다.
+*Expression1* 를 *식 2*번 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> expression1 * expression2
+> *expression1* __\*__ *expression2*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

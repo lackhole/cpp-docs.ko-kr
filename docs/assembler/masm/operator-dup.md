@@ -7,21 +7,21 @@ helpviewer_keywords:
 - operator DUP
 - DUP operator
 ms.assetid: ed1e91ea-91ed-43c0-9315-7e532df65a28
-ms.openlocfilehash: 16961df675fbf0e5f3a16e77dfcbd2629fdbab36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c94f1bda75e285e5b271637eaaabdb0c0c4d76ab
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62200881"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396997"
 ---
 # <a name="operator-dup"></a>연산자 DUP
 
-지정 *개수* 선언 수가 *initialvalue*합니다.
+*Initialvalue* *선언의 수를 지정 합니다* .
 
 ## <a name="syntax"></a>구문
 
-> 중복 된 계산 (initialvalue [[, initialvalue]]...)
+> *중복 수* __(__ *initialvalue* ⟦ __,__ *initialvalue* ... ⟧ __)__
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](../../assembler/masm/operators-reference.md)

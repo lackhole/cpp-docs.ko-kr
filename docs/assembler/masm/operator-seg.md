@@ -8,21 +8,21 @@ helpviewer_keywords:
 - operator SEG
 - SEG operator
 ms.assetid: 471733f3-72a0-4024-9861-5cc48c30dd0c
-ms.openlocfilehash: ae82c936a4cac8ff985deba6ef6af923cb3bdfbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0afe3d4825d096a0d12f5d15e63d479e78c3bd7
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62198708"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74396471"
 ---
 # <a name="operator-seg"></a>연산자 SEG
 
-세그먼트를 반환 *식*합니다.
+*식*의 세그먼트를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> SEG 식
+> **SEG** *식*
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[연산자 참조](../../assembler/masm/operators-reference.md)<br/>
+[연산자 참조](operators-reference.md)

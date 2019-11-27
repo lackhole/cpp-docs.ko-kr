@@ -6,25 +6,25 @@ f1_keywords:
 helpviewer_keywords:
 - ELSEIF directive
 ms.assetid: 20a685d6-836e-4e64-902e-4f3daf2e51c2
-ms.openlocfilehash: 1971c71af67f7e8620da3c3371b619b33fc8830e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 75fa24f10129827b0159a5975e28851713316d8b
+ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62203239"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74398428"
 ---
 # <a name="elseif-masm"></a>ELSEIF (MASM)
 
-결합 [ELSE](../../assembler/masm/else-masm.md) 하 고 [IF](../../assembler/masm/if-masm.md) 단일 명령문으로 합니다.
+[ELSE](../../assembler/masm/else-masm.md) 와 [if](../../assembler/masm/if-masm.md) 를 하나의 문으로 결합 합니다.
 
 ## <a name="syntax"></a>구문
 
-> ELSEIF
+> **그렇지**
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-참조 [경우](../../assembler/masm/if-masm.md)합니다.
+[IF](../../assembler/masm/if-masm.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[지시문 참조](../../assembler/masm/directives-reference.md)<br/>
+[지시문 참조](directives-reference.md)
