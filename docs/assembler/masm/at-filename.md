@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399036"
 ---
-# <a name="filename"></a>\@FileName
+# <a name="filename"></a>파일 이름 \@
 
-The base name of the main file being assembled (text macro).
+어셈블된 주 파일의 기본 이름입니다 (텍스트 매크로).
 
 ## <a name="syntax"></a>구문
 
-> **\@FileName**
+> **파일 이름 \@**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

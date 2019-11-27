@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398505"
 ---
-# <a name="else-32-bit-masm"></a>.ELSE (32-bit MASM)
+# <a name="else-32-bit-masm"></a>. ELSE (32 비트 MASM)
 
 ## <a name="syntax"></a>구문
 
@@ -21,8 +21,8 @@ ms.locfileid: "74398505"
 
 ## <a name="remarks"></a>주의
 
-(32-bit MASM only.) See [.IF](../../assembler/masm/dot-if.md).
+(32 비트 MASM에만 해당) [을 참조 하세요. 이면이](../../assembler/masm/dot-if.md)고,
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

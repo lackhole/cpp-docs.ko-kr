@@ -15,7 +15,7 @@ ms.locfileid: "74398561"
 ---
 # <a name="const"></a>.CONST
 
-When used with [.MODEL](../../assembler/masm/dot-model.md), starts a constant data segment (with segment name **CONST**).
+과 함께 사용 [됩니다. 모델](../../assembler/masm/dot-model.md)에서 상수 데이터 세그먼트 (세그먼트 이름 **CONST**)를 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), starts a constant da
 
 ## <a name="remarks"></a>주의
 
-This segment has the read-only attribute.
+이 세그먼트에는 읽기 전용 특성이 있습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

@@ -15,12 +15,12 @@ ms.locfileid: "74397626"
 ---
 # <a name="ends-masm"></a>ENDS (MASM)
 
-Marks the end of segment, structure, or union *name* previously begun with [SEGMENT](../../assembler/masm/segment.md), [STRUCT](../../assembler/masm/struct-masm.md), [UNION](../../assembler/masm/union.md), or a simplified segment directive.
+세그먼트, [구조체,](../../assembler/masm/struct-masm.md) [공용](../../assembler/masm/union.md)구조체 또는 단순화 된 세그먼트 [지시문으로 이전](../../assembler/masm/segment.md)에 시작 된 세그먼트, 구조체 또는 공용 구조체 *이름의* 끝을 표시 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **ENDS**
+> *이름* **끝**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

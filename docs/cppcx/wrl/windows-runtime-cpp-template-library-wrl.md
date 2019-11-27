@@ -3,12 +3,12 @@ title: Windows 런타임 C++ 템플릿 라이브러리(WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 7b99f6429f620b56aec5adbc4b8f15d89cc54264
-ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.openlocfilehash: 7a7b37a32ebaa0bb6ad71c8f710300256589388d
+ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274665"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74541199"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -68,12 +68,12 @@ Windows 런타임 C++ 템플릿 라이브러리를 사용 하 여 기본 com 구
 [IXMLHTTPRequest2](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2) 및 [IXMLHTTPRequest2Callback](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2callback) 인터페이스를 작업과 함께 사용 하 여 HTTP GET 및 POST 요청을 UWP 앱의 웹 서비스에 보내는 방법을 보여 줍니다.
 
 [Bing 지도 여행 최적화 프로그램 샘플](https://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
-연습에 `HttpRequest` [정의 된 클래스를 사용 합니다. 전체 UWP 앱의 컨텍스트에서 작업 및](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) XML HTTP 요청을 사용 하 여 연결
+연습: 전체 UWP 앱의 컨텍스트에서 [작업 및 XML HTTP 요청을 사용 하 여 연결](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) 에 정의 된 `HttpRequest` 클래스를 사용 합니다.
 
 [샘플을 사용 하 여 C++ Windows 런타임 DLL 구성 요소 만들기](https://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 Windows 런타임 C++ 템플릿 라이브러리를 사용 하 여 in-process DLL 구성 요소를 만들고이를/Cx, JavaScript 및 C++ C#에서 사용 하는 방법을 보여 줍니다.
 
-[DirectX 대리석 메 이즈 게임 샘플](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
+[DirectX 대리석 메 이즈 게임 샘플](https://docs.microsoft.com/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
 Windows 런타임 C++ 템플릿 라이브러리를 사용 하 여 전체 3 차원 게임의 컨텍스트에서 DirectX 및 미디어 파운데이션 같은 COM 구성 요소의 수명을 관리 하는 방법을 보여 줍니다.
 
 [데스크톱 앱에서 알림 메시지 보내기 샘플](https://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
@@ -85,7 +85,7 @@ Windows 런타임 C++ 템플릿 라이브러리는 작고 빠른 COM 개체를 �
 
 Windows 런타임 C++ 템플릿 라이브러리는 UWP 앱에 필요한 COM 기능을 지원 합니다. 따라서 다음과 같은 COM 기능에 대한 직접 지원이 생략된다는 점에서 ATL과 구별됩니다.
 
-- 집계
+- 집계(aggregation)
 
 - 재고 구현
 
@@ -109,13 +109,13 @@ Windows 런타임 C++ 템플릿 라이브러리는 몇 가지 기본 개념을 �
 
 ### <a name="comptr"></a>ComPtr
 
-[ComPtr](comptr-class.md) 은 템플릿 매개 변수를 통해 지정된 인터페이스를 나타내는 *스마트 포인터* 형식입니다. `ComPtr` 을 사용하여 인터페이스에서 파생된 개체의 멤버를 액세스할 수 있는 변수를 정의합니다. `ComPtr`은 기본 인터페이스 포인터의 참조 개수를 자동으로 관리하여 참조 횟수가 0이 되면 인터페이스를 릴리스합니다.
+[ComPtr](comptr-class.md) 은 템플릿 매개 변수를 통해 지정된 인터페이스를 나타내는 *스마트 포인터* 형식입니다. `ComPtr` 을 사용하여 인터페이스에서 파생된 개체의 멤버를 액세스할 수 있는 변수를 정의합니다. `ComPtr`은 기본 인터페이스 포인터의 참조 횟수를 자동으로 유지 관리 하 고 참조 횟수가 0이 되 면 인터페이스를 해제 합니다.
 
 ### <a name="runtimeclass"></a>RuntimeClass
 
-[RuntimeClass](runtimeclass-class.md) 는 지정된 인터페이스 집합을 상속받는 인스턴스화된 클래스를 나타냅니다. 개체 `RuntimeClass` 는 하나 이상의 Windows 런타임 COM 인터페이스에 대 한 지원 또는 구성 요소에 대 한 약한 참조의 조합을 제공할 수 있습니다.
+[RuntimeClass](runtimeclass-class.md) 는 지정된 인터페이스 집합을 상속받는 인스턴스화된 클래스를 나타냅니다. `RuntimeClass` 개체는 하나 이상의 Windows 런타임 COM 인터페이스에 대 한 지원 또는 구성 요소에 대 한 약한 참조의 조합을 제공할 수 있습니다.
 
-### <a name="module"></a>Module
+### <a name="module"></a>모듈
 
 [Module](module-class.md) 은 관련 개체의 컬렉션을 나타냅니다. `Module` 개체는 개체를 생성하는 클래스 팩터리와, 다른 애플리케이션이 개체를 사용할 수 있도록 하는 등록을 관리합니다.
 
@@ -125,7 +125,7 @@ Windows 런타임 C++ 템플릿 라이브러리는 몇 가지 기본 개념을 �
 
 ### <a name="eventsource"></a>EventSource
 
-[EventSource](eventsource-class.md) 는 *대리자* 이벤트 처리기를 관리하는 데 사용됩니다. Windows 런타임 C++ 템플릿 라이브러리를 사용 하 여 대리자를 구현 하 `EventSource` 고를 사용 하 여 대리자를 추가, 제거 및 호출 합니다.
+[EventSource](eventsource-class.md) 는 *대리자* 이벤트 처리기를 관리하는 데 사용됩니다. Windows 런타임 C++ 템플릿 라이브러리를 사용 하 여 대리자를 구현 하 고 `EventSource`를 사용 하 여 대리자를 추가, 제거 및 호출 합니다.
 
 ### <a name="asyncbase"></a>AsyncBase
 
@@ -133,11 +133,11 @@ Windows 런타임 C++ 템플릿 라이브러리는 몇 가지 기본 개념을 �
 
 ### <a name="ftmbase"></a>FtmBase
 
-[FtmBase](ftmbase-class.md) 는 자유 스레드된 마샬러 개체를 나타냅니다. `FtmBase`는 GIT(전역 인터페이스 테이블)을 생성하고 마샬링 및 프록시 개체의 관리를 지원합니다.
+[FtmBase](ftmbase-class.md) 는 자유 스레드된 마샬러 개체를 나타냅니다. `FtmBase`는 GIT (전역 인터페이스 테이블)를 만들고 마샬링 및 프록시 개체를 관리 하는 데 도움이 됩니다.
 
 ### <a name="weakref"></a>WeakRef
 
-[WeakRef](weakref-class.md) 는 액세스할 수 있거나 액세스하지 못할 수 있는 개체를 참조하는 *약한 참조*를 나타내는 스마트 포인터 형식입니다. 개체 `WeakRef` 는 클래식 COM이 아닌 Windows 런타임 에서만 사용할 수 있습니다.
+[WeakRef](weakref-class.md) 는 액세스할 수 있거나 액세스하지 못할 수 있는 개체를 참조하는 *약한 참조*를 나타내는 스마트 포인터 형식입니다. `WeakRef` 개체는 클래식 COM이 아닌 Windows 런타임 에서만 사용할 수 있습니다.
 
 `WeakRef` 개체는 일반적으로 외부 스레드나 애플리케이션에서 제어하는 개체를 나타냅니다. 예를 들어 `WeakRef` 개체는 파일 개체를 참조할 수 있습니다. 파일을 열면 `WeakRef` 가 유효해지고 참조 파일을 액세스할 수 있게 됩니다. 하지만 파일이 닫히면 `WeakRef` 가 무효가 되고 파일을 액세스할 수 없게 됩니다.
 

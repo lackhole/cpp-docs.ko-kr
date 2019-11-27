@@ -15,7 +15,7 @@ ms.locfileid: "74398185"
 ---
 # <a name="list"></a>.LIST
 
-Starts listing of statements.
+문의 목록을 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Starts listing of statements.
 
 ## <a name="remarks"></a>주의
 
-기본값입니다.
+이 값이 기본값입니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

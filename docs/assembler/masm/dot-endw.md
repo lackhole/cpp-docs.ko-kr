@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398452"
 ---
-# <a name="endw-32-bit-masm"></a>.ENDW (32-bit MASM)
+# <a name="endw-32-bit-masm"></a>. ENDW (32 비트 MASM)
 
 ## <a name="syntax"></a>구문
 
@@ -21,8 +21,8 @@ ms.locfileid: "74398452"
 
 ## <a name="remarks"></a>주의
 
-(32-bit MASM only.) See [.WHILE](../../assembler/masm/dot-while.md).
+(32 비트 MASM에만 해당) [을 참조 하세요. WHILE](../../assembler/masm/dot-while.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

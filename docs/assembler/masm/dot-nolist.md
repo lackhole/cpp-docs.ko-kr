@@ -15,7 +15,7 @@ ms.locfileid: "74398080"
 ---
 # <a name="nolist"></a>.NOLIST
 
-Suppresses program listing.
+프로그램 목록을 표시 하지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Suppresses program listing.
 
 ## <a name="remarks"></a>주의
 
-Same as [.XLIST](../../assembler/masm/dot-xlist.md).
+와 동일 [합니다. XLIST](../../assembler/masm/dot-xlist.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

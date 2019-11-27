@@ -15,16 +15,16 @@ ms.locfileid: "74397390"
 ---
 # <a name="ife"></a>IFE
 
-Grants assembly if *expression* is false (0).
+*식이* false (0) 이면 assembly를 부여 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **IFE** *expression*
+> **Ife** *식*
 
 ## <a name="remarks"></a>주의
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+전체 [구문에 대 한 자세한 내용은](../../assembler/masm/if-masm.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

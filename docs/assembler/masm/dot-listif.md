@@ -15,7 +15,7 @@ ms.locfileid: "74398167"
 ---
 # <a name="listif"></a>.LISTIF
 
-Starts listing of statements in false conditional blocks.
+False 조건부 블록의 문 목록을 시작 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Starts listing of statements in false conditional blocks.
 
 ## <a name="remarks"></a>주의
 
-Same as [.LFCOND](../../assembler/masm/dot-lfcond.md).
+와 동일 [합니다. .LFCOND](../../assembler/masm/dot-lfcond.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

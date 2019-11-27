@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398979"
 ---
-# <a name="interface"></a>\@Interface
+# <a name="interface"></a>\@인터페이스
 
-Information about the language parameters (numeric equate).
+언어 매개 변수에 대 한 정보입니다 (숫자-같게).
 
 ## <a name="syntax"></a>구문
 
-> **\@Interface**
+> **\@인터페이스**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

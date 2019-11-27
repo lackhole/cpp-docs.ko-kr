@@ -15,16 +15,16 @@ ms.locfileid: "74397641"
 ---
 # <a name="endp"></a>ENDP
 
-Marks the end of procedure *name* previously begun with **PROC**.
+이전 **에 프로시저에서**시작 된 프로시저 *이름의* 끝을 표시 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *name* **ENDP**
+> *이름* **endp**
 
 ## <a name="remarks"></a>주의
 
-See [PROC](../../assembler/masm/proc.md).
+[PROC](../../assembler/masm/proc.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

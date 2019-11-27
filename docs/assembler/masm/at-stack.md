@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74398928"
 ---
-# <a name="stack"></a>\@stack
+# <a name="stack"></a>\@스택
 
-DGROUP for near stacks or STACK for far stacks (text macro).
+Near 스택 또는 far STACK의 스택에 대 한 (텍스트 매크로).
 
 ## <a name="syntax"></a>구문
 
-> **\@stack**
+> **\@스택**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

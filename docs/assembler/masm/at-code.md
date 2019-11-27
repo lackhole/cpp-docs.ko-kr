@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399207"
 ---
-# <a name="code"></a>\@code
+# <a name="code"></a>\@코드
 
-The name of the code segment (text macro).
+코드 세그먼트의 이름입니다 (텍스트 매크로).
 
 ## <a name="syntax"></a>구문
 
-> **\@code**
+> **\@코드**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

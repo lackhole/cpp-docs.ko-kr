@@ -13,14 +13,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74399183"
 ---
-# <a name="data"></a>\@data
+# <a name="data"></a>\@데이터
 
-The name of the default data group. Evaluates to DGROUP for all models except **FLAT**. Evaluates to **FLAT** under the **FLAT** memory model (text macro).
+기본 데이터 그룹의 이름입니다. **FLAT**를 제외한 모든 모델에 대 한 d 그룹으로 평가 됩니다. **플랫 메모리 모델** (텍스트 매크로)에서 **플랫** 로 평가 됩니다.
 
 ## <a name="syntax"></a>구문
 
-> **\@data**
+> **\@데이터**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)

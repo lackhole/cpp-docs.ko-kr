@@ -17,12 +17,12 @@ ms.locfileid: "74396922"
 ---
 # <a name="operator-gt"></a>연산자 GT
 
-Returns true (-1) if *expression1* is greater than *expression2*, or returns false (0) if it is not.
+*Expression1* 가 *식 2*보다 크면 true (-1)를 반환 하 고 그렇지 않으면 false (0)를 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **GT** *expression2*
+> *expression1* **GT** *식*
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Operators reference](operators-reference.md)
+[연산자 참조](operators-reference.md)

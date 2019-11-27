@@ -15,14 +15,14 @@ ms.locfileid: "74398835"
 ---
 # <a name="comment-masm"></a>COMMENT (MASM)
 
-Treats all *text* between or on the same line as the delimiters as a comment.
+구분 기호와 동일한 줄의 모든 *텍스트* 를 주석으로 처리 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **COMMENT** *delimiter* ⟦*text*⟧\
-> ⟦*text*⟧\
-> ⟦*text*⟧ *delimiter* ⟦*text*⟧
+> **주석** *구분 기호* ⟦*text*⟧ \
+> ⟦*text*⟧ \
+> ⟦*text*⟧ *구분 기호* ⟦*text*⟧
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[지시문 참조](../../assembler/masm/directives-reference.md)\

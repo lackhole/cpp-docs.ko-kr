@@ -15,18 +15,18 @@ ms.locfileid: "74397522"
 ---
 # <a name="forc"></a>FORC
 
-Marks a block that will be repeated once for each character in *string*, with the current character replacing *parameter* on each repetition.
+각 반복에서 현재 문자 대체 *매개 변수* 를 사용 하 여 *문자열*의 각 문자에 대해 한 번씩 반복 되는 블록을 표시 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **FORC** *parameter*, __\<__ *string* __>__ \
-> *statements*\
+> **Forc** *매개 변수*, *문자열* __>__ __\<__ \
+> *문*\
 > **ENDM**
 
 ## <a name="remarks"></a>주의
 
-Same as [IRPC](../../assembler/masm/irpc.md).
+[Irpc](../../assembler/masm/irpc.md)와 동일 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

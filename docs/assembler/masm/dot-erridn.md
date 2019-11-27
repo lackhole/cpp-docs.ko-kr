@@ -17,17 +17,17 @@ ms.locfileid: "74398339"
 ---
 # <a name="perioderridn-perioderridni"></a>&period;ERRIDN, &period;ERRIDNI
 
-Generates an error if the text items are identical.
+텍스트 항목이 동일 하면 오류를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **.ERRIDN** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧\
-> **.ERRIDNI** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧
+> **. Erridn** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧ \
+> **. Erridni** *textitem1* __,__ *textitem2* ⟦ __,__ *message*⟧
 
 ## <a name="remarks"></a>주의
 
-If **&period;ERRIDNI** is given, the comparison is case insensitive.
+**&period;ERRIDNI** 가 지정 된 경우 대/소문자를 구분 하지 않고 비교 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[지시문 참조](../../assembler/masm/directives-reference.md)

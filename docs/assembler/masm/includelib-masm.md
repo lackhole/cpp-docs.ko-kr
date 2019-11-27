@@ -15,7 +15,7 @@ ms.locfileid: "74397323"
 ---
 # <a name="includelib-masm"></a>INCLUDELIB (MASM)
 
-Informs the linker that the current module should be linked with *libraryname*.
+현재 모듈이 *libraryname*와 연결 되어야 함을 링커에 알립니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,8 +23,8 @@ Informs the linker that the current module should be linked with *libraryname*.
 
 ## <a name="remarks"></a>주의
 
-The *libraryname* must be enclosed in angle brackets if it includes a backslash, semicolon, greater-than symbol, less-than symbol, single quotation mark, or double quotation mark.
+백슬래시, 세미콜론, 보다 큼 기호, 보다 작음 기호, 작은따옴표 또는 큰따옴표가 포함 된 경우에는 *libraryname* 를 꺾쇠 괄호로 묶어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Directives reference](directives-reference.md)
+[지시문 참조](directives-reference.md)

@@ -15,12 +15,12 @@ ms.locfileid: "74399178"
 ---
 # <a name="cpu"></a>\@Cpu
 
-A bit mask specifying the processor mode (numeric equate).
+프로세서 모드 (숫자는)를 지정 하는 비트 마스크입니다.
 
 ## <a name="syntax"></a>구문
 
 > **\@Cpu**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[Symbols reference](symbols-reference.md)
+[기호 참조](symbols-reference.md)
