@@ -39,6 +39,6 @@ Communal 변수는 링커에 의해 할당 되며 초기화할 수 없습니다.
 COMM FAR ByteArray:BYTE:512
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [지시문 참조](directives-reference.md)
