@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68459982"
 ---
-# <a name="timepoint-class"></a>time_point 클래스
+# <a name="time_point-class"></a>time_point 클래스
 
 `time_point`는 시점을 나타내는 형식을 설명합니다. 이 클래스는 템플릿 인수 `Clock`으로 표시되는 epoch 이후 경과된 시간을 저장하는 [duration](../standard-library/duration-class.md) 형식의 개체를 포함합니다.
 
@@ -51,7 +51,7 @@ class time_point;
 |이름|Description|
 |----------|-----------------|
 |[max](#max)|`time_point::ref`의 상한을 지정합니다.|
-|[분](#min)|`time_point::ref`의 하한을 지정합니다.|
+|[min](#min)|`time_point::ref`의 하한을 지정합니다.|
 |[time_since_epoch](#time_since_epoch)|저장된 `duration` 값을 반환합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
