@@ -63,7 +63,7 @@ class time_point;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<chrono >
+**헤더:** \<chrono>
 
 **네임스페이스:** std::chrono
 
@@ -101,7 +101,7 @@ time_point& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -118,7 +118,7 @@ time_point& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 `duration` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -140,7 +140,7 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### <a name="parameters"></a>매개 변수
 
-*최악*\
+*Dur*\
 [duration](../standard-library/duration-class.md) 개체입니다.
 
 *Tp*\
