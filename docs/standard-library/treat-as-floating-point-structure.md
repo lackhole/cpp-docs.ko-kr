@@ -28,7 +28,7 @@ struct treat_as_floating_point : is_floating_point<Rep>;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<chrono >
+**헤더:** \<chrono>
 
 **네임스페이스:** std::chrono
 
