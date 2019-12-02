@@ -108,7 +108,7 @@ int main()
     class_d d3{ 4.5, "string", 'c' };
 
     class_d d4{ "string", 'c' }; // compiler error
-    class_d d5("string", 'c', 2.0 }; // compiler error
+    class_d d5{ "string", 'c', 2.0 }; // compiler error
 }
 ```
 
@@ -162,7 +162,7 @@ if (ilist1.begin() == ilist2.begin())
 vector<int> v1{ 9, 10, 11 };
 map<int, string> m1{ {1, "a"}, {2, "b"} };
 string s{ 'a', 'b', 'c' };
-regex rgx{'x', 'y', 'z'};
+regex rgx{ 'x', 'y', 'z' };
 ```
 
 
