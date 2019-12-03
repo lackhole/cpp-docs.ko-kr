@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4512
 ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
-ms.openlocfilehash: c5e84fe1d0e558e689e48fba8df112861f81acec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d3b8f11b55cf6ef2df601c125a1b6629aa0554da
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62220992"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683190"
 ---
 # <a name="compiler-warning-level-4-c4512"></a>컴파일러 경고(수준 4) C4512
 
@@ -29,15 +29,15 @@ ms.locfileid: "62220992"
 
 - 클래스에 대해 할당 연산자를 명시적으로 정의합니다.
 
-- 제거할 **const** 또는 클래스의 데이터 항목에서 참조 연산자.
+- 클래스의 데이터 항목에서 **const** 또는 reference 연산자를 제거 합니다.
 
-- #pragma 사용 [경고](../../preprocessor/warning.md) 경고를 억제 하려면 문입니다.
+- 경고를 표시 하지 않으려면 #pragma [warning](../../preprocessor/warning.md) 문을 사용 합니다.
 
 ## <a name="example"></a>예제
 
 다음 샘플에서는 C4512 오류가 발생하는 경우를 보여 줍니다.
 
-```
+```cpp
 // C4512.cpp
 // compile with: /EHsc /W4
 // processor: x86

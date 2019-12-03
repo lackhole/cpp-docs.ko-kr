@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4339
 ms.assetid: 5b83353d-7777-4afb-8476-3c368349028c
-ms.openlocfilehash: bc9d335b3a09f7953a12b388d5bb40cc4d433969
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fffdaa255f6b8f2259488df610f163bebf8d6dec
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400827"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683287"
 ---
 # <a name="compiler-warning-level-4-c4339"></a>컴파일러 경고(수준 4) C4339
 
@@ -23,7 +23,7 @@ Windows 런타임 또는 공용 언어 런타임에 대해 컴파일된 코드�
 
 다음 샘플에서는 C4339 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C4339.cpp
 // compile with: /W4 /clr /c
 // C4339 expected
