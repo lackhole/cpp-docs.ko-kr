@@ -3,12 +3,12 @@ title: 클래스, 구조체 및 공용 구조체에 대 한 중괄호 초기화
 description: 모든 C++ 클래스, 구조체 또는 공용 구조체에 중괄호 초기화 사용
 ms.date: 11/19/2019
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
-ms.openlocfilehash: 41ff38bc4bcc9ebca913b5e66b5ac2f395044222
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: c746c6e4c17e5a55475d70f6dc3d927088af579f
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246498"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683000"
 ---
 # <a name="brace-initialization"></a>중괄호 초기화
 
@@ -61,7 +61,7 @@ int main()
 }
 ```
 
-클래스 또는 구조체에 생성자가 없는 경우 제공하는 멤버 클래스에서 선언되는 순서로 목록 요소를 참고합니다. 클래스에 생성자가 있는 경우 매개 변수를 순서대로 요소를 제공합니다. 형식에 암시적 또는 명시적으로 선언 된 기본 생성자가 있는 경우에는 기본 중괄호 초기화를 사용할 수 있습니다 (빈 중괄호 포함). 예를 들어 다음 클래스는 기본 및 기본이 아닌 중괄호 초기화를 모두 사용 하 여 초기화할 수 있습니다.
+클래스 또는 구조체에 생성자가 없는 경우 클래스에서 멤버를 선언 하는 순서 대로 목록 요소를 제공 합니다. 클래스에 생성자가 있는 경우 매개 변수의 순서 대로 요소를 제공 합니다. 형식에 암시적 또는 명시적으로 선언 된 기본 생성자가 있는 경우에는 기본 중괄호 초기화를 사용할 수 있습니다 (빈 중괄호 포함). 예를 들어 다음 클래스는 기본 및 기본이 아닌 중괄호 초기화를 모두 사용 하 여 초기화할 수 있습니다.
 
 ```cpp
 #include <string>
@@ -166,7 +166,7 @@ regex rgx{ 'x', 'y', 'z' };
 ```
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [클래스 및 구조체](../cpp/classes-and-structs-cpp.md)<br/>
 [생성자](../cpp/constructors-cpp.md)
