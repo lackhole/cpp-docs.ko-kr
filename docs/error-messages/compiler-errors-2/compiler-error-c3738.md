@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3738
 ms.assetid: dd3ee011-e204-4264-bf3a-da32c4ef7038
-ms.openlocfilehash: e313c7d66bc030183e330dd961fad2fb35f02ac2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ffefa0eff23e11412573b8062fa15bb5679923e7
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327810"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752771"
 ---
 # <a name="compiler-error-c3738"></a>컴파일러 오류 C3738
 
-'calling_convention': 인스턴스화되는 템플릿의 명시적 인스턴스화의 호출 규칙이 일치 해야 합니다
+' calling_convention ': 명시적 인스턴스화의 호출 규칙은 인스턴스화되는 템플릿의 호출 규칙과 일치 해야 합니다.
 
-명시적 인스턴스화에서 호출 규칙을 지정 하지 않으면 것이 좋습니다. 그러나 필요한 경우 호출 규칙 일치 해야 합니다.
+명시적 인스턴스화에 대 한 호출 규칙을 지정 하지 않는 것이 좋습니다. 그러나 필요한 경우에는 호출 규칙이 일치 해야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3738를 생성합니다.
+다음 샘플에서는 C3738를 생성 합니다.
 
-```
+```cpp
 // C3738.cpp
 // compile with: /clr
 // processor: x86

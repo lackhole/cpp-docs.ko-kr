@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3741
 ms.assetid: ed311315-cc32-49c9-97fa-01b293d81526
-ms.openlocfilehash: d207c87c7b3f75ac939c155da127720562973160
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2be5c0a4f85448f41f865bdde79d56998fbcf16a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376018"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752602"
 ---
 # <a name="compiler-error-c3741"></a>컴파일러 오류 C3741
 
-'class': coclass 이어야 할 때 event_receiver의 'layout_dependent' 매개 변수 = true
+' class ': event_receiver = true의 ' layout_dependent ' 매개 변수를 사용할 경우 coclass 여야 합니다.
 
-때 `layout_dependent=true` 에 대 한는 [event_receiver](../../windows/event-receiver.md) 클래스에 다음 클래스도 있어야 합니다 [coclass](../../windows/coclass.md) 특성입니다.
+[Event_receiver](../../windows/event-receiver.md) 클래스에 대 한 `layout_dependent=true` 경우 클래스에 [coclass](../../windows/coclass.md) 특성도 있어야 합니다.
 
-다음 샘플에서는 C3741
+다음 샘플에서는 C3741를 생성 합니다.
 
-```
+```cpp
 // C3741.cpp
 // compile with: /c
 // C3741 expected

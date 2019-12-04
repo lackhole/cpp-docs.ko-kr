@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2105
 ms.assetid: 19b7f7bc-a9da-4d23-8193-005b6d09274f
-ms.openlocfilehash: d47ee2815a3ba5609fcdc6b7312ac8c6187ec861
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cbd09dda2b81bb34d395df6d8cdccb48b28c3025
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266610"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752212"
 ---
 # <a name="compiler-error-c2105"></a>컴파일러 오류 C2105
 
-'연산자'에 l-value가 필요합니다.
+' operator '에 l-value가 필요 합니다.
 
-피연산자와 연산자에는 l-value가 있어야 합니다.
+연산자에는 피연산자로 l-value가 있어야 합니다.
 
-다음 샘플에서는 C2105를 생성합니다.
+다음 샘플에서는 C2105를 생성 합니다.
 
-```
+```cpp
 // C2105.cpp
 int main() {
    unsigned char * p1 = 0;
@@ -36,9 +36,9 @@ int main() {
 }
 ```
 
-다음 샘플에서는 C2105를 생성합니다.
+다음 샘플에서는 C2105를 생성 합니다.
 
-```
+```cpp
 // C2105b.cpp
 int main() {
    int a[10] = {0};

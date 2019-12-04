@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3509
 ms.assetid: cc2db39a-2f98-4e40-b803-496e585494e6
-ms.openlocfilehash: e5e3c48581b5225bf1cf6777c9891c458034e11f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d91bbdf67b49e5722491f562b5eced2c5af10837
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187491"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753746"
 ---
 # <a name="compiler-error-c3509"></a>컴파일러 오류 C3509
 
-'type': 자동화 반환 형식이 잘못 되었습니다. 'void', 'HRESULT' 또는 'SCODE' 해야 경우 매개 변수는 표시 된 'retval', 반환 형식
+' type ': 자동화 반환 형식이 잘못 되었습니다. 매개 변수가 ' t r u e '로 표시 된 경우 반환 형식은 ' void ', ' HRESULT ' 또는 ' i n t ' 이어야 합니다.
 
 COM 인터페이스의 메서드는 void 또는 HRESULT를 반환 해야 합니다.
 
-다음 샘플에서는 C3509 오류가 생성 됩니다.
+다음 샘플에서는 C3509를 생성 합니다.
 
-```
+```cpp
 // C3509.cpp
 #define _ATL_DEBUG_QI
 

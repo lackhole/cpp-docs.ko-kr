@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3722
 ms.assetid: 3cb28363-5eff-4548-bd0d-d5c615846353
-ms.openlocfilehash: e9a8c9cc26aeedf49484bb1f7357a76d0eb42bb5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 08087b9cec0a48f0e439d6a2ff9fbe5f4e58d709
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328267"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753096"
 ---
 # <a name="compiler-error-c3722"></a>컴파일러 오류 C3722
 
-일반 이벤트 허용 되지 않습니다.
+제네릭 이벤트를 사용할 수 없습니다.
 
-컴파일러는 제네릭 클래스, 구조체 및 함수에만 허용 합니다.  자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
+컴파일러는 제네릭 클래스, 구조체 및 함수만 허용 합니다.  자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
 
-다음 샘플에서는 C3722를 생성합니다.
+다음 샘플에서는 C3722를 생성 합니다.
 
-```
+```cpp
 // C3722.cpp
 // compile with: /clr
 generic <typename T>

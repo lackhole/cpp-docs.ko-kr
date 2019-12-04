@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3710
 ms.assetid: 18bec009-5b6f-464a-a21e-5d58a6936504
-ms.openlocfilehash: 04b79b3c924892eb2a970f880d3f2048f4cb2b10
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c060d5b01c0d918071681996e76258eba0ce943
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328474"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753421"
 ---
 # <a name="compiler-error-c3710"></a>컴파일러 오류 C3710
 
-'function': __hook에서 이벤트 처리기 지정 구문이 /\__unhook
+' function ': __hook/\_에서 이벤트 처리기를 지정 하기 위한 구문이 잘못 되었습니다 _unhook
 
-사용 하 여 이벤트 처리기를 지정 하는 경우 [__hook](../../cpp/hook.md) 또는 [__unhook](../../cpp/unhook.md), 처리기 유효한 메서드가 이어야 합니다.
+[__Hook](../../cpp/hook.md) 또는 [__unhook](../../cpp/unhook.md)를 사용 하 여 이벤트 처리기를 지정 하는 경우 처리기는 유효한 방법 이어야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3710
+다음 샘플에서는 C3710를 생성 합니다.
 
-```
+```cpp
 // C3710.cpp
 // compile with: /link /opt:noref
 #include <atlbase.h>

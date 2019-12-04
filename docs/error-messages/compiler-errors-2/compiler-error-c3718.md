@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3718
 ms.assetid: 346b5205-c44d-49d3-b66a-96417d3d6986
-ms.openlocfilehash: 765791499370836f7c99ea7af69cb34bcf1e21fc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d0bcf784f5b522d05585d63a3b38a2befb5aa191
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328260"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753200"
 ---
 # <a name="compiler-error-c3718"></a>컴파일러 오류 C3718
 
-'event' 받는 클래스의 멤버 함수의 컨텍스트에서 호출할 수 있습니다.
+수신 하는 클래스의 멤버 함수 컨텍스트에서만 ' event '를 호출할 수 있습니다.
 
-`event` 받는 클래스에서 호출할 수 있습니다.
+`event`는 수신 클래스 에서만 호출할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3718를 생성합니다.
+다음 샘플에서는 C3718를 생성 합니다.
 
-```
+```cpp
 // C3718.cpp
 #define _ATL_ATTRIBUTES 1
 #include "atlbase.h"
