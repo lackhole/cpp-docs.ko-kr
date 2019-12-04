@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2732
 ms.assetid: 01b7ad2c-93cf-456f-a4c0-c5f2fdc7c07c
-ms.openlocfilehash: 820a620b7e4414123c56433f84536393834f6fd6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61bac8c1b5c9e029cc5833f458669b490fed8c91
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208404"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755800"
 ---
 # <a name="compiler-error-c2732"></a>컴파일러 오류 C2732
 
@@ -27,7 +27,7 @@ ms.locfileid: "62208404"
 
 다음 샘플에서는 C2732를 생성합니다.
 
-```
+```cpp
 // C2732.cpp
 extern void func( void );   // implicit C++ linkage
 extern "C" void func( void );   // C2732

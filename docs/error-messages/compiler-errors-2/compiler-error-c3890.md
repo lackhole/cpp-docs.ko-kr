@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3890
 ms.assetid: 2f22c2fd-c14e-45e1-b936-b739ffc0b135
-ms.openlocfilehash: 2354be5ac7299fc0361e1b3ad50554e9949f8c1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d93afa2ac8e365eff2f9256235b391f561cb977
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385552"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736544"
 ---
 # <a name="compiler-error-c3890"></a>컴파일러 오류 C3890
 
-'var': 리터럴 데이터 멤버의 주소를 가져올 수 없습니다.
+' var ': 리터럴 데이터 멤버의 주소를 가져올 수 없습니다.
 
-리터럴 데이터 멤버는 가비지 수집 힙에 존재합니다.  주소는 유용 하므로 가비지 수집 힙에 있는 개체를 이동할 수 있습니다.
+가비지 수집 힙에 리터럴 데이터 멤버가 있습니다.  가비지 수집 힙의 개체는 이동할 수 있으므로 주소를 가져오는 것은 유용 하지 않습니다.
 
-다음 샘플에서는 C3890 오류가 생성 됩니다.
+다음 샘플에서는 C3890를 생성 합니다.
 
-```
+```cpp
 // C3890.cpp
 // compile with: /clr
 ref struct Y1 {

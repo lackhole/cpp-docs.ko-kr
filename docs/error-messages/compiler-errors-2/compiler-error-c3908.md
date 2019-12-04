@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3908
 ms.assetid: 3c322482-c79e-4197-a578-2ad9bc379d1a
-ms.openlocfilehash: e11d830c3d662ea424caadeb50df669700f8c78f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b57f3346427ff548d11fe776e909eca99433a81
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406556"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749037"
 ---
 # <a name="compiler-error-c3908"></a>컴파일러 오류 C3908
 
-'construct' 보다 덜 제한적인 액세스 수준
+' 구문 ' 보다 액세스 수준이 덜 제한적입니다.
 
-속성 접근자 메서드 (get 또는 set)는 자체 속성에 대 한 액세스를 보다 덜 제한적인 액세스를 가질 수 없습니다.  경우에 마찬가지 이벤트 접근자 메서드.
+속성 접근자 메서드 (get 또는 set)는 속성 자체에 지정 된 액세스 보다 덜 제한적으로 액세스할 수 없습니다.  마찬가지로 이벤트 접근자 메서드의 경우입니다.
 
-자세한 내용은 [속성](../../extensions/property-cpp-component-extensions.md) 하 고 [이벤트](../../extensions/event-cpp-component-extensions.md)합니다.
+자세한 내용은 [속성](../../extensions/property-cpp-component-extensions.md) 및 [이벤트](../../extensions/event-cpp-component-extensions.md)를 참조 하세요.
 
-다음 샘플에서는 C3908를 생성합니다.
+다음 샘플에서는 C3908를 생성 합니다.
 
-```
+```cpp
 // C3908.cpp
 // compile with: /clr
 ref class X {

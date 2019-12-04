@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3655
 ms.assetid: 724919ab-2915-4b61-8794-44648e162d62
-ms.openlocfilehash: 7a13d4d7c08f6510e5ab71c07c31baa9359b47b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61762612cf5b2153319435532dca100eb77c274d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227124"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756307"
 ---
 # <a name="compiler-error-c3655"></a>컴파일러 오류 C3655
 
-'function': 함수가 이미 명시적으로 재정의
+' function ': 함수가 이미 명시적으로 재정의 되었습니다.
 
-함수를 명시적으로 재정의할 수 한 번입니다. 자세한 내용은 [명시적으로 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)합니다.
+함수는 명시적으로 한 번만 재정의할 수 있습니다. 자세한 내용은 [명시적 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)를 참조 하세요.
 
-다음 샘플에서는 C3655 오류가 생성 됩니다.
+다음 샘플에서는 C3655를 생성 합니다.
 
-```
+```cpp
 // C3655.cpp
 // compile with: /clr /c
 public ref struct B {

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2228
 ms.assetid: 901cadb1-ce90-4ae0-a360-547a9ba2ca18
-ms.openlocfilehash: 20e295d09e39a12ed8163ec980fa304cd4167218
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 56eed6aeff5a955253a440d5931d66118f4604e0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404340"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759284"
 ---
 # <a name="compiler-error-c2228"></a>컴파일러 오류 C2228
 
 '.identifier' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
 
-마침표 (.)의 왼쪽 피연산자는 클래스, 구조체 또는 공용 구조체입니다.
+마침표 (.)의 왼쪽에 있는 피연산자가 클래스, 구조체 또는 공용 구조체가 아닙니다.
 
 다음 샘플에서는 C2228을 생성합니다.
 
-```
+```cpp
 // C2228.cpp
 int i;
 struct S {

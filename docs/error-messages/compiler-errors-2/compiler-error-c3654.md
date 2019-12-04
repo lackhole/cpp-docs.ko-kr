@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3654
 ms.assetid: 57d96e3f-6bbb-4eaa-934b-26c23b4ceb2e
-ms.openlocfilehash: e66f0071a3d086c84a51c8b69e52b06643344c4d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 960dbe9f18403c12919db713cc41451dd7b93aac
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227101"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756294"
 ---
 # <a name="compiler-error-c3654"></a>컴파일러 오류 C3654
 
-'text': 명시적 재정의에 구문 오류가 발생 했습니다.
+' text ': 명시적 재정의에 구문 오류가 있습니다.
 
-예기치 않은 문자열 명시적 재정의 했습니다. 자세한 내용은 [명시적으로 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)합니다.
+예기치 않은 문자열이 명시적으로 재정의 되었습니다. 자세한 내용은 [명시적 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)를 참조 하세요.
 
-다음 샘플에서는 C3654 오류가 생성 됩니다.
+다음 샘플에서는 C3654를 생성 합니다.
 
-```
+```cpp
 // C3654.cpp
 // compile with: /clr /c
 public ref struct B {

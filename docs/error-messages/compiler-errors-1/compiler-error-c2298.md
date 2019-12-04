@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2298
 ms.assetid: eb0120ad-c850-4bdd-911d-0361229cc859
-ms.openlocfilehash: 34957d226f10b4ac27f13be6746eac241101b516
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b53ba11de7ecbb8e3d7f664ceaf8d99e395fac28
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182660"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759063"
 ---
 # <a name="compiler-error-c2298"></a>컴파일러 오류 C2298
 
-'operation': 멤버 함수 식에 대 한 포인터의 연산이 잘못 되었습니다
+' operation ': 멤버 함수 식에 대 한 포인터에 대 한 연산이 잘못 되었습니다.
 
 멤버 함수 식에 대 한 포인터는 멤버 함수를 호출 해야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2298를 생성합니다.
+다음 샘플에서는 C2298를 생성 합니다.
 
-```
+```cpp
 // C2298.cpp
 #include <stdio.h>
 
@@ -57,9 +57,9 @@ int main() {
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2298를 생성합니다.
+다음 샘플에서는 C2298를 생성 합니다.
 
-```
+```cpp
 // C2298_b.cpp
 // compile with: /c
 void F() {}

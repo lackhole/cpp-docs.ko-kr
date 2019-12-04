@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2327
 ms.assetid: 95278c95-d1f9-4487-ad27-53311f5e8112
-ms.openlocfilehash: abc9aa92c41947a2536e53108c1fb646792a8202
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36222b8469f5a51254c6a6172e20384ebafc89ab
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300851"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747776"
 ---
 # <a name="compiler-error-c2327"></a>컴파일러 오류 C2327
 
-'symbol': 형식 이름, 정적 또는 열거자가 아닙니다
+' symbol ': 형식 이름, 정적 또는 열거자가 아닙니다.
 
-중첩된 된 클래스 내의 코드는 없거나 형식 이름, 정적 멤버를 열거자는 바깥쪽 클래스의 멤버에 액세스 하려고 합니다.
+중첩 된 클래스 내의 코드는 형식 이름, 정적 멤버 또는 열거자가 아닌 바깥쪽 클래스의 멤버에 액세스 하려고 합니다.
 
-사용 하 여 컴파일하면 **/clr**, C2327 일반적으로 속성 형식으로 동일한 이름 가진 속성입니다.
+**/Clr**을 사용 하 여 컴파일할 때 C2327의 일반적인 원인은 속성 형식과 이름이 같은 속성입니다.
 
-다음 샘플에서는 C2327를 생성합니다.
+다음 샘플에서는 C2327를 생성 합니다.
 
-```
+```cpp
 // C2327.cpp
 int x;
 class enclose {
@@ -40,9 +40,9 @@ public:
 };
 ```
 
-C2327은 이름을 형식 멤버의 이름으로 숨겨진 경우에 발생할 수 있습니다.
+C2327는 형식 이름이 멤버 이름에 의해 숨겨진 경우에도 발생할 수 있습니다.
 
-```
+```cpp
 // C2327b.cpp
 class X {};
 
@@ -54,9 +54,9 @@ class S {
 };
 ```
 
-C2327 매개 변수의 데이터 형식을 완전히 지정 해야 하는이 이런 경우에 발생할 수도 있습니다.
+C2327는 매개 변수의 데이터 형식을 완전히 지정 해야 하는 경우에도 발생 합니다.
 
-```
+```cpp
 // C2327c.cpp
 // compile with: /c
 struct A {};
@@ -69,9 +69,9 @@ struct B {
 };
 ```
 
-다음 샘플에서는 C2327를 생성합니다.
+다음 샘플에서는 C2327를 생성 합니다.
 
-```
+```cpp
 // C2327d.cpp
 // compile with: /clr /c
 using namespace System;
@@ -103,9 +103,9 @@ namespace NA {
 }
 ```
 
-다음 샘플에서는 속성 이름이 같은 속성 형식으로 하는 경우 C2327를 보여 줍니다.
+다음 샘플에서는 속성의 이름이 속성 형식과 같은 경우 C2327를 보여 줍니다.
 
-```
+```cpp
 // C2327f.cpp
 // compile with: /clr /c
 public value class Address {};

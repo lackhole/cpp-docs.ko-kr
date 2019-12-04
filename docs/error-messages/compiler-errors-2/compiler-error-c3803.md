@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3803
 ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
-ms.openlocfilehash: f6c255ec18d6dcf94f3ec022f09b173c2c66a1dd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 771530c2d05d378b86732938aa7a2b7881608446
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400099"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755306"
 ---
 # <a name="compiler-error-c3803"></a>컴파일러 오류 C3803
 
-'property': 속성이 해당 접근자 'accessor' 중 하나를 사용 하 여 호환 되지 않는 형식
+' property ': 속성에 해당 접근자 ' accessor ' 중 하 나와 호환 되지 않는 형식이 있습니다.
 
-정의 된 속성의 형식은 [속성](../../cpp/property-cpp.md) 해당 접근자 함수 중 하나에 대 한 반환 형식과 일치 하지 않습니다.
+[속성](../../cpp/property-cpp.md) 으로 정의 된 속성 형식이 해당 접근자 함수 중 하나의 반환 형식과 일치 하지 않습니다.
 
-다음 샘플에서는 C3803 오류가 생성 됩니다.
+다음 샘플에서는 C3803를 생성 합니다.
 
-```
+```cpp
 // C3803.cpp
 struct A
 {

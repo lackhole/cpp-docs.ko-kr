@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3374
 ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
-ms.openlocfilehash: 4b00b1cea8ac462c82c11d9f5b207706af74959c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 760eb1bafdaab9995d3238c8bc4e3114acd743eb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328973"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755579"
 ---
 # <a name="compiler-error-c3374"></a>컴파일러 오류 C3374
 
@@ -21,7 +21,7 @@ ms.locfileid: "62328973"
 
 다음 샘플에서는 C3374 오류가 발생하는 경우를 보여 줍니다.
 
-```
+```cpp
 // C3374.cpp
 // compile with: /clr
 public delegate void MyDel(int i);
@@ -42,6 +42,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [방법: 대리자 정의 및 사용(C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md)

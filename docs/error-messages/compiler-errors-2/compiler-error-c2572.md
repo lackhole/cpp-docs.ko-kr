@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2572
 ms.assetid: f1a42d69-727d-4ce5-88c8-d5f55dea66ac
-ms.openlocfilehash: 78402c054573de8c9860e96b6abe60ec5c3cfe38
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed2e9771d1a407b947926a6f0d8beeb51e724ac7
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395523"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755488"
 ---
 # <a name="compiler-error-c2572"></a>컴파일러 오류 C2572
 
-'class::member': 기본 매개 변수 재정의: 매개 변수 매개 변수
+' class:: member ': 기본 매개 변수 재정의: parameter param
 
-기본 매개 변수를 재정의할 수 없습니다. 필요한 경우 다른 값 매개 변수를 기본 매개 변수 왼쪽을 정의 하지 않아야 합니다.
+기본 매개 변수는 다시 정의할 수 없습니다. 매개 변수에 다른 값을 지정 해야 하는 경우에는 기본 매개 변수를 정의 하지 않은 상태로 두어야 합니다.
 
-다음 샘플에서는 C2572 오류가 생성 됩니다.
+다음 샘플에서는 C2572를 생성 합니다.
 
-```
+```cpp
 // C2572.cpp
 // compile with: /c
 void f(int i = 1);   // function declaration

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2677
 ms.assetid: 76bc0b65-f52a-45a6-b6d6-0555f89da9a8
-ms.openlocfilehash: 1be3701c2befbacc11d6a3dea4b99547375286d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8c318d3c7f78ad2844b7a94a372634886a1ad56d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395419"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760350"
 ---
 # <a name="compiler-error-c2677"></a>컴파일러 오류 C2677
 
-이항 'operator': 'type' 형식을 사용 하는 전역 연산자 없습니다 (또는 허용 된 변환이)
+이항 ' operator ': ' type ' 형식을 사용 하는 전역 연산자가 없거나 허용 되는 변환이 없습니다.
 
 연산자를 사용하려면 지정된 형식에 대해 오버로드하거나 연산자가 정의된 형식으로의 변환을 정의해야 합니다.
 
-다음 샘플에서는 C2677 오류가 생성 됩니다.
+다음 샘플에서는 C2677를 생성 합니다.
 
-```
+```cpp
 // C2677.cpp
 class C {
 public:

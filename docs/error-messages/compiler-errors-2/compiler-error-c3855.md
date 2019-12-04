@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3855
 ms.assetid: ed90f8c0-4154-4243-b066-493913df5727
-ms.openlocfilehash: 12ee1c6aa5f414a9cf3084831c956514593102c4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 226f87ad428e9f005e36823834cedc2b3ee0b8c6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265466"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754825"
 ---
 # <a name="compiler-error-c3855"></a>컴파일러 오류 C3855
 
-'class': 형식 매개 변수 'param' 선언과 호환 되지 않습니다.
+' class ': 형식 매개 변수 ' param '이 (가) 선언과 호환 되지 않습니다.
 
-컴파일러가는 비형식 템플릿 또는 서로 다른 이름 가진 제네릭 매개 변수를 찾았습니다. 템플릿 특수화의 정의에 지정 된 템플릿 매개 변수를 선언와 호환 되지 경우 발생할 수 있습니다.
+컴파일러가 이름이 다른 비형식 템플릿 또는 제네릭 매개 변수를 찾았습니다. 템플릿 특수화 정의의 지정 된 템플릿 매개 변수가 선언과 호환 되지 않는 경우이 오류가 발생할 수 있습니다.
 
-다음 샘플에서는 C3855를 생성합니다.
+다음 샘플에서는 C3855를 생성 합니다.
 
-```
+```cpp
 // C3855.cpp
 template <int N>
 struct C {
@@ -32,9 +32,9 @@ template <char N>
 void C<N>::f() {}   // C3855
 ```
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C3855b.cpp
 // compile with: /c
 template <int N>
@@ -46,9 +46,9 @@ template <int N>
 void C<N>::f() {}
 ```
 
-C3855는 제네릭을 사용할 때도 발생할 수 있습니다.
+제네릭을 사용 하는 경우에도 C3855이 발생할 수 있습니다.
 
-```
+```cpp
 // C3855c.cpp
 // compile with: /clr
 generic <class T>
@@ -63,9 +63,9 @@ generic <class V>
 ref struct GC1<T>::GC2 { };   // C3855
 ```
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C3855d.cpp
 // compile with: /clr /c
 generic <class T>

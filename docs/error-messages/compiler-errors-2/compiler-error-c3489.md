@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3489
 ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
-ms.openlocfilehash: d2ba8d919ab71b566950cc227588e071d24016bc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67eaa9806dff96783f391c46c890b34e1ceef5a3
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381113"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738416"
 ---
 # <a name="compiler-error-c3489"></a>컴파일러 오류 C3489
 
@@ -33,7 +33,7 @@ ms.locfileid: "62381113"
 
 다음 예제에서는 기본 모드가 값 방식인 람다 식의 캡처 절에 `n` 변수가 값으로 나타나기 때문에 C3489를 생성합니다.
 
-```
+```cpp
 // C3489a.cpp
 
 int main()
@@ -47,7 +47,7 @@ int main()
 
 다음 예제에서는 C3489에 대한 네 가지 해결 방법을 보여 줍니다.
 
-```
+```cpp
 // C3489b.cpp
 
 int main()
@@ -72,6 +72,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2583
 ms.assetid: b1c952dc-872c-47e4-9fc8-4dd72bcee6f9
-ms.openlocfilehash: b78b9dd69b701e1a66646234d4603973657e90c6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0154d1d9a57d0faa795e639640eb6cb42e7c7cb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366396"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748647"
 ---
 # <a name="compiler-error-c2583"></a>컴파일러 오류 C2583
 
-'identifier': ' const/volatile ' 'this'이 포인터가 생성자/소멸자에 대해 잘못 되었습니다.
+' identifier ': ' const/volatile ' ' this ' 포인터는 생성자/소멸자에 사용할 수 없습니다.
 
-생성자 나 소멸자를 선언 `const` 또는 `volatile`합니다. 이것은 허용되지 않습니다.
+생성자 또는 소멸자가 `const` 또는 `volatile`선언 되었습니다. 이는 허용되지 않습니다.
 
-다음 샘플에서는 C2583 오류가 생성 됩니다.
+다음 샘플에서는 C2583를 생성 합니다.
 
-```
+```cpp
 // C2583.cpp
 // compile with: /c
 class A {

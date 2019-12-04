@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2870
 ms.assetid: 80523ee9-1fd3-4dc4-8a77-5083deb99066
-ms.openlocfilehash: f61281da23e46236e7fce496a4d89086e5d6c0ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b006592723df1222d05e39b3bc9e5729efc8aa6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755033"
 ---
 # <a name="compiler-error-c2870"></a>컴파일러 오류 C2870
 
-'name': 네임 스페이스 정의 다른 네임 스페이스 정의 내에서 파일 범위 또는 즉시 나타나야 합니다.
+' name ': 네임 스페이스 정의는 파일 범위에 있거나 다른 네임 스페이스 정의 바로 안에 표시 되어야 합니다.
 
-네임 스페이스를 정의한 `name` 잘못 됩니다. (모든 블록 및 클래스) 외부 파일 범위에서 네임 스페이스를 정의 해야 합니다 또는 다른 네임 스페이스 내에서 바로.
+네임 스페이스 `name`을 (를) 잘못 정의 했습니다. 네임 스페이스는 파일 범위 (모든 블록 및 클래스 외부)에서 정의 하거나 다른 네임 스페이스 내에서 직접 정의 해야 합니다.
 
-다음 샘플에서는 C2870 오류가 생성 됩니다.
+다음 샘플에서는 C2870를 생성 합니다.
 
-```
+```cpp
 // C2870.cpp
 // compile with: /c
 int main() {

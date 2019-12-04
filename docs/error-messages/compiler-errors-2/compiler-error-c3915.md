@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3915
 ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
-ms.openlocfilehash: 85654e266c3157ab145e7ac7aab454a0d4f6c102
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 26fdcd3b7989d9030249133e6dc1d277aa1a9f44
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406446"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756281"
 ---
 # <a name="compiler-error-c3915"></a>컴파일러 오류 C3915
 
-'type'에 기본 인덱싱된 속성이 (클래스 인덱서)
+' type '에 인덱싱된 기본 속성 (클래스 인덱서)이 없습니다.
 
-기본적으로 인덱싱된 속성 형식이 없습니다.
+형식에 인덱싱된 기본 속성이 없습니다.
 
 자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3915를 생성합니다.
+다음 샘플에서는 C3915를 생성 합니다.
 
-```
+```cpp
 // C3915.cpp
 // compile with: /clr
 ref class X {
@@ -48,11 +48,11 @@ int main() {
 
 ## <a name="example"></a>예제
 
-기본 인덱서를 사용 하 여 정의 된 위치는 동일한 compiland에서 사용 하려는 경우에 C3915 발생할 수 있습니다 <xref:System.Reflection.DefaultMemberAttribute>합니다.
+C3915 <xref:System.Reflection.DefaultMemberAttribute>로 정의 된 동일한 compiland에서 기본 인덱서를 사용 하려고 시도 하는 경우에도이 발생할 수 있습니다.
 
-다음 샘플 C3915를 생성합니다.
+다음 샘플에서는 C3915를 생성 합니다.
 
-```
+```cpp
 // C3915_b.cpp
 // compile with: /clr
 using namespace System;

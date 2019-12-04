@@ -1,25 +1,25 @@
 ---
-title: 컴파일러 오류 C2659
+title: 컴파일러 오류 C 2659
 ms.date: 11/04/2016
 f1_keywords:
 - C2659
 helpviewer_keywords:
 - C2659
 ms.assetid: b0883600-4d27-4ca7-a931-8ca6bd48654d
-ms.openlocfilehash: 1b44ef825626f60e9ae6c6e8600953959fcd7b3a
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 818d4e63278bc07fad9290dc0c7d4685886bdce6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449235"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756073"
 ---
-# <a name="compiler-error-c2659"></a>컴파일러 오류 C2659
+# <a name="compiler-error-c2659"></a>컴파일러 오류 C 2659
 
 'operator' : 함수를 왼쪽 피연산자로 사용했습니다.
 
-함수가 지정된 연산자의 왼쪽에 위치되었습니다. 이 오류의 가장 일반적인 이유는 개발자가 변수로 지정하려던 연산자 왼쪽의 식별자를 컴파일러가 함수로 구문 분석했기 때문입니다. 자세한 내용은 Wikipedia 참조 문서 [가장 까다로운 구문 분석](https://en.wikipedia.org/wiki/Most_vexing_parse)합니다. 이 예제에서는 혼동하기 쉬운 함수 선언과 변수 정의를 보여 줍니다.
+함수가 지정된 연산자의 왼쪽에 위치되었습니다. 이 오류의 가장 일반적인 이유는 개발자가 변수로 지정하려던 연산자 왼쪽의 식별자를 컴파일러가 함수로 구문 분석했기 때문입니다. 자세한 내용은 위키백과 문서 [가장 vexing 구문 분석](https://en.wikipedia.org/wiki/Most_vexing_parse)을 참조 하세요. 이 예제에서는 혼동하기 쉬운 함수 선언과 변수 정의를 보여 줍니다.
 
-```
+```cpp
 // C2659a.cpp
 // Compile using: cl /W4 /EHsc C2659a.cpp
 #include <string>
@@ -39,7 +39,7 @@ int main()
 
 오류 C2659는 속성의 형식이 지정된 연산자 왼쪽에 있는 식에 사용할 수 없는 경우에 발생할 수 있습니다. 이 예제에서는 코드가 함수에 함수 포인터를 할당하는 경우에 C2659를 생성합니다.
 
-```
+```cpp
 // C2659b.cpp
 // Compile using: cl /W4 /EHsc C2659b.cpp
 int func0(void) { return 42; }

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2587
 ms.assetid: 7637a2c7-35d4-4b5a-a8f2-515a7bda98fd
-ms.openlocfilehash: 08a576d5672f0df1cbec7269f83a3f182ce0e1c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5db305ab02d2724542fb2619f1c0b7e910eb5892
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350508"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748569"
 ---
 # <a name="compiler-error-c2587"></a>컴파일러 오류 C2587
 
-'identifier': 기본 매개 변수로 잘못 된 지역 변수 사용
+' identifier ': 지역 변수를 기본 매개 변수로 잘못 사용 했습니다.
 
-지역 변수는 기본 매개 변수로 허용 되지 않습니다.
+지역 변수는 기본 매개 변수로 사용할 수 없습니다.
 
-다음 샘플에서는 C2587 오류가 생성 됩니다.
+다음 샘플에서는 C2587를 생성 합니다.
 
-```
+```cpp
 // C2587.cpp
 // compile with: /c
 int i;

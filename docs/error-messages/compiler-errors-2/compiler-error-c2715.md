@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2715
 ms.assetid: c81567a7-5b65-468f-aaf9-835f91e468e4
-ms.openlocfilehash: 0f0df136952e09d26fbf43104bbf13b001c87255
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 24f972452f9c823d2082e1c29758b39f088021d0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386761"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760532"
 ---
 # <a name="compiler-error-c2715"></a>컴파일러 오류 C2715
 
-'type': throw 또는이 형식을 catch 할 수 없습니다.
+' type ':이 형식을 throw 하거나 catch 할 수 없습니다.
 
-관리 코드에서 예외 처리를 사용 하는 경우 값 형식은 올바른 인수가 아닙니다 (참조 [예외 처리](../../extensions/exception-handling-cpp-component-extensions.md) 자세한).
+관리 코드에서 예외 처리를 사용 하는 경우 값 형식은 올바른 인수가 아닙니다. 자세한 내용은 [예외 처리](../../extensions/exception-handling-cpp-component-extensions.md) 를 참조 하십시오.
 
-```
+```cpp
 // C2715a.cpp
 // compile with: /clr
 using namespace System;

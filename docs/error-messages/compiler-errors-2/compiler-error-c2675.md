@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2675
 ms.assetid: 4b92a12b-bff8-4dd5-a109-620065fc146c
-ms.openlocfilehash: aea79509d0e1ae5c31fcf0cf369c28af39a21154
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0b7b81ce7314fbad02d6873403fc5cf1bdd54709
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367930"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760376"
 ---
 # <a name="compiler-error-c2675"></a>컴파일러 오류 C2675
 
-단항 'operator': 'type' 정의 하지 않습니다이 연산자 또는 허용 되는 형식으로의 변환을 미리 정의 된 운영자에 게
+단항 ' operator ': ' type '은이 연산자를 정의 하지 않거나 미리 정의 된 연산자에 허용 되는 형식으로의 변환을 정의 하지 않습니다.
 
-단항 연산자를 사용 하는 경우에 C2675 발생할 수 있습니다 및 형식을 정의 하지 않습니다는 operator 또는 허용 되는 형식으로의 변환을 미리 정의 된 운영자에 게 합니다. 연산자를 사용하려면 지정된 형식에 대해 오버로드하거나 연산자가 정의된 형식으로의 변환을 정의해야 합니다.
+C2675은 단항 연산자를 사용 하는 경우에도 발생할 수 있으며, 형식이 연산자를 정의 하지 않거나 미리 정의 된 연산자에 허용 되는 형식으로의 변환을 정의 하지 않습니다. 연산자를 사용하려면 지정된 형식에 대해 오버로드하거나 연산자가 정의된 형식으로의 변환을 정의해야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2675 오류가 발생 합니다.
+다음 샘플에서는 C2675를 생성 합니다.
 
-```
+```cpp
 // C2675.cpp
 struct C {
    C(){}

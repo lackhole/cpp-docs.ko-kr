@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2109
 ms.assetid: 2d1ac79d-a985-4904-a38b-b270578d664d
-ms.openlocfilehash: 6592f36b29fe643e088669089b1af1b69b7b2125
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 109b4693a07374f05e8b51c73c15d04c6d9793cd
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364755"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755735"
 ---
 # <a name="compiler-error-c2109"></a>컴파일러 오류 C2109
 
-아래 첨자 배열 또는 포인터 형식이 필요
+첨자는 배열 또는 포인터 형식이 필요 합니다.
 
-첨자는 배열 없는 변수에 사용 되었습니다.
+첨자가 배열이 아닌 변수에 사용 되었습니다.
 
-다음 샘플에서는 C2109 오류가 생성 됩니다.
+다음 샘플에서는 C2109를 생성 합니다.
 
-```
+```cpp
 // C2109.cpp
 int main() {
    int a, b[10] = {0};

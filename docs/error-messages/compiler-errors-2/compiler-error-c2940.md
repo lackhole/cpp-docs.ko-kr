@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2940
 ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
-ms.openlocfilehash: c5445b7083d11f1439d3e171d35c3ca39411310d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9477a2da32040db67a143a59d940c5f1cbe94904
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301918"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740444"
 ---
 # <a name="compiler-error-c2940"></a>컴파일러 오류 C2940
 
@@ -21,7 +21,7 @@ ms.locfileid: "62301918"
 
 다음 샘플에서는 C2940을 생성합니다.
 
-```
+```cpp
 // C2940.cpp
 template<class T>
 struct TC {};
@@ -33,7 +33,7 @@ int main() {
 
 C2940은 제네릭을 사용하는 경우에도 발생할 수 있습니다.
 
-```
+```cpp
 // C2940b.cpp
 // compile with: /clr
 generic<class T>

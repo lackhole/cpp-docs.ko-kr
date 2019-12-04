@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2809
 ms.assetid: ce796b8e-1a8c-4074-995d-1ad09afd0e93
-ms.openlocfilehash: d9dffabf318d51a97c172ecee2e4b2d4183a81f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04f875d4ff32cfad425be5bb28bea8ef92c508eb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281900"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758998"
 ---
 # <a name="compiler-error-c2809"></a>컴파일러 오류 C2809
 
-'operator o'에 정식 매개 변수가 없음
+' operator operator '에 정식 매개 변수가 없습니다.
 
-연산자에 필요한 매개 변수를 없습니다.
+연산자에 필수 매개 변수가 부족 합니다.
 
-다음 샘플에서는 C2809 오류가 생성 됩니다.
+다음 샘플에서는 C2809를 생성 합니다.
 
-```
+```cpp
 // C2809.cpp
 // compile with: /c
 class A{};

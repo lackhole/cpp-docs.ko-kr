@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2710
 ms.assetid: a2a6bb5b-86ad-4a6c-acd0-e2bef8464e0e
-ms.openlocfilehash: 54d501d43652bb8e54092d44042a9525ef6f708f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eea836f3508d750701b694421f660ce455d6f1f7
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160915"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757451"
 ---
 # <a name="compiler-error-c2710"></a>컴파일러 오류 C2710
 
-'construct': '__declspec(modifier)'에 대 한 포인터를 반환 하는 함수에만 적용 될 수 있습니다
+' 구문 ': ' __declspec (한정자) '은 (는) 포인터를 반환 하는 함수에만 적용할 수 있습니다.
 
-반환 값이 함수는 유일한 구문입니다 `modifier` 적용할 수 있습니다.
+반환 값이 포인터인 함수는 `modifier` 적용할 수 있는 유일한 구문입니다.
 
-다음 샘플에서는 C2710 오류가 생성 됩니다.
+다음 샘플에서는 C2710를 생성 합니다.
 
-```
+```cpp
 // C2710.cpp
 __declspec(restrict) void f();   // C2710
 // try the following line instead
