@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2674
 ms.assetid: 7cbd70d8-d992-44d7-a5cb-dd8cf9c759d2
-ms.openlocfilehash: f29371f2987eaae1aa7a56c9f4eb56c332fdf31c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3a43368a840a3ee8720d85d7dacb7249d9188ab6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360257"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760389"
 ---
 # <a name="compiler-error-c2674"></a>컴파일러 오류 C2674
 
-이 컨텍스트에서 제네릭 선언은 허용 되지 않습니다.
+이 컨텍스트에서는 제네릭 선언을 사용할 수 없습니다.
 
-제네릭 잘못 선언 되었습니다. 자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
+제네릭이 잘못 선언 되었습니다. 자세한 내용은 [제네릭](../../extensions/generics-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2674 오류가 발생 합니다.
+다음 샘플에서는 C2674를 생성 합니다.
 
-```
+```cpp
 // C2674.cpp
 // compile with: /clr /c
 void F(generic <class T> ref class R1);   // C2674
