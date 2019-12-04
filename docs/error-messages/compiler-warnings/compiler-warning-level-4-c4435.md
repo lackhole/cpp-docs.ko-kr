@@ -1,17 +1,21 @@
 ---
 title: 컴파일러 경고(수준 4) C4435
 ms.date: 11/04/2016
+f1_keywords:
+- C4435
+helpviewer_keywords:
+- C4435
 ms.assetid: a04524af-2b71-4ff9-9729-d9d1d1904ed7
-ms.openlocfilehash: 43c13c484d6e9accee7c4d2c58b72a4539a75c4c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ff545d3de3ef173cdbfd99d7714890e8631ce7a
+ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391480"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810666"
 ---
 # <a name="compiler-warning-level-4-c4435"></a>컴파일러 경고(수준 4) C4435
 
-'class1' : 가상 기본 'class2' 인해/vd2의 개체 레이아웃이 변경 됩니다.
+'class1': 가상 기본 'class2'(으)로 인해 /vd2의 개체 레이아웃이 변경됩니다.
 
 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
 
@@ -19,7 +23,7 @@ ms.locfileid: "62391480"
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4435를 생성합니다.
+다음 샘플에서는 C4435를 생성 합니다.
 
 ```cpp
 // C4435.cpp
@@ -35,7 +39,7 @@ class B : public virtual A  // C4435
 {};
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [vtordisp](../../preprocessor/vtordisp.md)<br/>
 [/vd(생성 치환 사용 안 함)](../../build/reference/vd-disable-construction-displacements.md)
