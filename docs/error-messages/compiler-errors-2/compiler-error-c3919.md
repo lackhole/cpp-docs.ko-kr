@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3919
 ms.assetid: 5f8eddda-d751-478b-930d-e18f7191ddfb
-ms.openlocfilehash: 05ac2fc9258a078f352b6012e64e86fe4b70c3f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 78a42b264129ee365e664b1242c8aa58dd1244bd
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386579"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758478"
 ---
 # <a name="compiler-error-c3919"></a>컴파일러 오류 C3919
 
-'event_method': 함수는 'type '형식이 있어야 합니다.
+' event_method ': 함수는 ' type ' 형식 이어야 합니다.
 
-이벤트 접근자 메서드를 제대로 선언 되지 않았습니다.
+이벤트 접근자 메서드가 올바르게 선언 되지 않았습니다.
 
-이벤트에 대 한 자세한 내용은 참조 하세요. [이벤트](../../extensions/event-cpp-component-extensions.md)합니다.
+이벤트에 대 한 자세한 내용은 [이벤트](../../extensions/event-cpp-component-extensions.md)를 참조 하세요.
 
-다음 샘플에서는 C3919 오류가 생성 됩니다.
+다음 샘플에서는 C3919를 생성 합니다.
 
-```
+```cpp
 // C3919.cpp
 // compile with: /clr /c
 using namespace System;

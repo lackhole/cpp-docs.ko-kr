@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3183
 ms.assetid: dbd0f020-c739-43c9-947e-9ce21537331b
-ms.openlocfilehash: 232e9999bc31ac3e01833e7982acfb03e9d0afaf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ff48c9a084049efe5520e39a269be5c2abcd40a6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382374"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761649"
 ---
 # <a name="compiler-error-c3183"></a>컴파일러 오류 C3183
 
@@ -21,7 +21,7 @@ WinRT 또는 관리되는 형식에 포함된 형식의 이름을 지정해야 �
 
 다음 샘플에서는 C3183 오류가 발생하는 경우를 보여 줍니다.
 
-```
+```cpp
 // C3183a.cpp
 // compile with: /clr /c
 ref class Test

@@ -6,32 +6,32 @@ f1_keywords:
 helpviewer_keywords:
 - C2707
 ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
-ms.openlocfilehash: ce86f69b36b915b3e757b5d18430c99cb288e4e7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e29812563ef1d4d7f6612ea2516f2f6327e90e1b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161006"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760441"
 ---
 # <a name="compiler-error-c2707"></a>컴파일러 오류 C2707
 
-'identifier': 내장 함수의 컨텍스트가 잘못 되었습니다
+' identifier ': 내장 함수의 컨텍스트가 잘못 되었습니다.
 
-구조적된 예외 처리 내장 함수는 특정 컨텍스트에서 유효 하지 않습니다.
+특정 컨텍스트에서는 구조적 예외 처리 내장 함수를 사용할 수 없습니다.
 
-- `_exception_code()` 예외 필터 외부 또는 `__except` 블록
+- 예외 필터 또는 `__except` 블록 외부 `_exception_code()`
 
-- `_exception_info()` 예외 필터 외부
+- 예외 필터 외부 `_exception_info()`
 
-- `_abnormal_termination()` 외부는 `__finally` 블록
+- `__finally` 블록 외부 `_abnormal_termination()`
 
-이 오류를 해결 하려면 예외 처리 내장 함수는 적절 한 컨텍스트에 배치 되도록 해야 합니다.
+오류를 해결 하려면 예외 처리 내장 함수를 적절 한 컨텍스트에 배치 해야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2707 오류가 발생 합니다.
+다음 샘플에서는 C2707를 생성 합니다.
 
-```
+```cpp
 // C2707.cpp
 #include <windows.h>
 #include <stdio.h>

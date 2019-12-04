@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2051
 ms.assetid: 81c0469a-78e2-49fa-bd76-97cdb135e3ea
-ms.openlocfilehash: e6b0d95628a1b4e7f9707202d57d29b906b1b96d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51bf9b9bcde7f02210dd0e381f1239507ac56bdb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408760"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739105"
 ---
 # <a name="compiler-error-c2051"></a>컴파일러 오류 C2051
 
@@ -19,9 +19,9 @@ case 식이 상수가 아닙니다.
 
 Case 식은 정수 상수 여야 합니다.
 
-다음 샘플에서는 C2051 오류가 생성 됩니다.
+다음 샘플에서는 C2051를 생성 합니다.
 
-```
+```cpp
 // C2051.cpp
 class X {};
 
@@ -38,9 +38,9 @@ int main() {
 }
 ```
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C2051b.cpp
 class X {};
 

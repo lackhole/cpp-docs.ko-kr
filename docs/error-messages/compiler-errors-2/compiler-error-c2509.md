@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2509
 ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
-ms.openlocfilehash: 21ca3bdcb156aaa654ae3d5d0c1c467a97129dcc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0322c1d6f80f26b81ac0e93b944a2f3277026ce
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165010"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746814"
 ---
 # <a name="compiler-error-c2509"></a>컴파일러 오류 C2509
 
-'identifier': 'class'에서 선언 되지 멤버 함수
+' identifier ': 멤버 함수가 ' class '에 선언 되지 않았습니다.
 
-함수는 지정된 된 클래스에서 선언 되지 않았습니다.
+함수가 지정 된 클래스에 선언 되지 않았습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2509를 생성합니다.
+다음 샘플에서는 C2509를 생성 합니다.
 
-```
+```cpp
 // C2509.cpp
 // compile with: /c
 struct A {

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3117
 ms.assetid: dceee392-d4c7-4599-b75e-7aaac7c36fdd
-ms.openlocfilehash: 66efcf95599a18e0d93ff36f0e684ad350941977
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 6ef04eca5c059ce1544b62addcaeb0510697d658
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345538"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741172"
 ---
 # <a name="compiler-error-c3117"></a>컴파일러 오류 C3117
 
-'%$S: 인터페이스는 하나의 기본 클래스를 하나만 사용할 수 있습니다
+'% $S ': 인터페이스에 기본 클래스를 하나만 사용할 수 있습니다.
 
-다중 기본 클래스에서 상속 하는 인터페이스를 선언 했습니다.
+여러 기본 클래스에서 상속 되는 인터페이스를 선언 했습니다.
 
-다음 샘플에서는 C3117 오류가 생성 됩니다.
+다음 샘플에서는 C3117를 생성 합니다.
 
-```
+```cpp
 // C3117.cpp
 #include <windows.h>
 

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3918
 ms.assetid: a8b3a90a-3fe1-4244-a5ff-a31cdae97d98
-ms.openlocfilehash: 2c2d2f2598d06ca228a96f2786fcb02888e29a1b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ff2b59338c707767fa1d3c382feaa1bfcdf29ce2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386618"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758491"
 ---
 # <a name="compiler-error-c3918"></a>컴파일러 오류 C3918
 
-사용 현황 데이터 멤버를 ' member' 필요
+사용 하려면 ' member '를 데이터 멤버로 사용 해야 합니다.
 
-C3918은 이벤트와 관련 된 여러 가지 이유로 발생할 수 있습니다.
+C3918는 이벤트와 관련 된 여러 가지 이유로 발생할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-C3918은 클래스 멤버는 현재 컨텍스트에서 필요 하기 때문에 발생할 수 있습니다. 다음 샘플 C3918를 생성합니다.
+C3918는 클래스 멤버가 현재 컨텍스트에 필요 하기 때문에 발생할 수 있습니다. 다음 샘플에서는 C3918를 생성 합니다.
 
-```
+```cpp
 // C3918.cpp
 // compile with: /clr /c
 public ref class C {
@@ -43,11 +43,11 @@ public:
 
 ## <a name="example"></a>예제
 
-C3918는 null (이벤트 이름을 더 이상 직접 액세스할 백업 저장소 대리자에 이벤트에 대 한) trivial 이벤트를 확인 하려는 경우에 발생 합니다.
+C3918는 null에 대 한 trivial 이벤트를 확인 하려고 하는 경우에도 발생 합니다. 이벤트 이름은 이벤트의 백업 저장소 대리자에 직접 액세스 하는 것을 더 이상 제공 하지 않습니다.
 
-다음 샘플 C3918를 생성합니다.
+다음 샘플에서는 C3918를 생성 합니다.
 
-```
+```cpp
 // C3918_2.cpp
 // compile with: /clr /c
 using namespace System;
@@ -68,9 +68,9 @@ ref struct EventSource : public IEFace {
 
 ## <a name="example"></a>예제
 
-C3918 올바르게 구독 하는 경우 없습니다 이벤트에도 발생할 수 있습니다. 다음 샘플 C3918를 생성합니다.
+C3918는 이벤트를 잘못 구독 하는 경우에도 발생할 수 있습니다. 다음 샘플에서는 C3918를 생성 합니다.
 
-```
+```cpp
 // C3918_3.cpp
 // compile with: /clr /c
 using namespace System;

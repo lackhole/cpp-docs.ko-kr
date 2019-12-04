@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3488
 ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
-ms.openlocfilehash: ed3cccb77a40ab646c9a6375cf4c182de62aa478
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b69ed4ac8b7e706096d107e9dfaa4447ca1bc79
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381106"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738429"
 ---
 # <a name="compiler-error-c3488"></a>컴파일러 오류 C3488
 
@@ -33,7 +33,7 @@ ms.locfileid: "62381106"
 
 다음 예제에서는 기본 모드가 참조 방식인 람다 식의 캡처 절에 `n` 변수에 대한 참조가 나타나기 때문에 C3488을 생성합니다.
 
-```
+```cpp
 // C3488a.cpp
 
 int main()
@@ -47,7 +47,7 @@ int main()
 
 다음 예제에서는 C3488에 대한 네 가지 해결 방법을 보여 줍니다.
 
-```
+```cpp
 // C3488b.cpp
 
 int main()
@@ -72,6 +72,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

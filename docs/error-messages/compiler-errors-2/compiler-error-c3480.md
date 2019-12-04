@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3480
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
-ms.openlocfilehash: 2ebcce496fd06c30420558d80cc0a0c9318d4376
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 255fb12d587a94aac798814736f0b26770f608b0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173426"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760480"
 ---
 # <a name="compiler-error-c3480"></a>컴파일러 오류 C3480
 
@@ -27,7 +27,7 @@ ms.locfileid: "62173426"
 
 `global` 변수가 바깥쪽 함수 범위에 속하지 않으므로 다음 예제에서는 C3480을 생성합니다.
 
-```
+```cpp
 // C3480a.cpp
 
 int global = 0;
@@ -41,7 +41,7 @@ int main()
 
 다음 예제에서는 람다 식의 캡처 목록에서 `global` 변수를 제거하여 C3480을 해결합니다.
 
-```
+```cpp
 // C3480b.cpp
 
 int global = 0;
@@ -51,6 +51,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

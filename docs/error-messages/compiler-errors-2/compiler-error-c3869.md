@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3869
 ms.assetid: 85b2ad72-95c1-4ed6-9761-6ef66c3802b7
-ms.openlocfilehash: 1a3d0d754557bbc811d1017ed1491181333e82dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ae8931d3b139e0e7e7aa947ffea16700e2f12302
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242970"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736713"
 ---
 # <a name="compiler-error-c3869"></a>컴파일러 오류 C3869
 
-gcnew 제약 조건에 빈 매개 변수 목록 '(가 없습니다.
+gcnew 제약 조건에 빈 매개 변수 목록 ' () '가 없습니다.
 
-`gcnew` 빈 매개 변수 목록을 사용 하지 않고 특수 제약 조건을 지정 했습니다. 참조 [제네릭 형식 매개 변수에 대 한 제약 조건 (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) 에 대 한 자세한 내용은 합니다.
+빈 매개 변수 목록을 사용 하지 않고 `gcnew` 특수 제약 조건을 지정 했습니다. 자세한 내용은 [제네릭 형식 매개 변수에 대C++한 제약 조건 (/cli)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md) 을 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3869를 생성합니다.
+다음 샘플에서는 C3869를 생성 합니다.
 
-```
+```cpp
 // C3869.cpp
 // compile with: /c /clr
 using namespace System;

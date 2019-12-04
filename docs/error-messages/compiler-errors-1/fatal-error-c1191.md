@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C1191
 ms.assetid: 2888c6c4-b4e6-449e-8ee0-7917f31086df
-ms.openlocfilehash: 89af73699120ee4d8af3cda746727d758ef6d22c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c6756dec29138af534278742d99c2f77109b1cc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62228886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747295"
 ---
 # <a name="fatal-error-c1191"></a>심각한 오류 C1191
 
-'dll' 전역 범위 에서만 가져올 수 있습니다.
+' d l l '은 전역 범위 에서만 가져올 수 있습니다.
 
-/Clr 프로그래밍을 사용 하는 프로그램에 mscorlib.dll을 가져오는 명령 수 없습니다. 네임 스페이스 또는 함수에 나타나지만 전역 범위에 표시 되어야 합니다.
+/Clr 프로그래밍을 사용 하는 프로그램에 mscorlib.dll을 가져오는 명령은 네임 스페이스나 함수에 표시 될 수 없지만 전역 범위에는 표시 되어야 합니다.
 
-다음 샘플에서는 C1191 오류가 생성 됩니다.
+다음 샘플에서는 C1191를 생성 합니다.
 
-```
+```cpp
 // C1191.cpp
 // compile with: /clr
 namespace sample {
@@ -29,9 +29,9 @@ namespace sample {
 }
 ```
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C1191b.cpp
 // compile with: /clr /c
 #using <mscorlib.dll>

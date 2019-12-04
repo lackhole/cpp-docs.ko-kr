@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3487
 ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
-ms.openlocfilehash: 01f8a1bd74ed2b7a3150afae5b46128c6f5b0ca2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b38755470e3746066711382b2ed471badc8e197
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381152"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738442"
 ---
 # <a name="compiler-error-c3487"></a>컴파일러 오류 C3487
 
@@ -27,7 +27,7 @@ ms.locfileid: "62381152"
 
 다음 예제에서는 람다의 반환 형식이 일치하지 않으므로 C3487을 생성합니다.
 
-```
+```cpp
 // C3487.cpp
 // Compile by using: cl /c /W4 C3487.cpp
 
@@ -42,6 +42,6 @@ int* test(int* pi) {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

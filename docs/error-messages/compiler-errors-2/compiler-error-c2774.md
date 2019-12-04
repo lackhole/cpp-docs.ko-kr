@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2774
 ms.assetid: 10f428c6-7f49-489a-92ba-6ef978b7caaf
-ms.openlocfilehash: 6197e3da81a9f059c90d15608a939ad4887e526d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2630dba6a74bf6b31a5df7af57e42fd7c8fd4e09
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257142"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740106"
 ---
 # <a name="compiler-error-c2774"></a>컴파일러 오류 C2774
 
-'identifier':이 속성과 연결 된 'put' 메서드가 없습니다
+' identifier ':이 속성과 연결 된 ' put ' 메서드가 없습니다.
 
-데이터 멤버를 사용 하 여 선언 [속성](../../cpp/property-cpp.md) 아무런 `put` 함수 하지만 식을 해당 값을 설정 하려고 합니다.
+[속성](../../cpp/property-cpp.md) 을 사용 하 여 선언 된 데이터 멤버에 `put` 함수가 없지만 식에서 해당 값을 설정 하려고 합니다.
 
-다음 샘플에서는 C2774 오류가 생성 됩니다.
+다음 샘플에서는 C2774를 생성 합니다.
 
-```
+```cpp
 // C2774.cpp
 struct A {
    __declspec(property(get=GetProp)) int prop;

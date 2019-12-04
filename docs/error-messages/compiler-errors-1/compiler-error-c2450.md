@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2450
 ms.assetid: 929f1c06-8774-468b-be2a-f428757875a2
-ms.openlocfilehash: 3cbab274f8f7cd04d5fb86db69572e0b7fc1c04e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d015bd165986467a82f33a2ae0dda08c6f6d248
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208973"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744149"
 ---
 # <a name="compiler-error-c2450"></a>컴파일러 오류 C2450
 
-'type' 형식의 switch 식은 올바르지 않습니다.
+' type ' 형식의 switch 식이 잘못 되었습니다.
 
-`switch` 식이 잘못 된 형식입니다. 정수 형식 또는 클래스 형식으로 계산 되어야 정수 형식으로 명확한 변환을 사용 하 여 합니다. 이 사용자 정의 형식으로 계산 되 면 변환 연산자를 제공 해야 합니다.
+`switch` 식이 잘못 된 형식으로 평가 됩니다. 정수 형식 또는 정수 형식으로의 명확한 변환이 있는 클래스 형식으로 계산 되어야 합니다. 사용자 정의 형식으로 계산 되는 경우 변환 연산자를 제공 해야 합니다.
 
-다음 샘플에서는 C2450를 생성합니다.
+다음 샘플에서는 C2450를 생성 합니다.
 
-```
+```cpp
 // C2450.cpp
 class X {
 public:

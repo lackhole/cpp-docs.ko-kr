@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3287
 ms.assetid: c1fa73d2-2c82-4136-a7da-0e75e3b420ad
-ms.openlocfilehash: ab0b93aa1a74ea79515e24ef2b1e289cf0227dac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0f3441b749e3ae074e18e1132dcc4003eba3ba3
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62222679"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749609"
 ---
 # <a name="compiler-error-c3287"></a>컴파일러 오류 C3287
 
@@ -19,13 +19,13 @@ ms.locfileid: "62222679"
 
 사용자 정의 컬렉션 클래스에는 `MoveNext` 및 `Current`에 대한 정의가 포함되어야 합니다.
 
-[방법: 각각에 대해 사용 하 여 반복 Over a User-Defined 컬렉션](../../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md) 자세한 내용은 합니다.
+자세한 내용은 [How to: Iterate Over a User-Defined Collection with for each](../../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md) 를 참조하세요.
 
 ## <a name="example"></a>예제
 
 다음 샘플에서는 C3287을 생성합니다.
 
-```
+```cpp
 // C3287.cpp
 // compile with: /clr
 using namespace System;

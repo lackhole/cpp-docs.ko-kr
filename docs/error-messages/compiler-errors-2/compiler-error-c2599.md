@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2599
 ms.assetid: 88515f36-7589-47e2-862e-0de8b18d6668
-ms.openlocfilehash: 872c3a66d4738c1a69990dffdbbc59cee9e90002
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c722335660653df7e533ec25d4708f42c16846ef
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395471"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740769"
 ---
 # <a name="compiler-error-c2599"></a>컴파일러 오류 C2599
 
-'enum': 열거형의 정방향 선언은 허용 되지 않습니다
+' enum ': 열거형 형식의 전방 선언을 사용할 수 없습니다.
 
-컴파일러는 더 이상 관리 되는 열거형의 정방향 선언을 지원합니다.
+컴파일러가 더 이상 관리 되는 열거형의 전방 선언을 지원 하지 않습니다.
 
-열거형의 정방향 선언은 허용 되지 않습니다 [/Za](../../build/reference/za-ze-disable-language-extensions.md)합니다.
+[/Za](../../build/reference/za-ze-disable-language-extensions.md)에서 열거형 형식의 전방 선언을 사용할 수 없습니다.
 
-다음 샘플에서는 C2599를 생성합니다.
+다음 샘플에서는 C2599를 생성 합니다.
 
-```
+```cpp
 // C2599.cpp
 // compile with: /clr /c
 enum class Status;   // C2599

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3132
 ms.assetid: d54a3d12-336a-4ed0-ad4e-43cddac33b5e
-ms.openlocfilehash: 1a97e04747cb92909380e66d1f4ea8ca62183054
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d3ef68e693b77b72c1e4cc2590a404b09b38ab04
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349882"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760207"
 ---
 # <a name="compiler-error-c3132"></a>컴파일러 오류 C3132
 
-' 함수 매개 변수 ': '관리 되는 1 차원 배열' 형식의 형식 인수에 매개 변수 배열만 적용할 수
+' function-parameter ': 매개 변수 배열은 ' 단일 차원 관리 되는 배열 ' 형식의 형식 인수에만 적용할 수 있습니다.
 
-<xref:System.ParamArrayAttribute> 없는 1 차원 배열 매개 변수에 특성이 적용 되었습니다.
+단일 차원 배열이 아닌 매개 변수에 <xref:System.ParamArrayAttribute> 특성이 적용 되었습니다.
 
-다음 샘플에서는 C3132 오류가 생성 됩니다.
+다음 샘플에서는 C3132를 생성 합니다.
 
-```
+```cpp
 // C3132.cpp
 // compile with: /clr /c
 using namespace System;

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2275
 ms.assetid: c1eafa71-48de-46e0-82f3-b575538ef205
-ms.openlocfilehash: debf8779014badab69ffca13f3795f7e004b292a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3e929adaf90c32cd489975057791a2866b6ba3e0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182784"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759739"
 ---
 # <a name="compiler-error-c2275"></a>컴파일러 오류 C2275
 
-'identifier':이 형식 식으로 잘못 사용
+' identifier ':이 형식을 식으로 잘못 사용 했습니다.
 
-식을 사용 하는 `->` 연산자는 `typedef` 식별자입니다.
+식이 `typedef` 식별자와 함께 `->` 연산자를 사용 합니다.
 
-다음 샘플에서는 C2275 오류가 생성 됩니다.
+다음 샘플에서는 C2275를 생성 합니다.
 
-```
+```cpp
 // C2275.cpp
 typedef struct S {
     int mem;

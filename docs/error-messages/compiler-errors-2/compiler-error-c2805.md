@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2805
 ms.assetid: c997dc56-e199-442f-b94e-ac551ec9b015
-ms.openlocfilehash: b0b3c0d4291787fb0b5664baa9159c84c8549dfd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 500660d70616a530fce3d8674f0f116ce219d1d8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282073"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760636"
 ---
 # <a name="compiler-error-c2805"></a>컴파일러 오류 C2805
 
-이항 'operator o'에 매개 변수가 너무 적습니다.
+이항 ' operator operator '에 매개 변수가 너무 적습니다.
 
-이항 연산자 매개 변수가 없습니다.
+이항 연산자에는 매개 변수가 없습니다.
 
-다음 샘플에서는 C2805 오류가 생성 됩니다.
+다음 샘플에서는 C2805를 생성 합니다.
 
-```
+```cpp
 // C2805.cpp
 // compile with: /c
 class X {

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2039
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-ms.openlocfilehash: ff795a551c091deb73c5fae1e3b67a61d9966ff0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67c64de676c624369fb5a8bc07b9b5de4833fe7f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62266857"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757685"
 ---
 # <a name="compiler-error-c2039"></a>컴파일러 오류 C2039
 
-'identifier1': 'identifier2'의 구성원이 아닙니다
+' identifier1 ': ' identifier2 '의 멤버가 아닙니다.
 
-코드를 잘못 호출 하거나 구조체, 클래스 또는 공용 구조체의 멤버를 참조 합니다.
+코드에서를 잘못 호출 하거나 구조체, 클래스 또는 공용 구조체의 멤버를 참조 하는 경우
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2039를 생성합니다.
+다음 샘플에서는 C2039를 생성 합니다.
 
-```
+```cpp
 // C2039.cpp
 struct S {
    int mem0;
@@ -37,9 +37,9 @@ int main() {
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2039를 생성합니다.
+다음 샘플에서는 C2039를 생성 합니다.
 
-```
+```cpp
 // C2039_b.cpp
 // compile with: /clr
 using namespace System;
@@ -52,9 +52,9 @@ int main() {
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2039를 생성합니다.
+다음 샘플에서는 C2039를 생성 합니다.
 
-```
+```cpp
 // C2039_c.cpp
 // compile with: /clr /c
 ref struct S {
@@ -70,7 +70,7 @@ int S::Count::get() { return 0; }   // OK
 
 ## <a name="example"></a>예제
 
-C2039 기본 인덱서를 올바르게 액세스 하려고 할 경우에 발생할 수 있습니다. 다음 샘플 C#에서 작성 된 구성 요소를 정의 합니다.
+C2039는 기본 인덱서에 잘못 액세스 하려고 시도 하는 경우에도 발생할 수 있습니다. 다음 샘플에서는에서 C#작성 된 구성 요소를 정의 합니다.
 
 ```
 // C2039_d.cs
@@ -87,9 +87,9 @@ public class B {
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2039를 생성합니다.
+다음 샘플에서는 C2039를 생성 합니다.
 
-```
+```cpp
 // C2039_e.cpp
 // compile with: /clr
 using namespace System;
@@ -106,9 +106,9 @@ int main() {
 
 ## <a name="example"></a>예제
 
-C2039는 제네릭을 사용 하는 경우에 발생할 수 있습니다. 다음 샘플 C2039를 생성합니다.
+제네릭을 사용 하는 경우에도 C2039이 발생할 수 있습니다. 다음 샘플에서는 C2039를 생성 합니다.
 
-```
+```cpp
 // C2039_f.cpp
 // compile with: /clr
 interface class I {};
@@ -131,11 +131,11 @@ int main() {
 
 ## <a name="example"></a>예제
 
-C2039 관리 되거나 관리 되지 않는 리소스를 해제 하려고 할 때 발생할 수 있습니다. 자세한 내용은 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
+C2039는 관리 되거나 관리 되지 않는 리소스를 해제 하려고 할 때 발생할 수 있습니다. 자세한 내용은 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)를 참조 하세요.
 
-다음 샘플 C2039를 생성합니다.
+다음 샘플에서는 C2039를 생성 합니다.
 
-```
+```cpp
 // C2039_g.cpp
 // compile with: /clr
 using namespace System;

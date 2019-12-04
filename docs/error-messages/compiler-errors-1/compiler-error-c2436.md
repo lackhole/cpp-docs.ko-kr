@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2436
 ms.assetid: ca4cc813-bc1d-4c0a-9a2c-3a5fe673d084
-ms.openlocfilehash: 335d4a304e16814243894c9524a9e4a2a7356110
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fd910f18e8d863c6894a7fe99449d5ba213bf61
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375108"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744383"
 ---
 # <a name="compiler-error-c2436"></a>컴파일러 오류 C2436
 
-'identifier': 멤버 함수 또는 생성자 이니셜라이저 목록에서 중첩된 클래스
+' identifier ': 생성자 이니셜라이저 목록에 멤버 함수 또는 중첩 클래스가 있습니다.
 
-멤버 함수 또는 생성자 이니셜라이저 목록에서 로컬 클래스를 초기화할 수 없습니다.
+생성자 이니셜라이저 목록의 멤버 함수 또는 로컬 클래스를 초기화할 수 없습니다.
 
-다음 샘플에서는 C2436 오류가 생성 됩니다.
+다음 샘플에서는 C2436를 생성 합니다.
 
-```
+```cpp
 // C2436.cpp
 struct S{
    int f();

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2723
 ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
-ms.openlocfilehash: bc07a99f12ed0e447427990969e54f7f3d3d3b7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f9b169f856dba7a76e5f67e1980c4ca47ba912de
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383024"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737454"
 ---
 # <a name="compiler-error-c2723"></a>컴파일러 오류 C2723
 
@@ -21,7 +21,7 @@ ms.locfileid: "62383024"
 
 다음 샘플에서는 C2723 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2723.cpp
 struct X {
    virtual void f();

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2680
 ms.assetid: d6f7129e-dd17-4661-b680-18d6b925b1cc
-ms.openlocfilehash: 7a0f58ae16baee00a86038c633f996a7d27a1019
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 37535c9ffbafd0d312646d5f3cfdb0c4411bc790
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386813"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760311"
 ---
 # <a name="compiler-error-c2680"></a>컴파일러 오류 C2680
 
-'type': 이름에 대 한 잘못 된 대상 형식
+' type ': 이름의 대상 형식이 잘못 되었습니다.
 
-캐스팅 연산자는 포인터 또는 참조 되지 않는 형식으로 변환 하려고 했습니다. 합니다 [dynamic_cast](../../cpp/dynamic-cast-operator.md) 연산자는 포인터 또는 참조에 대해서만 사용할 수 있습니다.
+캐스팅 연산자가 포인터나 참조가 아닌 형식으로 변환 하려고 했습니다. [Dynamic_cast](../../cpp/dynamic-cast-operator.md) 연산자는 포인터나 참조에만 사용할 수 있습니다.
 
-다음 샘플에서는 C2680 오류가 생성 됩니다.
+다음 샘플에서는 C2680를 생성 합니다.
 
-```
+```cpp
 // C2680.cpp
 // compile with: /c
 class A { virtual void f(); };
@@ -34,9 +34,9 @@ void g(B b) {
 }
 ```
 
-C2680은 대상이 정의 되지 않은 경우에 발생할 수 있습니다.
+C2680는 대상이 정의 되지 않은 경우에도 발생할 수 있습니다.
 
-```
+```cpp
 // C2680b.cpp
 // compile with: /clr /c
 // C2680 expected

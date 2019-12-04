@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2702
 ms.assetid: 6def15d4-9a8d-43e7-ae35-42d7cb57c27e
-ms.openlocfilehash: 1353e16d1bfc0999a9efe7a2a3a8d80a50b41f15
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03a982ee35f0ac49a12568fc428de333f57f3ffa
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367696"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758322"
 ---
 # <a name="compiler-error-c2702"></a>컴파일러 오류 C2702
 
-__except에 나타날 수 없습니다 종료 블록
+종료 블록에 __except 표시 되지 않을 수 있습니다.
 
-예외 처리기 (`__try`/`__except`) 내에서 중첩 될 수 없습니다는 `__finally` 블록입니다.
+예외 처리기 (`__try`/`__except`)는 `__finally` 블록 내에 중첩 될 수 없습니다.
 
-다음 샘플에서는 C2702 오류가 생성 됩니다.
+다음 샘플에서는 C2702를 생성 합니다.
 
-```
+```cpp
 // C2702.cpp
 // processor: x86 IPF
 int Counter;

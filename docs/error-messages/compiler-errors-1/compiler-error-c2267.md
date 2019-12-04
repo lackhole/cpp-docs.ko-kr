@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2267
 ms.assetid: ea63bebb-6208-4367-8440-39be07f9c360
-ms.openlocfilehash: 5ff8b0bee1f79d9534841e4368fd5a5249cbb413
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c897f8e6b38743ee98ec29707b222901ddde9d7c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153400"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758738"
 ---
 # <a name="compiler-error-c2267"></a>컴파일러 오류 C2267
 
-'function': 블록 범위가 있는 정적 함수는 사용할 수 없습니다.
+' function ': 블록 범위를 사용 하는 정적 함수가 잘못 되었습니다.
 
-로컬 함수를 선언 `static`합니다. 정적 함수는 전역 범위를 가져야 합니다.
+지역 함수는 `static`선언 됩니다. 정적 함수는 전역 범위를 가져야 합니다.
 
-다음 샘플에서는 C2267 오류가 생성 됩니다.
+다음 샘플에서는 C2267를 생성 합니다.
 
-```
+```cpp
 // C2267.cpp
 static int func2();   // OK
 int main() {

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2792
 ms.assetid: 392cf748-4f5e-4e62-a364-3118d5658408
-ms.openlocfilehash: 40047cb557fba49f94e5c4e42f172cbcd999c65a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 175ec7ff6b842eb5f41896c5ec3cc0a0f5db817c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360179"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739534"
 ---
 # <a name="compiler-error-c2792"></a>컴파일러 오류 C2792
 
-'super':이 키워드 뒤에 야 ': '
+' super ':이 키워드 다음에는 ':: '이와 야 합니다.
 
-키워드 다음에 올 수 있는 토큰 `__super` 는 `::`합니다.
+`__super` 키워드를 따를 수 있는 유일한 토큰은 `::`입니다.
 
-다음 샘플에서는 C2792를 생성합니다.
+다음 샘플에서는 C2792를 생성 합니다.
 
-```
+```cpp
 // C2792.cpp
 struct B {
    void mf();
