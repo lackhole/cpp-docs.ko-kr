@@ -1,25 +1,25 @@
 ---
 title: ML 심각하지 않은 오류 A2010
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2010
 helpviewer_keywords:
 - A2010
 ms.assetid: 8bcd57f4-1e3f-421f-9ef8-e702daf57fcb
-ms.openlocfilehash: 0fff8e7cafe8e6165f44e7d0fd7b0e51d8bbe3f8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3865580239b71bc1d3f5cc7f925897a835f25427
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62177931"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856742"
 ---
 # <a name="ml-nonfatal-error-a2010"></a>ML 심각하지 않은 오류 A2010
 
 **잘못 된 유형 식**
 
-피연산자 [THIS](../../assembler/masm/operator-this.md) 또는 [PTR](../../assembler/masm/operator-ptr.md) 유효한 형식 식이 없습니다.
+[THIS](../../assembler/masm/operator-this.md) 또는 [PTR](../../assembler/masm/operator-ptr.md) 의 피연산자가 유효한 유형 식이 아닙니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

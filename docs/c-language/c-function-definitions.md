@@ -12,12 +12,12 @@ helpviewer_keywords:
 - function body
 - declaring functions, variables
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-ms.openlocfilehash: 61662caf28fad2f961a580cf280799711a6909bb
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: 5cf56375df417ac68b3e03d00f2bd7770ee571e8
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147687"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857140"
 ---
 # <a name="c-function-definitions"></a>C 함수 정의
 
@@ -36,7 +36,7 @@ ms.locfileid: "56147687"
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq*는 Microsoft 전용임 \*/
+/\* *특성-시퀀스* 는 Microsoft 전용 \*/
 
 프로토타입 매개 변수인 경우:
 
@@ -53,8 +53,8 @@ ms.locfileid: "56147687"
 &nbsp;&nbsp;&nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*
 
 *direct-declarator*: /\* 함수 선언자 \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *parameter-type-list*  **)** /\* 새로운 스타일의 선언자 \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *identifier-list*<sub>opt</sub> **)** /\* 사용되지 않는 스타일의 선언자 \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *parameter-type-list*  **)**  /\* 새로운 스타일의 선언자 \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *identifier-list*<sub>opt</sub> **)**  /\* 사용되지 않는 스타일의 선언자 \*/
 
 정의의 매개 변수 목록에서는 다음 구문을 사용합니다.
 
@@ -79,7 +79,7 @@ ms.locfileid: "56147687"
 함수 본문에 대한 구문은 다음과 같습니다.
 
 *compound-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-list*<sub>opt</sub> *statement-list*<sub>opt</sub> **}**
+&nbsp;&nbsp;&nbsp;&nbsp; **{** *declaration-list*<sub>opt</sub> *statement-list*<sub>opt</sub> **}**
 
 함수 선언을 수정할 수 있는 유일한 스토리지 클래스 지정자는 **extern** 및 **static**입니다. **extern** 지정자는 다른 파일에서 함수를 참조할 수 있음을 나타냅니다. 즉, 함수 이름이 링커로 내보내집니다. **static** 지정자는 다른 파일에서 함수를 참조할 수 없음을 나타냅니다. 즉, 이름이 링커에 의해 내보내지지 않습니다. 스토리지 클래스가 함수 정의에 없을 경우 **extern**으로 간주됩니다. 어떤 경우이든 함수는 정의 지점에서 파일의 끝까지 항상 표시됩니다.
 
@@ -93,6 +93,6 @@ ms.locfileid: "56147687"
 
 [함수 특성](../c-language/function-attributes.md), [스토리지 클래스](../c-language/storage-class.md), [반환 형식](../c-language/return-type.md), [매개 변수](../c-language/parameters.md) 및 [함수 본문](../c-language/function-body.md) 섹션에서는 함수 정의의 구성 요소에 대해 자세히 설명합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [함수](../c-language/functions-c.md)
