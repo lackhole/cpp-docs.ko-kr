@@ -17,13 +17,13 @@ ms.locfileid: "68448200"
 ---
 # <a name="sclsecurenowarnings"></a>_SCL_SECURE_NO_WARNINGS
 
-C++ 표준 라이브러리에서 잠재적으로 안전하지 않은 메서드를 호출 하면 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)이 발생 합니다. 이 경고를 사용 하지 않도록 설정 하려면 코드에서 _SCL_SECURE_NO_WARNINGS 매크로를 정의 합니다.
+C++ 표준 라이브러리에서 잠재적으로 안전하지 않은 메서드를 호출하면 [컴파일러 경고(수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)이 발생합니다. 이 경고를 사용하지 않도록 설정하려면 코드에서 _SCL_SECURE_NO_WARNINGS 매크로를 정의합니다.
 
 ```cpp
 #define _SCL_SECURE_NO_WARNINGS
 ```
 
-미리 컴파일된 헤더를 사용하는 경우 C 런타임 라이브러리 또는 표준 라이브러리 헤더를 포함하기 전에 미리 컴파일된 헤더 파일에이 지시문을 추가 합니다. 미리 컴파일된 헤더 파일을 포함하기 전에 개별 소스 코드 파일에 배치 하는 경우 컴파일러에서 무시 됩니다.
+미리 컴파일된 헤더를 사용하는 경우 C 런타임 라이브러리 또는 표준 라이브러리 헤더를 포함하기 전에 미리 컴파일된 헤더 파일에 이 지시문을 추가합니다. 미리 컴파일된 헤더 파일을 포함하기 전에 개별 소스 코드 파일에 배치하는 경우 컴파일러에서 무시됩니다.
 
 ## <a name="remarks"></a>설명
 
