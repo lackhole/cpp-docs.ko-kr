@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: a11f5bf7e8c280da3ba2cae82cf355a3b28c0577
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: 551bca93a30bee52dc4c838864df28cb747d91df
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890166"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898836"
 ---
 # <a name="locale-class"></a>locale 클래스
 
@@ -50,14 +50,14 @@ static locale::id id;
 
 이러한 패싯의 미리 정의된 그룹은 일반적으로 `setlocale` 함수에 의해 표준 C 라이브러리에서 관리되는 [로캘 범주](#category)를 나타냅니다.
 
-Category `collate` (LC_COLLATE)에 포함 되는 패싯:
+범주 `collate` (LC_COLLATE)에는 패싯이 포함 됩니다.
 
 ```cpp
 collate<char>
 collate<wchar_t>
 ```
 
-Category `ctype` (LC_CTYPE)에 포함 되는 패싯:
+범주 `ctype` (LC_CTYPE)에는 패싯이 포함 됩니다.
 
 ```cpp
 ctype<char>
@@ -68,7 +68,7 @@ codecvt<char16_t, char, mbstate_t>
 codecvt<char32_t, char, mbstate_t>
 ```
 
-Category `monetary` (LC_MONETARY)에 포함 되는 패싯:
+범주 `monetary` (LC_MONETARY)에는 패싯이 포함 됩니다.
 
 ```cpp
 moneypunct<char, false>
@@ -81,7 +81,7 @@ money_put<char, ostreambuf_iterator<char>>
 money_put<wchar_t, ostreambuf_iterator<wchar_t>>
 ```
 
-Category `numeric` (LC_NUMERIC)에 포함 되는 패싯:
+범주 `numeric` (LC_NUMERIC)에는 패싯이 포함 됩니다.
 
 ```cpp
 num_get<char, istreambuf_iterator<char>>
@@ -92,7 +92,7 @@ numpunct<char>
 numpunct<wchar_t>
 ```
 
-Category `time` (LC_TIME)에 포함 되는 패싯:
+범주 `time` (LC_TIME)에는 패싯이 포함 됩니다.
 
 ```cpp
 time_get<char, istreambuf_iterator<char>>
@@ -101,14 +101,14 @@ time_put<char, ostreambuf_iterator<char>>
 time_put<wchar_t, ostreambuf_iterator<wchar_t>>
 ```
 
-Category `messages` (LC_MESSAGES)에 포함 되는 패싯:
+범주 `messages` (LC_MESSAGES)에는 패싯이 포함 됩니다.
 
 ```cpp
 messages<char>
 messages<wchar_t>
 ```
 
-(마지막 범주는 Posix에 필요하지만 C 표준은 해당하지 않습니다.)
+(마지막 범주는 POSIX에 필요 하지만 C 표준은 필요 하지 않습니다.)
 
 이러한 미리 정의 된 패싯 중 일부는 `iostream` 클래스에서 텍스트 시퀀스로 또는 숫자 값의 변환을 제어 하는 데 사용 됩니다.
 
@@ -120,7 +120,7 @@ messages<wchar_t>
 static locale empty();
 ```
 
-패싯이 없는 로캘 개체를 구성할 수 있습니다. 또한 투명 한 로캘입니다. 템플릿 함수 [has_facet](../standard-library/locale-functions.md#has_facet) 및 [use_facet](../standard-library/locale-functions.md#use_facet) 가 투명 한 로캘에서 요청 된 패싯을 찾을 수 없는 경우에는 먼저 전역 로캘을 먼저 확인 한 다음 투명 한 경우 클래식 로캘을 참조 합니다. 따라서 다음과 같이 작성할 수 있습니다.
+패싯이 없는 로캘 개체를 구성할 수 있습니다. 또한 투명 한 로캘입니다. 템플릿 함수가 [has_facet](../standard-library/locale-functions.md#has_facet) [use_facet](../standard-library/locale-functions.md#use_facet) 하 고 투명 한 로캘에서 요청 된 패싯을 찾을 수 없는 경우에는 먼저 전역 로캘을 먼저 확인 한 다음 투명 한 경우 클래식 로캘을 참조 합니다. 따라서 다음과 같이 작성할 수 있습니다.
 
 ```cpp
 cout.imbue(locale::empty());
@@ -175,7 +175,7 @@ cout.imbue(loc);
 
 ### <a name="classes"></a>클래스
 
-|인스턴스|설명|
+|클래스|설명|
 |-|-|
 |[facet](#facet_class)|모든 로캘 패싯에 대한 기본 클래스로 사용하는 클래스입니다.|
 |[`id`](#id_class)|멤버 클래스는 로캘의 패싯을 조회하기 위한 인덱스로 사용되는 고유한 패싯 ID를 제공합니다.|
@@ -206,25 +206,25 @@ static const int none = 0;
 
 형식은 클래스 로캘로 로컬인 비트 마스크 형식의 고유 요소 그룹을 나타내거나 해당 C 로캘 범주를 나타내는 데 사용할 수 있는 **int** 형식의 동의어입니다. 요소는 다음과 같습니다.
 
-- `collate`는 C 범주 LC_COLLATE에 해당 합니다.
+- C 범주에 해당 하는 `collate`LC_COLLATE
 
-- `ctype`는 C 범주 LC_CTYPE에 해당 합니다.
+- C 범주에 해당 하는 `ctype`LC_CTYPE
 
-- `monetary`는 C 범주 LC_MONETARY에 해당 합니다.
+- C 범주에 해당 하는 `monetary`LC_MONETARY
 
-- `numeric`는 C 범주 LC_NUMERIC에 해당 합니다.
+- C 범주에 해당 하는 `numeric`LC_NUMERIC
 
-- `time`는 C 범주 LC_TIME에 해당 합니다.
+- C 범주에 해당 하는 `time`LC_TIME
 
-- `messages`Posix 범주 LC_MESSAGES에 해당 합니다.
+- POSIX 범주에 해당 하는 `messages`LC_MESSAGES
 
 보다 유용한 두 가지 값은 다음과 같습니다.
 
 - `none`, C 범주에 해당 하지 않음
 
-- `all`-모든 범주의 C 공용 구조체에 해당 하는 LC_ALL
+- 모든 범주의 C 공용 구조체에 해당 하는 `all`LC_ALL
 
-`monetary` &#124;`time`와 같이 이러한 상수와 함께 `OR`를 사용 하 여 임의의 범주 그룹을 나타낼 수 있습니다.
+`monetary` &#124; `time`와 같이 이러한 상수와 함께 `OR`를 사용 하 여 임의의 범주 그룹을 나타낼 수 있습니다.
 
 ## <a name="classic"></a>  locale::classic
 
@@ -297,7 +297,7 @@ locale combine(const locale& source_locale) const;
 
 ### <a name="return-value"></a>반환 값
 
-멤버 함수는 *source_locale*에 나열 된 패싯 `Facet` **\*** 을 대체 하거나 추가 하는 로캘 개체를 반환 합니다.
+멤버 함수는 *source_locale*에 나열 된 패싯 `Facet`를 **\*** 를 대체 하거나 추가 하는 로캘 개체를 반환 합니다.
 
 ### <a name="example"></a>예제
 
@@ -443,7 +443,7 @@ locale(const locale& from_locale, const Facet* new_facet);
 *from_locale*\
 새 로캘을 생성할 때 복사되는 로캘입니다.
 
-*기타* \
+*기타*\
 범주를 선택할 로캘입니다.
 
 *new_category*\
@@ -454,7 +454,7 @@ locale(const locale& from_locale, const Facet* new_facet);
 
 ### <a name="remarks"></a>주의
 
-첫 번째 생성자는 전역 로캘과 일치하도록 개체를 초기화합니다. 두 번째 및 세 번째 생성자는 로캘 이름 *locale_name*와 일관 된 동작을 갖도록 모든 로캘 범주를 초기화 합니다. 나머지 생성자는 다음과 같은 예외를 포함 하는 *from_locale*를 복사 합니다.
+첫 번째 생성자는 전역 로캘과 일치하도록 개체를 초기화합니다. 두 번째와 세 번째 생성자는 *locale_name*로캘 이름과 일관 된 동작을 갖도록 모든 로캘 범주를 초기화 합니다. 나머지 생성자는 다음과 같은 예외를 제외 하 고 *from_locale*복사 합니다.
 
 `locale(const locale& from_locale, const locale& Other, category new_category);`
 
@@ -464,13 +464,13 @@ C & *new_category* 가 0 *이 아닌 범주* c에 해당 하는 패싯을 대체
 
 `locale(const locale& from_locale, const string& locale_name, category new_category);`
 
-가 0이 아닌 `replace_category & new_category` *replace_category* 범주에 해당 하는 패싯에 `locale(locale_name, all)`를 바꿉니다.
+는 `replace_category & new_category` 0이 아닌 범주 *replace_category* 에 해당 하는 패싯에 `locale(locale_name, all)`를 바꿉니다.
 
 `template<class Facet> locale(const locale& from_locale, Facet* new_facet);`
 
-*new_facet* 이 null 포인터가 아닌 경우 *from_locale* 을 패싯 *new_facet*에 대체 (또는 추가) 합니다.
+*new_facet* 가 null 포인터가 아닌 경우 *new_facet*패싯 *from_locale* 를 대체 하거나이를에 추가 합니다.
 
-로캘 이름 *locale_name* 가 null 포인터 이거나 잘못 된 경우 함수는 [runtime_error](../standard-library/runtime-error-class.md)을 throw 합니다.
+로캘 이름 *locale_name* null 포인터 이거나 잘못 된 경우 함수는 [runtime_error](../standard-library/runtime-error-class.md)를 throw 합니다.
 
 ### <a name="example"></a>예제
 
@@ -569,7 +569,7 @@ bool operator!=(const locale& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* \
+*오른쪽*\
 같지 않음을 테스트할 로캘 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -633,10 +633,10 @@ bool operator()(
 
 ### <a name="parameters"></a>매개 변수
 
-*왼쪽* \
+*왼쪽*\
 왼쪽 문자열입니다.
 
-*오른쪽* \
+*오른쪽*\
 오른쪽 문자열입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -702,7 +702,7 @@ bool operator==(const locale& right) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*오른쪽* \
+*오른쪽*\
 같은지 여부를 테스트할 로캘 중 하나입니다.
 
 ### <a name="return-value"></a>반환 값

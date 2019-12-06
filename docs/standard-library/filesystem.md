@@ -9,12 +9,12 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - <filesystem>
 ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
-ms.openlocfilehash: 6f97ad75dcf3f01406f305b713b9d14cbe527c52
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0f2c90bd7c1d88a94d1dab05b98442111faa71a2
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457016"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898808"
 ---
 # <a name="ltfilesystemgt"></a>&lt;filesystem&gt;
 
@@ -29,21 +29,21 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> Visual Studio 2017 \<의 릴리스에서는 filesystem > 헤더가 아직 C++ 표준이 아닙니다. C++Visual Studio 2017 (MSVC v141)에서는 [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)에 있는 최종 초안 표준을 구현 합니다.
+> Visual Studio 2017의 릴리스에서는 \<filesystem > 헤더가 아직 C++ 표준이 아닙니다. C++Visual Studio 2017 (MSVC v141)에서는 [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf)에 있는 최종 초안 표준을 구현 합니다.
 
-이 헤더는 두 가지 광범위 한 호스트 운영 체제 클래스 중 하나에 대해 파일 시스템을 지원 합니다. Microsoft Windows 및 Posix.
+이 헤더는 Microsoft Windows 및 POSIX의 광범위 한 두 호스트 운영 체제 클래스 중 하나에 대해 파일 시스템을 지원 합니다.
 
-대부분의 기능이 두 운영 체제에서 공통되지만 이 문서에서는 차이가 있는 위치를 식별합니다. 예를 들어:
+대부분의 기능이 두 운영 체제에서 공통되지만 이 문서에서는 차이가 있는 위치를 식별합니다. 예를 들면 다음과 같습니다.:
 
 - Windows는 c: 또는 \\\network_name과 같은 여러 루트 이름을 지원합니다. 파일 시스템은 트리 포리스트로 구성되며, 각각에는 고유한 루트 디렉터리(예: c:\ 또는 \\\network_name\\)와 고유한 현재 디렉터리가 있어 절대 경로 이름이 아닌 상대 경로 이름을 완성합니다.
 
-- Posix는 루트 이름이 없고 단일 루트 디렉터리 /와 단일 현재 디렉터리가 있는 단일 트리를 지원합니다.
+- POSIX는 루트 이름이 없고 단일 루트 디렉터리/와 단일 현재 디렉터리가 있는 단일 트리를 지원 합니다.
 
 또 다른 중요한 차이점은 경로 이름의 기본 표시입니다.
 
 - Windows에서는 UTF-16(각 문자에 대해 하나 또는 두 개의 요소 사용)으로 인코드된, null 종료 wchar_t 시퀀스를 사용합니다.
 
-- Posix에서는 UTF-8(각 문자에 대해 하나 이상의 요소 사용)로 인코드된, null 종료 char 시퀀스를 사용합니다.
+- POSIX는 u t f-8로 인코딩된 null로 끝나는 char 시퀀스를 사용 합니다 (각 문자에 대해 하나 이상의 요소 사용).
 
 - 클래스 경로의 개체는 경로 이름을 네이티브 형식으로 저장하지만 이 저장된 형식과 여러 가지 외부 형식 간에 쉽게 변환할 수 있습니다.
 
@@ -63,7 +63,7 @@ using namespace std::experimental::filesystem::v1;
 
 1. Windows에서는 디렉터리에는 의미가 없는 특성인 파일이 읽기 전용인지 쓰기 가능한지를 기록합니다.
 
-1. Posix에서는 소유자, 소유자 그룹 또는 모든 사람이 파일을 읽거나, 쓰거나, 실행(디렉터리인 경우 검색)할 수 있는지와 몇 가지 다른 권한을 기록합니다.
+1. POSIX는 소유자, 소유자 그룹 또는 모든 사람이 파일을 읽거나, 쓰거나, 실행 (디렉터리를 검색 한 경우) 할 수 있는지 여부와 몇 가지 다른 권한을 기록 합니다.
 
 두 시스템에 공통되는 점은 루트 이름을 통과할 경우 경로 이름에 적용되는 구조입니다. 경로 이름이 c:/abc/xyz/def.ext일 경우 다음과 같습니다.
 
@@ -89,7 +89,7 @@ using namespace std::experimental::filesystem::v1;
 
 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 
-## <a name="members"></a>멤버
+## <a name="members"></a>Members
 
 ### <a name="classes"></a>클래스
 
@@ -102,7 +102,7 @@ using namespace std::experimental::filesystem::v1;
 |[recursive_directory_iterator 클래스](../standard-library/recursive-directory-iterator-class.md)|파일 시스템 디렉터리에서 파일 이름을 통해 시퀀스되는 입력 반복기에 대해 설명합니다. 이 반복기는 하위 디렉터리로도 상속됩니다.|
 |[file_status 클래스](../standard-library/file-status-class.md)|`file_type`을 래핑합니다.|
 
-### <a name="structs"></a>구조체
+### <a name="structs"></a>Structs
 
 |||
 |-|-|
@@ -120,13 +120,13 @@ using namespace std::experimental::filesystem::v1;
 
 |||
 |-|-|
-|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](../standard-library/filesystem-functions.md#copy_file) 과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
-|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](../standard-library/filesystem-functions.md#copy_file) 과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](../standard-library/filesystem-functions.md#copy_file)과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|[copy_file](../standard-library/filesystem-functions.md#copy_file)과 함께 사용되는 열거형이며 대상 파일이 이미 있는 경우의 동작을 결정합니다.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|디렉터리 반복기에 대한 옵션을 지정하는 열거형입니다.|
 |[file_type](../standard-library/filesystem-enumerations.md#file_type)|파일 형식에 대한 열거형입니다.|
 |[perm_options](../standard-library/filesystem-enumerations.md#perm_options)||
 |[perms](../standard-library/filesystem-enumerations.md#perms)|사용 권한 및 사용 권한에 대한 옵션을 전달하는 데 사용되는 비트 마스크 형식입니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)

@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-ms.openlocfilehash: e6eef7152e45e8177c451fc25592fab85c58ccb5
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b9ddb3117afe37060b8013be235bdb11a2a031ac
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449755"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898847"
 ---
-# <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
+# <a name="ltsystem_errorgt"></a>&lt;system_error&gt;
 
-하위 수준 시스템 \<오류를 처리 하는 데 필요한 `system_error` 예외 클래스 및 관련 템플릿을 정의 하려면 system_error > 헤더를 포함 합니다.
+하위 수준 시스템 오류 처리를 위한 예외 클래스 `system_error` 및 관련 템플릿을 정의 하려면 \<system_error > 헤더를 포함 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -24,7 +24,7 @@ ms.locfileid: "68449755"
 
 **네임스페이스:** std
 
-## <a name="members"></a>멤버
+## <a name="members"></a>Members
 
 ### <a name="objects"></a>개체
 
@@ -55,7 +55,7 @@ ms.locfileid: "68449755"
 
 |||
 |-|-|
-|[errc](../standard-library/system-error-enums.md#errc)|`<errno.h>`에서 Posix에 의해 정의된 모든 오류 코드 매크로에 대해 기호화된 이름을 제공합니다.|
+|[errc](../standard-library/system-error-enums.md#errc)|`<errno.h>`에서 POSIX에 의해 정의 된 모든 오류 코드 매크로에 대해 기호화 된 이름을 제공 합니다.|
 
 ### <a name="classes-and-structs"></a>클래스 및 구조체
 
@@ -69,6 +69,6 @@ ms.locfileid: "68449755"
 |[is_error_condition_enum](../standard-library/is-error-condition-enum-class.md)|[error_condition 클래스](../standard-library/error-condition-class.md) 열거형을 테스트하는 형식 조건자를 나타냅니다.|
 |[system_error](../standard-library/system-error-class.md)|하위 수준 시스템 오버플로를 보고하기 위해 throw되는 모든 예외에 대한 기본 클래스를 나타냅니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [헤더 파일 참조](../standard-library/cpp-standard-library-header-files.md)
