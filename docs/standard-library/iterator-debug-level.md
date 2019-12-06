@@ -15,7 +15,7 @@ ms.locfileid: "68456396"
 ---
 # <a name="iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL
 
-_ITERATOR_DEBUG_LEVEL 매크로는 확인 된 [반복기](../standard-library/checked-iterators.md) 및 [디버그 반복기 지원을](../standard-library/debug-iterator-support.md) 사용할 수 있는지 여부를 제어 합니다. 이 매크로는 이전 _SECURE_SCL 및 _HAS_ITERATOR_DEBUGGING 매크로의 기능을 대체하고 결합 합니다.
+_ITERATOR_DEBUG_LEVEL 매크로는 확인된 [반복기](../standard-library/checked-iterators.md) 및 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 사용할 수 있는지 여부를 제어합니다. 이 매크로는 이전 _SECURE_SCL 및 _HAS_ITERATOR_DEBUGGING 매크로의 기능을 대체하고 결합합니다.
 
 ## <a name="macro-values"></a>매크로 값
 
@@ -49,7 +49,7 @@ _ITERATOR_DEBUG_LEVEL 매크로는 _SECURE_SCL 및 _HAS_ITERATOR_DEBUGGING 매�
 
 ### <a name="example"></a>예제
 
-_ITERATOR_DEBUG_LEVEL 매크로에 대한 값을 지정 하려면 [/d](../build/reference/d-preprocessor-definitions.md) 컴파일러 옵션을 사용 하 여 명령줄에서 정의 하거나, 표준 라이브러리 헤더 `#define` 를 C++ 소스 파일에 포함 하기 전에를 사용 합니다. 예를 들어 명령줄에서 *sample* 을 디버그 모드로 컴파일하고 디버그 반복기 지원을 사용 하려면 _ITERATOR_DEBUG_LEVEL 매크로 정의를 지정할 수 있습니다.
+_ITERATOR_DEBUG_LEVEL 매크로에 대한 값을 지정하려면 [/d](../build/reference/d-preprocessor-definitions.md) 컴파일러 옵션을 사용하여 명령줄에서 정의하거나, 표준 라이브러리 헤더 `#define`을 C++ 소스 파일에 포함하기 전에 사용합니다. 예를 들어 명령줄에서 *sample*을 디버그 모드로 컴파일하고 디버그 반복기 지원을 사용하려면 _ITERATOR_DEBUG_LEVEL 매크로 정의를 지정할 수 있습니다.
 
 `cl /EHsc /Zi /MDd /D_ITERATOR_DEBUG_LEVEL=1 sample.cpp`
 
