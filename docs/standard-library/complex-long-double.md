@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: afd85321ee443359f17850384b06b854dfe89985
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 978be97484a259d7ae8f3fd24fecf07d50c4c844
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688228"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857972"
 ---
 # <a name="complexltlong-doublegt"></a>complex&lt;long double&gt;
 
@@ -38,13 +38,13 @@ complex(
 
 ### <a name="parameters"></a>매개 변수
 
-*_RealVal* \
+*_RealVal*\
 생성되는 복소수의 실수부에 대한 **long double** 형식의 값입니다.
 
-*_Imagval* \
+*_ImagVal*\
 생성 되는 복소수의 허수 부분에 대 한 **long double** 형식의 값입니다.
 
-*Complexnum* \
+*Complexnum*\
 실수 및 허수 부분이 생성 되는 **long double** 형식의 복소수를 초기화 하는 데 사용 되는 **float** 형식의 **double** 또는 형식의 복소수입니다.
 
 ## <a name="return-value"></a>반환 값

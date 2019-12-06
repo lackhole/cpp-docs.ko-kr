@@ -9,12 +9,12 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 - C++ exception handling, exception handlers
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
-ms.openlocfilehash: 942a7e48e4315454476bfe93c68169f461b006b2
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 3282f98f48f7e416857ef2f766563ab6038ca41a
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74245124"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857270"
 ---
 # <a name="structured-exception-handling-cc"></a>Structured Exception Handling (C/C++)
 
@@ -24,11 +24,11 @@ SEH (구조적 예외 처리)는 하드웨어 오류와 같은 특정 예외 코
 
 ## <a name="grammar"></a>문법
 
-*try-문 제외* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** **(** *식* **)** *복합 문*
+*try-except-statement* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__except** **(** *expression* **)** *compound-statement*
 
-*try-finally-문* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *복합 문* **__finally**
+*try-finally-statement* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; **__try** *compound-statement* **__finally** *compound-statement*
 
 ## <a name="remarks"></a>주의
 
@@ -138,14 +138,14 @@ Destroying TestClass!
 Executing SEH __except block
 ```
 
-자세한 내용은 [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)을 참조하세요.
+자세한 내용은 [/EH(예외 처리 모델)](../build/reference/eh-exception-handling-model.md)를 참조하세요.
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [\<exception>](../standard-library/exception.md)<br/>
-[오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[오류 및 예외 처리(모던 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [구조적 예외 처리 (Windows)](/windows/win32/debug/structured-exception-handling)

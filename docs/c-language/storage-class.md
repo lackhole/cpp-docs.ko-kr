@@ -10,12 +10,12 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - static storage class specifiers
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-ms.openlocfilehash: d5664634687c689316427c8652865ba9423e24f4
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: aa6e977b3aa03b5f08901cfa8b0abe1b4046e72d
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147817"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857010"
 ---
 # <a name="storage-class"></a>스토리지 클래스
 
@@ -26,7 +26,7 @@ ms.locfileid: "56147817"
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq*는 Microsoft 전용임 \*/
+/\* *특성-시퀀스* 는 Microsoft 전용 \*/
 
 *declaration-specifiers*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub><br/>
@@ -53,6 +53,6 @@ Microsoft 확장을 사용할 수 있을 때 함수 정의가 동일한 소스 �
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C 함수 정의](../c-language/c-function-definitions.md)

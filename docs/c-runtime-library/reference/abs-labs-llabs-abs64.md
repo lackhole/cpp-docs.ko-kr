@@ -39,12 +39,12 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-ms.openlocfilehash: bf5b4be654a3bd48b3e0d43ac97ce02b348942bc
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: df5b6a30bf219b78f77f11604d3bbbe3b954c59f
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939926"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857855"
 ---
 # <a name="abs-labs-llabs-_abs64"></a>abs, labs, llabs, _abs64
 
@@ -76,11 +76,11 @@ float abs( float n );   // C++ only
 
 **Abs**, **labs**, **llabs** 및 **_abs64** 함수는 매개 변수 *n*의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 는 C++ 오버 로드를 허용 하므로 **long**, **long** **long**, **float**, **double**및 **long** **double** 값을 사용 하 고 반환 하는 **abs** 오버 로드를 호출할 수 있습니다. 이러한 오버로드는 \<cmath> 헤더에 정의됩니다. C 프로그램에서 **abs** 는 항상 **int**를 사용 하 고 반환 합니다.
 
-**Microsoft 전용**: 임의의 정수 형식을 사용하여 나타낼 수 있는 음의 정수 범위는 해당 형식을 사용하여 나타낼 수 있는 양의 정수 범위보다 크기 때문에 이러한 함수에 변환할 수 없는 인수를 제공할 수 있습니다. 인수의 절대값을 반환 형식으로 나타낼 수 없는 경우 **abs** 함수는 변경 되지 않은 인수 값을 반환 합니다. 특히 `abs(INT_MIN)`는 `INT_MIN`, `labs(LONG_MIN)`는 `LONG_MIN`, `llabs(LLONG_MIN)`는 `LLONG_MIN`, `_abs64(_I64_MIN)`는 `_I64_MIN`을 반환합니다. 이는 **abs** 함수를 사용 하 여 양수 값을 보장할 수 없음을 의미 합니다.
+**Microsoft 전용**: 정수 계열 형식을 사용 하 여 나타낼 수 있는 음의 정수 범위가 해당 형식을 사용 하 여 나타낼 수 있는 양의 정수 범위 보다 크기 때문에 변환 될 수 없는 이러한 함수에 인수를 제공할 수 있습니다. 인수의 절대값을 반환 형식으로 나타낼 수 없는 경우 **abs** 함수는 변경 되지 않은 인수 값을 반환 합니다. 특히 `abs(INT_MIN)`는 `INT_MIN`, `labs(LONG_MIN)`는 `LONG_MIN`, `llabs(LLONG_MIN)`는 `LLONG_MIN`, `_abs64(_I64_MIN)`는 `_I64_MIN`을 반환합니다. 이는 **abs** 함수를 사용 하 여 양수 값을 보장할 수 없음을 의미 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -89,7 +89,7 @@ float abs( float n );   // C++ only
 |**abs**, **labs**, **llabs**|\<math.h> 또는 \<stdlib.h>|\<cmath>, \<cstdlib>, \<stdlib.h> 또는 \<math.h>|
 |**_abs64**|\<stdlib.h>|\<cstdlib> 또는 \<stdlib.h>|
 
-에서 C++오버 로드 된 \< **abs** 버전을 사용 하려면 cmath > 헤더를 포함 해야 합니다.
+에서 C++오버 로드 된 **abs** 버전을 사용 하려면 \<cmath > 헤더를 포함 해야 합니다.
 
 ## <a name="example"></a>예제
 
@@ -148,7 +148,7 @@ llabs(LLONG_MIN) returns -9223372036854775808
 _abs64(_I64_MIN) returns 0x8000000000000000
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [데이터 변환](../../c-runtime-library/data-conversion.md)<br/>
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>

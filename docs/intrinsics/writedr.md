@@ -6,14 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - __writedr intrinsic
 ms.assetid: ac55c1ee-df2f-41d4-a429-6f369d2a934d
-ms.openlocfilehash: 715ef7432d506c2758c9c3da913e9c0ebb24e13f
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 473e7223e9974d0125e772c152ea85ae90b97342
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219229"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74858063"
 ---
 # <a name="__writedr"></a>__writedr
+
+**Microsoft 전용**
 
 지정 된 값을 지정 된 디버그 레지스터에 씁니다.
 
@@ -26,13 +28,13 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue); /* x64 */
 
 ### <a name="parameters"></a>매개 변수
 
-*DebugRegister*\
+*Debugregister*\
 진행 디버그 레지스터를 식별 하는 0부터 7 까지의 숫자입니다.
 
-*DebugValue*\
+*Debugvalue*\
 진행 디버그 레지스터에 쓸 값입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 내장 함수는 커널 모드 에서만 사용할 수 있으며 루틴은 내장 함수 에서만 사용할 수 있습니다.
 
@@ -46,7 +48,7 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue); /* x64 */
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)\
 [__readdr](../intrinsics/readdr.md)

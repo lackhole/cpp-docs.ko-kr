@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - naked functions [C++]
 ms.assetid: ff203858-2dd3-4a76-8a57-d0d06817adef
-ms.openlocfilehash: c813b97b85469165aae892b0a4cce888112e3dc5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ec5c7d635dbbb63af7177395c5ad08356e1a26f0
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267378"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857309"
 ---
 # <a name="rules-and-limitations-for-naked-functions"></a>Naked 함수의 규칙 및 제한
 
-## <a name="microsoft-specific"></a>Microsoft 전용
+**Microsoft 전용**
 
 naked 함수에는 다음과 같은 규칙과 제한이 적용됩니다.
 
-- 합니다 **반환** 문이 허용 되지 않습니다.
+- **Return** 문이 허용 되지 않습니다.
 
 - 구조적 예외 처리 및 C++ 예외 처리 구문은 스택 프레임에서 해제되어야 하기 때문에 허용되지 않습니다.
 
@@ -31,9 +31,9 @@ naked 함수에는 다음과 같은 규칙과 제한이 적용됩니다.
 
 - C++ 클래스 개체를 함수 어휘 범위에서 선언할 수 없습니다. 그러나 중첩된 블록에서 개체를 선언할 수 있습니다.
 
-- 합니다 **naked** 키워드는로 컴파일하는 경우 무시 됩니다 [/clr](../build/reference/clr-common-language-runtime-compilation.md)합니다.
+- **Naked** 키워드는 [/clr](../build/reference/clr-common-language-runtime-compilation.md)을 사용 하 여 컴파일할 때 무시 됩니다.
 
-- 에 대 한 [__fastcall](../cpp/fastcall.md) naked 함수의 경우, C에 대 한 참조를 발생할 때마다 /C++ 코드에 레지스터 인수 중 하나로, prolog 코드 해당 변수의 스택 위치에 해당 레지스터의 값을 저장 해야 합니다. 예를 들어:
+- [__Fastcall](../cpp/fastcall.md) naked 함수의 경우 레지스터 인수 중 하나에 C/C++ 코드에 대 한 참조가 있을 때마다 프롤로그 코드는 해당 레지스터의 값을 해당 변수의 스택 위치에 저장 해야 합니다. 예를 들면 다음과 같습니다.:
 
 ```cpp
 // nkdfastcl.cpp
@@ -72,6 +72,6 @@ __declspec(naked) int __fastcall  power(int i, int j) {
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [Naked 함수 호출](../cpp/naked-function-calls.md)

@@ -8,39 +8,39 @@ helpviewer_keywords:
 - argv argument
 - argc argument
 ms.assetid: 6148cbf3-ebe8-44f2-b277-de4b723991c7
-ms.openlocfilehash: 14e5ea3a051d81828c5f88ac16df60b6ebb5b559
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: aebd4800ad8d653d532708784ef0a5333211d46b
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498809"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857660"
 ---
 # <a name="argument-definitions"></a>인수 정의
 
-다음과 같은 프로토타입 인수를 사용하면
+프로토타입의 인수를 사용하면
 
 ```cpp
 int main( int argc, char* argv[], char* envp[]);
 int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 ```
 
-인수를 편리하게 명령줄에서 구문 분석하고 원하는 환경 변수를 선택적으로 액세스할 수 있습니다. 인수 정의는 다음과 같습니다.
+인수를 편리하게 명령줄에서 구문 분석하고 선택적으로 환경 변수에 액세스할 수 있습니다. 인수 정의는 다음과 같습니다.
 
 *argc*<br/>
 *argv*에 따라오는 인수 갯수로 정수 형식입니다. *argc* 매개변수는 항상 1보다 크거나 같습니다.
 
 *argv*<br/>
-프로그램을 실행할 때 사용자가 입력한 명령줄 인수를 나타내는 null로 끝나는 문자열 배열입니다. 규칙에 따라 `argv[0]`은 프로그램이 호출되는 명령이고, `argv[1]`은 첫 번째 명령줄 인수이며 `argv[argc]`는 항상 NULL입니다. 명렬줄 처리를 없애려고 한다면 [명령줄 처리 사용자 지정](../cpp/customizing-cpp-command-line-processing.md)을 참조합니다.
+프로그램의 사용자가 입력한 명령줄 인수를 나타내는 null로 끝나는 문자열의 배열입니다. 규칙에 따라 `argv[0]`은 프로그램이 호출되는 명령이고, `argv[1]`은 첫 번째 명령줄 인수이며 `argv[argc]`는 항상 NULL입니다. 명렬줄 처리를 없애려고 한다면 [명령줄 처리 사용자 지정](../cpp/customizing-cpp-command-line-processing.md)을 참조합니다.
 
 첫 번째 명령줄 인수는 항상 `argv[1]`이고 마지막 인수는 `argv[argc - 1]`입니다.
 
 > [!NOTE]
 > 규칙상 `argv[0]`은 프로그램이 호출되는 명령입니다.  그러나 [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew)를 사용하여 프로세스를 생성할 때 첫번째와 두번째 인수(*lpApplicationName*과 *lpCommandLine*)를 모두 사용하는 경우 `argv[0]`은 실행 파일 이름이 아닐 수도 있습니다. [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew)을 사용하여 실행 파일 이름과 해당 정규화된 경로를 검색합니다.
 
-## <a name="microsoft-specific"></a>Microsoft 전용
+**Microsoft 전용**
 
 *envp*<br/>
-많은 UNIX 시스템에서 일반적인 확장인 *envp* 배열을 Microsoft C++에서 사용할 수 있습니다. 이것은 사용자 환경에 설정된 변수를 나타내는 문자열 배열입니다. 이 배열은 NULL 항목으로 종료됩니다. **char** (`char *envp[]`)에 대한 포인터의 배열이나 **char** (`char **envp`)에 대한 포인터의 포인터로 선언할 수 있습니다. 프로그램이 `main` 대신 `wmain`을 사용하면 **char** 대신 **wchar_t** 데이터 형식을 사용하세요. `main`이나 `wmain`에 전달된 환경 블록은 현재 환경의 "변경되지 않는" 복사본입니다. 나중에 `putenv`나 `_wputenv`를 호출하여 환경을 변경하면 현재 환경(`getenv`나 `_wgetenv`, `_environ`이나 `_wenviron` 변수가 반환)이 변경되지만 *envp*가 가리키는 블록은 변경되지 않습니다. 환경 처리를 하지 않기 위한 정보는 [명령줄 처리 사용자 지정](../cpp/customizing-cpp-command-line-processing.md)을 참조하세요. 이 인수는 C에서는 ANSI와 호환되지만 C++에서는 호환되지 않습니다.
+많은 UNIX 시스템에서 일반적인 확장인 *envp* 배열을 Microsoft C++에서 사용할 수 있습니다. 이는 사용자 환경에서 설정된 변수를 나타내는 문자열의 배열입니다. 이 배열은 NULL 항목으로 종료됩니다. **char** (`char *envp[]`)에 대한 포인터의 배열이나 **char** (`char **envp`)에 대한 포인터의 포인터로 선언할 수 있습니다. 프로그램이 `main` 대신 `wmain`을 사용하면 **char** 대신 **wchar_t** 데이터 형식을 사용하세요. `main`이나 `wmain`에 전달된 환경 블록은 현재 환경의 "변경되지 않는" 복사본입니다. 나중에 `putenv`나 `_wputenv`를 호출하여 환경을 변경하면 현재 환경(`getenv`나 `_wgetenv`, `_environ`이나 `_wenviron` 변수가 반환)이 변경되지만 *envp*가 가리키는 블록은 변경되지 않습니다. 환경 처리를 하지 않기 위한 정보는 [명령줄 처리 사용자 지정](../cpp/customizing-cpp-command-line-processing.md)을 참조하세요. 이 인수는 C에서는 ANSI와 호환되지만 C++에서는 호환되지 않습니다.
 
 **Microsoft 전용 종료**
 
@@ -72,6 +72,6 @@ int main( int argc, char *argv[], char *envp[] ) {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [main: 프로그램 시작](../cpp/main-program-startup.md)

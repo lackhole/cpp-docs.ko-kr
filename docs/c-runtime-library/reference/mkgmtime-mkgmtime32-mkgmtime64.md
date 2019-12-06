@@ -1,6 +1,7 @@
 ---
 title: _mkgmtime, _mkgmtime32, _mkgmtime64
-ms.date: 11/04/2016
+description: _Mkgmtime, _mkgmtime32 및 _mkgmtime64 C 런타임 라이브러리 함수에 대해 설명 하 고이 함수를 사용 하는 방법에 대 한 예제를 제공 합니다.
+ms.date: 12/04/2019
 api_name:
 - _mkgmtime32
 - _mkgmtime64
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _mkgmtime32 function
 - time, converting
 ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
-ms.openlocfilehash: fcd1e3fdcca37d7e5bb381c234a6d8555ce2766c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 3d03fc62853705a68e1a2e408d6af833e8c6b02b
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951663"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857738"
 ---
 # <a name="_mkgmtime-_mkgmtime32-_mkgmtime64"></a>_mkgmtime, _mkgmtime32, _mkgmtime64
 
@@ -66,34 +67,26 @@ __time64_t _mkgmtime64(
 
 ### <a name="parameters"></a>매개 변수
 
-*timeptr*<br/>
+*timeptr*\
 변환할 **struct** **tm** 의 UTC 시간에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-1970 년 1 월 1 일 자정 이후 경과 된 시간 (초)을 나타내는 **__time32_t** 또는 **__time32_t** 형식의 수량 (utc (협정 세계시))입니다. 날짜가 범위를 벗어난 경우 (설명 섹션 참조) 또는 입력을 유효한 시간으로 해석할 수 없는 경우 반환 값은-1입니다.
+1970 년 1 월 1 일 자정 이후 경과 된 시간 (초)을 나타내는 **__time64_t** **__time32_t** 또는 utc (협정 세계시) 형식의 수량입니다. 날짜가 범위를 벗어난 경우 (설명 섹션 참조) 또는 입력을 유효한 시간으로 해석할 수 없는 경우 반환 값은-1입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**_Mkgmtime32** 및 **_mkgmtime64** 함수는 utc 시간을 __ 시간을 나타내는 **__time32_t** 또는 **__time32_t** 형식으로 변환 합니다. 현지 시간을 UTC 시간으로 변환 하려면 **mktime**, **_mktime32**및 **_mktime64** 를 대신 사용 합니다.
+**_Mkgmtime32** 및 **_MKGMTIME64** 함수는 utc 시간을 utc 시간을 나타내는 **__time32_t** 또는 **__time64_t** 형식으로 변환 합니다. 현지 시간을 UTC 시간으로 변환 하려면 **mktime**, **_mktime32**및 **_mktime64** 를 대신 사용 합니다.
 
-**_mkgmtime** 는 **_mkgmtime64**로 계산 되는 인라인 함수 이며 **time_t** 는 **__time64_t**와 동일 합니다. 컴파일러가 **time_t** 를 이전 32 비트 **time_t**해석 하도록 강제 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 2038 년 1 월 18 일 (32 비트 **time_t**의 최대 범위) 후에 응용 프로그램이 실패할 수 있으므로이 방법은 권장 되지 않으며 64 비트 플랫폼에서 모두 허용 되지 않습니다.
+**_mkgmtime** 은 **_mkgmtime64**으로 계산 되는 인라인 함수 이며 **time_t** **__time64_t**와 동일 합니다. 컴파일러가 **time_t** 이전 32 비트 **time_t**으로 해석 해야 하는 경우 **_USE_32BIT_TIME_T**를 정의할 수 있습니다. 2038 년 1 월 18 일 후 응용 프로그램이 실패 하 고 32 비트 **time_t**의 최대 범위인 응용 프로그램이 실패할 수 있으므로 권장 하지 않습니다. 64 비트 플랫폼에서는 허용 되지 않습니다.
 
-전달 된 시간 구조는 **_mktime** 함수를 사용 하 여 변경 되는 것과 동일한 방식으로 다음과 같이 변경 됩니다. **tm_wday** 및 **tm_yday** 필드는 **tm_mday** 및 **tm_year**의 값을 기반으로 하는 새 값으로 설정 됩니다. **Tm** 구조 시간을 지정 하는 경우 **tm_isdst** 필드를 다음과 같이 설정 합니다.
+전달 된 시간 구조는 **_mktime** 함수에 의해 변경 되는 것과 동일한 방식으로 다음과 같이 변경 됩니다. **tm_wday** 및 **tm_yday** 필드는 **tm_mday** 및 **tm_year**값을 기준으로 새 값으로 설정 됩니다. 시간이 UTC로 간주 되기 때문에 **tm_isdst** 필드는 무시 됩니다.
 
-- 0은 표준 시간이 적용 중임을 나타냅니다.
+**_Mkgmtime32** 함수의 범위는 자정부터 1970 1 월 1 일 자정부터 23:59:59 년 1 월 18 일 2038, utc 까지의 시간입니다. **_Mkgmtime64** 범위는 자정, 1970 1 월 1 일 자정부터 23:59:59 년 12 월 31 일, 3000, utc 사이입니다. 범위를 벗어난 날짜의 반환 값은-1입니다. **_Mkgmtime** 범위는 **_USE_32BIT_TIME_T** 정의 되었는지 여부에 따라 달라 집니다. 정의 되지 않은 경우 (기본값) 범위는 **_mkgmtime64**와 동일 합니다. 그렇지 않으면 범위는 **_mkgmtime32**의 32 비트 범위로 제한 됩니다.
 
-- 0보다 큰 값은 일광 절약 시간이 적용 중임을 나타냅니다.
+**Gmtime** 와 **localtime** 는 모두 변환에 공통 정적 버퍼를 사용 합니다. 이 버퍼를 **_mkgmtime**에 제공 하면 이전 내용이 제거 됩니다.
 
-- 0보다 작은 값은 C 런타임 라이브러리 코드가 표준 시간 또는 일광 절약 시간이 적용 중인지 여부를 컴퓨팅하도록 합니다.
-
-C 런타임 라이브러리는 TZ 환경 변수를 사용하여 올바른 일광 절약 시간을 결정합니다. TZ가 설정되어 있지 않으면 운영 체제를 쿼리하여 올바른 국가별 일광 절약 시간 동작을 가져옵니다. **tm_isdst** 은 필수 필드입니다. 설정 하지 않으면 해당 값이 정의 되지 않고 **mktime** 의 반환 값을 예측할 수 없습니다.
-
-**_Mkgmtime32** 함수의 범위는 utc에서 1 월 1970 1 일 자정부터 23:59:59 년 1 월 18 일 2038, utc 까지의 시간입니다. **_Mkgmtime64** 의 범위는 1970 년 1 월 1 일 자정부터 23:59:59 년 12 월 3000 31 일 (utc) 까지의 utc입니다. 범위를 벗어난 날짜의 반환 값은-1입니다. **_Mkgmtime** 의 범위는 **_USE_32BIT_TIME_T** 가 정의 되었는지 여부에 따라 달라 집니다. 정의 되지 않은 경우 (기본값) 범위는 **_mkgmtime64**입니다. 그렇지 않으면 범위가 **_mkgmtime32**의 32 비트 범위로 제한 됩니다.
-
-**Gmtime** 및 **localtime** 는 변환에 대해 정적으로 할당 된 단일 버퍼를 사용 합니다. 이 버퍼를 **mkgmtime**에 제공 하면 이전 내용이 제거 됩니다.
-
-## <a name="example"></a>예제
+## <a name="examples"></a>예
 
 ```C
 // crt_mkgmtime.c
@@ -130,8 +123,6 @@ int main()
 }
 ```
 
-### <a name="sample-output"></a>샘플 출력
-
 ```Output
 Seconds since midnight, January 1, 1970
 My time: 1171588492
@@ -142,7 +133,7 @@ Local Time: Thu Feb 15 17:14:52 2007
 Greenwich Mean Time: Fri Feb 16 01:14:52 2007
 ```
 
-다음 예제에서는 계산된 요일과 날짜 값을 사용하여 불완전한 구조체를 채우는 방법을 보여 줍니다.
+다음 예제에서는 **_mkgmtime**하 여 불완전 한 구조체를 채우는 방법을 보여 줍니다. 요일 및 연도에 대 한 값을 계산 합니다.
 
 ```C
 // crt_mkgmtime2.c
@@ -179,8 +170,6 @@ int main()
 }
 ```
 
-### <a name="output"></a>출력
-
 ```Output
 Before calling _mkgmtime, t1 = Sun Feb 12 00:00:00 2003
 t.tm_yday = 0
@@ -188,13 +177,13 @@ After calling _mkgmtime, t1 = Wed Feb 12 00:00:00 2003
 t.tm_yday = 42
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[시간 관리](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](asctime-wasctime.md)<br/>
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+[시간 관리](../../c-runtime-library/time-management.md)\
+[asctime, _wasctime](asctime-wasctime.md)\
+[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)\
+[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
+[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
+[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)\
+[time, _time32, _time64](time-time32-time64.md)
