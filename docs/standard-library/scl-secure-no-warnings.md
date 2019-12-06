@@ -17,21 +17,21 @@ ms.locfileid: "68448200"
 ---
 # <a name="sclsecurenowarnings"></a>_SCL_SECURE_NO_WARNINGS
 
-C++ 표준 라이브러리에서 잠재적으로 안전 하지 않은 메서드를 호출 하면 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)이 발생 합니다. 이 경고를 사용 하지 않도록 설정 하려면 코드에서 _SCL_SECURE_NO_WARNINGS 매크로를 정의 합니다.
+C++ 표준 라이브러리에서 잠재적으로 안전하지 않은 메서드를 호출하면 [컴파일러 경고(수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)이 발생합니다. 이 경고를 사용하지 않도록 설정하려면 코드에서 _SCL_SECURE_NO_WARNINGS 매크로를 정의합니다.
 
 ```cpp
 #define _SCL_SECURE_NO_WARNINGS
 ```
 
-미리 컴파일된 헤더를 사용 하는 경우 C 런타임 라이브러리 또는 표준 라이브러리 헤더를 포함 하기 전에 미리 컴파일된 헤더 파일에이 지시문을 추가 합니다. 미리 컴파일된 헤더 파일을 포함 하기 전에 개별 소스 코드 파일에 배치 하는 경우 컴파일러에서 무시 됩니다.
+미리 컴파일된 헤더를 사용하는 경우 C 런타임 라이브러리 또는 표준 라이브러리 헤더를 포함하기 전에 미리 컴파일된 헤더 파일에 이 지시문을 추가합니다. 미리 컴파일된 헤더 파일을 포함하기 전에 개별 소스 코드 파일에 배치하는 경우 컴파일러에서 무시됩니다.
 
 ## <a name="remarks"></a>설명
 
 C4996 경고를 비활성화하는 다른 방법은 다음과 같습니다.
 
-- [/D(전처리기 정의)](../build/reference/d-preprocessor-definitions.md) 컴파일러 옵션을 사용합니다.
+- [/D (전처리기 정의)](../build/reference/d-preprocessor-definitions.md) 컴파일러 옵션을 사용합니다.
 
-   > cl/D_SCL_SECURE_NO_WARNINGS [기타 컴파일러 옵션] myfile .cpp
+   > cl /D_SCL_SECURE_NO_WARNINGS [기타 컴파일러 옵션] myfile .cpp
 
 - [/w](../build/reference/compiler-option-warning-level.md) 컴파일러 옵션을 사용합니다.
 
@@ -43,7 +43,7 @@ C4996 경고를 비활성화하는 다른 방법은 다음과 같습니다.
    #pragma warning(disable:4996)
    ```
 
-**/w\<l>\<n>** 컴파일러 옵션을 사용하여 경고 C4996의 수준을 수동으로 변경할 수도 있습니다. 예를 들어 C4996 경고를 수준 4로 설정하려면 다음 코드를 사용합니다.
+**/w\<l>\<n>** 컴파일러 옵션을 사용하여 경고 C4996의 수준을 수동으로 변경할 수도 있습니다. 예를들어 C4996 경고를 수준 4로 설정하려면 다음 코드를 사용합니다.
 
 > cl /w44996 [other compiler options] myfile.cpp
 
