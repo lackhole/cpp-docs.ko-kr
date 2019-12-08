@@ -28,7 +28,7 @@ C++ 표준은 멤버 함수로 인해 컨테이너에 대한 반복기가 어떻
 
 - push 또는 insert를 사용하여 [vector](../standard-library/vector.md)의 크기를 줄이면 `vector`에 대한 반복기가 무효화됩니다.
 
-## <a name="invalid-iterators"></a>잘못 된 반복기
+## <a name="invalid-iterators"></a>잘못된 반복기
 
 이 샘플 프로그램을 디버그 모드에서 컴파일하면 이 프로그램이 런타임에 어설션되고 종료됩니다.
 
@@ -128,7 +128,7 @@ int main()
 
 이 예제에서는 함수 대신 람다 식 `[] (int& elem) { elem *= 2; }`를 사용합니다. 이 선택은 비슷한 함수가 같은 실패를 일으키는 어설션 실패와 아무런 관련이 없지만 람다는 간단한 함수 개체 작업을 수행하는 매우 유용한 방법입니다. 람다 식에 대한 자세한 내용은 [람다 식](../cpp/lambda-expressions-in-cpp.md)을 참조하세요.
 
-## <a name="iterators-going-out-of-scope"></a>범위 밖으로 이동 하는 반복기
+## <a name="iterators-going-out-of-scope"></a>범위 밖으로 이동하는 반복기
 
 또한 디버그 반복기 검사를 수행 하면 for 루프 범위가 종료 될 때 **for** 루프에서 선언 된 반복기 변수가 범위를  벗어났습니다.
 
