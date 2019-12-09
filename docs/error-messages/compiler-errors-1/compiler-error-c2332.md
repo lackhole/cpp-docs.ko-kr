@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2332
 ms.assetid: fb05cd68-e271-4bea-9fb7-ef4edb0a26ac
-ms.openlocfilehash: c9b8fe3665199e4a502de965fd1e592252e97bf2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 74b0045b70a68e182025976f84f8a709c3a30064
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300864"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74747763"
 ---
 # <a name="compiler-error-c2332"></a>컴파일러 오류 C2332
 
-'typedef': 태그 이름이 없습니다.
+' typedef ': 태그 이름이 없습니다.
 
-컴파일러는 불완전 한 형식 정을 찾았습니다.
+컴파일러가 불완전 한 형식 정의를 발견 했습니다.
 
-다음 샘플에서는 C2332를 생성합니다.
+다음 샘플에서는 C2332를 생성 합니다.
 
-```
+```cpp
 // C2332.cpp
 // compile with: /c
 struct S {

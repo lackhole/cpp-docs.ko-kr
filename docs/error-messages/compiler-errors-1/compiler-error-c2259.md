@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C2259
 ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
-ms.openlocfilehash: 562882f50edfe2d44ab1f08ee9dbe88fe468af63
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 403d674eae696eb42a837aef9d6e97c4b5b8f6c2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447386"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758790"
 ---
 # <a name="compiler-error-c2259"></a>컴파일러 오류 C2259
 
-'class': 추상 클래스를 인스턴스화할 수 없습니다.
+' class ': 추상 클래스를 인스턴스화할 수 없습니다.
 
-코드는 추상 클래스 또는 구조체의 인스턴스를 선언합니다.
+코드는 추상 클래스 또는 구조체의 인스턴스를 선언 합니다.
 
-클래스 또는 하나 이상의 순수 가상 함수를 사용 하 여 구조체를 인스턴스화할 수 없습니다. 파생된 클래스는 파생된 클래스의 개체를 인스턴스화할 때 각 순수 가상 함수를 재정의 해야 합니다.
+하나 이상의 순수 가상 함수를 사용 하 여 클래스 또는 구조체를 인스턴스화할 수 없습니다. 파생 클래스의 개체를 인스턴스화하려면 파생 클래스가 각 순수 가상 함수를 재정의 해야 합니다.
 
-자세한 내용은 [암시적 추상 클래스](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Implicitly_abstract_classes)합니다.
+자세한 내용은 [암시적 추상 클래스](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Implicitly_abstract_classes)를 참조 하세요.
 
-다음 샘플에서는 C2259 오류가 생성 됩니다.
+다음 샘플에서는 C2259를 생성 합니다.
 
-```
+```cpp
 // C2259.cpp
 // compile with: /c
 class V {
@@ -42,19 +42,19 @@ A a;  // C2259, A inherits func() as pure virtual
 B b;  // OK, B defines func()
 ```
 
-인터페이스에서 파생 하 고 public이 아닌 액세스 권한 사용 하 여 파생된 클래스에서 인터페이스 메서드를 구현할 때마다 C2259 나타날 수 있습니다.  이 컴파일러는 공용 액세스는 파생된 클래스에서 구현 된 인터페이스 메서드를 예상 하기 때문에 발생 합니다. 더 제한적인 액세스 권한 사용 하 여 인터페이스에 대 한 멤버 함수를 구현 하는 경우 컴파일러는 파생된 클래스는 추상 클래스는 인터페이스에 정의 된 인터페이스 메서드에 대 한 구현 되도록 고려 하지 않습니다.
+인터페이스에서 파생 하 고 public이 아닌 액세스 권한으로 파생 클래스에서 인터페이스 메서드를 구현 하는 경우 항상 C2259을 받을 수 있습니다.  이는 컴파일러에서 파생 클래스에 구현 된 인터페이스 메서드를 공용 액세스로 예상 하기 때문에 발생 합니다. 더 제한적인 액세스 권한이 있는 인터페이스에 대 한 멤버 함수를 구현 하는 경우 컴파일러는 인터페이스에 정의 된 인터페이스 메서드를 구현 하는 것으로 간주 하지 않고 파생 된 클래스를 추상 클래스로 만듭니다.
 
-문제를 해결할 수 있는 방법은 두 가지가 있습니다.
+문제에 대 한 두 가지 해결 방법이 있습니다.
 
-- 구현 된 메서드에 대 한 공용 액세스 권한을 확인 합니다.
+- 구현 된 메서드에 대 한 액세스 권한을 public으로 설정 합니다.
 
-- 파생된 클래스에서 구현 된 인터페이스 메서드에 대 한 범위 확인 연산자를 사용 하 여 인터페이스의 이름 사용 하 여 구현 된 메서드 이름을 한 정해야 합니다.
+- 파생 클래스에 구현 된 인터페이스 메서드에 대해 범위 확인 연산자를 사용 하 여 구현 된 메서드 이름을 인터페이스 이름으로 한정 합니다.
 
-Visual Studio 2005에서 수행 된 규칙 작업의 결과로 C2259도 발생할 수 있습니다 **/zc: wchar_t** 이제 기본적으로 켜져 있습니다. 이 이런 경우 C2599 해결할 수 있습니다 사용 하 여 컴파일하거나 **/zc: wchar_t-**, 이전 버전에서 또는 가급적 호환 되므로 형식이 업데이트 하 여 동작을 활용할 수 있습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t를 네이티브 형식으로 인식)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md)을 참조하세요.
+C2259는 Visual Studio 2005에서 수행 된 규칙 작업의 결과로 발생할 수도 있습니다. **/zc: wchar_t** 는 현재 기본적으로 on입니다. 이러한 상황에서 C2599는 **/zc: wchar_t-** 를 사용 하 여 컴파일하여 이전 버전에서의 동작을 얻거나 호환 되도록 형식을 업데이트 하 여 해결할 수 있습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
 
-다음 샘플에서는 C2259 오류가 생성 됩니다.
+다음 샘플에서는 C2259를 생성 합니다.
 
-```
+```cpp
 // C2259b.cpp
 // compile with: /c
 #include <windows.h>
@@ -90,9 +90,9 @@ public:
 MyClass4 y;
 ```
 
-다음 샘플에서는 C2259 오류가 생성 됩니다.
+다음 샘플에서는 C2259를 생성 합니다.
 
-```
+```cpp
 // C2259c.cpp
 // compile with: /clr
 interface class MyInterface {

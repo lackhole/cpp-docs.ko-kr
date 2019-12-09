@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-ms.openlocfilehash: 40ff315c179a6b62a3073d4f07e4e6a6d1c1acab
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 07c8a79e0a9569db80607e1ec1e16cd4b502783c
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941122"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857829"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
@@ -50,11 +50,11 @@ int feraiseexcept(
 
 모든 지정된 예외가 성공적으로 발생하면 0을 반환합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-**Feraiseexcept** 함수는 *제외한*로 지정 된 부동 소수점 예외를 발생 시 키 려 고 합니다.   **Feraiseexcept** 함수는 fenv에 \<정의 된 다음 예외 매크로를 지원 합니다 >.
+**Feraiseexcept** 함수는 *제외한*로 지정 된 부동 소수점 예외를 발생 시 키 려 고 합니다.   **Feraiseexcept** 함수는 \<fenv. h >에 정의 된 다음 예외 매크로를 지원 합니다.
 
-|예외 매크로|Description|
+|예외 매크로|설명|
 |---------------------|-----------------|
 |FE_DIVBYZERO|초기 부동 소수점 작업에서 특이성 또는 극 오류가 발생했습니다. 무한대 값이 생성되었습니다.|
 |FE_INEXACT|함수가 초기 부동 소수점 작업의 저장된 결과를 강제로 반올림했습니다.|
@@ -67,7 +67,7 @@ int feraiseexcept(
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 
-**Microsoft 전용:** *제외한* 에 지정 된 예외는 FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT 순서로 발생 합니다. 그러나 *제외한*에 지정 되지 않은 경우에도 FE_OVERFLOW 또는 FE_UNDERFLOW이 발생 하면 FE_INEXACT이 발생할 수 있습니다. **Microsoft 전용 종료**
+**Microsoft 전용:** *제외한* 에 지정 된 예외는 FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT 순서로 발생 합니다. 그러나 *제외한*에 지정 되지 않은 경우에도 FE_OVERFLOW 또는 FE_UNDERFLOW 발생 하면 FE_INEXACT 발생할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -75,9 +75,9 @@ int feraiseexcept(
 |--------------|--------------|------------------|
 |*feraiseexcept*|\<fenv.h>|\<cfenv>|
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [사전순 함수 참조](crt-alphabetical-function-reference.md)<br/>
 [fesetexceptflag](fesetexceptflag2.md)<br/>

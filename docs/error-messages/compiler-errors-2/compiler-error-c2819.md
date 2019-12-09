@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2819
 ms.assetid: fcc7762d-cb82-4bb1-a715-0d82da832edf
-ms.openlocfilehash: 17b863d24d43f0dc7afb0fc4776953dcb41929e5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a3768cb23c65eb3e2d818f81ff7c6a561c8d7ec
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174941"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750652"
 ---
 # <a name="compiler-error-c2819"></a>컴파일러 오류 C2819
 
-'type' 형식에는 오버 로드 된 멤버 'operator를->' 없습니다.
+' type ' 형식에 오버 로드 된 멤버 ' operator-> '이 (가) 없습니다.
 
-정의 해야 `operator->()` 이 포인터 연산을 사용 하도록 합니다.
+이 포인터 작업을 사용 하려면 `operator->()`를 정의 해야 합니다.
 
-다음 샘플에서는 C2819 오류가 생성 됩니다.
+다음 샘플에서는 C2819를 생성 합니다.
 
-```
+```cpp
 // C2819.cpp
 // compile with: /c
 class A {
@@ -49,9 +49,9 @@ void F(D j) {
 }
 ```
 
-사용 하는 경우에 C2819 발생할 수 있습니다 [ C++ 참조 형식에 대 한 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)합니다. 다음 샘플에서는 C2819 오류가 생성 됩니다.
+C2819는 [ C++ 참조 형식에 스택 의미 체계를](../../dotnet/cpp-stack-semantics-for-reference-types.md)사용 하는 경우에도 발생할 수 있습니다. 다음 샘플에서는 C2819를 생성 합니다.
 
-```
+```cpp
 // C2819_b.cpp
 // compile with: /clr
 ref struct R {

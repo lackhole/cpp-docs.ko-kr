@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4336
 ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
-ms.openlocfilehash: 4946b932fa897dab057e430f16c781e2d06bebd0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 33c4a25618c1afcf93704b161483bc4c0a6e16a0
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400853"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683313"
 ---
 # <a name="compiler-warning-level-4-c4336"></a>컴파일러 경고(수준 4) C4336
 
-상호 참조 된 형식 라이브러리 'type_lib1' 'type_lib2' 가져오기 전에 가져오기
+' type_lib2 '를 가져오기 전에 상호 참조 된 형식 라이브러리 ' type_lib1 ' 가져오기
 
-형식 라이브러리를 사용 하 여 참조를 [#import](../../preprocessor/hash-import-directive-cpp.md) 지시문입니다. 형식 라이브러리를 사용 하 여 참조 되지 않은 다른 형식 라이브러리에 대 한 참조를 포함 하는 반면 `#import`합니다. 컴파일러에서이.tlb 파일을 찾았습니다.
+[#Import](../../preprocessor/hash-import-directive-cpp.md) 지시어를 사용 하 여 형식 라이브러리를 참조 했습니다. 그러나 형식 라이브러리에 `#import`로 참조 되지 않은 다른 형식 라이브러리에 대 한 참조가 포함 되어 있습니다. 이 다른 .tlb 파일은 컴파일러에 의해 발견 되었습니다.
 
-다음 두 파일 (midl.exe를 사용 하 여 컴파일된)에서 만들어진 디스크에서 지정 된 두 개의 형식 라이브러리:
+다음 두 파일에서 만든 디스크에 두 개의 형식 라이브러리가 지정 됩니다 (midl로 컴파일).
 
 ```
 // c4336a.idl
@@ -34,7 +34,7 @@ library c4336aLib
 };
 ```
 
-두 번째 형식 라이브러리:
+두 번째 형식 라이브러리는 다음과 같습니다.
 
 ```
 // c4336b.idl
@@ -50,9 +50,9 @@ library C4336bLib
 };
 ```
 
-다음 샘플에서는 C4336를 생성합니다.
+다음 샘플에서는 C4336를 생성 합니다.
 
-```
+```cpp
 // C4336.cpp
 // compile with: /W4 /LD
 // #import "C4336a.tlb"

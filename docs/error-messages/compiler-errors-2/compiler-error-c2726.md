@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2726
 ms.assetid: f0191bb7-c175-450b-bf09-a3213db96d09
-ms.openlocfilehash: d0ade9317c996bb3432e7a4626fc930a3d5df349
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36ddf54b3924ae48969fa810ba2883c51b2264b5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208391"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757425"
 ---
 # <a name="compiler-error-c2726"></a>컴파일러 오류 C2726
 
@@ -21,7 +21,7 @@ ms.locfileid: "62208391"
 
 다음 샘플에서는 C2726 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2726.cpp
 // compile with: /clr
 using namespace System;

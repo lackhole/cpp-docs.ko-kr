@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C3539
 ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
-ms.openlocfilehash: be1051859ebbcbdc22a9b71f8c5adba2e75c4e92
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 85381b237480b86b59c33f02601a1b9dc644a5a4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344655"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761532"
 ---
 # <a name="compiler-error-c3539"></a>컴파일러 오류 C3539
 
-'type': 템플릿 인수는 'auto'를 포함 하는 형식일 수 없습니다.
+' type ': 템플릿 인수는 ' a u t o '를 포함 하는 형식일 수 없습니다.
 
-지정 된 템플릿 인수 형식을 사용 하는 포함할 수 없습니다는 `auto` 키워드입니다.
+표시 된 템플릿 인수 형식은 `auto` 키워드의 사용을 포함할 수 없습니다.
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. 템플릿 인수를 지정 하지 않으면는 `auto` 키워드입니다.
+1. `auto` 키워드를 사용 하 여 템플릿 인수를 지정 하지 마십시오.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 C3539를 생성합니다.
+다음 예에서는 C3539를 생성 합니다.
 
-```
+```cpp
 // C3539.cpp
 // Compile with /Zc:auto
 template<class T> class C{};
@@ -38,6 +38,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [auto 키워드](../../cpp/auto-keyword.md)

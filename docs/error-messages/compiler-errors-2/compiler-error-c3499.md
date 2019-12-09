@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3499
 ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
-ms.openlocfilehash: 381e665745f79f6156350f66e412f0580a06f6fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e50aaeac4a9f02cf3e67c25a08afdc2df0f1c62f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381022"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738013"
 ---
 # <a name="compiler-error-c3499"></a>컴파일러 오류 C3499
 
@@ -31,7 +31,7 @@ ms.locfileid: "62381022"
 
 다음 예제에서는 람다 식의 본문이 여러 문을 포함하고 값을 반환하지만 람다 식에서 반환 형식을 지정하지 않으므로 C3499를 생성합니다.
 
-```
+```cpp
 // C3499a.cpp
 
 int main()
@@ -44,7 +44,7 @@ int main()
 
 다음 예제에서는 C3499에 대한 두 가지 해결 방법을 보여 줍니다. 첫 번째 해결 방법은 람다 식의 반환 형식을 제공하는 것입니다. 두 번째 해결 방법은 람다 식의 본문을 구성하는 문을 단일 문으로 결합하는 것입니다.
 
-```
+```cpp
 // C3499b.cpp
 
 int main()
@@ -60,6 +60,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

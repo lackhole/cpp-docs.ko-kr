@@ -13,16 +13,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448828"
 ---
-# <a name="hasiteratordebugging"></a>_HAS_ITERATOR_DEBUGGING
+# <a name="_has_iterator_debugging"></a>_HAS_ITERATOR_DEBUGGING
 
-[_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 교체된 이 매크로는 반복기 디버깅 기능이 디버그 빌드에서 사용하도록 설정되었는지 여부를 정의합니다. 반복기 디버깅은 기본적으로 디버그 빌드에서는 사용하도록 설정되고 정품 빌드에서는 사용하지 않도록 설정됩니다. 자세한 내용은 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 참조하세요.
+[_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 교체된 이 매크로는 반복기 디버깅 기능이 디버그 빌드에서 사용하도록 설정되었는지 여부를 정의합니다. 반복기 디버깅은 기본적으로 디버그 빌드에서는 사용하도록 설정되고 제품 빌드에서는 사용하지 않도록 설정됩니다. 자세한 내용은 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 참조하세요.
 
 > [!IMPORTANT]
-> _HAS_ITERATOR_DEBUGGING 매크로를 직접 사용 하는 것은 더 이상 사용 되지 않습니다. 대신 _ITERATOR_DEBUG_LEVEL를 사용 하 여 반복기 디버그 설정을 제어 합니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 참조하세요.
+> _HAS_ITERATOR_DEBUGGING 매크로를 직접 사용하는 것은 더 이상 사용 되지 않습니다. 대신 _ITERATOR_DEBUG_LEVEL를 사용하여 반복기 디버그 설정을 제어 합니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-디버그 빌드에서 반복기 디버깅을 사용 하도록 설정 하려면 _ITERATOR_DEBUG_LEVEL을 2로 설정 합니다. 이는 _HAS_ITERATOR_DEBUGGING 설정 1에 해당 하거나 사용 하도록 설정 된 것과 같습니다.
+디버그 빌드에서 반복기 디버깅을 사용 하도록 설정 하려면 _ITERATOR_DEBUG_LEVEL을 2로 설정 합니다. 이는 _HAS_ITERATOR_DEBUGGING 설정 1에 해당 하거나 사용 하도록 설정된 것과 같습니다.
 
 ```cpp
 #define _ITERATOR_DEBUG_LEVEL 2

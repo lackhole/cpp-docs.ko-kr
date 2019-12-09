@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2783
 ms.assetid: 1ce94a11-bb8b-4be3-a222-f1f105da74b3
-ms.openlocfilehash: 539eeebc39fa7fc061cc615f29d87d3e6bcfc5c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: adba87853bac764d4975d6b6fa9aa44940ced03c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408435"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739677"
 ---
 # <a name="compiler-error-c2783"></a>컴파일러 오류 C2783
 
-'declaration': 'identifier'에 대 한 템플릿 인수를 추론할 수 없습니다
+' 선언 ': ' identifier '의 템플릿 인수를 추론할 수 없습니다.
 
-컴파일러는 템플릿 인수를 확인할 수 없습니다. 기본 인수는 템플릿 인수 추론을 사용할 수 없습니다.
+컴파일러가 템플릿 인수를 확인할 수 없습니다. 기본 인수를 사용 하 여 템플릿 인수를 추론할 수 없습니다.
 
-다음 샘플에서는 C2783를 생성합니다.
+다음 샘플에서는 C2783를 생성 합니다.
 
-```
+```cpp
 // C2783.cpp
 template<typename T1, typename T2>
 T1 f(T2) {
@@ -35,9 +35,9 @@ int main() {
 }
 ```
 
-C2783은 제네릭을 사용할 때도 발생할 수 있습니다.
+제네릭을 사용 하는 경우에도 C2783이 발생할 수 있습니다.
 
-```
+```cpp
 // C2783b.cpp
 // compile with: /clr
 using namespace System;

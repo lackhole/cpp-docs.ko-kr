@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3519
 ms.assetid: ca24b2bc-7e90-4448-ae84-3fedddf9bca7
-ms.openlocfilehash: e9a998e1c3a6c2fb770fb9d26d97b8a24e5554d3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e56ff814b1a2dd6ec3cb41db2cbcc21d7dcf2d9
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360036"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750171"
 ---
 # <a name="compiler-error-c3519"></a>컴파일러 오류 C3519
 
-'invalid_param': embedded_idl 특성에 잘못 된 매개 변수
+' invalid_param ': embedded_idl 특성에 대 한 매개 변수가 잘못 되었습니다.
 
-에 전달 된 매개 변수를 `embedded_idl` 의 특성 [#import](../../preprocessor/hash-import-directive-cpp.md), 하지만 컴파일러에서 매개 변수를 인식할 수 없습니다.
+매개 변수가 [#import](../../preprocessor/hash-import-directive-cpp.md)의 `embedded_idl` 특성에 전달 되었지만 컴파일러가 매개 변수를 인식 하지 못했습니다.
 
-에 허용 되는 매개 변수만 `embedded_idl` 됩니다 `emitidl` 고 `no_emitidl`입니다.
+`embedded_idl`에 허용 되는 유일한 매개 변수는 `emitidl` 및 `no_emitidl`입니다.
 
-다음 샘플에서는 C3519 오류가 생성 됩니다.
+다음 샘플에서는 C3519를 생성 합니다.
 
-```
+```cpp
 // C3519.cpp
 // compile with: /LD
 [module(name="MyLib2")];

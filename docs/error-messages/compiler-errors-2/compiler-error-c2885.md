@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C2885
 ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
-ms.openlocfilehash: ff5e770052301e95f694d3712f95b82732c2faba
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: e60f3fff2ef61f4d6374072c05a2ad3e64a57031
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447692"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760930"
 ---
 # <a name="compiler-error-c2885"></a>컴파일러 오류 C2885
 
-'class::identifier': 하지 유효한 using 선언 비 클래스 범위의
+' class:: identifier ': 클래스 범위가 아닌 범위에서 올바른 using 선언이 아닙니다.
 
-사용 하는 [를 사용 하 여](../../cpp/using-declaration.md) 선언 잘못 됩니다.
+[Using](../../cpp/using-declaration.md) 선언을 잘못 사용 했습니다.
 
 ## <a name="example"></a>예제
 
-이 오류는 Visual Studio 2005에 대해 수행한 컴파일러 규칙 작업의 결과로 생성 될 수 없습니다: 필요가 더 이상 유효를 `using` 중첩된 형식이 선언 n에 형식을 배치 하는 중첩된 형식에 대 한 각 참조를 명시적으로 한 정해야 amespace, 하거나 형식 정의 만듭니다.
+이 오류는 Visual Studio 2005에 대해 수행 된 컴파일러 규칙 작업의 결과로 생성 될 수 있습니다. 더 이상 중첩 된 형식에 `using` 선언을 사용할 수 없습니다. 중첩 된 형식에 대 한 각 참조를 명시적으로 한정 하거나, 형식을 네임 스페이스에 배치 하거나, typedef를 만들어야 합니다.
 
-다음 샘플 C2885를 생성합니다.
+다음 샘플에서는 C2885를 생성 합니다.
 
-```
+```cpp
 // C2885.cpp
 namespace MyNamespace {
    class X1 {};
@@ -54,11 +54,11 @@ int main () {
 
 ## <a name="example"></a>예제
 
-사용 하는 경우는 `using` 키워드를 클래스 멤버를 사용 하 여 C++ 다른 클래스 (파생된 클래스) 내에서 해당 멤버를 정의 해야 합니다.
+`using` 키워드를 클래스 멤버와 함께 사용 하는 경우 C++ 에서는 다른 클래스 (파생 클래스) 내에서 해당 멤버를 정의 해야 합니다.
 
-다음 샘플 C2885를 생성합니다.
+다음 샘플에서는 C2885를 생성 합니다.
 
-```
+```cpp
 // C2885_b.cpp
 // compile with: /c
 class A {

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2937
 ms.assetid: 95671ca3-79f7-4b56-a5f2-a92296da1629
-ms.openlocfilehash: 8ad25dbcec4ee8a8ed49449cf9e64ebae4af1321
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f682cd6346d214f4173226d78301f563083ef607
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62366527"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758374"
 ---
 # <a name="compiler-error-c2937"></a>컴파일러 오류 C2937
 
@@ -21,7 +21,7 @@ ms.locfileid: "62366527"
 
 다음 샘플에서는 C2937을 생성합니다.
 
-```
+```cpp
 // C2937.cpp
 // compile with: /c
 template<class T>
@@ -32,7 +32,7 @@ typedef TC<int> c;   // OK
 
 C2937은 제네릭을 사용하는 경우에도 발생할 수 있습니다.
 
-```
+```cpp
 // C2937b.cpp
 // compile with: /clr
 generic<class T>

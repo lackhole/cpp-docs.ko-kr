@@ -6,36 +6,34 @@ f1_keywords:
 helpviewer_keywords:
 - __clrcall keyword [C++]
 ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
-ms.openlocfilehash: bc44feb97223de47f45734f75777ee040d0ebdd8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6eb1a05eaf6669daa4cb7142ff16a57f7caf39cd
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62364573"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857608"
 ---
-# <a name="clrcall"></a>__clrcall
+# <a name="__clrcall"></a>__clrcall
 
-**Microsoft 전용**
+관리 코드에서만 함수를 호출할 수 있도록 지정합니다.  관리 코드 에서만 호출 되는 모든 가상 함수에 **__clrcall** 를 사용 합니다. 그러나 네이티브 코드에서 호출되는 함수에는 이 호출 규칙을 사용할 수 없습니다. **__Clrcall** 한정자는 Microsoft 전용입니다.
 
-관리 코드에서만 함수를 호출할 수 있도록 지정합니다.  사용 하 여 **__clrcall** 관리 코드에서 호출 되는 모든 가상 함수에 대 한 합니다. 그러나 네이티브 코드에서 호출되는 함수에는 이 호출 규칙을 사용할 수 없습니다.
+**__Clrcall** 를 사용 하 여 관리 되는 함수에서 가상 관리 되는 함수 또는 관리 되는 함수에서 포인터를 통해 관리 되는 함수로 호출할 때 성능을 향상 시킬 수 있습니다.
 
-사용 하 여 **__clrcall** 성능을 향상 시키기 위해 관리 되는 가상 함수를 관리 되는 함수 또는 관리 되는 함수 포인터를 통해 관리 되는 함수를 호출 하는 경우.
+진입점은 컴파일러에서 생성된 별도의 함수입니다. 함수에 네이티브 진입점과 관리되는 진입점이 둘 다 있을 경우 둘 중 하나는 함수 구현이 포함된 실제 함수입니다. 다른 함수는 실제 함수를 호출하고 공용 언어 런타임에서 PInvoke를 수행하게 하는 별도의 함수(썽크)입니다. 함수를 **__clrcall**표시 하는 경우 함수 구현이 MSIL 이어야 하 고 네이티브 진입점 함수가 생성 되지 않음을 표시 합니다.
 
-진입점은 컴파일러에서 생성된 별도의 함수입니다. 함수에 네이티브 진입점과 관리되는 진입점이 둘 다 있을 경우 둘 중 하나는 함수 구현이 포함된 실제 함수입니다. 다른 함수는 실제 함수를 호출하고 공용 언어 런타임에서 PInvoke를 수행하게 하는 별도의 함수(썽크)입니다. 함수를 표시 하는 경우 **__clrcall**에 함수 구현이 MSIL 이어야 하 여 네이티브 진입점 함수가 생성 되지 것입니다 나타냅니다.
+**__Clrcall** 지정 되지 않은 경우 네이티브 함수의 주소를 사용 하는 경우 컴파일러는 네이티브 진입점을 사용 합니다. **__clrcall** 함수를 관리 하 고 관리에서 네이티브로 전환할 필요가 없음을 나타냅니다. 이 경우 컴파일러가 관리되는 진입점을 사용합니다.
 
-경우에 네이티브 함수의 주소를 가져올 때 **__clrcall** 지정 하지 않으면 컴파일러가 네이티브 진입점을 사용 합니다. **__clrcall** 은 함수가 관리 되며에서 전환을 통해 이동 하지 않고도 기본 관리는 나타냅니다. 이 경우 컴파일러가 관리되는 진입점을 사용합니다.
+`/clr` (`/clr:pure` 또는 `/clr:safe`아님)를 사용 하 고 **__clrcall** 를 사용 하지 않는 경우 함수의 주소를 사용 하면 항상 네이티브 진입점 함수의 주소가 반환 됩니다. **__Clrcall** 를 사용 하는 경우 기본 진입점 함수가 생성 되지 않으므로 진입점 썽크 함수가 아닌 관리 되는 함수의 주소를 가져옵니다. 자세한 내용은 [이중 썽킹](../dotnet/double-thunking-cpp.md)을 참조 하세요. **/clr: pure** 및 **/clr: safe** 컴파일러 옵션은 Visual Studio 2015에서는 지원 중단 예정이고 Visual Studio 2017에서는 지원되지 않습니다.
 
-때 `/clr` (하지 `/clr:pure` 또는 `/clr:safe`)는 및 **__clrcall** 는 네이티브 진입점 함수 주소를 반환 함수의 주소를 항상 수행 사용 되지 않습니다. 때 **__clrcall** 는 사용, 네이티브 진입점 함수는 만들어지지 않으므로 하지는 진입점 썽크 함수가 관리 되는 함수의 주소를 가져옵니다. 자세한 내용은 [이중 썽킹](../dotnet/double-thunking-cpp.md)합니다. **/clr: pure** 및 **/clr: safe** Visual Studio 2015에서 사용 되지 않고 Visual Studio 2017에서 지원 되지 않는 컴파일러 옵션입니다.
+[/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 은 모든 함수 및 함수 포인터가 **__clrcall** 되었으며 컴파일러가 compiland 내의 함수를 **__clrcall**이외의 값으로 표시할 수 없음을 의미 합니다. **/Clr: pure** 를 사용 하는 경우 함수 포인터 및 외부 선언에만 **__clrcall** 을 지정할 수 있습니다.
 
-[/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 모든 함수와 함수 포인터는 의미 **__clrcall** 컴파일러 이외의표시할compiland안의함수를허용하지것입니다 **__clrcall**합니다. 때 **/clr: pure** 사용 됩니다 **__clrcall** 함수 포인터와 외부 선언에만 지정할 수 있습니다.
+**/Clr** 을 사용 하 여 컴파일된 기존 C++ 코드에서 함수에 MSIL 구현이 있는 한 __clrcall 함수를 직접 호출할 수 있습니다. **__clrcall** 함수는 인라인 asm이 있는 함수에서 직접 호출할 수 없으며 예를 들어 `/clr`를 사용 하 여 컴파일된 경우에도 CPU 관련 내장을 호출할 수 없습니다.
 
-직접 호출할 수 있습니다 **__clrcall** 기존 계획에서 함수 C++ 를 사용 하 여 컴파일된 코드 **/clr** 함수에 MSIL 구현이 하기만 합니다. **__clrcall** 이러한 함수를 사용 하 여 컴파일되는 경우에 인라인 asm 및 예를 들어 CPU 별 intrinisics를 호출 하는 함수에서 직접 함수를 호출할 수 없습니다 `/clr`합니다.
-
-**__clrcall** 함수 포인터는 생성 된 응용 프로그램 도메인으로 사용 하려는 합니다.  전달 하는 대신 **__clrcall** 응용 프로그램 도메인 간에 대 한 포인터를 함수를 사용 하 여 <xref:System.CrossAppDomainDelegate>입니다. 자세한 내용은 [응용 프로그램 도메인 및 시각적 개체 C++ ](../dotnet/application-domains-and-visual-cpp.md)합니다.
+**__clrcall** 함수 포인터는 생성 된 응용 프로그램 도메인 에서만 사용 됩니다.  응용 프로그램 도메인에서 **__clrcall** 함수 포인터를 전달 하는 대신 <xref:System.CrossAppDomainDelegate>를 사용 합니다. 자세한 내용은 [응용 프로그램 도메인 및 시각적 개체 C++ ](../dotnet/application-domains-and-visual-cpp.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-함수를 사용 하 여 선언 되 면 사용자에 게 유의 **__clrcall**, 필요할 때 코드를 생성할; 함수가 호출 될 때 예를 들어 있습니다.
+함수가 **__clrcall**로 선언 되 면 필요할 때 코드가 생성 됩니다. 예를 들어 함수를 호출 하는 경우입니다.
 
 ```cpp
 // clrcall2.cpp
@@ -92,7 +90,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [C++ 키워드](../cpp/keywords-cpp.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3490
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
-ms.openlocfilehash: 1e6c3c502290e88feec89877de7ad791084401cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 940eae39222548ec74bda8ccb38e669748ffa74f
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381074"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738403"
 ---
 # <a name="compiler-error-c3490"></a>컴파일러 오류 C3490
 
@@ -27,7 +27,7 @@ ms.locfileid: "62381074"
 
 다음 예제에서는 `_i` 메서드의 멤버 변수 `const` 를 수정하므로 C3490을 생성합니다.
 
-```
+```cpp
 // C3490a.cpp
 // compile with: /c
 
@@ -46,7 +46,7 @@ class C
 
 다음 예제에서는 메서드 선언에서 `const` 한정자를 제거하여 C3490를 해결합니다.
 
-```
+```cpp
 // C3490b.cpp
 // compile with: /c
 
@@ -61,6 +61,6 @@ class C
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

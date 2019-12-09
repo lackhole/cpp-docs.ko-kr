@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3510
 ms.assetid: c48387bc-0300-4a4d-97f7-3fb90f82a451
-ms.openlocfilehash: dbb65628aa6e0da94a91a59724ca8e1cd5b56491
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f9dea77b739aa59474e60cf852fff2577ab6ba9
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187354"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753629"
 ---
 # <a name="compiler-error-c3510"></a>컴파일러 오류 C3510
 
-type_lib' 종속 형식 라이브러리'를 찾을 수 없습니다.
+' type_lib ' 종속 형식 라이브러리를 찾을 수 없습니다.
 
-[no_registry](../../preprocessor/no-registry.md) 하 고 [auto_search](../../preprocessor/auto-search.md) 에 전달한 `#import` 하지만 컴파일러에서 참조 된 형식 라이브러리를 찾을 수 없습니다.
+[no_registry](../../preprocessor/no-registry.md) 및 [auto_search](../../preprocessor/auto-search.md) `#import`에 전달 되었지만 컴파일러가 참조 된 형식 라이브러리를 찾을 수 없습니다.
 
-이 오류를 해결 하려면 형식 라이브러리와 참조 된 형식 라이브러리를 모든 컴파일러를 사용할 수 있는지를 확인 합니다.
+이 오류를 해결 하려면 모든 형식 라이브러리와 참조 형식 라이브러리를 컴파일러에서 사용할 수 있는지 확인 합니다.
 
-다음 샘플에서는 C3510 오류가 생성 됩니다.
+다음 샘플에서는 C3510를 생성 합니다.
 
-다음 두 개의 형식 라이브러리가 빌드된 C3510a.tlb 삭제 된 가정 또는 경로에 없습니다.
+다음 두 가지 형식 라이브러리가 빌드 되었으며 해당 경로에서 C3510a이 삭제 되었거나 삭제 되지 않았다고 가정 합니다.
 
 ```
 // C3510a.idl
@@ -38,7 +38,7 @@ library C3510aLib
 };
 ```
 
-및 다음 두 번째 형식 라이브러리에 대 한 소스 코드:
+그런 다음 두 번째 형식 라이브러리에 대 한 소스 코드를 수행 합니다.
 
 ```
 // C3510b.idl
@@ -54,9 +54,9 @@ library C3510bLib
 };
 ```
 
-및 클라이언트 코드:
+클라이언트 코드는 다음과 같습니다.
 
-```
+```cpp
 // C3510.cpp
 #import "c3510b.tlb" no_registry auto_search   // C3510
 int main() {

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - noinline __declspec keyword
 - __declspec keyword [C++], noinline
 ms.assetid: f259d55b-dec7-4bde-8cf9-14521e4fdc42
-ms.openlocfilehash: e155726ad1f2f3f6f0501d3aebf7fa14e620d6bd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6e424846c46dd50852b62008c4f1f38827da849c
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377403"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857413"
 ---
 # <a name="noinline"></a>noinline
 
-## <a name="microsoft-specific"></a>Microsoft 전용
+**Microsoft 전용**
 
 **__declspec(noinline)** 은 특정 멤버 함수(클래스의 함수)를 인라인 처리하지 않도록 컴파일러에 지시합니다.
 
@@ -34,7 +34,7 @@ class X {
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [__declspec](../cpp/declspec.md)<br/>
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>

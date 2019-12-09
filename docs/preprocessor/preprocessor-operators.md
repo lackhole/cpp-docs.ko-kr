@@ -1,18 +1,18 @@
 ---
-title: 전처리 연산자
+title: 전처리기 연산자
 ms.date: 08/29/2019
 helpviewer_keywords:
 - preprocessor operators
 - operators [C++], preprocessor
 ms.assetid: 884126d1-0ce2-48b6-9e06-8a2d7c4a9656
-ms.openlocfilehash: 1c556e4af5913ba8d0dc7efc9648e0d0004d9d7e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5dd252fb495a05efe6eef45674f9ecd601a298a7
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222242"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857946"
 ---
-# <a name="preprocessor-operators"></a>전처리 연산자
+# <a name="preprocessor-operators"></a>전처리기 연산자
 
 `#define` 지시문의 컨텍스트에서는 네 가지 전처리기 관련 연산자가 사용 됩니다. 각에 대 한 요약은 다음 표를 참조 하세요. 문자열 화, charizing 및 토큰 붙여넣기 연산자는 다음 세 섹션에서 설명 합니다. `defined` 연산자에 대 한 자세한 내용은 [#if, #elif, #else 및 #endif 지시문](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)을 참조 하십시오.
 
@@ -23,7 +23,7 @@ ms.locfileid: "70222242"
 |[토큰 붙여넣기 연산자 (# #)](../preprocessor/token-pasting-operator-hash-hash.md)|실제 인수로 사용 되는 토큰을 연결 하 여 다른 토큰을 형성할 수 있습니다.|
 |[defined 연산자](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|특정 매크로 지시문의 복합 식 작성을 간소화 합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [전처리기 지시문](../preprocessor/preprocessor-directives.md)\
 [미리 정의 된 매크로](../preprocessor/predefined-macros.md)\

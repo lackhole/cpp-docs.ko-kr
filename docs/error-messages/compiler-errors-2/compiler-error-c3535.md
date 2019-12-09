@@ -6,32 +6,32 @@ f1_keywords:
 helpviewer_keywords:
 - C3535
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-ms.openlocfilehash: e80fa62db9795838980c63e113300a554afabef3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b487c0f94a00ec64e0c2178265c5a8c27544a51
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376239"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761558"
 ---
 # <a name="compiler-error-c3535"></a>컴파일러 오류 C3535
 
-'type2'에서 'type1' 형식을 추론할 수 없습니다.
+' u s e r '에서 ' type2 '의 형식을 추론할 수 없습니다.
 
-형식에서 선언 된 변수는 `auto` 키워드는 초기화 식의 형식에서 추론할 수 없습니다. 초기화 식이 계산 되는 경우이 오류가 발생 하는 예를 들어 `void`에 형식이 아닙니다.
+`auto` 키워드에 의해 선언 된 변수의 형식은 초기화 식의 형식에서 추론할 수 없습니다. 예를 들어 초기화 식이 형식이 아닌 `void`로 계산 되는 경우이 오류가 발생 합니다.
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. 초기화 식의 형식이 아닌지 확인 `void`합니다.
+1. 초기화 식의 형식이 `void`되지 않았는지 확인 합니다.
 
-1. 선언 기본 형식에 대 한 포인터 인지 확인 합니다. 자세한 내용은 [기본 형식](../../cpp/fundamental-types-cpp.md)합니다.
+1. 선언이 기본 형식에 대 한 포인터가 아닌지 확인 합니다. 자세한 내용은 [기본 형식](../../cpp/fundamental-types-cpp.md)을 참조 하세요.
 
-1. 선언 형식에 대 한 포인터 이면 초기화 식이 포인터 형식 인지 확인 합니다.
+1. 선언이 형식에 대 한 포인터인 경우 초기화 식이 포인터 형식 인지 확인 합니다.
 
 ## <a name="example"></a>예제
 
-초기화 식이로 계산 되므로 다음 예제에서는 생성 C3535 `void`합니다.
+다음 예에서는 초기화 식이 `void`로 계산 되기 때문에 C3535를 생성 합니다.
 
-```
+```cpp
 // C3535a.cpp
 // Compile with /Zc:auto
 void f(){}
@@ -44,9 +44,9 @@ int main()
 
 ## <a name="example"></a>예제
 
-문은 변수를 선언 하므로 다음 예제에서는 생성 C3535 `x` 이니셜라이저 인데 추론된 된 형식에 대 한 포인터 식이 double입니다. 따라서 컴파일러는 변수의 형식을 추론할 수 없습니다.
+다음 예에서는 문이 변수 `x`를 추론 된 형식에 대 한 포인터로 선언 하지만 이니셜라이저 식의 형식이 double 이기 때문에 C3535를 생성 합니다. 따라서 컴파일러가 변수의 형식을 추론할 수 없습니다.
 
-```
+```cpp
 // C3535b.cpp
 // Compile with /Zc:auto
 int main()
@@ -58,9 +58,9 @@ int main()
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 생성 C3535 때문에 변수 `p` 추론된 된 형식에 대 한 포인터를 선언 하지만 초기화 식이 포인터 형식이 아닙니다.
+다음 예제에서는 변수 `p` 추론 된 형식에 대 한 포인터를 선언 하지만 초기화 식이 포인터 형식이 아니기 때문에 C3535를 생성 합니다.
 
-```
+```cpp
 // C3535c.cpp
 // Compile with /Zc:auto
 class A { };
@@ -68,7 +68,7 @@ A x;
 auto *p = x;  // C3535
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [auto 키워드](../../cpp/auto-keyword.md)<br/>
 [기본 형식](../../cpp/fundamental-types-cpp.md)

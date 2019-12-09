@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2888
 ms.assetid: 244f593e-ff25-4dad-b31f-84dafa3bc84a
-ms.openlocfilehash: c5b547f1c4d62a6f48b6c5f8f901be309e81a67c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93fe37c72a04e8c942f910ed3a631e5ba2a542bc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62311907"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760917"
 ---
 # <a name="compiler-error-c2888"></a>컴파일러 오류 C2888
 
-'identifier': 기호는 'namespace' 네임 스페이스 내에서 정의할 수 없습니다
+' identifier ': ' namespace ' 네임 스페이스 내에서 기호를 정의할 수 없습니다.
 
-1. 포함 하는 네임 스페이스에는 네임 스페이스에 속하는 기호를 정의 해야 합니다.
+네임 스페이스에 속하는 기호는를 포함 하는 네임 스페이스에 정의 되어야 합니다.
 
-다음 샘플에서는 C2888 오류가 생성 됩니다.
+다음 샘플에서는 C2888를 생성 합니다.
 
-```
+```cpp
 // C2888.cpp
 // compile with: /c
 namespace M {

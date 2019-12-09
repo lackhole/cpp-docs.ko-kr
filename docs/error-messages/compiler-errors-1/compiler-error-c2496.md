@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2496
 ms.assetid: 9a25237d-5bbb-4112-98f3-29cd99d3f89f
-ms.openlocfilehash: 258012fdefed877558f122790954d830095d5026
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9236876e636e88f193d32ef2e33a817fa52e1bd2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360583"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757009"
 ---
 # <a name="compiler-error-c2496"></a>컴파일러 오류 C2496
 
-'identifier': 'selectany' 외부 링크가 있는 데이터 항목에만 적용 될 수 있습니다
+' identifier ': ' selectany '는 외부 링크가 있는 데이터 항목에만 적용할 수 있습니다.
 
-합니다 [selectany](../../cpp/selectany.md) 외부적으로 표시 되 고 전역 데이터 항목에만 특성을 적용할 수 있습니다.
+[Selectany](../../cpp/selectany.md) 특성은 외부에서 볼 수 있는 데이터 항목에만 적용할 수 있습니다.
 
-다음 샘플에서는 C2496 오류가 생성 됩니다.
+다음 샘플에서는 C2496를 생성 합니다.
 
-```
+```cpp
 // C2496.cpp
 // compile with: /c
 __declspec(selectany) int x1 = 1;

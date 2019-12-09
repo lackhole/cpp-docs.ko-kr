@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2810
 ms.assetid: f63e8f24-d7f6-42ac-904f-72ff49592ba6
-ms.openlocfilehash: 171b9d1b3b09b793c55756500cafed1db7eb9d99
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c598065fb6d5965f92504019275a921d12acb27
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281783"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760584"
 ---
 # <a name="compiler-error-c2810"></a>컴파일러 오류 C2810
 
-'interface': 인터페이스는 다른 인터페이스에서 에서만 상속할 수 있습니다
+' interface ': 인터페이스는 다른 인터페이스 에서만 상속할 수 있습니다.
 
-[인터페이스](../../cpp/interface.md) 다른 인터페이스에서 에서만 상속할 수 있습니다 및 클래스 또는 구조체에서 상속 하지 않을 수 있습니다.
+[인터페이스](../../cpp/interface.md) 는 다른 인터페이스 에서만 상속 될 수 있으며 클래스 또는 구조체에서 상속 될 수 없습니다.
 
-다음 샘플에서는 C2810 오류가 생성 됩니다.
+다음 샘플에서는 C2810를 생성 합니다.
 
-```
+```cpp
 // C2810.cpp
 #include <unknwn.h>
 class CBase1 {

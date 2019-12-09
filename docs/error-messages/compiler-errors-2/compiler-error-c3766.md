@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3766
 ms.assetid: b5af2089-2e1e-4e45-a41d-495b6c55656e
-ms.openlocfilehash: 2d871e331987cb2731aad8b4fbc6ec2f094bd218
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c1cbd218b127bdf0d6784b7d35dac563d8ea198d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400229"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757217"
 ---
 # <a name="compiler-error-c3766"></a>컴파일러 오류 C3766
 
-'type' 인터페이스에 대 한 구현 메서드 'function' 제공 해야
+' t r u e '는 ' function ' 인터페이스 메서드의 구현을 제공 해야 합니다.
 
-인터페이스에서 상속 된 클래스는 인터페이스 멤버를 구현 해야 합니다.
+인터페이스에서 상속 하는 클래스는 인터페이스 멤버를 구현 해야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3766를 생성합니다.
+다음 샘플에서는 C3766를 생성 합니다.
 
-```
+```cpp
 // C3766.cpp
 // compile with: /clr /c
 

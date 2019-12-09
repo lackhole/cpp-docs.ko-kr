@@ -7,18 +7,18 @@ helpviewer_keywords:
 - dllimport attribute [C++], inline functions
 - dllexport attribute [C++], inline functions
 ms.assetid: 3b48678b-e7b8-4eda-bb46-b5d34dcf7817
-ms.openlocfilehash: 39c1787321a37601cd8777ddb6c8296936eb89e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88fbb497aab4d794d3ef84a902a72c4e044e51de
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399007"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857569"
 ---
 # <a name="defining-inline-c-functions-with-dllexport-and-dllimport"></a>dllexport 및 dllimport로 인라인 C++ 함수 정의
 
-## <a name="microsoft-specific"></a>Microsoft 전용
+**Microsoft 전용**
 
-사용 하는 함수를 인라인으로 정의할 수 있습니다 합니다 **dllexport** 특성입니다. 이 경우 프로그램의 임의의 모듈이 함수를 참조하는지 여부와 상관없이 함수가 항상 인스턴스화되어 내보내집니다. 함수는 다른 프로그램에서 가져올 수 있는 것으로 간주됩니다.
+**Dllexport** 특성을 사용 하 여 함수를 인라인으로 정의할 수 있습니다. 이 경우 프로그램의 임의의 모듈이 함수를 참조하는지 여부와 상관없이 함수가 항상 인스턴스화되어 내보내집니다. 함수는 다른 프로그램에서 가져올 수 있는 것으로 간주됩니다.
 
 **dllimport** 특성으로 선언된 함수를 인라인으로 정의할 수도 있습니다. 이 경우 함수는 /Ob 지정에 따라 확장될 수 있으나 인스턴스화되지는 않습니다. 특히 인라인으로 가져온 함수의 주소가 사용된 경우 DLL에 상주하는 함수의 주소가 반환됩니다. 이 동작은 인라인으로 가져온 함수가 아닌 함수의 주소를 사용할 때와 동일합니다.
 
@@ -28,6 +28,6 @@ ms.locfileid: "62399007"
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [dllexport, dllimport](../cpp/dllexport-dllimport.md)

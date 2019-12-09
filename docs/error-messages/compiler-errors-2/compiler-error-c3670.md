@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3670
 ms.assetid: d0fa9c6e-8f90-48c7-9066-31b4fa5942eb
-ms.openlocfilehash: a9fe72501152891d3f82567f09922dda9a9b711a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1b52f58f47027d88d9b0e150ebd2bf4588161553
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62214953"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758127"
 ---
 # <a name="compiler-error-c3670"></a>컴파일러 오류 C3670
 
-'override': 액세스할 수 없는 기본 클래스 ' method'를 재정의할 수 없습니다.
+' override ': 액세스할 수 없는 기본 클래스 메서드 ' method '를 재정의할 수 없습니다.
 
-재정의 해당 액세스 수준에 따라 파생된 형식에서 사용할 수 있는 함수만을 시에만 사용할 수 있습니다. 자세한 내용은 [명시적으로 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)합니다.
+재정의는 액세스 수준을 파생 형식에서 사용할 수 있도록 하는 함수 에서만 수행할 수 있습니다. 자세한 내용은 [명시적 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)를 참조 하세요.
 
-다음 샘플에서는 C3670 오류가 생성 됩니다.
+다음 샘플에서는 C3670를 생성 합니다.
 
-```
+```cpp
 // C3670.cpp
 // compile with: /clr /c
 public ref class C {

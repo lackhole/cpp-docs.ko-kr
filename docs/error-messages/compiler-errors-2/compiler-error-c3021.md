@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3021
 ms.assetid: 0cef6d97-e267-438a-ac8b-0daf5bbbc2cf
-ms.openlocfilehash: 4863947fe2fedf9301fac302820cb69193581222
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a90a3378690140c27fe938c269f4fb00f6eae12
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386696"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742108"
 ---
 # <a name="compiler-error-c3021"></a>컴파일러 오류 C3021
 
@@ -23,7 +23,7 @@ OpenMP 지시문에 인수가 필요합니다.
 
 다음 샘플에서는 C3021을 생성합니다.
 
-```
+```cpp
 // C3021.cpp
 // compile with: /openmp
 #include <stdio.h>

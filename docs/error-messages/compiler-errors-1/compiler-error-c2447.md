@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2447
 ms.assetid: d1bd6e9a-ee42-4510-ae5e-6b0378f7b931
-ms.openlocfilehash: 64dca8313af8b640b7b03c1ab27a1a31fa90de09
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14fec374927fc798956a249773d9bec814e7a823
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301970"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74744188"
 ---
 # <a name="compiler-error-c2447"></a>컴파일러 오류 C2447
 
@@ -21,9 +21,9 @@ ms.locfileid: "62301970"
 
 이 오류는 이전 스타일의 C 언어 형식 인수 목록을 사용하는 경우에 발생할 수도 있습니다. 이 문제를 해결하려면 인수 목록을 리팩터링하여 현대적인 스타일을 사용하도록, 즉 괄호로 묶이도록 합니다.
 
-다음 샘플에서는 C2447 오류가 생성 됩니다.
+다음 샘플에서는 C2447를 생성 합니다.
 
-```
+```cpp
 // C2447.cpp
 int c;
 {}       // C2447

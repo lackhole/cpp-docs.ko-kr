@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2495
 ms.assetid: bb7066fe-3549-4901-97e4-157f3c04dd57
-ms.openlocfilehash: 83a0359fce175b12dd18e2500d63d7a86bed9f0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5e16404e8c23a902a2cdbfc436cecdff21e68b6a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360855"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757022"
 ---
 # <a name="compiler-error-c2495"></a>컴파일러 오류 C2495
 
-'identifier': 'nothrow'는 함수 선언 또는 정의에 적용 될 수 있습니다
+' identifier ': ' nothrow '는 함수 선언 또는 정의에만 적용할 수 있습니다.
 
-합니다 [nothrow](../../cpp/nothrow-cpp.md) 함수 선언 또는 정의에 확장 된 특성을 적용할 수 있습니다.
+[Nothrow](../../cpp/nothrow-cpp.md) 확장 특성은 함수 선언 또는 정의에만 적용할 수 있습니다.
 
-다음 샘플에서는 C2495 오류가 생성 됩니다.
+다음 샘플에서는 C2495를 생성 합니다.
 
-```
+```cpp
 // C2495.cpp
 // compile with: /c
 __declspec(nothrow) class X {   // C2495

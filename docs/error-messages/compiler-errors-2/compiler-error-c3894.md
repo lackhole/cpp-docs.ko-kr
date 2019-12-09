@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3894
 ms.assetid: 6d5ac903-1dea-431d-8e3a-cebca4342983
-ms.openlocfilehash: 4d935e140d89cb5c3714450597677a7a02a245e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c08a7eca473a4ae043879b49266efec6b8afe7b1
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62385487"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749440"
 ---
 # <a name="compiler-error-c3894"></a>컴파일러 오류 C3894
 
-'var': 'class' 클래스의 클래스 생성자에서 에서만 initonly 정적 데이터 멤버 l-value가 사용할 수는
+' var ': ' class ' 클래스의 클래스 생성자 에서만 initonly 정적 데이터 멤버를 l-value로 사용할 수 있습니다.
 
-정적 [initonly](../../dotnet/initonly-cpp-cli.md) 데이터 멤버는 선언 또는 정적 생성자에서는 해당 지점에서 l-value로만 사용할 수 있습니다.
+정적 [initonly](../../dotnet/initonly-cpp-cli.md) 데이터 멤버는 선언 시점 또는 정적 생성자에서 l-value로만 사용할 수 있습니다.
 
-인스턴스 (비정적) initonly 데이터 멤버 또는 인스턴스 (비정적) 생성자 선언에 대 한 해당 지점에서 l-value로 사용할 수 있습니다.
+인스턴스 (비정적) initonly 데이터 멤버는 선언 시점 또는 인스턴스 (비정적) 생성자에서 l-value로만 사용할 수 있습니다.
 
-다음 샘플에서는 C3894 오류가 생성 됩니다.
+다음 샘플에서는 C3894를 생성 합니다.
 
-```
+```cpp
 // C3894.cpp
 // compile with: /clr
 ref struct Y1 {

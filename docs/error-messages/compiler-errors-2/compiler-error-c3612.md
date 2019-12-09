@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3612
 ms.assetid: aa6e3a2b-4afa-481c-98c1-1b6d1f82f869
-ms.openlocfilehash: ab18381d3f263e3207662e1667ac5c835983412f
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 499c31b0c02bd72695cd6118612609a70316f0ae
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344504"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755748"
 ---
 # <a name="compiler-error-c3612"></a>컴파일러 오류 C3612
 
-'type': 봉인 된 클래스는 abstract 일 수 없습니다.
+' type ': sealed 클래스는 abstract 일 수 없습니다.
 
-사용 하 여 정의 된 형식을 `value` 는 기본적으로 sealed 기준의 모든 메서드를 구현 하지 않는 한 클래스는 추상입니다. 봉인 된 추상 클래스에서 기본 클래스도 수 나이 인스턴스화할 수 있습니다.
+`value`를 사용 하 여 정의 된 형식은 기본적으로 sealed 이며 클래스는 기본의 모든 메서드를 구현 하지 않는 한 추상 클래스입니다. 봉인 된 추상 클래스는 기본 클래스 이거나 인스턴스화될 수 없습니다.
 
-자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md)합니다.
+자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3612를 생성합니다.
+다음 샘플에서는 C3612를 생성 합니다.
 
-```
+```cpp
 // C3612.cpp
 // compile with: /clr /c
 value struct V: public System::ICloneable {};   // C3612

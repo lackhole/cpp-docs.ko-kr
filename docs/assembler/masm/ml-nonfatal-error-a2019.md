@@ -1,27 +1,27 @@
 ---
 title: ML 심각하지 않은 오류 A2019
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2019
 helpviewer_keywords:
 - A2019
 ms.assetid: 7dff209b-6d91-4e39-88a3-5d6329bac537
-ms.openlocfilehash: 48a80c643bb42ce39df00297c7f5579445c99df9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 23412ccd6dc84d889b62acfb4ba09cb1bde8b82a
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62201938"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856729"
 ---
 # <a name="ml-nonfatal-error-a2019"></a>ML 심각하지 않은 오류 A2019
 
-**피연산자는 필드 또는 레코드 형식 이어야 합니다.**
+**피연산자는 레코드 형식 또는 필드 여야 합니다.**
 
-피연산자 다음 합니다 [너비](../../assembler/masm/operator-width.md) 하거나 [마스크](../../assembler/masm/operator-mask.md) 연산자 올바르지 않습니다.
+[WIDTH](../../assembler/masm/operator-width.md) 또는 [MASK](../../assembler/masm/operator-mask.md) 연산자 다음의 피연산자가 잘못 되었습니다.
 
-합니다 [너비](../../assembler/masm/operator-width.md) 필드 또는 레코드의 이름에 해당 피연산자를 사용 하는 연산자입니다. 합니다 [마스크](../../assembler/masm/operator-mask.md) 이름 필드 또는 레코드 형식의 피연산자를 사용 하는 연산자입니다.
+[WIDTH](../../assembler/masm/operator-width.md) 연산자는 필드 또는 레코드의 이름인 피연산자를 사용 합니다. [MASK](../../assembler/masm/operator-mask.md) 연산자는 필드 또는 레코드 형식의 이름인 피연산자를 사용 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

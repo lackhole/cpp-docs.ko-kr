@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2777
 ms.assetid: 5fe158c0-2a65-488a-aca2-61d4a8b32d43
-ms.openlocfilehash: cfbe2c729141108565f00b7b5a7fd581b49e516d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67132f0acbee3614d8032685ae454386d97b8fb1
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227704"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740015"
 ---
 # <a name="compiler-error-c2777"></a>컴파일러 오류 C2777
 
-속성 당 'put' 메서드 하나만 지정할 수 있습니다.
+속성 당 ' put ' 메서드를 하나만 지정할 수 있습니다.
 
-A [속성](../../cpp/property-cpp.md) declspec 한정자가 둘 이상의 `put` 속성입니다.
+Declspec 한정자 [속성](../../cpp/property-cpp.md) 에 `put` 속성이 둘 이상 있습니다.
 
-다음 샘플에서는 C2777 오류가 생성 됩니다.
+다음 샘플에서는 C2777를 생성 합니다.
 
-```
+```cpp
 // C2777.cpp
 struct A {
    __declspec(property(put=PutProp,put=PutPropToo))   // C2777

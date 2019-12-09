@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3671
 ms.assetid: d684e4ae-87e2-4424-80bb-6f346652c831
-ms.openlocfilehash: c4534b11f3aedf638f69337fb6a7af778e086bb4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 030a6acb19c0907956d2a5b833b683821591e5c5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62215019"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758114"
 ---
 # <a name="compiler-error-c3671"></a>컴파일러 오류 C3671
 
-'function_1': 함수가 'function_2'를 재정의 하지 않습니다
+' function_1 ': 함수가 ' function_2 '을 (를) 재정의 하지 않습니다.
 
-명시적 재정의 구문은 사용 하는 경우 함수를 재정의 하지 않은 경우 컴파일러는 오류를 생성 합니다.  참조 [명시적으로 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md) 자세한 내용은 합니다.
+명시적 재정의 구문을 사용할 때 함수가 재정의 되지 않으면 컴파일러에서 오류를 생성 합니다.  자세한 내용은 [명시적 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md) 를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3671를 생성합니다.
+다음 샘플에서는 C3671를 생성 합니다.
 
-```
+```cpp
 // C3671.cpp
 // compile with: /clr /c
 ref struct S {

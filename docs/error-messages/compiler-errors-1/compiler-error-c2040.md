@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2040
 ms.assetid: 74ca3592-1469-4965-ab34-a4815e2fbefe
-ms.openlocfilehash: b45ec25f1ed516ae73b242fdcc7c66f68c92f724
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8002d7168354b1213d01ca390a03b1baa5e35c88
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387112"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74740418"
 ---
 # <a name="compiler-error-c2040"></a>컴파일러 오류 C2040
 
@@ -21,7 +21,7 @@ ms.locfileid: "62387112"
 
 다음 샘플에서는 C2040 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2040.cpp
 // Compile by using: cl /c /W3 C2040.cpp
 bool test() {

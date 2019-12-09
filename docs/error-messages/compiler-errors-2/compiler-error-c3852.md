@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3852
 ms.assetid: 194e5c5e-0dfb-414e-86db-791c11eb610c
-ms.openlocfilehash: 4ad7718f4efbeb3b0bc481755fd239615ab796cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f264333d802967d0350caa8ab4ba4925ffe019af
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380931"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754877"
 ---
 # <a name="compiler-error-c3852"></a>컴파일러 오류 C3852
 
-'type '형식이 있는 ' member': 집합체 초기화에서이 멤버를 초기화할 수 없습니다
+' member ' 형식 ' type ': 집합체 초기화에서이 멤버를 초기화할 수 없습니다.
 
-집합체 초기화에서 기본 초기화를 받을 수 없는 데이터 멤버에는 집계 초기화의 일부로 기본 초기화를 할당 하려고 했습니다.
+집계 초기화에서 기본 초기화를 받을 수 없는 데이터 멤버에 대 한 집계 초기화의 일부로 기본 초기화를 할당 하려고 했습니다.
 
-다음 샘플에서는 c3852:
+다음 샘플에서는 C3852를 생성 합니다.
 
-```
+```cpp
 // C3852.cpp
 struct S
 {

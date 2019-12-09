@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3206
 ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
-ms.openlocfilehash: 665244cbfc87f32274f9eaf9afacfb1caad50659
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7a602238ca5a2f2a64eaa601cc6733a897b9fdb4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62402686"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738689"
 ---
 # <a name="compiler-error-c3206"></a>컴파일러 오류 C3206
 
@@ -21,7 +21,7 @@ ms.locfileid: "62402686"
 
 다음 샘플에서는 C3206을 생성합니다.
 
-```
+```cpp
 // C3206.cpp
 template <class T>
 void f() {}
@@ -36,9 +36,9 @@ void f1() {
 }
 ```
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C3206b.cpp
 // compile with: /c
 template <class T>
@@ -54,7 +54,7 @@ void f1() {
 
 C3206은 제네릭을 사용하는 경우에도 발생할 수 있습니다.
 
-```
+```cpp
 // C3206c.cpp
 // compile with: /clr
 generic <class GT1>
@@ -68,9 +68,9 @@ int main() {
 }
 ```
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C3206d.cpp
 // compile with: /clr
 generic <class GT1>
@@ -84,9 +84,9 @@ int main() {
 }
 ```
 
-클래스 템플릿은 템플릿 형식 인수로 허용되지 않습니다. 다음 샘플 C3206을 발생 시킵니다.
+클래스 템플릿은 템플릿 형식 인수로 허용되지 않습니다. 다음 샘플에서는 C3206을 발생 시킵니다.
 
-```
+```cpp
 // C3206e.cpp
 template <class T>
 struct S {};
@@ -101,9 +101,9 @@ int main() {
 }
 ```
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C3206f.cpp
 template <class T>
 struct S {};
@@ -118,9 +118,9 @@ int main() {
 }
 ```
 
-Template 템플릿 매개 변수는 필요한 경우, 다음 해야 template 템플릿 매개 변수를 사용 하는 템플릿 클래스로 함수를 래핑합니다.
+템플릿 템플릿 매개 변수가 필요한 경우 템플릿 템플릿 매개 변수를 사용 하는 템플릿 클래스에서 함수를 래핑해야 합니다.
 
-```
+```cpp
 // C3206g.cpp
 template <class T>
 struct S {};

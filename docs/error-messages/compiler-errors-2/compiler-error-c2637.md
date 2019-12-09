@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2637
 ms.assetid: 58d94447-eb96-4d8f-a690-dd78d322462e
-ms.openlocfilehash: 4231a811911fdf600b47962e929f6f3cff1f1bca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a17bd95cf1727d058e0cbd9e3dfb93c500da9fb5
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395458"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758257"
 ---
 # <a name="compiler-error-c2637"></a>컴파일러 오류 C2637
 
-'identifier': 데이터 멤버에 대 한 포인터를 수정할 수 없습니다.
+' identifier ': 데이터 멤버에 대 한 포인터를 수정할 수 없습니다.
 
-데이터 멤버에 대 한 포인터는 호출 규칙을 사용할 수 없습니다. 를 해결 하려면 호출 규칙을 제거 하거나 멤버 함수에 대 한 포인터를 선언 합니다.
+데이터 멤버에 대 한 포인터는 호출 규칙을 가질 수 없습니다. 이 문제를 해결 하려면 호출 규칙을 제거 하거나 멤버 함수에 대 한 포인터를 선언 합니다.
 
-다음 샘플에서는 C2637 오류가 생성 됩니다.
+다음 샘플에서는 C2637를 생성 합니다.
 
-```
+```cpp
 // C2637.cpp
 // compile with: /c
 struct S {};

@@ -1,19 +1,19 @@
 ---
-title: 컴파일러 오류 C2064
+title: 컴파일러 오류 C2064 오류가 발생
 ms.date: 11/04/2016
 f1_keywords:
 - C2064
 helpviewer_keywords:
 - C2064
 ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
-ms.openlocfilehash: 8af20c5172cddd0194ed018c13960bbed7859674
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd62ea825e3ae7d9e4acc1cb6d93d4bc102be0eb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386033"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737324"
 ---
-# <a name="compiler-error-c2064"></a>컴파일러 오류 C2064
+# <a name="compiler-error-c2064"></a>컴파일러 오류 C2064 오류가 발생
 
 항은 N개의 인수를 받아들이는 함수로 계산되지 않습니다.
 
@@ -21,7 +21,7 @@ ms.locfileid: "62386033"
 
 이 예제에서는 코드가 비함수를 함수로 호출하려고 합니다. 다음 샘플에서는 C2064 오류가 발생하는 경우를 보여 줍니다.
 
-```
+```cpp
 // C2064.cpp
 int i, j;
 char* p;
@@ -33,7 +33,7 @@ void func() {
 
 개체 인스턴스의 컨텍스트에서 비정적 멤버 함수에 대한 포인터를 호출해야 합니다. 다음 샘플에서는 C2064 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2064b.cpp
 struct C {
    void func1(){}
@@ -52,7 +52,7 @@ int main() {
 
 클래스 내에서 멤버 함수 포인터도 호출 개체 컨텍스트를 나타내야 합니다. 다음 샘플에서는 C2064 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2064d.cpp
 // Compile by using: cl /c /W4 C2064d.cpp
 struct C {

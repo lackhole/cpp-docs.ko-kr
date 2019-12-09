@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2635
 ms.assetid: 9deca2a8-2d61-42eb-9783-6578132ee3fb
-ms.openlocfilehash: 0c31bcc4062aec1d939c801f9b5ee420f2f4fcb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90bc30460cb578d1ed2812e40907a361eeb3b039
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367852"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748426"
 ---
 # <a name="compiler-error-c2635"></a>컴파일러 오류 C2635
 
-변환할 수 없습니다는 ' identifier1 *'는 ' identifier2\*'; 가상 기본 클래스에서 변환 인 것으로 간주
+' identifier1 * '를 ' identifier2\*' (으)로 변환할 수 없습니다. 가상 기본 클래스에서의 변환이 암시 됩니다.
 
-변환에서 캐스트가 필요 하지만 `virtual` 기본 클래스를 파생된 클래스는 허용 되지 않습니다.
+변환 하려면 `virtual` 기본 클래스에서 파생 클래스로 캐스트를 사용 해야 합니다 .이는 허용 되지 않습니다.
 
-다음 샘플에서는 C2635 오류가 생성 됩니다.
+다음 샘플에서는 C2635를 생성 합니다.
 
-```
+```cpp
 // C2635.cpp
 class B {};
 class D : virtual public B {};

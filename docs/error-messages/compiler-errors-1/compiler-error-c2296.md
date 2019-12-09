@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2296
 ms.assetid: 47d270f4-13ce-4c16-81e2-7d67c6c4a540
-ms.openlocfilehash: ab9c9450b6e906a47a66f6c28c42ca016c98381b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 020f046648488ca67923b7035acaa6c79ce495e4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182680"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759076"
 ---
 # <a name="compiler-error-c2296"></a>컴파일러 오류 C2296
 
-'operator': 잘못 된 왼쪽된 피연산자
+' operator ': 왼쪽 피연산자가 잘못 되었습니다.
 
-왼쪽된 피연산자에서 사용할 `operator` 올바르지 않습니다.
+`operator` 사용 되는 왼쪽 피연산자가 잘못 되었습니다.
 
-예를 들어, 함수 호출을 원하는 선언 컴파일러 표시 될 수 있습니다.
+예를 들어 컴파일러는 함수 호출을 의도 한 선언을 볼 수 있습니다.
 
-다음 샘플에서는 C2296를 생성합니다.
+다음 샘플에서는 C2296를 생성 합니다.
 
-```
+```cpp
 // C2296.cpp
 struct MyStruct {
    struct Help {

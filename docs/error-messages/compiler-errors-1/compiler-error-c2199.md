@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2199
 ms.assetid: 6a92a1b7-7906-49e6-a31f-e8bffbc7706a
-ms.openlocfilehash: e5892a537cbf337b23ff2356583cec4bf5925677
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8bd6d587d28b8e7c190f7d3d58448fda501796cf
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62368489"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758985"
 ---
 # <a name="compiler-error-c2199"></a>컴파일러 오류 C2199
 
-구문 오류: 찾을 ' 식별자 (' 전역 범위에서 (계획 된 선언?)
+구문 오류: 전역 범위에 ' identifier '가 있습니다. (선언이 의도 된 것 입니까?)
 
-지정된 된 컨텍스트는 구문 오류가 발생 했습니다. 잘못 된 선언 구문이 있을 수 있습니다.
+지정 된 컨텍스트에 구문 오류가 발생 했습니다. 잘못 된 선언 구문이 있을 수 있습니다.
 
-다음 샘플에서는 C2199 오류가 생성 됩니다.
+다음 샘플에서는 C2199를 생성 합니다.
 
-```
+```cpp
 // C2199.cpp
 // compile with: /c
 int j = int(1) int(1);   // C2199

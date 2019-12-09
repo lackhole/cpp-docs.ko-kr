@@ -5,12 +5,12 @@ helpviewer_keywords:
 - declarations, about declarations
 - type qualifiers
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-ms.openlocfilehash: 439bc878bbcd1c9778fb74738cb3b32b908a5943
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: 0ffda6522e632533b0aaa4ba146e8fad082ed435
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56148350"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857062"
 ---
 # <a name="overview-of-declarations"></a>선언자 개요
 
@@ -19,9 +19,9 @@ ms.locfileid: "56148350"
 ## <a name="syntax"></a>구문
 
 *declaration*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers* *attribute-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub>**;**
+&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers* *attribute-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
 
-/\* *attribute-seq*<sub>opt</sub>는 Microsoft 전용임 */
+/\* *특성-seq*<sub>opt</sub> is Microsoft 전용 */
 
 *declaration-specifiers*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub><br/>
@@ -43,7 +43,7 @@ ms.locfileid: "56148350"
 
 선언에는 *attribute-seq*에 나열된 선택적 특성이 하나 이상 포함될 수 있습니다. *seq*는 시퀀스의 약어입니다. 이러한 Microsoft 전용 특성은 이 설명서 전반에 설명되어 있는 다양한 기능을 수행합니다.
 
-변수 선언에 대한 일반적인 양식에서 *type-specifier*는 변수의 데이터 형식을 제공합니다. *type-specifier*는 형식이 **const** 또는 `volatile`에 의해 수정될 때처럼 복합형이 될 수 있습니다. `declarator`는 변수 이름을 제공합니다. 이러한 변수 이름은 배열이나 포인터 형식을 선언하기 위해 수정할 수 있습니다. 예를 들어 개체에 적용된
+변수 선언에 대한 일반적인 양식에서 *type-specifier*는 변수의 데이터 형식을 제공합니다. *type-specifier*는 형식이 **const** 또는 `volatile`에 의해 수정될 때처럼 복합형이 될 수 있습니다. `declarator`는 변수 이름을 제공합니다. 이러한 변수 이름은 배열이나 포인터 형식을 선언하기 위해 수정할 수 있습니다. 예를 들어 입니다.
 
 ```C
 int const *fp;
@@ -51,7 +51,7 @@ int const *fp;
 
 이 예제는 `fp`라는 이름의 변수를 수정할 수 없는 (**const**) `int` 값에 대한 포인터로 선언합니다. 쉼표로 구분된 여러 선언자를 사용하여 한 선언에서 둘 이상의 변수를 정의할 수 있습니다.
 
-선언에 선언자가 하나 이상 있거나 형식 지정자가 구조체 태그, 공용 구조체 태그 또는 열거형의 멤버를 선언해야 합니다. 선언자는 식별자에 대한 나머지 정보를 제공합니다. 선언자는 대괄호(**[ ]**), 별표(<strong>\*</strong>) 또는 괄호( **( )** )로 수정하여 배열, 포인터 또는 함수 형식을 각각 선언할 수 있는 식별자입니다. 단순 변수(문자, 정수 및 부동 소수점 항목) 또는 단순 변수의 구조체 및 공용 구조체를 선언할 때 `declarator`는 식별자로만 사용됩니다. 선언자에 대한 자세한 내용은 [선언자 및 변수 선언](../c-language/declarators-and-variable-declarations.md)을 참조하세요.
+선언에 선언자가 하나 이상 있거나 형식 지정자가 구조체 태그, 공용 구조체 태그 또는 열거형의 멤버를 선언해야 합니다. 선언자는 식별자에 대한 나머지 정보를 제공합니다. 선언자는 대괄호( **[ ]** ), 별표(<strong>\*</strong>) 또는 괄호( **( )** )로 수정하여 배열, 포인터 또는 함수 형식을 각각 선언할 수 있는 식별자입니다. 단순 변수(문자, 정수 및 부동 소수점 항목) 또는 단순 변수의 구조체 및 공용 구조체를 선언할 때 `declarator`는 식별자로만 사용됩니다. 선언자에 대한 자세한 내용은 [선언자 및 변수 선언](../c-language/declarators-and-variable-declarations.md)을 참조하세요.
 
 모든 정의는 암시적으로 선언이지만 모든 선언이 정의인 것은 아닙니다. 예를 들어 `extern` 스토리지 클래스 지정자로 시작되는 변수 선언은 "정의" 선언이라기 보다는 "참조" 선언입니다. 외부 변수가 정의 전에 참조되거나 사용된 소스 파일과 다른 소스 파일에 정의된 경우 `extern` 선언이 필요합니다. 스토리지는 "참조" 선언에 의해 할당되지 않으며 선언에서 변수를 초기화할 수도 없습니다.
 
@@ -65,7 +65,7 @@ C로 정의된 *storage-class-specifier* 터미널에는 **auto**, `extern`, **r
 
 *type-qualifier* 터미널에는 **const**와 `volatile`이라는 두 가지가 있습니다. 이러한 한정자는 l-value를 통해 해당 형식의 개체에 액세스하는 경우에만 관련된 형식의 추가 속성을 지정합니다. **const** 및 `volatile`에 대한 자세한 내용은 [형식 한정자](../c-language/type-qualifiers.md)를 참조하세요. l-value 정의에 대한 내용은 [L-Value 및 R-Value 식](../c-language/l-value-and-r-value-expressions.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C 언어 구문 요약](../c-language/c-language-syntax-summary.md)<br/>
 [선언 및 형식](../c-language/declarations-and-types.md)<br/>

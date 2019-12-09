@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2970
 ms.assetid: 21d90348-20d3-438c-b278-efdbfb93a7d2
-ms.openlocfilehash: 425d1bf50d56c4455ccd9292b300e744625d34c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: af30ccc4a71c51d042d6f7807a648a1eef066a70
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62256338"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742667"
 ---
 # <a name="compiler-error-c2970"></a>컴파일러 오류 C2970
 
-'class': 템플릿 매개 변수 'param': 'arg': 내부 링크가 있는 개체를 포함 하는 식을 비형식 인수로 사용할 수 없습니다
+' class ': 템플릿 매개 변수 ' param ': ' arg ': 내부 링크가 있는 개체를 포함 하는 식을 비 형식 인수로 사용할 수 없습니다.
 
-이름 또는 정적 변수의 주소를 템플릿 인수로 사용할 수 없습니다. 템플릿 클래스는 컴파일 타임에 평가할 수 있는 상수 값이 필요 합니다.
+정적 변수의 이름이 나 주소를 템플릿 인수로 사용할 수 없습니다. 템플릿 클래스에는 컴파일 시간에 계산할 수 있는 const 값이 필요 합니다.
 
-다음 샘플에서는 C2970 오류가 생성 됩니다.
+다음 샘플에서는 C2970를 생성 합니다.
 
-```
+```cpp
 // C2970.cpp
 // compile with: /c
 static int si;

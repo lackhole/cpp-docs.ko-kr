@@ -8,12 +8,12 @@ helpviewer_keywords:
 - statements, about statements
 - Visual C, statements
 ms.assetid: 0d49837a-5399-4881-b60c-af5f4e9720de
-ms.openlocfilehash: 1b5863a021fd74bb80162d589af7c2a1a5b36f9b
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: bfa6840553055202f26f55e1dc5971bfd047b2de
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56147050"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857075"
 ---
 # <a name="overview-of-c-statements"></a>C 문 개요
 
@@ -33,16 +33,16 @@ C 문은 토큰, 식 및 다른 문으로 구성되어 있습니다. 다른 문�
 
 [jump-statement](../c-language/break-statement-c.md)
 
-[try-except-statement](../c-language/try-except-statement-c.md)
+[try-statement](../c-language/try-except-statement-c.md) /* Microsoft 전용 \*/
 
-/* Microsoft 전용 \*/[try-finally-statement](../c-language/try-finally-statement-c.md) /\* Microsoft 전용 \*/
+[try...catch](../c-language/try-finally-statement-c.md) -Microsoft 전용 \*\* //
 
-대개 문 본문은 "복합 문"입니다. 복합 문은 키워드를 포함할 수 있는 다른 문으로 구성됩니다. 복합 문은 중괄호(**{ }**)로 구분됩니다. 다른 모든 C 문은 세미콜론(**;**)으로 끝납니다. 세미콜론은 문 종결자입니다.
+대개 문 본문은 "복합 문"입니다. 복합 문은 키워드를 포함할 수 있는 다른 문으로 구성됩니다. 복합 문은 중괄호( **{ }** )로 구분됩니다. 다른 모든 C 문은 세미콜론( **;** )으로 끝납니다. 세미콜론은 문 종결자입니다.
 
 식 문에는 [식 및 할당](../c-language/expressions-and-assignments.md)에 소개된 산술 연산자 또는 논리 연산자를 포함할 수 있는 C 식이 포함되어 있습니다. null 문은 빈 문입니다.
 
 모든 C 문은 이름과 콜론으로 구성된 식별 레이블로 시작될 수 있습니다. `goto` 문은 레이블 문만 인식하므로 레이블 문에 대해서는 `goto`와 함께 설명합니다. 자세한 내용은 [goto 문 및 레이블 문](../c-language/goto-and-labeled-statements-c.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [문](../c-language/statements-c.md)

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4337
 ms.assetid: 70bc72d9-aac5-45cd-abd3-ebe42a05897b
-ms.openlocfilehash: 2bfa5f9b30fa0325df1c3655ded53ab0525449c3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f86d03e30e2776a8dae4cf56032c45d0022ca01d
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400840"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74683305"
 ---
 # <a name="compiler-warning-level-4-c4337"></a>컴파일러 경고(수준 4) C4337
 
-'typelib2'에서 'typelib1' 상호 참조 된 형식 라이브러리는 자동으로 가져옵니다.
+' typelib2 '의 상호 참조 된 형식 라이브러리 ' typelib1 '를 자동으로 가져옵니다.
 
-Auto_search 특성 [#import 지시문](../../preprocessor/hash-import-directive-cpp.md) 가져올 암시적으로 형식 라이브러리를 발생 합니다.
+[#Import 지시문](../../preprocessor/hash-import-directive-cpp.md) 의 auto_search 특성으로 인해 형식 라이브러리를 암시적으로 가져왔습니다.
 
-다음 두 파일 (midl.exe를 사용 하 여 컴파일된)에서 만들어진 디스크에서 지정 된 두 개의 형식 라이브러리:
+다음 두 파일에서 만든 디스크에 두 개의 형식 라이브러리가 지정 됩니다 (midl로 컴파일).
 
 ```
 // C4337a.idl
@@ -38,7 +38,7 @@ library C4337aLib
 };
 ```
 
-및 다음의 두 번째.idl 파일
+그런 다음 두 번째 .idl 파일
 
 ```
 // C4337b.idl
@@ -58,9 +58,9 @@ library C4337bLib
 };
 ```
 
-다음 샘플에서는 C4337 오류가 생성 됩니다.
+다음 샘플에서는 C4337를 생성 합니다.
 
-```
+```cpp
 // C4337.cpp
 // compile with: /W4 /LD
 #import "c4337b.tlb" auto_search   // C4337

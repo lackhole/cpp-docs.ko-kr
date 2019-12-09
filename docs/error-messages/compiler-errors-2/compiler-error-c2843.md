@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2843
 ms.assetid: 9d3f2ac4-eea5-4fed-abeb-e752f442bfcc
-ms.openlocfilehash: 9c45e0d95565d0aec1753c6e7b10659e9a8b5714
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d6ab867323e629695e161f3ac001a3fb2174775e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62329571"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752004"
 ---
 # <a name="compiler-error-c2843"></a>컴파일러 오류 C2843
 
@@ -21,7 +21,7 @@ WinRT 또는 관리되는 클래스 또는 인터페이스의 비정적 데이�
 
 다음 샘플에서는 C2843 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2843_2.cpp
 // compile with: /clr
 public ref class C {

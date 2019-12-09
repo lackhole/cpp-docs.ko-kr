@@ -1,6 +1,6 @@
 ---
 title: Platform::Collections::Vector 클래스
-ms.date: 10/01/2019
+ms.date: 12/04/2019
 ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Vector::Vector
@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-ms.openlocfilehash: a70856be04a63cad1c700cb3cc52711dde410265
-ms.sourcegitcommit: 4517932a67bbf2db16cfb122d3bef57a43696242
+ms.openlocfilehash: b7774c2cdab7b9abcb3ebac1453779055eacf897
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816572"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857894"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections::Vector 클래스
 
@@ -65,7 +65,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 
 공용 반환 값 또는 매개 변수에서 **Vector** 형식을 사용 하려고 하면 컴파일러 오류 c 3986이 발생 합니다. 매개 변수나 반환 값 형식을 [Windows::Foundation::Collections::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_)로 변경하여 오류를 수정할 수 있습니다. 자세한 내용은 [컬렉션(C++/CX)](../cppcx/collections-c-cx.md)을 참조하세요.
 
-### <a name="members"></a>멤버
+### <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Public 생성자
 
@@ -73,7 +73,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 |----------|-----------------|
 |[Vector::Vector](#ctor)|Vector 클래스의 새 인스턴스를 초기화합니다.|
 
-### <a name="public-methods"></a>공용 방법
+### <a name="public-methods"></a>Public 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -84,7 +84,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 |[Vector::GetMany](#getmany)|현재 Vector에서 지정된 인덱스부터 시작하여 일련의 항목을 검색합니다.|
 |[Vector::GetView](#getview)|Vector의 읽기 전용 보기, 즉 [Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md)를 반환합니다.|
 |[Vector::IndexOf](#indexof)|현재 Vector에서 지정한 항목을 검색하고 있는 경우 항목의 인덱스를 반환합니다.|
-|[Vector::InsertAt](#insertat)|현재 Vector에서 지정된 인덱스로 식별되는 요소 뒤에 지정된 항목을 삽입합니다.|
+|[Vector::InsertAt](#insertat)|지정 된 항목을 지정 된 인덱스로 식별 되는 요소의 현재 Vector에 삽입 합니다.|
 |[Vector::ReplaceAll](#replaceall)|현재 Vector에서 요소를 삭제한 다음 지정된 배열의 요소를 삽입합니다.|
 |[Vector::RemoveAt](#removeat)|현재 Vector에서 지정된 인덱스로 식별되는 요소를 삭제합니다.|
 |[Vector::RemoveAtEnd](#removeatend)|현재 Vector의 끝에 있는 요소를 삭제합니다.|
@@ -98,7 +98,7 @@ Vector 개체에 포함된 요소의 형식입니다.
 |이름|설명|
 |이벤트 [Windows:: Foundation:: Collection:: VectorChangedEventHandler\<t > ^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Vector가 변경될 때 발생합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Vector`
 
@@ -244,7 +244,7 @@ IndexOf는 std::find_if를 사용하여 항목을 찾습니다. 그러므로 fin
 
 ##  <a name="insertat"></a>Vector:: InsertAt 메서드
 
-현재 Vector에서 지정된 인덱스로 식별되는 요소 뒤에 지정된 항목을 삽입합니다.
+지정 된 항목을 지정 된 인덱스로 식별 되는 요소의 현재 Vector에 삽입 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -258,7 +258,7 @@ virtual void InsertAt(unsigned int index, T item)
 Vector 개체의 특정 요소를 지정하는 0부터 시작하는 부호 없는 정수입니다.
 
 *item*<br/>
-*Index*로 지정 된 요소 다음에 Vector에 삽입할 항목입니다. *항목* 의 형식은 *T* 형식 이름으로 정의 됩니다.
+*인덱스로*지정 된 요소에서 벡터에 삽입할 항목입니다. *항목* 의 형식은 *T* 형식 이름으로 정의 됩니다.
 
 ## <a name="removeat"></a>Vector:: RemoveAt 메서드
 
@@ -390,7 +390,7 @@ Vector의 요소 수입니다.
 *last*<br/>
 현재 Vector를 초기화하는 데 사용되는 개체 시퀀스의 마지막 요소입니다. *마지막* 의 형식은 *완벽 한 전달*방법으로 전달 됩니다. 자세한 내용은 [RValue 참조 선언자: &&](../cpp/rvalue-reference-declarator-amp-amp.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [컬렉션(C++/CX)](collections-c-cx.md)<br/>
 [Platform 네임 스페이스](platform-namespace-c-cx.md)<br/>

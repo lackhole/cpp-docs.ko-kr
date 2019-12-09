@@ -1,21 +1,21 @@
 ﻿---
 title: OpenMP 라이브러리 참조
-ms.date: 07/30/2019
+ms.date: 12/02/2019
 ms.assetid: a25188c6-edde-43d0-84b5-780e797b08fc
-ms.openlocfilehash: c63ae5ba7f04d8ee6bd02418792804373fa71e6b
-ms.sourcegitcommit: 170f5de63b0fec8e38c252b6afdc08343f4243a6
+ms.openlocfilehash: b61eb356b782b3cd17557827734a706e0761a2a8
+ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72348219"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810744"
 ---
 # <a name="openmp-library-reference"></a>OpenMP 라이브러리 참조
 
-OpenMP API에서 사용되는 구문에 대한 링크를 제공합니다.
+OpenMP API에서 사용하는 구문에 대한 링크를 제공합니다.
 
 OpenMP 표준의 Visual C++ 구현에는 다음 구문이 포함됩니다.
 
-|구문|설명|
+|생성|설명|
 |---------------|-----------------|
 |[지시문](openmp-directives.md)|OpenMP API에서 사용되는 지시문에 대한 링크를 제공합니다.|
 |[절](openmp-clauses.md)|OpenMP API에서 사용되는 절에 대한 링크를 제공합니다.|
@@ -26,10 +26,10 @@ Visual C++ OpenMP 런타임 라이브러리 함수는 다음 라이브러리에 
 
 |OpenMP 런타임 라이브러리|특징|
 |------------------------------|---------------------|
-|VCOMP. LIB|다중 스레드, 동적 링크 (VCOMP 용 가져오기 라이브러리) LIB).|
-|VCOMPD. LIB|다중 스레드, 동적 링크 (VCOMPD 용 가져오기 라이브러리) LID) (디버그)|
+|VCOMP.LIB|다중 스레드, 동적 링크 (VCOMP140에 대 한 가져오기 라이브러리) DLL).|
+|VCOMPD.LIB|다중 스레드, 동적 링크 (VCOMP140D에 대 한 가져오기 라이브러리) DLL) (디버그)|
 
-_DEBUG가 컴파일에서 정의 되 고 `#include <omp.h>`이 소스 코드에 있는 경우 VCOMPD입니다. LIB는 기본 lib가 됩니다 (그렇지 않은 경우 VCOMP). LIB가 사용 됩니다.
+_Debug가 컴파일에서 정의되어 있고 `#include <omp.h>`가 소스코드에 있는 경우 VCOMPD.LIB가 기본 라이브러리가 되고, 그렇지 않은 경우 VCOMP.LIB가 사용됩니다.
 
 [/NODEFAULTLIB (라이브러리 무시)](../../../build/reference/nodefaultlib-ignore-libraries.md)를 사용하여 기본 라이브러리를 제거하고 원하는 라이브러리와 명시적으로 연결할 수 있습니다.
 

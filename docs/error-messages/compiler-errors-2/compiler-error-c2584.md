@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2584
 ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
-ms.openlocfilehash: b61ad65555b5d5232468206f6170223c5f160a34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c3b10ecd6808ccd864ecf877fe9f1d0e9f30a3a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360478"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748634"
 ---
 # <a name="compiler-error-c2584"></a>컴파일러 오류 C2584
 
-'Class': 직접 기본 'Base2' 액세스할 수 있음 이미 'Base1'의 기본
+' Class ': 직접 기본 ' Base2 '에 액세스할 수 없습니다. 이미 ' Base1 '의 기본입니다.
 
-`Class` 직접 파생 이미 `Base1`합니다. `Base2` 파생 되기도 `Base1`합니다. `Class` 파생 될 수 없습니다 `Base2` 에서 간접적으로 상속 의미 하므로 `Base1` 다시는 유효 하지 않은 때문에 `Base1` 이미 직접 기본 클래스입니다.
+`Class`는 이미 `Base1`에서 직접 파생 됩니다. `Base2`도 `Base1`에서 파생 됩니다. `Class`는 `Base1` 다시 상속 (간접적)을 의미 하기 때문에 `Base2`에서 파생 될 수 없습니다. `Base1`는 이미 직접 기본 클래스 이므로 유효 하지 않습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2584를 생성합니다.
+다음 샘플에서는 C2584를 생성 합니다.
 
-```
+```cpp
 // C2584.cpp
 // compile with: /c
 struct A1 {

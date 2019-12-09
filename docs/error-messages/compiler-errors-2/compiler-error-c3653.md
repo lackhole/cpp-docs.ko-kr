@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3653
 ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
-ms.openlocfilehash: 75e2c061190b24019491db7a625ecafb5ac82b6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69fc6fa9303b2256172dd079028050823f053246
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227515"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756335"
 ---
 # <a name="compiler-error-c3653"></a>컴파일러 오류 C3653
 
-'function': 명명된 된 재정의로 사용할 수 없습니다: 찾은; 재정의 되는 함수 함수를 사용 하 여 명시적으로 이름을 하 였는:: operator?
+' function ': 명명 된 재정의로 사용할 수 없습니다. 재정의 되는 함수를 찾을 수 없습니다. :: 연산자를 사용 하 여 함수 이름을 명시적으로 지정할 수 있나요?
 
-명시적 재정의 모든 인터페이스에서 찾을 수 없는 함수를 지정 합니다. 자세한 내용은 [명시적으로 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)합니다.
+명시적 재정의에서 인터페이스에 없는 함수를 지정 했습니다. 자세한 내용은 [명시적 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md)를 참조 하세요.
 
-다음 샘플에서는 C3653를 생성합니다.
+다음 샘플에서는 C3653를 생성 합니다.
 
-```
+```cpp
 // C3653.cpp
 // compile with: /clr
 public interface struct I {

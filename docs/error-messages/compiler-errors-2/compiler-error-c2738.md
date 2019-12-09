@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2738
 ms.assetid: 896b4640-1ee0-4cd8-9910-de3efa30006a
-ms.openlocfilehash: 8f8342f07d8062c5a1ec18d17423996c1b0dab39
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd83f0099e48b53db8055d8bc3282b672c1adc78
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360244"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759674"
 ---
 # <a name="compiler-error-c2738"></a>컴파일러 오류 C2738
 
-'declaration': 모호 하거나 't y'의 구성원이 아닙니다
+' 선언 ': 모호 하거나 ' type '의 멤버가 아닙니다.
 
-함수를 잘못 선언 되었습니다.
+함수가 잘못 선언 되었습니다.
 
-다음 샘플에서는 C2738 오류가 생성 됩니다.
+다음 샘플에서는 C2738를 생성 합니다.
 
-```
+```cpp
 // C2738.cpp
 struct A {
    template <class T> operator T*();

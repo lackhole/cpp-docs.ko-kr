@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2706
 ms.assetid: e18da924-c42d-4b09-8e29-f4e0382d7dc6
-ms.openlocfilehash: 9767d36d44b99423d600d299d0803901d3dbfec5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bca86d3c0cf886c64a1d668468c793d0e77b2867
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161110"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757464"
 ---
 # <a name="compiler-error-c2706"></a>컴파일러 오류 C2706
 
-일치 하는 없이 __except를 잘못 \__try (누락 된 '}'에서 \__try 블록?)
+\__try 일치 하지 않는 __except 잘못 되었습니다. \__try 블록에 '} '가 없습니다.
 
-컴파일러의 닫는 중괄호를 찾을 수 없습니다는 `__try` 블록입니다.
+컴파일러가 `__try` 블록의 닫는 중괄호를 찾지 못했습니다.
 
-다음 샘플에서는 C2706 오류가 생성 됩니다.
+다음 샘플에서는 C2706를 생성 합니다.
 
-```
+```cpp
 // C2706.cpp
 int main() {
    __try {

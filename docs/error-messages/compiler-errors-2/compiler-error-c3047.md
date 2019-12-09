@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3047
 ms.assetid: 91c14566-5958-433d-8549-0e8bc3196f76
-ms.openlocfilehash: c73cdce4520b139c872c29b7809a46f55c3bebd1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6b8530aa1a1d5b8a0bfa735a9cc759a698ae841
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187628"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761327"
 ---
 # <a name="compiler-error-c3047"></a>컴파일러 오류 C3047
 
@@ -21,7 +21,7 @@ OpenMP 'sections' 영역의 구조화된 블록 앞에는 '#pragma omp section'�
 
 다음 샘플에서는 C3047을 생성합니다.
 
-```
+```cpp
 // C3047.cpp
 // compile with: /openmp /c
 #include "omp.h"

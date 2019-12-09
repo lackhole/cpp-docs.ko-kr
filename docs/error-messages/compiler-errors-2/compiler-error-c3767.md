@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3767
 ms.assetid: 5247cdcd-639c-4527-bd37-37e74c4e8fab
-ms.openlocfilehash: 61f7479986cccfa3851d85bf8e7bc0e9da3d1cea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 994b235b4775c28126d92c241a7e42dc837d4493
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400203"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757204"
 ---
 # <a name="compiler-error-c3767"></a>컴파일러 오류 C3767
 
-'function' 후보 함수에 액세스할 수 없습니다.
+' function ' 후보 함수에 액세스할 수 없습니다.
 
-클래스에서 정의 된 friend 함수 정의 및 전역 네임 스페이스 범위에서 선언 된 것 처럼 간주 해서는 안 됩니다. 그러나 인수 종속 조회 하 여 찾을 수를 해당 수 있습니다.
+클래스에 정의 된 friend 함수는 전역 네임 스페이스 범위에서 정의 되 고 선언 된 것 처럼 처리 되지 않습니다. 그러나 인수 종속 조회를 통해 찾을 수 있습니다.
 
-C3767 때문일 수 있습니다도 주요 변경 내용: 네이티브 형식은 이제 기본적으로 개인을 **/clr** 컴파일; 참조 [가시성 입력](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) 자세한 합니다.
+C3767은 주요 변경 내용으로 인해 발생할 수도 있습니다. 이제 네이티브 형식이 **/clr** 컴파일에서 기본적으로 private입니다. 자세한 내용은 [형식 표시 유형](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) 을 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3767를 생성합니다.
+다음 샘플에서는 C3767를 생성 합니다.
 
-```
+```cpp
 // C3767a.cpp
 // compile with: /clr
 using namespace System;
@@ -54,9 +54,9 @@ int main() {
 };
 ```
 
-다음 샘플에서는 C3767를 생성합니다.
+다음 샘플에서는 C3767를 생성 합니다.
 
-```
+```cpp
 // C3767c.cpp
 // compile with: /clr /c
 

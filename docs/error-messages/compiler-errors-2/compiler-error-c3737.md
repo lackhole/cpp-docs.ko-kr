@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3737
 ms.assetid: ca2aeb23-2491-4ccb-8838-884abf7065c8
-ms.openlocfilehash: b6c2a85556e96ff6176e158b7d75a844bb5710d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 25dbb8897db45cbddaaf7f0530bcb2a8653b03cf
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327888"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752797"
 ---
 # <a name="compiler-error-c3737"></a>컴파일러 오류 C3737
 
-'delegate': 대리자에서 명시적 호출 규칙에 없을 수 있습니다
+' delegate ': 대리자는 명시적 호출 규칙을 사용할 수 없습니다.
 
-지정할 수 없습니다는 [호출 규칙이](../../cpp/calling-conventions.md) 에 대 한는 `delegate`합니다.
+`delegate`에 대 한 [호출 규칙](../../cpp/calling-conventions.md) 은 지정할 수 없습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3737 오류가 생성 됩니다.
+다음 샘플에서는 C3737를 생성 합니다.
 
-```
+```cpp
 // C3737a.cpp
 // compile with: /clr
 delegate void __stdcall MyFunc();   // C3737

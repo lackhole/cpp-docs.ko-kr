@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2254
 ms.assetid: 49bb3d7e-3bdf-4af6-937c-fa627be412a9
-ms.openlocfilehash: da89741811bbb9055f3f6793d115a357d80ab79a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38220575a48720a9df0e232ef74c8743e7e056c7
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397538"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758842"
 ---
 # <a name="compiler-error-c2254"></a>컴파일러 오류 C2254
 
-'function': 순수 지정자 또는 추상 재정의 지정자는 friend 함수를 사용할 수 없습니다
+' function ': 순수 지정자 또는 추상 재정의 지정자는 friend 함수에 사용할 수 없습니다.
 
-A `friend` 함수를 순수 지정한 `virtual`합니다.
+`friend` 함수는 순수 `virtual`로 지정 됩니다.
 
-다음 샘플에서는 C2254를 생성합니다.
+다음 샘플에서는 C2254를 생성 합니다.
 
-```
+```cpp
 // C2254.cpp
 // compile with: /c
 class A {

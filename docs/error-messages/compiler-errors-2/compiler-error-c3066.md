@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3066
 ms.assetid: 226f6de5-c4c5-41e2-b31a-2e30a37fbbeb
-ms.openlocfilehash: 126175b44bf0e6f4a58bc0e675cfd0cac1acc1ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 80468f4e35ffd9d09706b8bb8fc2fdc6eb8e679e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182615"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738858"
 ---
 # <a name="compiler-error-c3066"></a>컴파일러 오류 C3066
 
-여러 가지 방법으로이 형식의 개체를 호출할 수 있습니다 이러한 인수를 사용 하 여
+이러한 인수를 사용 하 여이 형식의 개체를 호출할 수 있는 여러 가지 방법이 있습니다.
 
-컴파일러가는 서로게이트를 포함 하는 모호한 함수 호출을 발견 했습니다.
+컴파일러가 서로게이트를 포함 하는 모호한 함수 호출을 발견 했습니다.
 
-다음 샘플에서는 C3066 오류가 생성 됩니다.
+다음 샘플에서는 C3066를 생성 합니다.
 
-```
+```cpp
 // C3066.cpp
 template <class T, class U> void func(T*, U*){}
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3400
 ms.assetid: d44169a8-73b6-4766-b406-b3a6c93f2a4d
-ms.openlocfilehash: c4b4cb64da83115ab5b6a5234cda2ea3c7ba3a53
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cb4b9d03e10155383f2c58cca07253ae69c2c69a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300377"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737506"
 ---
 # <a name="compiler-error-c3400"></a>컴파일러 오류 C3400
 
@@ -19,13 +19,13 @@ ms.locfileid: "62300377"
 
 컴파일러가 순환 제약 조건을 검색했습니다.
 
-자세한 내용은 [제네릭 형식 매개 변수에 대 한 제약 조건 (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md)합니다.
+자세한 내용은 [제네릭 형식 매개 변수에 대한 제약 조건(C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
 다음 샘플에서는 C3400을 생성합니다.
 
-```
+```cpp
 // C3400.cpp
 // compile with: /clr /c
 generic<class T, class U>

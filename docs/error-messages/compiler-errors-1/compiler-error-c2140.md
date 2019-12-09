@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C2140
 ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
-ms.openlocfilehash: 35b6e38290acddb41bdf53d9663a058259300ee8
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 0329872ff0baee595bf32486a53d6abf91d208d4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345684"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756528"
 ---
 # <a name="compiler-error-c2140"></a>컴파일러 오류 C2140
 
-'type': 제네릭 형식 매개 변수에 종속 된 형식은 컴파일러 내장 형식 특성 '특성 (trait)'에 대 한 인수로 사용할 수 없습니다
+' type ': 제네릭 형식 매개 변수에 종속 된 형식은 컴파일러 내장 형식 특성 ' 특성 '에 대 한 인수로 사용할 수 없습니다.
 
-잘못 된 형식 지정자는 형식 특성에 전달 되었습니다.
+형식 특성에 잘못 된 형식 지정 자가 전달 되었습니다.
 
-자세한 내용은 [형식 특성에 대 한 컴파일러 지원](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md)합니다.
+자세한 내용은 [형식 특성에 대한 컴파일러 지원](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C2140를 생성합니다.
+다음 샘플에서는 C2140를 생성 합니다.
 
-```
+```cpp
 // C2140.cpp
 // compile with: /clr /c
 template <class T>

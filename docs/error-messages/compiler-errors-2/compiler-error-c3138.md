@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3138
 ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
-ms.openlocfilehash: d812c14c2f364681fe28a58bdaed68fe3ed8ad30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3980bebdae0301dfbbb3cea91d6631053a118995
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374991"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761255"
 ---
 # <a name="compiler-error-c3138"></a>컴파일러 오류 C3138
 
-'interface': 'attribute' 인터페이스는 IDispatch에서 상속 하는 인터페이스 또는 IDispatch에서 상속 해야 합니다
+' interface ': ' attribute ' 인터페이스는 IDispatch에서 상속 하거나 IDispatch에서 상속 하는 인터페이스에서 상속 해야 합니다.
 
-사용 하 여 인터페이스를 [이중](../../windows/dual.md) 또는 [dispinterface](../../windows/dispinterface.md) 특성이 없는 `IDispatch` 직접 또는 간접 기본 인터페이스로 합니다.
+[Dual](../../windows/dual.md) 또는 특성이 있는 인터페이스에는 [직접 또는 간접](../../windows/dispinterface.md) 기본 인터페이스로 `IDispatch` 없습니다.
 
-다음 예제에서는 C3138를 생성합니다.
+다음 예제에서는 C3138를 생성 합니다.
 
-```
+```cpp
 // C3138.cpp
 #include <unknwn.h>
 

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2372
 ms.assetid: 406bea63-c8d3-4231-9d26-c70af6980840
-ms.openlocfilehash: db13a6bc108588fbbd9c15e2bcc647bea073a333
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d5f4653ded6d2800d74418a712bbcb3d4d4d6676
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62339028"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745618"
 ---
 # <a name="compiler-error-c2372"></a>컴파일러 오류 C2372
 
-'identifier': 재정의 다양 한 간접 참조
+' identifier ': 재정의 서로 다른 유형의 간접 참조
 
-식별자는 다른 파생된 형식을 사용 하 여 이미 정의 되었습니다.
+식별자가 이미 다른 파생 형식으로 정의 되어 있습니다.
 
 다음 샘플에서는 C2326을 생성합니다.
 
-```
+```cpp
 // C2372.cpp
 // compile with: /c
 extern int *fp;

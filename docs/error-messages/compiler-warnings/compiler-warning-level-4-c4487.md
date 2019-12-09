@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4487
 ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
-ms.openlocfilehash: 231482547856fc07d43ecfb859b31c2ece49fc5e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1583da44368225eabd8181be970f69f6582111e1
+ms.sourcegitcommit: d0504e2337bb671e78ec6dd1c7b05d89e7adf6a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62207006"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74682977"
 ---
 # <a name="compiler-warning-level-4-c4487"></a>컴파일러 경고(수준 4) C4487
 
-'derived_class_function': 상속 된 비가상 메서드 'base_class_function'는 일치 하지만 명시적으로 표시 되어 있지 않습니다 'new'
+' derived_class_function ': 상속 된 비가상 메서드 ' base_class_function '과 (와) 일치 하지만 명시적으로 ' n e w '로 표시 되어 있지 않습니다.
 
-파생된 클래스에서 함수는 비가상 기본 클래스 함수 서명이 동일 합니다. C4487 파생된 클래스는 기본 클래스 함수를 재정의 하지 않습니다를 알려 줍니다. 파생된 클래스 함수를 명시적으로 표시 `new` 이 경고를 해결 하려면.
+파생 클래스의 함수에는 비가상 기본 클래스 함수와 동일한 시그니처가 있습니다. C4487는 파생 클래스 함수가 기본 클래스 함수를 재정의 하지 않는다는 사실을 알려 줍니다. 이 경고를 해결 하려면 파생 클래스 함수를 `new`로 명시적으로 표시 합니다.
 
-자세한 내용은 [new (의 new 슬롯 vtable)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)합니다.
+자세한 내용은 [new (vtable의 새 슬롯)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C4487를 생성합니다.
+다음 샘플에서는 C4487를 생성 합니다.
 
-```
+```cpp
 // C4487.cpp
 // compile with: /W4 /clr
 using namespace System;

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3732
 ms.assetid: 2d55a7e1-9c39-4379-a093-2f7beb27e2ca
-ms.openlocfilehash: c71cca3643f6337060de6e4bb56ac64d8f0d6e4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 30ade41ae463923cc5cc9911469e587decacbc64
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327992"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752927"
 ---
 # <a name="compiler-error-c3732"></a>컴파일러 오류 C3732
 
-'interface': COM 이벤트를 발생 시키는 사용자 지정 인터페이스는 IDispatch에서 상속할 수 없습니다
+' interface ': COM 이벤트를 발생 시키는 사용자 지정 인터페이스는 IDispatch에서 상속할 수 없습니다.
 
-COM 이벤트를 지 원하는 인터페이스에서 상속할 수 없습니다 `IDispatch`합니다. 자세한 내용은 [COM에서 이벤트 처리](../../cpp/event-handling-in-com.md) 를 참조합니다.
+COM 이벤트를 지 원하는 인터페이스는 `IDispatch`에서 상속할 수 없습니다. 자세한 내용은 [COM에서 이벤트 처리](../../cpp/event-handling-in-com.md)를 참조 하세요.
 
-다음 오류 C3732를 생성합니다.
+다음 오류는 C3732을 생성 합니다.
 
-```
+```cpp
 // C3732.cpp
 #define _ATL_ATTRIBUTES 1
 #include "atlbase.h"

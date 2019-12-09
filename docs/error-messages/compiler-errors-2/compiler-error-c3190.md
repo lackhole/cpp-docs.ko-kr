@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3190
 ms.assetid: 7c701afa-85a7-4f7a-8881-0662436ac244
-ms.openlocfilehash: 1f30026d8f853aedc863bef4ecfa32b0bd3262b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bbdd54ad0e87557b62d42c8ef5651122d9ebc205
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382361"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761610"
 ---
 # <a name="compiler-error-c3190"></a>컴파일러 오류 C3190
 
-제공 된 템플릿 인수를 사용 하 여 ' 인스턴스화' 't y'의 모든 멤버 함수의 명시적 인스턴스화가 아닙니다.
+제공 된 템플릿 인수를 사용 하는 ' 인스턴스화 '는 ' type ' 멤버 함수의 명시적 인스턴스화가 아닙니다.
 
-컴파일러 함수 명시적 인스턴스화; 확인 시도를 감지 했습니다. 단, 제공 된 형식 인수를 가능한 기능의 일치 하지 않습니다.
+컴파일러가 명시적 함수 인스턴스화를 시도 하는 것을 발견 했습니다. 그러나 제공 된 형식 인수는 가능한 함수와 일치 하지 않습니다.
 
-다음 샘플에서는 C3190 오류가 생성 됩니다.
+다음 샘플에서는 C3190를 생성 합니다.
 
-```
+```cpp
 // C3190.cpp
 // compile with: /LD
 template<class T>

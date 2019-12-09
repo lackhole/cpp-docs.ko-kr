@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2612
 ms.assetid: 6faacfd6-4455-41a2-808e-0f6799f84d6d
-ms.openlocfilehash: b2d4888c1be39c4f48f0ca674426c7af612b9bb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 630e5b1cc6e99ffda28f50c09bccbbc2fea07172
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379027"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737701"
 ---
 # <a name="compiler-error-c2612"></a>컴파일러 오류 C2612
 
-'char' 기본/멤버 이니셜라이저 목록에서 잘못 된 후행
+기본/멤버 이니셜라이저 목록에 후행 ' char '가 잘못 되었습니다.
 
-마지막으로 기본 또는 멤버 이니셜라이저 목록에서 다음에 문자가 표시 합니다.
+이니셜라이저 목록에서 마지막 기본 또는 멤버 뒤에 문자가 표시 됩니다.
 
-다음 샘플에서는 C2612 오류가 생성 됩니다.
+다음 샘플에서는 C2612를 생성 합니다.
 
-```
+```cpp
 // C2612.cpp
 class A {
 public:

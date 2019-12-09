@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t method [C++]
 ms.assetid: 0c00620a-28d2-4f60-ae4a-1696be36137e
-ms.openlocfilehash: 5a3923ee488771e807600069855299fc240b3212
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: c169e454029a28f644a2aabc8d3089bf3069c8c5
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69498706"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857595"
 ---
 # <a name="_com_ptr_t_com_ptr_t"></a>_com_ptr_t::_com_ptr_t
 
@@ -21,7 +21,7 @@ ms.locfileid: "69498706"
 
 ## <a name="syntax"></a>구문
 
-```
+```cpp
 // Default constructor.
 // Constructs a NULL smart pointer.
 _com_ptr_t() throw();
@@ -133,13 +133,13 @@ explicit _com_ptr_t(
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
 *pInterface*<br/>
 원시 인터페이스 포인터입니다.
 
 *fAddRef*<br/>
-TRUE 이면 캡슐화 `AddRef` 된 인터페이스 포인터의 참조 횟수를 증가 시키기 위해가 호출 됩니다.
+TRUE 이면 캡슐화 된 인터페이스 포인터의 참조 횟수를 증가 시키기 위해 `AddRef`가 호출 됩니다.
 
 *cp*<br/>
 **_Com_ptr_t** 개체입니다.
@@ -151,17 +151,19 @@ TRUE 이면 캡슐화 `AddRef` 된 인터페이스 포인터의 참조 횟수를
 `_variant_t` 개체입니다.
 
 *clsid*<br/>
-Coclass `CLSID` 의입니다.
+Coclass의 `CLSID`입니다.
 
 *dwClsContext*<br/>
 실행 코드를 실행하는 컨텍스트입니다.
 
 *lpcStr*<br/>
-(" **{** "로 시작) 또는을 `ProgID`포함 하는 멀티 바이트 문자열입니다. `CLSID`
+`CLSID` (" **{** "로 시작) 또는 `ProgID`을 포함 하는 멀티 바이트 문자열입니다.
 
 *pOuter*<br/>
 [집계](/windows/win32/com/aggregation)에 대해 알 수 없는 외부입니다.
 
-## <a name="see-also"></a>참고자료
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참조
 
 [_com_ptr_t 클래스](../cpp/com-ptr-t-class.md)

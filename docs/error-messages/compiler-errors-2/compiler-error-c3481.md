@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3481
 ms.assetid: 5d09375a-5ed3-4b61-86ed-45e91fd734c7
-ms.openlocfilehash: eff7c7a4f39524aa1d894b7b4590aa809714aae6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1719e9f1d3328be083f745498e6f4ad772b0b52a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173368"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755241"
 ---
 # <a name="compiler-error-c3481"></a>컴파일러 오류 C3481
 
@@ -27,7 +27,7 @@ ms.locfileid: "62173368"
 
 다음 예제에서는 `n` 변수가 정의되지 않았기 때문에 C3481을 생성합니다.
 
-```
+```cpp
 // C3481.cpp
 
 int main()
@@ -36,6 +36,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

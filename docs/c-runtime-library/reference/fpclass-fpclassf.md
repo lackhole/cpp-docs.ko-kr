@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _fpclass function
 - _fpclassf function
 ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
-ms.openlocfilehash: 2e561cff956ca51707834bf869a1c114f0c99a3e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: db95453a44f6a55d4bf98638351dcda4bd8377c9
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957037"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857842"
 ---
 # <a name="_fpclass-_fpclassf"></a>_fpclass, _fpclassf
 
@@ -65,7 +65,7 @@ int _fpclassf(
 
 **_Fpclass** 및 **_fpclassf** 함수는 인수 *x*의 부동 소수점 분류를 나타내는 정수 값을 반환 합니다. 분류는 \<float.h>에 정의된 다음 값 중 하나를 가질 수 있습니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |**_FPCLASS_SNAN**|신호 NaN|
 |**_FPCLASS_QNAN**|자동 NaN|
@@ -78,7 +78,7 @@ int _fpclassf(
 |**_FPCLASS_PN**|정규화된 0이 아닌 양수 값|
 |**_FPCLASS_PINF**|양수 무한대(+INF)|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **_Fpclass** 및 **_Fpclassf** 함수는 Microsoft 전용입니다. [fpclassify](fpclassify.md)와 비슷하지만 인수에 대한 더 자세한 정보를 반환합니다. **_Fpclassf** 함수는 x64 플랫폼용으로 컴파일된 경우에만 사용할 수 있습니다.
 
@@ -90,7 +90,7 @@ int _fpclassf(
 
 호환성 및 규칙에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [부동 소수점 지원](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>

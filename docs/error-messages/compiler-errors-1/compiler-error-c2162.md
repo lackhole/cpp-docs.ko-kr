@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2162
 ms.assetid: 34923628-d35e-48ab-9072-b95e3b5f6b45
-ms.openlocfilehash: 02c0101324b28ebe548c38c6dc617faaa62315b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b4efd609aaa1f1c5bc50460ff653b36b12061e4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174785"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755696"
 ---
 # <a name="compiler-error-c2162"></a>컴파일러 오류 C2162
 
-예상된 매크로 정식 매개 변수
+매크로 정식 매개 변수가 필요 합니다.
 
-문자열 화 연산자 (#) 뒤의 토큰이 정식 매개 변수 이름이 아닙니다.
+문자열 화 연산자 (#) 뒤에 있는 토큰은 정식 매개 변수 이름이 아닙니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2162를 생성합니다.
+다음 샘플에서는 C2162를 생성 합니다.
 
-```
+```cpp
 // C2162.cpp
 // compile with: /c
 #include <stdio.h>

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3181
 ms.assetid: 5d450f8b-6cef-4452-a0c4-2076e967451d
-ms.openlocfilehash: dc848d4108ed4a1a7b6646647a1bbb1ec8dcadf7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e30ed7016ca3a4d4948a08c5c09268e52c9a407d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382401"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761675"
 ---
 # <a name="compiler-error-c3181"></a>컴파일러 오류 C3181
 
-'type': 잘못 된 연산자의 피연산자
+' type ': 연산자에 대 한 피연산자가 잘못 되었습니다.
 
-에 전달 된 잘못 된 매개 변수를 [typeid](../../extensions/typeid-cpp-component-extensions.md) 연산자입니다. 매개 변수는 관리 되는 형식 이어야 합니다.
+[Typeid](../../extensions/typeid-cpp-component-extensions.md) 연산자에 잘못 된 매개 변수가 전달 되었습니다. 매개 변수는 관리 되는 형식 이어야 합니다.
 
-컴파일러에서 공용 언어 런타임 형식에 매핑되는 네이티브 형식에 대 한 별칭을 사용 하는 참고 합니다.
+컴파일러는 공용 언어 런타임의 형식에 매핑되는 네이티브 형식에 별칭을 사용 합니다.
 
-다음 샘플에서는 C3181 오류가 생성 됩니다.
+다음 샘플에서는 C3181를 생성 합니다.
 
-```
+```cpp
 // C3181a.cpp
 // compile with: /clr
 using namespace System;

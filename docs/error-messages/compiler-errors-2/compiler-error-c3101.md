@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3101
 ms.assetid: 4f673766-d4f7-4632-94a5-d36a83f7f4b5
-ms.openlocfilehash: d39afc548010df95bdf31b2c7708bc4fa0310bcd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dca91b9359417b8c4cce9329e2aa25107016c086
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404197"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750002"
 ---
 # <a name="compiler-error-c3101"></a>컴파일러 오류 C3101
 
-명명 된 특성 인수 'field'에 대 한 식이 잘못 되었습니다.
+명명 된 특성 인수 ' field '의 식이 잘못 되었습니다.
 
-명명 된 특성 인수를 초기화 하는 경우 값은 컴파일 시간 상수 여야 합니다.
+명명 된 특성 인수를 초기화 하는 경우 값은 컴파일 타임 상수 여야 합니다.
 
-특성에 대 한 자세한 내용은 참조 하세요. [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)합니다.
+특성에 대 한 자세한 내용은 [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)을 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3101를 생성합니다.
+다음 샘플에서는 C3101를 생성 합니다.
 
-```
+```cpp
 // C3101.cpp
 // compile with: /clr /c
 ref class AAttribute : System::Attribute {

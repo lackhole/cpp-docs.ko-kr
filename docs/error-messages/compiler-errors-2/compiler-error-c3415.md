@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3415
 ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
-ms.openlocfilehash: 3d4163fac83e24d30f29aed92e7a1ec1fc9e362f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da7b49d30866b9fa5ab27a93357fd2812aaa2806
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62242866"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74742927"
 ---
 # <a name="compiler-error-c3415"></a>컴파일러 오류 C3415
 
@@ -19,7 +19,7 @@ ms.locfileid: "62242866"
 
 [section](../../preprocessor/section.md) pragma에 충돌되는 값이 지정되었습니다.
 
-`value` 는 ntimage.h에 지정된 것처럼 섹션의 현재 설정입니다. 예를 들어:
+`value` 는 ntimage.h에 지정된 것처럼 섹션의 현재 설정입니다. 예를 들면 다음과 같습니다.:
 
 ```
 // Section contains extended relocations.
@@ -42,7 +42,7 @@ ms.locfileid: "62242866"
 
 다음 샘플에서는 C3415를 생성합니다.
 
-```
+```cpp
 // C3415.cpp
 #pragma section("mysec1",write)
 #pragma section("mysec1",read)   // C3415
