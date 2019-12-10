@@ -8,16 +8,16 @@ helpviewer_keywords:
 - /WL compiler option [C++]
 - WL compiler option [C++]
 ms.assetid: 332cadb4-8ea6-45fe-b67d-33ddec1f2c2e
-ms.openlocfilehash: c0d5110615f66dcf4f7dc170d89ee58c2e8fa5cb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1ded1cd18eb75ed47b76c1353ad82a7fa497ba9
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316537"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988571"
 ---
 # <a name="wl-enable-one-line-diagnostics"></a>/WL(1줄 진단 사용)
 
-오류 또는 경고 메시지에 추가 정보를 추가합니다.
+오류 또는 경고 메시지에 추가 정보를 추가 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,13 +25,13 @@ ms.locfileid: "62316537"
 /WL
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-오류 및 경고 메시지를는 C++ 컴파일러는 기본적으로 새 줄에 표시 되는 추가 정보 올 수 있습니다. 명령줄에서 컴파일할 때 오류 또는 경고 메시지에 정보 추가 줄을 추가할 수 있습니다. 이 로그 파일에 빌드 출력을 캡처하고 다음 모든 오류 및 경고를 확인 하려면 해당 로그를 처리 하는 경우이 바람직 할 수 있습니다. 세미콜론 추가 줄에서 오류 또는 경고 메시지가 구분 됩니다.
+C++ 컴파일러의 오류 및 경고 메시지 뒤에는 기본적으로 새 줄에 표시 되는 추가 정보가 표시 될 수 있습니다. 명령줄에서 컴파일하는 경우 오류 또는 경고 메시지에 추가 정보 줄을 추가할 수 있습니다. 이는 빌드 출력을 로그 파일에 캡처한 다음 해당 로그를 처리 하 여 모든 오류와 경고를 찾는 경우에 적합할 수 있습니다. 세미콜론이 추가 줄에서 오류 또는 경고 메시지를 구분 합니다.
 
-일부 오류 및 경고 메시지에 정보의 줄을 경우 다음 코드에서 추가 정보를 줄 수 있는 오류를 생성 합니다. 사용 하는 경우의 효과 테스트할 수 있습니다 **/WL**합니다.
+모든 오류 및 경고 메시지에 추가 정보 줄이 포함 되어 있는 것은 아닙니다. 다음 코드는 추가 정보 줄을 포함 하는 오류를 생성 합니다. **/WL**를 사용할 때 효과를 테스트할 수 있습니다.
 
-```
+```cpp
 // compiler_option_WL.cpp
 // compile with: /WL
 #include <queue>
@@ -53,9 +53,9 @@ int main() {
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
+- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [MSVC 컴파일러 옵션](compiler-options.md)<br/>
 [MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)

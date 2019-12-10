@@ -1,17 +1,17 @@
 ---
 title: PROC
-ms.date: 08/30/2018
+ms.date: 12/06/2019
 f1_keywords:
 - PROC
 helpviewer_keywords:
 - PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-ms.openlocfilehash: 5d1e44fcc4adbbe012b2f31fe9c6c27511bafff1
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: e68a7fc9814ba1ca07095e036e88fb5917220086
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74395032"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74987939"
 ---
 # <a name="proc"></a>PROC
 
@@ -25,6 +25,8 @@ ms.locfileid: "74395032"
 > **endp** 레이블
 
 ## <a name="remarks"></a>주의
+
+⟦*Distance*⟧*및 ⟦ ⟧* 인수는 32 비트 MASM 에서만 유효 합니다.
 
 ⟦**FRAME** ⟦ __:__ *ehandler-address*⟧ ⟧는 ml64.exe 에서만 유효 하며,이를 통해 MASM에서 함수 테이블 항목을 생성 하 고 .xdata의 해제 정보를 사용 하 여 함수의 구조화 된 예외 처리 해제 동작을 발생 시킵니다.
 
@@ -77,6 +79,6 @@ Dumping Unwind Information for file ex2.exe
       Code offset: 0x01, PUSH_NONVOL, register=rbp
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

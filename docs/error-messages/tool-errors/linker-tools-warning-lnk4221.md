@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4221
 ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
-ms.openlocfilehash: 299c3ef76006b347d6770d45ca317ff0eb941ffa
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: fb355b6d004d9488abac89ef44c9ec38c791ffda
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630797"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988032"
 ---
 # <a name="linker-tools-warning-lnk4221"></a>링커 도구 경고 LNK4221
 
@@ -19,12 +19,12 @@ ms.locfileid: "69630797"
 
 다음 두 코드 조각을 고려 하십시오.
 
-```
+```cpp
 // a.cpp
 #include <atlbase.h>
 ```
 
-```
+```cpp
 // b.cpp
 #include <atlbase.h>
 int function()
@@ -39,13 +39,13 @@ int function()
 
 ::: moniker range=">=vs-2019"
 
-이 오류의 일반적인 원인은 두 소스 파일이 **미리 컴파일된 헤더** 필드에 지정 된 것과 동일한 헤더 파일 이름을 사용 하 여 [/Yc (미리 컴파일된 헤더 파일 만들기)](../../build/reference/yc-create-precompiled-header-file.md) 옵션을 지정 하는 경우입니다. 기본적으로 .pch는 .pch를 포함 하 고 새 기호를 추가 하지 않으므로이 문제의 일반적인 원인은 *.pch* 를 처리 하는 것입니다. 다른 소스 파일에 **/yc** 가 포함 된 *.pch. h* 가 포함 되어 있고 연결 된 .obj 파일이 pch. .obj 이전에 처리 되는 경우 링커에서는 LNK4221을 throw 합니다.
+이 오류의 일반적인 원인은 두 소스 파일이 **미리 컴파일된 헤더** 필드에 지정 된 것과 동일한 헤더 파일 이름을 사용 하 여 [/Yc (미리 컴파일된 헤더 파일 만들기)](../../build/reference/yc-create-precompiled-header-file.md) 옵션을 지정 하는 경우입니다. 기본적 *으로 .pch는 .pch를 포함 하* 고 새 기호를 추가 하지 않으므로이 문제의 일반적인 원인은 *.pch* 를 *처리 하는* 것입니다. 다른 소스 파일에 **/yc** 가 포함 된 *.pch. h* 가 포함 되어 있고 연결 된 .obj 파일이 pch. .obj 이전에 처리 되는 경우 링커에서는 LNK4221을 throw 합니다.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-이 오류의 일반적인 원인은 두 소스 파일이 **미리 컴파일된 헤더** 필드에 지정 된 것과 동일한 헤더 파일 이름을 사용 하 여 [/Yc (미리 컴파일된 헤더 파일 만들기)](../../build/reference/yc-create-precompiled-header-file.md) 옵션을 지정 하는 경우입니다. 기본적으로 stdafx.h는 stdafx.h를 포함 하 고 새 기호를 추가 하지 않으므로 *stdafx.h* 를 사용 하는 것이 문제의 일반적인 원인입니다. 다른 소스 파일에 **/yc** 가 있는 *stdafx.h* 가 포함 되어 있고 관련 .obj 파일이 stdafx.h 이전에 처리 되는 경우 링커는 LNK4221을 throw 합니다.
+이 오류의 일반적인 원인은 두 소스 파일이 **미리 컴파일된 헤더** 필드에 지정 된 것과 동일한 헤더 파일 이름을 사용 하 여 [/Yc (미리 컴파일된 헤더 파일 만들기)](../../build/reference/yc-create-precompiled-header-file.md) 옵션을 지정 하는 경우입니다. 기본적 *으로 stdafx.h는 stdafx.h를 포함 하* *고 새* 기호를 추가 하지 않으므로 *stdafx.h* 를 사용 하는 것이 문제의 일반적인 원인입니다. 다른 소스 파일에 **/yc** 가 있는 *stdafx.h* 가 포함 되어 있고 관련 .obj 파일이 stdafx.h 이전에 처리 되는 경우 링커는 LNK4221을 throw 합니다.
 
 ::: moniker-end
 

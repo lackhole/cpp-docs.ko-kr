@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4820
 ms.assetid: 17aa29f4-c287-49b8-bc43-8ed82ffed5ea
-ms.openlocfilehash: adf8b365bc39acc1ce729e89260f8385ecb6c048
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac97a943e6a8178e930d93a097071b0e3da09773
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280401"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74989055"
 ---
 # <a name="compiler-warning-level-4-c4820"></a>컴파일러 경고(수준 4) C4820
 
 'bytes'바이트 채움 문자가 construct 'member_name' 뒤에 추가되었습니다.
 
-형식 및 요소의 순서는 구조체의 끝에 패딩 추가 하도록 컴파일러에 발생 합니다. 참조 [맞춤](../../cpp/align-cpp.md) 패딩 구조체에 대 한 자세한 내용은 합니다.
+요소의 형식 및 순서에 따라 컴파일러가 구조체의 끝에 패딩을 추가 했습니다. 구조체의 안쪽 여백에 대 한 자세한 내용은 [align](../../cpp/align-cpp.md) 을 참조 하세요.
 
 기본적으로 이 경고는 해제되어 있습니다. 자세한 내용은 [기본적으로 해제되어 있는 컴파일러 경고](../../preprocessor/compiler-warnings-that-are-off-by-default.md) 를 참조하세요.
 
-다음 샘플에서는 C4820 오류가 생성 됩니다.
+다음 샘플에서는 C4820를 생성 합니다.
 
-```
+```cpp
 // C4820.cpp
 // compile with: /W4 /c
 #pragma warning(default : 4820)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;사용 권한 > (C++ 문서 주석)'
+title: '&lt;권한 > (C++ 문서 설명)'
 ms.date: 11/04/2016
 f1_keywords:
 - permission
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <permission> C++ XML tag
 - permission C++ XML tag
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
-ms.openlocfilehash: 764048f7bc579afa6862bdff40968588955dc307
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e7f0a59c85e3fa28d24e44953e207151c3afa0f4
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319943"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988670"
 ---
 # <a name="ltpermissiongt"></a>&lt;permission&gt;
 
@@ -37,15 +37,15 @@ ms.locfileid: "62319943"
 *description*<br/>
 멤버 액세스 권한에 대한 설명입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-MSVC 컴파일러는 문서 주석을 통해 단일 패스로 cref 참조를 확인 하려고 합니다.  따라서 C++ 조회 규칙을 사용하는 경우 컴파일러에서 기호를 찾을 수 없으며 참조는 확인되지 않음으로 표시됩니다. 자세한 내용은 [\<seealso>](seealso-visual-cpp.md)를 참조하세요.
+MSVC 컴파일러는 문서 주석을 통해 한 번의 cref 참조를 확인 하려고 시도 합니다.  따라서 C++ 조회 규칙을 사용하는 경우 컴파일러에서 기호를 찾을 수 없으며 참조는 확인되지 않음으로 표시됩니다. 자세한 내용은 [\<seealso>](seealso-visual-cpp.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // xml_permission_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_permission_tag.dll
@@ -57,6 +57,6 @@ public ref class TestClass {
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [XML 문서](xml-documentation-visual-cpp.md)

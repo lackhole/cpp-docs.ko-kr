@@ -1,17 +1,17 @@
 ---
 title: EXTERN (MASM)
-ms.date: 08/30/2018
+ms.date: 12/06/2019
 f1_keywords:
 - extern
 helpviewer_keywords:
 - EXTERN directive
 ms.assetid: 667d703d-3aaf-4139-a586-29bc5dab1aff
-ms.openlocfilehash: fc66338d90b54ecb12ef3ab1aa56214fb445cb13
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 38ea50e75f2a8e19a7a99860f691904053b6739a
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397557"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74987859"
 ---
 # <a name="extern-masm"></a>EXTERN (MASM)
 
@@ -23,8 +23,10 @@ ms.locfileid: "74397557"
 
 ## <a name="remarks"></a>주의
 
+*언어 형식* 인수는 32 비트 MASM 에서만 유효 합니다.
+
 *형식은* *이름* 을 상수로 가져오는 [ABS](../../assembler/masm/operator-abs.md)일 수 있습니다. [Extrn](../../assembler/masm/extrn.md)과 동일 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)
