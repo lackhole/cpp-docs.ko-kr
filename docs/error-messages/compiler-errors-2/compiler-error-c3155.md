@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3155
 ms.assetid: b04a42e1-64e7-40f8-81fe-c7945348b2cf
-ms.openlocfilehash: 85ee53dff7ae50717eabfd1ac6504ebb74deaa2d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ccbe96075a22ef67d7ebd1f2998b42820bbc79f9
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374848"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74745904"
 ---
 # <a name="compiler-error-c3155"></a>컴파일러 오류 C3155
 
-속성 인덱서에 특성이 허용 되지 않습니다.
+속성 인덱서에는 특성을 사용할 수 없습니다.
 
-인덱싱된 속성을 잘못 선언 되었습니다. 자세한 내용은 [방법: 속성에서 사용 하 여 C++/CLI](../../dotnet/how-to-use-properties-in-cpp-cli.md)합니다.
+인덱싱된 속성이 잘못 선언 되었습니다. 자세한 내용은 [방법:/cli에서 C++속성 사용](../../dotnet/how-to-use-properties-in-cpp-cli.md)을 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3155 오류가 발생 합니다.
+다음 샘플에서는 C3155를 생성 합니다.
 
-```
+```cpp
 // C3155.cpp
 // compile with: /clr /c
 using namespace System;

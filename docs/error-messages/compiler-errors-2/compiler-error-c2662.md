@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - C2662
 ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
-ms.openlocfilehash: fefd523ca3b9a3406afc307150322f9d431aa730
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2fa2643898fed510aa7cf0f483b538ebb33b033
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360351"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760454"
 ---
 # <a name="compiler-error-c2662"></a>컴파일러 오류 C2662
 
-'function': 'type1'에서 'type2'에 'this'이 포인터를 변환할 수 없습니다
+' function ': ' this ' 포인터를 ' type1 '에서 ' type2 ' (으)로 변환할 수 없습니다.
 
-컴파일러 변환할 수 없습니다는 `this` 대 한 포인터 `type1` 를 `type2`합니다.
+컴파일러가 `this` 포인터를 `type1`에서 `type2`로 변환할 수 없습니다.
 
-비-를 호출 하 여이 오류를 발생할 수 있습니다`const` 에 대해 멤버 함수는 `const` 개체입니다.  가능한 해결 방법:
+이 오류는 `const` 개체에 대해`const` 되지 않은 멤버 함수를 호출 하 여 발생할 수 있습니다.  가능한 해결 방법은 다음과 같습니다.
 
-- 제거 된 `const` 개체 선언에서.
+- 개체 선언에서 `const`를 제거 합니다.
 
-- 추가 `const` 멤버 함수입니다.
+- 멤버 함수에 `const`를 추가 합니다.
 
-다음 샘플에서는 C2662 오류가 생성 됩니다.
+다음 샘플에서는 C2662를 생성 합니다.
 
-```
+```cpp
 // C2662.cpp
 class C {
 public:
@@ -41,9 +41,9 @@ int main() {
 }
 ```
 
-사용 하 여 컴파일하면 **/clr**에서 함수를 호출할 수 없습니다는 `const` 또는 `volatile` 관리 되는 형식의 정규화 된 합니다. Const 관리 되는 개체에서 메서드를 호출할 수 없습니다 관리 되는 클래스의 const 멤버 함수를 선언할 수 없습니다.
+**/Clr**을 사용 하 여 컴파일하는 경우 `const` 또는 `volatile` 정규화 된 관리 되는 형식에 대해 함수를 호출할 수 없습니다. 관리 되는 클래스의 const 멤버 함수는 선언할 수 없으므로 const 관리 되는 개체에서 메서드를 호출할 수 없습니다.
 
-```
+```cpp
 // C2662_b.cpp
 // compile with: /c /clr
 ref struct M {
@@ -67,9 +67,9 @@ ref struct N {
 };
 ```
 
-다음 샘플에서는 C2662 오류가 생성 됩니다.
+다음 샘플에서는 C2662를 생성 합니다.
 
-```
+```cpp
 // C2662_c.cpp
 // compile with: /c
 // C2662 expected

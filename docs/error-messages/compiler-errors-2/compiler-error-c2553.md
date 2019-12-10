@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2553
 ms.assetid: 64bc1e9a-627f-4ce9-b7bc-dc911bdb9180
-ms.openlocfilehash: 11cb2b83d958f0c59d05034a716a022f00b326ec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa3e97d576e994878ab5b080363c4c09b79f42ed
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353199"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74756788"
 ---
 # <a name="compiler-error-c2553"></a>컴파일러 오류 C2553
 
-'base_function': 재정의 가상 함수의 반환 형식은 'override_function'에서 다릅니다.
+' base_function ': 재정의 가상 함수 반환 형식이 ' override_function '과 (와) 다릅니다.
 
-파생된 클래스의 함수가 기본 클래스에서 가상 함수를 재정의 하려고 하지만 파생된 클래스는 기본 클래스 함수의 반환 형식이 없는 합니다.  함수 시그니처는 재정의 재정의 되는 함수의 시그니처와 일치 해야 합니다.
+파생 클래스의 함수가 기본 클래스의 가상 함수를 재정의 하려고 했지만 파생 클래스 함수의 반환 형식이 기본 클래스 함수와 동일 하지 않습니다.  재정의 함수 시그니처는 재정의 되는 함수의 시그니처와 일치 해야 합니다.
 
-다음 샘플에서는 C2553 오류가 생성 됩니다.
+다음 샘플에서는 C2553를 생성 합니다.
 
-```
+```cpp
 // C2553.cpp
 // compile with: /clr /c
 ref struct C {

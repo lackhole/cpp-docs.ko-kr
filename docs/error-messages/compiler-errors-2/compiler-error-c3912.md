@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3912
 ms.assetid: 674e050c-11fb-4db1-8bdf-a3e95b41161d
-ms.openlocfilehash: bd66196c35715304577b8f6785261be8bdcdafec
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9054124cbfe2d86c062c6e97651bd69eebe5471c
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406680"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748751"
 ---
 # <a name="compiler-error-c3912"></a>컴파일러 오류 C3912
 
-'event': 형식의 이벤트는 대리자 형식 이어야 합니다.
+' event ': 이벤트 형식이 대리자 형식 이어야 합니다.
 
-이벤트 선언 된 하지만 적절 한 형식이 없습니다.
+이벤트가 선언 되었지만 적절 한 형식이 아닙니다.
 
-자세한 내용은 [이벤트](../../extensions/event-cpp-component-extensions.md)합니다.
+자세한 내용은 [이벤트](../../extensions/event-cpp-component-extensions.md)를 참조 하세요.
 
-다음 샘플에서는 C3912 오류가 생성 됩니다.
+다음 샘플에서는 C3912를 생성 합니다.
 
-```
+```cpp
 // C3912.cpp
 // compile with: /clr
 delegate void H();

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2951
 ms.assetid: c6f95aa2-c894-425b-a51c-d40d70c8daa1
-ms.openlocfilehash: dbc7186edfce6cc12a38fb2fc1dda08ac4a181c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fdb837f8e9a9b769d470b70b962ce63d144161e1
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300728"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755982"
 ---
 # <a name="compiler-error-c2951"></a>컴파일러 오류 C2951
 
-형식 선언이 전역 네임 스페이스 에서만 허용 됩니다 또는 클래스 범위
+형식 선언은 전역, 네임 스페이스 또는 클래스 범위 에서만 허용 됩니다.
 
-제네릭 또는 템플릿 클래스 외부 전역 또는 네임 스페이스 범위를 선언할 수 없습니다. 제네릭 또는 템플릿 선언에에서 포함 파일을 하는 경우 전역 범위에서 포함 파일 인지 확인 합니다.
+전역 또는 네임 스페이스 범위 외부에서 제네릭 또는 템플릿 클래스를 선언할 수 없습니다. 제네릭 또는 템플릿 선언을 포함 파일에서 수행 하는 경우 포함 파일이 전역 범위에 있는지 확인 합니다.
 
-다음 샘플에서는 C2951 오류가 생성 됩니다.
+다음 샘플에서는 C2951를 생성 합니다.
 
-```
+```cpp
 // C2951.cpp
 template <class T>
 class A {};
@@ -32,9 +32,9 @@ int main() {
 }
 ```
 
-C2951은 제네릭을 사용할 때도 발생할 수 있습니다.
+제네릭을 사용 하는 경우에도 C2951이 발생할 수 있습니다.
 
-```
+```cpp
 // C2951b.cpp
 // compile with: /clr /c
 

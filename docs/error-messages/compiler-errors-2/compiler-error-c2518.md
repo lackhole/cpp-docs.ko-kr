@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2518
 ms.assetid: a7895b47-da90-4851-ac97-18e81479595a
-ms.openlocfilehash: d0a1f7bdc493a16b38dc2348097cc6cbea7ed898
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 894167fce43147b98af6603cba3102e5714b850e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282289"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74746489"
 ---
 # <a name="compiler-error-c2518"></a>컴파일러 오류 C2518
 
-기본 클래스 목록에 잘못 된 ' keyword' 키워드 무시
+기본 클래스 목록에 ' keyword ' 키워드가 잘못 되었습니다. 무시
 
-키워드 `class` 고 `struct` 기본 클래스 목록에 나타나지 않아야 합니다.
+`class` 및 `struct` 키워드는 기본 클래스 목록에 표시 되지 않아야 합니다.
 
-다음 샘플에서는 C2518 오류가 생성 됩니다.
+다음 샘플에서는 C2518를 생성 합니다.
 
-```
+```cpp
 // C2518.cpp
 // compile with: /c
 class B {};

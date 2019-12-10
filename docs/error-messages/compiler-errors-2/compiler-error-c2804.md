@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2804
 ms.assetid: b066e563-cca4-450c-8ba7-3b0d7a89f3ea
-ms.openlocfilehash: 1ebcfdc2f2555fa694ab8dfeabe77e5140ddace2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 62af8cca5131a5cb21df45f09c55ee5beb3fc718
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62408422"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760649"
 ---
 # <a name="compiler-error-c2804"></a>컴파일러 오류 C2804
 
@@ -23,7 +23,7 @@ ms.locfileid: "62408422"
 
 다음 샘플에서는 C2804 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2804.cpp
 // compile by using: cl /c /W4 C2804.cpp
 class X {
@@ -42,7 +42,7 @@ int main() {
 
 다음 샘플에서는 C2804 오류가 발생하는 경우 및 이를 해결하는 방법을 보여 줍니다.
 
-```
+```cpp
 // C2804_2.cpp
 // compile with: /clr /c
 ref struct Y {

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2764
 ms.assetid: 3754f5af-e094-4425-be20-d0c9a9b5baec
-ms.openlocfilehash: ba16431fc71a0e594b77dcc6dab62ed6c49c9137
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8d318742a367487f3688717046a6a798c2add87a
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257493"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759843"
 ---
 # <a name="compiler-error-c2764"></a>컴파일러 오류 C2764
 
-'param': 템플릿 매개 변수 사용 또는 부분 특수화 'specialization'에서 추론할 수 없습니다
+' param ': 템플릿 매개 변수를 사용 하지 않거나 부분 특수화 ' 특수화 '에서 추론할 수 없습니다.
 
-부분 특수화에 템플릿 매개 변수가 사용 되지 않습니다. 이 부분 특수화를 사용할 수 없는 템플릿 매개 변수를 추론할 수 없습니다 때문입니다.
+템플릿 매개 변수는 부분 특수화에서 사용 되지 않습니다. 이렇게 하면 템플릿 매개 변수를 추론할 수 없으므로 부분 특수화를 사용할 수 없습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2764를 생성합니다.
+다음 샘플에서는 C2764를 생성 합니다.
 
-```
+```cpp
 // C2764.cpp
 #include <stdio.h>
 template <class T1, class T2>

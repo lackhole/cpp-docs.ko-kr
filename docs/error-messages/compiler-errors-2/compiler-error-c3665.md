@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3665
 ms.assetid: 893bb47e-8de1-43aa-af7d-fa47ad149ee9
-ms.openlocfilehash: 40de7a7b1ede5e6dbbc20d2128b782c0ad6f798b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b0c019b2425b314f5b3503db41042d917283aa8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62221596"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758179"
 ---
 # <a name="compiler-error-c3665"></a>컴파일러 오류 C3665
 
-'소멸자': 재정의 지정자는 'keyword' 소멸자/종료자에서 허용 되지 않습니다
+' 소멸자 ': 재정의 지정자 ' keyword '는 소멸자/종료자에서 사용할 수 없습니다.
 
-키워드는 소멸자 또는 종료자에서 허용 되지 않는 사용 되었습니다.
+소멸자 또는 종료자에서 허용 되지 않는 키워드가 사용 되었습니다.
 
-예를 들어, 소멸자 또는 종료자에는 새 슬롯을 요청할 수 없습니다.  자세한 내용은 [명시적으로 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md) 하 고 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
+예를 들어 새 슬롯은 소멸자 또는 종료자에서 요청할 수 없습니다.  자세한 내용은 [명시적 재정의](../../extensions/explicit-overrides-cpp-component-extensions.md) 및 [소멸자 및 종료자](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)를 참조 하세요.
 
-다음 샘플에서는 C3665 오류가 생성 됩니다.
+다음 샘플에서는 C3665를 생성 합니다.
 
-```
+```cpp
 // C3665.cpp
 // compile with: /clr
 public ref struct R {

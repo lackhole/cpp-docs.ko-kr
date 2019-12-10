@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3113
 ms.assetid: 3afdc668-b29e-474e-9ea3-aa027d42db7c
-ms.openlocfilehash: b8edd31db87587887d9e96522802ee9091caab91
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 067e8b14a0123691ee6368dccaa3ca3f5c763413
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404132"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760789"
 ---
 # <a name="compiler-error-c3113"></a>컴파일러 오류 C3113
 
-'structure' 템플릿/제네릭 여야 합니다.
+' structure '는 template/generic 일 수 없습니다.
 
-클래스 템플릿 또는 클래스에서 인터페이스 또는 enum 제네릭 확인 하려고 했습니다.
+클래스 템플릿 또는 클래스를 인터페이스 또는 열거형에서 제네릭으로 만들려고 했습니다.
 
-다음 샘플에서는 C3113를 생성합니다.
+다음 샘플에서는 C3113를 생성 합니다.
 
-```
+```cpp
 // C3113.cpp
 // compile with: /c
 template <class T>

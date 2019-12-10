@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3227
 ms.assetid: 7939c23a-96c8-43c2-89e9-f217d132d155
-ms.openlocfilehash: b175b14af55a9a462e040f064cc6e38d13fffb94
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 460000531dba77e42379199f276c9e2e02f43a9b
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62173992"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743421"
 ---
 # <a name="compiler-error-c3227"></a>컴파일러 오류 C3227
 
-'parameter': 'keyword'를 사용 하 여 제네릭 형식에 할당할 수 없습니다.
+' parameter ': ' keyword '를 사용 하 여 제네릭 형식을 할당할 수 없습니다.
 
-형식을 인스턴스화할는 적절 한 생성자가 필요 합니다. 그러나 컴파일러는 적절 한 생성자를 사용할 수 있는지 확인할 수 없습니다.
+형식을 인스턴스화하기 위해 적절 한 생성자가 필요 합니다. 그러나 컴파일러에서 적절 한 생성자를 사용할 수 있는지 확인할 수 없습니다.
 
-이 오류를 해결 하려면 템플릿을 제네릭 대신 사용할 수 있습니다 또는 형식의 인스턴스를 만드는 여러 방법 중 하나를 사용할 수 있습니다.
+제네릭을 사용 하는 대신 템플릿을 사용 하 여이 오류를 해결 하거나 여러 가지 방법 중 하나를 사용 하 여 형식의 인스턴스를 만들 수 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3227를 생성합니다.
+다음 샘플에서는 C3227를 생성 합니다.
 
-```
+```cpp
 // C3227.cpp
 // compile with: /clr /c
 generic<class T> interface class ICreate {

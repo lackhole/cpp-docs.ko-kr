@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3028
 ms.assetid: 175e697f-8e8f-492a-8456-6240ffbbb900
-ms.openlocfilehash: 2a1d76d21005ecffc74f9fc64d4bdeb197e9653d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a497de92d782f65bfc27db27755718e7c6bbdbe
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360049"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74735870"
 ---
 # <a name="compiler-error-c3028"></a>컴파일러 오류 C3028
 
-'member': 변수 또는 정적 데이터 멤버만 데이터 공유 절에 사용할 수 있습니다
+' member ': 데이터 공유 절에는 변수 또는 정적 데이터 멤버만 사용할 수 있습니다.
 
-변수 또는 정적 데이터 멤버가 아닌 기호 reduction 절에 전달 되었습니다.
+변수 또는 정적 데이터 멤버가 아닌 기호가 reduction 절에 전달 되었습니다.
 
-다음 샘플에서는 C3028 오류가 생성 됩니다.
+다음 샘플에서는 C3028를 생성 합니다.
 
-```
+```cpp
 // C3028.cpp
 // compile with: /openmp /link vcomps.lib
 int g_i;

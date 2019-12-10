@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3493
 ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
-ms.openlocfilehash: 1bbf9b269075717ae397b7d29ee28c278b1e4ec8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 178d1221886dc62edd9785d211e2189fa50962f4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381048"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738299"
 ---
 # <a name="compiler-error-c3493"></a>컴파일러 오류 C3493
 
@@ -29,7 +29,7 @@ ms.locfileid: "62381048"
 
 다음 예제에서는 외부 변수를 수정하지만 빈 캡처 절을 지정하기 때문에 C3493을 생성합니다.
 
-```
+```cpp
 // C3493a.cpp
 
 int main()
@@ -43,7 +43,7 @@ int main()
 
 다음 예제에서는 참조 방식을 기본 캡처 모드로 지정하여 C3493을 해결합니다.
 
-```
+```cpp
 // C3493b.cpp
 
 int main()
@@ -53,6 +53,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

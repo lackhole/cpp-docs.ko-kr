@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3830
 ms.assetid: c9798f88-5001-4067-9fb1-09957ddc6fa8
-ms.openlocfilehash: 25f2b86e21d4672c9e0907c366da17072bafa183
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 14272d2c0b0f8de63f55d2ba3d1c01cf04e0dfbd
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390544"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74741640"
 ---
 # <a name="compiler-error-c3830"></a>컴파일러 오류 C3830
 
-'type1': 값 형식 인터페이스 클래스에서 에서만 상속할 수 'type2'에서 상속할 수 없습니다.
+' type1 ': ' type2 '에서 상속할 수 없습니다. 값 형식은 인터페이스 클래스 에서만 상속할 수 있습니다.
 
-값 형식을 기본 클래스를 상속할 수 없습니다.  자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md)합니다.
+값 형식은 기본 클래스를 상속할 수 없습니다.  자세한 내용은 [클래스 및 구조체](../../extensions/classes-and-structs-cpp-component-extensions.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3830 오류가 생성 됩니다.
+다음 샘플에서는 C3830를 생성 합니다.
 
-```
+```cpp
 // C3830a.cpp
 // compile with: /clr /c
 public value struct MyStruct4 {

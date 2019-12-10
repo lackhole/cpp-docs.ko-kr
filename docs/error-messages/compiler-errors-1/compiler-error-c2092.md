@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2092
 ms.assetid: 037e44ae-16c8-489a-a512-dcdf7f7795a6
-ms.openlocfilehash: d3d0b0e62fbc5f8ad90b3fee5fe39c6bdaba7c2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b530663cae2292ebeab1b871e495e9a45e4633cf
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376011"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754669"
 ---
 # <a name="compiler-error-c2092"></a>컴파일러 오류 C2092
 
-'배열 name' 배열 요소 형식은 함수 일 수 없습니다.
+' array name ' 배열 요소 형식은 함수 일 수 없습니다.
 
-함수의 배열은 허용 되지 않습니다. 함수에 대 한 포인터의 배열을 사용 합니다.
+함수 배열을 사용할 수 없습니다. 함수에 대 한 포인터 배열을 사용 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2092 오류가 생성 됩니다.
+다음 샘플에서는 C2092를 생성 합니다.
 
-```
+```cpp
 // C2092.cpp
 typedef void (F) ();
 typedef F AT[10];   // C2092
@@ -31,9 +31,9 @@ typedef F AT[10];   // C2092
 
 ## <a name="example"></a>예제
 
-해결 방법:
+가능한 해결 방법:
 
-```
+```cpp
 // C2092b.cpp
 // compile with: /c
 typedef void (F) ();

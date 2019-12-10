@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3114
 ms.assetid: b5d2df4f-87d0-4292-9981-25c6a6013c05
-ms.openlocfilehash: c5a4feae5c8805a27c020b532fd58e0562e46b6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6f548c72a0e95c533ed711fe9f2583a7abd6c500
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404119"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760763"
 ---
 # <a name="compiler-error-c3114"></a>컴파일러 오류 C3114
 
-'argument': 잘못 명명 된 특성 인수입니다.
+' argument ': 명명 된 특성 인수가 잘못 되었습니다.
 
-명명 된 인수가 유효한 특성 클래스 데이터 멤버의 순서 대로 해당 표시 되 면 안 `static`, `const`, 또는 `literal`합니다. 속성이 아니어야 하는 경우 속성 `static` 해야 get 및 set 접근자입니다.
+특성 클래스 데이터 멤버가 유효한 명명 된 인수가 되도록 하려면 `static`, `const`또는 `literal`으로 표시 되지 않아야 합니다. 속성이 인 경우 속성은 `static` 수 없으며 get 및 set 접근자가 있어야 합니다.
 
-자세한 내용은 [속성](../../extensions/property-cpp-component-extensions.md) 하 고 [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)합니다.
+자세한 내용은 [속성](../../extensions/property-cpp-component-extensions.md) 및 [사용자 정의 특성](../../extensions/user-defined-attributes-cpp-component-extensions.md)을 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3114 오류가 발생 합니다.
+다음 샘플에서는 C3114를 생성 합니다.
 
-```
+```cpp
 // C3114.cpp
 // compile with: /clr /c
 public ref class A : System::Attribute {

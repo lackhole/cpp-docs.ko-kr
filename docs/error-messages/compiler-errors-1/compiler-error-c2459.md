@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2459
 ms.assetid: 81e29f4c-5b60-40fb-9557-1cdc630d77e8
-ms.openlocfilehash: d2e8b375fd1219b11b3a543bf3a565ddee00ccf2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c49c348968f750c7e5c64ab9ef4f298d3fc74f67
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367956"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743993"
 ---
 # <a name="compiler-error-c2459"></a>컴파일러 오류 C2459
 
-'identifier': 정의 하 고 있습니다. 익명 멤버로 서 추가할 수 없습니다.
+' identifier ':을 (를) 정의 하는 중입니다. 익명 멤버로 추가할 수 없습니다.
 
-클래스, 구조체 또는 공용 구조체는 자체 범위에서 익명 공용 구조체의 멤버에 의해 재정의 됩니다.
+클래스, 구조체 또는 공용 구조체가 익명 공용 구조체의 멤버에 의해 자체 범위에서 다시 정의 됩니다.
 
-다음 샘플에서는 C2459 오류가 생성 됩니다.
+다음 샘플에서는 C2459를 생성 합니다.
 
-```
+```cpp
 // C2459.cpp
 // compile with: /c
 class C {

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3719
 ms.assetid: d0d59d4e-babb-4480-9ef7-70cf1a28165c
-ms.openlocfilehash: 3ead2f18cdc8b76a0bb3da30e7086bdc80b49d43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4fca5bfd944514bf2658a8af5cbbd58efe5b39fc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328291"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753187"
 ---
 # <a name="compiler-error-c3719"></a>컴파일러 오류 C3719
 
-'interface': COM 이벤트에 대 한 인터페이스 기반된 이벤트 소스만 사용할 수 있습니다
+' interface ': 인터페이스 기반 이벤트 소스는 COM 이벤트에만 사용할 수 있습니다.
 
 COM이 아닌 컨텍스트에서 인터페이스를 선언 했습니다.
 
-다음 샘플에서는 C3719 오류가 생성 됩니다.
+다음 샘플에서는 C3719를 생성 합니다.
 
-```
+```cpp
 // C3719a.cpp
 #define _ATL_ATTRIBUTES 1
 #include "atlbase.h"
@@ -46,9 +46,9 @@ int main() {
 }
 ```
 
-이 오류를 해결 하려면 적용 합니다 [개체](../../windows/object-cpp.md), [coclass](../../windows/coclass.md)를 [event_source](../../windows/event-source.md), 및 [event_receiver](../../windows/event-receiver.md) 하도록 적절 하 게 특성는 COM 인터페이스 클래스를 사용 하는 클래스입니다. 예를 들어:
+이 오류를 해결 하려면 [object](../../windows/object-cpp.md), [coclass](../../windows/coclass.md), [event_source](../../windows/event-source.md)및 [event_receiver](../../windows/event-receiver.md) 특성을 적절 하 게 적용 하 여 인터페이스 COM 클래스를 사용 하는 클래스를 만듭니다. 예를 들면 다음과 같습니다.:
 
-```
+```cpp
 // C3719b.cpp
 #define _ATL_ATTRIBUTES 1
 #include <atlbase.h>

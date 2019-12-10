@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2815
 ms.assetid: d0256fd6-0721-4c99-b03c-52d96e77a613
-ms.openlocfilehash: ab6708e7ae0a56bd71adebad4fb42d6ea9abe116
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 579fc94f3b16056b5f26dd0b9ea16b5fc36fda22
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175409"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750717"
 ---
 # <a name="compiler-error-c2815"></a>컴파일러 오류 C2815
 
-operator delete': 첫 번째 정식 매개 변수 이어야 ' void *', 'param' 사용한 하지만
+' operator delete ': 첫 번째 정식 매개 변수는 ' void * ' 여야 하는데 ' param '이 (가) 사용 되었습니다.
 
-모든 사용자 정의 [delete 연산자](../../standard-library/new-operators.md#op_delete) 함수 형식의 첫 번째 정식 매개 변수를 취해야 `void *`합니다.
+사용자 정의 [operator delete](../../standard-library/new-operators.md#op_delete) 함수는 `void *`형식의 첫 번째 정식 매개 변수를 사용 해야 합니다.
 
-다음 샘플에서는 C2815 오류가 생성 됩니다.
+다음 샘플에서는 C2815를 생성 합니다.
 
-```
+```cpp
 // C2815.cpp
 // compile with: /c
 class CMyClass {

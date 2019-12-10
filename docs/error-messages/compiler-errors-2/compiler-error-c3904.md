@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - C3904
 ms.assetid: 08297605-e4f2-4c6c-b637-011f1fd40631
-ms.openlocfilehash: 4675bf95012c8e6662d7dba281c38ed2d684c448
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1861810f4598fa81d1b7662a57651b1648de1317
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406771"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74749050"
 ---
 # <a name="compiler-error-c3904"></a>컴파일러 오류 C3904
 
-'property_accessor': 숫자 매개 변수를 지정 해야 합니다
+' property_accessor ': 숫자 매개 변수를 지정 해야 합니다.
 
-매개 변수 개수를 확인 하 `get` 고 `set` 속성 차원에 대해 메서드.
+`get`의 매개 변수 수와 속성 차원에 대 한 `set` 메서드를 확인 합니다.
 
-- 에 대 한 매개 변수 개수는 `get` 메서드 속성의 차원 수와 동일 해야 합니다 또는 인덱싱되지 않은 속성에 대 한 0 이어야 합니다.
+- `get` 메서드의 매개 변수 개수는 속성 차원의 수와 동일 하거나 인덱싱되지 않은 속성의 경우 0 이어야 합니다.
 
-- 매개 변수 개수는 `set` 메서드는 하나 여야 합니다 차원 속성의 수를 초과 합니다.
+- `set` 메서드의 매개 변수 개수는 속성의 차원 수보다 하나 이상 커야 합니다.
 
 자세한 내용은 [property](../../extensions/property-cpp-component-extensions.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3904를 생성합니다.
+다음 샘플에서는 C3904를 생성 합니다.
 
-```
+```cpp
 // C3904.cpp
 // compile with: /clr /c
 ref class X {
@@ -49,9 +49,9 @@ ref class X {
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3904를 생성합니다.
+다음 샘플에서는 C3904를 생성 합니다.
 
-```
+```cpp
 // C3904b.cpp
 // compile with: /clr /c
 ref struct X {

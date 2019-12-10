@@ -23,12 +23,12 @@ helpviewer_keywords:
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-ms.openlocfilehash: bf8c61e467796c7bfaedff6918bfbf598ada528e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: 573be497bafbe5372186f31b3ea60d9a5ef7fac1
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944380"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856984"
 ---
 # <a name="_execute_onexit_table-_initialize_onexit_table-_register_onexit_function"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 
@@ -59,11 +59,11 @@ int _execute_onexit_table(
 *function*<br/>
 [in] onexit 함수 테이블에 추가할 함수에 대한 포인터입니다.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
 성공하면 0을 반환합니다. 그렇지 않으면 음수 값을 반환합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 함수는 C 런타임을 지원하는 데 사용된 인프라 구현 세부 정보이고 코드에서 직접 호출하면 안 됩니다. C 런타임은 *onexit 함수 테이블*을 사용하여 `atexit`, `at_quick_exit` 및 `_onexit` 호출을 통해 등록된 함수의 시퀀스를 나타냅니다. onexit 함수 테이블 데이터 구조체는 C 런타임의 불투명한 구현 세부 정보이고 해당 데이터 멤버의 순서와 의미는 변경될 수 있습니다. 데이터 멤버는 외부 코드를 통해 검사되지 않아야 합니다.
 
@@ -77,11 +77,11 @@ int _execute_onexit_table(
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<process.h>|
+|`_initialize_onexit_table function`에서 `_register_onexit_function`에서 `_execute_onexit_table`|C, C++: \<process.h>|
 
-`_initialize_onexit_table`, `_register_onexit_function` 및 `_execute_onexit_table` 함수는 Microsoft 전용입니다. 호환성에 대한 내용은 [호환성](../c-runtime-library/compatibility.md)을 참조하세요.
+`_initialize_onexit_table`, `_register_onexit_function`및 `_execute_onexit_table` 함수는 Microsoft 전용입니다. 호환성에 대한 자세한 내용은 [호환성](../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [atexit](../c-runtime-library/reference/atexit.md)<br/>
 [exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)<br/>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2903
 ms.assetid: bf6b223f-4921-48c7-82b9-ff318b42c801
-ms.openlocfilehash: 7002e45770c994d5cd10e1cd632561be57246086
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df097cf38fea47702b639b44fd2f2ac3341df2ba
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378533"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74735907"
 ---
 # <a name="compiler-error-c2903"></a>컴파일러 오류 C2903
 
@@ -21,7 +21,7 @@ ms.locfileid: "62378533"
 
 다음 샘플에서는 C2903을 생성합니다.
 
-```
+```cpp
 // C2903.cpp
 // compile with: /c
 namespace N {
@@ -36,7 +36,7 @@ void g() {
 
 제네릭을 사용할 때도 C2903이 발생할 수 있습니다.
 
-```
+```cpp
 // C2903b.cpp
 // compile with: /clr /c
 namespace N {

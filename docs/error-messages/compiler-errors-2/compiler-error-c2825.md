@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C2825
 ms.assetid: c832f1c1-5184-4fc2-9356-12b21daa7af3
-ms.openlocfilehash: 1e2f8e8cd38b90a698994743609892896ef0d1a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a51901477958056356a96d71adde4241d60a2ac
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406901"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74750587"
 ---
 # <a name="compiler-error-c2825"></a>컴파일러 오류 C2825
 
-var: 클래스 또는 네임 스페이스 뒤에 하는 경우 여야 ': '
+var: 뒤에 ':: '이 올 때 클래스 또는 네임 스페이스 여야 합니다.
 
-실패 한 시도 정규화 된 이름을 하려고 합니다.
+정규화 된 이름을 형성 하지 못했습니다.
 
-예를 들어 코드에 함수 이름을 시작 하는 함수 선언이 포함 되지 않도록 해야:: 합니다.
+예를 들어, 함수 이름이::로 시작 하는 함수 선언이 코드에 포함 되어 있지 않은지 확인 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2825 오류가 생성 됩니다.
+다음 샘플에서는 C2825를 생성 합니다.
 
-```
+```cpp
 // C2825.cpp
 typedef int i;
 int main() {

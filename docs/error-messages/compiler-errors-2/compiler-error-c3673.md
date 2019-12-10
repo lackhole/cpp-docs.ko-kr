@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3673
 ms.assetid: bb6d2079-05af-4e2c-be0e-75c892e6c590
-ms.openlocfilehash: 9fd6920956d6a48ec7e1f15bf54ea8d75bad4aa5
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 50585904f125dcb572043b568978d65eb1c61e80
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345430"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758088"
 ---
 # <a name="compiler-error-c3673"></a>컴파일러 오류 C3673
 
-'type': 클래스에 복사 생성자가 없습니다
+' type ': 클래스에 복사 생성자가 없습니다.
 
-사용자 정의 생성자를 사용 하는 CLR 참조 형식의 개체를 복사할 필요 합니다. 자세한 내용은 [ C++ 참조 형식에 대 한 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)합니다.
+사용자 정의 생성자는 CLR ref 형식의 개체를 복사 하는 데 필요 합니다. 자세한 내용은 [ C++ 참조 형식에 대 한 스택 의미 체계](../../dotnet/cpp-stack-semantics-for-reference-types.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3673를 생성합니다.
+다음 샘플에서는 C3673를 생성 합니다.
 
-```
+```cpp
 // C3673.cpp
 // compile with: /clr
 public ref struct R {
@@ -41,9 +41,9 @@ int main() {
 
 ## <a name="example"></a>예제
 
-다음 샘플 C3673를 생성합니다.
+다음 샘플에서는 C3673를 생성 합니다.
 
-```
+```cpp
 // C3673_b.cpp
 // compile with: /clr /c
 // C3673 expected

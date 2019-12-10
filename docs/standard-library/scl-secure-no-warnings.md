@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68448200"
 ---
-# <a name="sclsecurenowarnings"></a>_SCL_SECURE_NO_WARNINGS
+# <a name="_scl_secure_no_warnings"></a>_SCL_SECURE_NO_WARNINGS
 
 C++ 표준 라이브러리에서 잠재적으로 안전하지 않은 메서드를 호출하면 [컴파일러 경고(수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)이 발생합니다. 이 경고를 사용하지 않도록 설정하려면 코드에서 _SCL_SECURE_NO_WARNINGS 매크로를 정의합니다.
 

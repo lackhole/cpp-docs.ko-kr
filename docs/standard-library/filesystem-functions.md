@@ -84,34 +84,34 @@ helpviewer_keywords:
 - std::experimental::filesystem::system_complete
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
-ms.openlocfilehash: fa54a68d22bfabe1efa8ae3c78e7e3c9350fb950
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 1ab57a6fc13a03d02963f3d7ecc80f63decb9487
+ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240707"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74898703"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;filesystem&gt; 함수
 
-이러한 사용 가능한 함수에는 [ \<파일 시스템 >](../standard-library/filesystem.md) 헤더 경로, 파일, symlink, 디렉터리 및 볼륨 수정 및 쿼리 작업을 수행 합니다. 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
+[\<filesystem >](../standard-library/filesystem.md) 헤더의 이러한 free 함수는 경로, 파일, symlink, 디렉터리 및 볼륨에 대 한 수정 및 쿼리 작업을 수행 합니다. 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
 
-## <a name="absolute"></a> 절대
+## <a name="absolute"></a>32x32
 
 ```cpp
 path absolute(const path& pval, const path& base = current_path());
 ```
 
-함수에 해당 하는 절대 경로 이름을 반환 합니다. *pval* 경로 상대적인 `base`:
+함수는 pathname `base`를 기준으로 *pval* 에 해당 하는 절대 경로 이름을 반환 합니다.
 
-1. 하는 경우 `pval.has_root_name() && pval.has_root_directory()` 반환 *pval*합니다.
+1. `pval.has_root_name() && pval.has_root_directory()` 경우 함수는 *pval*을 반환 합니다.
 
-1. 하는 경우 `pval.has_root_name() && !pval.has_root_directory()` 반환 `pval.root_name()`  /  `absolute(base).root_directory()`  /  `absolute(base).relative_path()`  /  `pval.relative_path()`합니다.
+1. `pval.has_root_name() && !pval.has_root_directory()` 경우 함수는 `pval.root_name()` / `absolute(base).root_directory()` / `absolute(base).relative_path()` / 를 반환 합니다.
 
-1. 하는 경우 `!pval.has_root_name() && pval.has_root_directory()` 반환 `absolute(base).root_name()`  /  *pval*합니다.
+1. `!pval.has_root_name() && pval.has_root_directory()` 경우 함수가 `absolute(base).root_name()` / *pval*를 반환 합니다.
 
-1. 하는 경우 `!pval.has_root_name() && !pval.has_root_directory()` 반환 `absolute(base)`  /  *pval*합니다.
+1. `!pval.has_root_name() && !pval.has_root_directory()` 경우 함수가 `absolute(base)` / *pval*를 반환 합니다.
 
-## <a name="begin"></a> 시작
+## <a name="begin"></a>시작
 
 ```cpp
 const directory_iterator& begin(const directory_iterator& iter) noexcept;
@@ -119,9 +119,9 @@ const recursive_directory_iterator&
     begin(const recursive_directory_iterator& iter) noexcept;
 ```
 
-두 함수 모두 반환 *iter*합니다.
+두 함수는 모두 *iter*를 반환 합니다.
 
-## <a name="canonical"></a> 정식
+## <a name="canonical"></a>전형적인
 
 ```cpp
 path canonical(const path& pval, const path& base = current_path());
@@ -129,17 +129,17 @@ path canonical(const path& pval, error_code& ec);
 path canonical(const path& pval, const path& base, error_code& ec);
 ```
 
-모든 함수는 절대 경로 형성 `pabs = absolute(pval, base)` (또는 `pabs = absolute(pval)` 기준 매개 변수가 없는 오버 로드), 단계의 다음 시퀀스의 정규 형식 줄이는 것:
+함수는 모두 절대 경로 이름 `pabs = absolute(pval, base)` (또는 기본 매개 변수가 없는 오버 로드에 대 한 `pabs = absolute(pval)`)를 구성 하 고 다음 단계 시퀀스에서 정규 형식으로 줄입니다.
 
-1. 모든 경로 구성 요소 `X` 는 `is_symlink(X)` 됩니다 **true** 바뀝니다 `read_symlink(X)`합니다.
+1. `is_symlink(X)` **true** 인 모든 경로 구성 요소 `X` `read_symlink(X)`로 바뀝니다.
 
-1. 모든 경로 구성 요소 `.` (점은 이전 경로 구성 요소에서 설정한 현재 디렉터리를 임) 제거 됩니다.
+1. 모든 경로 구성 요소 `.` (점이 이전 경로 구성 요소에서 설정한 현재 디렉터리) 제거 됩니다.
 
-1. 경로 구성 요소의 모든 쌍 `X` / `..` (점-점은 이전 경로 구성 요소에서 설정한 부모 디렉터리 임 하는 데 사용) 제거 됩니다.
+1. 모든 경로 구성 요소 쌍은 /`..` `X`(점-점이 이전 경로 구성 요소에서 설정한 부모 디렉터리) 제거 됩니다.
 
-그런 다음 반환 `pabs`합니다.
+그런 다음 함수는 `pabs`반환 합니다.
 
-## <a name="copy"></a> 복사
+## <a name="copy"></a>복사
 
 ```cpp
 void copy(const path& from, const path& to);
@@ -148,45 +148,45 @@ void copy(const path& from, const path& to, copy_options opts);
 void copy(const path& from, const path& to, copy_options opts, error_code& ec) noexcept;
 ```
 
-복사 하거나 하나 이상의 파일을 연결할 수 모든 함수 *에서* 하 *에* 제어 *opts*,으로 사용 되는 `copy_options::none` 없는오버로드에대한*opts* 매개 변수입니다. *opts* 중 하나만 포함 됩니다.
+모든 함수는 *opts*의 제어 *를 받는* *에서* 에 하나 이상의 파일을 복사 하거나 연결 하 여 *opts* 매개 변수가 없는 오버 로드에 대 한 `copy_options::none`로 가져옵니다. *opts* 에는 다음 중 하나만 포함 되어야 합니다.
 
-- `skip_existing`, `overwrite_existing`또는 `update_existing`
+- `skip_existing`, `overwrite_existing` 또는 `update_existing`
 
 - `copy_symlinks` 또는 `skip_symlinks`
 
-- `directories_only`, `create_symlinks`또는 `create_hard_links`
+- `directories_only`, `create_symlinks` 또는 `create_hard_links`
 
-함수는 먼저 file_status 값을 결정 `f` 에 대 한 *에서* 하 고 `t` 에 대 한 *에*:
+함수는 먼저 *에서* 에 대해 `f` file_status 값을 *확인 하 고*에 대해 `t` 합니다.
 
-- 경우 `opts & (copy_options::create_symlinks | copy_options::skip_symlinks)`를 호출 하 여 `symlink_status`
+- `opts & (copy_options::create_symlinks | copy_options::skip_symlinks)`경우 `symlink_status`를 호출 합니다.
 
-- 호출 하 여 그렇지 않은 경우 `status`
+- 그렇지 않으면를 호출 하 여 `status`
 
 - 그렇지 않으면 오류를 보고합니다.
 
-경우 `!exists(f) || equivalent(f, t) || is_other(f) || is_other(t) || is_directory(f)&& is_regular_file(t)`, 보고는 오류 (하 고 아무 작업도 수행).
+`!exists(f) || equivalent(f, t) || is_other(f) || is_other(t) || is_directory(f)&& is_regular_file(t)`경우에는 오류를 보고 하 고 다른 작업은 수행 하지 않습니다.
 
-그렇지 않은 경우, `is_symlink(f)` 후:
+그렇지 않으면 다음을 `is_symlink(f)` 합니다.
 
-- 경우 `options & copy_options::skip_symlinks`, 이면 아무 작업도 수행 합니다.
+- `options & copy_options::skip_symlinks`경우 아무 작업도 수행 하지 않습니다.
 
-- 그렇지 않고 `!exists(t)&& options & copy_options::copy_symlinks`, 다음 `copy_symlink(from, to, opts)`합니다.
+- 그렇지 않으면 `!exists(t)&& options & copy_options::copy_symlinks`경우 `copy_symlink(from, to, opts)`합니다.
 
 - 그렇지 않으면 오류를 보고 합니다.
 
-그렇지 않은 경우, `is_regular_file(f)`를 합니다.
+그렇지 않으면 `is_regular_file(f)`경우 다음을 수행 합니다.
 
-- 경우 `opts & copy_options::directories_only`, 이면 아무 작업도 수행 합니다.
+- `opts & copy_options::directories_only`경우 아무 작업도 수행 하지 않습니다.
 
-- 그렇지 않고 `opts & copy_options::create_symlinks`, 다음 `create_symlink(to, from)`합니다.
+- 그렇지 않으면 `opts & copy_options::create_symlinks`경우 `create_symlink(to, from)`합니다.
 
-- 그렇지 않고 `opts & copy_options::create_hard_links`, 다음 `create_hard_link(to, from)`합니다.
+- 그렇지 않으면 `opts & copy_options::create_hard_links`경우 `create_hard_link(to, from)`합니다.
 
-- 그렇지 않고 `is_directory(f)`, 한 다음 `copy_file(from, to`  /  `from.filename(), opts)`합니다.
+- 그렇지 않고 `is_directory(f)`경우 `from.filename(), opts)` / `copy_file(from, to`합니다.
 
 - 그렇지 않으면 `copy_file(from, to, opts)`입니다.
 
-그렇지 않은 경우, `is_directory(f) && (opts & copy_options::recursive || !opts)`를 합니다.
+그렇지 않으면 `is_directory(f) && (opts & copy_options::recursive || !opts)`경우 다음을 수행 합니다.
 
 ```cpp
 if (!exists(t))
@@ -202,7 +202,7 @@ if (!exists(t))
 
 그렇지 않으면 아무 작업도 수행하지 않습니다.
 
-## <a name="copy_file"></a> copy_file
+## <a name="copy_file"></a>copy_file
 
 ```cpp
 bool copy_file(const path& from, const path& to);
@@ -211,33 +211,33 @@ bool copy_file(const path& from, const path& to, copy_options opts);
 bool copy_file(const path& from, const path& to, copy_options opts, error_code& ec) noexcept;
 ```
 
-함수에서 파일을 복사할 수 있는 모든 *에서* 하 *하* 제어 *opts*,으로 사용 되는 `copy_options::none` 없는 오버 로드에 대 한 *opts*  매개 변수입니다. *opts* 중 하나만 포함 됩니다 `skip_existing`하십시오 `overwrite_existing`, 또는 `update_existing`합니다.
+모든 함수는 *opts*의 제어에서로의 파일 *을에 복사할* *수 있습니다* .이는 *opts* 매개 변수가 없는 오버 로드에 대 한 `copy_options::none`로 사용 됩니다. *opts* 에는 `skip_existing`, `overwrite_existing`또는 `update_existing`중 하나만 포함 되어야 합니다.
 
-경우 `exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options::update_existing))`, 이면 파일이 이미 있다는 오류로 보고 합니다.
+`exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options::update_existing))`경우 파일이 이미 존재 한다는 오류를 보고 합니다.
 
-그렇지 `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))`, 내용 및 파일의 특성을 복사 하려고 *에서* 파일로 *에*입니다. 복사 시도가 실패하는 경우 오류로 보고합니다.
+그렇지 않고 `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))`*경우 파일의*내용과 특성을 *에서* 파일로 복사 합니다. 복사 시도가 실패하는 경우 오류로 보고합니다.
 
-이 함수는 반환 **true** 복사를 시도 하 여 성공, 그렇지 않은 경우 **false**합니다.
+이 함수는 복사를 시도 하 여 성공 하면 **true** 를 반환 하 고 그렇지 않으면 **false**를 반환 합니다.
 
-## <a name="copy_symlink"></a> copy_symlink
+## <a name="copy_symlink"></a>copy_symlink
 
 ```cpp
 void copy_symlink(const path& from, const path& to);
 void copy_symlink(const path& from, const path& to, error_code& ec) noexcept;
 ```
 
-하는 경우 `is_directory(from)`, 함수 호출 `create_directory_symlink(from, to)`합니다. 그렇지 않으면 `create_symlink(from, to)`합니다.
+`is_directory(from)`경우 함수는 `create_directory_symlink(from, to)`를 호출 합니다. 그렇지 않으면 `create_symlink(from, to)`를 호출 합니다.
 
-## <a name="create_directories"></a> create_directories
+## <a name="create_directories"></a>create_directories
 
 ```cpp
 bool create_directories(const path& pval);
 bool create_directories(const path& pval, error_code& ec) noexcept;
 ```
 
-같은 경로 이름에 대 한는\/b\/c, 함수 디렉터리를 만드는 a와 a\/디렉터리를 만들 수 있도록 필요에 따라를\/b\/필요에 따라 c입니다. 반환 **true** 디렉터리를 실제로 만드는 경우에 *pval*합니다.
+\/b\/c와 같은 경로 이름에 대해이 함수는 필요에 따라 디렉터리 a\/b\/c를 만들 수 있도록 필요에 따라 디렉터리 a 및\/b를 만듭니다. 실제로 디렉터리 *pval*을 만드는 경우에만 **true** 를 반환 합니다.
 
-## <a name="create_directory"></a> create_directory
+## <a name="create_directory"></a>create_directory
 
 ```cpp
 bool create_directory(const path& pval);
@@ -247,27 +247,27 @@ bool create_directory(const path& pval, const path& attr);
 bool create_directory(const path& pval, const path& attr, error_code& ec) noexcept;
 ```
 
-이 함수는 디렉터리를 만듭니다 *pval* 필요에 따라 합니다. 만 true를 반환 디렉터리를 실제로 만드는 경우 *pval*, 경우 기존 파일에서 사용 권한을 복사 *attr*를 사용 하거나 `perms::all` 없는 오버 로드에 대 한 *attr*  매개 변수입니다.
+이 함수는 필요에 따라 *pval* 디렉터리를 만듭니다. 실제로 디렉터리 *pval*을 만드는 경우에만 true를 반환 합니다 .이 경우 기존 파일 *특성*에서 사용 권한을 복사 하거나 *attr* 매개 변수가 없는 오버 로드에 대해 `perms::all`를 사용 합니다.
 
-## <a name="create_directory_symlink"></a> create_directory_symlink
+## <a name="create_directory_symlink"></a>create_directory_symlink
 
 ```cpp
 void create_directory_symlink(const path& to, const path& link);
 void create_directory_symlink(const path& to, const path& link, error_code& ec) noexcept;
 ```
 
-이 함수는 디렉터리를 symlink로 링크를 만듭니다 *에*입니다.
+함수는 디렉터리에 *대*한 링크를 symlink로 만듭니다.
 
-## <a name="create_hard_link"></a> create_hard_link
+## <a name="create_hard_link"></a>create_hard_link
 
 ```cpp
 void create_hard_link(const path& to,  const path& link);
 void create_hard_link(const path& to, const path& link, error_code& ec) noexcept;
 ```
 
-함수는 디렉터리 또는 파일에 하드 링크로 만듭니다 *에*입니다.
+함수는 디렉터리 또는 파일에 대 한 링크를 *에 대*한 하드 링크로 만듭니다.
 
-## <a name="create_symlink"></a> create_symlink
+## <a name="create_symlink"></a>create_symlink
 
 ```cpp
 void create_symlink(const path& to, const path& link);
@@ -275,9 +275,9 @@ void create_symlink(const path& to, const path& link);
 void create_symlink(const path& to, const path& link, error_code& ec) noexcept;
 ```
 
-함수를 만듭니다 *링크* 파일로 symlink로 *하려면*합니다.
+함수 *는 파일에 대 한* *링크* 를 symlink로 만듭니다.
 
-## <a name="current_path"></a> current_path
+## <a name="current_path"></a>current_path
 
 ```cpp
 path current_path();
@@ -286,7 +286,7 @@ void current_path(const path& pval);
 void current_path(const path& pval, error_code& ec) noexcept;
 ```
 
-매개 변수가 없는 함수 *pval* 현재 디렉터리의 경로 이름을 반환 합니다. 나머지 함수는 현재 디렉터리를 설정 *pval*합니다.
+*Pval* 매개 변수가 없는 함수는 현재 디렉터리에 대 한 경로 이름을 반환 합니다. 나머지 함수는 현재 디렉터리를 *pval*로 설정 합니다.
 
 ## <a name="end"></a>  end
 
@@ -295,16 +295,16 @@ directory_iterator& end(const directory_iterator& iter) noexcept;
 recursive_directory_iterator& end(const recursive_directory_iterator& iter) noexcept;
 ```
 
-첫 번째 함수 `directory_iterator()` 두 번째 함수를 반환 하 고 `recursive_directory_iterator()`
+첫 번째 함수는 `directory_iterator()`을 반환 하 고 두 번째 함수는를 반환 `recursive_directory_iterator()`
 
-## <a name="equivalent"></a> 해당
+## <a name="equivalent"></a>상응
 
 ```cpp
 bool equivalent(const path& left, const path& right);
 bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 ```
 
-이 함수는 반환 **true** 경우에만 *왼쪽* 하 고 *오른쪽* 동일한 파일 시스템 엔터티를 선택 합니다.
+함수는 *left* 및 *right* 가 동일한 파일 시스템 엔터티를 선택 하는 경우에만 **true** 를 반환 합니다.
 
 ## <a name="exists"></a>  exists
 
@@ -314,35 +314,35 @@ bool exists(const path& pval);
 bool exists(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `status_known && stat.type() != file_not_found`를 반환합니다. 두 번째 및 세 번째 함수는 반환 `exists(status(pval))`합니다.
+첫 번째 함수는 `status_known && stat.type() != file_not_found`를 반환합니다. 두 번째 및 세 번째 함수는 `exists(status(pval))`를 반환 합니다.
 
-## <a name="file_size"></a> file_size
+## <a name="file_size"></a>file_size
 
 ```cpp
 uintmax_t file_size(const path& pval);
 uintmax_t file_size(const path& pval, error_code& ec) noexcept;
 ```
 
-함수에서 선택한 파일의 바이트 크기를 반환 *pval*이면 `exists(pval) && is_regular_file(pval)` 및 파일 크기를 확인할 수 있습니다. 그렇지 않으면 오류를 보고 하며 반환 `uintmax_t(-1)`합니다.
+함수는 `exists(pval) && is_regular_file(pval)` 하 고 파일 크기를 확인할 수 있는 경우 *pval*에서 선택한 파일의 크기 (바이트)를 반환 합니다. 그렇지 않으면 오류를 보고 하 고 `uintmax_t(-1)`반환 합니다.
 
-## <a name="hard_link_count"></a> hard_link_count
+## <a name="hard_link_count"></a>hard_link_count
 
 ```cpp
 uintmax_t hard_link_count(const path& pval);
 uintmax_t hard_link_count(const path& pval, error_code& ec) noexcept;
 ```
 
-함수에 대 한 하드 링크의 수를 반환 합니다. *pval*, 또는 \-1에 오류가 발생 합니다.
+함수는 *pval*에 대 한 하드 링크의 수를 반환 하거나, 오류가 발생 하는 경우 1 \-반환 합니다.
 
-## <a name="hash_value"></a> hash_value
+## <a name="hash_value"></a>hash_value
 
 ```cpp
 size_t hash_value(const path& pval) noexcept;
 ```
 
-함수에 대 한 해시 값을 반환 `pval.native()`합니다.
+함수는 `pval.native()`에 대 한 해시 값을 반환 합니다.
 
-## <a name="is_block_file"></a> is_block_file
+## <a name="is_block_file"></a>is_block_file
 
 ```cpp
 bool is_block_file(file_status stat) noexcept;
@@ -350,9 +350,9 @@ bool is_block_file(const path& pval);
 bool is_block_file(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::block`를 반환합니다. 반환할 함수 나머지 `is_block_file(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::block`를 반환합니다. 나머지 함수는 `is_block_file(status(pval))`를 반환 합니다.
 
-## <a name="is_character_file"></a> is_character_file
+## <a name="is_character_file"></a>is_character_file
 
 ```cpp
 bool is_character_file(file_status stat) noexcept;
@@ -360,9 +360,9 @@ bool is_character_file(const path& pval);
 bool is_character_file(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::character`를 반환합니다. 반환할 함수 나머지 `is_character_file(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::character`를 반환합니다. 나머지 함수는 `is_character_file(status(pval))`를 반환 합니다.
 
-## <a name="is_directory"></a> is_directory
+## <a name="is_directory"></a>is_directory
 
 ```cpp
 bool is_directory(file_status stat) noexcept;
@@ -370,9 +370,9 @@ bool is_directory(const path& pval);
 bool is_directory(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::directory`를 반환합니다. 반환할 함수 나머지 `is_directory_file(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::directory`를 반환합니다. 나머지 함수는 `is_directory_file(status(pval))`를 반환 합니다.
 
-## <a name="is_empty"></a> is_empty
+## <a name="is_empty"></a>is_empty
 
 ```cpp
 bool is_empty(file_status stat) noexcept;
@@ -380,9 +380,9 @@ bool is_empty(const path& pval);
 bool is_empty(const path& pval, error_code& ec) noexcept;
 ```
 
-하는 경우 `is_directory(pval)`, 함수가 반환 `directory_iterator(pval) == directory_iterator()`; 그렇지 않으면 반환 `file_size(pval) == 0`합니다.
+`is_directory(pval)`경우 함수는 `directory_iterator(pval) == directory_iterator()`를 반환 합니다. 그렇지 않으면 `file_size(pval) == 0`반환 합니다.
 
-## <a name="is_fifo"></a> is_fifo
+## <a name="is_fifo"></a>is_fifo
 
 ```cpp
 bool is_fifo(file_status stat) noexcept;
@@ -390,9 +390,9 @@ bool is_fifo(const path& pval);
 bool is_fifo(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::fifo`를 반환합니다. 반환할 함수 나머지 `is_fifo(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::fifo`를 반환합니다. 나머지 함수는 `is_fifo(status(pval))`를 반환 합니다.
 
-## <a name="is_other"></a> is_other
+## <a name="is_other"></a>is_other
 
 ```cpp
 bool is_other(file_status stat) noexcept;
@@ -400,9 +400,9 @@ bool is_other(const path& pval);
 bool is_other(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::other`를 반환합니다. 반환할 함수 나머지 `is_other(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::other`를 반환합니다. 나머지 함수는 `is_other(status(pval))`를 반환 합니다.
 
-## <a name="is_regular_file"></a> is_regular_file
+## <a name="is_regular_file"></a>is_regular_file
 
 ```cpp
 bool is_regular_file(file_status stat) noexcept;
@@ -410,9 +410,9 @@ bool is_regular_file(const path& pval);
 bool is_regular_file(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::regular`를 반환합니다. 반환할 함수 나머지 `is_regular_file(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::regular`를 반환합니다. 나머지 함수는 `is_regular_file(status(pval))`를 반환 합니다.
 
-## <a name="is_socket"></a> is_socket
+## <a name="is_socket"></a>is_socket
 
 ```cpp
 bool is_socket(file_status stat) noexcept;
@@ -420,9 +420,9 @@ bool is_socket(const path& pval);
 bool is_socket(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::socket`를 반환합니다. 반환할 함수 나머지 `is_socket(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::socket`를 반환합니다. 나머지 함수는 `is_socket(status(pval))`를 반환 합니다.
 
-## <a name="is_symlink"></a> is_symlink
+## <a name="is_symlink"></a>is_symlink
 
 ```cpp
 bool is_symlink(file_status stat) noexcept;
@@ -430,9 +430,9 @@ bool is_symlink(const path& pval);
 bool is_symlink(const path& pval, error_code& ec) noexcept;
 ```
 
-첫 번째 함수는 `stat.type() == file_type::symlink`를 반환합니다. 반환할 함수 나머지 `is_symlink(status(pval))`합니다.
+첫 번째 함수는 `stat.type() == file_type::symlink`를 반환합니다. 나머지 함수는 `is_symlink(status(pval))`를 반환 합니다.
 
-## <a name="last_write_time"></a> last_write_time
+## <a name="last_write_time"></a>last_write_time
 
 ```cpp
 file_time_type last_write_time(const path& pval);
@@ -441,20 +441,20 @@ void last_write_time(const path& pval, file_time_type new_time);
 void last_write_time(const path& pval, file_time_type new_time, error_code& ec) noexcept;
 ```
 
-처음 두 함수에 대 한 마지막 데이터 수정 시간을 반환 *pval*, 또는 `file_time_type(-1)` 오류가 발생 합니다. 마지막 두 함수에 대 한 마지막 데이터 수정 시간을 설정 *pval* 하 *new_time으로*입니다.
+처음 두 함수는 *pval*에 대 한 마지막 데이터 수정 시간을 반환 하거나 오류가 발생 하는 경우 `file_time_type(-1)` 반환 합니다. 마지막 두 함수는 *pval* 에 대 한 마지막 데이터 수정 시간을 *new_time*설정 합니다.
 
-## <a name="permissions"></a> 사용 권한
+## <a name="permissions"></a>권한에
 
 ```cpp
 void permissions(const path& pval, perms mask);
 void permissions(const path& pval, perms mask, error_code& ec) noexcept;
 ```
 
-함수에서 선택한 경로 대 한 사용 권한을 설정 *pval* 하 `mask & perms::mask` 제어 `perms & (perms::add_perms | perms::remove_perms)`입니다. *마스크* 중 하나만 포함 됩니다 `perms::add_perms` 고 `perms::remove_perms`입니다.
+이 함수는 *pval* 에 의해 선택 된 경로 이름에 대 한 사용 권한을 `perms & (perms::add_perms | perms::remove_perms)`제어에서 `mask & perms::mask` 설정 합니다. *mask* 에는 `perms::add_perms` 및 `perms::remove_perms`중 하나만 포함 되어야 합니다.
 
-하는 경우 `mask & perms::add_perms`를 함수 사용 권한을 설정 `status(pval).permissions() | mask & perms::mask`합니다. 그렇지 않고 `mask & perms::remove_perms`를 함수 사용 권한을 설정 `status(pval).permissions() & ~(mask & perms::mask)`합니다. 함수 권한으로 설정 하는 고, 그렇지 `mask & perms::mask`합니다.
+`mask & perms::add_perms`경우 함수는 `status(pval).permissions() | mask & perms::mask`사용 권한을 설정 합니다. 그렇지 않고 `mask & perms::remove_perms`경우 함수는 `status(pval).permissions() & ~(mask & perms::mask)`에 대 한 사용 권한을 설정 합니다. 그렇지 않으면 함수는 사용 권한을 `mask & perms::mask`설정 합니다.
 
-## <a name="proximate"></a> 근접
+## <a name="proximate"></a>가까이 있는
 
 ```cpp
 path proximate(const path& p, error_code& ec);
@@ -462,16 +462,16 @@ path proximate(const path& p, const path& base = current_path());
 path proximate(const path& p, const path& base, error_code& ec);
 ```
 
-## <a name="read_symlink"></a> read_symlink
+## <a name="read_symlink"></a>read_symlink
 
 ```cpp
 path read_symlink(const path& pval);
 path read_symlink(const path& pval, error_code& ec);
 ```
 
-함수는 오류를 보고 하 고 반환 `path()` 경우 `!is_symlink(pval)`합니다. 그렇지 않은 경우 함수는 기호 링크를 포함하는 `path` 형식의 개체를 반환합니다.
+함수는 오류를 보고 하 고 `!is_symlink(pval)`경우 `path()`를 반환 합니다. 그렇지 않은 경우 함수는 기호 링크를 포함하는 `path` 형식의 개체를 반환합니다.
 
-## <a name="relative"></a> 상대
+## <a name="relative"></a>배분
 
 ```cpp
 path relative(const path& p, error_code& ec);
@@ -479,75 +479,75 @@ path relative(const path& p, const path& base = current_path());
 path relative(const path& p, const path& base, error_code& ec);
 ```
 
-## <a name="remove"></a> 제거
+## <a name="remove"></a>삭제
 
 ```cpp
 bool remove(const path& pval);
 bool remove(const path& pval, error_code& ec) noexcept;
 ```
 
-이 함수는 반환 **true** 경우에만 `exists(symlink_status(pval))` 고 파일이 성공적으로 제거 됩니다. Symlink 자체가 제거를 선택 하는 파일이 아닌 경우
+이 함수는 `exists(symlink_status(pval))` 경우에만 **true** 를 반환 하 고 파일이 성공적으로 제거 됩니다. Symlink은 자신이 선택 하는 파일이 아니라 자체적으로 제거 됩니다.
 
-## <a name="remove_all"></a> remove_all
+## <a name="remove_all"></a>remove_all
 
 ```cpp
 uintmax_t remove_all(const path& pval);
 uintmax_t remove_all(const path& pval, error_code& ec) noexcept;
 ```
 
-하는 경우 *pval* 디렉터리 함수를 재귀적으로 모든 디렉터리 항목을 다음 항목 자체를 제거 합니다. 그렇지 않으면 함수 호출 `remove`합니다. 함수는 성공적으로 제거된 모든 요소의 수를 반환합니다.
+*Pval* 가 디렉터리인 경우 함수는 모든 디렉터리 항목을 재귀적으로 제거한 다음 항목 자체를 제거 합니다. 그렇지 않으면 함수는 `remove`를 호출 합니다. 함수는 성공적으로 제거된 모든 요소의 수를 반환합니다.
 
-## <a name="rename"></a> 이름 바꾸기
+## <a name="rename"></a>바꾸면
 
 ```cpp
 void rename(const path& from, const path& to);
 void rename(const path& from, const path& to, error_code& ec) noexcept;
 ```
 
-함수 이름 바꾸기 *에서* 하 *하려면*합니다. Symlink 자체 이름을 바꾸면 선택한 파일이 아닌 경우
+함수는 *에서* 로의 이름을로 *바꿉니다.* Symlink은 자신이 선택 하는 파일이 아니라 이름이 변경 됩니다.
 
-## <a name="resize_file"></a> resize_file
+## <a name="resize_file"></a>resize_file
 
 ```cpp
 void resize(const path& pval, uintmax_t size);
 void resize(const path& pval, uintmax_t size, error_code& ec) noexcept;
 ```
 
-파일의 크기를 변경 하는 함수는 `file_size(pval) == size`
+함수는 파일 크기를 변경 `file_size(pval) == size`
 
-## <a name="space"></a> 공간
+## <a name="space"></a>공간
 
 ```cpp
 space_info space(const path& pval);
 space_info space(const path& pval, error_code& ec) noexcept;
 ```
 
-함수에서 선택한 볼륨에 대 한 정보를 반환 *pval*, 형식 구조의 `space_info`합니다. 구조에 포함 된 `uintmax_t(-1)` 확인할 수 없는 모든 값에 대 한 합니다.
+이 함수는 *pval*에 의해 선택 된 볼륨에 대 한 정보를 `space_info`형식의 구조체로 반환 합니다. 구조에는 확인할 수 없는 모든 값에 대 한 `uintmax_t(-1)` 포함 되어 있습니다.
 
-## <a name="status"></a> 상태
+## <a name="status"></a>업무
 
 ```cpp
 file_status status(const path& pval);
 file_status status(const path& pval, error_code& ec) noexcept;
 ```
 
-함수 반환 경로 이름 상태, 파일 형식 및 연관 된 권한만 *pval*합니다. Symlink 자체를 테스트 하지는 않지만 파일을 선택 합니다.
+함수는 *pval*와 연결 된 경로 이름 상태, 파일 형식 및 사용 권한을 반환 합니다. Symlink는 자체적으로 테스트 되지 않지만 선택 된 파일입니다.
 
-## <a name="status_known"></a> status_known
+## <a name="status_known"></a>status_known
 
 ```cpp
 bool status_known(file_status stat) noexcept;
 ```
 
-함수 반환 `stat.type() != file_type::none`
+함수는를 반환 `stat.type() != file_type::none`
 
-## <a name="swap"></a> 교환
+## <a name="swap"></a>스왑을
 
 ```cpp
 void swap(path& left, path& right) noexcept;
 ```
 
-콘텐츠를 교환 하는 함수 *왼쪽* 하 고 *오른쪽*합니다.
+함수는 *왼쪽과* *오른쪽*의 내용을 교환 합니다.
 
 ## <a name="symlink_status"></a> symlink_status
 
@@ -556,18 +556,18 @@ file_status symlink_status(const path& pval);
 file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;
 ```
 
-함수 반환 경로 이름 symlink 상태, 파일 형식 및 연관 된 권한만 *pval*합니다. 함수는 동일 하 게 동작 `status(pval)` symlink이 테스트 자체를 제외 하 고 파일이 아닌 선택 합니다.
+함수는 *pval*과 관련 된 경로 이름 symlink 상태, 파일 형식 및 사용 권한을 반환 합니다. 함수는 symlink `status(pval)`와 동일 하 게 작동 합니다. 단,이 함수는 선택 하는 파일이 아니라 자체 테스트 됩니다.
 
-## <a name="system_complete"></a> system_complete
+## <a name="system_complete"></a>system_complete
 
 ```cpp
 path system_complete(const path& pval);
 path system_complete(const path& pval, error_code& ec);
 ```
 
-이 함수는 필요에 따라 루트 이름과 연결된 현재 디렉터리를 고려하는 절대 경로 이름을 반환합니다. \(Posix에서 함수는 다음과 같이 반환 됩니다. `absolute(pval)`합니다.\)
+이 함수는 필요에 따라 루트 이름과 연결된 현재 디렉터리를 고려하는 절대 경로 이름을 반환합니다. \(POSIX의 경우 함수는 `absolute(pval)`를 반환 합니다.\)
 
-## <a name="temp_directory_path"></a> temp_directory_path
+## <a name="temp_directory_path"></a>temp_directory_path
 
 ```cpp
 path temp_directory_path();
@@ -576,7 +576,7 @@ path temp_directory_path(error_code& ec);
 
 이 함수는 임시 파일을 포함하는 데 적합한 디렉터리의 경로 이름을 반환합니다.
 
-## <a name="u8path"></a> u8path
+## <a name="u8path"></a>u8path
 
 ```cpp
 template <class Source>
@@ -586,9 +586,9 @@ template <class InIt>
 path u8path(InIt first, InIt last);
 ```
 
-첫 번째 함수 동일 `path(source)` 두 번째 함수는 동일 하 게 동작 및 `path(first, last)` 제외 하 고 각각의 경우에서 선택한 소스는 char 요소의 시퀀스로 u t F-8로 인코드된, 모든 파일 시스템으로 간주 됩니다.
+첫 번째 함수는 `path(source)`와 동일 하 게 작동 하며, 두 번째 함수는 각 사례에서 선택 된 소스가 u t f-8로 인코드된 char 요소의 시퀀스로 사용 된다는 점을 제외 하 고 `path(first, last)`와 동일 하 게 동작 합니다.
 
-## <a name="weakly_canonical"></a> weakly_canonical
+## <a name="weakly_canonical"></a>weakly_canonical
 
 ```cpp
 path weakly_canonical(const path& p);

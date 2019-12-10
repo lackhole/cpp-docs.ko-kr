@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3485
 ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
-ms.openlocfilehash: 2fcaecd6be35e2ae6822133930b48b6bbf02aafe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0eacb6ce6426674d23fc78596ead3730f46ae370
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62381145"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74743044"
 ---
 # <a name="compiler-error-c3485"></a>컴파일러 오류 C3485
 
@@ -27,7 +27,7 @@ ms.locfileid: "62381145"
 
 다음 예제에서는 `const` 한정자를 람다 식 정의의 일부로 사용하므로 C3485가 생성됩니다.
 
-```
+```cpp
 // C3485.cpp
 
 int main()
@@ -36,6 +36,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

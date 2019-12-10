@@ -1,5 +1,5 @@
 ---
-title: C 확장 스토리지 클래스 특성
+title: C 확장 저장소 클래스 특성
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __declspec keyword [C]
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - extended storage-class attributes
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-ms.openlocfilehash: 9b0c8b60dab3229d5d5c162f7bafc959fa2558f0
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: c2e372ebe93b9240ac6f489e8b1aefc1fbbded80
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56146959"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857153"
 ---
-# <a name="c-extended-storage-class-attributes"></a>C 확장 스토리지 클래스 특성
+# <a name="c-extended-storage-class-attributes"></a>C 확장 저장소 클래스 특성
 
 **Microsoft 전용**
 
@@ -27,13 +27,13 @@ ms.locfileid: "56146959"
 ## <a name="syntax"></a>구문
 
 *storage-class-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *extended-decl-modifier-seq* **)** /\* Microsoft 전용 \*/
+&nbsp;&nbsp;&nbsp;&nbsp; **__declspec (** *확장 decl* - **)**  /Microsoft 전용 \* \*
 
-*extended-decl-modifier-seq*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 전용 \*/<br/>
+*확장-decl-modifier-seq*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 관련 \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*extended-decl-modifier*<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*extended-decl-modifier-seq* *extended-decl-modifier*
 
-*extended-decl-modifier*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 전용 \*/<br/>
+*확장-decl-한정자*:&nbsp;&nbsp;&nbsp;&nbsp;/\* Microsoft 관련 \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**thread**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**naked**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
@@ -45,6 +45,6 @@ thread, naked, dllimport 및 dllexport 스토리지 클래스 특성은 이들�
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [선언 및 형식](../c-language/declarations-and-types.md)

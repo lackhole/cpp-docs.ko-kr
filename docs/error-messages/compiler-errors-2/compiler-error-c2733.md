@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2733
 ms.assetid: 67f83561-c633-407c-a2ee-f9fd16e165bf
-ms.openlocfilehash: 26819f1928223b5fa96d275290105f32787057f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3ef669a49f4a3ec5a1af1a15a79f2511fa2699dd
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62208326"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755787"
 ---
 # <a name="compiler-error-c2733"></a>컴파일러 오류 C2733
 
-'function' 없습니다 오버 로드 된 함수의 두 번째 C 링크
+오버 로드 된 ' function ' 함수의 두 번째 C 링크는 허용 되지 않습니다.
 
-둘 이상의 오버 로드 된 함수는 C 링크를 사용 하 여 선언 됩니다. C 링크를 사용 하 여, 지정된 된 함수 하나만 형식의 외부 될 수 있습니다. 오버 로드 된 함수 데코 레이트 되지 않은 이름이 없으므로 C 프로그램에서 사용할 수 없습니다.
+C 링크를 사용 하 여 오버 로드 된 함수가 두 개 이상 선언 되었습니다. C 링크를 사용 하는 경우 지정 된 함수의 한 폼만 외부가 될 수 있습니다. 오버 로드 된 함수는 데코레이팅되지 않은 이름이 동일 하므로 C 프로그램에서 사용할 수 없습니다.
 
-다음 샘플에서는 C2733 오류가 생성 됩니다.
+다음 샘플에서는 C2733를 생성 합니다.
 
-```
+```cpp
 // C2733.cpp
 extern "C" {
    void F1(int);

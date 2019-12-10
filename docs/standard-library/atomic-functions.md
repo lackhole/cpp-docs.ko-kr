@@ -530,7 +530,7 @@ inline T atomic_fetch_or_explicit(
 
 ### <a name="remarks"></a>설명
 
-함수 `atomic_fetch_and_explicit`는 *Order*에 따라 지정된 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 조건 내에서 *Atom*의 저장된 값을 *Value* 및 *Atom*에 저장된 현재 *값*의 비트 `or`로 바꾸는 작업을 수행합니다.
+함수 `atomic_fetch_or_explicit` 는 [memory_order](../standard-library/atomic-enums.md#memory_order_enum) 제약 `read-modify-write` 조건 내에서 atom의 저장된 값 `or` 을 비트 *값* 및 *atom*에 저장된 현재 *값으로 바꾸기* 위해 연산을 수행 합니다. *순서*에 따라 지정 됩니다.
 
 ## <a name="atomic_fetch_sub"></a>  atomic_fetch_sub
 

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2869
 ms.assetid: 6e30c001-47f3-4101-b9f1-cc542c9fffae
-ms.openlocfilehash: 38ac73484814e0089b412938ffc2776872deff3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c543a0a4afc0d24205e5afd57cf6ca0732f3edf4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62165556"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755046"
 ---
 # <a name="compiler-error-c2869"></a>컴파일러 오류 C2869
 
-'name': 네임 스페이스로 이미 정의 되어
+' name ': 이미 네임 스페이스로 정의 되었습니다.
 
-네임 스페이스를 이미 사용 되는 이름을 다시 사용할 수 없습니다.
+이미 네임 스페이스로 사용 된 이름을 다시 사용할 수 없습니다.
 
-다음 샘플에서는 C2869 오류가 생성 됩니다.
+다음 샘플에서는 C2869를 생성 합니다.
 
-```
+```cpp
 // C2869.cpp
 // compile with: /c
 namespace A { int i; };

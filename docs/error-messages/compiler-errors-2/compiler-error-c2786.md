@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C2786
 ms.assetid: 6676d8c0-86dd-4a39-bdda-b75a35f4d137
-ms.openlocfilehash: b03155ad1a209ae59327dd31d432f5623f380ac9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba5d05e9c7cc702509144fb876a1301bfc8bf3d4
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62265999"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74739612"
 ---
 # <a name="compiler-error-c2786"></a>컴파일러 오류 C2786
 
-'type': __uuidof의 피연산자가 잘못 되었습니다
+' type ': __uuidof에 대 한 피연산자가 잘못 되었습니다.
 
-합니다 [__uuidof](../../cpp/uuidof-operator.md) 연산자 연결 된 GUID 또는 사용자 정의 형식의 개체를 사용 하 여 사용자 정의 형식을 사용 합니다.  가능한 원인:
+[__Uuidof](../../cpp/uuidof-operator.md) 연산자는 GUID가 연결 된 사용자 정의 형식 또는 사용자 정의 형식의 개체를 사용 합니다.  가능한 원인
 
-1. 사용자 정의 형식 인수가 아닙니다.
+1. 인수가 사용자 정의 형식이 아닙니다.
 
-1. `__uuidof` 인수에서 GUID를 추출할 수 없습니다.
+1. `__uuidof`는 인수에서 GUID를 추출할 수 없습니다.
 
-다음 샘플에서는 C2786 오류가 생성 됩니다.
+다음 샘플에서는 C2786를 생성 합니다.
 
-```
+```cpp
 // C2786.cpp
 struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
 

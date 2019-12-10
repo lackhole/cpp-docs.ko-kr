@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2886
 ms.assetid: c01588a1-484c-4dc9-a3f1-f900c6e44543
-ms.openlocfilehash: 2fa7450f03505501c2c4a45023dbb6a86937bb9c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a64457c84a48c73ad6714da01e48d41f3cc92efb
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388815"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74748725"
 ---
 # <a name="compiler-error-c2886"></a>컴파일러 오류 C2886
 
-'class::identifier': 멤버 using 선언에서 기호를 사용할 수 없습니다
+' class:: identifier ':-선언을 사용 하 여 기호를 멤버에 사용할 수 없습니다.
 
-`using` 선언 네임 스페이스 이름과 같은 기호를 사용 합니다. `using` 선언이 기본 클래스 멤버를 선언 합니다.
+`using` 선언에서는 네임 스페이스 이름과 같은 기호를 사용 합니다. `using` 선언은 기본 클래스 멤버를 선언 하는 데 사용할 수 있습니다.
 
-다음 샘플에서는 C2886 오류가 생성 됩니다.
+다음 샘플에서는 C2886를 생성 합니다.
 
-```
+```cpp
 // C2886.cpp
 // compile with: /c
 namespace Z {

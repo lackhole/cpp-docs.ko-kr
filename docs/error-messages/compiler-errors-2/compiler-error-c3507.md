@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3507
 ms.assetid: 75f89767-f6f9-40f6-9820-81a49e09abdf
-ms.openlocfilehash: 731e84955192688a87c020b2b65a80ab5671cad6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 848536e0808d7d6a82ef387e0ca9c64b68ad0007
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62363936"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753798"
 ---
 # <a name="compiler-error-c3507"></a>컴파일러 오류 C3507
 
-ProgID 'id'; 39 개 이하의 문자를 포함할 수 없습니다. 모든 문장 부호를 포함 하거나 '.'; 또는 숫자로 시작
+ProgID에는 ' id '가 39 자이 하만 포함 될 수 있습니다. '. ' 이외의 문장 부호는 포함 하지 않습니다. 숫자로 시작할 수도 없습니다.
 
-합니다 [progid](../../windows/progid.md) 특성에 사용할 수 있는 값에 제한 사항이 있습니다.
+[Progid](../../windows/progid.md) 특성에는 사용할 수 있는 값에 대 한 제한이 있습니다.
 
-다음 샘플에서는 C3507 오류가 생성 됩니다.
+다음 샘플에서는 C3507를 생성 합니다.
 
-```
+```cpp
 // C3507.cpp
 [module(name="x")];
 [

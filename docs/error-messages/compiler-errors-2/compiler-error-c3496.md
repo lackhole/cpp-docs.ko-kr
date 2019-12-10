@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3496
 ms.assetid: e19885f2-677f-4c1e-bc69-e35852262dc3
-ms.openlocfilehash: 025498f3fe244916cd0a06e36feee6fdb532acc6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9542f1904c6797a77c88c88a37aff9348364268
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62380983"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74738182"
 ---
 # <a name="compiler-error-c3496"></a>컴파일러 오류 C3496
 
@@ -27,7 +27,7 @@ ms.locfileid: "62380983"
 
 다음 예제에서는 `this` 포인터에 대한 참조가 람다 식의 캡처 목록에 나타나므로 C3496을 생성합니다.
 
-```
+```cpp
 // C3496.cpp
 // compile with: /c
 
@@ -40,6 +40,6 @@ class C
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [람다 식](../../cpp/lambda-expressions-in-cpp.md)

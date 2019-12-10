@@ -13,7 +13,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68456396"
 ---
-# <a name="iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL
+# <a name="_iterator_debug_level"></a>_ITERATOR_DEBUG_LEVEL
 
 _ITERATOR_DEBUG_LEVEL 매크로는 확인된 [반복기](../standard-library/checked-iterators.md) 및 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 사용할 수 있는지 여부를 제어합니다. 이 매크로는 이전 _SECURE_SCL 및 _HAS_ITERATOR_DEBUGGING 매크로의 기능을 대체하고 결합합니다.
 

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2233
 ms.assetid: 236bdf0b-9607-4f26-a249-d8def0b1333c
-ms.openlocfilehash: 7d96230f189a8f9371473d2da4df4e7be295ab03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 066f28bfaacd1ad2e7645822aef082e43e863327
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375966"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759258"
 ---
 # <a name="compiler-error-c2233"></a>컴파일러 오류 C2233
 
-'identifier': 크기가 0 인 배열이 포함 된 개체의 배열을 올바르지 않습니다.
+' identifier ': 크기가 0 인 배열을 포함 하는 개체의 배열이 잘못 되었습니다.
 
-배열의 각 개체에 요소를 하나 이상 있어야 합니다.
+배열의 각 개체는 하나 이상의 요소를 포함 해야 합니다.
 
-다음 샘플에서는 C2233 오류가 생성 됩니다.
+다음 샘플에서는 C2233를 생성 합니다.
 
-```
+```cpp
 // C2233.cpp
 // compile with: /c
 class A {

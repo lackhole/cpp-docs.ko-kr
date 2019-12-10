@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3731
 ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
-ms.openlocfilehash: 5acc33869648f83cd44bc557128c685f521ddf88
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9acf80eec0d36db64fa070d691533e7085754ac0
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328070"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74752953"
 ---
 # <a name="compiler-error-c3731"></a>컴파일러 오류 C3731
 
-'function1' 호환 되지 않는 이벤트 및 처리기 'function2'; 이벤트 소스와 이벤트 처리기에는 동일한 형식 이어야 합니다.
+호환 되지 않는 ' function1 ' 이벤트와 ' function2 ' 처리기 이벤트 원본 및 이벤트 처리기는 동일한 형식 이어야 합니다.
 
-이벤트 소스와 이벤트 수신자는 형식이 동일해야 합니다(예:`native` 및 `com` 형식). 이 오류를 해결 하려면 이벤트 소스와 일치 하는 이벤트 처리기의 종류를 확인 합니다.
+이벤트 소스와 이벤트 수신자는 형식이 동일해야 합니다(예:`native` 및 `com` 형식). 이 오류를 해결 하려면 이벤트 원본 및 이벤트 처리기의 형식을 일치 시킵니다.
 
-다음 샘플에서는 C3731를 생성합니다.
+다음 샘플에서는 C3731를 생성 합니다.
 
-```
+```cpp
 // C3731.cpp
 // compile with: /clr
 #using <mscorlib.dll>

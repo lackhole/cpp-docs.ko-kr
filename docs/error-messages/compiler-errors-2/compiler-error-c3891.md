@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3891
 ms.assetid: 6e1a9458-97f5-4580-bc0f-aa97a1bfd20d
-ms.openlocfilehash: 74b8802a165ab3265cc0f1c6a0b33b31d3db401d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4b5ef8b837033a149455c040f748f479aa3f424d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62281562"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74736401"
 ---
 # <a name="compiler-error-c3891"></a>컴파일러 오류 C3891
 
-'var': 리터럴 데이터 멤버는 l-value로 사용할 수 없습니다
+' var ': 리터럴 데이터 멤버를 l-value로 사용할 수 없습니다.
 
-A [리터럴](../../extensions/literal-cpp-component-extensions.md) 변수는 const 및 선언에서 초기화 한 후 해당 값을 변경할 수 없습니다.
+[리터럴](../../extensions/literal-cpp-component-extensions.md) 변수는 const 이며 선언에서 초기화 된 후에는 해당 값을 변경할 수 없습니다.
 
-다음 샘플에서는 C3891 오류가 생성 됩니다.
+다음 샘플에서는 C3891를 생성 합니다.
 
-```
+```cpp
 // C3891.cpp
 // compile with: /clr
 ref struct Y1 {

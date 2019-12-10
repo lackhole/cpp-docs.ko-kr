@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2276
 ms.assetid: 62005ad9-6cb9-4b1f-965d-b875adaf695e
-ms.openlocfilehash: 2128be2be4f0b5be37bbfc5098a35bb39afe5906
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69bbabbf38f7ee02d08f4b5e9dc4bed167919291
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388841"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760064"
 ---
 # <a name="compiler-error-c2276"></a>컴파일러 오류 C2276
 
-'operator': 바인딩된 멤버 함수 식의 연산이 잘못 되었습니다
+' operator ': 바인딩된 멤버 함수 식에 대 한 연산이 잘못 되었습니다.
 
-컴파일러는 포인터 멤버를 만드는 구문 사용 하 여 문제를 발견 합니다.
+컴파일러가 멤버 포인터를 만들기 위한 구문과 관련 된 문제를 발견 했습니다.
 
-다음 샘플에서는 C2276 오류가 생성 됩니다.
+다음 샘플에서는 C2276를 생성 합니다.
 
-```
+```cpp
 // C2276.cpp
 class A {
 public:

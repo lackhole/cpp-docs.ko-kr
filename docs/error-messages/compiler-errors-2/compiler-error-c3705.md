@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3705
 ms.assetid: 8361017d-5782-4214-a9d7-e9825fd29bc8
-ms.openlocfilehash: 8a1a5a7c3c54742f6952f6885a70fd5c1dcf6e0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c4f77457be95ae22b2a67214207d361ca105811d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62227072"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757932"
 ---
 # <a name="compiler-error-c3705"></a>컴파일러 오류 C3705
 
-'function': 이벤트 인터페이스를 찾을 수 없습니다.
+' function ': 이벤트 인터페이스를 찾을 수 없습니다.
 
-COM 이벤트를 사용 하는 이벤트 인터페이스를 정의 해야 합니다. `#include` 아래 샘플에 표시 된 ATL 헤더 파일의 줄은 COM 이벤트를 사용 하기 위해 필요 합니다. 이 오류를 해결 하려면 정의 주석 처리 제거를 `IEvents` 샘플 코드에서는 인터페이스입니다.
+COM 이벤트를 사용 하려면 이벤트 인터페이스를 정의 해야 합니다. 아래 샘플에 표시 된 ATL 헤더 파일의 `#include` 줄은 COM 이벤트를 사용 하는 데 필요 합니다. 이 오류를 해결 하려면 샘플 코드에서 `IEvents` 인터페이스 정의의 주석 처리를 제거 합니다.
 
-다음 샘플에서는 C3705 오류가 생성 됩니다.
+다음 샘플에서는 C3705를 생성 합니다.
 
-```
+```cpp
 // C3705.cpp
 // compile with: /c
 #define _ATL_ATTRIBUTES 1

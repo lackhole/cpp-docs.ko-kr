@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3265
 ms.assetid: 10ab3e17-4a9f-4120-bab5-21473869b70f
-ms.openlocfilehash: a675567e23764a0b361cab4bef4bc75019de3756
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 633089115fe7edd0bdf06cdbcda6909ae7ac656e
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62365847"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74754162"
 ---
 # <a name="compiler-error-c3265"></a>컴파일러 오류 C3265
 
-관리 되는 '관리 되는 구문'는 관리 되지 않는 '관리 되지 않는 구문'를 선언할 수 없습니다.
+관리 되지 않는 ' 관리 되는 구문 '은 관리 되지 않는 ' 관리 되지 않는 구문 '에서 선언할 수 없습니다.
 
-관리 되지 않는 컨텍스트에서 관리 되는 개체를 포함할 수 없습니다.
+관리 되지 않는 컨텍스트에는 관리 되는 개체를 포함할 수 없습니다.
 
-다음 샘플에서는 c3265:
+재현 C3265 샘플은 다음과 같습니다.
 
-```
+```cpp
 // C3265_2.cpp
 // compile with: /clr /LD
 #include <vcclr.h>

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2765
 ms.assetid: 47ad86f3-a7e0-47ad-85ff-0f5534458cb9
-ms.openlocfilehash: 7b34bd8b352e8872722e9402d8d0113ae6157292
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c646d0ab28b97b546721180e46b0f22ea376f7d
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62257649"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74759830"
 ---
 # <a name="compiler-error-c2765"></a>컴파일러 오류 C2765
 
-'function': 함수 템플릿의 명시적 특수화는 기본 인수를 가질 수 없습니다.
+' function ': 함수 템플릿의 명시적 특수화에는 기본 인수를 사용할 수 없습니다.
 
-기본 인수는 함수 템플릿의 명시적 특수화에는 허용 되지 않습니다. 자세한 내용은 [명시적 함수 템플릿의 특수화](../../cpp/explicit-specialization-of-function-templates.md)합니다.
+함수 템플릿의 명시적 특수화에는 기본 인수를 사용할 수 없습니다. 자세한 내용은 [함수 템플릿의 명시적 특수화](../../cpp/explicit-specialization-of-function-templates.md)를 참조 하세요.
 
-다음 샘플에서는 C2765를 생성합니다.
+다음 샘플에서는 C2765를 생성 합니다.
 
-```
+```cpp
 // C2765.cpp
 template<class T> void f(T t) {};
 

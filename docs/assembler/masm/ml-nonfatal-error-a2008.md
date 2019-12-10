@@ -1,39 +1,39 @@
 ---
 title: ML 심각하지 않은 오류 A2008
 ms.date: 08/30/2018
-ms.topic: error-reference
+ms.custom: error-reference
 f1_keywords:
 - A2008
 helpviewer_keywords:
 - A2008
 ms.assetid: ca24157f-c88a-4678-ae06-3bc3cd956001
-ms.openlocfilehash: 7f85a3aabb7b1955cede912168dfc04618b8f2b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 192d82186a58d4e6b534ab5ec65b696d4d7ce3ee
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62201981"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74856755"
 ---
 # <a name="ml-nonfatal-error-a2008"></a>ML 심각하지 않은 오류 A2008
 
 **구문 오류:**
 
-현재 위치에서 토큰을 구문 오류가 발생 했습니다.
+현재 위치의 토큰에서 구문 오류가 발생 했습니다.
 
-다음 중 하나를 발생할 수 있습니다.
+다음 중 하나가 발생 했을 수 있습니다.
 
-- 점 접두사에 추가 되었거나 지시문에서 생략 됩니다.
+- 점 접두사가 지시문에서 추가 되었거나 생략 되었습니다.
 
-- 예약어 (같은 **C** 하거나 **크기**) 식별자로 사용 되었습니다.
+- 예약 된 단어 (예: **C** 또는 **크기**)가 식별자로 사용 되었습니다.
 
-- 명령에는 현재 프로세서 또는 프로세서 선택 항목과 함께 사용할 수 없었던 사용 되었습니다.
+- 현재 프로세서 또는 보조 프로세서 선택 영역에서 사용할 수 없는 명령을 사용 했습니다.
 
-- 런타임 비교 연산자 (같은 `==`)는 관계형 연산자 대신 조건부 어셈블리 문에서 사용 된 (같은 [EQ](../../assembler/masm/operator-eq.md)).
+- 비교 런타임 연산자 (예: `==`)가 관계형 연산자 (예: [EQ](../../assembler/masm/operator-eq.md)) 대신 조건부 어셈블리 문에 사용 되었습니다.
 
-- 지침이 나 지시문에는 너무 적은 피연산자 제공 되었습니다.
+- 명령 또는 지시문에 피연산자가 너무 적게 지정 되었습니다.
 
-- 사용 되지 않는 지시문을 사용 했습니다.
+- 사용 되지 않는 지시문이 사용 되었습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>

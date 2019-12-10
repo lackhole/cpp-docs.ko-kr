@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2120
 ms.assetid: b0f3f66c-6cd2-4f48-9ea3-c270b53c2b8c
-ms.openlocfilehash: 699a80b2cdb1de175c78efb918ba9389ec3695f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b188f4f3e898a17a5f8fbeafaa2d1c3c6e08552
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62182862"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74737974"
 ---
 # <a name="compiler-error-c2120"></a>컴파일러 오류 C2120
 
-' void' 형식도 사용할 수 없습니다.
+모든 형식에 ' l o n '이 잘못 되었습니다.
 
 `void` 형식은 다른 형식의 선언에 사용 됩니다.
 
-다음 샘플에서는 C2120 오류가 생성 됩니다.
+다음 샘플에서는 C2120를 생성 합니다.
 
-```
+```cpp
 // C2120.cpp
 int main() {
    void int i;   // C2120

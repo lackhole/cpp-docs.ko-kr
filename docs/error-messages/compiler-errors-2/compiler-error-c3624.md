@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3624
 ms.assetid: eaac6a4f-eb11-4e4d-ab12-124ba995c5cf
-ms.openlocfilehash: bb574b194f01aa1da27b962ed6be327f4f988c3c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3b4f71ed71ddb1b14ed51ccbcd420284ddcc70f6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62221998"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74761922"
 ---
 # <a name="compiler-error-c3624"></a>컴파일러 오류 C3624
 
-'type':이 형식 사용 해야 ' assembly '어셈블리에 대 한 참조
+' type ':이 형식을 사용 하려면 ' assembly ' 어셈블리에 대 한 참조가 필요 합니다.
 
-코드를 컴파일하는 데 필요한 어셈블리 (참조)이 지정 되지 않았습니다. 어셈블리를 전달 합니다 [#using](../../preprocessor/hash-using-directive-cpp.md) 지시문입니다.
+코드를 컴파일하는 데 필요한 어셈블리 (참조)가 지정 되지 않았습니다. 어셈블리를 [#using](../../preprocessor/hash-using-directive-cpp.md) 지시문에 전달 합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3624 오류가 생성 됩니다.
+다음 샘플에서는 C3624를 생성 합니다.
 
-```
+```cpp
 // C3624.cpp
 // compile with: /clr /c
 #using <System.Windows.Forms.dll>

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3711
 ms.assetid: 26d581cc-2153-4ee0-b814-a371184be3e1
-ms.openlocfilehash: 391b78077ea526ebbaf99552b3220f85928a9096
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f2414a51321bf249e3ac049a7048f41b71cb856
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328395"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74753408"
 ---
 # <a name="compiler-error-c3711"></a>컴파일러 오류 C3711
 
-'method': 관리 되지 않는 이벤트 소스 메서드는 void 또는 정수 계열 형식을 반환 해야 합니다
+' method ': 관리 되지 않는 이벤트 소스 메서드는 void 또는 정수 계열 형식을 반환 해야 합니다.
 
-Void 반환 하지 않는 이벤트 소스 또는 정수 계열 형식에서 메서드를 정의 합니다. 이 오류를 해결 하려면 이벤트 및 이벤트 처리기의 반환 형식이 `void` 또는와 같은 정수 계열 형식을 `int` 또는 `long`합니다.
+Void 또는 정수 계열 형식을 반환 하지 않는 메서드를 이벤트 소스에서 정의 했습니다. 이 오류를 해결 하려면 이벤트 및 이벤트 처리기의 반환 형식이 `void` 또는 `int` 또는 `long`와 같은 정수 계열 형식 인지 확인 합니다.
 
-다음 샘플에서는 C3711 오류가 생성 됩니다.
+다음 샘플에서는 C3711를 생성 합니다.
 
-```
+```cpp
 // C3711.cpp
 #include <atlbase.h>
 #include <atlcom.h>

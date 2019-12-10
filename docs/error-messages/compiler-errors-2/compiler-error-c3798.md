@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3798
 ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
-ms.openlocfilehash: a11c88f536e3282e887e32ef437077e61f4424cc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc21f0bdcc8e2171dd0c87fc31396e6caab9e6fc
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400151"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755319"
 ---
 # <a name="compiler-error-c3798"></a>컴파일러 오류 C3798
 
-'specifier': 속성 선언 (get/set 메서드 대신 속성에 배치 해야) 재정의 지정자를 사용할 수 없습니다
+' 지정자 ': 속성 선언에는 재정의 지정자를 사용할 수 없습니다. 대신 속성 get/set 메서드에 배치 해야 합니다.
 
-속성이 잘못 선언되었습니다. 자세한 내용은 다음 항목을 참조하세요.
+속성이 잘못 선언되었습니다. 참조 항목
 
 - [속성](../../extensions/property-cpp-component-extensions.md)
 
@@ -27,9 +27,9 @@ ms.locfileid: "62400151"
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C3798
+다음 샘플에서는 C3798를 생성 합니다.
 
-```
+```cpp
 // C3798.cpp
 // compile with: /clr /c
 ref struct A {

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2666
 ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
-ms.openlocfilehash: 4a1d46f3b000b5054564b05ca2c3c94a9e7b6398
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ca779269d573e3e5d270fccad6afe6220083fa42
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386878"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74755995"
 ---
 # <a name="compiler-error-c2666"></a>컴파일러 오류 C2666
 
-'identifier': 숫자 오버 로드에 비슷한 변환이 적용
+' identifier ': 숫자 오버 로드에 비슷한 변환이 있습니다.
 
-오버 로드 된 함수 또는 연산자가 모호 합니다.   형식 매개 변수 목록이 너무 모호성을 해결 하도록 컴파일러에 대 한 유사한 수 있습니다.  이 오류를 해결 하려면 하나 이상의 실제 매개 변수를 명시적으로 캐스팅 합니다.
+오버 로드 된 함수 또는 연산자가 모호 합니다.   컴파일러가 모호성을 해결 하기 위해 정식 매개 변수 목록이 너무 유사할 수 있습니다.  이 오류를 해결 하려면 하나 이상의 실제 매개 변수를 명시적으로 캐스팅 합니다.
 
-다음 샘플에서는 C2666 오류가 생성 됩니다.
+다음 샘플에서는 C2666를 생성 합니다.
 
-```
+```cpp
 // C2666.cpp
 struct complex {
    complex(double);
@@ -35,19 +35,19 @@ int main() {
 }
 ```
 
-Visual Studio.NET 2003에 대해 수행한 컴파일러 규칙 작업의 결과로이 오류를 생성할 수도 있습니다.
+이 오류는 Visual Studio .NET 2003에 대해 수행 된 컴파일러 규칙 작업의 결과로 생성 될 수도 있습니다.
 
-- 이항 연산자 및 포인터 형식으로 사용자 정의 변환
+- 포인터 형식에 대 한 이진 연산자 및 사용자 정의 변환
 
-- 한정 변환 되지 id 변환을와 동일
+- 자격 변환이 항등 변환과 동일 하지 않습니다.
 
-이항 연산자 \<, >, \<= 및 > =, 전달 되 매개 변수는 이제 암시적으로 변환할 피연산자의 형식 매개 변수의 형식 피연산자의 형식으로 변환 하는 사용자 정의 변환 연산자를 정의 하는 경우. 잠재적으로 모호성에 대 한 합니다.
+이항 연산자 \<, >, \<, > = 인 경우 전달 된 매개 변수는 이제 피연산자의 형식으로 변환할 사용자 정의 변환 연산자를 정의 하는 경우 해당 피연산자의 형식으로 암시적으로 변환 됩니다. 이제 모호성이 발생할 수 있습니다.
 
-시각적 개체의 Visual Studio.NET 2003와 Visual Studio.NET 버전에 적용 되는 코드에 대 한 C++를 명시적으로 함수 구문을 사용 하 여 클래스 연산자를 호출 합니다.
+Visual Studio .NET 2003 및 visual Studio .NET 버전 C++의 visual studio 모두에서 유효한 코드의 경우 함수 구문을 사용 하 여 클래스 연산자를 명시적으로 호출 합니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // C2666b.cpp
 #include <string.h>
 #include <stdio.h>
@@ -104,9 +104,9 @@ int main()
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C2666
+다음 샘플에서는 C2666를 생성 합니다.
 
-```
+```cpp
 // C2666c.cpp
 // compile with: /c
 

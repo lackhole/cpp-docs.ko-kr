@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2253
 ms.assetid: bd6445ae-b2c1-4669-9657-a8f4acf80b16
-ms.openlocfilehash: 847c37c6ae5edf14205d3d46ca624a572c8d6b6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89acfd8a03dc0ee2dc25e14e0b3a63ab25151cc6
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397564"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74758855"
 ---
 # <a name="compiler-error-c2253"></a>컴파일러 오류 C2253
 
-'function': 순수 지정자 또는 추상 재정의 지정자는 가상 함수에만 사용할 수
+' function ': 순수 지정자 또는 추상 재정의 지정자는 가상 함수 에서만 사용할 수 있습니다.
 
-비가상 함수를 순수 지정 `virtual`합니다.
+비가상 함수는 순수 `virtual`로 지정 됩니다.
 
-다음 샘플에서는 C2253 오류가 생성 됩니다.
+다음 샘플에서는 C2253를 생성 합니다.
 
-```
+```cpp
 // C2253.cpp
 // compile with: /c
 class A {
@@ -31,9 +31,9 @@ public:
 };
 ```
 
-다음 샘플에서는 C2253 오류가 생성 됩니다.
+다음 샘플에서는 C2253를 생성 합니다.
 
-```
+```cpp
 // C2253_2.cpp
 // compile with: /clr /c
 ref struct A {

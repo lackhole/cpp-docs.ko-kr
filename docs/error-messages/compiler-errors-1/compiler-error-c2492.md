@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2492
 ms.assetid: 8c44c9bb-c366-4fe5-a0ab-882e38608aaa
-ms.openlocfilehash: e2b08ef3e46681147c4efd77cbffadb096bbfc16
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd52b434f86bdc93124c6005bbf7fadad3cb56b2
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62360712"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74757061"
 ---
 # <a name="compiler-error-c2492"></a>컴파일러 오류 C2492
 
-'*변수*': 스레드 저장 기간이 있는 데이터는 dll 인터페이스 있을 수 없습니다
+'*variable*': 스레드 저장 기간이 있는 데이터에는 dll 인터페이스를 사용할 수 없습니다.
 
-사용 하 여 선언 된 변수를 [스레드](../../cpp/thread.md) 특성 및 DLL을 사용 하 여 인터페이스입니다. 주소는 `thread` 변수 까지는 알 수 없는 런타임 DLL 가져오기 또는 내보내기에 연결할 수 없습니다 있도록 합니다.
+변수는 [thread](../../cpp/thread.md) 특성과 DLL 인터페이스를 사용 하 여 선언 됩니다. `thread` 변수의 주소는 런타임까지 알려지지 않으므로 DLL 가져오기 또는 내보내기에 연결할 수 없습니다.
 
-다음 샘플에서는 C2492 오류가 생성 됩니다.
+다음 샘플에서는 C2492를 생성 합니다.
 
-```
+```cpp
 // C2492.cpp
 // compile with: /c
 class C {

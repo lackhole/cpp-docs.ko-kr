@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3126
 ms.assetid: e72658a3-5d85-4a31-89a4-dbc3d475973d
-ms.openlocfilehash: 92f01bd9a04d6350b348d734281855bb86b350d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2b8901ce9914f35d4cd219f4d51477582fa676a8
+ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300663"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74760727"
 ---
 # <a name="compiler-error-c3126"></a>컴파일러 오류 C3126
 
-관리 되는 ' type' 내부 ' union' 공용 구조체를 정의할 수 없습니다.
+' type ' 관리 되는 형식 내에서 ' union ' 공용 구조체를 정의할 수 없습니다.
 
-관리 되는 형식 내에서 공용 구조체를 정의할 수 없습니다.
+공용 구조체는 관리 되는 형식 내에서 정의할 수 없습니다.
 
-다음 샘플에서는 C3126 오류가 생성 됩니다.
+다음 샘플에서는 C3126를 생성 합니다.
 
-```
+```cpp
 // C3126_2.cpp
 // compile with: /clr /c
 ref class Test

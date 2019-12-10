@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __declspec keyword [C++], noreturn
 - noreturn __declspec keyword
 ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
-ms.openlocfilehash: 1d78e8f5116eabf9073205b938156197bf1001a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f9ca61c9d734ccdd6b8d8374ed3a7c4128ee3d5e
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245247"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74857374"
 ---
 # <a name="noreturn"></a>noreturn
 
-## <a name="microsoft-specific"></a>Microsoft 전용
+**Microsoft 전용**
 
 이 **`__declspec`** 특성은 함수가 반환되지 않음을 컴파일러에 알립니다. 그 결과 컴파일러는 **__declspec(noreturn)** 함수 호출 후의 코드에 접근할 수 없다는 사실을 인식합니다.
 
@@ -43,7 +43,9 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+**Microsoft 전용 종료**
+
+## <a name="see-also"></a>참조
 
 [__declspec](../cpp/declspec.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)
