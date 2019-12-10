@@ -28,7 +28,7 @@ ms.locfileid: "68452133"
 [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) 전처리기 매크로를 사용하여 확인된 반복기 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다. _ITERATOR_DEBUG_LEVEL가 1 또는 2로 정의 된 경우 반복기를 안전 하지 않은 방식으로 사용 하면 런타임 오류가 발생 하 고 프로그램이 종료 됩니다. 0으로 정의한 경우 확인된 반복기를 사용하지 않도록 설정됩니다. 기본적으로 _ITERATOR_DEBUG_LEVEL의 값은 릴리스 빌드의 경우 0, 디버그 빌드의 경우 2입니다.
 
 > [!IMPORTANT]
-> 이전 설명서와 소스 코드에서 [_SECURE_SCL](../standard-library/secure-scl.md) 매크로를 참조할 수 있습니다. _ITERATOR_DEBUG_LEVEL를 사용하여 _SECURE_SCL을 제어 합니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 참조하세요.
+> 이전 설명서와 소스 코드에서 [_SECURE_SCL](../standard-library/secure-scl.md) 매크로를 참조할 수 있습니다. _ITERATOR_DEBUG_LEVEL을 사용하여 _SECURE_SCL을 제어합니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 참조하세요.
 
 _ITERATOR_DEBUG_LEVEL가 1 또는 2로 정의 된 경우 이러한 반복기 검사가 수행 됩니다.
 
@@ -60,7 +60,7 @@ _ITERATOR_DEBUG_LEVEL가 0으로 정의 된 경우:
 
 ## <a name="example"></a>예제
 
-_ITERATOR_DEBUG_LEVEL를 1 또는 2로 설정 하 여 컴파일할 경우 특정 클래스의 인덱싱 연산자를 사용하여 컨테이너 범위를 벗어난 요소에 액세스 하려고 하면 런타임 오류가 발생 합니다.
+_ITERATOR_DEBUG_LEVEL을 1 또는 2로 설정하여 컴파일할 경우 특정 클래스의 인덱싱 연산자를 사용하여 컨테이너 범위를 벗어난 요소에 액세스하려고 하면 런타임 오류가 발생합니다.
 
 ```cpp
 // checked_iterators_1.cpp
@@ -89,7 +89,7 @@ int main()
 
 ## <a name="example"></a>예제
 
-마찬가지로 _ITERATOR_DEBUG_LEVEL를 1 또는 2로 설정 하 여 컴파일할 경우 컨테이너가 비어 있을 때 컨테이너 클래스에서 또는 `front` `back` 를 사용하여 요소에 액세스 하려고 하면 런타임 오류가 발생 합니다.
+마찬가지로 _ITERATOR_DEBUG_LEVEL을 1 또는 2로 설정하여 컴파일할 경우 컨테이너가 비어 있을 때 컨테이너 클래스에서 `front` 또는 `back`을 사용하여 요소에 액세스하려고 하면 런타임 오류가 발생합니다.
 
 ```cpp
 // checked_iterators_2.cpp
@@ -113,7 +113,7 @@ int main()
 
 ## <a name="example"></a>예제
 
-다음 코드에는 다양한 반복기 사용 사례 시나리오에 대한 설명과 각각에 대한 주석이 나와 있습니다. 기본적으로 _ITERATOR_DEBUG_LEVEL는 디버그 빌드에서 2로 설정되고 소매 빌드에서는 0으로 설정 됩니다.
+다음 코드에는 다양한 반복기 사용 사례 시나리오에 대한 설명과 각각에 대한 주석이 나와 있습니다. 기본적으로 _ITERATOR_DEBUG_LEVEL은 디버그 빌드에서 2로 설정되고 소매 빌드에서는 0으로 설정됩니다.
 
 ```cpp
 // checked_iterators_3.cpp
