@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4918
 ms.assetid: 1bcf6d35-3467-4aa8-b2ef-cb33f4e70238
-ms.openlocfilehash: 9662b561f6ce6c9f41327b267d17082b1eaa21a6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 801c22a45037492dc609d93c6339ab8feff30494
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62280351"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988809"
 ---
 # <a name="compiler-warning-level-4-c4918"></a>컴파일러 경고(수준 4) C4918
 
@@ -21,7 +21,7 @@ ms.locfileid: "62280351"
 
 예를 들어 다음 문은 C4918을 생성합니다.
 
-```
+```cpp
 // C4918.cpp
 // compile with: /W4
 #pragma optimize("X", on) // C4918 expected

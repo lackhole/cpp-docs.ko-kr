@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <remarks> C++ XML tag
 - remarks C++ XML tag
 ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247
-ms.openlocfilehash: 0d0c63d55de80f498498a6873dacb5e83fc956b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 096280526b12feff33377a705f7c03548a1f0f13
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319163"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988654"
 ---
 # <a name="ltremarksgt"></a>&lt;설명&gt;
 
@@ -30,13 +30,13 @@ ms.locfileid: "62319163"
 *description*<br/>
 멤버에 대한 설명입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // xml_remarks_tag.cpp
 // compile with: /LD /clr /doc
 // post-build command: xdcmake xml_remarks_tag.dll
@@ -52,6 +52,6 @@ using namespace System;
 public ref class MyClass {};
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [XML 문서](xml-documentation-visual-cpp.md)

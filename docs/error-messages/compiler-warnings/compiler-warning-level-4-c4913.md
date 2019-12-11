@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4913
 ms.assetid: b94aa52e-6029-4170-9134-017714931546
-ms.openlocfilehash: a06fda0999e5f164fca81917cecbb63312fea25d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8858f116b34451e5c7509d9aff9bb99f438c3b36
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62359984"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74989013"
 ---
 # <a name="compiler-warning-level-4-c4913"></a>컴파일러 경고(수준 4) C4913
 
@@ -21,7 +21,7 @@ ms.locfileid: "62359984"
 
 다음 코드 샘플에서는 C4913을 생성합니다.
 
-```
+```cpp
 // C4913.cpp
 // compile with: /W4
 struct A

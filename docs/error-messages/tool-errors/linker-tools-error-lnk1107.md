@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1107
 ms.assetid: a37a893d-5efa-4eba-8f40-6c5518b4b9d0
-ms.openlocfilehash: 68048d9f824283d002a4ea8b64d88f37bbeefc48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c75966d9c6c22f1bd2123fb30282bb2bed467130
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255394"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991036"
 ---
 # <a name="linker-tools-error-lnk1107"></a>링커 도구 오류 LNK1107
 
-파일이 잘못 되었거나 손상 되었습니다: 위치에서 읽을 수 없습니다
+파일이 잘못 되었거나 손상 되었습니다. 위치에서 읽을 수 없습니다.
 
-도구 파일을 읽을 수 없습니다. 파일을 다시 만듭니다.
+도구에서 파일을 읽을 수 없습니다. 파일을 다시 만듭니다.
 
-모듈을 전달 하면 LNK1107 발생할 수 있습니다 (.dll 또는.netmodule 확장을 사용 하 여 만든 [/clr:noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) 또는 [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)) 링커에;.obj 파일에 대신 전달 합니다.
+LNK1107 ( [/clr: noAssembly](../../build/reference/clr-common-language-runtime-compilation.md) 또는 [/noassembly](../../build/reference/noassembly-create-a-msil-module.md)를 사용 하 여 만든) 모듈 (.dll 또는 .netmodule 확장명)을 링커에 전달 하려고 시도 하는 경우에도 발생할 수 있습니다. 대신 .obj 파일을 전달 합니다.
 
-다음 샘플 컴파일하는 경우:
+다음 샘플을 컴파일하는 경우:
 
-```
+```cpp
 // LNK1107.cpp
 // compile with: /clr /LD
 public ref class MyClass {
@@ -32,4 +32,4 @@ public:
 };
 ```
 
-다음을 지정 **LNK1107.dll 링크** 명령줄 LNK1107 시킬 수 있습니다.  이 오류를 해결 하려면 지정 **LNK1107.obj 링크** 대신 합니다.
+그런 다음 명령줄에 **LNK1107 링크** 를 지정 하 여 LNK1107를 가져옵니다.  오류를 해결 하려면 **링크 LNK1107** 를 대신 지정 합니다.

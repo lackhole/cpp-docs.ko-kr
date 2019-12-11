@@ -1,17 +1,17 @@
 ---
 title: PUBLIC (MASM)
-ms.date: 08/30/2018
+ms.date: 12/06/2019
 f1_keywords:
 - public
 helpviewer_keywords:
 - PUBLIC directive
 ms.assetid: 56e15a68-8a35-4bdd-b1ec-a38cbbf1c582
-ms.openlocfilehash: ec76b88134d2d9e4cfc3f18abf78f43007ef3806
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: d02aa6a2894c0d3b251b8cbf32efeef57cff409d
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74394748"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988027"
 ---
 # <a name="public-masm"></a>PUBLIC (MASM)
 
@@ -19,8 +19,12 @@ ms.locfileid: "74394748"
 
 ## <a name="syntax"></a>구문
 
-> **PUBLIC** ⟦ language-type ⟧ *name* ⟦ __,__ ⟦ ⟧ *name* ... ⟧
+> **PUBLIC** ⟦*language-type*⟧ *name* ⟦ __,__ ⟦ *⟧* *name* ... ⟧
 
-## <a name="see-also"></a>참고 항목
+## <a name="remarks"></a>주의
+
+*언어 형식* 인수는 32 비트 MASM 에서만 유효 합니다.
+
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)

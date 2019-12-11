@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <exception> C++ XML tag
 - exception C++ XML tag
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
-ms.openlocfilehash: 327c1bc27f4ae71aa214e09f375f963dad5b33d7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ddfe647fa2db55b3ca606265011896a66398a8a2
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292967"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988299"
 ---
 # <a name="ltexceptiongt"></a>&lt;exception&gt;
 
@@ -37,15 +37,15 @@ ms.locfileid: "62292967"
 *description*<br/>
 설명.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-MSVC 컴파일러는 문서 주석을 통해 단일 패스로 cref 참조를 확인 하려고 합니다.  따라서 C++ 조회 규칙을 사용하는 경우 컴파일러에서 기호를 찾을 수 없으며 참조는 확인되지 않음으로 표시됩니다. 자세한 내용은 [\<seealso>](seealso-visual-cpp.md)를 참조하세요.
+MSVC 컴파일러는 문서 주석을 통해 한 번의 cref 참조를 확인 하려고 시도 합니다.  따라서 C++ 조회 규칙을 사용하는 경우 컴파일러에서 기호를 찾을 수 없으며 참조는 확인되지 않음으로 표시됩니다. 자세한 내용은 [\<seealso>](seealso-visual-cpp.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // xml_exception_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_exception_tag.dll
@@ -67,6 +67,6 @@ public ref class TestClass {
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [XML 문서](xml-documentation-visual-cpp.md)

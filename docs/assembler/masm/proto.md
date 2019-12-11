@@ -1,17 +1,17 @@
 ---
 title: PROTO
-ms.date: 10/22/2018
+ms.date: 12/06/2019
 f1_keywords:
 - PROTO
 helpviewer_keywords:
 - PROTO directive
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
-ms.openlocfilehash: 24ec2a9abc6c8b76fc81f6d412019296c53160f4
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 9df66b6c89498a2cc1a1864a668b7addfbaf593c
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74394750"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74987862"
 ---
 # <a name="proto"></a>PROTO
 
@@ -26,10 +26,10 @@ ms.locfileid: "74394750"
 *레이블*\
 프로토타입화 된 함수의 이름입니다.
 
-*거리*\
+*distance* (32 비트 MASM에만 해당) \
 필드 16 비트 메모리 모델에서 기본값을 재정의 하 고 **NEAR** 또는 **FAR** 호출을 나타내는 데 사용 됩니다.
 
-*언어 유형*\
+*언어 유형* (32 비트 MASM에만 해당) \
 필드 프로시저 및 공용 기호에 대 한 호출 및 명명 규칙을 설정 합니다. 지원 되는 규칙은 다음과 같습니다.
 
 - 32 비트 **플랫** 모델: **C**, **STDCALL**
@@ -52,7 +52,7 @@ ms.locfileid: "74394750"
 addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [지시문 참조](directives-reference.md)\
 [. 모델 참조](dot-model.md)

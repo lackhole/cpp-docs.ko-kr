@@ -1,17 +1,17 @@
 ---
 title: STRUCT (MASM)
-ms.date: 08/30/2018
+ms.date: 12/06/2019
 f1_keywords:
 - struct
 helpviewer_keywords:
 - STRUCT directive
 ms.assetid: 70c3ba6b-00db-461e-8dd9-eafd3ae5b3c8
-ms.openlocfilehash: 73f3751f32d8cb2fc3f9daec1ac11c778ee33514
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: df73d19287cad2a44c25bfece17d3f6bff7dca08
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74393577"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988000"
 ---
 # <a name="struct-masm"></a>STRUCT (MASM)
 
@@ -22,6 +22,10 @@ ms.locfileid: "74393577"
 > *이름* **STRUCT** ⟦*alignment*⟧ ⟦ __,__ **고유**하지 않은 ⟧ *필드 선언*\
 > *이름* **끝**
 
-## <a name="see-also"></a>참고 항목
+## <a name="remarks"></a>주의
+
+*이름* 인수는 여는 문과 닫는 문에서 동일 해야 합니다. 
+
+## <a name="see-also"></a>참조
 
 [지시문 참조](../../assembler/masm/directives-reference.md)
