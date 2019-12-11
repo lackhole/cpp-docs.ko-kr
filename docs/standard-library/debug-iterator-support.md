@@ -54,7 +54,7 @@ int main() {
 }
 ```
 
-## <a name="using-iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL 사용
+## <a name="using-_iterator_debug_level"></a>_ITERATOR_DEBUG_LEVEL 사용
 
 전처리기 매크로 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 디버그 빌드에서 반복기 디버깅 기능을 끌 수 있습니다. 이 프로그램은 어설션되지 않지만 정의되지 않은 동작을 계속 트리거합니다.
 
@@ -130,7 +130,7 @@ int main()
 
 ## <a name="iterators-going-out-of-scope"></a>범위 밖으로 이동하는 반복기
 
-또한 디버그 반복기 검사를 수행 하면 for 루프 범위가 종료 될 때 **for** 루프에서 선언 된 반복기 변수가 범위를  벗어났습니다.
+또한 디버그 반복기 검사를 수행 하면 for 루프 범위가 종료 될 때 **for** 루프에서 선언 된 반복기 변수가 범위를 벗어났습니다.
 
 ```cpp
 // iterator_debugging_4.cpp
