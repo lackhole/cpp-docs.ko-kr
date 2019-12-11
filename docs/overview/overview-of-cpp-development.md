@@ -1,17 +1,17 @@
 ---
 title: Visual Studio의 C++ 개발 개요
 description: Visual Studio IDE는 코드 편집기, 디버거, 테스트 프레임워크, 정적 분석기 및 기타 프로그래밍 도구를 사용하여 Windows, Linux, Android 및 iOS에서 C++ 개발을 수행하도록 지원합니다.
-ms.date: 03/08/2019
+ms.date: 12/02/2019
 helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 54ed590122f1eb914ff039378914a1fd4adc5f10
-ms.sourcegitcommit: bde3279f70432f819018df74923a8bb895636f81
+ms.openlocfilehash: d72ea2ab4fa83259152101b357c6b2b69e74c723
+ms.sourcegitcommit: 8762a3f9b5476b4dee03f0ee8064ea606550986e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66182903"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810631"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio의 C++ 개발 개요
 
@@ -29,13 +29,13 @@ Visual Studio는 IntelliSense, 검색 및 디버깅을 완벽하게 지원하여
 
    ::: moniker range="vs-2019"
 
-   ![새 프로젝트 템플릿](../build/media/mathclient-project-name-2019.png " Visual Studio 2019 새 프로젝트 대화 상자")
+   ![새 프로젝트 템플릿](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 새 프로젝트 대화 상자")
 
    ::: moniker-end
 
    ::: moniker range="<=vs-2017"
 
-   ![프로젝트 템플릿](media/vs2017-new-project.png " Visual Studio 2017 새 프로젝트 대화 상자")
+   ![프로젝트 템플릿](media/vs2017-new-project.png "Visual Studio 2017 새 프로젝트 대화 상자")
 
    ::: moniker-end
 
@@ -87,23 +87,21 @@ MFC 애플리케이션의 사용자 인터페이스 만들기에 대한 자세�
 
 ## <a name="add-and-edit-resources"></a>리소스 추가 및 편집
 
-‘리소스’라는 용어에는 대화 상자, 아이콘, 이미지, 지역화 가능한 문자열, 시작 화면, 데이터베이스 연결 문자열 또는 실행 파일에 포함하려는 임의 데이터가 포함됩니다. 
-
-네이티브 데스크톱 C++ 프로젝트에서 리소스 추가 및 편집에 대한 자세한 내용은 [리소스 파일 작업](../windows/working-with-resource-files.md)을 참조하세요.
+Windows 프로그램 또는 DLL에는 일반적으로 대화 상자, 아이콘, 이미지, 지역화 가능 문자열, 시작 화면, 데이터베이스 연결 문자열 또는 임의 데이터와 같은 일부 *리소스*가 포함되어 있습니다. Visual Studio에는 리소스를 추가하고 편집하기 위한 도구가 포함되어 있습니다. 자세한 내용은 [리소스 파일을 사용하여 작업](../windows/working-with-resource-files.md)을 참조하세요.
 
 ## <a name="build-compile-and-link"></a>빌드(컴파일 및 연결)
 
-메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택하거나 Ctrl+Shift+B 키 조합을 입력하여 프로젝트를 컴파일하고 연결합니다. 빌드 오류 및 경고는 오류 목록에 보고됩니다(Ctrl+\\, E). **출력** 창(Alt+2)은 빌드 프로세스에 대한 정보를 표시합니다.
+메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택하거나 **Ctrl+Shift+B** 키 조합을 입력하여 프로젝트를 컴파일하고 연결합니다. 빌드 오류 및 경고는 오류 목록에 보고됩니다(**Ctrl+\\, E**). **출력** 창(**Alt+2**)에는 빌드 프로세스에 대한 정보가 표시됩니다.
 
-![출력 창과 오류 목록](media/vs2017-output-error-list.png "Visual Studio 2017 출력 창과 오류 목록")
+![출력 창 및 오류 목록](media/vs2017-output-error-list.png "Visual Studio 2017 출력 창 및 오류 목록")
 
 빌드 구성에 대한 자세한 내용은 [프로젝트 속성 작업](../build/working-with-project-properties.md) 및 [프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)을 참조하세요.
 
 컴파일러(cl.exe) 및 다양한 빌드 관련 독립 실행형 도구(예: NMAKE 및 LIB)를 명령줄에서 바로 사용할 수도 있습니다. 자세한 내용은 [명령줄에서 C/C++ 코드 빌드](../build/building-on-the-command-line.md) 및 [C/C++ 빌드 참조](../build/reference/c-cpp-building-reference.md)를 참조하세요.
 
-## <a name="debug"></a>디버그
+## <a name="debug"></a>Debug
 
-**F5** 키를 눌러 디버깅을 시작할 수 있습니다. 설정한 모든 중단점에서 실행이 일시 중단됩니다. 한 번에 한 줄씩 코드를 단계별로 진행하고, 변수 또는 레지스터의 값을 확인하고, 일부 경우에는 코드 변경 후 다시 컴파일하지 않고 디버깅을 계속할 수도 있습니다. 다음 그림에서는 중단점에서 실행이 중지되는 디버깅 세션을 보여 줍니다. 데이터 구조 멤버의 값은 **조사식 창**에 표시됩니다.
+**F5** 키를 눌러 디버깅을 시작할 수 있습니다. 설정한 모든 중단점에서 실행이 일시 중지됩니다(**F9**를 누를 경우). 한 번에 한 줄씩 코드를 단계별로 진행하며(**F10**) 변수 또는 레지스터의 값을 확인할 수 있고, 일부 사례에서는 코드 변경 후 다시 컴파일하지 않고 디버깅을 계속할 수도 있습니다. 다음 그림에서는 중단점에서 실행이 중지되는 디버깅 세션을 보여 줍니다. 데이터 구조 멤버의 값은 **조사식 창**에 표시됩니다.
 
 ![디버깅 세션](media/vs2017-debug-watch.png "Visual Studio 2017 디버깅 세션")
 
@@ -125,7 +123,7 @@ Visual Studio에는 소스 코드에서 잠재적인 문제를 감지할 수 있
 
 Microsoft Store를 통해 기존 데스크톱 애플리케이션과 UWP 앱을 고객에게 배포할 수 있습니다. CRT 배포는 백그라운드에서 자동으로 처리됩니다. 자세한 내용은 [Windows 앱 및 게임 게시](/windows/uwp/publish/)를 참조하세요.
 
-네이티브 C++ 데스크톱을 다른 컴퓨터에 배포할 수도 있습니다. 자세한 내용은 [데스크톱 애플리케이션 배포](../windows/deploying-native-desktop-applications-visual-cpp.md)를 참조하세요.
+기본 C++ 데스크톱을 다른 컴퓨터에 배포할 수도 있습니다. 자세한 내용은 [데스크톱 애플리케이션 배포](../windows/deploying-native-desktop-applications-visual-cpp.md)를 참조하세요.
 
 C++/CLI 프로그램의 배포에 대한 자세한 내용은 [개발자를 위한 배포 가이드](/dotnet/framework/deployment/deployment-guide-for-developers)를 참조하세요.
 
