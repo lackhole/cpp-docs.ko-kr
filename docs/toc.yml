@@ -6370,6 +6370,8 @@
                   expanded: false
                   items:
                     - name: 파일 및 스트림
+                      href: c-runtime-library/files-and-streams.md
+                    - name: 텍스트 및 이진 스트림
                       href: c-runtime-library/text-and-binary-streams.md
                     - name: 바이트 및 와이드 스트림
                       href: c-runtime-library/byte-and-wide-streams.md
