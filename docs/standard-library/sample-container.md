@@ -16,7 +16,7 @@ ms.locfileid: "65220420"
 # <a name="ltsample-containergt"></a>&lt;sample container&gt;
 
 > [!NOTE]
-> 이 항목은 Microsoft C++ 설명서에 사용 되는 컨테이너의 작동 하지 않는 예로 C++ 표준 라이브러리입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
+> 이 Microsoft C++ 설명서 항목은 C++ 표준 라이브러리에서 사용되는 컨테이너의 비 기능적 예제 입니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../standard-library/stl-containers.md)를 참조하세요.
 
 이 항목에서는 C++ 표준 라이브러리의 컨테이너 헤더 구조에 대해 설명합니다.
 
