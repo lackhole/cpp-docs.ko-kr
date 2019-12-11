@@ -1,16 +1,16 @@
 ---
 title: C++ 규칙 향상
-ms.date: 10/04/2019
+ms.date: 12/04/2019
 description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하게 준수하기 위해 점점 향상되고 있습니다.
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 0bbfc364da217525251df0c5f09544ed1ccfe5b6
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 06fa060b674e51a3352a9a928bccdbfa6c63aae4
+ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627082"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74858037"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -460,6 +460,245 @@ extern "C" void f(int, int, int, BOOL){}
 ### <a name="standard-library-improvements"></a>표준 라이브러리 향상
 
 비표준 헤더 \<stdexcpt.h> 및 \<typeinfo.h>가 제거되었습니다. 이러한 비표준 헤더를 포함하는 코드는 대신 표준 헤더 \<exception> 및 \<typeinfo>를 각각 포함해야 합니다.
+
+## <a name="improvements_164"></a> Visual Studio 2019 버전 16.4의 규칙 개선
+
+### <a name="better-enforcement-of-two-phase-name-lookup-for-qualified-ids-in-permissive-"></a>한층 개선된 /permissive-에서의 정규화된 ID에 대한 2단계 이름 조회
+
+2단계 이름 조회를 위해서는 템플릿 본문에 사용된 종속되지 않은 이름이 정의 시점에 템플릿에 표시될 수 있어야 합니다. 이전에는 템플릿이 인스턴스화될 때 이러한 이름이 발견되었을 수 있습니다. 이번 변경을 통해 MSVC에서 이식 가능하고 규칙에 맞는 코드를 [/permissive-](../build/reference/permissive-standards-conformance.md) 플래그 아래에서 더 쉽게 작성할 수 있습니다.
+
+**/permissive-** 플래그 집합이 설정된 Visual Studio 2019 버전 16.4의 다음 예에서는 `f<T>` 템플릿이 정의될 때 `N::f`이(가) 표시되지 않기 때문에 오류가 생성됩니다.
+
+```cpp
+template <class T>
+int f() {
+    return N::f() + T{}; // error C2039: 'f': is not a member of 'N'
+}
+
+namespace N {
+    int f() { return 42; }
+}
+```
+
+일반적으로 이 오류는 다음 예와 같이 누락된 헤더나 전달 선언 함수 또는 변수를 포함하여 해결할 수 있습니다.
+
+```cpp
+namespace N {
+    int f();
+}
+
+template <class T>
+int f() {
+    return N::f() + T{};
+}
+
+namespace N {
+    int f() { return 42; }
+}
+```
+
+### <a name="implicit-conversion-of-integral-constant-expressions-to-null-pointer"></a>정수 계열 상수 식에서 Null 포인터로의 암시적 변환
+
+MSVC 컴파일러는 이제 규칙 모드(/permissive-)에서 [CWG 이슈 903](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#903)을 구현합니다. 이 규칙은 정수 계열 상수 식에서 Null 포인터 상수로의 암시적 변환(정수 리터럴 '0'은 제외)을 허용하지 않습니다. 다음 예에서는 규칙 모드에서 C2440을 생성합니다.
+
+```cpp
+int* f(bool* p) {
+    p = false; // error C2440: '=': cannot convert from 'bool' to 'bool *'
+    p = 0; // OK
+    return false; // error C2440: 'return': cannot convert from 'bool' to 'int *'
+}
+```
+
+오류를 해결하려면 **false** 대신 **nullptr**을 사용합니다. 리터럴 0은 다음과 같이 계속 허용됩니다.
+
+```cpp
+int* f(bool* p) {
+    p = nullptr; // OK
+    p = 0; // OK
+    return nullptr; // OK
+}
+```
+
+### <a name="standard-rules-for-types-of-integer-literals"></a>정수 리터럴 형식에 대한 표준 규칙
+
+규칙 모드([/permissive-](../build/reference/permissive-standards-conformance.md)로 사용)에서는 MSVC에 정수 리터럴 형식에 대한 표준 규칙이 사용됩니다. 이전에는 너무 커서 부호 있는 'int'에 맞지 않는 10진 리터럴에는 'unsigned int' 형식이 제공되었습니다. 이제 이러한 리터럴에는 두 번째로 큰 부호 있는 정수 형식 'long long'이 제공됩니다. 또한 너무 커서 부호 있는 형식에 맞지 않는 'll' 접미사가 포함된 리터럴에는 'unsigned long long' 형식이 제공됩니다.
+
+이로 인해 다른 경고 진단이 생성될 수 있으며 리터럴에 대해 수행되는 산술 연산에 대한 동작이 달라질 수 있습니다.
+
+다음 예에서는 Visual Studio 2019, 버전 16.4의 새 동작을 보여줍니다. `i` 변수는 **unsigned int** 형식이므로 경고가 발생합니다. 변수 `j`의 상위 비트는 0으로 설정됩니다.
+
+```cpp
+void f(int r) {
+    int i = 2964557531; // warning C4309: truncation of constant value
+    long long j = 0x8000000000000000ll >> r; // literal is now unsigned, shift will fill high-order bits with 0
+}
+```
+
+다음 예에서는 이전 동작을 유지하여 경고 및 런타임 동작이 변경되지 않도록 하는 방법을 보여줍니다.
+
+```cpp
+void f(int r) {
+int i = 2964557531u; // OK
+long long j = (long long)0x8000000000000000ll >> r; // shift will keep high-order bits
+}
+```
+
+### <a name="function-parameters-that-shadow-template-parameters"></a>템플릿 매개 변수를 숨기는 함수 매개 변수
+
+MSVC 컴파일러는 이제 함수 매개 변수가 다음 템플릿 매개 변수를 숨기는 경우 오류를 표시합니다.
+
+```cpp
+template<typename T>
+void f(T* buffer, int size, int& size_read);
+
+template<typename T, int Size>
+void f(T(&buffer)[Size], int& Size) // error C7576: declaration of 'Size' shadows a template parameter
+{
+    return f(buffer, Size, Size);
+}
+```
+
+오류를 해결하려면 다음 매개 변수 중 하나의 이름을 변경합니다.
+
+```cpp
+template<typename T>
+void f(T* buffer, int size, int& size_read);
+
+template<typename T, int Size>
+void f(T (&buffer)[Size], int& size_read)
+{
+    return f(buffer, Size, size_read);
+}
+```
+
+### <a name="user-provided-specializations-of-type-traits"></a>형식 특성의 사용자 제공 특수화
+
+표준의 *meta.rqmts* 하위 절에 따라 MSVC 컴파일러는 이제 `std` 네임스페이스에서 지정된 type_traits 템플릿 중 하나의 사용자 정의 특수화를 발견하면 오류를 표시합니다. 달리 지정하지 않은 경우 이러한 특수화로 인해 정의되지 않은 동작이 발생됩니다. 다음 예에서는 정의되지 않은 동작이 규칙을 위반하여 `static_assert`이(가) **C2338** 오류로 인해 실패합니다.
+
+```cpp
+#include <type_traits>
+struct S;
+
+template<>
+struct std::is_fundamental<S> : std::true_type {};
+
+static_assert(std::is_fundamental<S>::value, "fail");
+```
+
+이 오류를 방지하려면 원하는 type_trait에서 상속하는 구조체를 정의하고 다음을 특수화합니다.
+
+```cpp
+#include <type_traits>
+
+struct S;
+
+template<typename T>
+struct my_is_fundamental : std::is_fundamental<T> {};
+
+template<>
+struct my_is_fundamental<S> : std::true_type { };
+
+static_assert(my_is_fundamental<S>::value, "fail");
+```
+
+### <a name="changes-to-compiler-provided-comparison-operators"></a>컴파일러에서 제공되는 비교 연산자에 대한 변경 내용
+
+MSVC 컴파일러는 이제 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 옵션이 설정되어 있는 경우 [P1630R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1630r1.html)에 따라 비교 연산자에 대해 다음과 같은 변경 내용을 구현합니다.
+
+**bool**이 아닌 반환 형식이 포함된 경우 컴파일러는 더 이상 `operator==`이(가) 포함된 식을 다시 쓰지 않습니다. 다음 코드는 *error C2088: '!=': illegal for struct*를 생성합니다.
+
+```cpp
+struct U {
+  operator bool() const;
+};
+
+struct S {
+  U operator==(const S&) const;
+};
+
+bool neq(const S& lhs, const S& rhs) {
+  return lhs != rhs;
+}
+```
+
+이 오류를 방지하려면 다음과 같이 필요한 연산자를 명시적으로 정의해야 합니다.
+
+```cpp
+struct U {
+    operator bool() const;
+};
+
+struct S {
+    U operator==(const S&) const;
+    U operator!=(const S&) const;
+};
+
+bool neq(const S& lhs, const S& rhs) {
+    return lhs != rhs;
+}
+```
+
+컴파일러가 공용 구조체와 같은 클래스의 구성원인 경우 더 이상 기본 비교 연산자를 정의하지 않습니다. 다음 예에서는 이제 *C2120: 'void' illegal with all types*가 생성됩니다.
+
+```cpp
+#include <compare>
+
+union S {
+    int a;
+    char b;
+    auto operator<=>(const S&) const = default;
+};
+
+bool lt(const S& lhs, const S& rhs) {
+    return lhs < rhs;
+}
+```
+
+이 오류를 방지하려면 다음 연산자에 대한 본문을 정의합니다.
+
+```cpp
+#include <compare>
+
+union S {
+  int a;
+  char b;
+  auto operator<=>(const S&) const { ... }
+}; 
+
+bool lt(const S& lhs, const S& rhs) {
+  return lhs < rhs;
+}
+```
+
+컴파일러는 클래스에 참조 구성원이 포함된 경우 더 이상 기본 비교 연산자를 정의하지 않습니다. 다음과 같은 코드를 입력하면 이제 *error C2120: 'void' illegal with all types*가 생성됩니다.
+
+```cpp
+#include <compare>
+
+struct U {
+    int& a;
+    auto operator<=>(const U&) const = default;
+};
+
+bool lt(const U& lhs, const U& rhs) {
+    return lhs < rhs;
+}
+```
+
+이 오류를 방지하려면 다음 연산자에 대한 본문을 정의합니다.
+
+```cpp
+#include <compare>
+
+struct U {
+    int& a;
+    auto operator<=>(const U&) const { ... };
+};
+
+bool lt(const U& lhs, const U& rhs) {
+    return lhs < rhs;
+}
+```
 
 ## <a name="update_160"></a> Visual Studio 2019의 버그 수정 및 동작 변경
 
@@ -2820,7 +3059,7 @@ struct S
 {
     constexpr void f();
 };
- 
+
 template<>
 constexpr void S<int>::f()
 {
