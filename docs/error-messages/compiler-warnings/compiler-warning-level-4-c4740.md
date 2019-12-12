@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4740
 ms.assetid: 85528969-966a-44b4-8a2f-971704c64477
-ms.openlocfilehash: 936dfb5464eabe7b1ac44df24445224fb9e204a0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 679f577eb7911b401473ee570e367ed5a8a094eb
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62187032"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74989481"
 ---
 # <a name="compiler-warning-level-4-c4740"></a>컴파일러 경고(수준 4) C4740
 
-인라인 asm 코드 안팎에서 흐름을 선택 하면 전역 최적화
+인라인 asm 코드 내부 또는 외부 흐름은 전역 최적화를 표시 하지 않습니다.
 
-부재 중 또는 점프 경우는 `asm` 블록에 해당 함수에 대 한 전역 최적화가 해제 됩니다.
+`asm` 블록 사이 또는 외부로 이동 하는 경우 해당 함수에 대해 전역 최적화를 사용할 수 없습니다.
 
-다음 샘플에서는 C4740 오류가 생성 됩니다.
+다음 샘플에서는 C4740를 생성 합니다.
 
-```
+```cpp
 // C4740.cpp
 // compile with: /O2 /W4
 // processor: x86

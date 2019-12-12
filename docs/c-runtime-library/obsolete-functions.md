@@ -1,6 +1,7 @@
 ---
 title: 사용되지 않는 함수
-ms.date: 01/22/2019
+description: Microsoft CRT (C 런타임 라이브러리)에서 더 이상 사용 되지 않고 제거 된 사용 되지 않는 함수를 나열 합니다.
+ms.date: 12/09/2019
 api_name:
 - _beep
 - _sleep
@@ -53,23 +54,23 @@ helpviewer_keywords:
 - _sleep function
 - _seterrormode function
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
-ms.openlocfilehash: da5bd0569e7116bfd45e6112da8231d6fc2c9b44
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: c913e44a4f0d06813e877645bd01855baa6fd4dc
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940133"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988778"
 ---
 # <a name="obsolete-functions"></a>사용되지 않는 함수
 
-특정 라이브러리 함수는 더 이상 사용되지 않으며 최신의 동등한 함수를 포함합니다. 이러한 함수는 업데이트된 버전으로 변경하는 것이 좋습니다. 사용되지 않는 기타 함수가 CRT에서 제거되었습니다. 이 항목에서는 사용되지 않는 함수 및 특정 버전의 Visual Studio에서 제거된 함수 목록을 보여 줍니다.
+특정 라이브러리 함수는 더 이상 사용되지 않으며 최신의 동등한 함수를 포함합니다. 이러한 함수를 업데이트 된 버전으로 변경 하는 것이 좋습니다. 사용되지 않는 기타 함수가 CRT에서 제거되었습니다. 이 문서에서는 더 이상 사용 되지 않는 함수 및 특정 버전의 Visual Studio에서 제거 된 함수를 나열 합니다.
 
 ## <a name="deprecated-as-obsolete-in-visual-studio-2015"></a>Visual Studio 2015에서 더 이상 사용되지 않음
 
 |사용되지 않는 함수|대체|
 |-----------------------|-----------------|
 |`is_wctype`|[iswctype](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|
-|`_loaddll`|[LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw), [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)또는 [LoadPackagedLibrary](/windows/win32/api/winbase/nf-winbase-loadpackagedlibrary)|
+|`_loaddll`|[LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw), [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) 또는 [LoadPackagedLibrary](/windows/win32/api/winbase/nf-winbase-loadpackagedlibrary)|
 |`_unloaddll`|[FreeLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)|
 |`_getdllprocaddr`|[GetProcAddress](../build/getprocaddress.md)|
 |`_seterrormode`|[SetErrorMode](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode)|
@@ -84,14 +85,12 @@ ms.locfileid: "70940133"
 |-----------------------|-----------------|
 |[_cgets, _cgetws](../c-runtime-library/cgets-cgetws.md)|[_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md)|
 |[gets, _getws](../c-runtime-library/gets-getws.md)|[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|
-|[_get_output_format](../c-runtime-library/get-output-format.md)|없음|
-|[_heapadd](../c-runtime-library/heapadd.md)|없음|
-|[_heapset](../c-runtime-library/heapset.md)|없음|
-|[inp, inpw](../c-runtime-library/inp-inpw.md)|없음|
-|[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|없음|
-|[outp, outpw](../c-runtime-library/outp-outpw.md)|없음|
-|[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|없음|
-|[_set_output_format](../c-runtime-library/set-output-format.md)|없음|
+|[_get_output_format](../c-runtime-library/get-output-format.md)|None|
+|[_heapadd](../c-runtime-library/heapadd.md)|None|
+|[_heapset](../c-runtime-library/heapset.md)|None|
+|[sct.inp, inpw, _inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|None|
+|[outp, outp, _outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|None|
+|[_set_output_format](../c-runtime-library/set-output-format.md)|None|
 
 ## <a name="removed-from-the-crt-in-earlier-versions-of-visual-studio"></a>이전 Visual Studio 버전의 CRT에서 제거됨
 

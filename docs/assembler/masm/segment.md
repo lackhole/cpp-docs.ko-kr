@@ -1,17 +1,17 @@
 ---
 title: SEGMENT
-ms.date: 08/30/2018
+ms.date: 12/06/2019
 f1_keywords:
 - SEGMENT
 helpviewer_keywords:
 - SEGMENT directive
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
-ms.openlocfilehash: b7344d9cb685e0212748d7835e19f398f14979e7
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 933e4e42b4b0f9cc979a3e67805d017f723472ef
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74393734"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988010"
 ---
 # <a name="segment"></a>SEGMENT
 
@@ -33,16 +33,16 @@ ms.locfileid: "74393734"
 |**BYTE**|사용 가능한 다음 바이트 주소입니다.|
 |**WORD**|사용 가능한 다음 word 주소 (word 당 2 바이트)|
 |**DWORD**|다음 사용 가능한 이중 단어 주소 (이중 단어 당 4 바이트)|
-|**이전**|사용 가능한 다음 단락 주소 (단락 당 16 바이트)입니다.|
+|**PARA**|사용 가능한 다음 단락 주소 (단락 당 16 바이트)입니다.|
 |**PAGE**|다음 사용 가능한 페이지 주소 (페이지당 256 바이트)|
 |**ALIGN**(*n*)|사용할 수 있는 다음 *n*번째 바이트 주소입니다. 자세한 내용은 설명 부분을 참조 하세요.|
 
 이 매개 변수를 지정 하지 않으면 기본적으로 **단락** 을 사용 합니다.
 
-\ *결합*
-**공용**, **스택**, **공용**, **메모리**,<em>주소</em>, **개인**
+*combine* (32 비트 MASM에만 해당) \
+**PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**
 
-\ *사용*
+*use* (32 비트 MASM에만 해당) \
 **USE16**, **USE32**, **FLAT**
 
 *특성*\
@@ -62,6 +62,6 @@ _string_\
 
 `ALIGN(n)`의 경우 *n* 은 1에서 8192 사이에 2의 거듭제곱이 될 수 있습니다. **/omf**에서 지원 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [지시문 참조](directives-reference.md)

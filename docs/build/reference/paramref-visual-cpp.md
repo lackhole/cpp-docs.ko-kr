@@ -8,12 +8,12 @@ helpviewer_keywords:
 - paramref C++ XML tag
 - <paramref> C++ XML tag
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
-ms.openlocfilehash: cee35ddb5fd5cd811e45f0aa49e94dd9c4b8b180
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1f4e9cb0e6b39e4da78e78048342dac2ecc9deea
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319995"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988682"
 ---
 # <a name="ltparamrefgt"></a>&lt;paramref&gt;
 
@@ -30,13 +30,13 @@ ms.locfileid: "62319995"
 *name*<br/>
 참조할 매개 변수의 이름입니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  `name`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // xml_paramref_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_paramref_tag.dll
@@ -49,6 +49,6 @@ public ref class MyClass {
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [XML 문서](xml-documentation-visual-cpp.md)

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1301
 ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
-ms.openlocfilehash: 6a82d7756f1460c56d87a3d7b1360c140de19827
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe64eecfbc9fed57c3748afd5804b76d6e4284a4
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160609"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990931"
 ---
 # <a name="linker-tools-error-lnk1301"></a>링커 도구 오류 LNK1301
 
-LTCG clr 모듈이 /LTCG:parameter를 사용 하 여 호환 되지 않습니다.
+LTCG clr 모듈이 있습니다./LTCG: parameter와 호환 되지 않습니다.
 
-/Clr 및 /GL으로 컴파일된 모듈 /LTCG (PGO) 매개 변수는 프로필 기반 최적화 중 하 나와 함께 링커에 전달 되었습니다.
+/Clr 및/GL을 사용 하 여 컴파일된 모듈이/LTCG.의 PGO (프로필 기반 최적화) 매개 변수 중 하 나와 함께 링커에 전달 되었습니다.
 
-/Clr 모듈에 대 한 프로필 기반 최적화를 사용 하는 것이 없습니다.
+/Clr 모듈에 대해 프로필 기반 최적화가 지원 되지 않습니다.
 
-자세한 내용은 다음을 참조하세요.
+자세한 내용은  항목을 참조하세요.
 
 - [/GL(전체 프로그램 최적화)](../../build/reference/gl-whole-program-optimization.md)
 
@@ -33,13 +33,13 @@ LTCG clr 모듈이 /LTCG:parameter를 사용 하 여 호환 되지 않습니다.
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. /Clr을 사용 하 여 컴파일되지 않습니다 또는 /LTCG PGO 매개 변수 중 하나를 사용 하 여 연결 되지 마십시오.
+1. /Clr을 사용 하 여 컴파일하지 않거나 PGO 매개 변수 중 하나를 사용 하 여/LTCG.에 연결 하지 마세요.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 LNK1301 오류가 생성 됩니다.
+다음 샘플에서는 LNK1301를 생성 합니다.
 
-```
+```cpp
 // LNK1301.cpp
 // compile with: /clr /GL /link /LTCG:PGI LNK1301.obj
 // LNK1301 expected

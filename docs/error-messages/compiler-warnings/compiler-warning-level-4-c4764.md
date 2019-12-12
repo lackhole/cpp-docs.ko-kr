@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4764
 ms.assetid: 7bd4296f-966b-484c-bf73-8dbc8e85b4a9
-ms.openlocfilehash: dd16b3f6e6591ec5b079f421fb199eb201c64483
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28672d2271e380f6a8240bff98326d5334a0f98f
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388555"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74989187"
 ---
 # <a name="compiler-warning-level-4-c4764"></a>컴파일러 경고(수준 4) C4764
 
@@ -23,7 +23,7 @@ ms.locfileid: "62388555"
 
 다음 샘플에서는 C4764를 생성합니다.
 
-```
+```cpp
 // C4764.cpp
 // compile with: /W4 /EHsc
 // processor: x64 IPF

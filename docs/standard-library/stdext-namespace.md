@@ -26,7 +26,7 @@ ms.locfileid: "62412425"
 #define _DEFINE_DEPRECATED_HASH_CLASSES 0
 ```
 
-사용 하 여 컴파일하면 **/Za**, 컴파일러는 오류를 생성 합니다.
+**/Za**로 컴파일할 때 컴파일러는 오류를 생성합니다.
 
 ## <a name="see-also"></a>참고자료
 

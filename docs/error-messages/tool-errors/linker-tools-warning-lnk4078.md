@@ -6,30 +6,30 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4078
 ms.assetid: 5a16796d-6caf-42d9-8f65-b042843eafb8
-ms.openlocfilehash: d20eb0523ffebe9229d05b6316772259661f6020
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ce72f476aa85434acd5277d0307ffc61e0a0214
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399941"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74990994"
 ---
 # <a name="linker-tools-warning-lnk4078"></a>링커 도구 경고 LNK4078
 
-서로 다른 특성을 지닌 여러 '섹션 이름' 섹션
+여러 특성을 가진 여러 ' section name ' 섹션이 있습니다.
 
-두 링크 찾을 또는 더 많은 섹션 이름과 다른 특성입니다.
+링크가 이름이 같지만 특성이 다른 둘 이상의 섹션을 찾았습니다.
 
-이 경고의 링크 또는 LIB 이전 버전에서 생성 된 가져오기 라이브러리 또는 내보내기 파일에서 발생할 수 있습니다.
+이 경고는 이전 버전의 LINK 또는 LIB에서 만든 가져오기 라이브러리나 내보내기 파일에 의해 발생할 수 있습니다.
 
-파일 및 다시 연결을 다시 만듭니다.
+파일을 다시 만들고 다시 링크 합니다.
 
 ## <a name="example"></a>예제
 
-LNK4078 주요 변경에 의해 발생할 수도 있습니다: 의해 명명 된 섹션 [init_seg](../../preprocessor/init-seg.md) x86 읽기/쓰기를 이제 읽기 전용입니다.
+LNK4078은 주요 변경 내용으로 인해 발생할 수도 있습니다. x 86의 [init_seg](../../preprocessor/init-seg.md) 에 의해 이름이 지정 된 섹션은 읽기/쓰기가 가능 합니다. 이제 읽기 전용입니다.
 
-다음 샘플 LNK4078를 생성합니다.
+다음 샘플에서는 LNK4078를 생성 합니다.
 
-```
+```cpp
 // LNK4078.cpp
 // compile with: /W1
 // LNK4078 expected

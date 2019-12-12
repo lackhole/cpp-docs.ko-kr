@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <summary> C++ XML tag
 - summary C++ XML tag
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
-ms.openlocfilehash: 68bb8b7c269b3406438e5cf21dde7179f7e67646
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0620273f24573539897809b7892d46ad49b7aa57
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318188"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988577"
 ---
 # <a name="ltsummarygt"></a>&lt;요약&gt;
 
@@ -30,7 +30,7 @@ ms.locfileid: "62318188"
 *description*<br/>
 개체에 대한 요약입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 \<summary> 태그의 텍스트는 IntelliSense의 형식에 대한 유일한 정보 소스이며 [개체 브라우저](/visualstudio/ide/viewing-the-structure-of-code) 및 코드 주석 웹 보고서에도 표시됩니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "62318188"
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // xml_summary_tag.cpp
 // compile with: /LD /clr /doc
 // post-build command: xdcmake xml_summary_tag.dll
@@ -57,6 +57,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [XML 문서](xml-documentation-visual-cpp.md)

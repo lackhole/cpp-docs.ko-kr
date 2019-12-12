@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <example> C++ XML tag
 - example C++ XML tag
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
-ms.openlocfilehash: 69e4ad8315948c9c77e99f6ebece4debbe3831b5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 384e9b9808a49770887eeda69b1d24fdd3f06027
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272535"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988311"
 ---
 # <a name="ltexamplegt"></a>&lt;example&gt;
 
@@ -30,13 +30,13 @@ ms.locfileid: "62272535"
 *description*<br/>
 코드 샘플에 대한 설명입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // xml_example_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_example_tag.dll
@@ -61,6 +61,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [XML 문서](xml-documentation-visual-cpp.md)

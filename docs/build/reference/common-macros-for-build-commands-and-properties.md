@@ -93,12 +93,12 @@ helpviewer_keywords:
 - $(PlatformShortName) macro
 - SolutionPath macro $(SolutionPath)
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
-ms.openlocfilehash: 0de96306e645ec85562e414a96283923e93a00ad
-ms.sourcegitcommit: af4ab63866ed09b5988ed53f1bb6996a54f02484
+ms.openlocfilehash: e2c7fe6f2ea63f2cbd259e4114843fcfc28fcd84
+ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787094"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74988334"
 ---
 # <a name="common-macros-for-msbuild-commands-and-properties"></a>MSBuild 명령 및 속성에 대 한 일반 매크로
 
@@ -131,7 +131,7 @@ Visual Studio에서는 설치 옵션에 따라 Visual Studio 프로젝트 (MSBui
 |**$(ProjectFileName)**|프로젝트의 파일 이름(기본 이름 + 파일 확장명으로 정의됨)입니다.|
 |**$(ProjectName)**|프로젝트의 기본 이름입니다.|
 |**$(ProjectPath)**|프로젝트의 절대 경로 이름(드라이브 + 경로 + 기본 이름 + 파일 확장명으로 정의됨)입니다.|
-|**$ (개 디렉터리)**|게시 대상의 출력 위치입니다. 뒤에 백슬래시 '\\'를 포함 합니다. 기본값은 **$ (OutDir)\\ app. publish** 폴더입니다.|
+|**$ (개 디렉터리)**|게시 대상의 출력 위치입니다. 뒤에 백슬래시 '\\'가 포함 됩니다. 기본값은 **$ (OutDir) app. 게시\\** 폴더입니다.|
 |**$(RemoteMachine)**|디버그 속성 페이지에서 **Remote Machine** 속성의 값으로 설정합니다. 자세한 내용은 [C/C++ 디버그 구성에 대한 프로젝트 설정 변경](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration) 을 참조하세요.|
 |**$(RootNameSpace)**|애플리케이션을 포함하는 네임스페이스(있는 경우)입니다.|
 |**$(SolutionDir)**|솔루션의 디렉터리(드라이브 + 경로로 정의됨)이며, 뒤의 백슬래시 '\\'를 포함합니다. IDE에서 솔루션을 빌드할 때만 정의됩니다.|
@@ -144,9 +144,9 @@ Visual Studio에서는 설치 옵션에 따라 Visual Studio 프로젝트 (MSBui
 |**$(TargetFileName)**|빌드에 대한 기본 출력 파일의 파일 이름(기본이름 + 파일 확장명으로 정의됨)입니다.|
 |**$(TargetName)**|빌드에 대한 기본 출력 파일의 기본 이름입니다.|
 |**$(TargetPath)**|빌드에 대한 기본 출력 파일의 절대 경로 이름(드라이브 + 경로 + 기본 이름 + 파일 확장명으로 정의됨)입니다.|
-|**$(VCInstallDir)**|Visual Studio 설치의 C++ 컨텐츠가 들어 있는 디렉터리입니다. 이 속성은 호스트 Visual Studio와 다를 C++ 수 있는 대상 Microsoft (MSVC) 도구 집합의 버전을 포함 합니다. 예를 들어를 사용 하 `$(PlatformToolset) = v140`여 빌드할 때 **$ (VCInstallDir)** 에는 Visual Studio 2015 설치에 대 한 경로가 포함 됩니다.|
+|**$(VCInstallDir)**|Visual Studio 설치의 C++ 컨텐츠가 들어 있는 디렉터리입니다. 이 속성은 호스트 Visual Studio와 다를 C++ 수 있는 대상 Microsoft (MSVC) 도구 집합의 버전을 포함 합니다. 예를 들어 `$(PlatformToolset) = v140`를 사용 하 여 빌드할 때 **$ (VCInstallDir)** 에는 Visual Studio 2015 설치에 대 한 경로가 포함 됩니다.|
 |**$(VSInstallDir)**|Visual Studio을 설치한 디렉터리입니다. 이 속성에는 대상 Visual Studio의 도구 집합 버전이 포함되며, 이 버전은 호스트 Visual Studio와 다를 수 있습니다. 예를 들어 `$(PlatformToolset) = v110`으로 빌드하는 경우 **$(VSInstallDir)** 에는 Visual Studio 2012 설치 경로가 포함됩니다.|
-|**$(WebDeployPath)**|웹 배포 루트에서 프로젝트 출력이 속하는 상대 경로입니다. <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>와 동일한 값을 반환합니다.|
+|**$(WebDeployPath)**|웹 배포 루트에서 프로젝트 출력이 속하는 상대 경로입니다.|
 |**$(WebDeployRoot)**|**\<localhost>** 의 위치에 대한 절대 경로입니다. 예를 들어 c:\inetpub\wwwroot입니다.|
 
 ## <a name="obsolete-macros"></a>사용되지 않는 매크로
@@ -155,18 +155,18 @@ Visual Studio 2008에서 Visual Studio 2010으로 가면서 C++ 빌드 시스템
 
 |매크로|설명|
 |-----------|-----------------|
-|**$(InputDir)**|(마이그레이션됨.) 입력 파일의 디렉터리(드라이브 + 경로로 정의됨)이며, 뒤에 백슬래시 '\\'가 포함됩니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectDir)** 에 해당합니다.|
-|**$(InputExt)**|(마이그레이션됨.) 입력 파일의 파일 확장명입니다. 파일 확장명 앞에 '.'을 포함합니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectExt)** 에 해당합니다. 원본 파일의 경우 이는 **%(Extension)** 입니다.|
-|**$(InputFileName)**|(마이그레이션됨.) 입력 파일의 파일 이름(기본 이름 + 파일 확장명으로 정의됨)입니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectFileName)** 에 해당합니다. 원본 파일의 경우 이는 **%(Identity)** 입니다.|
-|**$(InputName)**|(마이그레이션됨.) 입력 파일의 기본 이름입니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectName)** 에 해당합니다. 원본 파일의 경우 이는 **%(Filename)** 입니다.|
-|**$(InputPath)**|(마이그레이션됨.) 입력 파일의 절대 경로 이름(드라이브 + 경로 + 기본 이름 + 파일 확장명으로 정의됨)입니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectPath)** 에 해당합니다. 원본 파일의 경우 이는 **%(FullPath)** 입니다.|
+|**$(InputDir)**|(마이그레이션) 입력 파일의 디렉터리 (드라이브 + 경로로 정의 됨) 뒤에 백슬래시 '\\'가 포함 됩니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectDir)** 에 해당합니다.|
+|**$(InputExt)**|(마이그레이션) 입력 파일의 파일 확장명입니다. 파일 확장명 앞에 '.'을 포함합니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectExt)** 에 해당합니다. 원본 파일의 경우 이는 **%(Extension)** 입니다.|
+|**$(InputFileName)**|(마이그레이션) 입력 파일의 파일 이름 (기본 이름 + 파일 확장명으로 정의 됨)입니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectFileName)** 에 해당합니다. 원본 파일의 경우 이는 **%(Identity)** 입니다.|
+|**$(InputName)**|(마이그레이션) 입력 파일의 기본 이름입니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectName)** 에 해당합니다. 원본 파일의 경우 이는 **%(Filename)** 입니다.|
+|**$(InputPath)**|(마이그레이션) 입력 파일의 절대 경로 이름 (드라이브 + 경로 + 기본 이름 + 파일 확장명으로 정의 됨)입니다. 프로젝트가 입력인 경우 이 매크로는 **$(ProjectPath)** 에 해당합니다. 원본 파일의 경우 이는 **%(FullPath)** 입니다.|
 |**$(ParentName)**|이 프로젝트 항목을 포함하는 항목의 이름입니다. 부모 폴더 이름 또는 프로젝트 이름이 됩니다.|
 |**$(SafeInputName)**|파일 확장명을 뺀 유효한 클래스 이름으로 파일의 이름입니다. 이 속성에는 정확한 해당 사항이 없습니다.|
 |**$(SafeParentName)**|유효한 이름 형식인 직계 부모의 이름입니다. 예를 들어 양식은 .resx 파일의 부모입니다. 이 속성에는 정확한 해당 사항이 없습니다.|
 |**$(SafeRootNamespace)**|프로젝트 마법사에서 코드를 추가할 네임스페이스 이름입니다. 이 네임스페이스 이름에는 유효한 C++ 식별자에 사용할 수 있는 문자만 포함됩니다. 이 속성에는 정확한 해당 사항이 없습니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[Visual Studio 프로젝트-C++](../creating-and-managing-visual-cpp-projects.md)\
+[Visual Studio 프로젝트- C++ ](../creating-and-managing-visual-cpp-projects.md)\
 [시각적 C++ 포팅 및 업그레이드 가이드](../../porting/visual-cpp-porting-and-upgrading-guide.md)\
 [잠재적인 업그레이드 문제 개요](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

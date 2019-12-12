@@ -13,12 +13,12 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/24/2019
 ms.locfileid: "68450538"
 ---
-# <a name="securescl"></a>_SECURE_SCL
+# <a name="_secure_scl"></a>_SECURE_SCL
 
-[확인된 반복기](../standard-library/checked-iterators.md)가 사용하도록 설정되었는지를 정의하는 이 매크로는 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 교체되었습니다. 확인된 반복기는 기본적으로 디버그 빌드에서는 사용하도록 설정되고 정품 빌드에서는 사용하지 않도록 설정됩니다.
+[확인된 반복기](../standard-library/checked-iterators.md)가 사용하도록 설정되었는지를 정의하는 이 매크로는 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 교체되었습니다. 확인된 반복기는 기본적으로 디버그 빌드에서는 사용하도록 설정되고 제품 빌드에서는 사용하지 않도록 설정됩니다.
 
 > [!IMPORTANT]
-> _SECURE_MM 매크로를 직접 사용 하는 것은 더 이상 사용 되지 않습니다. 대신 _ITERATOR_DEBUG_LEVEL를 사용 하 여 확인 된 반복기 설정을 제어 합니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 참조하세요.
+> _SECURE_MM 매크로를 직접 사용하는 것은 더 이상 권장되지 않습니다. 대신 _ITERATOR_DEBUG_LEVEL을 사용하여 확인된 반복기 설정을 제어합니다. 자세한 내용은 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
