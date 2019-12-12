@@ -16,11 +16,11 @@ ms.locfileid: "62412425"
 ---
 # <a name="stdext-namespace"></a>stdext 네임스페이스
 
-멤버는 [ \<hash_map >](../standard-library/hash-map.md) 하 고 [ \<hash_set >](../standard-library/hash-set.md) 헤더 파일의 일부분이 아닌 현재 ISO C++ 표준입니다. 따라서 C++ 표준을 계속 준수하기 위해 이러한 형식 및 멤버를 `std` 네임스페이스에서 `stdext`네임스페이스로 이동했습니다.
+[\<hash_map>](../standard-library/hash-map.md)과 [\<hash_set>](../standard-library/hash-set.md) 헤더 파일의 멤버는 현재 ISO C++ 표준이 아닙니다. 따라서 C++ 표준을 계속 준수하기 위해 이러한 형식 및 멤버를 `std` 네임스페이스에서 `stdext`네임스페이스로 이동했습니다.
 
-로 컴파일하는 경우 [/Ze](../build/reference/za-ze-disable-language-extensions.md), 기본값인, 컴파일러가를 사용할 때의 경고 `std` 의 멤버에 대 한 합니다 \<hash_map > 및 \<hash_set > 헤더 파일입니다. 이 경고를 사용하지 않도록 설정하려면 [경고](../preprocessor/warning.md) pragma를 사용합니다.
+기본값인 [/Ze](../build/reference/za-ze-disable-language-extensions.md)로 컴파일할 때 컴파일러는 \<hash_map>과 \<hash_set> 헤더 파일의 멤버에 `std` 사용에 대하여 경고합니다. 이 경고를 사용하지 않도록 설정하려면 [warning](../preprocessor/warning.md) pragma를 사용합니다.
 
-컴파일러의 사용에 대 한 오류를 생성 하려면 `std` 의 멤버에 대 한는 \<hash_map > 및 \<hash_set > 헤더 파일을 **/Ze**를 하기 전에 다음 지시문을 추가 `#include` 모든 C++ 표준 라이브러리 헤더 파일입니다.
+**/Ze**와 함께 \<hash_map>과 \<hash_set> 헤더 파일의 멤버에 `std`를 사용할 때 컴파일러가 오류를 발생하도록 하려면 C++ 표준 라이브러리 헤더 파일을 `#include`하기 전에 다음 지시문을 추가합니다.
 
 ```cpp
 #define _DEFINE_DEPRECATED_HASH_CLASSES 0
