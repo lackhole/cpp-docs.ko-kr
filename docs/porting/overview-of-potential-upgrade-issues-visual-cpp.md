@@ -2,12 +2,12 @@
 title: 잠재적인 업그레이드 문제 개요(Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: 10c2de547611cf7b1b47de2b1ec05dcf419c6225
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
-ms.translationtype: HT
+ms.openlocfilehash: 2b310760b1a6623a18a00e36e3bd5378d2ebb76e
+ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69511544"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627247"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>잠재적인 업그레이드 문제 개요(Visual C++)
 
@@ -33,7 +33,7 @@ C++에는 안정적인 ABI(애플리케이션 이진 인터페이스)가 없습�
 
 C++ 링크와 함게 외부 기호를 포함하는 개체 파일이 있는 경우 해당 개체 파일은 다른 주 버전의 도구 집합에 의해 생성된 개체 파일과 올바르게 연결되지 않을 수 있습니다. 여러 가능한 결과가 있습니다. 연결이 완전히 실패할 수 있습니다(예: 이름 데코레이션이 변경된 경우). 연결이 성공할 수 있으며 런타임 시 작동하지 않을 수 있습니다(예: 형식 레이아웃이 변경된 경우). 또는 많은 경우에 아무런 작업도 일어나지 않을 수 있습니다. 또한 C++ ABI는 불안정하지만 C ABI 및 COM에 필요한 C++ ABI의 하위 집합은 안정적입니다.
 
-가져오기 라이브러리에 링크하면 런타임 시 ABI 호환성을 유지하는 Visual Studio 재배포 가능 라이브러리의 이후 버전을 사용할 수 있습니다. 예를 들어, Visual Studio 2015 업데이트 3 도구 집합을 사용하여 앱을 컴파일하고 링크한 경우 2015, 2017 및 2019 라이브러리가 이전 버전과의 호환성을 유지했기 때문에 Visual Studio 2017 또는 Visual Studio 2019 재배포 가능 패키지를 사용할 수 있습니다. 그 반대는 성립하지 않습니다. 호환 가능한 ABI가 있어도 코드를 작성하는 데 사용한 것보다 이전 버전의 도구 집합에 대해 재배포 가능 패키지를 사용할 수 없습니다.
+가져오기 라이브러리에 링크하면 런타임 시 ABI 호환성을 유지하는 Visual Studio 재배포 가능 라이브러리의 이후 버전을 사용할 수 있습니다. 예를 들어, Visual Studio 2015 업데이트 3 도구 집합을 사용하여 앱을 컴파일하고 링크한 경우 2015, 2017 및 2019 라이브러리가 이전 버전과의 호환성을 유지했기 때문에 Visual Studio 2017 또는 Visual Studio 2019 재배포 가능 패키지를 사용할 수 있습니다. 반대의 경우는 그렇지 않습니다. 호환 되는 ABI가 있는 경우에도 코드를 빌드하는 데 사용한 것 보다 이전 버전의 도구 집합에 대해 재배포 가능 패키지를 사용할 수 없습니다.
 
 ### <a name="libraries"></a>라이브러리
 
@@ -88,7 +88,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 
 ### <a name="zcwchar_t-wchar_t-is-native-type"></a>/Zc:wchar_t(wchar_t를 네이티브 형식으로 인식)
 
-Microsoft Visual C++ 6.0 및 이전 버전에서는 **wchar_t**가 기본 제공 형식으로 구현되지 않고 wchar.h에서 unsigned short에 대한 typedef로 선언되었습니다. C++ 표준에서는 **wchar_t**가 기본 제공 형식이어야 합니다. typedef 버전을 사용하면 이식성 문제가 발생할 수 있습니다. 이전 버전의 Visual Studio에서 업그레이드하고 코드가 **wchar_t**를 **unsigned short**로 암시적으로 변환하려 하기 때문에 컴파일러 오류 C2664가 발생하는 경우 `/Zc:wchar_t-`를 설정하는 대신 오류를 수정하기 위해 코드를 변경하는 것이 좋습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
+(Microsoft Visual C++ 6.0 이전 버전에서는 **wchar_t** 기본 제공 형식으로 구현 되지 않았지만, wchar에서 부호 없는 short에 대 한 typedef로 선언 되었습니다.) 표준 C++ 에서는 **wchar_t** 기본 제공 형식 이어야 합니다. typedef 버전을 사용하면 이식성 문제가 발생할 수 있습니다. 이전 버전의 Visual Studio에서 업그레이드하고 코드가 **wchar_t**를 **unsigned short**로 암시적으로 변환하려 하기 때문에 컴파일러 오류 C2664가 발생하는 경우 `/Zc:wchar_t-`를 설정하는 대신 오류를 수정하기 위해 코드를 변경하는 것이 좋습니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
 
 ### <a name="upgrading-with-the-linker-options-nodefaultlib-entry-and-noentry"></a>/NODEFAULTLIB, /ENTRY 및 /NOENTRY 링커 옵션을 사용하여 업그레이드
 
@@ -101,7 +101,7 @@ Microsoft Visual C++ 6.0 및 이전 버전에서는 **wchar_t**가 기본 제공
 |||
 |-|-|
 |기존 이름|다음 라이브러리를 사용해야 합니다.|
-|LIBCMT.lib|libcmt.lib, libucrt.lib, libvcruntime.lib|
+|libcmt.lib|libcmt.lib, libucrt.lib, libvcruntime.lib|
 |libcmtd.lib|libcmtd.lib, libucrtd.lib, libvcruntimed.lib|
 |msvcrt.lib|msvcrt.lib, ucrt.lib, vcruntime.lib|
 |msvcrtd.lib|msvcrtd.lib, ucrtd.lib, vcruntimed.lib|
@@ -150,7 +150,7 @@ C++ 표준 자체가 이전 버전과 항상 호환되지는 않는 방식으로
 
 ## <a name="warnings-to-use-secure-crt-functions"></a>보안 CRT 함수를 사용하도록 경고
 
-지난 몇 년 동안 C 런타임 함수의 보안 버전이 도입되었습니다. 오래된 비보안 버전도 계속 사용할 수 있지만 보안 버전을 사용하도록 코드를 변경하는 것이 좋습니다. 컴파일러에서 비보안 버전의 사용에 대한 경고가 발생합니다. 이러한 경고를 사용하지 않거나 무시하도록 선택할 수 있습니다. 솔루션의 모든 프로젝트에 대해 경고를 사용하지 않으려면 **보기** > **속성 관리자**를 열고, 경고를 사용하지 않을 프로젝트를 모두 선택한 다음, 선택한 항목을 마우스 오른쪽 단추로 클릭하고, **속성**을 선택합니다. **구성 속성** > **C/C++**  > **고급** 아래의 **속성 페이지** 대화 상자에서 **특정 경고 사용 안 함**을 선택합니다. 드롭다운 화살표를 클릭한 다음, **편집**을 클릭합니다. 텍스트 상자에 4996을 입력합니다. 'C' 접두사를 포함하지 마세요. 자세한 내용은 [보안 CRT를 사용하도록 포팅](porting-guide-spy-increment.md#porting_to_secure_crt)을 참조하세요.
+지난 몇 년 동안 C 런타임 함수의 보안 버전이 도입되었습니다. 오래된 비보안 버전도 계속 사용할 수 있지만 보안 버전을 사용하도록 코드를 변경하는 것이 좋습니다. 컴파일러에서 비보안 버전의 사용에 대한 경고가 발생합니다. 이러한 경고를 사용하지 않거나 무시하도록 선택할 수 있습니다. 솔루션의 모든 프로젝트에 대해 경고를 사용하지 않으려면 **보기** > **속성 관리자**를 열고, 경고를 사용하지 않을 프로젝트를 모두 선택한 다음, 선택한 항목을 마우스 오른쪽 단추로 클릭하고, **속성**을 선택합니다. **구성 속성**C/C++ > 고급 >  아래의 **속성 페이지** 대화 상자에서 **특정 경고 사용 안 함**을 선택합니다. 드롭다운 화살표를 클릭한 다음, **편집**을 클릭합니다. 텍스트 상자에 4996을 입력합니다. (' C ' 접두사는 포함 하지 마세요.) 자세한 내용은 [보안 CRT를 사용 하도록 포팅](porting-guide-spy-increment.md#porting_to_secure_crt)을 참조 하세요.
 
 ## <a name="errors-due-to-changes-in-windows-apis-or-obsolete-sdks"></a>Windows API의 변경 내용 또는 오래된 SDK로 인한 오류
 
@@ -180,11 +180,11 @@ ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자�
 
 ## <a name="unicode-vs-mbcsascii"></a>유니코드 및 멀티바이트 문자 집합(MBCS)/ASCII
 
-유니코드가 표준화되기 전에는 대부분의 프로그램이 MBCS(멀티바이트 문자 집합)를 사용하여 ASCII 문자 집합에 포함되지 않은 문자를 표현했습니다. 이전 MFC 프로젝트에서는 MBCS가 기본 설정이었으며, 이러한 프로그램을 업그레이드하는 경우 대신 유니코드를 사용하라는 경고가 표시됩니다. 유니코드로 변환이 개발 비용의 가치가 없다고 결정하는 경우 경고를 사용하지 않거나 무시하도록 선택할 수 있습니다. 솔루션의 모든 프로젝트에 대해 경고를 사용하지 않으려면 **보기** > **속성 관리자**를 열고, 경고를 사용하지 않을 프로젝트를 모두 선택한 다음, 선택한 항목을 마우스 오른쪽 단추로 클릭하고, **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성 속성** > **C/C++**  > **고급**을 선택합니다. **특정 경고 사용 안 함** 속성에서 드롭다운 화살표를 연 다음, **편집**을 선택합니다. 텍스트 상자에 4996을 입력합니다. 'C' 접두사를 포함하지 마세요. **확인**을 선택하여 속성을 저장한 다음, **확인**을 선택하여 변경 내용을 저장합니다.
+유니코드가 표준화되기 전에는 대부분의 프로그램이 MBCS(멀티바이트 문자 집합)를 사용하여 ASCII 문자 집합에 포함되지 않은 문자를 표현했습니다. 이전 MFC 프로젝트에서는 MBCS가 기본 설정이었으며, 이러한 프로그램을 업그레이드하는 경우 대신 유니코드를 사용하라는 경고가 표시됩니다. 유니코드로 변환이 개발 비용의 가치가 없다고 결정하는 경우 경고를 사용하지 않거나 무시하도록 선택할 수 있습니다. 솔루션의 모든 프로젝트에 대해 경고를 사용하지 않으려면 **보기** > **속성 관리자**를 열고, 경고를 사용하지 않을 프로젝트를 모두 선택한 다음, 선택한 항목을 마우스 오른쪽 단추로 클릭하고, **속성**을 선택합니다. **속성 페이지** 대화 상자에서 **구성 속성** > **C/C++**  > **고급**을 선택합니다. **특정 경고 사용 안 함** 속성에서 드롭다운 화살표를 연 다음, **편집**을 선택합니다. 텍스트 상자에 4996을 입력합니다. (' C ' 접두사는 포함 하지 마세요.) **확인** 을 선택 하 여 속성을 저장 한 다음 **확인** 을 선택 하 여 변경 내용을 저장 합니다.
 
-자세한 내용은 [MBCS에서 유니코드로 포팅](porting-guide-spy-increment.md#porting_to_unicode)을 참조하세요. MBCS 및 유니코드에 대한 일반적인 내용은 [Visual C++의 텍스트 및 문자열](../text/text-and-strings-in-visual-cpp.md) 및 [국제화](../c-runtime-library/internationalization.md)를 참조하세요.
+자세한 내용은 [MBCS에서 유니코드로 포팅](porting-guide-spy-increment.md#porting_to_unicode)을 참조하세요. MBCS와 유니코드에 대 한 일반 정보는 [Visual C++의 텍스트 및 문자열](../text/text-and-strings-in-visual-cpp.md) 및 [국제화](../c-runtime-library/internationalization.md)를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[이전 버전의 Visual에서 프로젝트 업그레이드C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual Studio의 C++ 규칙 향상](../overview/cpp-conformance-improvements.md)
