@@ -1,25 +1,25 @@
 ---
 title: ALIGN (MASM)
-ms.date: 01/02/2019
+ms.date: 12/17/2019
 f1_keywords:
 - align
 helpviewer_keywords:
 - ALIGN directive
 ms.assetid: 1c386b23-439f-4ec3-a6de-74427b25e47f
-ms.openlocfilehash: 22b18f2e238c780377b84fc2be3eb6678686bb73
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 700721768deaf92e88b32a97e68c6e017219d19d
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74399281"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75316592"
 ---
-# <a name="align-masm"></a>ALIGN (MASM)
+# <a name="align"></a>ALIGN
 
 **ALIGN** 지시문은 해당 매개 변수의 배수 인 주소에 다음 데이터 요소 또는 명령을 맞춥니다. 매개 변수는 세그먼트 맞춤 보다 작거나 같은 2의 거듭제곱 이어야 합니다 (예: 1, 2, 4 등).
 
 ## <a name="syntax"></a>구문
 
-> ⟦*Number*⟧ **맞추기**
+> ⟦*ConstantExpression*⟧ **맞추기**
 
 ## <a name="remarks"></a>주의
 
@@ -29,7 +29,8 @@ ms.locfileid: "74399281"
 
 데이터를 정렬할 때 건너뛴 공간은 0으로 채워집니다. 지침이 정렬 되 면 건너뛴 공간이 적절 한 크기의 NOP 명령으로 채워집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [심지어](even.md)\
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

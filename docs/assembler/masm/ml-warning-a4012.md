@@ -1,18 +1,18 @@
 ---
 title: ML 경고 A4012
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A4012
 helpviewer_keywords:
 - A4012
 ms.assetid: 842b1259-9679-4eeb-a02d-672a583a94e5
-ms.openlocfilehash: 40aabc264c52a0b81fcd4e29d519433cf5fecdd6
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: cf854163c558385d80cddd88efdcac295c3470ee
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74854565"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75311938"
 ---
 # <a name="ml-warning-a4012"></a>ML 경고 A4012
 
@@ -24,4 +24,4 @@ CodeView는 클래스 이름이 "CODE"로 끝나지 않는 세그먼트의 코�
 
 ## <a name="see-also"></a>참조
 
-[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>
+[ML 오류 메시지](ml-error-messages.md)
