@@ -22,14 +22,14 @@ helpviewer_keywords:
 - __int8 keyword [C++]
 - __int64 keyword [C++]
 ms.assetid: 8e384602-2578-4980-8cc8-da63842356b2
-ms.openlocfilehash: b765eabcac3f9643c0cae78fefb6ce8231669ffc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e793f23581f7dc62a39fcd8c5c504fb5a2ccbc9
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183456"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301472"
 ---
-# <a name="int8-int16-int32-int64"></a>__int8, __int16, __int32, __int64
+# <a name="__int8-__int16-__int32-__int64"></a>__int8, __int16, __int32, __int64
 
 **Microsoft 전용**
 
@@ -44,11 +44,11 @@ __int32 nLarge;     // Declares 32-bit integer
 __int64 nHuge;      // Declares 64-bit integer
 ```
 
-**__int8**, **__int16** 및 **__int32** 형식은 동일한 크기를 가진 ANSI 형식에 대한 동의어이고, 여러 플랫폼에서 동일하게 동작하는 이식 가능한 코드 작성에 유용합니다. **__int8** 데이터 형식은 **char** 형식과 동의어이고, **__int16**은 **short**, 그리고 **__int32**는 **int**와 동의어입니다. **__int64**는 **long long**과 동의어입니다.
+**__int8**, **__int16** 및 **__int32** 형식은 동일한 크기를 가진 ANSI 형식에 대한 동의어이고, 여러 플랫폼에서 동일하게 동작하는 이식 가능한 코드 작성에 유용합니다. **__Int8** 데이터 형식은 **char**형식과 동의어이 고, **__int16** 는 **short**형식과 동의어 이며, **__int32** 는 **int**형식과 동의어입니다. **__Int64** 형식은 **long long**형식의 동의어입니다.
 
-이전 버전과 호환성에 대 한 **_int8**하십시오 **_int16**, **_int32**, 및 **_int64** 는 **__int8** 하십시오 **__int16**, **__int32**, 및 **__int64** 하지 않는 한 컴파일러 옵션 [/Za \(언어를 사용 하지 않도록 설정 확장)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
+이전 버전과의 호환성을 위해 **_int8**, **_int16**, **_int32**및 **_int64** 는 컴파일러 옵션 [/za __int8 언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 이 지정 된 경우를 제외 하 **고 __int16,** **__int32**, **__int64**및 **\(** 의 동의어입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제에서는 __int *xx* 매개 변수가 **int**로 승격되는 것을 보여 줍니다.
 
@@ -75,8 +75,8 @@ func
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>
-[기본 형식](../cpp/fundamental-types-cpp.md)<br/>
+[기본 제공 형식](../cpp/fundamental-types-cpp.md)<br/>
 [데이터 형식 범위](../cpp/data-type-ranges.md)<br/>

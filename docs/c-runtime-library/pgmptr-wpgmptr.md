@@ -12,14 +12,14 @@ helpviewer_keywords:
 - _pgmptr function
 - pgmptr function
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
-ms.openlocfilehash: 6991dfe90e58352b26d7c914e1601a68674b8a5b
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: beff0401d0aa2aa21819e58618ef4c02795d4393
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749869"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300159"
 ---
-# <a name="pgmptr-wpgmptr"></a>_pgmptr, _wpgmptr
+# <a name="_pgmptr-_wpgmptr"></a>_pgmptr, _wpgmptr
 
 실행 파일의 경로입니다. 더 이상 사용되지 않습니다. [_get_pgmptr](../c-runtime-library/reference/get-pgmptr.md) 및 [_get_wpgmptr](../c-runtime-library/reference/get-wpgmptr.md)을 사용하세요.
 
@@ -42,7 +42,7 @@ C> hello
 
 `_wpgmptr`은 `_pgmptr`을 사용하는 프로그램에 사용할 `wmain`에 대응하는 와이드 문자입니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -50,15 +50,15 @@ C> hello
 
 ## <a name="requirements"></a>요구 사항
 
-|변수|필수 헤더|
+|Variable|필수 헤더|
 |--------------|---------------------|
 |`_pgmptr`, `_wpgmptr`|\<stdlib.h>|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 프로그램에서는 `_pgmptr`의 사용을 보여 줍니다.
 
-```
+```c
 // crt_pgmptr.c
 // compile with: /W3
 // The following program demonstrates the use of _pgmptr.
@@ -75,6 +75,6 @@ int main( void )
 
 `_wpgmptr`를 `%Fs`로 변경하고 `%S`을 `main`으로 변경하여 `wmain`을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [전역 변수](../c-runtime-library/global-variables.md)
