@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2142
 ms.assetid: d0dbe10e-0952-49a4-8b33-e82fb7558b19
-ms.openlocfilehash: eda60204e07fd025a8c62b19de70e8204f9f80f1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1345fbb44558db01b19eec04b64cf7aa036931a
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353588"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301927"
 ---
 # <a name="compiler-error-c2142"></a>컴파일러 오류 C2142
 
-함수 선언이 서로 다릅니다. 그 중 하나에 지정 하는 가변 매개 변수
+함수 선언이 다릅니다. 변수 매개 변수는 그 중 하나에만 지정 됩니다.
 
-하나의 함수 선언에 가변 매개 변수 목록을 포함합니다. 다른 선언 되지 않습니다. ANSI C ([/Za](../../build/reference/za-ze-disable-language-extensions.md))만 합니다.
+함수의 한 선언에는 가변 매개 변수 목록이 포함 됩니다. 다른 선언은 그렇지 않습니다. ANSI C ([/za](../../build/reference/za-ze-disable-language-extensions.md))만 해당 합니다.
 
-다음 샘플에서는 C2142 오류가 생성 됩니다.
+다음 샘플에서는 C2142를 생성 합니다.
 
-```
+```c
 // C2142.c
 // compile with: /Za /c
 void func();

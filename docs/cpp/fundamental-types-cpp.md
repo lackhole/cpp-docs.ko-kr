@@ -1,6 +1,6 @@
 ---
-title: 기본 형식 (C++)
-ms.date: 11/04/2016
+title: 기본 제공 형식 (C++)
+ms.date: 12/11/2019
 f1_keywords:
 - __int128_cpp
 - __wchar_t_cpp
@@ -43,28 +43,28 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: daa2ad2680a9d7d0239a70ed37ec1d90a3d96d97
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: f6bfc72bf279d09e89423866d9cb46ad3496b49c
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857543"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301498"
 ---
-# <a name="fundamental-types--c"></a>기본 형식 (C++)
+# <a name="built-in-types-c"></a>기본 제공 형식 (C++)
 
-C++의 기본 형식은 정수 계열, 부동 소수점 및 void의 세 가지 범주로 구분됩니다. 정수 계열 형식은 정수를 처리할 수 있습니다. 부동 소수점 형식은 소수 부분이 있을 수 있는 값을 지정할 수 있습니다.
+기본 제공 형식 ( *기본 형식*이 라고도 함)은 C++ 언어 표준에 의해 지정 되며 컴파일러에 기본 제공 됩니다. 기본 제공 형식은 헤더 파일에 정의 되어 있지 않습니다. 기본 제공 형식은 정수 계열, 부동 소수점 및 void의 세 가지 범주로 구분 됩니다. 정수 계열 형식은 정수를 처리할 수 있습니다. 부동 소수점 형식은 소수 부분이 있을 수 있는 값을 지정할 수 있습니다.
 
-[void](../cpp/void-cpp.md) 형식은 빈 값 집합을 설명합니다. **Void** 형식의 변수를 지정할 수 없습니다 .이 변수는 주로 값을 반환 하지 않는 함수를 선언 하거나 형식화 되지 않은 형식이 나 임의로 형식화 된 데이터에 대 한 제네릭 포인터를 선언 하는 데 사용 됩니다. 모든 식은 명시적으로 변환 되거나 **void**형식으로 캐스팅 될 수 있습니다. 그러나 이러한 식은 사용이 다음으로 제한됩니다.
+[void](void-cpp.md) 형식은 빈 값 집합을 설명합니다. **Void** 형식의 변수를 지정할 수 없습니다 .이 변수는 주로 값을 반환 하지 않는 함수를 선언 하거나 형식화 되지 않은 형식이 나 임의로 형식화 된 데이터에 대 한 제네릭 포인터를 선언 하는 데 사용 됩니다. 모든 식은 명시적으로 변환 되거나 **void**형식으로 캐스팅 될 수 있습니다. 그러나 이러한 식은 사용이 다음으로 제한됩니다.
 
-- 식 문. 자세한 내용은 [식](../cpp/expressions-cpp.md)을 참조하세요.
+- 식 문. (자세한 내용은 [식](expressions-cpp.md)을 참조 하세요.)
 
-- 쉼표 연산자의 왼쪽 피연산자. 자세한 내용은 [쉼표 연산자](../cpp/comma-operator.md) 를 참조하세요.
+- 쉼표 연산자의 왼쪽 피연산자. (자세한 내용은 [쉼표 연산자](comma-operator.md)를 참조 하세요.)
 
-- 조건 연산자의 두 번째 또는 세 번째 피연산자(`? :`)입니다. 자세한 내용은 [조건 연산자를 사용하는 식](../cpp/conditional-operator-q.md) 를 참조하세요.
+- 조건 연산자의 두 번째 또는 세 번째 피연산자(`? :`)입니다. (자세한 내용은 [조건 연산자를 사용 하는 식](conditional-operator-q.md)을 참조 하세요.)
 
-다음 표에서는 형식 크기에 대한 제한을 설명합니다. 이러한 제한은 Microsoft 구현과 무관합니다.
+다음 표에서는 서로 관련 된 형식 크기에 대 한 제한 사항을 설명 합니다. 이러한 제한은 표준에 C++ 의해 적용 되며 Microsoft 구현과는 독립적입니다. 특정 기본 제공 형식의 절대 크기가 표준에 지정 되어 있지 않습니다.
 
-### <a name="fundamental-types-of-the-c-language"></a>C++ 언어의 기본 형식
+### <a name="built-in-type-size-restrictions"></a>기본 제공 형식 크기 제한
 
 |범주|형식|내용|
 |--------------|----------|--------------|
@@ -82,9 +82,9 @@ C++의 기본 형식은 정수 계열, 부동 소수점 및 void의 세 가지 �
 
 **Microsoft 전용**
 
-다음 표에서는 Microsoft C++의 기본 형식에 필요한 스토리지 크기를 나열합니다.
+다음 표에서는 Microsoft C++의 기본 제공 형식에 필요한 저장소 크기를 나열 합니다. 특히 64 비트 운영 체제 에서도 **long** 은 4 바이트입니다.
 
-### <a name="sizes-of-fundamental-types"></a>기본 형식의 크기
+### <a name="sizes-of-built-in-types"></a>기본 제공 형식의 크기
 
 |형식|크기|
 |----------|----------|
@@ -95,10 +95,10 @@ C++의 기본 형식은 정수 계열, 부동 소수점 및 void의 세 가지 �
 
 **Microsoft 전용 종료**
 
-각 형식의 값 범위에 대한 요약은 [데이터 형식 범위](../cpp/data-type-ranges.md) 를 참조하세요.
+각 형식의 값 범위에 대한 요약은 [데이터 형식 범위](data-type-ranges.md) 를 참조하세요.
 
-형식 변환에 대한 자세한 내용은 [표준 변환](../cpp/standard-conversions.md)을 참조하세요.
+형식 변환에 대한 자세한 내용은 [표준 변환](standard-conversions.md)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 
-[데이터 형식 범위](../cpp/data-type-ranges.md)
+[데이터 형식 범위](data-type-ranges.md)

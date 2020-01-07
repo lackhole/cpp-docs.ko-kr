@@ -1,17 +1,17 @@
 ---
 title: .ENDPROLOG
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - .ENDPROLOG
 helpviewer_keywords:
 - .ENDPROLOG directive
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35
-ms.openlocfilehash: b2eb635264590d7323c67d69b56a539907fe2c25
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: cf2209bee6c916abe0925834db3ef0b2bf583367
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398461"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75313797"
 ---
 # <a name="endprolog"></a>.ENDPROLOG
 
@@ -23,10 +23,11 @@ ms.locfileid: "74398461"
 
 ## <a name="remarks"></a>주의
 
-[PROC](../../assembler/masm/proc.md) **프레임** 및 간의 지역 외부에서 프롤로그 선언을 사용 하면 오류가 발생 합니다 **. ENDPROLOG**.
+[PROC](proc.md) **프레임** 및 간의 지역 외부에서 프롤로그 선언을 사용 하면 오류가 발생 합니다 **. ENDPROLOG**.
 
-자세한 내용은 [x 64 용 MASM (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)을 참조 하세요.
+자세한 내용은 [x 64 용 MASM (ml64.exe)](masm-for-x64-ml64-exe.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)
