@@ -8,12 +8,12 @@ helpviewer_keywords:
 - parsing, command-line arguments
 - startup code, parsing command-line arguments
 ms.assetid: ffce8037-2811-45c4-8db4-1ed787859c80
-ms.openlocfilehash: da8a21ac9ff7ce4fd6bde4d2d1e50d8f30806b78
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: ace6d1b8295d0901ef22f3c354b32ad17e296e87
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151210"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299093"
 ---
 # <a name="parsing-c-command-line-arguments"></a>C 명령줄 인수 구문 분석
 
@@ -23,15 +23,15 @@ Microsoft C 시작 코드에서는 운영 체제 명령줄에 지정된 인수�
 
 - 인수를 공백이나 탭으로 구분합니다.
 
-- 큰따옴표로 묶은 문자열은 포함된 공백에 상관없이 하나의 인수로 해석됩니다. 따옴표로 묶은 문자열은 인수에 포함될 수 있습니다. 캐럿(**^**)은 이스케이프 문자나 구분 기호로 인식되지 않습니다.
+- 큰따옴표로 묶은 문자열은 포함된 공백에 상관없이 하나의 인수로 해석됩니다. 따옴표로 묶은 문자열은 인수에 포함될 수 있습니다. 캐럿( **^** )은 이스케이프 문자나 구분 기호로 인식되지 않습니다.
 
-- 백슬래시 다음의 큰따옴표(**\\"**)는 리터럴 큰따옴표(**"**)로 해석됩니다.
+- 백슬래시 다음의 큰따옴표( **\\"** )는 리터럴 큰따옴표( **"** )로 해석됩니다.
 
 - 백슬래시는 큰따옴표 바로 앞에 있지 않으면 리터럴로 해석됩니다.
 
-- 짝수 개의 백슬래시 다음에 큰따옴표가 오는 경우, 백슬래시 쌍(**\\\\**)마다 하나의 백슬래시(**\\**)가 `argv` 배열에 배치되고 큰따옴표(**"**)는 문자열 구분 기호로 해석됩니다.
+- 짝수 개의 백슬래시 다음에 큰따옴표가 오는 경우, 백슬래시 쌍( **\\\\** )마다 하나의 백슬래시( **\\** )가 `argv` 배열에 배치되고 큰따옴표( **"** )는 문자열 구분 기호로 해석됩니다.
 
-- 홀수 개의 백슬래시 다음에 큰따옴표가 오는 경우, 백슬래시 쌍(**\\\\**)마다 하나의 백슬래시(**\\**)가 `argv` 배열에 배치되고 큰따옴표는 남은 백슬래시에 의해 이스케이프 시퀀스로 해석되어 리터럴 큰따옴표(**"**)가 `argv`에 배치됩니다.
+- 홀수 개의 백슬래시 다음에 큰따옴표가 오는 경우, 백슬래시 쌍( **\\\\** )마다 하나의 백슬래시( **\\** )가 `argv` 배열에 배치되고 큰따옴표는 남은 백슬래시에 의해 이스케이프 시퀀스로 해석되어 리터럴 큰따옴표( **"** )가 `argv`에 배치됩니다.
 
 다음 목록은 몇 가지 명령줄 인수 예제의 경우 `argv`에 전달된 해석된 결과를 표시하여 위의 규칙을 보여 줍니다. 두 번째, 세 번째 및 네 번째 열에 나와 있는 출력은 다음 목록 뒤에 나오는 ARGS.C 프로그램에서 제공된 것입니다.
 
@@ -47,7 +47,7 @@ Microsoft C 시작 코드에서는 운영 체제 명령줄에 지정된 인수�
 
 ### <a name="code"></a>코드
 
-```
+```c
 // Parsing_C_Commandline_args.c
 // ARGS.C illustrates the following variables used for accessing
 // command-line arguments and environment variables:
@@ -97,6 +97,6 @@ Environment variables:
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [main 함수 및 프로그램 실행](../c-language/main-function-and-program-execution.md)

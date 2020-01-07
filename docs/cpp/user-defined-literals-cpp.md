@@ -1,29 +1,29 @@
 ---
 title: 사용자 정의 리터럴 (C++)
-ms.date: 11/04/2016
+ms.date: 12/10/2019
 ms.assetid: ff4a5bec-f795-4705-a2c0-53788fd57609
-ms.openlocfilehash: 1de94b43423bb5b420be29d3cace146e265a1459
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31b8f1dfb261839c04a6829132975ada9c09d619
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392117"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301303"
 ---
-# <a name="user-defined-literals--c"></a>사용자 정의 리터럴 (C++)
+# <a name="user-defined-literals"></a>사용자 정의 리터럴
 
-리터럴의 5가지 주요 범주는 정수, 문자, 부동 소수점, 문자열, 부울 및 포인터입니다.  C++ 11부터 이러한 범주에 따라 사용자 고유의 리터럴을 정의하여 일반적인 구문에 대한 구문 바로 가기를 제공하고 형식 안전성을 높일 수 있습니다. 예를 들어 Distance 클래스가 있다고 가정합니다. 킬로미터와 마일에 대해 리터럴을 하나씩 정의하고 간단히 auto d = 42.0_km or auto d = 42.0_mi를 작성하여 사용자가 측정 단위를 명시적으로 지정하도록 장려할 수 있습니다. 사용자 정의 리터럴에 성능상의 이점이나 단점은 없습니다. 주로 편의상 또는 컴파일 시간 형식 추론을 위해 사용됩니다. 표준 라이브러리의 시간 및 기간 작업에 대 한 사용자 정의 리터럴 및에 대 한 std: string, std:: complex, 단위는 \<chrono > 헤더:
+에 C++는 정수, 문자, 부동 소수점, 문자열, 부울 및 포인터의 5 가지 주요 범주가 있습니다.  C++ 11부터 이러한 범주에 따라 사용자 고유의 리터럴을 정의하여 일반적인 구문에 대한 구문 바로 가기를 제공하고 형식 안전성을 높일 수 있습니다. 예를 들어 Distance 클래스가 있다고 가정합니다. 킬로미터와 마일에 대해 리터럴을 하나씩 정의하고 간단히 auto d = 42.0_km or auto d = 42.0_mi를 작성하여 사용자가 측정 단위를 명시적으로 지정하도록 장려할 수 있습니다. 사용자 정의 리터럴에 성능상의 이점이나 단점은 없습니다. 주로 편의상 또는 컴파일 시간 형식 추론을 위해 사용됩니다. 표준 라이브러리에는 std: string에 대 한 사용자 정의 리터럴, std:: complex 및 \<chrono > 헤더의 시간 단위 및 기간 작업에 대 한 사용자 정의 리터럴이 있습니다.
 
 ```cpp
 Distance d = 36.0_mi + 42.0_km;         // Custom UDL (see below)
-    std::string str = "hello"s + "World"s;  // Standard Library <string> UDL
-    complex<double> num =
-        (2.0 + 3.01i) * (5.0 + 4.3i);       // Standard Library <complex> UDL
-    auto duration = 15ms + 42h;             // Standard Library <chrono> UDLs
+std::string str = "hello"s + "World"s;  // Standard Library <string> UDL
+complex<double> num =
+   (2.0 + 3.01i) * (5.0 + 4.3i);        // Standard Library <complex> UDL
+auto duration = 15ms + 42h;             // Standard Library <chrono> UDLs
 ```
 
 ## <a name="user-defined-literal-operator-signatures"></a>사용자 정의 리터럴 연산자 서명
 
-사용자 정의 리터럴을 정의 하 여 구현 하는 **연산자 ""** 다음 형식 중 하나를 사용 하 여 네임 스페이스 범위에서:
+다음 형식 중 하나를 사용 하 여 네임 스페이스 범위에서 **"" 연산자** 를 정의 하 여 사용자 정의 리터럴을 구현 합니다.
 
 ```cpp
 ReturnType operator "" _a(unsigned long long int);   // Literal operator for user-defined INTEGRAL literal
@@ -32,19 +32,19 @@ ReturnType operator "" _c(char);                     // Literal operator for use
 ReturnType operator "" _d(wchar_t);                  // Literal operator for user-defined CHARACTER literal
 ReturnType operator "" _e(char16_t);                 // Literal operator for user-defined CHARACTER literal
 ReturnType operator "" _f(char32_t);                 // Literal operator for user-defined CHARACTER literal
-ReturnType operator "" _g(const     char*, size_t);  // Literal operator for user-defined STRING literal
-ReturnType operator "" _h(const  wchar_t*, size_t);  // Literal operator for user-defined STRING literal
+ReturnType operator "" _g(const char*, size_t);      // Literal operator for user-defined STRING literal
+ReturnType operator "" _h(const wchar_t*, size_t);   // Literal operator for user-defined STRING literal
 ReturnType operator "" _i(const char16_t*, size_t);  // Literal operator for user-defined STRING literal
 ReturnType operator "" _g(const char32_t*, size_t);  // Literal operator for user-defined STRING literal
 ReturnType operator "" _r(const char*);              // Raw literal operator
 template<char...> ReturnType operator "" _t();       // Literal operator template
 ```
 
-앞의 예제에서 연산자 이름은 사용자가 제공하는 이름에 대한 자리 표시자이지만 선행 밑줄이 필요합니다. 표준 라이브러리만 밑줄 없이 리터럴을 정의할 수 있습니다. 반환 형식에서 변환 또는 리터럴이 수행하는 기타 작업을 사용자 지정할 수 있습니다. 또한 이러한 모든 연산자를 `constexpr`로 정의할 수 있습니다.
+앞의 예제에서 연산자 이름은 사용자가 제공하는 이름에 대한 자리 표시자이지만 선행 밑줄이 필요합니다. (표준 라이브러리 에서만 밑줄 없이 리터럴을 정의할 수 있습니다.) 반환 형식은 리터럴이 수행 하는 변환 또는 기타 작업을 사용자 지정 하는 위치입니다. 또한 이러한 모든 연산자를 `constexpr`로 정의할 수 있습니다.
 
 ## <a name="cooked-literals"></a>가공된 리터럴
 
-소스 코드에서 사용자 정의 여부에 관계없이 모든 리터럴은 본질적으로 `101`, `54.7`, `"hello"` 또는 `true`와 같은 영숫자 문자의 시퀀스입니다. 컴파일러는 정수, float, const char 시퀀스 해석\* 문자열 및 등입니다. 컴파일러가 리터럴 값으로 할당 한 모든 형식을 입력으로 허용 하는 사용자 정의 리터럴을 비공식적으로 라고 하며를 *가공 된 리터럴*합니다. `_r` 및 `_t`를 제외한 위의 모든 연산자는 가공된 리터럴입니다. 예를 들어 리터럴 `42.0_km`는 _b와 유사한 서명을 가진 _km이라는 연산자에 바인딩하고 리터럴 `42_km`은 _a와 유사한 서명을 가진 연산자에 바인딩합니다.
+소스 코드에서 사용자 정의 여부에 관계없이 모든 리터럴은 본질적으로 `101`, `54.7`, `"hello"` 또는 `true`와 같은 영숫자 문자의 시퀀스입니다. 컴파일러는 시퀀스를 정수, float, const char\* 문자열 등으로 해석 합니다. 리터럴 값에 할당 된 컴파일러가 어떤 형식을 입력으로 허용 하는 사용자 정의 리터럴은 비공식적으로 *가공 된 literal*이라고 합니다. `_r` 및 `_t`를 제외한 위의 모든 연산자는 가공된 리터럴입니다. 예를 들어 리터럴 `42.0_km`는 _b와 유사한 서명을 가진 _km이라는 연산자에 바인딩하고 리터럴 `42_km`은 _a와 유사한 서명을 가진 연산자에 바인딩합니다.
 
 다음 예제에서는 사용자 정의 리터럴을 통해 호출자에게 명시적으로 입력을 지정하도록 장려하는 방법을 보여 줍니다. `Distance`를 생성하려면 사용자가 적절한 사용자 정의 리터럴을 사용하여 킬로미터 또는 마일을 명시적으로 지정해야 합니다. 물론 다른 방법으로 동일한 결과를 얻을 수도 있지만 사용자 정의 리터럴이 대체 방법보다 더 간단합니다.
 
@@ -96,7 +96,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-리터럴 숫자는 10진수를 사용해야 합니다. 그렇지 않으면 숫자가 정수로 해석되며 형식이 연산자와 호환되지 않습니다. 부동 소수점 입력, 형식은 이어야 합니다. 참고 **long double**, 한 정수 계열 형식 이어야 합니다 **long long**합니다.
+리터럴 숫자는 10진수를 사용해야 합니다. 그렇지 않으면 숫자가 정수로 해석되며 형식이 연산자와 호환되지 않습니다. 또한 부동 소수점 입력의 경우 형식은 **long double**이어야 하며 정수 계열 형식의 경우 **long**long 이어야 합니다.
 
 ## <a name="raw-literals"></a>원시 리터럴
 
@@ -109,7 +109,7 @@ template<char...> ReturnType operator "" _t();       // Literal operator templat
 
 원시 리터럴을 사용하여 컴파일러가 수행하는 것과 다른 입력 시퀀스의 사용자 지정 해석을 제공할 수 있습니다. 예를 들어 `4.75987` 시퀀스를 IEEE 754 부동 소수점 형식 대신 사용자 지정 10진수 형식으로 변환하는 리터럴을 정의할 수 있습니다. 가공된 리터럴과 마찬가지로, 원시 리터럴을 사용하여 입력 시퀀스의 컴파일 타임 유효성 검사를 수행할 수도 있습니다.
 
-### <a name="example-limitations-of-raw-literals"></a>예제: 원시 리터럴의 제한
+### <a name="example-limitations-of-raw-literals"></a>예제: 원시 리터럴의 제한 사항
 
 원시 리터럴 연산자 및 리터럴 연산자 템플릿은 다음 예제와 같이 정수 계열 및 부동 소수점 사용자 정의 리터럴에 대해서만 작동합니다.
 

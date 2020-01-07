@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .FPO directive
 ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
-ms.openlocfilehash: 650c69be17c9271c343360edbb90f093841a1047
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: ec08be4941f81abed55420884b34dc817caf3f13
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398251"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317736"
 ---
 # <a name="fpo-32-bit-masm"></a>. FPO (32 비트 MASM)
 
@@ -41,6 +41,7 @@ EBP 레지스터가 할당 되었는지 여부를 나타냅니다. 0 또는 1입
 *Cbframe*\
 프레임 유형을 나타냅니다.  자세한 내용은 [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_data) 를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

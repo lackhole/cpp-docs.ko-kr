@@ -16,20 +16,20 @@ helpviewer_keywords:
 - _ptr64 keyword [C++]
 - __ptr32 keyword [C++]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
-ms.openlocfilehash: 0e979ed51f9c34700cef75113018c23e69a304f9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 957e0deba31552777ef5e738afef13d74a640a18
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244465"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301329"
 ---
-# <a name="ptr32-ptr64"></a>__ptr32, __ptr64
+# <a name="__ptr32-__ptr64"></a>__ptr32, __ptr64
 
 **Microsoft 전용**
 
 **__ptr32**는 32비트 시스템의 네이티브 포인터를 나타내는 반면 **__ptr64**는 64비트 시스템의 네이티브 포인터를 나타냅니다.
 
-다음 예제에서는 이러한 포인터 형식을 선언하는 방법을 보여 줍니다.
+다음 예제에서는 이러한 포인터 형식 각각을 선언하는 방법을 보여 줍니다.
 
 ```cpp
 int * __ptr32 p32;
@@ -43,7 +43,7 @@ int * __ptr64 p64;
 
 이전 버전과의 호환성을 위해 **_ptr32**와 **_ptr64**는 **__ptr32**와 **__ptr64**의 동의어입니다. 단, 컴파일러 옵션 [/Za \(언어 확장 사용안함)](../build/reference/za-ze-disable-language-extensions.md)를 사용하면 둘은 구분됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제에는 **__ptr32**와 **__ptr64**를 사용하여 포인터를 선언하고 할당하는 방법을 보여줍니다.
 
@@ -75,6 +75,6 @@ int main()
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[기본 형식(C++)](../cpp/fundamental-types-cpp.md)
+[기본 제공 형식](../cpp/fundamental-types-cpp.md)
