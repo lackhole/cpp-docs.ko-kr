@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3005
 ms.assetid: 30bad565-e79f-4c3f-82cb-a74bd0baab8f
-ms.openlocfilehash: 1303fd667c92af6fd8d0476da9468b4c7d090e6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b260879dfafbe40ab13d14f7208f1ffbc90b9826
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350743"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302161"
 ---
 # <a name="compiler-error-c3005"></a>컴파일러 오류 C3005
 
@@ -21,7 +21,7 @@ OpenMP 지시문 형식이 잘못되었습니다.
 
 다음 샘플에서는 C3005를 생성합니다.
 
-```
+```c
 // C3005.c
 // compile with: /openmp
 int main()
@@ -32,7 +32,7 @@ int main()
 
 C3005는 pragma와 같은 줄에 여는 중괄호를 배치하면 발생할 수 있습니다.
 
-```
+```c
 // C3005b.c
 // compile with: /openmp
 int main() {
