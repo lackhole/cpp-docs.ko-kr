@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2231
 ms.assetid: 677c5c66-d30f-4c3b-bbb9-760858d56477
-ms.openlocfilehash: 0d6519bd12cdb5ee5a86fa4a6915b51b0dc59fc5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 50230b3a9b609d281cddf996783287c270f844d5
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62383310"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301823"
 ---
 # <a name="compiler-error-c2231"></a>컴파일러 오류 C2231
 
-'.': 왼쪽 피연산자를 가리킵니다 ' 클래스 키 ', '->' 사용
+'. ': 왼쪽 피연산자가 ' 클래스-키 '를 가리킵니다. '-> '를 사용 하십시오.
 
-멤버 선택 연산자 (.)의 왼쪽 피연산자는 클래스, 구조체 또는 공용 구조체 대신 포인터입니다.
+멤버 선택 작업 (.)의 왼쪽에 있는 피연산자는 클래스, 구조체 또는 공용 구조체가 아니라 포인터입니다.
 
 다음 샘플에서는 C2231을 생성합니다.
 
-```
+```c
 // C2231.c
 struct S {
    int member;
