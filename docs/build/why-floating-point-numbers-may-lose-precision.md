@@ -6,30 +6,30 @@ helpviewer_keywords:
 - FLT_EPSILON constant
 - floating-point numbers, precision
 ms.assetid: 1acb1add-ac06-4134-a2fd-aff13d8c4c15
-ms.openlocfilehash: 387b2f4a7156e42e59bd70c5a6f747943fb54ca7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 373ce9fa2c2c96fac349940076873a4a637a9dbe
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313586"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298716"
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>부동 소수점 숫자의 정밀도가 떨어지는 이유
 
-부동 소수점 10 진수 값을 정확 하 게 이진 표현이 없는 일반적으로 합니다. 이 CPU 부동 소수점 데이터를 표시 하는 방법의 부작용으로 나타납니다. 이러한 이유로 일부 정밀도 손실 발생할 수 있습니다 및 부동 소수점 연산에 예기치 않은 결과가 발생할 수 있습니다.
+부동 소수점 10 진수 값은 일반적으로 정확한 이진 표시를 포함 하지 않습니다. 이는 CPU가 부동 소수점 데이터를 나타내는 방법의 부작용입니다. 이러한 이유로 전체 자릿수가 손실 될 수 있으며 일부 부동 소수점 연산으로 인해 예기치 않은 결과가 발생할 수 있습니다.
 
-이 동작은 다음 중 하나의 결과일 것입니다.
+이 동작은 다음 중 하나에 해당 하는 결과입니다.
 
-- 10 진수 숫자의 이진 표현을 정확한 아닐 수 있습니다.
+- 10 진수의 이진 표현은 정확 하지 않을 수 있습니다.
 
-- 있습니다 (예: float 및 double 혼합) 사용 되는 번호 간의 형식이 일치 하지 않습니다.
+- 사용 된 숫자 (예: float와 double 혼합)의 형식이 일치 하지 않습니다.
 
-문제를 해결 하려면 대부분의 프로그래머는 값이 크면 필요 하거나 보다 적은 있는지 확인 하거나 가져오기 및 전체 자릿수를 유지 관리 Binary Coded Decimal (BCD) 라이브러리를 사용 합니다.
+대부분의 프로그래머는이 동작을 해결 하기 위해 필요한 값 보다 크거나 작은 값을 확인 하거나 전체 자릿수를 유지 하는 BCD (이진 코딩 된 Decimal) 라이브러리를 가져오고 사용 합니다.
 
-부동 소수점 값의 이진 표현을 전체 자릿수와 부동 소수점 계산의 정확도 영향을 줍니다. Microsoft Visual C++ 사용 하 여 [IEEE 부동 소수점 형식](ieee-floating-point-representation.md)합니다.
+부동 소수점 값의 이진 표현은 부동 소수점 계산의 전체 자릿수 및 정확도에 영향을 줍니다. Microsoft 시각적 C++ 개체는 [IEEE 부동 소수점 형식을](ieee-floating-point-representation.md)사용 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
-```
+```c
 // Floating-point_number_precision.c
 // Compile options needed: none. Value of c is printed with a decimal
 // point precision of 10 and 6 (printf rounded value by default) to
@@ -60,8 +60,8 @@ They are not equal! The value of c is  2.4679999352 or 2.468000
 
 ## <a name="comments"></a>설명
 
-EPSILON, FLT_EPSILON 1.192092896e로 float에 대 한 정의 된 상수를 사용할 수 있습니다-07F, 또는 2.2204460492503131e로 double에 대 한 정의 되어 있는 DBL_EPSILON-016 합니다. 이러한 상수에 대 한 float.h를 포함 해야 합니다. 이러한 상수 정의 된 가장 작은 양의으로 x 번호와 같이 x + 1.0과 같지 않은 1.0입니다. 아주 작은 숫자 이기 때문에 매우 큰 숫자를 포함 하는 계산에 대 한 사용자 정의 허용 오차를 사용 해야 합니다.
+엡실론의 경우 float에 대해 1.192092896로 정의 된 상수 FLT_EPSILON를 사용할 수 있습니다. 2.2204460492503131 e-07F의 경우 016로 정의 된 DBL_EPSILON입니다. 이러한 상수에는 float를 포함 해야 합니다. 이러한 상수는 x + 1.0이 1.0과 같지 않은 가장 작은 양수 x로 정의 됩니다. 이 값은 매우 작으므로 매우 큰 숫자를 포함 하는 계산에 사용자 정의 허용치를 사용 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [코드 최적화](optimizing-your-code.md)

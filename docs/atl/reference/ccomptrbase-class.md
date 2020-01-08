@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-ms.openlocfilehash: 689221ec77b21fc8bfaed2e929aee5402a4bc676
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 740920225fc513a869b4a92344f87004831e4768
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69496983"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75298615"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase 클래스
 
@@ -40,35 +40,35 @@ class CComPtrBase
 *T*<br/>
 스마트 포인터에서 참조할 개체 형식입니다.
 
-## <a name="members"></a>멤버
+## <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Public 생성자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CComPtrBase::~CComPtrBase](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
-|[CComPtrBase::Advise](#advise)|이 메서드를 호출 하 여 `CComPtrBase`의 연결 지점과 클라이언트의 싱크 간에 연결을 만듭니다.|
+|[CComPtrBase::Advise](#advise)|`CComPtrBase`의 연결 지점과 클라이언트의 싱크 간에 연결을 만들려면이 메서드를 호출 합니다.|
 |[CComPtrBase::Attach](#attach)|기존 포인터의 소유권을 사용 하려면이 메서드를 호출 합니다.|
 |[CComPtrBase::CoCreateInstance](#cocreateinstance)|지정 된 클래스 ID 또는 프로그램 ID와 연결 된 클래스의 개체를 만들려면이 메서드를 호출 합니다.|
 |[CComPtrBase::CopyTo](#copyto)|`CComPtrBase` 포인터를 다른 포인터 변수에 복사 하려면이 메서드를 호출 합니다.|
 |[CComPtrBase::Detach](#detach)|포인터의 소유권을 해제 하려면이 메서드를 호출 합니다.|
-|[CComPtrBase::IsEqualObject](#isequalobject)|지정 `IUnknown` 된이 `CComPtrBase` 개체와 연결 된 동일한 개체를 가리키는지 확인 하려면이 메서드를 호출 합니다.|
+|[CComPtrBase::IsEqualObject](#isequalobject)|지정 된 `IUnknown` `CComPtrBase` 개체와 연결 된 동일한 개체를 가리키는지 확인 하려면이 메서드를 호출 합니다.|
 |[CComPtrBase::QueryInterface](#queryinterface)|지정 된 인터페이스에 대 한 포인터를 반환 하려면이 메서드를 호출 합니다.|
 |[CComPtrBase::Release](#release)|인터페이스를 해제 하려면이 메서드를 호출 합니다.|
-|[CComPtrBase::SetSite](#setsite)|`CComPtrBase` 개체의 사이트를 부모 개체 `IUnknown` 의로 설정 하려면이 메서드를 호출 합니다.|
+|[CComPtrBase::SetSite](#setsite)|`CComPtrBase` 개체의 사이트를 부모 개체의 `IUnknown` 설정 하려면이 메서드를 호출 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CComPtrBase:: operator T *](#operator_t_star)|캐스트 연산자입니다.|
 |[CComPtrBase:: operator!](#operator_not)|NOT 연산자입니다.|
-|[CComPtrBase:: operator &](#operator_amp)|& 연산자입니다.|
+|[CComPtrBase:: operator &](#operator_amp)|& 연산자|
 |[CComPtrBase:: operator *](#operator_star)|\* 연산자|
 |[CComPtrBase:: operator <](#ccomptrbase__operator lt)|보다 작음 연산자입니다.|
 |[CComPtrBase:: operator = =](#operator_eq_eq)|같음 연산자입니다.|
@@ -76,13 +76,13 @@ class CComPtrBase
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
-|이름|Description|
+|이름|설명|
 |----------|-----------------|
 |[CComPtrBase::p](#p)|포인터 데이터 멤버 변수입니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-이 클래스는 [CComQIPtr](../../atl/reference/ccomqiptr-class.md) 및 [CCOMPTR](../../atl/reference/ccomptr-class.md)와 같은 COM 메모리 관리 루틴을 사용 하는 다른 스마트 포인터의 기반을 제공 합니다. 파생 클래스는 자체 생성자와 연산자를 추가 하지만에서 `CComPtrBase`제공 하는 메서드를 사용 합니다.
+이 클래스는 [CComQIPtr](../../atl/reference/ccomqiptr-class.md) 및 [CCOMPTR](../../atl/reference/ccomptr-class.md)와 같은 COM 메모리 관리 루틴을 사용 하는 다른 스마트 포인터의 기반을 제공 합니다. 파생 클래스는 자체 생성자와 연산자를 추가 하지만 `CComPtrBase`에서 제공 하는 메서드를 사용 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -90,7 +90,7 @@ class CComPtrBase
 
 ##  <a name="advise"></a>  CComPtrBase::Advise
 
-이 메서드를 호출 하 여 `CComPtrBase`의 연결 지점과 클라이언트의 싱크 간에 연결을 만듭니다.
+`CComPtrBase`의 연결 지점과 클라이언트의 싱크 간에 연결을 만들려면이 메서드를 호출 합니다.
 
 ```
 HRESULT Advise(
@@ -112,9 +112,9 @@ HRESULT Advise(
 
 ### <a name="return-value"></a>반환 값
 
-는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
+성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 자세한 [내용은이 항목을](connection-point-global-functions.md#atladvise) 참조 하십시오.
 
@@ -129,11 +129,11 @@ void Attach(T* p2) throw();
 ### <a name="parameters"></a>매개 변수
 
 *p2*<br/>
-개체 `CComPtrBase` 는이 포인터의 소유권을 갖습니다.
+`CComPtrBase` 개체는이 포인터의 소유권을 갖습니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-`Attach`기존 [Ccomptrbase::p](#p) 멤버 변수에서 [Ccomptrbase:: Release](#release) 를 호출 하 고, *p2* 를 `CComPtrBase::p`에 할당 합니다. 개체는 `CComPtrBase` 포인터에 대 한 소유권을 가질 때 포인터에 대해 `Release` 자동으로를 호출 하 여 개체의 참조 횟수가 0이 되 면 포인터와 할당 된 모든 데이터를 삭제 합니다.
+`Attach` 기존 [Ccomptrbase::p](#p) 멤버 변수에서 [Ccomptrbase:: Release](#release) 를 호출 하 고 `CComPtrBase::p`에 *p2* 를 할당 합니다. `CComPtrBase` 개체는 포인터의 소유권을 가질 때 포인터에 대 한 `Release`를 자동으로 호출 하 여 개체의 참조 횟수가 0이 되 면 포인터와 할당 된 모든 데이터를 삭제 합니다.
 
 ##  <a name="dtor"></a>  CComPtrBase::~CComPtrBase
 
@@ -143,9 +143,9 @@ void Attach(T* p2) throw();
 ~CComPtrBase() throw();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-가 `CComPtrBase`가리키는 인터페이스를 해제 합니다.
+`CComPtrBase`에서 가리키는 인터페이스를 해제 합니다.
 
 ##  <a name="cocreateinstance"></a>  CComPtrBase::CoCreateInstance
 
@@ -179,9 +179,9 @@ NULL 인 경우 개체가 집계의 일부로 생성 되지 않음을 나타냅�
 
 ### <a name="return-value"></a>반환 값
 
-Success의 경우 S_OK를 반환 하 고, 실패 하면 REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING 또는 E_NOINTERFACE를 반환 합니다. 이러한 오류에 대 한 설명은 [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) 및 [Clsidfromprogid](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) 를 참조 하세요.
+성공 시 S_OK를 반환 하거나, 오류 발생 시 REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING 또는 E_NOINTERFACE를 반환 합니다. 이러한 오류에 대 한 설명은 [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) 및 [Clsidfromprogid](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) 를 참조 하세요.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 메서드의 첫 번째 폼이 호출 되 면 [Clsidfromprogid](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) 가 CLSID를 복구 하는 데 사용 됩니다. 그러면 두 폼이 모두 [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)를 호출 합니다.
 
@@ -198,15 +198,15 @@ HRESULT CopyTo(T** ppT) throw();
 ### <a name="parameters"></a>매개 변수
 
 *ppT*<br/>
-포인터를 `CComPtrBase` 수신 하는 변수의 주소입니다.
+`CComPtrBase` 포인터를 수신 하는 변수의 주소입니다.
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 S_OK를 반환 하 고 실패 하면 E_POINTER를 반환 합니다.
+성공 시 S_OK을 반환 하 고 실패 시 E_POINTER 반환 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-`CComPtrBase` *PpT*에 포인터를 복사 합니다. [Ccomptrbase::p](#p) 멤버 변수의 참조 횟수가 증가 합니다.
+*PpT*에 `CComPtrBase` 포인터를 복사 합니다. [Ccomptrbase::p](#p) 멤버 변수의 참조 횟수가 증가 합니다.
 
 *PpT* 가 NULL 인 경우 오류 HRESULT가 반환 됩니다. 디버그 빌드에서는 *ppT* 가 NULL과 같은 경우 어설션 오류가 발생 합니다.
 
@@ -222,13 +222,13 @@ T* Detach() throw();
 
 포인터의 복사본을 반환 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 포인터의 소유권을 해제 하 고 [Ccomptrbase::p](#p) 데이터 멤버 변수를 NULL로 설정 하 고 포인터의 복사본을 반환 합니다.
 
 ##  <a name="isequalobject"></a>  CComPtrBase::IsEqualObject
 
-지정 `IUnknown` 된이 `CComPtrBase` 개체와 연결 된 동일한 개체를 가리키는지 확인 하려면이 메서드를 호출 합니다.
+지정 된 `IUnknown` `CComPtrBase` 개체와 연결 된 동일한 개체를 가리키는지 확인 하려면이 메서드를 호출 합니다.
 
 ```
 bool IsEqualObject(IUnknown* pOther) throw();
@@ -255,9 +255,9 @@ bool operator!() const throw();
 
 `CComHeapPtr` 포인터가 NULL과 같으면 true, 그렇지 않으면 false를 반환 합니다.
 
-##  <a name="operator_amp"></a>CComPtrBase:: operator&amp;
+##  <a name="operator_amp"></a>CComPtrBase:: operator &amp;
 
-& 연산자입니다.
+& 연산자
 
 ```
 T** operator&() throw();
@@ -267,7 +267,7 @@ T** operator&() throw();
 
 `CComPtrBase` 개체가 가리키는 개체의 주소를 반환 합니다.
 
-##  <a name="operator_star"></a>CComPtrBase:: operator\*
+##  <a name="operator_star"></a>CComPtrBase:: operator \*
 
 \* 연산자
 
@@ -296,7 +296,7 @@ bool operator== (T* pT) const throw();
 
 ### <a name="return-value"></a>반환 값
 
-`CComPtrBase` 와 *pT* 가 같은 개체를 가리키면 true, 그렇지 않으면 false를 반환 합니다.
+`CComPtrBase`와 *pT* 가 같은 개체를 가리키면 true, 그렇지 않으면 false를 반환 합니다.
 
 ##  <a name="operator_ptr"></a>  CComPtrBase::operator -&gt;
 
@@ -310,11 +310,11 @@ _NoAddRefReleaseOnCComPtr<T>* operator->() const throw();
 
 [Ccomptrbase::p](#p) 데이터 멤버 변수의 값을 반환 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 연산자를 사용 하 여 `CComPtrBase` 개체가 가리키는 클래스에서 메서드를 호출 합니다. 디버그 빌드에서는 `CComPtrBase` 데이터 멤버가 NULL을 가리키는 경우 어설션 오류가 발생 합니다.
+이 연산자를 사용 하 여 `CComPtrBase` 개체에서 가리키는 클래스의 메서드를 호출 합니다. 디버그 빌드에서는 `CComPtrBase` 데이터 멤버가 NULL을 가리키는 경우 어설션 오류가 발생 합니다.
 
-##  <a name="operator_lt"></a>CComPtrBase:: operator&lt;
+##  <a name="operator_lt"></a>CComPtrBase:: operator &lt;
 
 보다 작음 연산자입니다.
 
@@ -339,7 +339,7 @@ bool operator<(T* pT) const throw();
 operator T*() const throw();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 클래스 템플릿에 정의 된 개체 데이터 형식에 대 한 포인터를 반환 합니다.
 
@@ -351,7 +351,7 @@ operator T*() const throw();
 T* p;
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 멤버 변수는 포인터 정보를 포함 합니다.
 
@@ -374,11 +374,11 @@ template <class Q> HRESULT QueryInterface(Q
 
 ### <a name="return-value"></a>반환 값
 
-성공 시 S_OK를 반환 하 고, 실패 시 E_NOINTERFACE를 반환 합니다.
+성공 시 S_OK 또는 실패 시 E_NOINTERFACE을 반환 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
-이 메서드는 [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q_))를 호출 합니다.
+이 메서드는 [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))를 호출 합니다.
 
 디버그 빌드에서는 *pp* 가 NULL과 같지 않을 경우 어설션 오류가 발생 합니다.
 
@@ -390,13 +390,13 @@ template <class Q> HRESULT QueryInterface(Q
 void Release() throw();
 ```
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 인터페이스가 해제 되 고 [Ccomptrbase::p](#p) 가 NULL로 설정 됩니다.
 
 ##  <a name="setsite"></a>  CComPtrBase::SetSite
 
-`CComPtrBase` 개체의 사이트를 부모 개체 `IUnknown` 의로 설정 하려면이 메서드를 호출 합니다.
+`CComPtrBase` 개체의 사이트를 부모 개체의 `IUnknown` 설정 하려면이 메서드를 호출 합니다.
 
 ```
 HRESULT SetSite(IUnknown* punkParent) throw();
@@ -409,12 +409,12 @@ HRESULT SetSite(IUnknown* punkParent) throw();
 
 ### <a name="return-value"></a>반환 값
 
-는 성공 시 S_OK를 반환 하 고 실패 하면 오류 HRESULT를 반환 합니다.
+성공 시 S_OK 또는 실패 시 오류 HRESULT를 반환 합니다.
 
-### <a name="remarks"></a>설명
+### <a name="remarks"></a>주의
 
 이 메서드는 [Atlsetchildsite](composite-control-global-functions.md#atlsetchildsite)를 호출 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [클래스 개요](../../atl/atl-class-overview.md)

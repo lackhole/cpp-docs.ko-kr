@@ -1,37 +1,62 @@
 ---
 title: 선언 및 정의 (C++)
-ms.date: 11/04/2016
+ms.date: 12/12/2019
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
-ms.openlocfilehash: 1e76f636a6efd652ac629ad2f97f0b09f6171f9c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d52294b635e05f42a4c48620214a90cad609f575
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399072"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301550"
 ---
 # <a name="declarations-and-definitions-c"></a>선언 및 정의 (C++)
 
-선언은 프로그램에서 하는 이름, 변수, 네임 스페이스, 함수 및 클래스의 이름 예입니다. 또한, 선언은 형식 정보뿐만 아니라 선언되는 개체의 다른 특성도 지정합니다. 이름은 먼저 선언해야 사용할 수 있습니다. C++에서는 이름이 선언되는 지점에 따라 이름이 컴파일러에 표시되는지 여부가 달라집니다. 함수 또는 컴파일 단위의; 나중에 선언 된 클래스를 참조할 수 없습니다. 사용할 수 있습니다 *정방향 선언* 이 제한을 해결 하려면.
+프로그램 C++ 은 변수, 함수, 형식 및 네임 스페이스와 같은 다양 한 엔터티로 구성 됩니다. 이러한 각 엔터티는 먼저 *선언* 되어야 사용할 수 있습니다. 선언은 해당 형식 및 기타 특성에 대 한 정보와 함께 엔터티의 고유 이름을 지정 합니다. 이름이 C++ 선언 되는 지점에서이 요소는 컴파일러에 표시 되는 지점입니다. 컴파일 단위에서 나중에 선언 된 함수 또는 클래스는 참조할 수 없습니다. 변수는 사용 되는 지점 보다 최대한 가깝게 선언 해야 합니다.
 
-정의는 이름을 설명 하는 코드 또는 데이터를 지정 합니다. 선언할 항목을 위한 스토리지 공간을 할당하려면 컴파일러에 정의가 있어야 합니다.
+다음 예제에서는 몇 가지 선언을 보여 줍니다.
 
-## <a name="declarations"></a>선언
+```cpp
+#include <string>
 
-선언은 프로그램에 하나 이상의 이름을 제공합니다. 선언은 프로그램에서 두 번 이상 발생할 수 있습니다. 따라서 클래스, 구조체, 열거 형식 및 다른 사용자 정의 형식이 각 컴파일 단위에 대해 선언될 수 있습니다. 이 여러 선언에 대한 제약 조건은 모든 선언이 동일해야 한다는 것입니다. 다음 경우를 제외하고 선언은 정의 역할도 합니다.
+void f(); // forward declaration
 
-1. 선언이 함수 프로토타입(함수 본문이 없는 함수 선언)입니다.
+int main()
+{
+    const double pi = 3.14; //OK
+    int i = f(2); //OK. f is forward-declared
+    std::string str; // OK std::string is declared in <string> header
+    C obj; // error! C not yet declared.
+    j = 0; // error! No type specified.
+    auto k = 0; // OK. type inferred as int by compiler.
+}
 
-1. 포함 된 **extern** 지정자 하지만 이니셜라이저 (개체 및 변수) 또는 함수 본문 (함수). 이것은 정의가 반드시 현재 변환 단위에 있지 않으며 이름 외부 링크를 제공해 줌을 나타냅니다.
+int f(int i)
+{
+    return i + 42;
+}
 
-1. 선언이 클래스 선언 내의 정적 데이터 멤버입니다.
+namespace N {
+   class C{/*...*/};
+}
+```
 
-   정적 클래스 데이터 멤버는 클래스의 모든 개체가 공유하는 개별 변수이므로 클래스 선언 외부에서 정의 및 초기화되어야 합니다. (클래스 및 클래스 멤버에 대 한 자세한 내용은 참조 하세요. [클래스](../cpp/classes-and-structs-cpp.md).)
+줄 5에서는 `main` 함수가 선언 됩니다. 줄 7에서는 `pi` 이라는 **const** 변수를 선언 하 고 *초기화*합니다. 줄 8에서 정수 `i`는 함수 `f`생성 된 값을 사용 하 여 선언 되 고 초기화 됩니다. 이름 `f`은 줄 3의 *전방 선언* 으로 인해 컴파일러에 표시 됩니다. 
 
-1. 선언이 `class T;`과 같은 정의가 뒤따르지 않는 클래스 이름 선언입니다.
+9 번 줄에서 `C` 형식의 `obj` 라는 변수가 선언 되었습니다. 그러나이 선언에서는 `C`이 프로그램에서 나중에 선언 되지 않고 앞으로 선언 되지 않기 때문에 오류가 발생 합니다. 오류를 해결 하려면 `main` 하기 전에 `C`의 전체 *정의* 를 이동 하거나 앞으로 선언을 추가 합니다. 이 동작은 소스 파일의 선언 지점 앞에서 C#함수 및 클래스를 사용할 수 있는 등의 다른 언어와는 다릅니다. 
 
-1. **typedef** 문입니다.
+줄 10에서는 `std::string` 형식의 `str` 라는 변수가 선언 됩니다. 이름 `std::string`은 줄 1의 소스 파일에 병합 되는 `string` [헤더 파일](header-files-cpp.md) 에 도입 되기 때문에 표시 됩니다. `std`은 `string` 클래스가 선언 되는 네임 스페이스입니다.
 
-다음은 정의이기도 한 선언의 예제입니다.
+줄 11에서는 `j` 이름이 선언 되지 않았기 때문에 오류가 발생 합니다. JavaScript와 같은 다른 언어와 달리 선언은 형식을 제공 해야 합니다. 12 번 줄에는 `auto` 키워드가 사용 됩니다 .이 키워드는 초기화 된 값을 기준으로 `k` 형식을 유추 하도록 컴파일러에 지시 합니다. 이 경우 컴파일러는 형식에 대 한 `int`를 선택 합니다.  
+
+## <a name="declaration-scope"></a>선언 범위
+
+선언에 의해 도입 된 이름은 선언이 발생 하는 *범위* 내에서 유효 합니다. 이전 예제에서 `main` 함수 내에 선언 된 변수는 *지역 변수*입니다. *전역 범위*에서 기본이 아닌 `i` 이라는 다른 변수를 선언할 수 있으며 완전히 분리 된 엔터티입니다. 그러나 이러한 이름의 중복은 프로그래머의 혼동 및 오류를 일으킬 수 있으므로 피해 야 합니다. 21 줄에서 `C` 클래스는 네임 스페이스 `N`의 범위에서 선언 됩니다. 네임 스페이스를 사용 하면 *이름 충돌*을 방지할 수 있습니다. 대부분 C++ 의 표준 라이브러리 이름은 `std` 네임 스페이스 내에서 선언 됩니다. 범위 규칙이 선언과 상호 작용 하는 방법에 대 한 자세한 내용은 [범위](../cpp/scope-visual-cpp.md)를 참조 하세요.
+
+## <a name="definitions"></a>정의
+
+함수, 클래스, 열거형 및 상수 변수를 비롯 한 일부 엔터티는 선언 되는 것 외에도 정의 해야 합니다. *정의* 는 엔터티가 프로그램에서 나중에 사용 될 때 기계어 코드를 생성 하는 데 필요한 모든 정보를 컴파일러에 제공 합니다. 앞의 예제에서 줄 3에는 함수 `f`에 대 한 선언이 포함 되어 있지만 함수에 대 한 *정의* 는 15 ~ 18 줄로 제공 됩니다. 21 번째 줄에서는 클래스가 정의 된 경우를 제외 하 고는 클래스 `C` 선언 되 고 정의 됩니다. 상수 변수는 선언 된 문과 동일한 문에서 값을 할당 한 경우에 정의 되어야 합니다. 컴파일러에서 할당할 공간의 크기를 알고 있으므로 `int`와 같은 기본 제공 형식의 선언이 자동으로 정의 됩니다.
+
+다음 예제에서는 정의 인 선언도 보여 줍니다.
 
 ```cpp
 // Declare and define int variables i and j.
@@ -45,48 +70,43 @@ enum suits { Spades = 1, Clubs, Hearts, Diamonds };
 class CheckBox : public Control
 {
 public:
-            Boolean IsChecked();
+    Boolean IsChecked();
     virtual int     ChangeState() = 0;
 };
 ```
 
-정의가 아닌 일부 선언은 다음과 같습니다.
+정의가 아닌 몇 가지 선언은 다음과 같습니다.
 
 ```cpp
 extern int i;
 char *strchr( const char *Str, const char Target );
 ```
 
-선언자 바로 뒤, 이니셜라이저 앞(선택 사항)에서 이름이 선언된다고 간주합니다. 자세한 내용은 [선언 지점](../cpp/point-of-declaration-in-cpp.md)합니다.
+## <a name="typedefs-and-using-statements"></a>Typedef 및 using 문
 
-선언에서 발생 한 *범위*합니다. 범위는 선언된 이름의 표시 및 정의된 개체(있는 경우)의 기간을 제어합니다. 범위 규칙이 선언 상호 작용 하는 방법에 대 한 자세한 내용은 참조 하세요. [범위](../cpp/scope-visual-cpp.md)합니다.
+이전 버전의 C++에서는 [typedef](aliases-and-typedefs-cpp.md) 키워드를 사용 하 여 다른 이름의 *별칭인* 새 이름을 선언 합니다. 예를 들어 `std::string` 형식은 `std::basic_string<char>`의 또 다른 이름입니다. 프로그래머가 실제 이름이 아니라 typedef 이름을 사용 하는 이유는 명확 해야 합니다. 현대 C++에서 [using](aliases-and-typedefs-cpp.md) 키워드는 typedef 보다 선호 되지만 개념은 동일 합니다. 이미 선언 되 고 정의 된 엔터티에 대해 새 이름이 선언 됩니다.
 
-개체 선언 이기도 정의가 포함 되어 있지 않으면 합니다 **extern** 에 설명 된 저장소 클래스 지정자 [저장소 클래스](storage-classes-cpp.md)합니다. 함수 선언도 프로토타입이 아니라면 정의입니다. 프로토타입은 정의 함수 본문이 없는 함수 헤더입니다. 개체 정의를 통해 해당 개체에 대해 스토리지가 할당되고 적절한 초기화가 수행됩니다.
+## <a name="static-class-members"></a>정적 클래스 멤버
 
-## <a name="definitions"></a>정의
+정적 클래스 데이터 멤버는 클래스의 모든 개체에서 공유 하는 불연속 변수 이므로 클래스 정의 외부에서 정의 되 고 초기화 되어야 합니다. 자세한 내용은 [클래스](../cpp/classes-and-structs-cpp.md)를 참조 하세요.
 
-정의는 개체 또는 변수, 함수, 클래스 또는 열거자의 고유 사양입니다. 정의가 고유해야 하기 때문에 프로그램에는 지정된 프로그램 요소에 대한 정의가 하나만 포함될 수 있습니다. 선언과 정의 간에 다 대 일 대응이 있을 수 있습니다. 프로그램 요소가 선언되지만 정의되지는 않는 두 가지 경우가 있습니다.
+## <a name="extern-declarations"></a>extern 선언
 
-1. 함수가 선언되지만 함수 호출 또는 함수의 주소를 사용하는 식으로 참조되지 않습니다.
+프로그램 C++ 에는 둘 이상의 [컴파일 단위가](header-files-cpp.md)포함 될 수 있습니다. 별도의 컴파일 단위에 정의 된 엔터티를 선언 하려면 [extern](extern-cpp.md) 키워드를 사용 합니다. 선언에 있는 정보는 컴파일러에 충분 하지만 링크 단계에서 엔터티의 정의를 찾을 수 없는 경우 링커에서 오류가 발생 합니다.
 
-1. 클래스가 정의가 알려질 필요가 없는 방식으로만 사용됩니다. 그러나 클래스는 선언되어야 합니다. 다음 코드에서는 이러한 경우를 보여 줍니다.
+## <a name="in-this-section"></a>단원 내용
 
-    ```cpp
-    // definitions.cpp
-    class WindowCounter;   // Forward declaration; no definition
+[스토리지 클래스](storage-classes-cpp.md)<br/>
+[const](const-cpp.md)<br/>
+[constexpr](constexpr-cpp.md)<br/>
+[extern](extern-cpp.md)<br/>
+[이니셜라이저](initializers.md)<br/>
+[별칭 및 typedef](aliases-and-typedefs-cpp.md)<br/>
+[선언 사용](using-declaration.md)<br/>
+[volatile](volatile-cpp.md)<br/>
+[decltype](decltype-cpp.md)<br/>
+[의 특성C++](attributes.md)<br/>
 
-    class Window
-    {
-       // Definition of WindowCounter not required
-       static WindowCounter windowCounter;
-    };
-
-    int main()
-    {
-    }
-    ```
-
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [기본 개념](../cpp/basic-concepts-cpp.md)<br/>
-[선언 지점](../cpp/point-of-declaration-in-cpp.md)
