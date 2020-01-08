@@ -1,17 +1,17 @@
 ---
 title: INSTR
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - InStr
 helpviewer_keywords:
 - INSTR directive
 ms.assetid: fc37f6a2-3c95-47b2-b6bb-1066edd25994
-ms.openlocfilehash: 23641e4f7a8bec9eddcfa0e26b8acfe50c760a1a
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: b4af7af52a80b06b341d883d01c7fb8e03eccb8a
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397321"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75313030"
 ---
 # <a name="instr"></a>INSTR
 
@@ -25,6 +25,7 @@ ms.locfileid: "74397321"
 
 시작 *위치* 는 선택 사항입니다. 각 텍스트 항목은 리터럴 문자열, **%** 앞에 오는 상수 또는 매크로 함수에서 반환 된 문자열이 될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

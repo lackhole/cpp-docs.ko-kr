@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - PROTO directive
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
-ms.openlocfilehash: 9df66b6c89498a2cc1a1864a668b7addfbaf593c
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 3963fa29050653d1706222d33734c4b5f2a17919
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74987862"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318646"
 ---
 # <a name="proto"></a>PROTO
 
@@ -44,7 +44,7 @@ ms.locfileid: "74987862"
 
 *매개 변수* 및 *태그* 매개 변수는 전달 된 각 인수에 대해 한 번씩 여러 번 나타날 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 샘플에서는 **NEAR** 호출을 사용 하 여 프로시저 호출에 대 한 16 비트 모델 기본값을 재정의 하 고 스택 매개 변수 및 반환 값에 대해 **C** 호출 규칙을 사용 하는 `addup3` 라는 함수의 **프로토콜** 선언을 보여 줍니다. **단어** 와 **VARARG**라는 두 개의 인수를 사용 합니다.
 
@@ -55,4 +55,5 @@ addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
 ## <a name="see-also"></a>참조
 
 [지시문 참조](directives-reference.md)\
-[. 모델 참조](dot-model.md)
+[. 모델 참조](dot-model.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

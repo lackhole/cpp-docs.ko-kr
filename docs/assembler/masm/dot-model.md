@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .MODEL directive
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
-ms.openlocfilehash: bfc114a6e71c0eb0ae70005c2657871b6c9e9692
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 92f14a352e5c177d767232eed36a7e705fd155ce
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398106"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317632"
 ---
 # <a name="model-32-bit-masm"></a>. 모델 (32 비트 MASM)
 
@@ -38,14 +38,14 @@ ms.locfileid: "74398106"
 
 ## <a name="remarks"></a>주의
 
-**. 모델** 은 [x 64 용 MASM (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)에서 사용 되지 않습니다.
+**. 모델** 은 [x 64 용 MASM (ml64.exe)](masm-for-x64-ml64-exe.md)에서 사용 되지 않습니다.
 
 다음 표에는 16비트 및 32비트 플랫폼을 대상으로 할 때 각 매개 변수에 대해 가능한 값이 나열되어 있습니다.
 
 |매개 변수|32비트 값|16비트 값(이전 16비트 개발에 대한 지원)|
 |---------------|--------------------|----------------------------------------------------------------|
 |*메모리 모델*|**일반**|매우 **작음**, **작음**, **압축**, **보통**, **크게**, **매우 큼**, **플랫**|
-|*언어 유형*|**C**, **STDCALL**|**C**, **BASIC**, **포트란**, **파스칼**, **SYSCALL**, **STDCALL**|
+|*언어 유형*|**C**, **STDCALL**|**C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**|
 |*stack 옵션*|사용되지 않음|**NEARSTACK**, **FARSTACK**|
 
 ## <a name="code"></a>코드
@@ -54,7 +54,7 @@ MASM 관련 샘플의 경우 [Visual C++ 샘플 및 Visual Studio 2010용 관련
 
 다음 예제에서는 `.MODEL` 지시문을 사용하는 방법을 보여줍니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```asm
 ; file simple.asm
@@ -86,6 +86,7 @@ fxn ENDP
 end
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)
