@@ -1,17 +1,15 @@
 ---
 title: vcpkg-- Windows, Linux 및 MacOS용 C++ 패키지 관리자
 description: vcpkg는 Windows에서 오픈 소스 C++ 라이브러리 획득 및 설치를 크게 간소화하는 명령줄 패키지 관리자입니다.
-author: mikeblome
-ms.author: mblome
 ms.date: 05/16/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: ce28d42fd3452a5e8195f3ced6bbbb06430b1d14
-ms.sourcegitcommit: 27d9db019f6d84c94de9e6aff0170d918cee6738
+ms.openlocfilehash: a116c33d7bb0b1d1396e68681d34995168a0bdc5
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75676953"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791625"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
