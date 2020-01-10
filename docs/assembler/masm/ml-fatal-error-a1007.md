@@ -1,18 +1,18 @@
 ---
 title: ML 심각한 오류 A1007
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A1007
 helpviewer_keywords:
 - A1007
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf
-ms.openlocfilehash: 01633b4fa084b7d5e14af5a5c6e51e3dca684d2a
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: c9527769e0d9397de90f49cbce98b2cca42bed50
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856919"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317125"
 ---
 # <a name="ml-fatal-error-a1007"></a>ML 심각한 오류 A1007
 
@@ -22,7 +22,7 @@ ms.locfileid: "74856919"
 
 다음 중 하나가 너무 많이 중첩 되었습니다.
 
-- 와 같은 상위 수준 지시문 [입니다. 이면](../../assembler/masm/dot-if.md)이 고, 그렇지 않으면 [입니다. ](../../assembler/masm/dot-repeat.md)또는를 반복 [합니다. WHILE](../../assembler/masm/dot-while.md).
+- 와 같은 상위 수준 지시문 [입니다. 이면](dot-if.md)이 고, 그렇지 않으면 [입니다. ](dot-repeat.md)또는를 반복 [합니다. WHILE](dot-while.md).
 
 - 구조 정의입니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "74856919"
 
 - 프로시저 정의입니다.
 
-- [Pushcontext](../../assembler/masm/pushcontext.md) 지시문입니다. 제한은 10입니다.
+- [Pushcontext](pushcontext.md) 지시문입니다. 제한은 10입니다.
 
 - 세그먼트 정의입니다.
 
@@ -40,4 +40,4 @@ ms.locfileid: "74856919"
 
 ## <a name="see-also"></a>참조
 
-[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>
+[ML 오류 메시지](ml-error-messages.md)

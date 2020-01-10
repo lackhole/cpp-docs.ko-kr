@@ -1,17 +1,17 @@
 ---
 title: x64용 MASM (ml64.exe)
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 helpviewer_keywords:
 - ml64
 - ml64.exe
 - masm for x64
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
-ms.openlocfilehash: 68f5a14b092109a647e7a81ed6c3fef148a5571b
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 5e324414a0d4d7e74bb28d54c1d858ef6fb9793c
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397220"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75312744"
 ---
 # <a name="masm-for-x64-ml64exe"></a>x64용 MASM (ml64.exe)
 
@@ -19,7 +19,7 @@ Visual Studio에는 x64 코드를 대상으로 하는 32 비트 및 64 비트의
 
 MASM을 사용 하 여 명령줄에서 x64 대상에 대 한 코드를 빌드하려면 필요한 경로 및 기타 환경 변수를 설정 하는 x64 대상의 개발자 명령 프롬프트를 사용 해야 합니다. 개발자 명령 프롬프트를 시작 하는 방법에 대 한 자세한 내용은 [명령줄에서C++ C/코드 빌드](../../build/building-on-the-command-line.md)를 참조 하세요.
 
-Ml64.exe 명령줄 옵션에 대 한 자세한 내용은 [ML 및 Ml64.exe 명령줄 참조](../../assembler/masm/ml-and-ml64-command-line-reference.md)를 참조 하세요.
+Ml64.exe 명령줄 옵션에 대 한 자세한 내용은 [ML 및 Ml64.exe 명령줄 참조](ml-and-ml64-command-line-reference.md)를 참조 하세요.
 
 X64 또는 ARM 대상에는 인라인 어셈블러 또는 ASM 키워드를 사용할 수 없습니다. 인라인 어셈블러를 사용 하는 x86 코드를 x64 또는 ARM으로 이식 하려면 코드를로 C++변환 하거나, 컴파일러 내장 함수를 사용 하거나, 어셈블러 언어 소스 파일을 만들 수 있습니다. Microsoft C++ 컴파일러는 내장 함수 (예: 권한 있는, 비트 검사/테스트, 연동 등)를 가능한 한 플랫폼 간 방식으로 사용할 수 있도록 내장 함수를 지원 합니다. 사용 가능한 내장 함수에 대 한 자세한 내용은 [컴파일러 내장 함수](../../intrinsics/compiler-intrinsics.md)를 참조 하세요.
 
@@ -43,21 +43,21 @@ Visual Studio 프로젝트 시스템은 C++ 프로젝트에서 MASM을 사용 �
 
 X 64를 대상으로 하는 어셈블러 언어 소스 코드에서 다음과 같은 ml64.exe 지시문을 사용할 수 있습니다.
 
-- [.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)
+- [.ALLOCSTACK](dot-allocstack.md)
 
-- [.ENDPROLOG](../../assembler/masm/dot-endprolog.md)
+- [.ENDPROLOG](dot-endprolog.md)
 
-- [.PUSHFRAME](../../assembler/masm/dot-pushframe.md)
+- [.PUSHFRAME](dot-pushframe.md)
 
-- [.PUSHREG](../../assembler/masm/dot-pushreg.md)
+- [.PUSHREG](dot-pushreg.md)
 
-- [.SAVEREG](../../assembler/masm/dot-savereg.md)
+- [.SAVEREG](dot-savereg.md)
 
-- [.SAVEXMM128](../../assembler/masm/dot-savexmm128.md)
+- [.SAVEXMM128](dot-savexmm128.md)
 
-- [.SETFRAME](../../assembler/masm/dot-setframe.md)
+- [.SETFRAME](dot-setframe.md)
 
-또한 ml64.exe에서 사용할 수 있도록 [PROC](../../assembler/masm/proc.md) 지시어가 업데이트 되었습니다.
+또한 ml64.exe에서 사용할 수 있도록 [PROC](proc.md) 지시어가 업데이트 되었습니다.
 
 ## <a name="32-bit-address-mode-address-size-override"></a>32 비트 주소 모드 (주소 크기 재정의)
 
@@ -80,6 +80,6 @@ mov eax, DWORD PTR [rcx*2+r10d]
 mov eax, DWORD PTR [ecx*2+r10+0100h]
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[Microsoft 매크로 어셈블러 참조](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft 매크로 어셈블러 참조](microsoft-macro-assembler-reference.md)

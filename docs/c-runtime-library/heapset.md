@@ -25,12 +25,12 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: 65b74798c4b3b513acea0b51ecc0cb7df98391c1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: c47ab59b1d8b9e73add640f7a7cf5fb146dc7c53
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944317"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300263"
 ---
 # <a name="_heapset"></a>_heapset
 
@@ -52,9 +52,9 @@ int _heapset(
 *fill*<br/>
 채우기 문자.
 
-## <a name="return-value"></a>Return Value
+## <a name="return-value"></a>반환 값
 
-`_heapset`는 Malloc.h에 정의된 다음 정수 매니페스트 상수 중 하나를 반환합니다.
+`_heapset` 는 Malloc.h에 정의된 다음 정수 매니페스트 상수 중 하나를 반환합니다.
 
 |||
 |-|-|
@@ -63,13 +63,13 @@ int _heapset(
 | `_HEAPEMPTY`  | 힙이 초기화되지 않았습니다.  |
 | `_HEAPOK`  | 힙이 일치하는 것 같습니다.  |
 
-또한 오류가 발생하는 경우 `_heapset` 는 `errno` 를 `ENOSYS`로 설정합니다.
+또한 오류가 발생하는 경우 `_heapset`는 `errno`를 `ENOSYS`로 설정합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_heapset` 함수는 실수로 덮어쓴 사용 가능한 메모리 위치 또는 노드를 표시합니다.
 
-`_heapset` 는 힙에서 최소한의 일관성을 검사한 다음 힙에서 사용 가능한 항목의 각 바이트를 `fill` 값으로 설정합니다. 이 알려진 값은 사용 가능한 노드를 포함하는 힙의 메모리 위치와 해제된 메모리에 실수로 기록된 데이터를 포함하는 메모리 위치를 표시합니다. 운영 체제가 `_heapset`(예: Windows 98)을 지원하지 않는 경우 함수에서 `_HEAPOK`를 반환하고 `errno`를 `ENOSYS`로 설정합니다.
+`_heapset` 는 힙에서 최소한의 일관성을 검사한 다음 힙에서 사용 가능한 항목의 각 바이트를 `fill` 값으로 설정합니다. 이 알려진 값은 사용 가능한 노드를 포함하는 힙의 메모리 위치와 해제된 메모리에 실수로 기록된 데이터를 포함하는 메모리 위치를 표시합니다. 운영 체제가 `_heapset`(예: Windows 98)를 지원하지 않는 경우 함수에서 `_HEAPOK` 를 반환하고 `errno` 를 `ENOSYS`로 설정합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -77,11 +77,11 @@ int _heapset(
 |-------------|---------------------|---------------------|
 |`_heapset`|\<malloc.h>|\<errno.h>|
 
-호환성에 대한 자세한 내용은 소개 단원의 [호환성](../c-runtime-library/compatibility.md) 부분을 참조하세요.
+호환성에 대한 자세한 내용은 소개에서 [호환성](../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예
 
-```
+```c
 // crt_heapset.c
 // This program checks the heap and
 // fills in free entries with the character 'Z'.
@@ -121,7 +121,7 @@ int main( void )
 OK - heap is fine
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [메모리 할당](../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../c-runtime-library/heapadd.md)<br/>

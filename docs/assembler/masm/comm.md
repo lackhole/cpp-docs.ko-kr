@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - COMM directive
 ms.assetid: a23548c4-ad04-41fa-91da-945f228de742
-ms.openlocfilehash: 93e7c891b1c964eca5b3ff7fd15956ef25ea05e6
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0ea02806cae3295af0846baa6c4e9049d54c271b
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74987950"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75315175"
 ---
 # <a name="comm"></a>COMM
 
@@ -31,9 +31,9 @@ Communal 변수는 링커에 의해 할당 되며 초기화할 수 없습니다.
 
 *언어 유형*, **NEAR**및 **FAR** 인수는 32 비트 MASM 에서만 유효 합니다.
 
-선택적 *언어 유형* 은 뒤에 오는 이름에 대 한 명명 규칙을 설정 합니다. 에서 지정 된 모든 언어를 재정의 **합니다. 모델** 지시문입니다. 선택 사항인 **NEAR** 또는 **FAR** 는 현재 메모리 모델을 재정의 합니다. *레이블은* 변수의 이름입니다. *형식은* 모든 형식 지정자 ([BYTE](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md)등) 이거나 바이트 수를 지정 하는 정수일 수 있습니다. 선택적 *개수* 는 선언 된 데이터 개체의 요소 수를 지정 합니다. 기본 *카운트* 는 1입니다.
+선택적 *언어 유형* 은 뒤에 오는 이름에 대 한 명명 규칙을 설정 합니다. 에서 지정 된 모든 언어를 재정의 **합니다. 모델** 지시문입니다. 선택 사항인 **NEAR** 또는 **FAR** 는 현재 메모리 모델을 재정의 합니다. *레이블은* 변수의 이름입니다. *형식은* 모든 형식 지정자 ([BYTE](byte-masm.md), [WORD](word.md)등) 이거나 바이트 수를 지정 하는 정수일 수 있습니다. 선택적 *개수* 는 선언 된 데이터 개체의 요소 수를 지정 합니다. 기본 *카운트* 는 1입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 512 바이트 요소로 이루어진 배열을 만듭니다.
 
@@ -43,4 +43,5 @@ COMM FAR ByteArray:BYTE:512
 
 ## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

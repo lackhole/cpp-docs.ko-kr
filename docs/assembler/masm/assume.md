@@ -6,14 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - ASSUME directive
 ms.assetid: cd162070-aee9-4c65-babc-005c6cc73d7c
-ms.openlocfilehash: 73ef8bcc33087a56747b80f94482fcd6c50e3bf6
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: a74a5336e626f561f1fc61e866792ce193332d84
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74399260"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75316540"
 ---
-# <a name="assume-32-bit-masm"></a>가정 (32 비트 MASM)
+# <a name="assume"></a>ASSUME
 
 레지스터 값에 대 한 오류 검사를 사용 하도록 설정 합니다. (32 비트 MASM에만 해당)
 
@@ -28,6 +28,7 @@ ms.locfileid: "74399260"
 
 **가정을** 적용 한 후에는 어셈블러가 지정 된 레지스터의 값에 대 한 변경 내용을 감시 합니다. 레지스터를 사용 하는 경우 **오류** 를 생성 합니다. 등록 오류 검사를 제거 하지 **않습니다** . 한 문에서 여러 종류의 가정을 조합할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: 연산자 -
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - operator -
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - operators [MASM], subtraction
 - arithmetic operators [C++], subtraction
 ms.assetid: 474607cb-e48d-4c91-bef6-91ff0971d5cf
-ms.openlocfilehash: 04a0932215254b015b10e21971baed01443e5efd
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 7d8556e0f95be1988dac4dc011259ed5b81876ba
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74395480"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318841"
 ---
 # <a name="operator--"></a>연산자 -
 
@@ -22,10 +22,11 @@ ms.locfileid: "74395480"
 
 ## <a name="syntax"></a>구문
 
-> *expression1* **-** *expression2*
+> *expression1* **-** *식 2*
 >
 > __-__ *식*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[연산자 참조](operators-reference.md)
+[연산자 참조](operators-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .586P directive
 ms.assetid: 90da2a7d-66f4-4073-b1a9-874de6e8f05d
-ms.openlocfilehash: d12d180d43302044a9c3906ffd9b2d197b74b067
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: af6bd0545631ae348f88a77bc724dd0530e69b68
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398651"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75314499"
 ---
 # <a name="586p-32-bit-masm"></a>586P (32 비트 MASM)
 
@@ -21,6 +21,7 @@ Pentium 프로세서에 대 한 모든 명령 (권한 포함)의 어셈블리를
 
 > **.586P**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

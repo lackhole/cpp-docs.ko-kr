@@ -1,17 +1,17 @@
 ---
 title: '@InStr'
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - '@InStr'
 helpviewer_keywords:
 - '@InStr symbol'
 ms.assetid: 980d5b9f-2b88-4306-8955-df6cd2133e68
-ms.openlocfilehash: 4b56c176fcbd9bd48e0d97f049d98c55cf5bedf3
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 3e790204ee6344031018fe79510ff9e064bef3b4
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74399032"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75315760"
 ---
 # <a name="instr"></a>\@InStr
 
@@ -21,6 +21,7 @@ ms.locfileid: "74399032"
 
 > **\@InStr (** ⟦*position*⟧ __,__ *string1* __,__ *문자열 2* **)**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[기호 참조](symbols-reference.md)
+[기호 참조](symbols-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

@@ -6,17 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - .UNTILCXZ directive
 ms.assetid: 07723c4c-789d-4dfa-9407-c60e72cb975f
-ms.openlocfilehash: 10065e599c3d5d94d064253ae724915fcb11a963
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 1e351c2a35f2b0dddc80af2f0cfdd7b62baf5200
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397845"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317476"
 ---
 # <a name="untilcxz-32-bit-masm"></a>. .UNTILCXZ (32 비트 MASM)
 
-(32 비트 MASM에만 해당) [을 참조 하세요. 반복](../../assembler/masm/dot-repeat.md)합니다.
+(32 비트 MASM에만 해당) [을 참조 하세요. 반복](dot-repeat.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

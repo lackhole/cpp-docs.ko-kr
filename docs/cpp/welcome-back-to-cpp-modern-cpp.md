@@ -3,18 +3,18 @@ title: C++(최신 C++) 시작하기
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: 2739da77fbfa973ca716abc6d8fa4920b81095d9
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 4dee4779e941c66af1c23f62a88cecec4916a475
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303327"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301745"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++(최신 C++) 시작하기
 
 지난 25 년 C++ 동안은 전 세계에서 가장 널리 사용 되는 프로그래밍 언어 중 하나입니다. 잘 작성된 C++ 프로그램은 빠르고 효율적입니다. 이 언어는 하위 수준 하드웨어 기능에 액세스 하 여 속도를 최대화 하 고 메모리 요구 사항을 최소화할 수 있으므로 다른 언어 보다 더 유연 합니다. 이 도구를 사용 하 여 게임에서 고성능 과학 소프트웨어, 장치 드라이버, 임베디드 프로그램, 기타 프로그래밍 언어에 대 한 라이브러리 및 컴파일러, Windows 클라이언트 앱 등 다양 한 앱을 만들 수 있습니다.
 
-C++의 초기 철학 중 하나는 C 언어와의 하위 호환성입니다. 결과적 C++ 으로 원시 포인터, 배열, null 종료 문자열, 사용자 지정 데이터 구조 및 뛰어난 성능을 가능 하 게 하지만 버그 및 복잡성을 생성할 수 있는 다른 기능을 사용 하는 C 스타일 프로그래밍이 항상 허용 됩니다. 의 C++ 진화에는 C 스타일 관용구를 사용 해야 하는 필요성을 크게 줄이는 강조 된 기능이 있습니다. 이전 C 프로그래밍 기능은 필요할 때 있지만 최신 C++ 코드를 사용 하는 경우에는 더 작고 작아야 합니다. 최신 C++ 코드는 보다 간단 하 고, 안전 하 고, 세련 된 코드입니다.
+C++의 본래 요구 사항 중 하나는 C 언어와의 역 호환성이었습니다. 결과적 C++ 으로 원시 포인터, 배열, null 종료 문자열, 사용자 지정 데이터 구조 및 뛰어난 성능을 가능 하 게 하지만 버그 및 복잡성을 생성할 수 있는 다른 기능을 사용 하는 C 스타일 프로그래밍이 항상 허용 됩니다. 의 C++ 진화에는 C 스타일 관용구를 사용 해야 하는 필요성을 크게 줄이는 강조 된 기능이 있습니다. 이전 C 프로그래밍 기능은 필요할 때 있지만 최신 C++ 코드를 사용 하는 경우에는 더 작고 작아야 합니다. 최신 C++ 코드는 보다 간단 하 고, 안전 하 고, 세련 된 코드입니다.
 
 다음 섹션에서는 최신 C++의 주요 기능에 대 한 개요를 제공 합니다. 별도로 언급 하지 않는 한 여기에 나열 된 기능은 c + + 11 이상에서 사용할 수 있습니다. Microsoft C++ 컴파일러에서는 [/sts](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 설정 하 여 프로젝트에 사용할 표준 버전을 지정할 수 있습니다.
 
@@ -47,7 +47,7 @@ void functionUsingWidget() {
 
 ## <a name="stdstring-and-stdstring_view"></a>std:: string 및 std:: string_view
 
-C 스타일 문자열은 버그의 또 다른 주요 소스입니다. [Std:: string 및 std:: wstring](../standard-library/basic-string-class.md) 을 사용 하 여 C 스타일 문자열과 관련 된 모든 오류를 제거 하 고, 검색, 추가, 앞으로 등의 멤버 함수 이점을 얻을 수 있습니다. 두 가지 모두 속도에 최적화 되어 있습니다. 읽기 전용 액세스만 필요한 함수에 문자열을 전달 하는 경우 (c + + 17)에서 [std:: string_view](../standard-library/basic-string-view-class.md) 을 사용 하 여 더 많은 성능상의 이점을 누릴 수 있습니다.
+C 스타일 문자열은 버그의 또 다른 주요 소스입니다. [Std:: string 및 std:: wstring](../standard-library/basic-string-class.md) 을 사용 하 여 C 스타일 문자열과 관련 된 모든 오류를 제거 하 고, 검색, 추가, 앞으로 등의 멤버 함수 이점을 얻을 수 있습니다. 두 가지 모두 속도에 최적화 되어 있습니다. 읽기 전용 액세스만 필요한 함수에 문자열을 전달 하는 경우 c + + 17에서는 [std:: string_view](../standard-library/basic-string-view-class.md) 을 사용 하 여 훨씬 더 큰 성능 이점을 누릴 수 있습니다.
 
 ## <a name="stdvector-and-other-standard-library-containers"></a>std:: vector 및 기타 표준 라이브러리 컨테이너
 
@@ -211,7 +211,7 @@ C 스타일 프로그래밍에서 함수는 *함수 포인터*를 통해 다른 
 
 공용 구조체는 여러 형식의 멤버가 동일한 메모리 위치를 차지할 수 있도록 하 여 메모리를 절약 하는 C 스타일 프로그래밍에서 일반적으로 사용 됩니다. 그러나 공용 구조체는 형식이 안전 하지 않으며 프로그래밍 오류가 발생 하기 쉽습니다. C + + 17은 공용 구조체에 대 한 보다 강력 하 고 안전한 방법으로 [std:: variant](../standard-library/variant-class.md) 클래스를 소개 합니다. [Std:: visit](../standard-library/variant-functions.md#visit) 함수를 사용 하 여 형식이 안전한 방식으로 `variant` 형식의 멤버에 액세스할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [람다 식](../cpp/lambda-expressions-in-cpp.md)<br/>

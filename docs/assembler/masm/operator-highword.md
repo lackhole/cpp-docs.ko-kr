@@ -1,6 +1,6 @@
 ---
 title: 연산자 HIGHWORD
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - HIGHWORD
 - operator HIGHWORD
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - operator HIGHWORD
 - HIGHWORD operator
 ms.assetid: 6a3e4d60-e7b6-4cab-b4d7-d4cb7fb307c9
-ms.openlocfilehash: b6982c17ad2699546bdd57cd7338f54cbb61941e
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 6dade0cb16fe57ddf82af234ee19f10e73788192
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396873"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75311522"
 ---
 # <a name="operator-highword"></a>연산자 HIGHWORD
 
@@ -23,6 +23,7 @@ ms.locfileid: "74396873"
 
 > **Highword** *식*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[연산자 참조](operators-reference.md)
+[연산자 참조](operators-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

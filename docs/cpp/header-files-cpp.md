@@ -1,18 +1,18 @@
 ---
 title: 헤더 파일 (C++)
-ms.date: 04/20/2018
+ms.date: 12/11/2019
 helpviewer_keywords:
 - header files [C++]
-ms.openlocfilehash: 98d37944f8c037f3ba25d80c7d35b3560ad11d40
-ms.sourcegitcommit: db1ed91fa7451ade91c3fb76bc7a2b857f8a5eef
+ms.openlocfilehash: ca5036ee53372f44e53b5a6452d4ab220fc3977d
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980481"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301485"
 ---
 # <a name="header-files-c"></a>헤더 파일 (C++)
 
-변수, 함수, 클래스 등의 프로그램 요소 이름은 먼저 선언 되어야 사용할 수 있습니다. 예를 들어 ' x '를 `x = 42` 먼저 선언 하지 않고만 쓸 수 있습니다.
+변수, 함수, 클래스 등의 프로그램 요소 이름은 먼저 선언 되어야 사용할 수 있습니다. 예를 들어 ' x '를 먼저 선언 하지 않고 `x = 42`을 작성할 수 없습니다.
 
 ```cpp
 int x; // declaration
@@ -23,9 +23,12 @@ x = 42; // use x
 
 오류 가능성을 최소화 하기 위해에서는 C++ *헤더 파일* 을 사용 하 여 선언을 포함 하는 규칙을 채택 했습니다. 헤더 파일에서 선언을 만든 다음 해당 선언이 필요한 모든 .cpp 파일 또는 다른 헤더 파일에 #include 지시어를 사용 합니다. #Include 지시어는 컴파일 전에 헤더 파일의 복사본을 .cpp 파일에 직접 삽입 합니다.
 
-## <a name="example"></a>예제
+> [!NOTE]
+> Visual Studio 2019에서 c + + 20 *모듈* 기능은 헤더 파일에 대 한 향상 된 기능 및 최종 대체 기능으로 도입 되었습니다. 자세한 내용은 [ C++의 모듈 개요 ](modules-cpp.md)를 참조 하세요.
 
-다음 예제에서는 클래스를 선언한 다음 다른 소스 파일에서 사용 하는 일반적인 방법을 보여 줍니다. 헤더 파일 `my_class.h`로 시작 합니다. 클래스 정의를 포함 하지만 정의가 불완전 함을 확인 합니다. 멤버 함수가 `do_something` 정의 되지 않았습니다.
+## <a name="example"></a>예
+
+다음 예제에서는 클래스를 선언한 다음 다른 소스 파일에서 사용 하는 일반적인 방법을 보여 줍니다. 헤더 파일 `my_class.h`로 시작 합니다. 클래스 정의를 포함 하지만 정의가 불완전 함을 확인 합니다. `do_something` 멤버 함수는 정의 되어 있지 않습니다.
 
 ```cpp
 // my_class.h
@@ -40,7 +43,7 @@ namespace N
 }
 ```
 
-다음으로 구현 파일 (일반적으로 .cpp 또는 유사한 확장명 사용)을 만듭니다. My_class 파일을 호출 하 고 멤버 선언에 대 한 정의를 제공 합니다. "My_class" `#include` 파일에 대 한 지시문을 추가 하 여 .cpp 파일의이 지점에 my_class 선언을 삽입 하 고에 대 한 `std::cout`선언에서 pull을 포함 `<iostream>` 합니다. 따옴표는 소스 파일과 동일한 디렉터리에 있는 헤더 파일에 사용 되며, 표준 라이브러리 헤더에는 꺾쇠 괄호가 사용 됩니다. 또한 많은 표준 라이브러리 헤더에는 .h 또는 다른 파일 확장명이 없습니다.
+다음으로 구현 파일 (일반적으로 .cpp 또는 유사한 확장명 사용)을 만듭니다. My_class 파일을 호출 하 고 멤버 선언에 대 한 정의를 제공 합니다. "My_class .h" 파일에 대 한 `#include` 지시문을 추가 하 여 .cpp 파일의이 지점에 my_class 선언을 삽입 하 고 `std::cout`에 대 한 선언에서 가져올 `<iostream>`를 포함 합니다. 따옴표는 소스 파일과 동일한 디렉터리에 있는 헤더 파일에 사용 되며, 표준 라이브러리 헤더에는 꺾쇠 괄호가 사용 됩니다. 또한 많은 표준 라이브러리 헤더에는 .h 또는 다른 파일 확장명이 없습니다.
 
 구현 파일에서 필요에 따라 **using** 문을 사용 하 여 "my_class" 또는 "cout"의 모든 설명 ("N::" 또는 "std::")을 한정할 필요가 없도록 할 수 있습니다.  헤더 파일에 문을 **사용** 하지 마세요.
 
@@ -58,7 +61,7 @@ void my_class::do_something()
 }
 ```
 
-이제 다른 .cpp 파일 `my_class` 에서을 사용할 수 있습니다. 컴파일러가 선언에서 가져오기 위해 헤더 파일을 #include 합니다. 모든 컴파일러는 my_class가 이라는 `do_something()`public 멤버 함수가 있는 클래스 임을 알고 있어야 합니다.
+이제 다른 .cpp 파일에 `my_class`를 사용할 수 있습니다. 컴파일러가 선언에서 가져오기 위해 헤더 파일을 #include 합니다. 모든 컴파일러는 my_class이 `do_something()`이라는 public 멤버 함수가 있는 클래스 임을 알고 있어야 합니다.
 
 ```cpp
 // my_program.cpp
@@ -74,11 +77,11 @@ int main()
 }
 ```
 
-컴파일러가 각 .cpp 파일을 .obj 파일에 컴파일한 후에는 .obj 파일을 링커에 전달 합니다. 링커가 개체 파일을 병합할 때 my_class에 대 한 정의를 정확히 하나 찾았습니다. my_class에 대해 생성 된 .obj 파일에 있으며 빌드가 성공 합니다.
+컴파일러가 각 .cpp 파일을 .obj 파일에 컴파일한 후에는 .obj 파일을 링커에 전달 합니다. 링커가 개체 파일을 병합 하는 경우 my_class에 대해 정확히 하나의 정의를 찾습니다. my_class에 대해 생성 된 .obj 파일에 있으며 빌드가 성공 합니다.
 
 ## <a name="include-guards"></a>가드 포함
 
-일반적으로 헤더 파일에는 단일 .cpp 파일에 `#pragma once` 여러 번 삽입 되지 않도록 하는 *include 가드* 또는 지시문이 있습니다.
+일반적으로 헤더 파일에는 단일 .cpp 파일에 여러 번 삽입 되지 않도록 하는 *include 가드* 또는 `#pragma once` 지시어가 있습니다.
 
 ```cpp
 // my_class.h

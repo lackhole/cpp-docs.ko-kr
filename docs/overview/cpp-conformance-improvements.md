@@ -5,12 +5,12 @@ description: Visual Studio의 Microsoft C++는 C++20 언어 표준을 완전하�
 ms.technology: cpp-language
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 06fa060b674e51a3352a9a928bccdbfa6c63aae4
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: de31c2e61f0a10c785d610d3227a659c59b56d38
+ms.sourcegitcommit: 00f50ff242031d6069aa63c81bc013e432cae0cd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74858037"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546434"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio의 C++ 규칙 향상
 
@@ -168,7 +168,7 @@ C++20에서 [P1164](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p116
 
 [P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C++20은 UTF-8 코드 단위를 나타내는 데 사용되는 새로운 문자 형식을 추가합니다. C++20의 `u8` 문자열 리터럴에는 이전의 `const char[N]` 대신 `const char8_t[N]` 형식이 있습니다. [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm)에서 C 표준에 대해 유사한 변경이 제안되었습니다. `char8_t` 이전 버전과의 호환성 수정에 대한 제안은 [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html)에서 제공됩니다. Microsoft C++ 컴파일러는 **/Zc:char8_t** 컴파일러 옵션을 지정할 때 Visual Studio 2019 버전 16.1에서 `char8_t` 지원을 추가합니다. 향후 **/Zc:char8_t-** 를 통해 C++17 동작으로 되돌릴 수 있는 [/std:c++latest](../build/reference/std-specify-language-standard-version.md)로 지원될 예정입니다. IntelliSense를 지원하는 EDG 컴파일러는 이 기능을 아직 지원하지 않으므로 실제 컴파일에 영향을 주지 않는 IntelliSense 전용 의사 오류가 표시됩니다.
 
-#### <a name="example"></a>예
+#### <a name="example"></a>예제
 
 ```cpp
 const char* s = u8"Hello"; // C++17
@@ -1135,7 +1135,7 @@ Visual C++ 컴파일러는 **decltype** 및 **constexpr** 식이 템플릿 매�
 
 ### <a name="rewording-enable_shared_from_this"></a>`enable_shared_from_this` 표현 수정
 
-C++11에서 [P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this`가 추가되었습니다. C++17 표준은 비정상적인 특정 사례를 더 잘 처리하도록 사양을 업데이트합니다. [14]
+C++11에 [P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this`가 추가되었습니다. C++17 표준은 비정상적인 특정 사례를 더 잘 처리하도록 사양을 업데이트합니다. [14]
 
 ### <a name="splicing-maps-and-sets"></a>맵과 집합 스플라이스
 
@@ -1151,7 +1151,7 @@ C++11에서 [P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0
 
 ### <a name="fixes-for-not_fn"></a>`not_fn()` 수정
 
-[P0358R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html) `std::not_fn`의 표현이 래퍼 호출에 사용 시 값 범주의 전파가 지원됨을 나타내도록 수정되었습니다.
+[P0358R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html)`std::not_fn`의 표현이 래퍼 호출에 사용 시 값 범주의 전파가 지원됨을 나타내도록 수정되었습니다.
 
 ### <a name="shared_ptrt-shared_ptrtn"></a>`shared_ptr<T[]>`, `shared_ptr<T[N]>`
 
@@ -1189,7 +1189,7 @@ C++ 표준의 부록 D에는 사용이 중단된 모든 기능이 포함되어 �
 
 ### <a name="c17-improving-class-template-argument-deduction-for-the-standard-library"></a>C++17: 표준 라이브러리의 클래스 템플릿 인수 추론 향상
 
-[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) `adopt_lock_t`를 `scoped_lock`에 대한 매개 변수 목록의 앞으로 이동하여 `scoped_lock`의 일관된 사용을 활성화합니다. 복사 할당을 사용할 수 있도록 `std::variant` 생성자가 더 많은 사례에서 오버로드 해결에 참여하도록 허용합니다.
+[P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)`adopt_lock_t`를 `scoped_lock`에 대한 매개 변수 목록의 앞으로 이동하여 `scoped_lock`의 일관된 사용을 활성화합니다. 복사 할당을 사용할 수 있도록 `std::variant` 생성자가 더 많은 사례에서 오버로드 해결에 참여하도록 허용합니다.
 
 ## <a name="improvements_157"></a> 15.7의 규칙 향상
 
@@ -1241,13 +1241,11 @@ B b(42L); // now calls B(int)
 
 [P0017R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0017r1.html)
 
-기본 클래스의 생성자가 공용이 아니지만 파생된 클래스에 액세스할 수 있는 경우 Visual Studio version 15.7의 **/std:c++17** 모드에서 파생된 형식의 개체를 초기화하기 위해 더 이상 빈 중괄호를 사용할 수 없습니다.
-
+기본 클래스의 생성자가 공용이 아니지만 파생된 클래스에 액세스할 수 있는 경우, Visual Studio 2017 버전 15.7의 **/std:c++17** 모드에서 파생된 형식의 개체를 초기화하기 위해 더 이상 빈 중괄호를 사용할 수 없습니다.
 다음 예제에서는 C++14 준수 동작을 보여 줍니다.
 
 ```cpp
 struct Derived;
-
 struct Base {
     friend struct Derived;
 private:
@@ -1255,32 +1253,26 @@ private:
 };
 
 struct Derived : Base {};
-
 Derived d1; // OK. No aggregate init involved.
 Derived d2 {}; // OK in C++14: Calls Derived::Derived()
                // which can call Base ctor.
 ```
 
 C++17에서 `Derived`는 이제 집계 형식으로 간주되므로 프라이빗 기본 생성자를 통한 `Base`의 초기화가 확장된 집계 초기화 규칙의 일부로 직접 발생합니다. 이전에는 `Base` 프라이빗 생성자가 `Derived` 생성자를 통해 호출되었으며, friend 선언 때문에 성공했습니다.
-
 다음 예제에서는 **/std:c++17** 모드의 Visual Studio 버전 15.7에서 C++17 동작을 보여 줍니다.
 
 ```cpp
 struct Derived;
-
 struct Base {
     friend struct Derived;
 private:
     Base() {}
 };
-
 struct Derived : Base {
     Derived() {} // add user-defined constructor
                  // to call with {} initialization
 };
-
 Derived d1; // OK. No aggregate init involved.
-
 Derived d2 {}; // error C2248: 'Base::Base': cannot access
                // private member declared in class 'Base'
 ```
@@ -1914,7 +1906,7 @@ constexpr auto off2 = offsetof(A, two);
 
 이 코드는 형식이 잘못되었고 런타임에 크래시가 발생할 수 있습니다. 오류를 해결하려면 정의되지 않은 동작을 더 이상 호출하지 않도록 코드를 변경합니다. C++ 표준에서 허용되지 않는, 포팅할 수 없는 코드입니다.
 
-### <a name="declspec"></a> `__declspec` 특성에 대한 새로운 경고
+### <a name="declspec"></a>`__declspec` 특성에 대한 새로운 경고
 
 Visual Studio 2017 버전 15.3에서는 `__declspec(...)`가 `extern "C"` 링크 사양 앞에 적용되면 컴파일러에서 더 이상 특성을 무시하지 않습니다. 이전 버전에서는 컴파일러가 런타임 의미를 가질 수 있는 특성을 무시합니다. **/Wall** 및 **/WX** 옵션이 설정되면 다음 코드는 “경고 C4768: 링크 사양 앞의 __declspec 특성은 무시됩니다.”를 생성합니다.
 
@@ -2179,7 +2171,7 @@ warning C4843: 'void (__cdecl &)(void)': An exception handler of reference to ar
 catch (int (*)[1]) {}
 ```
 
-### <a name="tr1"></a> `std::tr1` 네임스페이스가 사용되지 않음
+### <a name="tr1"></a> `std::tr1` 네임스페이스는 사용되지 않음
 
 이제 비표준 `std::tr1` 네임스페이스가 C++14 및 C++17 모드에서 모두 사용되지 않는 것으로 표시됩니다. Visual Studio 2017 15.5 버전에서 다음 코드를 실행하면 C4996이 발생합니다.
 
@@ -3087,6 +3079,6 @@ Visual Studio 2015, 업데이트 3까지 규칙 향상의 전체 목록은 [Visu
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [Microsoft C++ 언어 규칙 테이블](../visual-cpp-language-conformance.md)

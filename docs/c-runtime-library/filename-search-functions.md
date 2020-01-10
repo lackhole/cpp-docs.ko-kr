@@ -20,12 +20,12 @@ helpviewer_keywords:
 - find function
 - _wfind function
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
-ms.openlocfilehash: ecc01362bdc14af32df5093ad1ac1ee606026d8f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: 331d43f3e3a88786f8dac0a6f609f988beea9dbb
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940373"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300312"
 ---
 # <a name="filename-search-functions"></a>파일 이름 검색 함수
 
@@ -67,7 +67,7 @@ ms.locfileid: "70940373"
 대상 특성(예: `_A_RDONLY`)을 지정하여 찾기 작업을 제한할 수 있습니다. 이러한 특성은 `attrib` 구조의 `_finddata_t` 필드로 반환되며 다음과 같은 값일 수 있습니다(IO.h에 정의). 사용자는 이러한 값만 `attrib` 필드에 사용할 수 있다고 간주해서는 안 됩니다.
 
 `_A_ARCH`<br/>
-보관 파일입니다. **BACKUP** 명령으로 파일을 변경하고 지울 때마다 설정합니다. 값: 0x20
+보관. **BACKUP** 명령으로 파일을 변경하고 지울 때마다 설정합니다. 값: 0x20
 
 `_A_HIDDEN`<br/>
 숨김 파일입니다. **/AH** 옵션을 사용하지 않는 한 일반적으로 DIR 명령으로 표시되지 않습니다. 일반 파일 및 이 특성이 있는 파일에 대한 정보를 반환합니다. 값: 0x02
@@ -96,7 +96,7 @@ ms.locfileid: "70940373"
 
 `_finddata_t` 는 실제로 `_finddata64i32_t` (또는 `_finddata32_t` 가 정의된 경우 `_USE_32BIT_TIME_T` )로 계산되는 매크로입니다. 다음 표에서는 `_finddata_t`의 변형을 요약하여 보여 줍니다.
 
-|구조체|시간 형식|파일 크기 형식|
+|구조|시간 형식|파일 크기 형식|
 |---------------|---------------|--------------------|
 |`_finddata_t`, `_wfinddata_t`|`__time64_t`|`_fsize_t`|
 |`_finddata32_t`, `_wfinddata32_t`|`__time32_t`|`_fsize_t`|
@@ -108,7 +108,7 @@ ms.locfileid: "70940373"
 
 ## <a name="example"></a>예
 
-```
+```c
 // crt_find.c
 // This program uses the 32-bit _find functions to print
 // a list of all files (and their attributes) with a .C extension
@@ -156,6 +156,6 @@ N   N   N   Y   blah.c       Wed Feb 13 09:21:42 2002       1715
 N   N   N   Y   test.c       Wed Feb 06 14:30:44 2002        312
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [시스템 호출](../c-runtime-library/system-calls.md)

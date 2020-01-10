@@ -1,6 +1,6 @@
 ---
 title: 연산자 ;
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - operator %3B
 - '%3B'
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - semicolon operator
 - ; operator
 ms.assetid: 8369b28c-1fee-4e9a-a4a6-7db627e21075
-ms.openlocfilehash: df1e75f749e00781ae7ce1ffc580632d6216201c
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: ed1ed9b6995d9688bc13b14a154bad936ff59afd
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396451"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318971"
 ---
 # <a name="operator-"></a>연산자 ;
 
@@ -24,6 +24,7 @@ ms.locfileid: "74396451"
 
 > __;__ *텍스트*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[연산자 참조](operators-reference.md)
+[연산자 참조](operators-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

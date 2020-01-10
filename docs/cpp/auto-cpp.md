@@ -1,22 +1,25 @@
 ---
 title: auto (C++)
-ms.date: 11/04/2016
+ms.date: 12/10/2019
 f1_keywords:
 - auto_CPP
 - auto
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: 8af2aceb2964a5ec3adcbb0b0accab0b051ff48c
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 0991c836d1ade663be3e1b734ec4745796b91abd
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303377"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301654"
 ---
 # <a name="auto-c"></a>auto (C++)
 
 초기화 식에서 선언된 변수의 형식을 추론합니다.
+
+> [!NOTE]
+> 표준 C++ 는이 키워드의 원래 의미와 수정 된 의미를 정의 합니다. Visual Studio 2010 이전에 **auto** 키워드는 *자동* 저장소 클래스에서 변수를 선언 합니다. 즉, 로컬 수명을 포함 하는 변수입니다. Visual Studio 2010부터 **auto** 키워드는 선언에서 초기화 식에서 형식이 추론 되는 변수를 선언 합니다. [/Zc: auto&#91;-&#93; ](../build/reference/zc-auto-deduce-variable-type.md) 컴파일러 옵션은 **auto** 키워드의 의미를 제어합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,7 +69,7 @@ auto declarator initializer;
 
 ## <a name="references-and-cv-qualifiers"></a>참조 및 cv 한정자
 
-**자동** 삭제 참조, const 한정자 및 volatile 한정자를 사용 합니다. 다음 예를 살펴 보십시오.
+**자동** 삭제 참조, const 한정자 및 volatile 한정자를 사용 합니다. 다음 예제를 참조하세요.
 
 ```cpp
 // cl.exe /analyze /EHsc /W4
@@ -219,10 +222,10 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [auto 키워드](../cpp/auto-keyword.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [/Zc:auto(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof 연산자](../cpp/sizeof-operator.md)<br/>
 [typeid](../extensions/typeid-cpp-component-extensions.md)<br/>

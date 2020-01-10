@@ -23,12 +23,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: f7a898d70e506ed4707ea718faa0ed618682c2c7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: df8f59088cd402503fe31f768557e3ed936b31ec
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944816"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301693"
 ---
 # <a name="to-functions"></a>to 함수
 
@@ -39,7 +39,7 @@ ms.locfileid: "70944816"
 |[__toascii](../c-runtime-library/reference/toascii-toascii.md)|[toupper, _toupper, towupper](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|
 |[tolower, _tolower, towlower](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)||
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **to** 함수 및 매크로 변환은 다음과 같이 수행됩니다.
 
@@ -48,10 +48,10 @@ ms.locfileid: "70944816"
 |`__toascii`|`__toascii`|`c`를 ASCII 문자로 변환|
 |`tolower`|`tolower`|해당하는 경우 `c`를 소문자로 변환|
 |`_tolower`|`_tolower`|`c`를 소문자로 변환|
-|`towlower`|없음|`c`를 해당하는 와이드 문자 소문자로 변환|
+|`towlower`|None|`c`를 해당하는 와이드 문자 소문자로 변환|
 |`toupper`|`toupper`|해당하는 경우 `c`를 대문자로 변환|
 |`_toupper`|`_toupper`|`c`를 대문자로 변환|
-|`towupper`|없음|c를 해당하는 와이드 문자 대문자로 변환|
+|`towupper`|None|c를 해당하는 와이드 문자 대문자로 변환|
 
 역시 매크로로 정의된 **to** 루틴의 함수 버전을 사용하려면 `#undef` 지시문을 사용하여 매크로 정의를 제거하거나 CTYPE.H를 포함하지 마세요. /Za 컴파일러 옵션을 사용하는 경우 컴파일러는 `toupper` 또는 `tolower`의 함수 버전을 사용합니다. `toupper` 및 `tolower` 함수의 선언은 STDLIB.H에 있습니다.
 
@@ -79,7 +79,7 @@ ms.locfileid: "70944816"
 
 ## <a name="example"></a>예
 
-```
+```c
 // crt_toupper.c
 /* This program uses toupper and tolower to
  * analyze all characters between 0x0 and 0x7F. It also
@@ -115,7 +115,7 @@ Some of THESE letters are Capitals.
 sOME OF these LETTERS ARE cAPITALS.
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [데이터 변환](../c-runtime-library/data-conversion.md)<br/>
 [로캘](../c-runtime-library/locale.md)<br/>

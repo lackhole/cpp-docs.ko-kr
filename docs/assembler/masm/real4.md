@@ -1,17 +1,17 @@
 ---
 title: REAL4
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - REAL4
 helpviewer_keywords:
 - REAL4 directive
 ms.assetid: b41d584b-6c9d-4bea-9d31-a2c70b292d50
-ms.openlocfilehash: 1b7c3816ff32efbf6bc61d05db3909ef07c04cfe
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 5a2c64607c94e232f7a36a2bb5d1b77b62fb6038
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74394630"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318542"
 ---
 # <a name="real4"></a>REAL4
 
@@ -21,6 +21,7 @@ ms.locfileid: "74394630"
 
 > **REAL4** *이니셜라이저* ⟦ __,__ *이니셜라이저의* 이름 ... ⟧
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

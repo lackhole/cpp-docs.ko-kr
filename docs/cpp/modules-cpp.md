@@ -1,16 +1,16 @@
 ---
 title: C++에서의 모듈 개요
-ms.date: 07/23/2019
+ms.date: 12/13/2019
 helpviewer_keywords:
 - modules [C++]
 - modules [C++], overview
 description: C + + 20의 모듈은 헤더 파일에 대 한 최신 대안을 제공 합니다.
-ms.openlocfilehash: 17495aa3e295b26fcfa5c489ff6793bb75d13d68
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: 28e1824250ad4fb404c528aa9511745abb001f31
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273681"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301381"
 ---
 # <a name="overview-of-modules-in-c"></a>C++에서의 모듈 개요
 
@@ -20,7 +20,7 @@ C + +20에는 C++ 라이브러리 및 프로그램을 구성 요소화 하는 �
 
 ## <a name="enable-modules-in-the-microsoft-c-compiler"></a>Microsoft C++ 컴파일러에서 모듈 사용
 
-Visual Studio 2019 버전 16.2에서는 모듈이 Microsoft C++ 컴파일러에서 완전히 구현 되지 않았습니다. 모듈 기능을 사용 하 여 단일 파티션 모듈을 만들고 Microsoft에서 제공 하는 표준 라이브러리 모듈을 가져올 수 있습니다. 모듈에 대 한 지원을 사용 하도록 설정 하려면 [/o실험적: module](../build/reference/experimental-module.md) 및 [/std: c + + 최신](../build/reference/std-specify-language-standard-version.md)으로 컴파일합니다. Visual Studio 프로젝트에서 **솔루션 탐색기** 의 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **구성** 드롭다운을 **모든 구성**으로 설정 하 고 **구성 속성** >  > **C/C++** **언어** > **사용 C++ 모듈을 선택 합니다. 실험적)** .
+Visual Studio 2019 버전 16.2에서는 모듈이 Microsoft C++ 컴파일러에서 완전히 구현 되지 않았습니다. 모듈 기능을 사용 하 여 단일 파티션 모듈을 만들고 Microsoft에서 제공 하는 표준 라이브러리 모듈을 가져올 수 있습니다. 모듈에 대 한 지원을 사용 하도록 설정 하려면 [/o실험적: module](../build/reference/experimental-module.md) 및 [/std: c + + 최신](../build/reference/std-specify-language-standard-version.md)으로 컴파일합니다. Visual Studio 프로젝트에서 **솔루션 탐색기** 의 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. **구성** 드롭다운을 **모든 구성**으로 설정한 다음 **구성 속성** > **C++ C/**  > **언어** >  **C++ 모듈 사용 (실험적)** 을 선택 합니다.
 
 모듈 및 모듈을 사용 하는 코드는 동일한 컴파일러 옵션을 사용 하 여 컴파일해야 합니다.
 
@@ -28,24 +28,24 @@ Visual Studio 2019 버전 16.2에서는 모듈이 Microsoft C++ 컴파일러에�
 
 Microsoft에서는 c + + 20 standard로 지정 하지 않았지만 C++ 표준 라이브러리의 구현을 모듈로 가져올 수 있습니다. 헤더 파일을 C++ 통해 표준 라이브러리를 #including 하지 않고 모듈로 가져오면 프로젝트 크기에 따라 컴파일 시간을 단축 시킬 수 있습니다. 라이브러리는 다음 모듈에 대해이를 위한 것입니다.
 
-- std는 헤더 \<regex의 콘텐츠를 제공 >
-- std 파일 시스템 헤더 \<의 내용을 제공 >
-- 표준 메모리는 헤더 \<메모리의 내용을 제공 >
-- 표준 스레딩 \<은 헤더 원자성 >, \<condition_variable >, \<future >, \<뮤텍스 >, \<shared_mutex > 및 \<스레드의 콘텐츠를 제공 >
+- std는 regex \<regex의 콘텐츠를 제공 >
+- std는 헤더 \<파일 시스템의 내용을 제공 >
+- std 메모리 \<메모리의 내용을 제공 >
+- 표준 스레딩은 원자성 >, \<condition_variable >, \<후속 >, \<뮤텍스 >, \<shared_mutex > 및 \<스레드 \<헤더의 콘텐츠를 제공 >
 - std는 C++ 표준 라이브러리에 있는 다른 모든 항목을 제공 합니다.
 
-이러한 모듈을 사용 하려면 소스 코드 파일의 맨 위에 import 문을 추가 하기만 하면 됩니다. 예를 들어:
+이러한 모듈을 사용 하려면 소스 코드 파일의 맨 위에 가져오기 선언을 추가 하기만 하면 됩니다. 예를 들면 다음과 같습니다.:
 
 ```cpp
 import std.core;
 import std.regex;
 ```
 
-Microsoft Standard Library 모듈을 사용 하려면 [/ehsc](../build/reference/eh-exception-handling-model.md) 및 [/md](../build/reference/md-mt-ld-use-run-time-library.md) 옵션으로 프로그램을 컴파일해야 합니다.
+Microsoft Standard Library 모듈을 사용 하려면 [/ehsc](../build/reference/eh-exception-handling-model.md) 및 [/md](../build/reference/md-mt-ld-use-run-time-library.md) 옵션으로 프로그램을 컴파일합니다.
 
-## <a name="basic-example"></a>기본 예
+## <a name="basic-example"></a>기본 예제
 
-다음 예제에서는 **Foo. ixx**라는 소스 파일의 간단한 모듈 정의를 보여 줍니다. Visual Studio의 모듈 인터페이스 파일에는 **. ixx** 확장이 필요 합니다. 이 예제에서 인터페이스 파일에는 선언 뿐만 아니라 함수 정의가 포함 되어 있습니다. 그러나이 정의는 이후 예제에서 볼 수 있듯이 하나 이상의 개별 파일에도 배치 될 수 있습니다. **Export Module Foo** 문은이 파일이 호출 `Foo`된 모듈의 기본 인터페이스 임을 나타냅니다. `Foo` 의 `f()` 내보내기 한정자는를 다른 프로그램 또는 모듈에서 가져올 때이 함수를 볼 수 있음을 나타냅니다. 모듈은 네임 스페이스 `Bar`를 참조 합니다.
+다음 예제에서는 **Foo. ixx**라는 소스 파일의 간단한 모듈 정의를 보여 줍니다. Visual Studio의 모듈 인터페이스 파일에는 **. ixx** 확장이 필요 합니다. 이 예제에서 인터페이스 파일에는 선언 뿐만 아니라 함수 정의가 포함 되어 있습니다. 그러나이 정의는 이후 예제에서 볼 수 있듯이 하나 이상의 개별 파일에도 배치 될 수 있습니다. **Export Module Foo** 문은이 파일이 `Foo`모듈의 기본 인터페이스 임을 나타냅니다. `f()`의 **export** 한정자는 다른 프로그램이 나 모듈이 `Foo`를 가져올 때이 함수가 표시 됨을 나타냅니다. 모듈은 `Bar`네임 스페이스를 참조 합니다.
 
 ```cpp
 export module Foo;
@@ -64,7 +64,7 @@ namespace Bar
 }
 ```
 
-**Myprogram. .cpp** 파일은 **import** 문을 사용 하 여에서 `Foo`내보낸 이름에 액세스 합니다. 여기에는 이름이 `Bar` 표시 되지만 모든 멤버는 표시 되지 않습니다. 또한 매크로 `ANSWER` 는 표시 되지 않습니다.
+**Myprogram. .cpp** 파일은 **가져오기** 선언을 사용 하 여 `Foo`에서 내보내는 이름에 액세스 합니다. 이름 `Bar`는 여기에 표시 되지만 일부 멤버는 표시 되지 않습니다. 또한 매크로 `ANSWER`는 표시 되지 않습니다.
 
 ```cpp
 
@@ -132,7 +132,7 @@ export import :part2
 
 ## <a name="modules-and-header-files"></a>모듈 및 헤더 파일
 
-모듈 선언 앞에 지시문을 `#include` 추가 하 여 모듈 소스 파일에 헤더 파일을 포함할 수 있습니다. 이러한 파일은 *전역 모듈 조각*에 있는 것으로 간주 됩니다. 모듈은 명시적으로 포함 된 헤더에 있는 *전역 모듈 조각의* 이름만 볼 수 있습니다. 전역 모듈 조각은 실제로 사용 되는 기호만 포함 합니다.
+모듈 선언 앞에 `#include` 지시문을 배치 하 여 모듈 소스 파일에 헤더 파일을 포함할 수 있습니다. 이러한 파일은 *전역 모듈 조각*에 있는 것으로 간주 됩니다. 모듈은 명시적으로 포함 된 헤더에 있는 *전역 모듈 조각의* 이름만 볼 수 있습니다. 전역 모듈 조각은 실제로 사용 되는 기호만 포함 합니다.
 
 ```cpp
 // MyModuleA.cpp
@@ -168,6 +168,6 @@ import <vector>
 import "myheader.h"
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [모듈, 가져오기, 내보내기](import-export-module.md)

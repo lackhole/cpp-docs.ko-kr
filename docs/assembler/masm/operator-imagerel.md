@@ -1,6 +1,6 @@
 ---
 title: 연산자 IMAGEREL
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - operator IMAGEREL
 - IMAGEREL
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - operator IMAGEREL
 - IMAGEREL operator
 ms.assetid: 5b5ea425-36f0-467c-9262-62c484b7fdb4
-ms.openlocfilehash: f88501d007ece1e3b9f45620953a911d4a6aa66e
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 343e68f31d396e008fb42622271f39b63287b287
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396883"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317931"
 ---
 # <a name="operator-imagerel"></a>연산자 IMAGEREL
 
@@ -29,6 +29,7 @@ ms.locfileid: "74396883"
 
 IMAGEREL은 COFF 개체 내보내기와 함께 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[연산자 참조](operators-reference.md)
+[연산자 참조](operators-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

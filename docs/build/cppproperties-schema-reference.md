@@ -1,18 +1,18 @@
 ---
-title: CppProperties.json 스키마 참조
+title: Cppproperties.json 참조
 ms.date: 08/09/2019
 helpviewer_keywords:
 - CppProperties.json file [C++]
-ms.openlocfilehash: 06029157b4b3826bc9c34a4434ab390f3eaa5a44
-ms.sourcegitcommit: ace42fa67e704d56d03c03745b0b17d2a5afeba4
+ms.openlocfilehash: d59fca412a26d08f88ccbda20a2c0444cf33b1cb
+ms.sourcegitcommit: 6c1960089b92d007fc28c32af1e4bef0f85fdf0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69975936"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556671"
 ---
-# <a name="cpppropertiesjson-schema-reference"></a>CppProperties.json 스키마 참조
+# <a name="cpppropertiesjson-reference"></a>Cppproperties.json 참조
 
-CMake를 사용 하지 않는 Open Folder 프로젝트는 *cppproperties.json* 파일에 IntelliSense의 프로젝트 구성 설정을 저장할 수 있습니다. (CMake 프로젝트는 [CMakeSettings.json](customize-cmake-settings.md) 파일을 사용합니다.) 구성은 이름/값 쌍으로 구성되며 #include 경로, 컴파일러 스위치 및 기타 매개 변수를 정의합니다. 열린 폴더 프로젝트에 구성을 추가 하는 방법에 대 한 자세한 내용은 [를 C++ ](open-folder-projects-cpp.md) 참조 하십시오.
+CMake를 사용 하지 않는 Open Folder 프로젝트는 *cppproperties.json* 파일에 IntelliSense의 프로젝트 구성 설정을 저장할 수 있습니다. Cmake 프로젝트는 [Cmakesettings. json](customize-cmake-settings.md) 파일을 사용 합니다. 구성은 이름/값 쌍으로 구성 되며 #include 경로, 컴파일러 스위치 및 기타 매개 변수를 정의 합니다. 열린 폴더 프로젝트에 구성을 추가 하는 방법에 대 한 자세한 내용은 [를 C++ ](open-folder-projects-cpp.md) 참조 하십시오. 다음 섹션에서는 다양 한 설정을 요약 합니다. 스키마에 대 한 자세한 설명을 보려면 *cppproperties.json* 가 열려 있을 때 코드 편집기의 맨 위에 전체 경로를 제공 하는 *CppProperties_schema*로 이동 합니다.
 
 ## <a name="configuration-properties"></a>구성 속성
 
@@ -34,7 +34,7 @@ CMake를 사용 하지 않는 Open Folder 프로젝트는 *cppproperties.json* �
 
 코드 편집기는 입력을 시작할 때 사용할 수 있는 옵션을 보여 줍니다.
 
-![폴더 열기 IntelliSense](media/open-folder-intellisense-mode.png "폴더 열기 IntelliSense")
+![IntelliSense 폴더 열기](media/open-folder-intellisense-mode.png "IntelliSense 폴더 열기")
 
 지원 되는 값은 다음과 같습니다.
 
@@ -58,13 +58,13 @@ CMake를 사용 하지 않는 Open Folder 프로젝트는 *cppproperties.json* �
 - linux-gcc-x64
 - linux-gcc-arm
 
-참고: `msvc-x86` 및 `msvc-x64` 값은 레거시의 목적으로만 지원됩니다. 대신 variant `windows-msvc-*` 를 사용 하십시오.
+참고: `msvc-x86` 및 `msvc-x64` 값은 레거시 목적 으로만 지원 됩니다. 대신 `windows-msvc-*` 변형을 사용 해야 합니다.
 
 ## <a name="pre-defined-environments"></a>미리 정의 된 환경
 
-Visual Studio에서는 해당 개발자 명령 프롬프트에 매핑되는 다음과 C++ 같은 미리 정의 된 환경을 Microsoft에 제공 합니다. 이러한 환경 중 하나를 상속 하는 경우 전역 속성 `env` 을 사용 하 여 모든 환경 변수를 참조할 수 있습니다. $ {env.\< 변수 >}.
+Visual Studio에서는 해당 개발자 명령 프롬프트에 매핑되는 다음과 C++ 같은 미리 정의 된 환경을 Microsoft에 제공 합니다. 이러한 환경 중 하나를 상속 하는 경우 전역 속성 `env`를 사용 하 여 모든 환경 변수를 참조할 수 있습니다. $ {env\<VARIABLE >}.
 
-|변수 이름|Description|
+|변수 이름|설명|
 |-----------|-----------------|
 |vsdev|기본 Visual Studio 환경|
 |msvc_x86|x86 도구를 사용하여 x86용으로 컴파일|
@@ -77,7 +77,7 @@ Visual Studio에서는 해당 개발자 명령 프롬프트에 매핑되는 다�
 
 Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 지정하는 데 사용할 수 있는 환경은 다음과 같습니다.
 
-|변수 이름|Description|
+|변수 이름|설명|
 |-----------|-----------------|
 |linux_x86|원격으로 x86 Linux를 대상 지정|
 |linux_x64|원격으로 x64 Linux를 대상 지정|
@@ -85,9 +85,11 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 
 ## <a name="user_defined_environments"></a>사용자 정의 환경
 
-선택적으로 `environments` 속성을 사용 하 여 전역적으로 또는 구성 별로 *cppproperties.json* 의 변수 집합을 정의할 수 있습니다. 이러한 변수는 열린 폴더 프로젝트의 컨텍스트에서 환경 변수 처럼 동작 하며 $ {env를 사용 하 여 액세스할 수 있습니다.\< *작업. json* 및 시작과 *json* 의 변수 >} 구문 (여기서 정의 된 경우). 그러나 Visual Studio에서 내부적으로 사용 하는 명령 프롬프트에서 실제 환경 변수로 반드시 설정 해야 하는 것은 아닙니다.
+필요에 따라 `environments` 속성을 사용 하 여 전역적으로 또는 구성 별로 *cppproperties.json* 의 변수 집합을 정의할 수 있습니다. 이러한 변수는 열린 폴더 프로젝트의 컨텍스트에서 환경 변수 처럼 동작 하며, 여기에서 정의 된 후에는 작업의 $ {\<env >} 구문과 *json* 및 *시작 및 json* 을 사용 하 여 액세스할 수 있습니다. 그러나 Visual Studio에서 내부적으로 사용 하는 명령 프롬프트에서 실제 환경 변수로 반드시 설정 해야 하는 것은 아닙니다.
 
-환경을 사용 하는 경우 환경이 동일한 구성의 일부로 정의 된 경우에 `inheritsEnvironments` 도 속성에서 지정 해야 합니다. 속성은 `environment` 환경 이름을 지정 합니다. 다음 예제에서는 MSYS2 설치에서 GCC에 대해 IntelliSense를 사용 하도록 설정 하는 샘플 구성을 보여 줍니다. 구성에서 `mingw_64` 환경을 정의 하 고 상속 하는 방법 및 속성에서 `includePath` `INCLUDE` 변수에 액세스할 수 있는 방법을 확인 합니다.
+**Visual Studio 2019 버전 16.4 이상:** *Cppproperties.json* 에 정의 된 구성 특정 변수는 `inheritEnvironments`설정 하지 않고도 디버그 대상과 태스크에 의해 자동으로 선택 됩니다. 디버그 대상은 *cppproperties.json*에서 지정 하는 환경과 함께 자동으로 시작 됩니다.
+
+**Visual Studio 2019 버전 16.3 및 이전 버전:** 환경을 사용 하는 경우 환경이 동일한 구성의 일부로 정의 된 경우에도 `inheritsEnvironments` 속성에서 지정 해야 합니다. `environment` 속성은 환경의 이름을 지정 합니다. 다음 예제에서는 MSYS2 설치에서 GCC에 대해 IntelliSense를 사용 하도록 설정 하는 샘플 구성을 보여 줍니다. 구성에서 `mingw_64` 환경을 정의 하 고 상속 하는 방법과 `includePath` 속성이 `INCLUDE` 변수에 액세스할 수 있는 방법을 확인 합니다.
 
 ```json
 "configurations": [
@@ -129,9 +131,9 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 |`${projectRoot}`| Cppproperties.json가 배치 되는 폴더의 전체 경로입니다 *.*|
 |`${env.vsInstallDir}`| 실행 중인 Visual Studio 인스턴스가 설치 된 폴더의 전체 경로입니다.|
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
-프로젝트에 포함 폴더가 있고 Windows SDK의 다른 공용 헤더 도 포함 하는 경우 다음과 같은 내용을 포함 하는 *cppproperties.json* 구성 파일을 업데이트할 수 있습니다.
+프로젝트에 포함 폴더가 있고 Windows SDK의 다른 공용 헤더 *도 포함 하는 경우* 다음과 같은 내용을 포함 하는 *cppproperties.json* 구성 파일을 업데이트할 수 있습니다.
 
 ```json
 {
@@ -158,10 +160,10 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense 오류 문제 해결
 
-원하는 IntelliSense가 표시 되지 않으면 **도구** > **옵션** > **텍스트 편집기** >  > **C/C++** **고급** 으로 이동 하 여 문제를 해결할 수 있습니다. **로깅 사용** 을 **true**로 설정 합니다. 먼저 **로깅 수준을** 5로 설정 하 고 **필터** 를 8로 설정 해 봅니다.
+원하는 IntelliSense가 표시 되지 않는 경우 **도구** > **옵션** > **텍스트 편집기** > **C++ C/**  > **고급** 으로 이동 하 고 **로깅 사용** 을 **true**로 설정 하 여 문제를 해결할 수 있습니다. 먼저 **로깅 수준을** 5로 설정 하 고 **필터** 를 8로 설정 해 봅니다.
 
 ![진단 로깅](media/diagnostic-logging.png)
 
-출력은 **출력 창** 로 파이프 되며 다음에서 출력 표시를 선택할 **때 표시 됩니다. 표시 C++** 출력에는 IntelliSense에서 사용 하려는 실제 포함 경로 목록이 포함 됩니다. 경로가 *cppproperties.json*의 경로와 일치 하지 않으면 폴더를 닫고 캐시 된 검색 데이터를 포함 하는 vs 하위 폴더를 삭제 하십시오 *.*
+출력은 **출력 창** 로 파이프 되며, **Visual C++ Log에서 출력 표시를**선택할 때 표시 됩니다. 출력에는 IntelliSense에서 사용 하려는 실제 포함 경로 목록이 포함 됩니다. 경로가 *cppproperties.json*의 경로와 일치 하지 않으면 폴더를 닫고 캐시 된 검색 데이터를 포함 하는 vs 하위 폴더를 삭제 하십시오 *.*
 
 include 경로 누락으로 인한 IntelliSense 오류 문제를 해결하려면, **오류 목록**을 열고, 출력을 "IntelliSense 전용" 및 E1696 오류 코드("소스 파일을 열 수 없습니다. ...")로 필터링합니다.

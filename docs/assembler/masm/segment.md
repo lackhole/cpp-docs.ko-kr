@@ -1,17 +1,17 @@
 ---
 title: SEGMENT
-ms.date: 12/06/2019
+ms.date: 12/16/2019
 f1_keywords:
 - SEGMENT
 helpviewer_keywords:
 - SEGMENT directive
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
-ms.openlocfilehash: 933e4e42b4b0f9cc979a3e67805d017f723472ef
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 569604bfd6ed11039ce5492223b8d5f986ceea7a
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988010"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318464"
 ---
 # <a name="segment"></a>SEGMENT
 
@@ -25,7 +25,7 @@ ms.locfileid: "74988010"
 
 #### <a name="parameters"></a>매개 변수
 
-*align*<br/>
+\ *맞춤*
 세그먼트의 시작 주소를 선택할 수 있는 메모리 주소 범위입니다. 맞춤 유형은 다음 중 하나일 수 있습니다.
 
 |정렬 유형|시작 주소|
@@ -64,4 +64,5 @@ _string_\
 
 ## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

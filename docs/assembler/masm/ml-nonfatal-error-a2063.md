@@ -1,27 +1,27 @@
 ---
 title: ML 심각하지 않은 오류 A2063
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A2063
 helpviewer_keywords:
 - A2063
 ms.assetid: 12976b25-2159-4e0c-9df3-dcfac61091ee
-ms.openlocfilehash: 51ebb12852f44a9615cfc2a50670e231d36efdc7
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: c34b7ad19263a0524d874dad8c3e0daca4946941
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856527"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317983"
 ---
 # <a name="ml-nonfatal-error-a2063"></a>ML 심각하지 않은 오류 A2063
 
-**can ALIGN only to power of 2 : expression**
+**2: 식의 제곱만 맞출 수 있습니다.**
 
-The expression specified with the [ALIGN](../../assembler/masm/align-masm.md) directive was invalid.
+[ALIGN](align-masm.md) 지시문으로 지정 된 식이 잘못 되었습니다.
 
-The **ALIGN** expression must be a power of 2 between 2 and 256, and must be less than or equal to the alignment of the current segment, structure, or union.
+**ALIGN** 식은 2에서 256 사이의 거듭제곱 이어야 하 고 현재 세그먼트, 구조체 또는 공용 구조체의 맞춤 보다 작거나 같아야 합니다.
 
 ## <a name="see-also"></a>참조
 
-[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>
+[ML 오류 메시지](ml-error-messages.md)
