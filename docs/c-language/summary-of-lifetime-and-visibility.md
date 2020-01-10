@@ -5,12 +5,12 @@ helpviewer_keywords:
 - lifetime, and visibility
 - visibility, identifiers
 ms.assetid: ea05a253-7658-482c-9a6b-abd71169c42d
-ms.openlocfilehash: 438dd855fbbfec01a31a8d4a1a53078e3c44658c
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: f364c3c0b558c00e3d411ab5b697ed01ec395cbd
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151782"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299080"
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>수명 및 표시 유형에 대한 요약
 
@@ -18,14 +18,14 @@ ms.locfileid: "56151782"
 
 ### <a name="summary-of-lifetime-and-visibility"></a>수명 및 표시 유형에 대한 요약
 
-|특성:<br /><br /> 수준|항목|스토리지 클래스<br /><br /> 지정자|결과:<br /><br /> 수명|표시 유형|
+|특성:<br /><br /> 수준|항목|스토리지 클래스<br /><br /> 지정자|Result:<br /><br /> 수명|표시 유형|
 |---------------------------|----------|----------------------------------|--------------------------|----------------|
-|파일 범위|변수 정의|**static**|Global|이 항목이 발생하는 소스 파일의 나머지 부분|
-||변수 선언|**extern**|Global|이 항목이 발생하는 소스 파일의 나머지 부분|
-||함수 프로토타입 또는 정의|**static**|Global|단일 소스 파일|
-||함수 프로토타입|**extern**|Global|소스 파일의 나머지 부분|
-|블록 범위|변수 선언|**extern**|Global|블록|
-||변수 정의|**static**|Global|블록|
+|파일 범위|변수 정의|**static**|전역|이 항목이 발생하는 소스 파일의 나머지 부분|
+||변수 선언|**extern**|전역|이 항목이 발생하는 소스 파일의 나머지 부분|
+||함수 프로토타입 또는 정의|**static**|전역|단일 소스 파일|
+||함수 프로토타입|**extern**|전역|소스 파일의 나머지 부분|
+|블록 범위|변수 선언|**extern**|전역|블록|
+||변수 정의|**static**|전역|블록|
 ||변수 정의|**auto** 또는 **register**|로컬|블록|
 
 ## <a name="example"></a>예
@@ -36,7 +36,7 @@ ms.locfileid: "56151782"
 
 ### <a name="code"></a>코드
 
-```
+```c
 // Lifetime_and_Visibility.c
 
 #include <stdio.h>
@@ -66,6 +66,6 @@ int main()  // main function defined at external level
 
 이 예제에는 네 가지 수준의 표시 유형(외부 수준과 세 가지 블록 수준)이 있습니다. 값은 각 문 다음에 있는 주석에 언급된 것처럼 화면에 출력됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [수명, 범위, 표시 유형 및 링크](../c-language/lifetime-scope-visibility-and-linkage.md)

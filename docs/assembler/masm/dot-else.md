@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .ELSE directive
 ms.assetid: ebfec69d-7107-47d1-9cb3-87c99cc8dff7
-ms.openlocfilehash: f048901a3958066880665b76d865f926a26ffb24
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 08d3d3d6dbf423d25081cfd9c866bba717c50d29
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398505"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75313836"
 ---
 # <a name="else-32-bit-masm"></a>. ELSE (32 비트 MASM)
 
@@ -21,8 +21,9 @@ ms.locfileid: "74398505"
 
 ## <a name="remarks"></a>주의
 
-(32 비트 MASM에만 해당) [을 참조 하세요. 이면이](../../assembler/masm/dot-if.md)고,
+(32 비트 MASM에만 해당) [을 참조 하세요. 이면이](dot-if.md)고,
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

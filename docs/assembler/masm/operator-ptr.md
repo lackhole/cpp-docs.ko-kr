@@ -1,6 +1,6 @@
 ---
 title: 연산자 PTR
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - PTR
 - operator PTR
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - PTR operator
 - operator PTR
 ms.assetid: df280f36-ca06-4578-b99d-0aa139b2b969
-ms.openlocfilehash: 7b1f59985d4a11dd4ffd65c8ef1086826ade6ea3
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 32e7673445e1c9007ec980da901330261213f554
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74396500"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75319010"
 ---
 # <a name="operator-ptr"></a>연산자 PTR
 
@@ -25,6 +25,7 @@ ms.locfileid: "74396500"
 >
 > \[*거리*] **PTR** *유형*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[연산자 참조](operators-reference.md)
+[연산자 참조](operators-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

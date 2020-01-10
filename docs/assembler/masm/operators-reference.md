@@ -1,20 +1,20 @@
 ---
 title: MASM 연산자 참조
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), operators reference
 - operators [MASM]
 ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
-ms.openlocfilehash: 5295307ad668b76e5ff39882ce2613f2042f914a
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: c0059ab1b0204b79e040d18bd5aa88145775ebcd
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74395210"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318763"
 ---
 # <a name="masm-operators-reference"></a>MASM 연산자 참조
 
-## <a name="arithmetic"></a>연산
+## <a name="arithmetic"></a>산술 연산
 
 ||||
 |-|-|-|
@@ -68,7 +68,7 @@ ms.locfileid: "74395210"
 |[EQ (같음)](operator-eq.md)|[GE (크거나 같음)](operator-ge.md)|[GT (보다 큼)](operator-gt.md)|
 |[LE (작거나 같음)](operator-le.md)|[LT (보다 작음)](operator-lt.md)|[NE (같지 않음)](operator-ne.md)|
 
-## <a name="segment"></a>세그먼트가
+## <a name="segment"></a>세그먼트
 
 |||
 |-|-|
@@ -88,6 +88,7 @@ ms.locfileid: "74395210"
 |[SIZEOF (형식 또는 변수의 크기)](operator-sizeof.md)|[THIS (현재 위치)](operator-this.md)|[형식 (식 형식 가져오기)](operator-type.md)|
 |[. 유형 (인수 유형 정보 가져오기)](operator-dot-type.md)|||
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[Microsoft 매크로 어셈블러 참조](microsoft-macro-assembler-reference.md)<br/>
+[Microsoft 매크로 어셈블러 참조](microsoft-macro-assembler-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

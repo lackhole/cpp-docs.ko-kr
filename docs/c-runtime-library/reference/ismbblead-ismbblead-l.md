@@ -1,6 +1,7 @@
 ---
 title: _ismbblead, _ismbblead_l
-ms.date: 11/04/2016
+description: Microsoft CRT (C 런타임 라이브러리) _ismbblead 및 _ismbblead_l 함수에 대해 설명 합니다.
+ms.date: 01/08/2020
 api_name:
 - _ismbblead_l
 - _ismbblead
@@ -35,16 +36,16 @@ helpviewer_keywords:
 - ismbblead_l function
 - _istlead function
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
-ms.openlocfilehash: c0f9ec748a86d5d1413cf4f881234d786c2a2d78
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 6a7bb992eeeb9c66a7cbdea0ed34cf797d374617
+ms.sourcegitcommit: 7bd3567fc6a0e7124aab51cad63bbdb44a99a848
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954059"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755042"
 ---
 # <a name="_ismbblead-_ismbblead_l"></a>_ismbblead, _ismbblead_l
 
-문자를 테스트하여 멀티바이트 문자의 선행 바이트인지 여부를 확인합니다.
+문자를 테스트 하 여 멀티 바이트 문자의 선행 바이트 인지 여부를 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -60,23 +61,27 @@ int _ismbblead_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*c*<br/>
+*c*\
 테스트할 정수입니다.
 
-*locale*<br/>
+*로캘*\
 사용할 로캘입니다.
 
 ## <a name="return-value"></a>반환 값
 
 정수 *c* 가 멀티 바이트 문자의 첫 번째 바이트인 경우 0이 아닌 값을 반환 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 멀티바이트 문자는 선행 바이트와 그 뒤에 오는 후행 바이트로 구성됩니다. 선행 바이트는 지정된 문자 집합에 대한 특정 범위에 있는 것으로 구분됩니다. 예를 들어 코드 페이지 932에만 0x81-0x9F 및 0xE0-0xFC의 선행 바이트 범위를 사용할 수 있습니다.
 
-**_ismbblead** 는 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbblead_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbblead** 은 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbblead_l** 은 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+로캘이 u t f-8 이면 **_ismbblead** 및 **_ismbblead_l** 는 *c* 가 선행 바이트 인지 여부에 관계 없이 항상 0 (false)을 반환 합니다.
+
+**_ismbblead** 및 **_ismbblead_l** 는 Microsoft 전용 이며 표준 C 라이브러리의 일부가 아닙니다. 이식 가능한 코드를 원하는 위치에 사용 하지 않는 것이 좋습니다. 표준 C 호환성의 경우 **mbrlen** 을 대신 사용 합니다.
+
+### <a name="generic-text-routine-mappings"></a>일반 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -91,9 +96,10 @@ int _ismbblead_l(
 
 \* 테스트 조건에 대한 매니페스트 상수에 해당합니다.
 
-호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+호환성에 대한 자세한 내용은 [Compatibility](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-[바이트 분류](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)<br/>
+[바이트 분류](../../c-runtime-library/byte-classification.md)\
+[_ismbb 루틴](../../c-runtime-library/ismbb-routines.md)\
+[mbrlen](mbrlen.md)

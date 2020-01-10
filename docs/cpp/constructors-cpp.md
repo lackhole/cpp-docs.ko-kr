@@ -1,17 +1,17 @@
 ---
 title: 생성자 (C++)
-ms.date: 11/19/2019
+ms.date: 12/27/2019
 helpviewer_keywords:
 - constructors [C++]
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 6cdf6241542c3f93484097c65015181a91647d49
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 985c63c5c937f9e85b6898cdbcc61f347688b96d
+ms.sourcegitcommit: 00f50ff242031d6069aa63c81bc013e432cae0cd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246612"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546395"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -435,7 +435,7 @@ Contained3 ctor
 DerivedContainer ctor
 ```
 
-파생 클래스 생성자는 항상 기본 클래스 생성자를 호출하므로, 완전히 생성된 기본 클래스를 통해서만 다른 작업을 수행할 수 있습니다. 기본 클래스 생성자는 파생 순서 대로 호출 됩니다. 예를 들어, `ClassC`에서 파생 된 `ClassB`에서 파생 된 `ClassA` 경우 `ClassC` 생성자가 먼저 호출 된 다음 `ClassB` 생성자가 호출 됩니다.`ClassA`
+파생 클래스 생성자는 항상 기본 클래스 생성자를 호출하므로, 완전히 생성된 기본 클래스를 통해서만 다른 작업을 수행할 수 있습니다. 기본 클래스 생성자는 파생 순서 대로 호출 됩니다. 예를 들어, `ClassC`에서 파생 된 `ClassB`에서 파생 된 `ClassA` 경우 `ClassC` 생성자가 먼저 호출 된 다음 `ClassB` 생성자가 호출 됩니다.
 
 기본 클래스에 기본 생성자가 없는 경우 파생 클래스 생성자에 기본 클래스 생성자 매개 변수를 제공해야 합니다.
 
@@ -477,6 +477,52 @@ int main(){
 1. 기본 클래스 및 멤버 개체가 선언의 역순으로 제거됩니다.
 
 1. 생성자가 비대리자인 경우 제대로 생성된 기본 클래스 개체 및 멤버가 모두 소멸됩니다. 하지만 개체가 완전히 생성되지 않으므로 소멸자는 실행되지 않습니다.
+
+## <a name="extended_aggregate"></a>파생 된 생성자 및 확장 된 집계 초기화
+
+기본 클래스의 생성자가 public이 아니지만 파생 된 클래스에서 액세스할 수 있는 경우 Visual Studio 2017 이상에서 **/hd: c + + 17** 모드 아래에 있는 빈 중괄호를 사용 하 여 파생 형식의 개체를 초기화할 수 없습니다.
+
+다음 예제에서는 C++14 준수 동작을 보여 줍니다.
+
+```cpp
+struct Derived;
+
+struct Base {
+    friend struct Derived;
+private:
+    Base() {}
+};
+
+struct Derived : Base {};
+
+Derived d1; // OK. No aggregate init involved.
+Derived d2 {}; // OK in C++14: Calls Derived::Derived()
+               // which can call Base ctor.
+```
+
+C++17에서 `Derived`는 이제 집계 형식으로 간주되므로 프라이빗 기본 생성자를 통한 `Base`의 초기화가 확장된 집계 초기화 규칙의 일부로 직접 발생합니다. 이전에는 `Base` 프라이빗 생성자가 `Derived` 생성자를 통해 호출되었으며, friend 선언 때문에 성공했습니다.
+
+다음 예제에서는 **/std: c + + 17** 모드의 Visual Studio 2017 이상에서 c + + 17 동작을 보여 줍니다.
+
+```cpp
+struct Derived;
+
+struct Base {
+    friend struct Derived;
+private:
+    Base() {}
+};
+
+struct Derived : Base {
+    Derived() {} // add user-defined constructor
+                 // to call with {} initialization
+};
+
+Derived d1; // OK. No aggregate init involved.
+
+Derived d2 {}; // error C2248: 'Base::Base': cannot access
+               // private member declared in class 'Base'
+```
 
 ### <a name="constructors-for-classes-that-have-multiple-inheritance"></a>여러 상속이 있는 클래스의 생성자
 
@@ -652,6 +698,6 @@ int main(){
 - [이동 생성자 및 이동 할당 연산자](move-constructors-and-move-assignment-operators-cpp.md)
 - [생성자 위임](delegating-constructors.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [클래스 및 구조체](classes-and-structs-cpp.md)

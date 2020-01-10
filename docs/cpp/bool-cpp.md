@@ -8,18 +8,18 @@ helpviewer_keywords:
 - bool keyword [C++]
 - __BOOL_DEFINED macro
 ms.assetid: 9abed3f2-d21c-4eb4-97c5-716342e613d8
-ms.openlocfilehash: e481cb9de7c80d147179efceab2fda9b160f3c21
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a3384bbb118c7363a603b5b9b0c8a375cb3dd185
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184288"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301641"
 ---
 # <a name="bool-c"></a>bool (C++)
 
-이 키워드는 기본 제공 형식입니다. 이 형식의 변수에 값을 가질 수 있습니다 [true](../cpp/true-cpp.md) 하 고 [false](../cpp/false-cpp.md)합니다. 형식이 조건식 **bool** 형식의 값을 해야 하므로 **bool**합니다. 예를 들어 `i!=0` 이제 값에 따라 TRUE 또는 FALSE가 `i`입니다.
+이 키워드는 기본 제공 형식입니다. 이 형식의 변수는 [true](../cpp/true-cpp.md) 및 [false](../cpp/false-cpp.md)값을 가질 수 있습니다. 조건식의 형식은 **bool** 이며 **bool**형식의 값을 포함 합니다. 예를 들어 `i!=0` `i`의 값에 따라 TRUE 또는 FALSE가 됩니다.
 
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 피연산자 접두사 또는 후 위 증가 또는 감소 연산자는 형식의 되지 않을 수 있습니다 **bool**합니다. 즉, 변수에 지정 된 `b` 형식의 **bool**, 이러한 식이 허용 되는 더 이상:
+**Visual Studio 2017 버전 15.3 이상** ( [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)과 함께 사용 가능): 후 위 또는 전위 증가 또는 감소 연산자의 피연산자는 **bool**형식일 수 없습니다. 즉, **bool**형식의 변수 `b` 지정 된 경우 이러한 식은 더 이상 허용 되지 않습니다.
 
 ```cpp
     b++;
@@ -28,7 +28,7 @@ ms.locfileid: "62184288"
     --b;
 ```
 
-값 TRUE 및 FALSE 다음 관계를 포함 합니다.
+TRUE 및 FALSE 값의 관계는 다음과 같습니다.
 
 ```cpp
 !false == true
@@ -41,16 +41,16 @@ ms.locfileid: "62184288"
 if (condexpr1) statement1;
 ```
 
-하는 경우 `condexpr1` 가 TRUE 인 `statement1` 이 항상 실행 하는 경우 `condexpr1` 은 FALSE `statement1` 실행 되지 않습니다.
+`condexpr1` TRUE 이면 `statement1` 항상 실행 됩니다. `condexpr1` FALSE 이면 `statement1` 실행 되지 않습니다.
 
-후 위 또는 접두사 **++** 형식의 변수에 연산자를 적용할 **bool**, 변수는 TRUE로 설정 됩니다.
-**Visual Studio 2017 버전 15.3 이상**: operator + + **bool** 언어에서 제거 되었습니다 및는 지원 되지 않습니다.
+후 위 또는 접두사 **++** 연산자를 **bool**형식의 변수에 적용 하면 변수가 TRUE로 설정 됩니다.
+**Visual Studio 2017 버전 15.3 이상**: **bool** 의 operator + +는 언어에서 제거 되었으며 더 이상 지원 되지 않습니다.
 
-후 위 또는 접두사 **--** 연산자는이 형식의 변수에 적용할 수 없습니다.
+후 위 또는 접두사 **--** 연산자를이 형식의 변수에 적용할 수 없습니다.
 
-합니다 **bool** 형식은 정수 계열 확장에 참여 합니다. 형식의 r-value **bool** 형식의 r-value로 변환할 수 있습니다 **int**FALSE 되는 것으로, 0 및 1 TRUE입니다. 고유 형식으로 **bool** 오버 로드 확인에 참여 합니다.
+**Bool** 형식은 정수 계열 확장에 참여 합니다. **Bool** 형식의 r 값은 **int**형식의 r 값으로 변환 될 수 있으며 FALSE는 0이 되 고 TRUE는 1이 됩니다. 고유 형식으로 서, **bool** 은 오버 로드 확인에 참여 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [C++ 키워드](../cpp/keywords-cpp.md)<br/>
-[기본 형식(C++)](../cpp/fundamental-types-cpp.md)
+[기본 제공 형식](../cpp/fundamental-types-cpp.md)

@@ -56,12 +56,12 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: f4bef0ef4f3cad0411f6da54ce5e2d8883913754
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: dab670c5baef1c51c39a4c936380fab92c5103cc
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940355"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75300309"
 ---
 # <a name="_exec-_wexec-functions"></a>_exec, _wexec 함수
 
@@ -83,11 +83,11 @@ ms.locfileid: "70940355"
 |`p`|`PATH` 환경 변수는 실행할 파일을 찾는 데 사용됩니다.|
 |`v`|명령줄 인수에 대한 포인터의 배열인 `argv`가 `_exec`로 전달됩니다. 새 프로세스의 매개 변수 개수가 가변적인 경우 일반적으로 사용됩니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_exec` 함수는 새 프로세스를 로드하고 실행합니다. 모든 `_exec` 함수는 동일한 운영 체제 함수([CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw))를 사용합니다. `_exec` 함수는 멀티바이트 문자열 인수를 적절하게 자동으로 처리하여 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식합니다. `_wexec` 함수는 `_exec` 함수의 와이드 문자 버전입니다. `_wexec` 함수는 멀티바이트 문자열을 처리하지 않는다는 점만 제외하면 자신의 `_exec` 패밀리 대응 함수와 동일하게 작동합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -118,7 +118,7 @@ ms.locfileid: "70940355"
 
 `_execv`, `_execve`, `_execvp` 및 `_execvpe` 호출은 새 프로세스에 대한 매개 변수 개수가 가변적인 경우 유용합니다. 매개변수에 대한 포인터는 배열 `argv`로 전달됩니다. 일반적으로 매개 변수 `argv`[0]은 `cmdname`에 대한 포인터입니다. 매개 변수 `argv`[1]~`argv`[`n`]는 새 매개 변수 목록을 구성하는 문자열을 가리킵니다. 매개 변수 `argv`[`n`+1]는 매개 변수 목록의 끝을 표시하는 **NULL** 포인터여야 합니다.
 
-`_exec` 호출 시 열린 파일은 새 프로세스에서도 열린 채 남아 있습니다. `_execl`, `_execlp`, `_execv` 및 `_execvp` 호출 시 새 프로세스는 호출 프로세스의 환경을 상속합니다. `_execle`, `_execlpe`, `_execve` 및 `_execvpe` 호출은 `envp` 매개 변수를 통해 환경 설정 목록을 전달함으로써 새 프로세스의 환경을 변경합니다. `envp`는 문자 포인터의 배열로, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하는 null로 끝나는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. `value`는 큰따옴표로 묶지 않습니다. `envp` 배열의 마지막 요소는 **NULL**이어야 합니다. `envp` 자체가 **NULL**이면 새 프로세스는 호출 프로세스의 환경을 상속합니다.
+`_exec` 호출 시 열린 파일은 새 프로세스에서도 열린 채 남아 있습니다. `_execl`, `_execlp`, `_execv` 및 `_execvp` 호출 시 새 프로세스는 호출 프로세스의 환경을 상속합니다. `_execle`, `_execlpe`, `_execve` 및 `_execvpe` 호출은 `envp` 매개 변수를 통해 환경 설정 목록을 전달함으로써 새 프로세스의 환경을 변경합니다. `envp`는 문자 포인터의 배열로, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하는 null로 끝나는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. `value`은 큰따옴표로 묶여 있지 않습니다. `envp` 배열의 마지막 요소는 **NULL**이어야 합니다. `envp` 자체가 **NULL**이면 새 프로세스는 호출 프로세스의 환경을 상속합니다.
 
 `_exec` 함수 중 하나를 사용하여 실행된 프로그램은 마치 프로그램의 .exe 파일 헤더에 있는 최대 할당 필드가 기본값인 0xFFFFH로 설정된 것처럼 항상 메모리로 로드됩니다 .
 
@@ -126,7 +126,7 @@ ms.locfileid: "70940355"
 
 ## <a name="example"></a>예
 
-```
+```c
 // crt_args.c
 // Illustrates the following variables used for accessing
 // command-line arguments and environment variables:
@@ -157,7 +157,7 @@ char **envp )       // Array of environment variable strings
 
 다음 프로그램을 실행하여 Crt_args.exe를 실행합니다.
 
-```
+```c
 // crt_exec.c
 // Illustrates the different versions of exec, including
 //      _execl          _execle          _execlp          _execlpe
@@ -236,7 +236,7 @@ int main( int ac, char* av[] )
 
 **헤더:** process.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [프로세스 및 환경 제어](../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../c-runtime-library/reference/abort.md)<br/>

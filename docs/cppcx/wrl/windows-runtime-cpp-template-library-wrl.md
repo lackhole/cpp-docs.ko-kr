@@ -3,12 +3,12 @@ title: Windows 런타임 C++ 템플릿 라이브러리(WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 7a7b37a32ebaa0bb6ad71c8f710300256589388d
-ms.sourcegitcommit: 3ee06ec53153cf21910fc8cfef78a4f25f9633f3
+ms.openlocfilehash: 41b8b45f89e94b8de2ddcb9c87bfd72122db8e1a
+ms.sourcegitcommit: 27d9db019f6d84c94de9e6aff0170d918cee6738
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74541199"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75676940"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -147,5 +147,5 @@ Windows 런타임 C++ 템플릿 라이브러리는 몇 가지 기본 개념을 �
 |-|-|
 |[범주별 키 Api](key-wrl-apis-by-category.md)|기본 Windows 런타임 C++ 템플릿 라이브러리 형식, 함수 및 매크로를 강조 표시 합니다.|
 |[참조](wrl-reference.md)|Windows 런타임 C++ 템플릿 라이브러리에 대 한 참조 정보를 포함 합니다.|
-|[빠른 참조 C++/cx)](../../cppcx/quick-reference-c-cx.md)|Windows 런타임를 지 C++원하는/cx 기능을 간략하게 설명 합니다.|
+|[빠른 참조(C++/CX)](../../cppcx/quick-reference-c-cx.md)|Windows 런타임를 지 C++원하는/cx 기능을 간략하게 설명 합니다.|
 |[시각적 개체에서 Windows 런타임 구성 요소 사용C++](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|/Cx를 사용 C++하 여 기본 Windows 런타임 구성 요소를 만드는 방법을 보여 줍니다.|

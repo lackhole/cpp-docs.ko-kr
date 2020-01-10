@@ -8,12 +8,12 @@ helpviewer_keywords:
 - statements, labeled
 - goto keyword [C]
 ms.assetid: 3d0473dc-4b18-4fcc-9616-31a38499d7d7
-ms.openlocfilehash: b23e7e6310ba4ed968e2eac8e6d07d81ee4e79ba
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
-ms.translationtype: HT
+ms.openlocfilehash: b5e0d602332c87510b1fe5f59db3e497b88f0acb
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151951"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299119"
 ---
 # <a name="goto-and-labeled-statements-c"></a>goto 및 레이블 문 (C)
 
@@ -26,10 +26,10 @@ ms.locfileid: "56151951"
 &nbsp;&nbsp;&nbsp;&nbsp;*jump-statement*
 
 *점프 문*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**goto**  *identifier*  **;**
+&nbsp;&nbsp;&nbsp;&nbsp;**goto***식별자* **;**
 
 *labeled-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*identifier*  **:**  *statement*
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier* **:** *문*
 
 문 레이블은 `goto` 문에만 의미가 있으며 다른 모든 컨텍스트에서 레이블 문은 레이블에 관계없이 실행됩니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "56151951"
 
 이 예제에서는 `goto` 문을 보여 줍니다.
 
-```
+```c
 // goto.c
 #include <stdio.h>
 
@@ -67,6 +67,6 @@ int main()
 
 이 예제에서 `goto`가 5에 해당하는 경우 `stop` 문은 `i`이라는 레이블이 지정된 지점으로 제어를 전송합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [문](../c-language/statements-c.md)

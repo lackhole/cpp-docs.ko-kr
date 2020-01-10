@@ -5,21 +5,21 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: e3e86acb81120af1b663b56681ff0f8c41036b5a
-ms.sourcegitcommit: 2362d15b5eb18d27773c3f7522da3d0eed9e2571
+ms.openlocfilehash: e029752ebaae5debb33d8e4a3920c5572f4d923b
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754070"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302148"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ 언어 규칙 테이블
 
-이 항목에서는 Visual Studio 2019 이하 버전의 Microsoft C++ 컴파일러에 대한 컴파일러 기능 및 표준 라이브러리 기능의 ISO C++03, C++11, C++14, C++17 및 C++20 언어 표준 규칙을 요약하고 있습니다. 각 컴파일러 및 표준 라이브러리 기능 이름은 기능을 설명하는 ISO C++ 표준 제안 문서에 연결됩니다(게시 시점에 사용 가능한 경우). [지원됨] 열에는 기능에 대한 지원이 먼저 표시되는 Visual Studio 버전이 나열됩니다.
+Visual Studio(MSVC)의 Microsoft C++ 컴파일러에 대한 표준 규칙은 진행 중인 작업입니다. 다음은 Microsoft ISO 표준 C++ 언어 및 Visual Studio의 라이브러리 규칙에 대한 요약입니다. 각 컴파일러 및 표준 라이브러리 기능 이름은 기능을 설명하는 ISO 표준 C++ 제안 문서에 연결됩니다(게시 시점에 사용 가능한 경우). **지원됨** 열에는 기능에 대한 지원이 먼저 표시되는 Visual Studio 버전이 나열됩니다.
 
-Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 사항에 대한 자세한 내용은 이 페이지의 왼쪽 위에 있는 버전 선택기를 설정한 후 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements.md) 및 [Visual Studio 2017의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)을 참조하세요. 이전 버전의 규칙 변경 내용에 대해서는 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)(Visual C++ 주요 변경 내용) 및 [2003~ 2015 Visual C++ 주요 변경 내용](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요. C++ 팀의 최신 뉴스를 보려면 [C++ 팀 블로그](https://devblogs.microsoft.com/cppblog/)를 방문하세요.
+Visual Studio 2017 또는 Visual Studio 2019 MSVC 규칙 향상에 대한 자세한 내용은 [Visual Studio의 C++ 규칙 향상](cpp-conformance-improvements.md)을 참조하세요. 기타 변경 내용의 목록은 [새로워진 Visual Studio의 Visual C++ 기능](what-s-new-for-visual-cpp-in-visual-studio.md)을 참조하세요. 이전 버전의 규칙 변경 내용에 대해서는 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)(Visual C++ 주요 변경 내용) 및 [2003~ 2015 Visual C++ 주요 변경 내용](../porting/visual-cpp-what-s-new-2003-through-2015.md)을 참조하세요. C++ 팀의 최신 뉴스를 보려면 [C++ 팀 블로그](https://devblogs.microsoft.com/cppblog/)를 방문하세요.
 
 > [!NOTE]
-> Visual Studio 2015, Visual Studio 2017 및 Visual Studio 2019 간에는 주요 이진 변경 내용이 없습니다.
+> Visual Studio 2015, Visual Studio 2017 및 Visual Studio 2019 간에는 주요 이진 변경 내용이 없습니다. 자세한 내용은 [Visual Studio 2015, Visual Studio 2017, Visual Studio 2019 간의 C++ 이진 호환성](../porting/binary-compat-2015-2017.md)을 참조하세요.
 
 ## <a name="compiler-features"></a>컴파일러 기능
 
@@ -87,9 +87,12 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0702R1 이니셜라이저 목록 작업자(initializer-list actors)에 대한 클래스 템플릿 인수 추론 문제 해결(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0961R1 Relaxing the structured bindings customization point finding rules](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0961r1.html)(P0961R1 구조적 바인딩 사용자 지정 지점 찾기 규칙 완화)|VS 2019 16.0 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0969R0 액세스할 수 있는 멤버에게 구조화된 바인딩 허용](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0969r0.pdf)|VS 2019 16.0 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0588R1 암시적 람다 캡처 단순화](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0588r1.html)|아니요|
-|&nbsp;&nbsp;[P0962R2 range-for 루프 사용자 지정 지점 찾기 규칙 완화](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0962r1.html)|아니요|
+|&nbsp;&nbsp;[P0588R1 암시적 람다 캡처 단순화](http://wg21.link/p0588r1)|VS 2019 16.4 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P1771R1 생성자용 \[\[nodiscard\]\]](https://wg21.link/p1771r1)|VS 2019 16.4 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P1825R0 P0527R1 및 P1155R3에 대한 병합된 문구, 암시적 동작](https://wg21.link/p1825r0)|VS 2019 16.4 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0929R2 Checking for abstract class types](https://wg21.link/P0929R2)(P0929R2 추상 클래스 형식 확인)|아니요|
+|&nbsp;&nbsp;[P0962R2 range-for 루프 사용자 지정 지점 찾기 규칙 완화](https://wg21.link/p0962r1)|아니요|
+|&nbsp;&nbsp;[P0859R0 CWG 1581: constexpr 멤버 함수가 정의되는 시기](https://wg21.link/p0859r0)|아니요|
 |&nbsp;&nbsp;[P1009R2 Array size deduction in new-expressions](https://wg21.link/P1009R2)(P1009R2 새 식의 배열 크기 감소)|아니요|
 |&nbsp;&nbsp;[P1286R2 Contra CWG DR1778](https://wg21.link/P1286R2)|아니요|
 |__C++20 핵심 언어 기능__|__지원됨__|
@@ -97,44 +100,47 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P1041R4 Make char16_t/char32_t string literals be UTF-16/32](https://wg21.link/P1041R4)(P1041R4 char16_t/char32_t 문자열 리터럴을 UTF-16/32로 설정)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P1330R0 Changing the active member of a union inside constexpr](https://wg21.link/P1330R0)(P1330R0 constexpr 내부 공용 구조체의 활성 멤버 변경)|VS 2017 15.0 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0972R0 noexcept For \<chrono> zero(), min(), max()](https://wg21.link/P0972R0)(P0972R0 <chrono> zero(), min(), max()에 대한 noexcept)|VS 2017 15.7 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0329R4 지정된 초기화(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)(P0409R2 람다 캡처 [=, this] 허용)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0515R3 3방향(우주선) 비교 연산자 <=>](https://wg21.link/P0515R3)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0941R2 Feature-test macros](https://wg21.link/P0941R2)(P0941R2 기능 테스트 매크로)|VS 2019 16.0 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P1008R1 Prohibiting aggregates with user-declared constructors](https://wg21.link/P1008R1)(P1008R1 사용자 선언 생성자를 사용하여 집계 금지)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0329R4 지정된 초기화(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0846R0 ADL and function templates that are not visible](https://wg21.link/P0846R0)(P0846R0 표시되지 않는 ADL 및 함수 템플릿)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)(P0409R2 람다 캡처 [=, this] 허용)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0428R2 일반 람다에 대한 친숙한 템플릿 구문(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0624R2 Default constructible and assignable stateless lambdas](https://wg21.link/P0624R2)(P0624R2 기본 constructible 및 assignable stateless 람다)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0780R2 Allowing pack expansion in lambda init-capture](https://wg21.link/P0780R2)(P0780R2 람다 init 캡처에서 팩 확장 허용)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0806R2 Deprecate implicit capture of this via \[=\]](https://wg21.link/P0806R2)(P0806R2 [[=]]를 통해 this의 암시적 캡처 사용 중단)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1120R0 Consistency improvements for <=> and other comparison operators](https://wg21.link/P1120R0)(P1120R0 <=> 및 기타 비교 연산자의 일관성 향상)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1185R2 \<=\> != ==](https://wg21.link/P1185R2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0734R0 개념(영문)](https://wg21.link/P0734R0)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0857R0 Fixing functionality gaps in constraints](https://wg21.link/P0857R0)(P0857R0 제약 조건의 기능 차이 수정)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1084R2 Today's return-type-requirements are insufficient](https://wg21.link/P1084R2)(P1084R2 현재 반환 형식 요구 사항이 부족함)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0892R2 Conditional explicit](https://wg21.link/P0892R2)(P0892R2 조건부 명시적)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1091R3 Extending structured bindings to be more like variable declarations](https://wg21.link/P1091R3)(P1091R3 구조적 바인딩을 변수 선언과 더 비슷하게 확장)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1099R5 열거형 사용](https://wg21.link/P1099R5)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1186R3 \<=>를 실제로 사용하는 경우](https://wg21.link/P1186R3)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1630R1 우주선에 조정 필요](https://wg21.link/P1630R1)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0641R2 const mismatch with defaulted copy constructor](https://wg21.link/P0641R2)(P0641R2 기본 복사 생성자와 const 불일치)|Partial|
 |&nbsp;&nbsp;[P0306R4 쉼표 생략 및 쉼표 삭제에 \_\_VA_OPT\_\_ 추가(영문)](https://wg21.link/P0306R4)|아니요|
 |&nbsp;&nbsp;[P0315R4 Allowing lambdas in unevaluated contexts](https://wg21.link/P0315R4)(P0315R4 평가되지 않은 컨텍스트에서 람다 허용)|아니요|
-|&nbsp;&nbsp;[P0428R2 일반 람다에 대한 친숙한 템플릿 구문(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|아니요|
 |&nbsp;&nbsp;[P0479R5 \[\[likely\]\] and \[\[unlikely\]\] attributes](https://wg21.link/P0479R5)(P0479R5 [[likely]] 및 [[unlikely]] 특성)|아니요|
 |&nbsp;&nbsp;[P0542R5 Contracts](https://wg21.link/P0542R5)(P0542R5 계약)|아니요|
 |&nbsp;&nbsp;[P0614R1 Range-based for-loops with initializers](https://wg21.link/P0614R1)(P0614R1 이니셜라이저를 사용한 범위 기반 for 루프)|아니요|
-|&nbsp;&nbsp;[P0624R2 Default constructible and assignable stateless lambdas](https://wg21.link/P0624R2)(P0624R2 기본 constructible 및 assignable stateless 람다)|아니요|
 |&nbsp;&nbsp;[P0634R3 Down with typename!](https://wg21.link/P0634R3)(P0634R3 typename을 사용한 다운!)|아니요|
 |&nbsp;&nbsp;[P0683R1 비트 필드에 대한 기본 멤버 이니셜라이저(영문)](https://wg21.link/P0683R1)|아니요|
 |&nbsp;&nbsp;[P0692R1 Relaxing access checking on specializations](https://wg21.link/P0692R1)(P0692R1 특수화를 확인하는 액세스 완화)|아니요|
 |&nbsp;&nbsp;[P0722R3 Efficient sized delete for variable sized classes](https://wg21.link/P0722R3)(P0722R3 변수 크기 클래스의 효율적 크기 삭제)|아니요|
 |&nbsp;&nbsp;[P0732R2 Class types in non-type template parameters](https://wg21.link/P0732R2)(P0732R2 비형식 템플릿 매개 변수의 클래스 형식)|아니요|
-|&nbsp;&nbsp;[P0734R0 개념(영문)](https://wg21.link/P0734R0)|아니요|
-|&nbsp;&nbsp;[P0780R2 Allowing pack expansion in lambda init-capture](https://wg21.link/P0780R2)(P0780R2 람다 init 캡처에서 팩 확장 허용)|아니요|
-|&nbsp;&nbsp;[P0806R2 Deprecate implicit capture of this via \[=\]](https://wg21.link/P0806R2)(P0806R2 [[=]]를 통해 this의 암시적 캡처 사용 중단)|아니요|
 |&nbsp;&nbsp;[P0840R2 \[\[no_unique_address\]\] attribute](https://wg21.link/P0840R2)(P0840R2 [[no_unique_address]] 특성)|아니요|
-|&nbsp;&nbsp;[P0857R0 Fixing functionality gaps in constraints](https://wg21.link/P0857R0)(P0857R0 제약 조건의 기능 차이 수정)|아니요|
-|&nbsp;&nbsp;[P0892R2 Conditional explicit](https://wg21.link/P0892R2)(P0892R2 조건부 명시적)|아니요|
 |&nbsp;&nbsp;[P0912R5 Coroutines](https://wg21.link/P0912R5)(P0912R5 코루틴)|아니요|
 |&nbsp;&nbsp;[P0960R3 Allow initializing aggregates from a parenthesized list of values](https://wg21.link/P0960R3)(P0960R3 괄호로 묶인 값 목록에서 집계 초기화 허용)|아니요|
 |&nbsp;&nbsp;[P1002R1 try-catch blocks in constexpr functions](https://wg21.link/P1002R1)(P1002R1 constexpr 함수의 try-catch 블록)|아니요|
 |&nbsp;&nbsp;[P1064R0 Allowing virtual function calls in constant expressions](https://wg21.link/P1064R0)(P1064R0 상수 식에서 가상 함수 호출 허용)|아니요|
 |&nbsp;&nbsp;[P1073R3 Immediate functions](https://wg21.link/P1073R3)(P1073R3 직접 함수)|아니요|
-|&nbsp;&nbsp;[P1084R2 Today's return-type-requirements are insufficient](https://wg21.link/P1084R2)(P1084R2 현재 반환 형식 요구 사항이 부족함)|아니요|
-|&nbsp;&nbsp;[P1091R3 Extending structured bindings to be more like variable declarations](https://wg21.link/P1091R3)(P1091R3 구조적 바인딩을 변수 선언과 더 비슷하게 확장)|아니요|
 |&nbsp;&nbsp;[P1094R2 Nested inline namespaces](https://wg21.link/P1094R2)(P1094R2 중첩 인라인 네임스페이스)|아니요|
 |&nbsp;&nbsp;[P1103R3 Modules](https://wg21.link/P1103R3)(P1103R3 모듈)|아니요|
-|&nbsp;&nbsp;[P1120R0 Consistency improvements for <=> and other comparison operators](https://wg21.link/P1120R0)(P1120R0 <=> 및 기타 비교 연산자의 일관성 향상)|아니요|
 |&nbsp;&nbsp;[P1139R2 Address wording issues related to ISO 10646](https://wg21.link/P1139R2)(P1139R2 ISO 10646에 관련된 단어 문제 해결)|아니요|
 |&nbsp;&nbsp;[P1141R2 Yet another approach for constrained declarations](https://wg21.link/P1141R2)(P1141R2 제한된 선언의 또 다른 접근 방식)|아니요|
-|&nbsp;&nbsp;[P1185R2 \<=\> != ==](https://wg21.link/P1185R2)|아니요|
 |&nbsp;&nbsp;[P1236R1 Signed integers are two's complement](https://wg21.link/P1236R1)(P1236R1 부호 있는 정수가 2의 보수임)|아니요|
 |&nbsp;&nbsp;[P1289R1 Access control in contract conditions](https://wg21.link/P1289R1)(P1289R1 계약 조건의 액세스 제어)|아니요|
 |&nbsp;&nbsp;[P1323R2 Contract postconditions and return type deduction](https://wg21.link/P1323R2)(P1323R2 계약 사후 조건 및 반환 형식 추론)|아니요|
@@ -150,6 +156,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0809R0 정렬되지 않은 컨테이너 비교](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0809r0.pdf)| VS 2010 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0858R0 Constexpr 반복기의 요구 사항](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0858r0.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0777R1 Avoiding Unnecessary Decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf)(P0777R1 불필요한 감소 방지)|VS 2017 15.7 <sup>[14](#note_14)</sup>|
+|&nbsp;&nbsp;[P1164R1 create_directory()를 직관적으로 만들기](https://wg21.link/P1164R1)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0550R2 remove_cvref](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0318R1 unwrap_reference, unwrap_ref_decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0318r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0457R2 starts_with()/ends_with() For basic_string/basic_string_view](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0457r2.html)(P0457R2 basic_string/basic_string_view에 대한 starts_with()/ends_with())|VS 2019 16.1 <sup>[20](#note_20)</sup>|
@@ -157,8 +164,20 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0646R1 list/forward_list remove()/remove_if()/unique() Return size_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0646r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0769R2 shift_left(), shift_right()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0769r2.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0020R6 atomic\<float>, atomic\<double>, atomic\<long double>](https://wg21.link/p0020r6)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0463R1 endian(영문)](https://wg21.link/p0463r1)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)(P0482R6 char8_t: UTF-8 문자 및 문자열 형식)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0600R1 \[\[nodiscard\]\] For The STL, Part 1](https://wg21.link/p0600r1)(P0600R1 STL, Part 1에 대한 [[nodiscard]])|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0653R2 to_address()](https://wg21.link/p0653r2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0754R2 \<version>](https://wg21.link/p0754r2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0771R1 noexcept For std::function's Move Constructor](https://wg21.link/P0771R1)(std::function의 이동 생성자에 대한 noexcept)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0487R1 연산자>>(basic_istream&, CharT* 수정](https://wg21.link/P0487R1)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0616R0 Using move() In \<numeric>](https://wg21.link/p0616r0)(P0616R0 <numeric>에서 move() 사용)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0758R1 is_nothrow_convertible](https://wg21.link/P0758R1)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0898R3 Standard Library Concepts](https://wg21.link/P0898R3)(P0898R3 표준 라이브러리 개념)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0919R3 Heterogeneous Lookup For Unordered Containers](https://wg21.link/P0919R3)(P0919R3 순서 없는 컨테이너에 대한 이종 조회)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1754R1 개념 이름을 standard_case로 변경](https://wg21.link/P1754R1)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0019R8 atomic_ref](https://wg21.link/P0019R8)|아니요|
-|&nbsp;&nbsp;[P0020R6 atomic\<float>, atomic\<double>, atomic\<long double>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html)|아니요|
 |&nbsp;&nbsp;[P0053R7 \<syncstream>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0053r7.pdf)<br/>&nbsp;&nbsp;[P0753R2 osyncstream Manipulators](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0753r2.pdf)(P0753R2 osyncstream 조작자)|아니요|
 |&nbsp;&nbsp;[P0122R7 \<span>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0122r7.pdf)|아니요|
 |&nbsp;&nbsp;[P0202R3 constexpr For \<algorithm> And exchange()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0202r3.html)(P0202R3 <algorithm> 및 exchange()에 대한 constexpr)|아니요|
@@ -169,34 +188,24 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0357R3 Supporting Incomplete Types In reference_wrapper](https://wg21.link/P0357R3)(P0357R3 reference_wrapper에서 불완전한 형식 지원)|아니요|
 |&nbsp;&nbsp;[P0415R1 constexpr For \<complex> (Again)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0415r1.html)(P0415R1 <complex>(다시 실행)에 대한 constexpr)|아니요|
 |&nbsp;&nbsp;[P0439R0 enum class memory_order](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0439r0.html)|아니요|
-|&nbsp;&nbsp;[P0463R1 endian(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html)|아니요|
 |&nbsp;&nbsp;[P0475R1 Guaranteed Copy Elision For Piecewise Construction](https://wg21.link/P0475R1)(P0475R1 Piecewise 구문에 대한 보장된 복사 생략)|아니요|
 |&nbsp;&nbsp;[P0476R2 <bit> bit_cast](https://wg21.link/P0476R2)|아니요|
-|&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)(P0482R6 char8_t: UTF-8 문자 및 문자열 형식)|아니요|
-|&nbsp;&nbsp;[P0487R1 연산자>>(basic_istream&, CharT* 수정](https://wg21.link/P0487R1)|아니요|
 |&nbsp;&nbsp;[P0528R3 Atomic Compare-And-Exchange With Padding Bits](https://wg21.link/P0528R3)(P0528R3 패딩 비트를 사용한 원자성 비교 및 교환)|아니요|
 |&nbsp;&nbsp;[P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|아니요|
 |&nbsp;&nbsp;[P0591R4 Utility Functions For Uses-Allocator Construction](https://wg21.link/P0591R4)(P0591R4 할당자 사용 구문에 대한 유틸리티 함수)|아니요|
-|&nbsp;&nbsp;[P0600R1 \[\[nodiscard\]\] For The STL, Part 1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf)(P0600R1 STL, Part 1에 대한 [[nodiscard]])|아니요|
 |&nbsp;&nbsp;[P0608R3 Improving variant's Converting Constructor/Assignment](https://wg21.link/P0608R3)(P0608R3 variant의 변환 생성자/할당 개선)|아니요|
-|&nbsp;&nbsp;[P0616R0 Using move() In \<numeric>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0616r0.pdf)(P0616R0 <numeric>에서 move() 사용)|아니요|
 |&nbsp;&nbsp;[P0619R4 Removing C++17-Deprecated Features In C++20](https://wg21.link/P0619R4)(P0619R4 C++20에서 C++17의 사용 중단 기능 제거)|아니요|
 |&nbsp;&nbsp;[P0653R2 to_address()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html)|아니요|
 |&nbsp;&nbsp;[P0655R1 visit<R>()](https://wg21.link/P0655R1)|아니요|
 |&nbsp;&nbsp;[P0674R1 배열에 대한 make_shared()(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0674r1.html)|아니요|
 |&nbsp;&nbsp;[P0718R2 atomic\<shared_ptr\<T>>, atomic\<weak_ptr\<T>>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0718r2.html)|아니요|
 |&nbsp;&nbsp;[P0738R2 istream_iterator Cleanup](https://wg21.link/P0738R2)(P0738R2 istream_iterator 정리)|아니요|
-|&nbsp;&nbsp;[P0754R2 \<version>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0754r2.pdf)|아니요|
-|&nbsp;&nbsp;[P0758R1 is_nothrow_convertible](https://wg21.link/P0758R1)|아니요|
 |&nbsp;&nbsp;[P0767R1 Deprecating is_pod](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0767r1.html)(P0767R1 is_pod 사용 중단)|아니요|
 |&nbsp;&nbsp;[P0768R1 Library Support For The Spaceship Comparison Operator \<=>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0768r1.pdf)(우주선 비교 연산자에 대한 라이브러리 지원)|아니요|
-|&nbsp;&nbsp;[P0771R1 noexcept For std::function's Move Constructor](https://wg21.link/P0771R1)(std::function의 이동 생성자에 대한 noexcept)|아니요|
 |&nbsp;&nbsp;[P0811R3 midpoint(), lerp()](https://wg21.link/P0811R3)|아니요|
 |&nbsp;&nbsp;[P0879R0 constexpr For Swapping Functions](https://wg21.link/P0879R0)(P0879R0 함수 교환을 위한 constexpr)|아니요|
 |&nbsp;&nbsp;[P0896R4 \<ranges\>](https://wg21.link/P0896R4)|아니요|
-|&nbsp;&nbsp;[P0898R3 Standard Library Concepts](https://wg21.link/P0898R3)(P0898R3 표준 라이브러리 개념)|아니요|
 |&nbsp;&nbsp;[P0912R5 Library Support For Coroutines](https://wg21.link/P0912R5)(P0912R5 코루틴에 대한 라이브러리 지원)|아니요|
-|&nbsp;&nbsp;[P0919R3 Heterogeneous Lookup For Unordered Containers](https://wg21.link/P0919R3)(P0919R3 순서 없는 컨테이너에 대한 이종 조회)|아니요|
 |&nbsp;&nbsp;[P0920R2 Precalculated Hash Value Lookup](https://wg21.link/P0920R2)(P0920R2 미리 계산된 해시 값 조회)|아니요|
 |&nbsp;&nbsp;[P0935R0 Eradicating Unnecessarily Explicit Default Constructors](https://wg21.link/P0935R0)(P0935R0 불필요하게 명시적인 기본 생성자 제거)|아니요|
 |&nbsp;&nbsp;[P0966R1 string::reserve() Should Not Shrink](https://wg21.link/P0966R1)(P0966R1 string::reserve() 축소하지 않아야 함)|아니요|
@@ -248,7 +257,7 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[P0033R1 enable_shared_from_this 다시 표시](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html)|VS 2017 15.5 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0040R3 메모리 관리 도구 확장](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0063R3 C11 표준 라이브러리](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0063r3.html)|VS 2015 <sup>[C11](#note_C11), [14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0067R5 기본 문자열 변환](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|VS 2017 15.7 <sup>[charconv](#note_charconv)</sup>|
+|&nbsp;&nbsp;[P0067R5 기본 문자열 변환](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|VS 2019 16.4 <sup>[charconv](#note_charconv)</sup>|
 |&nbsp;&nbsp;[P0074R0 owner_less\<>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0074r0.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0077R2 is_callable, is_nothrow_callable](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0077r2.html)|VS 2017 15.0|
 |&nbsp;&nbsp;[P0083R3 맵 및 집합 스플라이스](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)<br/>&nbsp;&nbsp;[P0508R0 명확히 insert_return_type 설명](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
@@ -321,34 +330,37 @@ Visual Studio 2017이나 Visual Studio 2019의 규칙 향상 및 기타 변경 �
 |&nbsp;&nbsp;[N3655 \<type_traits>에 대한 별칭 템플릿(decay_t 등)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3655.pdf)|VS 2013|
 |&nbsp;&nbsp;[N3656 make_unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3656.htm)|VS 2013|
 
-함께 나열된 문서 그룹은 기능이 표준으로 선출되고 해당 기능을 개선하거나 확장하기 위한 문서도 하나 이상 선출되었음을 나타냅니다. 이러한 기능은 함께 구현됩니다.
+함께 나열된 문서 그룹은 하나 이상의 승인된 향상 또는 확장과 함께 표준 기능을 나타냅니다. 이러한 기능은 함께 구현됩니다.
 
 ### <a name="supported-values"></a>지원되는 값
 
-__아니요__ 는 아직 구현되지 않은 것을 의미합니다.<br/>
-__부분__은 부분적으로 구현되었음을 의미합니다. 자세한 내용은 참고 섹션을 참조하세요.<br/>
-__VS 2010__ 은 Visual Studio 2010에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2013__ 은 Visual Studio 2013에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2015__는 Visual Studio 2015 RTW에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2015.2__ 및 __VS 2015.3__은 각각 Visual Studio 2015 업데이트 2와 Visual Studio 2015 업데이트 3에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2017 15.0__은 Visual Studio 2017 버전 15.0(RTW)에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2017 15.3__ 은 Visual Studio 2017 버전 15.3에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2017 15.5__ 는 Visual Studio 2017 버전 15.5에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2017 15.7__ 는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2019 16.0__은 Visual Studio 2019 버전 16.0(RTW)에서 지원되는 기능을 나타냅니다.<br/>
-__VS 2019 16.1__은 Visual Studio 2019 버전 16.1에서 지원되는 기능을 나타냅니다.
+__아니요__는 아직 구현되지 않았음을 의미합니다.\
+__부분__은 부분적으로 구현되었음을 의미합니다. 자세한 내용은 참고 섹션을 참조하세요.\
+__VS 2010__은 Visual Studio 2010에서 지원되는 기능을 나타냅니다.\
+__VS 2013__은 Visual Studio 2013에서 지원되는 기능을 나타냅니다.\
+__VS 2015__는 Visual Studio 2015(RTW)에서 지원되는 기능을 나타냅니다.\
+__VS 2015.2__ 및 __VS 2015.3__은 각각 Visual Studio 2015 업데이트 2와 Visual Studio 2015 업데이트 3에서 지원되는 기능을 나타냅니다.\
+__VS 2017 15.0__은 Visual Studio 2017 버전 15.0(RTW)에서 지원되는 기능을 나타냅니다.\
+__VS 2017 15.3__은 Visual Studio 2017 버전 15.3에서 지원되는 기능을 나타냅니다.\
+__VS 2017 15.5__는 Visual Studio 2017 버전 15.5에서 지원되는 기능을 나타냅니다.\
+__VS 2017 15.7__은 Visual Studio 2017 버전 15.7에서 지원되는 기능을 나타냅니다.\
+__VS 2019 16.0__은 Visual Studio 2019 버전 16.0(RTW)에서 지원되는 기능을 나타냅니다.\
+__VS 2019 16.1__은 Visual Studio 2019 버전 16.1에서 지원되는 기능을 나타냅니다.\
+__VS 2019 16.2__는 Visual Studio 2019 버전 16.2에서 지원되는 기능을 나타냅니다.\
+__VS 2019 16.3__은 Visual Studio 2019 버전 16.3에서 지원되는 기능을 나타냅니다.\
+__VS 2019 16.4__는 Visual Studio 2019 버전 16.4에서 지원되는 기능을 나타냅니다.
 
 ### <a name="notes"></a>참고
 
-<a name="note_A"></a>__A__ [/std:c++14](../build/reference/std-specify-language-standard-version.md) 모드에서는 동적 예외 사양이 구현되지 않은 상태로 남아 있으며 `throw()`는 여전히 `__declspec(nothrow)`의 동의어로 처리됩니다. C++17에서 동적 예외 사양은 P0003R5에 의해 대부분 제거되었으므로 1개의 vestige: `throw()`가 더 이상 사용되지 않으며 `noexcept`의 동의어로 작동해야 합니다. [/std:c++17](../build/reference/std-specify-language-standard-version.md) 모드에서 MSVC는 이제 `noexcept`, 즉 종료를 통한 적용과 동일한 동작을 `throw()`에 제공하여 표준을 준수합니다.
+<a name="note_A"></a>__A__[/std:c++14](../build/reference/std-specify-language-standard-version.md) 모드에서는 동적 예외 사양이 구현되지 않은 상태로 남아 있으며 `throw()`는 여전히 `__declspec(nothrow)`의 동의어로 처리됩니다. C++17에서 동적 예외 사양은 P0003R5에 의해 대부분 제거되었으므로 1개의 vestige: `throw()`가 더 이상 사용되지 않으며 `noexcept`의 동의어로 작동해야 합니다. [/std:c++17](../build/reference/std-specify-language-standard-version.md) 모드에서 MSVC는 이제 `noexcept`, 즉 종료를 통한 적용과 동일한 동작을 `throw()`에 제공하여 표준을 준수합니다.
 
 컴파일러 옵션 [/Zc:noexceptTypes](../build/reference/zc-noexcepttypes.md)는 `__declspec(nothrow)`의 이전 동작을 요청합니다. C++20에서 `throw()`가 제거될 가능성이 있습니다. 표준 및 구현에서 이러한 변경 사항에 대한 응답으로 코드를 마이그레이션하는 것을 돕기 위해 예외 사양 문제에 대한 새로운 컴파일러 경고가 [/std:c++17](../build/reference/std-specify-language-standard-version.md) 및 [/permissive-](../build/reference/permissive-standards-conformance.md) 아래에 추가되었습니다.
 
-<a name="note_B"></a>__B__ Visual Studio 2017 버전 15.7의 [/permissive-](../build/reference/permissive-standards-conformance.md) 모드에서 지원됩니다. 자세한 내용은 [Two-phase name lookup support comes to MSVC](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/)(2단계 이름 조회 지원이 MSVC에 제공)를 참조하세요.
+<a name="note_B"></a>__B__ Visual Studio 2017 버전 15.7의 [/permissive-](../build/reference/permissive-standards-conformance.md) 모드에서 지원됩니다. 자세한 내용은 [2단계 이름 조회 지원이 MSVC에 제공](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/)을 참조하세요.
 
-<a name="note_C"></a>__C__ Visual Studio 2017에서 C99 전처리기 규칙에 대한 컴파일러의 지원이 완전하지 않습니다. Microsoft에서는 전처리기를 점검하고 있으며 [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) 컴파일러 스위치를 포함하여 Visual Studio 2017 버전 15.8에 해당 변경 내용 제공을 시작했습니다.
+<a name="note_C"></a>__C__ Visual Studio 2017에서 C99 전처리기 규칙에 대한 컴파일러의 지원이 완전하지 않습니다. Microsoft에서는 전처리기를 점검하고 있으며 [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) 컴파일러 스위치를 포함하여 Visual Studio 2017 버전 15.8에 해당 변경 내용 전달을 시작했습니다.
 
-<a name="note_D"></a>__D__ [/std:c++14](../build/reference/std-specify-language-standard-version.md) 아래에서 억제 가능한 경고 [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md)로 표시됩니다.
+<a name="note_D"></a>__D__[/std:c++14](../build/reference/std-specify-language-standard-version.md) 아래에서 억제 가능한 경고 [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md)로 표시됩니다.
 
 <a name="note_E"></a>__E__ 이것은 완전히 새로운 구현이기 때문에 이전의 `std::experimental` 버전과 호환되지 않으며, symlink 지원, 버그 수정 및 표준 필수 동작의 변경이 필요합니다. 지금은 \<filesystem>을 포함하면 새로운 `std::filesystem`과 이전 `std::experimental::filesystem`을 제공하고 \<experimental/filesystem>을 포함하면 오래된 실험 구현만을 제공합니다. 실험적 구현은 다음 ABI-breaking 라이브러리 릴리스에서 제거될 것입니다.
 
@@ -360,21 +372,21 @@ __VS 2019 16.1__은 Visual Studio 2019 버전 16.1에서 지원되는 기능을 
 
 <a name="note_20"></a>__20__ 이 기능은 [/std:c++latest](../build/reference/std-specify-language-standard-version.md) 컴파일러 옵션을 통해 사용할 수 있습니다. C++20 구현이 완료되면 새 **/std:c++20** 컴파일러 옵션이 추가되어 이러한 기능도 사용할 수 있게 됩니다.
 
-<a name="note_byte"></a>__byte__ `std::byte`는 [/std:c++17](../build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](../build/reference/std-specify-language-standard-version.md))로 활성화되지만, 경우에 따라 Windows SDK 헤더와 충돌할 수 있으므로 세분화된 옵트아웃 매크로가 있습니다. `_HAS_STD_BYTE`를 `0`으로 정의하여 비활성화할 수 있습니다.
+<a name="note_byte"></a>__byte__`std::byte`는 [/std:c++17](../build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](../build/reference/std-specify-language-standard-version.md))로 활성화되지만, 경우에 따라 Windows SDK 헤더와 충돌할 수 있으므로 세분화된 옵트아웃 매크로가 있습니다. `_HAS_STD_BYTE`를 `0`으로 정의하여 비활성화할 수 있습니다.
 
-<a name="note_C11"></a>__C11__ 유니버셜 CRT에서는 C99 `strftime()` E/O 대체 변환 지정자, C11 `fopen()` 단독 모드 및 C11 `aligned_alloc()`을 제외하고는 C++17에 필요한 C11 표준 라이브러리의 일부를 구현했습니다. 후자는 C11에서 `free()`의 Microsoft 구현과 호환되지 않는 방식으로 `free()`에서 고도로 정렬된 할당을 처리할 수 있어야 하는 `aligned_alloc()`을 지정했기 때문에 구현되지 않을 것입니다.
+<a name="note_C11"></a>__C11__ 유니버셜 CRT에서는 C99 `strftime()` E/O 대체 변환 지정자, C11 `fopen()` 단독 모드 및 C11 `aligned_alloc()`을 제외하고는 C++17에 필요한 C11 표준 라이브러리의 일부를 구현했습니다. 후자는 C11에서 `free()`의 Microsoft 구현과 호환되지 않는 방식, 즉 `free()`에서 고도로 정렬된 할당을 처리할 수 있어야 하는 `aligned_alloc()`을 지정했기 때문에 구현되지 않을 것입니다.
 
-<a name="note_rem"></a>__rem__ [/std:c++17](../build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) 컴파일러 옵션이 지정되면 기능이 제거됩니다. 이 기능을 다시 사용하도록 설정하면 `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS` 및 `_HAS_UNEXPECTED` 매크로를 사용하여 최신 언어 모드로 쉽게 전환할 수 있습니다.
+<a name="note_rem"></a>__rem__[/std:c++17](../build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) 컴파일러 옵션이 지정되면 기능이 제거됩니다. 이 기능을 다시 사용하도록 설정하면 `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS` 및 `_HAS_UNEXPECTED` 매크로를 사용하여 최신 언어 모드로 쉽게 전환할 수 있습니다.
 
-<a name="note_charconv"></a>__charconv__ `from_chars()` 및 `to_chars()`는 정수에 사용할 수 있습니다. 부동 소수점 `from_chars()` 및 부동 소수점 `to_chars()`의 타임라인은 다음과 같습니다.
+<a name="note_charconv"></a>__charconv__`from_chars()` 및 `to_chars()`은(는) 정수에 사용할 수 있습니다. 부동 소수점 `from_chars()` 및 부동 소수점 `to_chars()`의 타임라인은 다음과 같습니다.
 - VS 2017 15.7: 정수 `from_chars()` 및 `to_chars()`.
 - VS 2017 15.8: 부동 소수점 `from_chars()`.
 - VS 2017 15.9: 가장 짧은 10진수에 대한 부동 소수점 `to_chars()` 오버로드.
 - VS 2019 16.0: 가장 짧은 16진수 및 16진수 전체 자릿수에 대한 부동 소수점 `to_chars()` 오버로드.
 - VS 2019 16.2: 고정 전체 자릿수 및 지수 전체 자릿수에 대한 부동 소수점 `to_chars()` 오버로드.
-- 아직 구현되지 않음: 일반 전체 자릿수에 대한 부동 소수점 `to_chars()` 오버로드. 
+- VS 2019 16.4: 일반 전체 자릿수에 대한 부동 소수점 `to_chars()` 오버로드.
 
-<a name ="note_parallel"></a> __parallel__ C++17의 병렬 알고리즘 라이브러리가 완료되었습니다. 이는 모든 경우에서 모든 알고리즘이 병렬 처리된다는 것을 의미하지는 않습니다. 가장 중요한 알고리즘이 병렬 처리되었으며 알고리즘이 병렬 처리되지 않은 경우에도 실행 정책 시그니처가 제공됩니다. 구현의 중앙 내부 헤더인 yvals_core.h에는 다음과 같은 “병렬 알고리즘 참고 사항”이 포함되어 있습니다. C++를 사용하면 구현 시 직렬 알고니즘 호출로 병렬 알고리즘을 구현할 수 있습니다.  이 구현은 몇 가지 일반적인 알고리즘 호출을 병렬 처리하지만 전부는 아닙니다.
+<a name ="note_parallel"></a> __parallel__ C++17의 병렬 알고리즘 라이브러리가 완료되었습니다. 이는 모든 경우에서 모든 알고리즘이 병렬 처리된다는 것을 의미하지는 않습니다. 가장 중요한 알고리즘이 병렬 처리되었으며 알고리즘이 병렬 처리되지 않은 경우에도 실행 정책 시그니처가 제공됩니다. 구현의 중앙 내부 헤더인 yvals_core.h에는 다음과 같은 “병렬 알고리즘 참고 사항”이 포함되어 있습니다. C++를 사용하면 구현 시 직렬 알고니즘 호출로 병렬 알고리즘을 구현할 수 있습니다. 이 구현은 몇 가지 일반적인 알고리즘 호출을 병렬 처리하지만 전부는 아닙니다.
 
 다음 알고리즘은 병렬 처리됩니다.
 
@@ -382,7 +394,7 @@ __VS 2019 16.1__은 Visual Studio 2019 버전 16.1에서 지원되는 기능을 
 
 다음은 현재 병렬 처리되지 않습니다.
 
-- 대상 하드웨어에 대한 명백한 병렬 처리 성능 향상은 없습니다. 분기가 없는 요소를 단순히 복사하거나 치환하는 모든 알고리즘은 일반적으로 메모리 대역폭을 제한합니다.
+- 대상 하드웨어에 대한 병렬 처리 성능이 눈에 띄게 향상되지는 않습니다. 분기가 없는 요소를 단순히 복사하거나 치환하는 모든 알고리즘은 일반적으로 메모리 대역폭을 제한합니다.
   - `copy`, `copy_n`, `fill`, `fill_n`, `move`, `reverse`, `reverse_copy`, `rotate`, `rotate_copy`, `shift_left`, `shift_right`, `swap_ranges`
 - 위의 범주에서 사용자 병렬 처리 요구 사항에 대한 혼란이 있을 수 있습니다.
   - `generate`, `generate_n`
@@ -391,12 +403,12 @@ __VS 2019 16.1__은 Visual Studio 2019 버전 16.1에서 지원되는 기능을 
 - 아직 평가되지 않았지만, 병렬 처리는 향후 릴리스에서 구현될 수 있으며 유익한 것으로 생각됩니다.
   - `copy_if`, `includes`, `inplace_merge`, `lexicographical_compare`, `max_element`, `merge`, `min_element`, `minmax_element`, `nth_element`, `partition_copy`, `remove_copy`, `remove_copy_if`, `replace_copy`, `replace_copy_if`, `set_symmetric_difference`, `set_union`, `stable_partition`, `unique`, `unique_copy`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual Studio의 C++ 규칙 향상](cpp-conformance-improvements.md)<br/>
-[Visual Studio의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-[2003~ 2015 Visual C++ 주요 변경 내용](../porting/visual-cpp-change-history-2003-2015.md)<br/>
-[Visual C++ 2003 ~ 2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
+[C++ 언어 참조](../cpp/cpp-language-reference.md)\
+[C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)\
+[Visual Studio의 C++ 규칙 향상](cpp-conformance-improvements.md)\
+[새로워진 Visual Studio의 Visual C++ 기능](what-s-new-for-visual-cpp-in-visual-studio.md)\
+[Visual C++ 2003~2015 변경 내용](../porting/visual-cpp-change-history-2003-2015.md)\
+[Visual C++ 2003~2015의 새로운 기능](../porting/visual-cpp-what-s-new-2003-through-2015.md)\
 [C++ team blog](https://devblogs.microsoft.com/cppblog/)(C++ 팀 블로그)

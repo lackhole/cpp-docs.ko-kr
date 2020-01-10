@@ -1,21 +1,20 @@
 ---
 title: Visual Studio에서 C++ 플랫폼 간 프로젝트 만들기
 description: Visual Studio에서 Linux 및 Windows를 대상으로 하 C++ 는 오픈 소스 cmake 프로젝트를 설정, 컴파일 및 디버그 하는 방법입니다.
-author: mikeblome
 ms.topic: tutorial
-ms.date: 11/08/2019
-ms.openlocfilehash: 269c9e88133a492f66df7c7f81ab35424aff125d
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.date: 01/08/2020
+ms.openlocfilehash: 83d71d3078e892a51aef159b225fecec2b581f20
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303251"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791765"
 ---
 # <a name="tutorial-create-c-cross-platform-projects-in-visual-studio"></a>자습서: Visual C++ Studio에서 플랫폼 간 프로젝트 만들기
 
 Windows에서는 더 이상 Visual Studio C 및 C++ 개발을 지원하지 않습니다. 이 자습서에서는 Windows 및 Linux에서 플랫폼 간 C++ 개발에 Visual Studio를 사용 하는 방법을 보여 줍니다. CMake를 기반으로 하기 때문에 Visual Studio 프로젝트를 만들거나 생성할 필요가 없습니다. CMakeLists 파일이 포함 된 폴더를 열면 Visual Studio에서 IntelliSense 및 빌드 설정을 자동으로 구성 합니다. Windows에서 코드를 로컬로 편집, 빌드 및 디버깅 하는 과정을 신속 하 게 시작할 수 있습니다. 그런 다음 Visual Studio 내에서 Linux에 대해 동일한 작업을 수행 하도록 구성을 전환 합니다.
 
-이 자습서에서는 다음 방법을 학습합니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 
 > [!div class="checklist"]
 > * GitHub에서 오픈 소스 CMake 프로젝트 복제
@@ -24,7 +23,7 @@ Windows에서는 더 이상 Visual Studio C 및 C++ 개발을 지원하지 않�
 > * Linux 머신에 대한 연결 추가
 > * Linux에서 동일한 대상 빌드 및 디버그
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
 
 * 플랫폼 간 C++ 개발용 Visual Studio 설정
   * 먼저 [Visual Studio를 설치](https://visualstudio.microsoft.com/vs/) 하 고 **워크 로드를 C++** 사용 하 여 **데스크톱 개발 C++**  및 Linux 개발을 선택 합니다. 이 최소 설치는 3gb에 불과합니다. 다운로드 속도에 따라 설치는 10 분 이상 소요 되어서는 안 됩니다.
@@ -44,10 +43,10 @@ Windows에서는 더 이상 Visual Studio C 및 C++ 개발을 지원하지 않�
     chmod +x cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh
     ```
 
-  * `-–help`를 사용하여 스크립트를 실행하는 옵션을 확인할 수 있습니다. **/Usr/local** 경로에 설치를 지정 하는 `–prefix` 옵션을 사용 하는 것이 좋습니다 .이 위치는 Visual Studio에서 cmake를 검색 하는 기본 위치 이기 때문입니다. 다음 예제에서는 Linux-x86_64 스크립트를 보여줍니다. 다른 대상 플랫폼을 사용 하는 경우 필요에 따라 변경 합니다.
+  * `-–help`를 사용하여 스크립트를 실행하는 옵션을 확인할 수 있습니다. **/Usr/bin** 가 Visual Studio에서 cmake를 검색 하는 기본 위치 이므로, `–prefix` 옵션을 사용 하 여 **/usr** 경로에 설치를 지정 하는 것이 좋습니다. 다음 예제에서는 Linux-x86_64 스크립트를 보여줍니다. 다른 대상 플랫폼을 사용 하는 경우 필요에 따라 변경 합니다.
 
     ```cmd
-    sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr/local
+    sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr
     ```
 
 * Windows 머신에 설치된 Windows용 Git

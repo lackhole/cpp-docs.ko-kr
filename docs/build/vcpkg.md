@@ -1,17 +1,15 @@
 ---
 title: vcpkg-- Windows, Linux 및 MacOS용 C++ 패키지 관리자
 description: vcpkg는 Windows에서 오픈 소스 C++ 라이브러리 획득 및 설치를 크게 간소화하는 명령줄 패키지 관리자입니다.
-author: mikeblome
-ms.author: mblome
 ms.date: 05/16/2019
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 58f8a9b8223dc54bf083ebbac97528f88890777c
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: a116c33d7bb0b1d1396e68681d34995168a0bdc5
+ms.sourcegitcommit: 5f276064779d90a4cfda758f89e0c0f1e4d1a188
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837015"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75791625"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
@@ -182,7 +180,7 @@ If you are sure you want to rebuild the above packages, run this command with th
 
 ## <a name="uninstall-vcpkg"></a>vcpkg 제거
 
-디렉터리를 삭제하기만 하면 됩니다.
+vcpkg 디렉터리를 삭제하면 됩니다. 이 디렉터리를 삭제하면 vcpkg 배포 및 vcpkg에 의해 설치된 모든 라이브러리가 제거됩니다.
 
 ## <a name="send-feedback-about-vcpkg"></a>vcpkg에 대한 사용자 의견 보내기
 

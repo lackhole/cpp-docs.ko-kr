@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2191
 ms.assetid: 051b8350-e5de-4f51-ab6e-96d32366bcef
-ms.openlocfilehash: 23dfe1d95ab75f253fc2a7b4b00dfcd1aaaa3bbf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 66b7d70b9010855ada7b9d24fba80915450a685b
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302972"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301875"
 ---
 # <a name="compiler-error-c2191"></a>컴파일러 오류 C2191
 
-두 번째 매개 변수 목록이 첫째 보다 깁니다.
+둘째 매개 변수 목록이 첫째 보다 깁니다.
 
-C 함수 매개 변수 목록 사용 하 여 두 번 선언 되었습니다. C에서 오버 로드 된 함수를 지원 하지 않습니다.
+C 함수가 더 긴 매개 변수 목록을 사용 하 여 두 번 선언 되었습니다. C는 오버 로드 된 함수를 지원 하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
-다음 샘플에서는 C2191 오류가 생성 됩니다.
+다음 샘플에서는 C2191를 생성 합니다.
 
-```
+```c
 // C2191.c
 // compile with: /Za /c
 void func( int );

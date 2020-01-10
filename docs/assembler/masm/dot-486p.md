@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .486P directive
 ms.assetid: ad1ff7a8-18e8-47cd-8e3b-dfd57a0ca370
-ms.openlocfilehash: 5af95920e652bc48df7960dc2c1e984491f8151f
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 323b6ca6f288d04d2a353f53b8dacc50795e4ab7
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398677"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75314577"
 ---
 # <a name="486p-32-bit-masm"></a>. .486P (32 비트 MASM)
 
@@ -21,6 +21,7 @@ ms.locfileid: "74398677"
 
 > **.486P**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](../../assembler/masm/directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

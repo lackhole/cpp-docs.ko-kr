@@ -1,17 +1,17 @@
 ---
 title: YMMWORD
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - YMMWORD
 helpviewer_keywords:
 - YMMWORD directive
 ms.assetid: 955a7d23-6150-4056-befc-7f72e8258ecb
-ms.openlocfilehash: 58f4b8d9a654a83633e2f57219356f1a4197c127
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 1a251be75924121d45e3ff6501cbb006649897f3
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74392761"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75319088"
 ---
 # <a name="ymmword"></a>YMMWORD
 
@@ -25,6 +25,7 @@ Intel AVX (Advanced Vector Extensions) 명령을 사용 하는 256 비트 멀티
 
 **YMMWORD** 는 AVX 내장 함수에 대해 `__m256`와 동일한 형식을 표시 하기 위한 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

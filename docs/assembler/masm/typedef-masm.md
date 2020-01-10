@@ -1,26 +1,27 @@
 ---
 title: TYPEDEF (MASM)
-ms.date: 08/30/2018
+ms.date: 12/16/2019
 f1_keywords:
 - typedef
 helpviewer_keywords:
 - TYPEDEF directive
 ms.assetid: 0c659890-c9a5-485a-a680-e4fb3272032c
-ms.openlocfilehash: d35966f8db5e8873b8080976aaaab37937cbe192
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: bf14b446629a4704491feff44031ecc01267b027
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74393175"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75319192"
 ---
-# <a name="typedef-masm"></a>TYPEDEF (MASM)
+# <a name="typedef"></a>TYPEDEF
 
-*Type*과 동일한 *name*이라는 새 형식을 정의 합니다.
+*Type* 또는 *protoDefinition*와 동일한 새 형식 또는 **프로토콜** 이라는 *이름을*정의 합니다.
 
 ## <a name="syntax"></a>구문
 
-> *이름* **TYPEDEF** *형식*
+> *이름* **TYPEDEF** *형식* | **PROTO** *protoDefinition*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

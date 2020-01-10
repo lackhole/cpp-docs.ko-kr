@@ -48,12 +48,12 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-ms.openlocfilehash: c4a8b33c2233dc0c680ddbe5063ab6fe25a729b0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: 81f4bf6c60a0c0e4011536e8d3bc104bbc33e04f
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957272"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301706"
 ---
 # <a name="_spawn-_wspawn-functions"></a>_spawn, _wspawn 함수
 
@@ -75,11 +75,11 @@ ms.locfileid: "70957272"
 | `p`  | `PATH` 환경 변수는 실행할 파일을 찾는 데 사용됩니다.  |
 | `v`  | 명령줄 인수에 대한 포인터 배열인 `argv`가 `_spawn` 함수에 전달됩니다. 이 접미사는 일반적으로 새로운 프로세스에 대한 여러 매개 변수가 가변적일 때 사용됩니다.  |
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_spawn` 함수는 각각 새로운 프로세스를 만들고 실행합니다. 이러한 함수는 현재 사용 중인 멀티바이트 코드 페이지에 따라 멀티바이트 문자 시퀀스를 인식하며 멀티바이트 문자열 인수를 자동으로 적절하게 처리합니다. `_wspawn` 함수는 `_spawn` 함수의 와이드 문자 버전으로, 멀티바이트 문자열을 처리하지 않습니다. 그 외에는 `_wspawn` 함수가 `_spawn`의 상응 함수와 동일하게 동작합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -130,7 +130,7 @@ ms.locfileid: "70957272"
 
 ## <a name="environment-of-the-spawned-process"></a>생성된 프로세스의 환경
 
-`_spawn` 호출 실행 시 열려 있는 파일은 새로운 프로세스에서 열린 채로 유지됩니다. `_spawnl`, `_spawnlp`, `_spawnv` 및 `_spawnvp` 호출에서 새로운 프로세스는 호출 프로세스의 환경을 상속 받습니다. `_spawnle`, `_spawnlpe`, `_spawnve` 및 `_spawnvpe` 호출을 사용하면 `envp` 인수를 통해 환경 설정 목록을 전달하여 새로운 프로세스에 대한 환경을 변경할 수 있습니다. `envp` 인수는 문자 포인터 배열이며, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하고 null로 종료되는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. `value`는 큰따옴표로 묶지 않습니다. `envp` 배열의 마지막 요소는 **NULL**이어야 합니다. `envp` 자체가 **NULL**이면 생성된 프로세스가 부모 프로세스의 환경 설정을 상속 받습니다.
+`_spawn` 호출 실행 시 열려 있는 파일은 새로운 프로세스에서 열린 채로 유지됩니다. `_spawnl`, `_spawnlp`, `_spawnv` 및 `_spawnvp` 호출에서 새로운 프로세스는 호출 프로세스의 환경을 상속 받습니다. `_spawnle`, `_spawnlpe`, `_spawnve` 및 `_spawnvpe` 호출을 사용하면 `envp` 인수를 통해 환경 설정 목록을 전달하여 새로운 프로세스에 대한 환경을 변경할 수 있습니다. `envp` 인수는 문자 포인터 배열이며, 마지막 요소를 제외한 각 요소는 환경 변수를 정의하고 null로 종료되는 문자열을 가리킵니다. 이러한 문자열의 형식은 일반적으로 `NAME`=`value`입니다. 여기서 `NAME`은 환경 변수의 이름이고, `value`는 해당 변수가 설정된 문자열 값입니다. `value`은 큰따옴표로 묶여 있지 않습니다. `envp` 배열의 마지막 요소는 **NULL**이어야 합니다. `envp` 자체가 **NULL**이면 생성된 프로세스가 부모 프로세스의 환경 설정을 상속 받습니다.
 
 `_spawn` 함수는 변환 모드를 포함하여 열려 있는 파일에 대한 모든 정보를 새로운 프로세스에 전달할 수 있습니다. 이 정보는 환경의 `C_FILE_INFO` 항목을 통해 리얼 모드에서 전달됩니다. 시작 코드는 일반적으로 이 항목을 처리한 다음 환경에서 삭제합니다. 그러나 `_spawn` 함수가 C 프로세스가 아닌 프로세스를 생성하면 이 항목이 환경에 남아 있습니다. 환경을 인쇄하면 이 항목에 대한 정의 문자열에 그래픽 문자가 표시됩니다. 이는 환경 정보가 리얼 모드에서 이진 형식으로 전달되기 때문입니다. 일반 작업에서는 다른 효과가 없습니다. 보호 모드에서는 환경 정보가 텍스트 형식으로 전달되므로 그래픽 문자를 포함하지 않습니다.
 
@@ -148,7 +148,7 @@ DLL 또는 GUI 애플리케이션에서 `_spawn`을 호출하며 출력을 파�
 
 ## <a name="example"></a>예
 
-```
+```c
 // crt_spawn.c
 // This program accepts a number in the range
 // 1-8 from the command line. Based on the number it receives,
@@ -229,7 +229,7 @@ child process output
 from SPAWN!
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [프로세스 및 환경 제어](../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../c-runtime-library/reference/abort.md)<br/>

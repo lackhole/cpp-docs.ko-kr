@@ -1,18 +1,18 @@
 ---
 title: ML 심각하지 않은 오류 A2044
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 ms.custom: error-reference
 f1_keywords:
 - A2044
 helpviewer_keywords:
 - A2044
 ms.assetid: 7cf144ac-408c-4e35-9a15-38656a4e87cd
-ms.openlocfilehash: cee9c41cc02160ed0bea78c19e41f1353060fe7f
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 4635520916a8bc6d18d7cb44735b6ececbd8d437
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856628"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317008"
 ---
 # <a name="ml-nonfatal-error-a2044"></a>ML 심각하지 않은 오류 A2044
 
@@ -22,4 +22,4 @@ ms.locfileid: "74856628"
 
 ## <a name="see-also"></a>참조
 
-[ML 오류 메시지](../../assembler/masm/ml-error-messages.md)<br/>
+[ML 오류 메시지](ml-error-messages.md)

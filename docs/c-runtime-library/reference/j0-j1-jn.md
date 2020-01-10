@@ -1,6 +1,6 @@
 ---
 title: j0, j1, jn
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - jn
 - j0
@@ -29,13 +29,15 @@ helpviewer_keywords:
 - j1 function
 - j0 function
 ms.assetid: ec8a9512-aacb-423c-a845-fc8927e6e21d
-ms.openlocfilehash: 6737c1f4cc69ab4f66fb145ea76a814bf9ff1662
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a3dc02c1e85a57be119899a962d284d923cb42d8
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70953522"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75299236"
 ---
 # <a name="j0-j1-jn"></a>j0, j1, jn
 
-이러한 POSIX 함수는 더 이상 사용되지 않습니다. 대신 ISO C++와 호환되는 [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md)을 사용하세요.
+Microsoft에서 구현 하는 POSIX 함수 이름 `j0`, `j1`및 `jn`는 [_j0, _j1 및 _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) 함수에 대해 사용 되지 않는 별칭입니다. 기본적으로 [컴파일러 경고 (수준 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)를 생성 합니다. 이름은 구현 관련 이름에 대해 표준 C 규칙을 따르지 않으므로 사용 되지 않습니다. 그러나 함수는 여전히 지원 됩니다.
+
+대신 [_j0, _j1 및 _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) 를 사용 하는 것이 좋습니다. 또는 이러한 함수 이름을 계속 사용 하 고 경고를 사용 하지 않도록 설정할 수 있습니다. 자세한 내용은 [경고](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) 및 [POSIX 함수 이름](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)해제를 참조 하세요.

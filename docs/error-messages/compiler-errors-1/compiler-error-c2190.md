@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2190
 ms.assetid: 34e15f85-d979-4948-80fc-46c414508a70
-ms.openlocfilehash: b52797b945b1a652506b4a85171e60a91544bbf0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 027c7f49b361ef3aa06a4d74e10f0ff27331b4a9
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62282831"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301888"
 ---
 # <a name="compiler-error-c2190"></a>컴파일러 오류 C2190
 
-첫 번째 매개 변수 목록이 둘째 보다 깁니다.
+첫 번째 매개 변수 목록이 두 번째 보다 깁니다.
 
-C 함수를 한 번 더 짧은 매개 변수 목록 사용 하 여 선언 되었습니다. C에서 오버 로드 된 함수를 지원 하지 않습니다.
+C 함수가 더 짧은 매개 변수 목록을 사용 하 여 두 번 선언 되었습니다. C는 오버 로드 된 함수를 지원 하지 않습니다.
 
-다음 샘플에서는 C2190를 생성합니다.
+다음 샘플에서는 C2190를 생성 합니다.
 
-```
+```c
 // C2190.c
 // compile with: /Za /c
 void func( int, float );

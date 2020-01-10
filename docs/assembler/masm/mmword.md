@@ -1,17 +1,17 @@
 ---
 title: MMWORD
-ms.date: 08/30/2018
+ms.date: 12/17/2019
 f1_keywords:
 - MMWORD
 helpviewer_keywords:
 - MMWORD directive
 ms.assetid: b4c5a104-9078-4fb4-afc3-d1e63abe562a
-ms.openlocfilehash: d4378c1435df09f249fe7f55dabd4bd0f43f6100
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: fd3b9f40b7ff9fa4dae570e0ed906c13a9456424
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397171"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75311925"
 ---
 # <a name="mmword"></a>MMWORD
 
@@ -33,8 +33,12 @@ MMX 및 SSE (XMM) 명령을 포함 하는 64 비트 멀티미디어 피연산자
 
 **Mmword** 는 [__m64](../../cpp/m64.md)와 동일한 형식을 나타냅니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```asm
     movq     mm0, mmword ptr [ebx]
 ```
+
+## <a name="see-also"></a>참고 항목
+
+[MASM BNF 문법](masm-bnf-grammar.md)

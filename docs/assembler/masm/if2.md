@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IF2 directive
 - IF2 directive
 ms.assetid: a0f75564-b51b-4e39-ad3b-f7421e7ecad6
-ms.openlocfilehash: f1b5126d9294c229d773acd29af463164bb46536
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: 60f8b0dcedb61ac06de929aff300845e342d7cfc
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74397442"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75317320"
 ---
 # <a name="if1-and-if2"></a>IF1 및 IF2
 
@@ -29,7 +29,7 @@ ms.locfileid: "74397442"
 
 ## <a name="remarks"></a>주의
 
-전체 [구문에 대 한 자세한 내용은](../../assembler/masm/if-masm.md) 을 참조 하세요.
+전체 [구문에 대 한 자세한 내용은](if-masm.md) 을 참조 하세요.
 
 5\.1 버전의 경우와 달리 MASM 6.1 이상에서는 첫 번째 패스에서 대부분의 작업을 수행 하며, 그런 다음 필요한 만큼 후속 패스를 수행 합니다. 이와 대조적으로 MASM 5.1은 항상 두 개의 소스 패스에서 어셈블합니다. 따라서 MASM 6.1 이상에서 일부 패스 종속 구문을 수정 하거나 삭제 해야 할 수 있습니다.
 
@@ -43,6 +43,7 @@ ms.locfileid: "74397442"
 
 MASM 6.1 이상에서는 첫 번째 패스 구문을 다르게 처리 합니다. 를 처리 **합니다. ERR1** 지시문 **입니다. ERR**및 **IF1** 지시문은 **IF**와 같습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

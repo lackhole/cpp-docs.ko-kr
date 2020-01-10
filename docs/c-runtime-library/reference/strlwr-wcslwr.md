@@ -1,6 +1,6 @@
 ---
 title: strlwr, wcslwr
-ms.date: 11/04/2016
+ms.date: 12/16/2019
 api_name:
 - strlwr
 - wcslwr
@@ -26,13 +26,15 @@ helpviewer_keywords:
 - strlwr function
 - wcslwr function
 ms.assetid: b9274824-4365-4674-b656-823c89653656
-ms.openlocfilehash: 39c39a0920de9f448493102851f7ca6f56d4be11
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ff730d6bea6619c50fefb407a7a69c50e1a06af0
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947389"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301082"
 ---
 # <a name="strlwr-wcslwr"></a>strlwr, wcslwr
 
-이러한 POSIX 함수는 더 이상 사용되지 않습니다. 대신 ISO C++와 호환되는 [_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md) 또는 보안이 강화된 [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md)을 사용하세요.
+Microsoft 전용 함수 이름 `strlwr` 및 `wcslwr`은 [_strlwr 및 _wcslwr](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md) 함수에 사용 되지 않는 별칭입니다. 기본적으로 [컴파일러 경고 (수준 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)를 생성 합니다. 이름은 구현 관련 이름에 대해 표준 C 규칙을 따르지 않으므로 사용 되지 않습니다. 그러나 함수는 여전히 지원 됩니다.
+
+대신 [_strlwr 또는 _wcslwr](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md) 또는 보안이 강화 된 [_strlwr_s 및 _wcslwr_s](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md) 함수를 사용 하는 것이 좋습니다. 또는 이러한 함수 이름을 계속 사용 하 고 경고를 사용 하지 않도록 설정할 수 있습니다. 자세한 내용은 [경고](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) 및 [POSIX 함수 이름](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)해제를 참조 하세요.

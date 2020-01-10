@@ -1,15 +1,15 @@
 ---
 title: CMakeSettings.json 스키마 참조
-ms.date: 10/31/2019
+ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 2233c0767fb7fac2fe496e744750f380e1c3b698
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 08ecb5bc55ead207d6e4a0029a21e737d447143b
+ms.sourcegitcommit: 6c1960089b92d007fc28c32af1e4bef0f85fdf0c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303246"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556736"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>CMakeSettings.json 스키마 참조
 
@@ -34,17 +34,17 @@ IDE에서 구성을 추가 하거나 제거한 다음 JSON 파일에서 직접 �
 - `addressSDanitizerEnabled`: `true` Sanitizer (Windows에서 실험적) 주소를 사용 하 여 프로그램을 컴파일합니다. Linux에서 최상의 결과를 위해-fno-프레임 포인터 및 컴파일러 최적화 수준-Os 또는-Oo를 사용 하 여 컴파일합니다.
 - `addressSanitizerRuntimeFlags`: ASAN_OPTIONS 환경 변수를 통해 AddressSanitizer에 전달 된 런타임 플래그입니다. Format: 플래그 1 = 값: 플래그 2 = value2
 - `buildCommandArgs`: --빌드 -- 후 CMake로 전달되는 네이티브 빌드 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 -v를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다. Ninja 명령에 대한 자세한 정보는 [Ninja 명령줄 인수](#ninja)를 참조하세요.
-- `buildRoot`: CMake가 선택한 생성기에 대한 빌드 스크립트를 생성하는 디렉터리를 지정합니다.  **-DCMAKE_BINARY_DIR** 스위치에 매핑되고 CMake 캐시가 만들어질 위치를 지정합니다. 폴더가 없으면 해당 폴더가 만들어집니다. 지원 되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`및 `${env.VARIABLE}`가 포함 됩니다.
-- `cacheGenerationCommand`: 캐시를 생성 하는 명령줄 도구 및 인수 (예: *gencache debug* )를 지정 합니다. 이 명령은 사용자가 다시 생성을 요청 하는 경우 구성에 대해 지정 된 환경의 셸에서 실행 되며, 또는 CMakeLists .txt 또는 cmakelists 파일이 수정 됩니다.
-- `cacheRoot`: CMake 캐시의 경로를 지정합니다. 이 디렉터리에는 기존 CMakeCache.txt 파일이 포함되어야 합니다.
-- `clangTidyChecks`: clang에 전달 되는 쉼표로 구분 된 warnigns 목록입니다. 와일드 카드를 사용할 수 있으며, '-' 접두사는 검사를 제거 합니다.
-- `cmakeCommandArgs`: 캐시를 생성하기 위해 호출될 때 CMake로 전달되는 추가 명령줄 옵션을 지정합니다.
+- `buildRoot`: CMake가 선택한 생성기에 대한 빌드 스크립트를 생성하는 디렉터리를 지정합니다.  **-DCMAKE_BINARY_DIR** 스위치에 매핑되고 *cmakecache.txt* 를 만들 위치를 지정 합니다. 폴더가 없으면 해당 폴더가 만들어집니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`이 포함됩니다.
+- `cacheGenerationCommand`: 캐시를 생성 하는 명령줄 도구 및 인수 (예: *gencache debug* )를 지정 합니다. 사용자가 다시 생성을 명시적으로 요청 하는 경우 구성에 대해 지정 된 환경의 셸에서 명령이 실행 되거나 CMakeLists 또는 Cmakelists. json 파일이 수정 됩니다.
+- `cacheRoot`: CMake 캐시의 경로를 지정합니다. 이 디렉터리에는 기존 *cmakecache.txt* 파일이 포함 되어 있어야 합니다.
+- `clangTidyChecks`: clang에 전달 되는 쉼표로 구분 된 경고 목록입니다. 와일드 카드를 사용할 수 있으며, '-' 접두사는 검사를 제거 합니다.
+- `cmakeCommandArgs`: 프로젝트 파일을 생성 하기 위해 호출 될 때 CMake에 전달 되는 추가 명령줄 옵션을 지정 합니다.
 - `cmakeToolchain`: 도구 체인 파일을 지정합니다. 이는 -DCMAKE_TOOLCHAIN_FILE을 사용하여 CMake에 전달됩니다."
 - `codeAnalysisRuleset`: 코드 분석을 실행할 때 사용할 규칙 집합을 지정합니다. 이는 Visual Studio에서 설치한 규칙 집합 파일의 전체 경로 또는 파일 이름이 될 수 있습니다.
 - `configurationType`: 선택한 생성기의 빌드 형식 구성을 지정합니다. 다음 중 하나일 수 있습니다.
 
-  - 디버그
-  - 릴리스
+  - Debug
+  - Release
   - MinSizeRel
   - RelWithDebInfo
   
@@ -81,22 +81,8 @@ Visual Studio 2019에서 Visual Studio 생성기를 지정 하려면 **솔루션
    "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
    ```
 
-- `configurationType`: 선택한 생성기의 빌드 형식 구성을 지정합니다. 다음 중 하나일 수 있습니다.
-
-  - 디버그
-  - 릴리스
-  - MinSizeRel
-  - RelWithDebInfo
- 
-- `buildRoot`: CMake가 선택한 생성기에 대한 빌드 스크립트를 생성하는 디렉터리를 지정합니다.  **-DCMAKE_BINARY_DIR** 스위치에 매핑되고 *cmakecache.txt* 이 생성 될 위치를 지정 합니다. 폴더가 없으면 만듭니다. 지원되는 매크로는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`입니다.
 - `installRoot`: CMake가 선택한 생성기에 대한 설치 대상을 생성하는 디렉터리를 지정합니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`이 포함됩니다.
-- `cmakeCommandArgs`: 프로젝트 파일을 생성 하기 위해 호출 될 때 CMake에 전달 되는 추가 명령줄 옵션을 지정 합니다.
-- `cmakeToolchain`: 도구 체인 파일을 지정합니다. 이는 -DCMAKE_TOOLCHAIN_FILE을 사용하여 CMake에 전달됩니다."
-- `buildCommandArgs`: --빌드 -- 후 CMake로 전달되는 네이티브 빌드 스위치를 지정합니다. 예를 들어 Ninja 생성기를 사용하는 경우 -v를 전달하면 Ninja에서 명령줄을 출력하도록 강제합니다. Ninja 명령에 대한 자세한 정보는 [Ninja 명령줄 인수](#ninja)를 참조하세요.
-- `ctestCommandArgs`: 테스트 실행 시 CTest에 전달되는 추가 명령줄 옵션을 지정합니다."
-- `codeAnalysisRuleset`: 코드 분석을 실행할 때 사용할 규칙 집합을 지정합니다. 이는 Visual Studio에서 설치한 규칙 집합 파일의 전체 경로 또는 파일 이름이 될 수 있습니다.
 - `inheritEnvironments`: 이 구성을 사용하는 하나 이상의 컴파일러 환경을 지정합니다. 모든 사용자 지정 환경 또는 미리 정의된 환경 중 하나일 수 있습니다. 자세한 내용은 [환경](#environments)을 참조하세요.
-- `installRoot`: CMake가 선택한 생성기에 대한 설치 대상을 생성하는 디렉터리를 지정합니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`이 포함됩니다.
 - `intelliSenseMode`: intellisense 정보 컴퓨팅에 사용되는 모드를 지정합니다." 다음 중 하나일 수 있습니다.
 
   - windows-msvc-x86
@@ -119,11 +105,10 @@ Visual Studio 2019에서 Visual Studio 생성기를 지정 하려면 **솔루션
   - linux-gcc-x64
   - linux-gcc-arm"
 
-- `cacheRoot`: CMake 캐시의 경로를 지정합니다. 이 디렉터리에는 기존 *cmakecache.txt* 파일이 포함 되어 있어야 합니다.
 - `name`: 구성 이름을 지정합니다.  미리 정의 된 구성에 대 한 자세한 내용은 [미리 정의 된 Cmake 구성 참조](cmake-predefined-configuration-reference.md) 를 참조 하세요.
 - `wslPath`: Linux 용 Windows 하위 시스템 인스턴스의 시작 관리자에 대 한 경로입니다.
 
-### <a name="additional-settings-for-cmake-linux-projects"></a>CMake Linux 프로젝트에 대한 추가 설정 
+### <a name="additional-settings-for-cmake-linux-projects"></a>CMake Linux 프로젝트에 대 한 추가 설정
 
 - `remoteMachineName`: CMake, 빌드 및 디버거를 호스팅하는 원격 Linux 머신의 이름을 지정합니다. 새 Linux 머신을 추가하기 위해 연결 관리자를 사용합니다. 지원되는 매크로에는 `${defaultRemoteMachineName}`이 포함됩니다.
 - `remoteCopySourcesOutputVerbosity`: 원격 머신에 대한 소스 복사 작업의 세부 정보 표시 수준을 지정합니다. ""Normal", "Verbose" 또는 "Diagnostic" 중 하나일 수 있습니다.
@@ -134,13 +119,16 @@ Visual Studio 2019에서 Visual Studio 생성기를 지정 하려면 **솔루션
 - `remoteInstallRoot`: CMake가 선택한 생성기에 대한 설치 대상을 생성하는 원격 머신의 디렉터리를 지정합니다. 지원되는 매크로에는 `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}` 및 `${env.VARIABLE}`이 포함됩니다. 여기서 `VARIABLE`은 시스템, 사용자 또는 세션 수준에서 정의된 환경 변수입니다.
 - `remoteCopySources`: Visual Studio에서 원본 파일을 원격 컴퓨터에 복사할지 여부를 지정 하는 `boolean`입니다. 기본값은 true입니다. 파일 동기화를 직접 관리하는 경우 false로 설정합니다.
 - `remoteCopyBuildOutput`: 원격 시스템에서 빌드 출력을 복사할지 여부를 지정 하는 `boolean`입니다.
+- `remoteCopyAdditionalIncludeDirectories`: IntelliSense를 지원 하기 위해 원격 컴퓨터에서 복사할 추가 포함 디렉터리입니다. "/Path1;/path2.." 형식으로 지정 합니다.
+- `remoteCopyExcludeDirectories`: 원격 컴퓨터에서 복사 하지 않는 디렉터리를 포함 합니다. "/Path1;/path2.." 형식으로 지정 합니다.
+- `remoteCopyUseCompilerDefaults`: 컴파일러의 기본값을 사용할지 여부를 지정 하 고 IntelliSense의 경로를 포함 합니다. 에서 컴파일러를 사용 하 여 gcc 스타일 인수를 지원 하지 않는 경우에만 false가 됩니다.
 - `rsyncCommandArgs`: rsync에 전달되는 추가 명령줄 옵션 세트를 지정합니다.
 - `remoteCopySourcesExclusionList`: 소스 파일을 복사할 때 제외할 경로 목록을 지정 하는 `array`입니다. 경로는 파일/디렉터리의 이름 이거나 복사본의 루트에 상대적인 경로일 수 있습니다. 와일드 카드 \\\"*\\\" 및 \\\"?\\\"은 glob 패턴 일치에 사용할 수 있습니다.
 - `cmakeExecutable`: 파일 이름과 확장명이 포함된 CMake 프로그램 실행 파일의 전체 경로를 지정합니다.
 - `remotePreGenerateCommand`: *Cmakelists .txt* 파일을 구문 분석 하기 위해 cmake을 실행 하기 전에 실행할 명령을 지정 합니다.
 - `remotePrebuildCommand`: 빌드 전 원격 머신에서 실행하는 명령을 지정합니다.
 - `remotePostbuildCommand`: 빌드 후 원격 머신에서 실행하는 명령을 지정합니다.
-- `variables`: **-D** *_이름_=_값_* 으로 CMake에 전달되는 CMake 변수의 이름 값 쌍이 포함됩니다. CMake 프로젝트 빌드 지침에서 *cmakecache.txt* 파일에 직접 변수를 추가 하도록 지정 하는 경우 여기에 대신 추가 하는 것이 좋습니다. 다음 예제에서는 14.14.26428 MSVC 도구 세트에 대한 이름-값 쌍을 지정하는 방법을 보여줍니다.
+- `variables`: cmake에 **-D** *_이름_=_값_* 으로 전달 되는 cmake 변수의 이름-값 쌍을 포함 합니다. CMake 프로젝트 빌드 지침에서 *cmakecache.txt* 파일에 직접 변수를 추가 하도록 지정 하는 경우 여기에 대신 추가 하는 것이 좋습니다. 다음 예제에서는 14.14.26428 MSVC 도구 세트에 대한 이름-값 쌍을 지정하는 방법을 보여줍니다.
 
 ```json
 "variables": [
@@ -186,7 +174,9 @@ CMakeLists .txt 파일에서 모든 환경 변수는 `$ENV{variable_name}`구문
 - `namespace`: `namespace.variable` 형식의 구성에서 해당 변수가 참조될 수 있도록 환경 이름을 지정합니다. 기본 환경 개체는 `env` 이라고 하며 `%USERPROFILE%`를 비롯 한 특정 시스템 환경 변수로 채워집니다.
 - `environment`: 이 변수 그룹을 고유하게 식별합니다. 그룹이 나중에 `inheritEnvironments` 항목에 상속되도록 허용합니다.
 - `groupPriority`: 변수를 계산할 때 이러한 변수의 우선 순위를 지정 하는 정수입니다. 숫자가 높은 항목이 먼저 계산됩니다.
-- `inheritEnvironments`:이 그룹이 상속 하는 환경 집합을 지정 하는 값의 배열입니다. 이 기능을 사용하면 기본 환경을 상속하고, 실행될 때 CMake.exe에 전달되는 사용자 지정 환경 변수를 만들 수 있습니다.
+- `inheritEnvironments`:이 그룹이 상속 하는 환경 집합을 지정 하는 값의 배열입니다. 이 기능을 사용하면 기본 환경을 상속하고, 실행될 때 CMake.exe에 전달되는 사용자 지정 환경 변수를 만들 수 있습니다. 
+
+**Visual Studio 2019 버전 16.4 이상:** 디버그 대상은 *Cmakesettings. json*에서 지정 하는 환경에서 자동으로 시작 됩니다. [시작. json](launch-vs-schema-reference-cpp.md) 및 [작업 및 json](tasks-vs-json-schema-reference-cpp.md)과 비교 하 여 대상이 나 작업 별로 환경 변수를 재정의 하거나 추가할 수 있습니다.
 
 다음 예제에서는 x86-Debug 및 x64-Debug 구성 모두에서 상속된 하나의 **BuildDir** 전역 변수를 정의합니다. 각 구성에서 변수를 사용하여 해당 구성에 대한 **buildRoot** 속성 값을 지정합니다. 또한 각 구성에서 **inheritEnvironments** 속성을 사용하여 해당 구성에만 적용되는 변수를 지정하는 방법도 참조하세요.
 
@@ -220,7 +210,7 @@ CMakeLists .txt 파일에서 모든 환경 변수는 `$ENV{variable_name}`구문
 }
 ```
 
-다음 예제에서 x86 디버그 구성은 **BuildDir** 속성에 대한 자체 값을 정의합니다. 이 값은 **BuildRoot**가 **로 평가하도록 글로벌** BuildDir`D:\custom-builddir\x86-Debug` 속성이 설정한 값을 재정의합니다.
+다음 예제에서 x86 디버그 구성은 **BuildDir** 속성에 대한 자체 값을 정의합니다. 이 값은 **BuildRoot**가 `D:\custom-builddir\x86-Debug`로 평가하도록 글로벌 **BuildDir** 속성이 설정한 값을 재정의합니다.
 
 ```json
 {

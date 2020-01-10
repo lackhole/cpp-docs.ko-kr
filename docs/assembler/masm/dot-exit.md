@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - .EXIT directive
 ms.assetid: 5f77c281-3d65-4174-83ea-34dcc7085ecf
-ms.openlocfilehash: c93265cad526ca3ce945c532f36113b57fcdae4a
-ms.sourcegitcommit: 9ee5df398bfd30a42739632de3e165874cb675c3
+ms.openlocfilehash: a96ffa95ef10b15053c8e62c4adb17ba9c4d0e85
+ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74398289"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75318321"
 ---
 # <a name="exit-32-bit-masm"></a>. 끝내기 (32 비트 MASM)
 
@@ -25,6 +25,7 @@ ms.locfileid: "74398289"
 
 셸에 선택적 *식을* 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[지시문 참조](directives-reference.md)
+[지시문 참조](directives-reference.md)\
+[MASM BNF 문법](masm-bnf-grammar.md)

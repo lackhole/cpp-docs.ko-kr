@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2088
 ms.assetid: b93f7094-185b-423d-8bb9-507cd757dbf5
-ms.openlocfilehash: 6d53f2896fc3b964a4d2652b3bfd0dcebb4a7226
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1f798774a7735a6aceb0bf75b3c6da9ccb1e4a72
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175175"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75301979"
 ---
 # <a name="compiler-error-c2088"></a>컴파일러 오류 C2088
 
-'operator': ' s-k '에 대해 잘못 되었습니다.
+' operator ': ' 클래스 키 '의 경우 잘못 되었습니다.
 
-연산자를 구조체 또는 공용 구조체에 대 한 정의 되지 않았습니다. 이 오류 C 코드에 대해서만 유효합니다.
+구조체 또는 공용 구조체에 대 한 연산자가 정의 되지 않았습니다. 이 오류는 C 코드에 대해서만 유효 합니다.
 
-다음 샘플에서는 세 번 C2088를 생성합니다.
+다음 샘플에서는 C2088를 세 번 생성 합니다.
 
-```
+```c
 // C2088.c
 struct S {
    int m_i;

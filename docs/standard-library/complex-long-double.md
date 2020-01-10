@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: 978be97484a259d7ae8f3fd24fecf07d50c4c844
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 5de4fc2305ef2ac6e523dcb02782455245b99429
+ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857972"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302343"
 ---
 # <a name="complexltlong-doublegt"></a>complex&lt;long double&gt;
 
@@ -57,9 +57,9 @@ complex(
 
 클래스 템플릿 `complex` 및 해당 멤버에 대 한 자세한 내용은 [Complex 클래스](../standard-library/complex-class.md)를 참조 하세요.
 
-**Microsoft 전용**: **long double** 및 **double** 형식은 동일한 표현을 갖지만 고유 형식입니다. 자세한 내용은 [기본 형식](../cpp/fundamental-types-cpp.md)을 참조 하세요.
+**Microsoft 전용**: **long double** 및 **double** 형식은 동일한 표현을 갖지만 고유 형식입니다. 자세한 내용은 [기본 제공 형식](../cpp/fundamental-types-cpp.md)을 참조 하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```cpp
 // complex_comp_ld.cpp
